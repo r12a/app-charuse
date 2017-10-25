@@ -86,14 +86,30 @@ function showLanguage (lang) {
 	if (langs[lang].other) {
 		charList = [...langs[lang].other]
 		out += '<tr><th>Other</th><td class="large">'
-		for (j=0;j<charList.length;j++) out += charList[j].codepointAt(0)+' '
+		out += langs[lang].other
+		//for (j=0;j<charList.length;j++) out += charList[j].codepointAt(0)+' '
 		out += '</td></tr>'
 		}
 	if (!langs[lang].letter && !langs[lang].mark && !langs[lang].punctuation && !langs[lang].number && !langs[lang].symbol && !langs[lang].other) {
 		out += '<tr><th></th><td class="large">ASCII only</td></tr>'
 		}
 	out += '<tr><th>Source</th><td>'+langs[lang].source+'</td></tr>'
-	out += '<tr><th>Region</th><td>'+langs[lang].region+'</td></tr>'
+	switch (langs[lang].region) {
+		case 'afr': region = 'Africa';break
+		case 'oce': region = 'Oceania';break
+		case 'eur': region = 'Europe';break
+		case 'nam': region = 'Northern America';break
+		case 'cam': region = 'Central America';break
+		case 'sam': region = 'South America';break
+		case 'wasia': region = 'Western Asia';break
+		case 'casia': region = 'Central Asia';break
+		case 'nasia': region = 'Northern Asia';break
+		case 'sasia': region = 'South Asia';break
+		case 'seasia': region = 'South East Asia';break
+		case 'easia': region = 'East Asia';break
+		case 'carib': region = 'Caribbean';break
+		}
+	out += '<tr><th>Region</th><td>'+region+'</td></tr>'
 	out += '<tr><th>Speakers</th><td>'+parseInt(langs[lang].speakers).toLocaleString('en')+'</td></tr>'
 	return out
 	}
@@ -172,7 +188,7 @@ function showLanguage (lang) {
 </details>
 
 <div class="smallprint"><span id="version">First published  24 Jul 2013.  This version <span id="version-info"> 
-<!-- #BeginDate format:IS1m -->2017-10-25  10:12<!-- #EndDate --> 
+<!-- #BeginDate format:IS1m -->2017-10-25  10:49<!-- #EndDate --> 
   </span> GMT. &nbsp;&bull;&nbsp; Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a>.</span></div>
 </body>
 </html>
