@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Character usage</title>
+<meta name="description" content="Tool to ascertain whether a UTF8-encoded file on the web has a BOM at the beginning or not." />
+<link rel="stylesheet" type="text/css"href="/shared/style/docs.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="/shared/code/boilerplate.js"></script>
+<script type="text/javascript" src="char_lang.js"></script>
+<script type="text/javascript" src="langs.js"></script>
+<script>
+
+function makeLangList () {
+	out = ''
+	for (l in langs) out += '<option value="'+l+'">'+langs[l].name+'</option>\n'
+	return out
+	}
+
+
+function findChars (str) {
+	str.replace(/\s/g,'')
+	var chars = [...str]
+	var out = ''
+	for (i=0;i<chars.length;i++){
+		cp = chars[i].codePointAt(0)
+		out += '<tr><th>'+chars[i]+'</td>'
+		if (cp>127) {
+			if (cl[cp]) {
+				out += '<td>'
+				languages = cl[cp]
+				var languageNames = ''
+				var population = 0
+				for (let l=0;l<languages.length;l++) {
+					languageNames += langs[languages[l]].name
+					if (l<languages.length-1) languageNames += ', '
+					speakerNum = langs[languages[l]].speakers.replace(/~/,'')
+					population += parseInt(speakerNum)
+					}
+				out += languageNames+' ('+languages.length+' languages)</td>'
+				out += '<td>'+population.toLocaleString('en')+'</td>'
+				}
+			else out += '<td>Unknown</td><td>-</td>'
+			out += '</tr>'
+			}
+		}
+	return out
+	}
+
+function showLanguage (lang) {
+	console.log(lang)
+	out = ''
+	var charList
+	// "agq": { name:"Aghem", source:"CLDR", region:"afr", speakers:"27000", letter:"Ã Ã¢Ã¨ÃªÃ¬Ã®Ã²Ã´Ã¹Ã»Ã€Ã‚ÃˆÃŠÃŒÃŽÃ’Ã”Ã™Ã›ÇŽÇÇ’Ç”ÇÆÇÆ—Ç‘Æ†Ç“É„ÄÄ›Ä“Ä«Å‹ÅÅ«Ä€ÄšÄ’ÄªÅŠÅŒÅªÉ›É¨É”Ê‰Ê”", mark:"\u{0300}\u{0302}\u{030C}\u{0304}" },
+	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+' ('+lang+')</td></tr>'
+	if (langs[lang].letter) {
+		charList = [...langs[lang].letter]
+		out += '<tr><th>Letters</th><td class="large">'
+		for (j=0;j<charList.length;j++) out += charList[j]+' '
+		out += '</td></tr>'
+		}
+	if (langs[lang].mark) {
+		charList = [...langs[lang].mark]
+		out += '<tr><th>Marks</th><td class="large">'
+		for (j=0;j<charList.length;j++) out += '\u00A0'+charList[j]+' '
+		out += '</td></tr>'
+		}
+	if (langs[lang].punctuation) {
+		charList = [...langs[lang].punctuation]
+		out += '<tr><th>Punctuation</th><td class="large">'
+		for (j=0;j<charList.length;j++) out += charList[j]+' '
+		out += '</td></tr>'
+		}
+	if (langs[lang].number) {
+		charList = [...langs[lang].number]
+		out += '<tr><th>Numbers</th><td class="large">'
+		for (j=0;j<charList.length;j++) out += charList[j]+' '
+		out += '</td></tr>'
+		}
+	if (langs[lang].symbol) {
+		charList = [...langs[lang].symbol]
+		out += '<tr><th>Symbols</th><td class="large">'
+		for (j=0;j<charList.length;j++) out += charList[j]+' '
+		out += '</td></tr>'
+		}
+	if (langs[lang].other) {
+		charList = [...langs[lang].other]
+		out += '<tr><th>Other</th><td class="large">'
+		for (j=0;j<charList.length;j++) out += charList[j].codepointAt(0)+' '
+		out += '</td></tr>'
+		}
+	if (!langs[lang].letter && !langs[lang].mark && !langs[lang].punctuation && !langs[lang].number && !langs[lang].symbol && !langs[lang].other) {
+		out += '<tr><th></th><td class="large">ASCII only</td></tr>'
+		}
+	out += '<tr><th>Source</th><td>'+langs[lang].source+'</td></tr>'
+	out += '<tr><th>Region</th><td>'+langs[lang].region+'</td></tr>'
+	out += '<tr><th>Speakers</th><td>'+parseInt(langs[lang].speakers).toLocaleString('en')+'</td></tr>'
+	return out
+	}
+</script>
+</head>
+
+<body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeLangList()">
+<header>
+<div id="header-boilerplate"></div>
+<script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('/shared/images/world.gif','Character usage lookup','');</script>
+</header>
+
+<aside class="sidebar">
+<section>
+  <p style="font-size: 90%;">Find  languages that use a given non-ASCII character, or find characters used by a particular language.</p>
+</section>
+</aside>
+
+  <p style="color: red;">This is an early prototype and is still in development!</p>
+
+<section style="margin-top: 3em;">
+<p>List characters for the following language:<br/>
+<select id="languageSelector" onChange="document.getElementById('langDetails').innerHTML = showLanguage(this.value)"></p>
+</select>
+
+<table id="langDetails"></table>
+</section>
+
+
+<section style="margin-top: 5em;">
+  <form action="none" onsubmit=" return false;">
+    <p>List the character(s) you want to look up:<br/>
+      <input class="inputbox" id="characters" type="text"/>
+    </p>
+</form>
+ 
+     <p><button style="vertical-align:top;" onclick="document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)">Look up</button></p>
+<table style="margin-top: 3em">
+<thead><th></th><th>Languages</th><th>Native speakers</th></thead>
+<tbody id="output"><td></td><td></td><td></td></tbody></table>
+</section>
+
+<details style="margin-top: 5em;">
+  <summary style="margin-left: 7.5%"><strong>Notes:</strong></summary> 
+
+<aside class="sidebar">
+  <div class="section">
+    <h2 class="flush">Related links</h2>
+    <p><a target="_blank" href="http://www.w3.org/TR/css-counter-styles-3/">CSS3 Counter Styles</a></p>
+    <p><a target="_blank" href="http://www.w3.org/TR/predefined-counter-styles/">Predefined Counter Styles</a></p>
+  </div>
+</aside>
+
+<p id="status">Updated Fri 20 Feb 2015  &bull; tags <a href="http://rishida.net/blog/index.php?tag=counterstyles" title="Show all blog posts tagged with 'counterstyles'">counterstyles</a>, <a href="http://rishida.net/blog/?tag=scriptnotes" title="Show all blog posts tagged with 'scriptnotes'">scriptnotes</a>, <a href="http://rishida.net/blog/?tag=apps" title="Show all blog posts tagged with 'apps'">apps</a></p>
+
+<section>
+  <p>This page allows you to find languages that use a particular Unicode character. Around 300 languages have been checked using CLDR and/or the Unicode site's UDHR transcripts. It isn't claimed that this list is exhaustively correct, so you should treat it as an approximation.</p>
+  <p>ASCII characters are ignored. Characters shown for a language include all characters produced by applying uppercase, lowercase, NFC, and NFD to the set of characters attributed to that language by its source.</p>
+  <p>The <samp>Native speakers</samp> column indicates the estimated number of native speakers for all the languages listed, in order to give a rough idea of the prevalence of that character. It should be borne in mind that this represents speakers rather than the number of literate users, so they are <em>potential</em> users of the character. On the other hand, in most cases there are many more people who speak or read the languages listed as an additional language, so the number of potential users is usually much higher than shown.</p>
+</section>
+
+<section>
+  <h3>To do:</h3>
+  <ul>
+  <li>Allow escapes to be used on input</li>
+  <li>Order languages alphabetically</li>
+  <li>Add a graphic to show the number of speakers using a rectangle that grows with population.</li>
+  <li>Order selection list alphabetically</li>
+  <li>Show images rather than characters? (that may not be helpful, since you can grab a character for the lookup if they are not images)</li>
+  <li>Add links to UniView for characters</li>
+  <li>Provide an alternative lookup by bcp47 tag</li>
+  <li>lots more...</li>
+  </ul>
+</section>
+
+</details>
+
+<div class="smallprint"><span id="version">First published  24 Jul 2013.  This version <span id="version-info"> 
+<!-- #BeginDate format:IS1m -->2017-10-25  10:12<!-- #EndDate --> 
+  </span> GMT. &nbsp;&bull;&nbsp; Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a>.</span></div>
+</body>
+</html>
