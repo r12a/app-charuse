@@ -562,6 +562,88 @@ var langs = {
 
 "nzi": { name:"Nzima", source:"UDHR", region:"afr", speakers:"330000", letter:"ɔɛƆƐ" },
 
+"or": { name:"Oriya", source:"CLDR", region:"sasia", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"\u{0B3C}\u{0B01}\u{0B02}\u{0B03}\u{0B3E}\u{0B3F}\u{0B40}\u{0B41}\u{0B42}\u{0B43}\u{0B47}\u{0B48}\u{0B4B}\u{0B4C}\u{0B4D}\u{0B56}\u{0B57}" },
+
+"om": { name:"Oromo", source:"CLDR,UDHR", region:"afr", speakers:"25542000" },
+
+"os": { name:"Ossetian", source:"CLDR,UDHR", region:"eur", speakers:"570000", letter:"аӕбвгъджзеёийклмнопрстуфхцчшщыьэюяАӔБВГЪДЖЗЕЁИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ", punctuation:"‐–—…‘‚“„«»§" },
+
+"oc": { name:"Occitan", source:"UDHR", region:"eur", speakers:"~200000", letter:"óèéçàïòìùúâêîëáôüûÓÈÉÇÀÏÒÌÙÚÂÊÎËÁÔÜÛ", mark:"\u{0301}\u{200B}\u{0300}\u{200B}\u{0327}\u{200B}\u{0308}\u{200B}\u{0302}\u{200B}", punctuation:"«»’​—​" },
+
+"oj": { name:"Ojibwe", source:"UDHR", region:"nam", speakers:"100880", letter:"ᐯᒪᑎᓯᑦᑌᐸᑫᑕᑯᐎᓇᓐᒥᐌᑲᒃᔭᐊᓂᐃᔑᑭᔝᐤᐅᑾᐱᔦᑐᐗᒣᒋᐁᔅᓱᓀᓄᒧᓭᔥᐨᑡᔕᓴᓶᓉᐺᓪᑉᐼᑴᑄᒐᒬᔐᔗᑺᔡᒻᒡᑶ" },
+
+"oki": { name:"Okiek", source:"UDHR", region:"afr", speakers:"79000" },
+
+"oaa": { name:"Orok", source:"UDHR", region:"nasia", speakers:"50", letter:"ƝūŪɲԩԨчипалнесдкробуӡгэӈмхтөвӯзЧИПАЛНЕСДКРОБУӠГЭӇМХТӨВӮЗ", mark:"\u{0304}", punctuation:"–" },
+
+"ote": { name:"Mezquital Otomi", source:"UDHR", region:"cam", speakers:"130000", letter:"öüäéñúíáèÖÜÄÉÑÚÍÁÈ", mark:"\u{0331}\u{0308}\u{0301}\u{0303}\u{0300}" },
+
+"lot": { name:"Otuho", source:"UDHR", region:"afr", speakers:"140000" },
+
+"ps": { name:"Pashto", source:"CLDR", region:"casia", speakers:"~50000000", letter:"آاأءبپتټثجځچڅحخدډذرړزژږسشښصضطظعغفقکګگلمنڼهةوؤیيېۍئ", mark:"\u{064B}\u{064C}\u{064D}\u{064E}\u{064F}\u{0650}\u{0651}\u{0652}\u{0670}\u{0654}\u{0653}" },
+
+"pl": { name:"Polish", source:"CLDR,UDHR", region:"eur", speakers:"55000000", letter:"óÓąćęłńśźżĄĆĘŁŃŚŹŻ", mark:"\u{0328}\u{0301}\u{0307}", punctuation:"«»§‐–—…”„†‡′″", symbol:"°" },
+
+"pt": { name:"Portuguese", source:"CLDR,UDHR", region:"eur", speakers:"215000000", letter:"áàâãçéêíóòôõúºÁÀÂÃÇÉÊÍÓÒÔÕÚ", mark:"\u{0327}\u{0301}\u{0300}\u{0302}\u{0303}", punctuation:"§‐–—…‘’“”†‡′″" },
+
+"prg": { name:"Prussian", source:"CLDR", region:"eur", speakers:"0", letter:"țȚāēģīķņōŗšūžĀĒĢĪĶŅŌŖŠŪŽḑḐ", mark:"\u{0327}\u{0326}\u{0304}\u{030C}", punctuation:"‐–—…“„" },
+
+"pa": { name:"Punjabi", source:"CLDR,UDHR", region:"sasia", speakers:"122000000", letter:"ੴੳਉਊਓਅਆਐਔੲਇਈਏਸਹਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜ", mark:"\u{0A71}\u{0A70}\u{0A3C}\u{0A4D}\u{0A3E}\u{0A3F}\u{0A40}\u{0A41}\u{0A42}\u{0A47}\u{0A48}\u{0A4B}\u{0A4C}\u{0A02}", punctuation:"‐–—‘’“”′″।", number:"੦੧੨੩੪੫੬੭੮੯" },
+
+"pnb": { name:"Western Panjabi", source:"CLDR,UDHR", region:"sasia", speakers:"122000000", letter:"ءآؤئابپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںهھہویےي", mark:"\u{064F}\u{0653}\u{0654}", punctuation:"‐–—‘’“”′″" },
+
+"pau": { name:"Palauan", source:"UDHR", region:"seasia", speakers:"17000" },
+
+"pam": { name:"Pampangan", source:"UDHR", region:"seasia", speakers:"1900000" },
+
+"pap": { name:"Papiamento", source:"UDHR", region:"carib", speakers:"271261", letter:"ñÑ", mark:"\u{0303}", punctuation:"’" },
+
+"pcd": { name:"Picard", source:"UDHR", region:"eur", speakers:"700000", letter:"èåûîéôçÈÅÛÎÉÔÇ", mark:"\u{0327}\u{0300}\u{030A}\u{0302}\u{0301}", symbol:"°" },
+
+"pcm": { name:"Nigerian Pidgin", source:"UDHR", region:"afr", speakers:"30000000" },
+
+"pis": { name:"Pijin", source:"UDHR", region:"oce", speakers:"24000" },
+
+"piu": { name:"Pintupi-Luritja", source:"UDHR", region:"oce", speakers:"1703" },
+
+"ppl": { name:"Pipil", source:"UDHR", region:"cam", speakers:"500", letter:"áéÁÉ", mark:"\u{0301}" },
+
+"pon": { name:"Pohnpeian", source:"UDHR", region:"oce", speakers:"31000" },
+
+"fuf": { name:"Pular", source:"UDHR", region:"afr", speakers:"3000000" },
+
+"fuf-adlm": { name:"Pular (Adlam)", source:"UDHR", region:"afr", speakers:"3000000", letter:"𞤩𞤢𞤲𞤺𞤭𞤣𞤫𞤸𞤤𞤴𞤳𞤮𞤪𞤶𞤯𞤼𞤵𞤱𞤬𞤥𞤧𞤨𞤻𞤦𞤷𞤰𞤾𞤇𞤀𞤐𞤘𞤋𞤁𞤉𞤖𞤂𞤒𞤑𞤌𞤈𞤔𞤍𞤚𞤓𞤏𞤊𞤃𞤅𞤆𞤙𞤄𞤕𞤎𞤜ŋŊƭƬ", mark:"\u{1E946}\u{1E945}\u{1E944}", punctuation:"،؛’⹁", number:"𞥒𞥓𞥔𞥕𞥖𞥗𞥘𞥙𞥑𞥐" },
+
+"tsz": { name:"Purépecha", source:"UDHR", region:"cam", speakers:"125000", letter:"áïéíÁÏÉÍⱭƲŋŊɑʋ", mark:"\u{0301}\u{0308}" },
+
+"pbb": { name:"Páez", source:"UDHR", region:"sam", speakers:"40000", letter:"üëäïáÜËÄÏÁ", mark:"\u{0308}\u{0301}" },
+
+"ro": { name:"Romanian", source:"CLDR,UDHR", region:"eur", speakers:"~25000000", letter:"âîÂÎșțȘȚăĂ", mark:"\u{0326}\u{0306}\u{0302}", punctuation:"«»‐–—…‘“”„" },
+
+"rm": { name:"Romansh", source:"CLDR,UDHR", region:"eur", speakers:"36622", letter:"àüöéèìòùÀÜÖÉÈÌÒÙ", mark:"\u{0300}\u{0308}\u{0301}" },
+
+"rof": { name:"Rombo", source:"CLDR", region:"afr", speakers:"?" },
+
+"rn": { name:"Burundi", source:"CLDR,UDHR", region:"afr", speakers:"8800000" },
+
+"ru": { name:"Russian", source:"CLDR,UDHR", region:"eur", speakers:"150000000", letter:"всеобщаядклрципчнтзгшюйьмуыхъжэфёВСЕОБЩАЯДКЛРЦИПЧНТЗГШЮЙЬМУЫХЪЖЭФЁ", mark:"\u{0306}\u{0308}", punctuation:"‐–—…‘‚“„«»§" },
+
+"rwk": { name:"Rwa", source:"CLDR", region:"afr", speakers:"400000" },
+
+"rar": { name:"Rarotongan", source:"UDHR", region:"oce", speakers:"21725" },
+
+"rom": { name:"Romani", source:"UDHR", region:"eur", speakers:"~1500000", letter:"àõùèìòâÀÕÙÈÌÒÂƟśěćŕăąňűźőģůščžŚĚĆŔĂĄŇŰŹŐĢŮŠČŽɵ", mark:"\u{0328}\u{0327}\u{0300}\u{0301}\u{030C}\u{0303}\u{0306}\u{030B}\u{0302}\u{030A}" },
+
+"sah": { name:"Yakut", source:"CLDR,UDHR", region:"nasia", speakers:"450000", letter:"абгҕдьийклмнҥоөпрстуүхһчыэецязювщъжфАБГҔДЬИЙКЛМНҤОӨПРСТУҮХҺЧЫЭЕЦЯЗЮВЩЪЖФ", mark:"\u{0306}" },
+
+"saq": { name:"Samburu", source:"CLDR", region:"afr", speakers:"240000" },
+
+"sg": { name:"Sango", source:"CLDR", region:"afr", speakers:"450000", letter:"âäêëîïôöùûüÂÄÊËÎÏÔÖÙÛÜ", mark:"\u{0302}\u{0308}\u{0300}" },
+
+"sbp": { name:"Sangu", source:"CLDR", region:"afr", speakers:"75000" },
+
+"seh": { name:"Sena", source:"CLDR", region:"afr", speakers:"1600000", letter:"áàâãçéêíóòôõúÁÀÂÃÇÉÊÍÓÒÔÕÚ", mark:"\u{0327}\u{0301}\u{0300}\u{0302}\u{0303}" },
+
 "xxx": { name:"name", source:"CLDR,UDHR", region:"Asia", speakers:"113000", letter:"", mark:"", punctuation:"", number:"", symbol:"" },
 }
 
