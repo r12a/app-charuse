@@ -552,7 +552,7 @@ var langs = {
 
 "not": { name:"Nomatsiguenga", source:"UDHR", region:"sam", speakers:"6500", letter:"ëíáóñËÍÁÓÑ", mark:"\u{0308}\u{0301}\u{0303}" },
 
-"ii": { name:"Nuosu", source:"UDHR", region:"easia", speakers:"2000000", letter:"ꋧꃅꊽꌅꅍꄜꋊꄯꒉꌐꁌꅇꃰꊿꑱꈐꂷꐥꋭꐯꒈꌠꌋꆀꏚꍆꆹꄿꐨꑗꉬꄮꐽꅉꃀꋩꏭꉜꀋꄸꑠꅢꎆꌊꍀꆿꇏꅊꀐꋋꈨꂄꉌꇬꍍꄀꈀꉉꈋꍣꑇꄷꁨꐬꆠꇮꃪꑟꇁꂶꈍꆐꉹꏓꂱꀊꂤꉪꄉꄐꊾꍅꅷꐤꁏꏦꃤꀧꇩꏤꇢꊭꐮꃆꂮꀻꊥꄻꅐꉻꏑꇯꁢꊧꊇꑌꇐꅪꉈꑴꌌꎪꊼꇅꀉꐧꋦꀒꄺꎻꄚꐊꅿꇫꍬꌬꐚꒃꏢꉆꅹꊋꇤꂿꎕꏲꎺꌶꉙꂘꈴꏁꁈꁳꈧꊨꋍꏡꀂꏽꂛꅫꄡꑍꅑꋅꐎꆈꌺꑞꍔꍞꁁꏥꒆꆍꈌꏱꈚꌔꀑꇭꇖꋬꂻꑘꁦꄹꃷꃼꇈꁴꍂꃴꆉꇕꊒꋉꑽꅓꃘꂴꆽꏃꉚꊢꐳꅠꇧꎭꋌꉮꇎꇴꎹꌤꀞꈉꐪꊌꈬꀙꈢꈹꋯꊰꄂꄇꇔꅲꏯꅀꇽꊯꊪꅔꀥꑿꂲꈂꅜꆏꈾꑋꀀꏾꇋꂒꁒꐀꌕꄓꁧꀱꏂꂯꂽꇇꀤꃹꐛꇑꑣꈓꊂꌟꑮꃝꑲꑵꉭꂁꌦꐙꊏꏗꇱꇊꂡꏅꈽꃛꍝꁊꂓꈁꏣꌧꎀꍹꊎꃄꆧꀁꈲꇪꉼꑬꆷꁵꋠꅝꃢꇓꈜꆅꆄꍸꑳꂥꊐꌷꄟꋒꀨꉺꋰꉂꌳꃈꅮꈆꑪꀿꁱꋽꀹꂠꄎꁮꆼꄙꀜꐆꉗꆜꌭꉐ", punctuation:"《》。、，（）：" },
+"ii": { name:"Nuosu", source:"UDHR", region:"easia", speakers:"2000000", letter:"ꀀꀁꀂꀃꀄꀅꀆꀇꀈꀉꀊꀋꀌꀍꀎꀏꀐꀑꀒꀓꀔꀕꀖꀗꀘꀙꀚꀛꀜꀝꀞꀟꀠꀡꀢꀣꀤꀥꀦꀧꀨꀩꀪꀫꀬꀭꀮꀯꀰꀱꀲꀳꀴꀵꀶꀷꀸꀹꀺꀻꀼꀽꀾꀿꁀꁁꁂꁃꁄꁅꁆꁇꁈꁉꁊꁋꁌꁍꁎꁏꁐꁑꁒꁓꁔꁕꁖꁗꁘꁙꁚꁛꁜꁝꁞꁟꁠꁡꁢꁣꁤꁥꁦꁧꁨꁩꁪꁫꁬꁭꁮꁯꁰꁱꁲꁳꁴꁵꁶꁷꁸꁹꁺꁻꁼꁽꁾꁿꂀꂁꂂꂃꂄꂅꂆꂇꂈꂉꂊꂋꂌꂍꂎꂏꂐꂑꂒꂓꂔꂕꂖꂗꂘꂙꂚꂛꂜꂝꂞꂟꂠꂡꂢꂣꂤꂥꂦꂧꂨꂩꂪꂫꂬꂭꂮꂯꂰꂱꂲꂳꂴꂵꂶꂷꂸꂹꂺꂻꂼꂽꂾꂿꃀꃁꃂꃃꃄꃅꃆꃇꃈꃉꃊꃋꃌꃍꃎꃏꃐꃑꃒꃓꃔꃕꃖꃗꃘꃙꃚꃛꃜꃝꃞꃟꃠꃡꃢꃣꃤꃥꃦꃧꃨꃩꃪꃫꃬꃭꃮꃯꃰꃱꃲꃳꃴꃵꃶꃷꃸꃹꃺꃻꃼꃽꃾꃿꄀꄁꄂꄃꄄꄅꄆꄇꄈꄉꄊꄋꄌꄍꄎꄏꄐꄑꄒꄓꄔꄕꄖꄗꄘꄙꄚꄛꄜꄝꄞꄟꄠꄡꄢꄣꄤꄥꄦꄧꄨꄩꄪꄫꄬꄭꄮꄯꄰꄱꄲꄳꄴꄵꄶꄷꄸꄹꄺꄻꄼꄽꄾꄿꅀꅁꅂꅃꅄꅅꅆꅇꅈꅉꅊꅋꅌꅍꅎꅏꅐꅑꅒꅓꅔꅕꅖꅗꅘꅙꅚꅛꅜꅝꅞꅟꅠꅡꅢꅣꅤꅥꅦꅧꅨꅩꅪꅫꅬꅭꅮꅯꅰꅱꅲꅳꅴꅵꅶꅷꅸꅹꅺꅻꅼꅽꅾꅿꆀꆁꆂꆃꆄꆅꆆꆇꆈꆉꆊꆋꆌꆍꆎꆏꆐꆑꆒꆓꆔꆕꆖꆗꆘꆙꆚꆛꆜꆝꆞꆟꆠꆡꆢꆣꆤꆥꆦꆧꆨꆩꆪꆫꆬꆭꆮꆯꆰꆱꆲꆳꆴꆵꆶꆷꆸꆹꆺꆻꆼꆽꆾꆿꇀꇁꇂꇃꇄꇅꇆꇇꇈꇉꇊꇋꇌꇍꇎꇏꇐꇑꇒꇓꇔꇕꇖꇗꇘꇙꇚꇛꇜꇝꇞꇟꇠꇡꇢꇣꇤꇥꇦꇧꇨꇩꇪꇫꇬꇭꇮꇯꇰꇱꇲꇳꇴꇵꇶꇷꇸꇹꇺꇻꇼꇽꇾꇿꈀꈁꈂꈃꈄꈅꈆꈇꈈꈉꈊꈋꈌꈍꈎꈏꈐꈑꈒꈓꈔꈕꈖꈗꈘꈙꈚꈛꈜꈝꈞꈟꈠꈡꈢꈣꈤꈥꈦꈧꈨꈩꈪꈫꈬꈭꈮꈯꈰꈱꈲꈳꈴꈵꈶꈷꈸꈹꈺꈻꈼꈽꈾꈿꉀꉁꉂꉃꉄꉅꉆꉇꉈꉉꉊꉋꉌꉍꉎꉏꉐꉑꉒꉓꉔꉕꉖꉗꉘꉙꉚꉛꉜꉝꉞꉟꉠꉡꉢꉣꉤꉥꉦꉧꉨꉩꉪꉫꉬꉭꉮꉯꉰꉱꉲꉳꉴꉵꉶꉷꉸꉹꉺꉻꉼꉽꉾꉿꊀꊁꊂꊃꊄꊅꊆꊇꊈꊉꊊꊋꊌꊍꊎꊏꊐꊑꊒꊓꊔꊕꊖꊗꊘꊙꊚꊛꊜꊝꊞꊟꊠꊡꊢꊣꊤꊥꊦꊧꊨꊩꊪꊫꊬꊭꊮꊯꊰꊱꊲꊳꊴꊵꊶꊷꊸꊹꊺꊻꊼꊽꊾꊿꋀꋁꋂꋃꋄꋅꋆꋇꋈꋉꋊꋋꋌꋍꋎꋏꋐꋑꋒꋓꋔꋕꋖꋗꋘꋙꋚꋛꋜꋝꋞꋟꋠꋡꋢꋣꋤꋥꋦꋧꋨꋩꋪꋫꋬꋭꋮꋯꋰꋱꋲꋳꋴꋵꋶꋷꋸꋹꋺꋻꋼꋽꋾꋿꌀꌁꌂꌃꌄꌅꌆꌇꌈꌉꌊꌋꌌꌍꌎꌏꌐꌑꌒꌓꌔꌕꌖꌗꌘꌙꌚꌛꌜꌝꌞꌟꌠꌡꌢꌣꌤꌥꌦꌧꌨꌩꌪꌫꌬꌭꌮꌯꌰꌱꌲꌳꌴꌵꌶꌷꌸꌹꌺꌻꌼꌽꌾꌿꍀꍁꍂꍃꍄꍅꍆꍇꍈꍉꍊꍋꍌꍍꍎꍏꍐꍑꍒꍓꍔꍕꍖꍗꍘꍙꍚꍛꍜꍝꍞꍟꍠꍡꍢꍣꍤꍥꍦꍧꍨꍩꍪꍫꍬꍭꍮꍯꍰꍱꍲꍳꍴꍵꍶꍷꍸꍹꍺꍻꍼꍽꍾꍿꎀꎁꎂꎃꎄꎅꎆꎇꎈꎉꎊꎋꎌꎍꎎꎏꎐꎑꎒꎓꎔꎕꎖꎗꎘꎙꎚꎛꎜꎝꎞꎟꎠꎡꎢꎣꎤꎥꎦꎧꎨꎩꎪꎫꎬꎭꎮꎯꎰꎱꎲꎳꎴꎵꎶꎷꎸꎹꎺꎻꎼꎽꎾꎿꏀꏁꏂꏃꏄꏅꏆꏇꏈꏉꏊꏋꏌꏍꏎꏏꏐꏑꏒꏓꏔꏕꏖꏗꏘꏙꏚꏛꏜꏝꏞꏟꏠꏡꏢꏣꏤꏥꏦꏧꏨꏩꏪꏫꏬꏭꏮꏯꏰꏱꏲꏳꏴꏵꏶꏷꏸꏹꏺꏻꏼꏽꏾꏿꐀꐁꐂꐃꐄꐅꐆꐇꐈꐉꐊꐋꐌꐍꐎꐏꐐꐑꐒꐓꐔꐕꐖꐗꐘꐙꐚꐛꐜꐝꐞꐟꐠꐡꐢꐣꐤꐥꐦꐧꐨꐩꐪꐫꐬꐭꐮꐯꐰꐱꐲꐳꐴꐵꐶꐷꐸꐹꐺꐻꐼꐽꐾꐿꑀꑁꑂꑃꑄꑅꑆꑇꑈꑉꑊꑋꑌꑍꑎꑏꑐꑑꑒꑓꑔꑕꑖꑗꑘꑙꑚꑛꑜꑝꑞꑟꑠꑡꑢꑣꑤꑥꑦꑧꑨꑩꑪꑫꑬꑭꑮꑯꑰꑱꑲꑳꑴꑵꑶꑷꑸꑹꑺꑻꑼꑽꑾꑿꒀꒁꒂꒃꒄꒅꒆꒇꒈꒉꒊꒋꒌ", punctuation:"《》。、，（）：" },
 
 "nym": { name:"Nyamwezi", source:"UDHR", region:"afr", speakers:"1000000" },
 
@@ -643,6 +643,80 @@ var langs = {
 "sbp": { name:"Sangu", source:"CLDR", region:"afr", speakers:"75000" },
 
 "seh": { name:"Sena", source:"CLDR", region:"afr", speakers:"1600000", letter:"áàâãçéêíóòôõúÁÀÂÃÇÉÊÍÓÒÔÕÚ", mark:"\u{0327}\u{0301}\u{0300}\u{0302}\u{0303}" },
+
+"sr": { name:"Serbian", source:"CLDR,UDHR", region:"eur", speakers:"~9700000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–…‘‚“„" },
+
+"sr-latn": { name:"Serbian (Latin)", source:"CLDR,UDHR", region:"eur", speakers:"~9700000", letter:"čćžđšČĆŽĐŠ", mark:"\u{030C}\u{0301}", punctuation:"‐–…‘‚“„" },
+
+"ksb": { name:"Shambala", source:"CLDR", region:"afr", speakers:"660000" },
+
+"sn": { name:"Shona", source:"CLDR,UDHR", region:"afr", speakers:"15000000" },
+
+"si": { name:"Sinhala", source:"CLDR,UDHR", region:"sasia", speakers:"16000000", letter:"අආඇඈඉඊඋඌඍඑඒඓඔඕඖකඛගඝඞඟචඡජඣඥඤටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ", mark:"\u{0D82}\u{0D83}\u{0DCF}\u{0DD0}\u{0DD1}\u{0DD2}\u{0DD3}\u{0DD4}\u{0DD6}\u{0DD8}\u{0DF2}\u{0DDF}\u{0DD9}\u{0DDA}\u{0DDB}\u{0DDC}\u{0DDD}\u{0DDE}\u{0DCA}", punctuation:"§‐–—…‘’“”†‡′″", symbol:"\u{200D}" },
+
+"sk": { name:"Slovak", source:"CLDR,UDHR", region:"eur", speakers:"5200000", letter:"čďĺľňŕšťžűČĎĹĽŇŔŠŤŽŰáäéíóôúýÁÄÉÍÓÔÚÝ", mark:"\u{0301}\u{0308}\u{030C}\u{0302}\u{030B}", punctuation:"‐–…‘‚“„§" },
+
+"sl": { name:"Slovene", source:"CLDR,UDHR", region:"eur", speakers:"2500000", letter:"čšžČŠŽ", mark:"\u{030C}" },
+
+"sog": { name:"Soga", source:"CLDR", region:"afr", speakers:"2100000" },
+
+"so": { name:"Somali", source:"CLDR,UDHR", region:"afr", speakers:"15000000" },
+
+"es": { name:"Spanish", source:"CLDR,UDHR", region:"eur", speakers:"480000000", letter:"áéíïñóúüýÁÉÍÏÑÓÚÜÝ", mark:"\u{0301}\u{0308}\u{0303}", punctuation:"‐–—…‘’“”†‡′″¡¿«»§" },
+
+"sw": { name:"Swahili", source:"CLDR,UDHR", region:"afr", speakers:"~7000000" },
+
+"sv": { name:"Swedish", source:"CLDR,UDHR", region:"eur", speakers:"10000000", letter:"àéåäöÀÉÅÄÖ", mark:"\u{0300}\u{0301}\u{030A}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
+
+"gsw": { name:"Swiss German", source:"CLDR", region:"eur", speakers:"4930000", letter:"äöüÄÖÜ", mark:"\u{0308}" },
+
+"sm": { name:"Samoan", source:"UDHR", region:"oce", speakers:"510000" },
+
+"sa": { name:"Sanskrit", source:"UDHR", region:"sasia", speakers:"~15000", letter:"मनवधकरणजगतअभघषयपचशसएछबदटडहइआञउठथलढऽ", mark:"\u{093E}\u{093F}\u{0902}\u{094B}\u{094D}\u{0942}\u{0947}\u{0941}\u{094C}\u{0948}\u{0940}\u{0943}\u{093C}", punctuation:"।" },
+
+"sc": { name:"Sardinian", source:"UDHR", region:"eur", speakers:"~1000000", letter:"òìàèùÒÌÀÈÙ", mark:"\u{0300}" },
+
+"sco": { name:"Scots", source:"UDHR", region:"eur", speakers:"110000" },
+
+"sey": { name:"Secoya", source:"UDHR", region:"sam", speakers:"400", letter:"ëñàéËÑÀÉ", mark:"\u{0331}\u{0308}\u{0303}\u{0300}\u{0301}" },
+
+"skr": { name:"Saraiki", source:"UDHR", region:"sasia", speakers:"20000000", letter:"انسیحقودعلمشرپہڱھےکڄئتڻزںگڈفظجچبڑصڋخڔٹطآذضغةثٻي", mark:"\u{064F}\u{0654}\u{0653}", punctuation:"۔،", number:"۱۲۳۴۵۶۷۸۹۰" },
+
+"srr": { name:"Serer", source:"UDHR", region:"afr", speakers:"1230000", letter:"ñÑƭƴƊƁƬƳŋćŊĆṕṔɗɓ", mark:"\u{0303}\u{0301}" },
+
+"crs": { name:"Seychellois Creole", source:"UDHR", region:"afr", speakers:"73000", letter:"íÍ", mark:"\u{0301}", punctuation:"’" },
+
+"shn": { name:"Shan", source:"UDHR", region:"seasia", speakers:"3300000", letter:"လၵပၼၽဝငသဢတမၸၾႁယၶၺထရ", mark:"\u{102D}\u{103A}\u{1088}\u{102F}\u{1062}\u{1087}\u{103D}\u{1086}\u{1030}\u{1038}\u{1035}\u{102E}\u{108A}\u{1085}\u{1083}\u{1089}\u{1031}\u{1082}\u{1084}\u{103C}", punctuation:"။၊" },
+
+"mcd": { name:"Sharanahua", source:"UDHR", region:"sam", speakers:"3100", letter:"úíóáÚÍÓÁ", mark:"\u{0301}", punctuation:"¿" },
+
+"shk": { name:"Shilluk", source:"UDHR", region:"afr", speakers:"175000", letter:"øáïöäëàóìíØÁÏÖÄËÀÓÌÍ", mark:"\u{0301}\u{0308}\u{0300}" },
+
+"shp": { name:"Shipibo-Conibo", source:"UDHR", region:"sam", speakers:"26000", letter:"íáóéñúÍÁÓÉÑÚ", mark:"\u{0301}\u{0303}", punctuation:"¿" },
+
+"cjs": { name:"Shor", source:"UDHR", region:"nasia", speakers:"2800", letter:"кижнтолағыңудерцязчқшйъӱгьсмбюпӧэвфхКИЖНТОЛАҒЫҢУДЕРЦЯЗЧҚШЙЪӰГЬСМБЮПӦЭВФХ", mark:"\u{0306}\u{0308}" },
+
+"jiv": { name:"Shuar", source:"UDHR", region:"sam", speakers:"35000", letter:"áíúéÁÍÚÉ", mark:"\u{0301}" },
+
+"snn": { name:"Siona", source:"UDHR", region:"sam", speakers:"500", letter:"ëñíäéËÑÍÄÉ", mark:"\u{0331}\u{0308}\u{0303}\u{0301}" },
+
+"snk": { name:"Soninke", source:"UDHR", region:"afr", speakers:"2100000", letter:"ñÑŋŊ", mark:"\u{0303}" },
+
+"hsb": { name:"Upper Sorbian", source:"CLDR,UDHR", region:"eur", speakers:"13000", letter:"čćźěłńřšžČĆŹĚŁŃŘŠŽóÓ", mark:"\u{030C}\u{0301}", punctuation:"«»§‐–—…‘’‚“„" },
+
+"nso": { name:"Northern Sotho", source:"UDHR", region:"afr", speakers:"4700000", letter:"šŠ", mark:"\u{030C}" },
+
+"st": { name:"Southern Sotho", source:"UDHR", region:"afr", speakers:"5600000" },
+
+"suk": { name:"Sukuma", source:"UDHR", region:"afr", speakers:"5400000" },
+
+"su": { name:"Sundanese", source:"UDHR", region:"seasia", speakers:"42000000" },
+
+"sus": { name:"Susu", source:"UDHR", region:"afr", speakers:"1060000", letter:"ƐƆƝɛɔɲ" },
+
+"ss": { name:"Swati", source:"UDHR", region:"afr", speakers:"2300000" },
+
+"cri": { name:"Sãotomense", source:"UDHR", region:"afr", speakers:"70000", letter:"çóêéáâôºíÇÓÊÉÁÂÔÍ", mark:"\u{0327}\u{0301}\u{0302}" },
 
 "xxx": { name:"name", source:"CLDR,UDHR", region:"Asia", speakers:"113000", letter:"", mark:"", punctuation:"", number:"", symbol:"" },
 }
