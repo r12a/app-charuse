@@ -108,7 +108,7 @@ var langs = {
 
 "tzm": { name:"Central Atlas Tamazight (Latin)", source:"CLDR,UDHR", region:"afr", speakers:"2500000", letter:"ɛɣḍḥṛṣṭẓỵḌḤṚṢṬẒỴƐƔâéçÂÉÇʷ", mark:"\u{0327}\u{0323}\u{0302}\u{0301}" },
 
-"zgh": { name:"Standard Morocan Tamazight (Tifinagh)", source:"UDHR", region:"afr", letter:"ⴰⵍⵖⵓⵎⴹⵏⵉⵣⵔⴼⴳⴷⵊⴱⵜⵡⴽⵢⵙⵀⵛⵥⵇⵯⴻⵕⵟⵃⵅⵚ" },
+"zgh": { name:"Standard Moroccan Tamazight, Amazigh, Tamazight (Tifinagh)", source:"UDHR", region:"afr", letter:"ⴰⵍⵖⵓⵎⴹⵏⵉⵣⵔⴼⴳⴷⵊⴱⵜⵡⴽⵢⵙⵀⵛⵥⵇⵯⴻⵕⵟⵃⵅⵚ" },
 
 "ckb-arab": { name:"Central Kurdish (Arabic)", source:"CLDR", region:"wasia", speakers:"7000000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێئ" },
 
@@ -717,6 +717,82 @@ var langs = {
 "ss": { name:"Swati", source:"UDHR", region:"afr", speakers:"2300000" },
 
 "cri": { name:"Sãotomense", source:"UDHR", region:"afr", speakers:"70000", letter:"çóêéáâôºíÇÓÊÉÁÂÔÍ", mark:"\u{0327}\u{0301}\u{0302}" },
+
+"shi": { name:"Tachelhit", source:"CLDR", region:"afr", speakers:"4000000", letter:"ⴰⴱⴳⵯⴷⴹⴻⴼⴽⵀⵃⵄⵅⵇⵉⵊⵍⵎⵏⵓⵔⵕⵖⵙⵚⵛⵜⵟⵡⵢⵣⵥ" },
+
+"shi-latn": { name:"Tachelhit (Latin)", source:"CLDR", region:"afr", speakers:"4000000", letter:"ḍḥṛṣṭḌḤṚṢṬƐƔɛɣʷ", mark:"\u{0323}" },
+
+"dav": { name:"Taita", source:"CLDR", region:"afr", speakers:"400000" },
+
+"ta": { name:"Tamil", source:"CLDR,UDHR", region:"sasia", speakers:"70000000", letter:"அஆஇஈஉஊஎஏஐஒஓஔஃகஙசஞடணதநபமயரலவழளறனஜஷஸஹ", mark:"\u{0BBE}\u{0BBF}\u{0BC0}\u{0BC1}\u{0BC2}\u{0BC6}\u{0BC7}\u{0BC8}\u{0BCA}\u{0BCB}\u{0BCC}\u{0BCD}\u{0BD7}", punctuation:"§‐–—…‘’“”†‡′″" },
+
+"twq": { name:"Tasawaq", source:"CLDR", region:"afr", speakers:"8000", letter:"ɲẽẼŋšžŊŠŽƝãõÃÕ", mark:"\u{0303}\u{030C}" },
+
+"te": { name:"Telugu", source:"CLDR,UDHR", region:"sasia", speakers:"74002586", letter:"అఆఇఈఉఊఋౠఌౡఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరఱలవశషసహళ", mark:"\u{0C01}\u{0C02}\u{0C03}\u{0C3E}\u{0C3F}\u{0C40}\u{0C41}\u{0C42}\u{0C43}\u{0C44}\u{0C46}\u{0C47}\u{0C48}\u{0C4A}\u{0C4B}\u{0C4C}\u{0C4D}\u{0C55}\u{0C56}", punctuation:"‘’“”" },
+
+"teo": { name:"Teso", source:"CLDR", region:"afr", speakers:"1900000" },
+
+"th": { name:"Thai", source:"CLDR,UDHR", region:"seasia", speakers:"44000000", letter:"ฯๆกขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลฦวศษสหฬอฮะาๅำเแโใไ", mark:"\u{0E4E}\u{0E4C}\u{0E47}\u{0E48}\u{0E49}\u{0E4A}\u{0E4B}\u{0E4D}\u{0E31}\u{0E34}\u{0E35}\u{0E36}\u{0E37}\u{0E38}\u{0E39}\u{0E3A}", punctuation:"‐–—‘’“”…′″" },
+
+"bo": { name:"Tibetan", source:"CLDR,UDHR", region:"easia", speakers:"1200000", letter:"ཀཁགངཅཆཇཉཊཋཌཎཏཐདནཔཕབམཙཚཛཝཞཟའཡརཪལཤཥསཧཨ", mark:"\u{0F7E}\u{0F7F}\u{0FB5}\u{0F90}\u{0F91}\u{0FB7}\u{0F92}\u{0F94}\u{0F95}\u{0F96}\u{0F97}\u{0F99}\u{0F9A}\u{0F9B}\u{0F9C}\u{0F9E}\u{0F9F}\u{0FA0}\u{0FA1}\u{0FA3}\u{0FA4}\u{0FA5}\u{0FA6}\u{0FA8}\u{0FA9}\u{0FAA}\u{0FAB}\u{0FAD}\u{0FBA}\u{0FAE}\u{0FAF}\u{0FB0}\u{0FB1}\u{0FBB}\u{0FB2}\u{0FBC}\u{0FB3}\u{0FB4}\u{0FB6}\u{0FB8}\u{0F71}\u{0F72}\u{0F80}\u{0F74}\u{0F77}\u{0F79}\u{0F84}\u{0F7A}\u{0F7B}\u{0F7C}\u{0F7D}", punctuation:"་།༄༅༎༌༈", number:"༠༡༢༣༤༥༦༧༨༩" },
+
+"ti": { name:"Tigrinya", source:"CLDR,UDHR", region:"afr", speakers:"6900000", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍቐቑቒቓቔቕቖቘቚቛቜቝበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾዀዂዃዄዅወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ", mark:"\u{135F}", punctuation:"፣፡’" },
+
+"to": { name:"Tongan", source:"CLDR,UDHR", region:"oce", speakers:"169000", letter:"āēīōūĀĒĪŌŪáéíóúÁÉÍÓÚʻ", mark:"\u{0301}\u{0304}", punctuation:"§‐–—…‘’“”†‡′″" },
+
+"tr": { name:"Turkish", source:"CLDR,UDHR", region:"wasia", speakers:"71000000", letter:"çöüâÇÖÜÂğışĞŞİ", mark:"\u{0327}\u{0307}\u{0306}\u{0308}\u{0302}", punctuation:"̧̇̆̈̂§‐–—…‘’“”†‡′″" },
+
+"tk": { name:"Turkmen", source:"CLDR,UDHR", region:"casia", speakers:"7500000", letter:"çäöüýÇÄÖÜÝžňşŽŇŞ", mark:"\u{0327}\u{0308}\u{030C}\u{0301}", punctuation:"§–—…“”‐" },
+
+"tk-cyrl": { name:"Turkmen (Cyrillic)", source:"UDHR", region:"casia", speakers:"7500000", letter:"адмхуклрынңәиецясгшбптчвзэоҗйөүъюжфёАДМХУКЛРЫНҢӘИЕЦЯСГШБПТЧВЗЭОҖЙӨҮЪЮЖФЁ", mark:"\u{0306}\u{0308}", punctuation:"‐–" },
+
+"tl": { name:"Tagalog", source:"UDHR", region:"seasia", speakers:"28000000" },
+
+"ty": { name:"Tahitian", source:"UDHR", region:"oce", speakers:"68000", letter:"āūōēīĀŪŌĒĪ", mark:"\u{0304}" },
+
+"blt": { name:"Tai Dam", source:"UDHR", region:"seasia", speakers:"760000", letter:"ꪁꪫꪱꪣꪜꪹꪕꪉꪵꪠꪙꪒꪘꪀꪩꫛꪶꪔꪄꪮꪨꪭꪚꪺꪼꪥꪻꪐꪎꪈꪬꪊꪽꪝꪋꪤꪏꪡꪅꪑꪗꪢꫜꪖꪪꪯ", mark:"\u{AAB8}\u{AAB2}\u{AABE}\u{AAB4}\u{AAB7}\u{AAB0}\u{AAB3}" },
+
+"tg": { name:"Tajiki", source:"UDHR", region:"casia", speakers:"8400000", letter:"эъломияуҳқбашрпегфтднзкхсвӣёҷчғюӯйжьЭЪЛОМИЯУҲҚБАШРПЕГФТДНЗКХСВӢЁҶЧҒЮӮЙЖЬ", mark:"\u{0304}\u{0308}\u{0306}" },
+
+"tly": { name:"Talysh", source:"UDHR", region:"wasia", speakers:"900000", letter:"çÇƏığşİĞŞə", mark:"\u{0327}\u{0307}\u{0306}" },
+
+"tt": { name:"Tatar", source:"UDHR", region:"eur", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖ", mark:"\u{0306}" },
+
+"kdh": { name:"Tem, Temba, Kotokoli, Cotocoli", source:"UDHR", region:"afr", speakers:"290000", letter:"íáéúóÿÍÁÉÚÓƖƱƐƉƆńŋŃŸŊḿḾɩʊɛɖɔ", mark:"\u{0301}\u{0308}" },
+
+"tet": { name:"Tetum, Tetun", source:"UDHR", region:"seasia", speakers:"500000" },
+
+"tdt": { name:"Tetun Dili", source:"UDHR", region:"seasia", speakers:"?", letter:"áíúóÁÍÚÓ", mark:"\u{0301}", punctuation:"’" },
+
+"tem": { name:"Temne, Themne, Timne", source:"UDHR", region:"afr", speakers:"1200000", letter:"ɅƆƏƐŋŊʌɔəɛ", punctuation:"‐" },
+
+"tca": { name:"Ticuna, Tikuna", source:"UDHR", region:"sam", speakers:"47000", letter:"üéãñõúáíóÜÉÃÑÕÚÁÍÓĩũĨŨẽṯḏṉẼṮḎṈ", mark:"\u{0331}\u{0303}\u{0301}\u{0308}\u{035F}" },
+
+"tiv": { name:"Tiv", source:"UDHR", region:"afr", speakers:"2200000", letter:"ôÔ", mark:"\u{0302}" },
+
+"tob": { name:"Toba, Qom, Kom, Chaco Sur, Toba Sur", source:"UDHR", region:"sam", speakers:"40000", letter:"ỹỸíÍ", mark:"\u{0303}\u{0301}" },
+
+"toj": { name:"Tojolab'al", source:"UDHR", region:"cam", speakers:"52000", punctuation:"’" },
+
+"tpi": { name:"Tok Pisin, Pidgin English", source:"UDHR", region:"seasia", speakers:"4000000" },
+
+"toi": { name:"Tonga, Chitonga, Zambezi", source:"UDHR", region:"afr", speakers:"1500000" },
+
+"top": { name:"Papantla Totonac, Lowland Totonac", source:"UDHR", region:"cam", speakers:"80000" },
+
+"ts": { name:"Tsonga, Xitsonga", source:"UDHR", region:"afr", speakers:"13000000", letter:"ìàçãòèùíéáúÌÀÇÃÒÈÙÍÉÁÚ", mark:"\u{0327}\u{0300}\u{0303}\u{0301}", punctuation:"’" },
+
+"tn": { name:"Tswana, Setswana", source:"UDHR", region:"afr", speakers:"5000000", letter:"šŠ", mark:"\u{030C}", punctuation:"·‐" },
+
+"tyv": { name:"Tuvan, Tuvinian, Tyvan, Tuvin", source:"UDHR", region:"nasia", speakers:"280000", letter:"кижнңэргелбүтуазычдьсмяоюцхпшөйвъфёКИЖНҢЭРГЕЛБҮТУАЗЫЧДЬСМЯОЮЦХПШӨЙВЪФЁ", mark:"\u{0306}\u{0308}" },
+
+"tw-asante": { name:"Ashanti, Asante, Asante Twi", source:"UDHR", region:"afr", speakers:"2800000", letter:"ɛɔƐƆ" },
+
+"tw-akuapem": { name:"Akuapem Twi", source:"UDHR", region:"afr", speakers:"6000000", letter:"ɛɔƐƆòÒ", mark:"\u{0300}" },
+
+"tzh": { name:"Tzeltal, Ts'eltal", source:"UDHR", region:"cam", speakers:"450000", symbol:"´" },
+
+"tzo": { name:"Tzotzil", source:"UDHR", region:"cam", speakers:"400000", letter:"óáéíúÓÁÉÍÚ", mark:"\u{0301}", punctuation:"’" },
 
 "xxx": { name:"name", source:"CLDR,UDHR", region:"Asia", speakers:"113000", letter:"", mark:"", punctuation:"", number:"", symbol:"" },
 }
