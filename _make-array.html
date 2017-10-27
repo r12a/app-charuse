@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Latin char list generator</title>
+
+<!-- creates markup for a list of Latin characters -->
+
+<!--script type="text/javascript" src="../../../../uniview/u.js"></script-->
+<script type="text/javascript" src="langs.js"></script>
+<script type="text/javascript">
+
+
+cl = []
+totalLangs = 0
+totalChars = 0
+
+function makeList (list, lang) {
+	list = list.trim()
+	list = list.replace(/\s+/g,'')
+	var listarray = [...list]
+	//var out = 'var cl = []\n\n'
+	var out = ''
+	//console.log(listarray)
+    
+    
+	for (let i=0;i<listarray.length;i++) {
+        var dec = listarray[i].codePointAt(0)
+        console.log(dec, cl[dec])
+        if (cl[dec]) cl[dec].push(lang)
+        else {
+            cl[dec] = []
+            cl[dec].push(lang)
+            }
+        }
+	for (let i=0;i<cl.length;i++) {
+        if (cl[i]) {
+            out += 'cl[0x'+i.toString(16).toUpperCase()+']=['
+            //out += 'cl[0x'+String.fromCodePoint(i)+']=['
+            for (let x=0;x<cl[i].length;x++) out += '"'+cl[i][x]+'",'
+            out += ']\n'
+            }
+        }
+	return out
+	}
+
+
+function updateCL (list, lang) {
+	list = list.trim()
+	list = list.replace(/\s+/g,'')
+	var listarray = [...list]
+	//console.log(listarray)
+    
+	for (let i=0;i<listarray.length;i++) {
+        var dec = listarray[i].codePointAt(0)
+        //console.log(dec, cl[dec])
+        if (cl[dec]) cl[dec].push(lang)
+        else {
+            cl[dec] = []
+            cl[dec].push(lang)
+            }
+        }
+	}
+
+
+function dump () {
+    out = ''
+	for (let i=0;i<cl.length;i++) {
+        if (cl[i]) {
+            window.totalChars++
+            out += 'cl[0x'+i.toString(16).toUpperCase()+']=['
+            //out += 'cl[0x'+String.fromCodePoint(i)+']=['
+            for (let x=0;x<cl[i].length;x++) out += '"'+cl[i][x]+'",'
+            out += ']\n'
+            }
+        }
+	return 'var cl = []\n\n'+out
+    }
+
+
+function create () {
+    for (var lang in langs) {
+        list = ''
+        window.totalLangs++
+        if (langs[lang].letter) list += langs[lang].letter
+        if (langs[lang].mark) list += langs[lang].mark
+        if (langs[lang].number) list += langs[lang].number
+        if (langs[lang].punctuation) list += langs[lang].punctuation
+        if (langs[lang].symbol) list += langs[lang].symbol
+        if (langs[lang].separator) list += langs[lang].separator
+        if (langs[lang].other) list += langs[lang].other
+        console.log(list,lang)
+        if (list != '') updateCL(list,lang)+'\n'
+        }
+    console.log(cl)
+    var out = dump()
+    console.log('langs:',window.totalLangs,'chars:',window.totalChars)
+    return out
+    }
+	
+</script>
+<style>
+p, input, #character, #inputArea  { font-size: 200%; }
+</style>
+</head>
+
+<body>
+<p>Create arrays of languages which use a given character</p>
+
+<p><button type="submit" onClick="document.getElementById('output').value  = create(); document.getElementById('output').select(); return false;">Create lists!</button></p>
+
+<p>&nbsp;
+<textarea id="output" style="width: 90%; height: 600px;"></textarea></p>
+
+</body>
+</html>
