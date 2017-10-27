@@ -11,6 +11,15 @@
 <script type="text/javascript" src="langs.js"></script>
 <script>
 
+function makeBCPList () {
+	out = ''
+	array = []
+	for (l in langs) array.push(l)
+	array.sort()
+	for (let i=0;i<array.length;i++) out += '<option value="'+array[i]+'">'+array[i]+'</option>\n'
+	return out
+	}
+
 function makeLangList () {
 	out = ''
 	for (l in langs) out += '<option value="'+l+'">'+langs[l].name+'</option>\n'
@@ -116,7 +125,7 @@ function showLanguage (lang) {
 </script>
 </head>
 
-<body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeLangList()">
+<body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('langNames').innerHTML = makeLangList()">
 <header>
 <div id="header-boilerplate"></div>
 <script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('/shared/images/world.gif','Character usage lookup','');</script>
@@ -131,9 +140,13 @@ function showLanguage (lang) {
   <p style="color: red;">This is an early prototype and is still in development!</p>
 
 <section style="margin-top: 3em;">
-<p>List characters for the following language:<br/>
-<select id="languageSelector" onChange="document.getElementById('langDetails').innerHTML = showLanguage(this.value)"></p>
-</select>
+<p>List characters for the following language:
+<label>
+<select id="languageSelector" onChange="document.getElementById('langDetails').innerHTML = showLanguage(this.value)"></select></label><br/>
+<i style="font-size:80%;"><label>Look up tag: <input style="width:30em;" list="langNames" id="langNameInput"  onChange="document.getElementById('langDetails').innerHTML = showLanguage(this.value)"/></label></i>
+<datalist id="langNames"></datalist>
+</p>
+
 
 <table id="langDetails"></table>
 </section>
@@ -188,7 +201,7 @@ function showLanguage (lang) {
 </details>
 
 <div class="smallprint"><span id="version">First published  24 Jul 2013.  This version <span id="version-info"> 
-<!-- #BeginDate format:IS1m -->2017-10-25  10:49<!-- #EndDate --> 
+<!-- #BeginDate format:IS1m -->2017-10-27  7:28<!-- #EndDate --> 
   </span> GMT. &nbsp;&bull;&nbsp; Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a>.</span></div>
 </body>
 </html>
