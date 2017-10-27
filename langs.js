@@ -208,7 +208,7 @@ var langs = {
 
 "et": { name:"Estonian", source:"CLDR,UDHR", region:"eur", speakers:"1100000", letter:"õäöüÕÄÖÜšžŠŽ", mark:"\u{030C}\u{0303}\u{0308}" },
 
-"ee": { name:"Ewe", source:"CLDR", region:"afr", speakers:"20000000", letter:"áàãéèíìóòõúùÁÀÃÉÈÍÌÓÒÕÚÙƒƉƐƑƔƆƲĩŋũĨŊŨẽẼɖɛɣɔʋ", mark:"\u{0301}\u{0300}\u{0303}", punctuation:"§‐–—…‘’“”†‡′″" },
+"ee": { name:"Ewe", source:"CLDR,UDHR", region:"afr", speakers:"20000000", letter:"áàãéèíìóòõúùÁÀÃÉÈÍÌÓÒÕÚÙƒƉƐƑƔƆƲĩŋũĨŊŨẽẼɖɛɣɔʋ", mark:"\u{0301}\u{0300}\u{0303}", punctuation:"§‐–—…‘’“”†‡′″" },
 
 "ewo": { name:"Ewondo", source:"CLDR", region:"afr", speakers:"580000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǎǐǹǒǔǍƏƐǏǸǑƆǓěńŋĚŃŊəɛɔ", mark:"\u{0301}\u{0300}\u{0302}\u{030C}" },
 
@@ -240,7 +240,7 @@ var langs = {
 
 "fon": { name:"Fon", source:"UDHR", region:"afr", speakers:"2200000", letter:"óéòèáúàìùíÓÉÒÈÁÚÀÌÙÍǎǐǔƐƆƉǍǏǓěđĚĐɛɔɖ", mark:"\u{0301}\u{030C}\u{0300}" },
 
-"fy": { name:"West Frisian", source:"UDHR", region:"eur", speakers:"470000", letter:"ûâêúôòëïÛÂÊÚÔÒËÏ", mark:"\u{0302}\u{0301}\u{0300}\u{0308}" },
+"fy": { name:"West Frisian", source:"CLDR,UDHR", region:"eur", speakers:"470000", letter:"ûâêúôòëïáàäéèíóöüýÛÂÊÚÔÒËÏÁÀÄÉÈÍÓÖÜÝ", mark:"\u{0302}\u{0301}\u{0300}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
 
 "gl": { name:"Galician", source:"CLDR,UDHR", region:"eur", speakers:"2400000", letter:"áéíñóúüªÁÉÍÑÓÚÜ", mark:"\u{0301}\u{0303}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
 
@@ -825,6 +825,56 @@ var langs = {
 "ven": { name:"Venetian, Venetan", source:"UDHR", region:"eur", speakers:"3900000", letter:"óàòèùéìçÓÀÒÈÙÉÌÇƚȽđĐ", mark:"\u{0327}\u{0301}\u{0300}", punctuation:"’—" },
 
 "vep": { name:"Veps, Vepsian", source:"UDHR", region:"eur", speakers:"5900", letter:"üäöÜÄÖšžčŠŽČ", mark:"\u{0308}\u{030C}", punctuation:"’" },
+
+"wae": { name:"Walser German, Walliser German", source:"CLDR", region:"eur", speakers:"22000", letter:"áäãéíóöõúüÁÄÃÉÍÓÖÕÚÜčšũČŠŨ", mark:"\u{0301}\u{0308}\u{0303}\u{030C}" },
+
+"cy": { name:"Welsh", source:"CLDR,UDHR", region:"eur", speakers:"700000", letter:"áàâäéèêëíìîïóòôöúùûüýÿÁÀÂÄÉÈÊËÍÌÎÏÓÒÔÖÚÙÛÜÝŵŷŴŶŸẃẁẅỳẂẀẄỲ", mark:"\u{0301}\u{0300}\u{0302}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
+
+"wwa": { name:"Waama (Yoabu)", source:"UDHR", region:"afr", speakers:"50000", letter:"ãìàùèÃÌÀÙÈǹƆƐǸũŋŨŊɔɛ", mark:"\u{0303}\u{0300}" },
+
+"wa": { name:"Walloon", source:"UDHR", region:"eur", speakers:"600000", letter:"éåèûîôâêçàÉÅÈÛÎÔÂÊÇÀ", mark:"\u{0327}\u{0301}\u{030A}\u{0300}\u{0302}" },
+
+"auc": { name:"Waorani (Huaorani, Sabela, Wao, Huao, Auishiri, Aushiri, Ssabela)", source:"UDHR", region:"sam", speakers:"1800", letter:"ñíéóÑÍÉÓ", mark:"\u{0303}\u{0301}" },
+
+"war": { name:"Waray", source:"UDHR", region:"seasia", speakers:"2600000" },
+
+"guc": { name:"Wayuu (Wayu, Wayúu, Guajiro, Wahiro)", source:"UDHR", region:"sam", speakers:"437780", letter:"üñÜÑ", mark:"\u{0308}\u{0303}" },
+
+"wo": { name:"Wolof", source:"UDHR", region:"afr", speakers:"4200000", letter:"ëñàéóËÑÀÉÓ", mark:"\u{0308}\u{0303}\u{0300}\u{0301}" },
+
+"xh": { name:"Xhosa", source:"UDHR", region:"afr", speakers:"8200000" },
+
+"yav": { name:"Yangben (Central Yambasa)", source:"CLDR", region:"afr", speakers:"17000", letter:"áàâéèíìîóòôúùûÁÀÂÉÈÍÌÎÓÒÔÚÙÛǎǒǔǍƐǑƆǓāīŋōūĀĪŊŌŪɛɔ", mark:"\u{0301}\u{0300}\u{0302}\u{030C}\u{0304}" },
+
+"yi": { name:"Yiddish", source:"CLDR,UDHR", region:"eur", speakers:"1500000", letter:"אבגדזשהויחטײכךלמםנןסעפףצץקרתװױ", mark:"\u{05B7}\u{05B8}\u{05BF}\u{05BC}\u{05B4}\u{05C2}", punctuation:"׳״־‐–—", other:"\u{202E}\u{202C}" },
+
+"yo": { name:"Yoruba", source:"CLDR,UDHR", region:"afr", speakers:"28000000", letter:"áàéèíìóòúùÁÀÉÈÍÌÓÒÚÙńŃẹọṣẸỌṢ", mark:"\u{0329}\u{0323}\u{0301}\u{0300}\u{0304}", punctuation:"‐" },
+
+"yad": { name:"Yagua", source:"UDHR", region:"sam", speakers:"5700", letter:"ñíéáÑÍÉÁ", mark:"\u{0303}\u{0301}" },
+
+"ame": { name:"Yanesha' (Amuesha, Amoesha)", source:"UDHR", region:"sam", speakers:"9800", letter:"ñëóíãõáÑËÓÍÃÕÁẽẼʼ", mark:"\u{0303}\u{0308}\u{0301}" },
+
+"guu": { name:"Yanomamö", source:"UDHR", region:"sam", speakers:"20000", letter:"ëãáõíËÃÁÕÍĩũĨŨẽẼ", mark:"\u{0308}\u{0303}\u{0301}" },
+
+"yao": { name:"Yao", source:"UDHR", region:"afr", speakers:"3100000" },
+
+"yap": { name:"Yapese", source:"UDHR", region:"oce", speakers:"7400", letter:"ʼ", punctuation:"‐" },
+
+"ykg": { name:"Tundra Yukaghir (Northern Yukaghir)", source:"UDHR", region:"nasia", speakers:"370", letter:"эльистачйкөдҥнбпрумогецяҕхжѳқзвфыющЭЛЬИСТАЧЙКӨДҤНБПРУМОГЕЦЯҔХЖѲҚЗВФЫЮЩ", mark:"\u{0306}" },
+
+"dje": { name:"Zarma (Djerma, Dyabarma, Dyarma, Dyerma, Adzerma, Zabarma, Zarbarma, Zarma, Zarmaci, Zerma)", source:"UDHR", region:"afr", speakers:"24000000", letter:"ãõÃÕƝŋšžŊŠŽẽẼɲ", mark:"\u{0303}\u{030C}" },
+
+"zu": { name:"Zulu", source:"CLDR,UDHR", region:"afr", speakers:"12000000" },
+
+"ztu": { name:"Güilá Zapotec", source:"UDHR", region:"cam", speakers:"9500", letter:"ëíéËÍÉ", mark:"\u{0308}\u{0301}" },
+
+"zam": { name:"Miahuatlán Zapotec (Cuixtla Zapotec)", source:"UDHR", region:"cam", speakers:"1000", letter:"óáñíÓÁÑÍʼ", mark:"\u{0301}\u{0303}" },
+
+"za": { name:"Zhuang", source:"UDHR", region:"easia", speakers:"16000000" }, // i suspect this is missing some letters
+
+"zro": { name:"Záparo (Sápara, Zápara)", source:"UDHR", region:"sam", speakers:"350", letter:"ñÑ", mark:"\u{0303}" },
+
+"xxx": { name:"name", source:"CLDR,UDHR", region:"Asia", speakers:"113000", letter:"", mark:"", punctuation:"", number:"", symbol:"" },
 
 "xxx": { name:"name", source:"CLDR,UDHR", region:"Asia", speakers:"113000", letter:"", mark:"", punctuation:"", number:"", symbol:"" },
 }
