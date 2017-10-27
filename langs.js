@@ -794,6 +794,38 @@ var langs = {
 
 "tzo": { name:"Tzotzil", source:"UDHR", region:"cam", speakers:"400000", letter:"óáéíúÓÁÉÍÚ", mark:"\u{0301}", punctuation:"’" },
 
+"uk": { name:"Ukrainian", source:"CLDR,UDHR", region:"eur", speakers:"45000000", letter:"абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯʼ", mark:"\u{0308}\u{0306}", punctuation:"–’“„‐«»§", symbol:"№" },
+
+"ur": { name:"Urdu", source:"CLDR,UDHR", region:"sasia", speakers:"65000000", letter:"اأآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےةهي", mark:"\u{0650}\u{064B}\u{064F}\u{0670}\u{064E}\u{0651}\u{0654}\u{0653}", punctuation:"،؍٫٬؛؟۔”“", number:"۱۰۹۴۸۲۳۵۶۷", other:"؁" },
+
+"ug": { name:"Uyghur, Uighur", source:"CLDR,UDHR", region:"casia", speakers:"25000000", letter:"ئاەبپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىي", mark:"\u{0654}", punctuation:"،؛" },
+
+"ug-latn": { name:"Uyghur, Uighur (Latin)", source:"UDHR", region:"casia", speakers:"25000000", letter:"öéüÖÉÜ", mark:"\u{0308}\u{0301}", punctuation:"’" },
+
+"uz": { name:"Uzbek", source:"CLDR,UDHR", region:"casia", speakers:"27000000", letter:"ʻʼ", punctuation:"‐–—…‘’“”„′″«»§" },
+
+"uz-cyrl": { name:"Uzbek (Cyrillic)", source:"UDHR", region:"casia", speakers:"27000000", letter:"инсоҳуқлармждекцяйбшгтўвэъпчзёфхюғИНСОҲУҚЛАРМЖДЕКЦЯЙБШГТЎВЭЪПЧЗЁФХЮҒ", mark:"\u{0306}\u{0308}", punctuation:"‐–" },
+
+"umb": { name:"Umbundu, South Mbundu", source:"UDHR", region:"afr", speakers:"6000000", letter:"ñêãîõâÑÊÃÎÕÂ", mark:"\u{0303}\u{0302}", punctuation:"’" },
+
+"ura": { name:"Urarina, Itucali, Simacu or Shimacu", source:"UDHR", region:"sam", speakers:"6000", letter:"úóíÚÓÍ", mark:"\u{0301}" },
+
+"vai": { name:"Vai, Vy, Gallinas", source:"CLDR,UDHR", region:"afr", speakers:"120000", letter:"ꔀꔁꔂꔃꔄꔅꔆꔇꔈꔉꔊꔋꔌꔍꔎꔏꔐꔑꔒꔓꔔꔕꔖꔗꔘꔙꔚꔛꔜꔝꔞꔟꔠꔡꔢꔣꔤꔥꔦꔧꔨꔩꔪꔫꔬꔭꔮꔯꔰꔱꔲꔳꔴꔵꔶꔷꔸꔹꔺꔻꔼꔽꔾꔿꕀꕁꕂꕃꕄꕅꕆꕇꕈꕉꕊꕋꕌꕍꕎꕏꕐꕑꕒꕓꕔꕕꕖꕗꕘꘐꕙꕚꕛꕜꕝꕞꕟꕠꕡꕢꕣꕤꕥꕦꕧꕨꕩꕪꘑꕫꕬꕭꕮꘪꕯꕰꕱꕲꕳꕴꕵꕶꕷꕸꕹꕺꕻꕼꕽꕾꕿꖀꖁꖂꖃꖄꖅꖆꖇꘒꖈꖉꖊꖋꖌꖍꖎꖏꖐꖑꖒꖓꖔꖕꖖꖗꖘꖙꖚꖛꖜꖝꖞꖟꖠꖡꖢꖣꖤꖥꖦꖧꖨꖩꖪꖫꖬꖭꖮꖯꖰꖱꖲꖳꖴꖵꖶꖷꖸꖹꖺꖻꖼꖽꖾꖿꗀꗁꗂꗃꗄꗅꗆꗇꗈꗉꗊꗋꗌꗍꗎꗏꗐꗑꘫꗒꗓꗔꗕꗖꗗꗘꗙꗚꗛꗜꗝꗞꗟꗠꗡꗢꗣꗤꗥꗦꗧꗨꗩꗪꗫꗬꗭꗮꗯꗰꗱꗲꗳꗴꗵꗶꗷꗸꗹꗺꗻꗼꗽꗾꗿꘀꘁꘂꘃꘄꘅꘆꘇꘈꘉꘊꘋꘌ" },
+
+"vai-latn": { name:"Vai, Vy, Gallinas (Latin)", source:"CLDR", region:"afr", speakers:"120000", letter:"áãéíóõúÁÃÉÍÓÕÚƁƊƐƆĩŋũĨŊŨẽẼɓɗɛɔ", mark:"\u{0301}\u{0303}" },
+
+"vi": { name:"Vietnamese", source:"CLDR,UDHR", region:"seasia", speakers:"75000000", letter:"àãáâèéêìíòõóôùúýÀÃÁÂÈÉÊÌÍÒÕÓÔÙÚÝơưƠƯăđĩũĂĐĨŨảạằẳẵắặầẩẫấậẻẽẹềểễếệỉịỏọồổỗốộờởỡớợủụừửữứựỳỷỹỵẢẠẰẲẴẮẶẦẨẪẤẬẺẼẸỀỂỄẾỆỈỊỎỌỒỔỖỐỘỜỞỠỚỢỦỤỪỬỮỨỰỲỶỸỴ", mark:"\u{031B}\u{0323}\u{0300}\u{0309}\u{0303}\u{0301}\u{0306}\u{0302}", punctuation:"§‐–—…‘’“”†‡′″" },
+
+"vo": { name:"Volapük", source:"CLDR", region:"eur", speakers:"20", letter:"äöüÄÖÜ", mark:"\u{0308}", punctuation:"«»§‐–—…‘’“”" },
+
+"vun": { name:"Wuunjo, Wunjo, Vunjo, Kivunjo", source:"CLDR", region:"afr", speakers:"?" },
+
+"ve": { name:"Venda, Tshivenḓa, Luvenḓa", source:"UDHR", region:"afr", speakers:"1300000", letter:"ṱḽḓṅṋṰḼḒṄṊ", mark:"\u{032D}\u{0307}", punctuation:"“”" },
+
+"ven": { name:"Venetian, Venetan", source:"UDHR", region:"eur", speakers:"3900000", letter:"óàòèùéìçÓÀÒÈÙÉÌÇƚȽđĐ", mark:"\u{0327}\u{0301}\u{0300}", punctuation:"’—" },
+
+"vep": { name:"Veps, Vepsian", source:"UDHR", region:"eur", speakers:"5900", letter:"üäöÜÄÖšžčŠŽČ", mark:"\u{0308}\u{030C}", punctuation:"’" },
+
 "xxx": { name:"name", source:"CLDR,UDHR", region:"Asia", speakers:"113000", letter:"", mark:"", punctuation:"", number:"", symbol:"" },
 }
 
