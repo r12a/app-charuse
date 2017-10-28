@@ -94,6 +94,8 @@ var langs = {
 
 "br": { name:"Breton", source:"CLDR,UDHR", region:"eur", speakers:"226000", letter:"êñùÊÑÙʼ", mark:"\u{0302}\u{0303}\u{0300}", punctuation:"’–" },
 
+"bug": { name:"Buginese", source:"r12a", region:"seasia", speakers:"5000000", letter:"ᨀᨁᨂᨄᨅᨆᨈᨉᨊᨌᨍᨎᨐᨑᨒᨓᨔᨖᨃᨏᨋᨇᨕ", mark:"\u{1A17}\u{1A18}\u{1A19}\u{1A1A}\u{1A1B}", punctuation:"᨞᨟" },
+
 "bug-latn": { name:"Buginese (Latin)", source:"UDHR", region:"seasia", speakers:"5000000" },
 
 "bg": { name:"Bulgarian", source:"CLDR,UDHR", region:"eur", speakers:"9000000", letter:"абвгдежзийклмнопрстуфхцчшщъьюяАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯ", mark:"\u{0306}", punctuation:"̆‐–—…‘‚“„″§", symbol:"№" },
@@ -317,6 +319,8 @@ var langs = {
 "dyo": { name:"Jola-Fonyi", source:"UDHR", region:"afr", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"\u{0301}\u{0303}\u{0300}", punctuation:"“”", symbol:"°" },
 
 "jv": { name:"Javanese", source:"UDHR", region:"seasia", speakers:"94000000" },
+
+"jv-java": { name:"Javanese (Javanese)", source:"r12a", region:"seasia", speakers:"94000000", letter:"ꦏꦑꦒꦓꦔꦕꦖꦗꦛꦚꦘꦠꦡꦢꦝꦤꦟꦥꦦꦧꦨꦩꦪꦭꦫꦱꦯꦮꦲꦰꦣꦞꦙꦜꦉꦊꦄꦆꦈꦌꦎꧏ", mark:"\u{A9BD}\u{A9BE}\u{A9BF}\u{A980}\u{A981}\u{A982}\u{A983}\u{A9B3}\u{A9B6}\u{A9B8}\u{A9BA}\u{A9BC}\u{A9B4}", punctuation:"꧊꧋꧌꧍꧈꧉꧇꧁꧂꧅꧄꧃꧆" },
 
 "dyu": { name:"Dyula (Jula, Dioula)", source:"UDHR", region:"afr", speakers:"2500000", letter:"úàìóáòùèíéÚÀÌÓÁÒÙÈÍÉƐƆƝŋŊɛɔɲ", mark:"\u{0301}\u{0300}", punctuation:"’‘" },
 
