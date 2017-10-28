@@ -153,9 +153,13 @@ function showLanguage (lang) {
 		case 'carib': region = 'Caribbean';break
 		}
 	out += '<tr><th>Region</th><td>'+region+'</td></tr>'
-	var speakers = langs[lang].speakers.replace(/~/,'')
-	speakers = speakers.replace(/\?/,'0')
-	out += '<tr><th>Speakers</th><td>'+parseInt(speakers).toLocaleString('en')+'</td></tr>'
+	if (langs[lang].speakers === '?') var speakers = 'Not known'
+	else { 
+		speakers = langs[lang].speakers.replace(/~/,'')
+		speakers = parseInt(speakers).toLocaleString('en')
+		}
+	//speakers = speakers.replace(/\?/,'0')
+	out += '<tr><th>Speakers</th><td>'+speakers+'</td></tr>'
 	return out
 	}
 </script>
@@ -260,7 +264,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 </details>
 
 <div class="smallprint"><span id="version">First published  24 Jul 2013.  This version <span id="version-info"> 
-<!-- #BeginDate format:IS1m -->2017-10-28  13:28<!-- #EndDate --> 
+<!-- #BeginDate format:IS1m -->2017-10-28  13:55<!-- #EndDate --> 
 </span> GMT. &nbsp;&bull;&nbsp; Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a>.</span></div>
 </body>
 </html>

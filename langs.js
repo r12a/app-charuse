@@ -108,7 +108,7 @@ var langs = {
 
 "tzm": { name:"Central Atlas Tamazight (Central Morocco Tamazight, Middle Atlas Tamazight, Central Shilha, Beraber, Braber) (Latin)", source:"CLDR,UDHR", region:"afr", speakers:"2500000", letter:"ɛɣḍḥṛṣṭẓỵḌḤṚṢṬẒỴƐƔâéçÂÉÇʷ", mark:"\u{0327}\u{0323}\u{0302}\u{0301}" },
 
-"zgh": { name:"Standard Moroccan Tamazight, Amazigh, Tamazight (Tifinagh)", source:"UDHR", region:"afr", letter:"ⴰⵍⵖⵓⵎⴹⵏⵉⵣⵔⴼⴳⴷⵊⴱⵜⵡⴽⵢⵙⵀⵛⵥⵇⵯⴻⵕⵟⵃⵅⵚ" },
+"zgh": { name:"Standard Moroccan Tamazight, Amazigh, Tamazight (Tifinagh)", source:"UDHR", speakers:"?", region:"afr", letter:"ⴰⵍⵖⵓⵎⴹⵏⵉⵣⵔⴼⴳⴷⵊⴱⵜⵡⴽⵢⵙⵀⵛⵥⵇⵯⴻⵕⵟⵃⵅⵚ" },
 
 "ckb-arab": { name:"Central Kurdish (Sorani) (Arabic)", source:"CLDR", region:"wasia", speakers:"7000000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێئ" },
 
