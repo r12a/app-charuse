@@ -49,7 +49,8 @@ function findChars (str) {
 					speakerNum = langs[languages[l]].speakers.replace(/~/,'')
 					population += parseInt(speakerNum)
 					}
-				out += languageNames+' ('+languages.length+' languages)</td>'
+				//out += languageNames+' ('+languages.length+' languages)</td>'
+				out += languages.length+' languages: '+languageNames+'</td>'
 				out += '<td>'+population.toLocaleString('en')+'</td>'
 				}
 			else out += '<td>Unknown</td><td>-</td>'
