@@ -30,7 +30,8 @@ function makeLangList () {
 
 
 function findChars (str) {
-	str.replace(/[\s]+/g,'')
+	//str.replace(/[\s]+/g,'')
+	str = convertEscapes(str)
 	var chars = [...str]
 	var out = ''
 	for (i=0;i<chars.length;i++){
@@ -162,6 +163,33 @@ function showLanguage (lang) {
 	out += '<tr><th>Speakers</th><td>'+speakers+'</td></tr>'
 	return out
 	}
+
+
+function convertEscapes ( str ) { 
+	// converts a string containing hex escapes of various kinds to a string of characters
+	// and strips white space
+	// str: string, the input and output
+	
+	// replace the escape syntax chars with spaces
+	str = str.replace(/0x/g, ' ')
+	str = str.replace(/[&#x;\\{}Uu+]/g, ' ')
+	
+	// first convert the 6 digit escapes to characters
+	str = str.replace(/10([A-Fa-f0-9]{4})/g, 
+					function(matchstr, parens) {
+						return String.fromCodePoint(parseInt('10'+parens,16));
+						}
+						); 
+	
+	// next convert up to 5 digit escapes to characters
+	str = str.replace(/([A-Fa-f0-9]{1,5})/g, 
+					function(matchstr, parens) {
+						return String.fromCodePoint(parseInt(parens,16));
+						}
+						); 
+	return str.replace(/\s/g,'');
+	}
+
 </script>
 </head>
 
@@ -237,6 +265,7 @@ function showLanguage (lang) {
   <li>Mouse over the characters displayed to see their Unicode code point value and name. The <samp>U</samp> icon will show all characters in that cell in UniView. This can be useful if you don't have fonts for that script, since UniView uses images by default.</li>
   <li> The control <samp>Use language name</samp> works as follows: Type in a name, or part of a name, of a language. Select the language you want from the suggestions offered. This will put the BCP47 code into the control. Hit return and you'll display information for that language.<br>
 Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need to find a BCP47 code for a language, go to <a href="https://r12a.github.io/app-subtags/">https://r12a.github.io/app-subtags/</a>.</li>
+  <li>When adding characters you want to look up to the input field, you can add Unicode code point numbers with space to either side, or escapes. For example, for આ any of the following escapes will work: <code>&amp;#x0A86; \u0A86 \u{A86} \0A86 U+0A86 0xA86</code>. No extra space is needed between escapes, and supplementary characters work too.</li>
 </ul>
 </section>
 
@@ -252,19 +281,16 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 <section>
 <h3>To do:</h3>
   <ul>
-  <li>Allow escapes and code point numbers to be used for input of characters</li>
 <li>Add a graphic to show the number of speakers using a rectangle that grows with population.</li>
   <li>Show character names in HTML rather than tooltips when doing mouseover?</li>
-<li>Show escapes for 'other' characters, eg. ZWSP</li>
 <li>Allow passing parameters for language or character</li>
-  <li>lots more...</li>
   </ul>
 </section>
 
 </details>
 
 <div class="smallprint"><span id="version">First published  24 Jul 2013.  This version <span id="version-info"> 
-<!-- #BeginDate format:IS1m -->2017-10-28  13:55<!-- #EndDate --> 
+<!-- #BeginDate format:IS1m -->2017-10-28  17:18<!-- #EndDate --> 
 </span> GMT. &nbsp;&bull;&nbsp; Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a>.</span></div>
 </body>
 </html>
