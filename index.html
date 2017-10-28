@@ -17,7 +17,6 @@ function makeBCPList () {
 	for (l in langs) array.push(l)
 	array.sort()
 	for (let i=0;i<array.length;i++) out += '<option value="'+array[i]+'">'+array[i]+'</option>\n'
-	console.log(langs.length)
 	document.getElementById('totalLanguages').textContent = array.length
 	return out
 	}
@@ -43,7 +42,7 @@ function findChars (str) {
 				var languageNames = ''
 				var population = 0
 				for (let l=0;l<languages.length;l++) {
-					languageNames += langs[languages[l]].name
+					languageNames += langs[languages[l]].name.replace(/\([^\)]+\)/g,'')
 					if (l<languages.length-1) languageNames += ', '
 					speakerNum = langs[languages[l]].speakers.replace(/~/,'')
 					population += parseInt(speakerNum)
@@ -63,7 +62,7 @@ function showLanguage (lang) {
 	out = ''
 	var charList
 	// "agq": { name:"Aghem", source:"CLDR", region:"afr", speakers:"27000", letter:"Ã Ã¢Ã¨ÃªÃ¬Ã®Ã²Ã´Ã¹Ã»Ã€Ã‚ÃˆÃŠÃŒÃŽÃ’Ã”Ã™Ã›ÇŽÇÇ’Ç”ÇÆÇÆ—Ç‘Æ†Ç“É„ÄÄ›Ä“Ä«Å‹ÅÅ«Ä€ÄšÄ’ÄªÅŠÅŒÅªÉ›É¨É”Ê‰Ê”", mark:"\u{0300}\u{0302}\u{030C}\u{0304}" },
-	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+' ('+lang+') <a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" style="float:right;" /></a></td></tr>'
+	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+' ['+lang+'] <a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" style="float:right;" /></a></td></tr>'
 	if (langs[lang].letter) {
 		charList = [...langs[lang].letter]
 		charList.sort()
@@ -231,7 +230,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 </details>
 
 <div class="smallprint"><span id="version">First published  24 Jul 2013.  This version <span id="version-info"> 
-<!-- #BeginDate format:IS1m -->2017-10-27  12:39<!-- #EndDate --> 
+<!-- #BeginDate format:IS1m -->2017-10-28  6:21<!-- #EndDate --> 
 </span> GMT. &nbsp;&bull;&nbsp; Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a>.</span></div>
 </body>
 </html>
