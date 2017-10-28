@@ -796,7 +796,7 @@ var langs = {
 
 "uk": { name:"Ukrainian", source:"CLDR,UDHR", region:"eur", speakers:"45000000", letter:"абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯʼ", mark:"\u{0308}\u{0306}", punctuation:"–’“„‐«»§", symbol:"№" },
 
-"ur": { name:"Urdu", source:"CLDR,UDHR", region:"sasia", speakers:"65000000", letter:"اأآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےةهي", mark:"\u{0650}\u{064B}\u{064F}\u{0670}\u{064E}\u{0651}\u{0654}\u{0653}", punctuation:"،؍٫٬؛؟۔”“", number:"۱۰۹۴۸۲۳۵۶۷", other:"؁" },
+"ur": { name:"Urdu", source:"CLDR,UDHR", region:"sasia", speakers:"65000000", letter:"اأآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےةهي", mark:"\u{0650}\u{064B}\u{064F}\u{0670}\u{064E}\u{0651}\u{0654}\u{0653}", punctuation:"،؍٫٬؛؟۔”“؁", number:"۱۰۹۴۸۲۳۵۶۷" },
 
 "ug": { name:"Uyghur (Uighur, Eastern Turki)", source:"CLDR,UDHR", region:"casia", speakers:"25000000", letter:"ئاەبپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىي", mark:"\u{0654}", punctuation:"،؛" },
 

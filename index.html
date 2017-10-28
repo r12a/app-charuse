@@ -30,7 +30,7 @@ function makeLangList () {
 
 
 function findChars (str) {
-	str.replace(/\s/g,'')
+	str.replace(/[\s]+/g,'')
 	var chars = [...str]
 	var out = ''
 	for (i=0;i<chars.length;i++){
@@ -43,7 +43,7 @@ function findChars (str) {
 				var languageNames = ''
 				var population = 0
 				for (let l=0;l<languages.length;l++) {
-					languageNames += langs[languages[l]].name.replace(/\([^\)]+\)/g,'')
+					languageNames += langs[languages[l]].name.replace(/ \([^\)]+\)/g,'')
 					if (l<languages.length-1) languageNames += ', '
 					speakerNum = langs[languages[l]].speakers.replace(/~/,'')
 					population += parseInt(speakerNum)
@@ -122,8 +122,14 @@ function showLanguage (lang) {
 		}
 	if (langs[lang].other) {
 		charList = [...langs[lang].other]
-		out += '<tr><th>Other</th><td class="large">'
-		out += langs[lang].other
+		out += '<tr><th>Other</th><td>'
+		//out += langs[lang].other
+		for (j=0;j<charList.length;j++)  { 
+			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+			while (cp.length<4) cp = cp+'0'
+			name = 'U+'+cp+' '+charData[charList[j]]
+			out += '<span title="'+name+'">U+'+cp+'</span> ' 
+			}
 		//for (j=0;j<charList.length;j++) out += charList[j].codepointAt(0)+' '
 		out += '<a href="/uniview?charlist='+langs[lang].other+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
@@ -166,9 +172,6 @@ function showLanguage (lang) {
   <p style="font-size: 90%;">Find characters used by a particular language, or languages that use a given non-ASCII character.</p>
 </section>
 </aside>
-
-  <p style="color: red;">This is an early prototype and is still in development!</p>
-
 <section style="margin-top: 3em;">
 <p><strong>List characters for the following language:</strong>
 <label>
@@ -257,7 +260,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 </details>
 
 <div class="smallprint"><span id="version">First published  24 Jul 2013.  This version <span id="version-info"> 
-<!-- #BeginDate format:IS1m -->2017-10-28  12:54<!-- #EndDate --> 
+<!-- #BeginDate format:IS1m -->2017-10-28  13:28<!-- #EndDate --> 
 </span> GMT. &nbsp;&bull;&nbsp; Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a>.</span></div>
 </body>
 </html>
