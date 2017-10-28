@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css"href="/shared/style/docs.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="/shared/code/boilerplate.js"></script>
+<script type="text/javascript" src="/shared/code/all-names.js"></script>
 <script type="text/javascript" src="char_lang.js"></script>
 <script type="text/javascript" src="langs.js"></script>
 <script>
@@ -67,31 +68,56 @@ function showLanguage (lang) {
 		charList = [...langs[lang].letter]
 		charList.sort()
 		out += '<tr><th>Letters</th><td class="large">'
-		for (j=0;j<charList.length;j++) out += charList[j]+' '
+		for (j=0;j<charList.length;j++) { 
+			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+			while (cp.length<4) cp = cp+'0'
+			name = 'U+'+cp+' '+charData[charList[j]]
+			out += '<span title="'+name+'">'+charList[j]+'</span> ' 
+			}
 		out += '<a href="/uniview?charlist='+langs[lang].letter+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].mark) {
 		charList = [...langs[lang].mark]
 		out += '<tr><th>Marks</th><td class="large">'
-		for (j=0;j<charList.length;j++) out += '\u00A0'+charList[j]+' '
+		for (j=0;j<charList.length;j++) { 
+			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+			while (cp.length<4) cp = cp+'0'
+			name = 'U+'+cp+' '+charData[charList[j]]
+			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
+			}
 		out += '<a href="/uniview?charlist='+langs[lang].mark+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].punctuation) {
 		charList = [...langs[lang].punctuation]
 		out += '<tr><th>Punctuation</th><td class="large">'
-		for (j=0;j<charList.length;j++) out += charList[j]+' '
+		for (j=0;j<charList.length;j++)  { 
+			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+			while (cp.length<4) cp = cp+'0'
+			name = 'U+'+cp+' '+charData[charList[j]]
+			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
+			}
 		out += '<a href="/uniview?charlist='+langs[lang].punctuation+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].number) {
 		charList = [...langs[lang].number]
 		out += '<tr><th>Numbers</th><td class="large">'
-		for (j=0;j<charList.length;j++) out += charList[j]+' '
+		for (j=0;j<charList.length;j++)  { 
+			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+			while (cp.length<4) cp = cp+'0'
+			name = 'U+'+cp+' '+charData[charList[j]]
+			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
+			}
 		out += '<a href="/uniview?charlist='+langs[lang].number+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].symbol) {
 		charList = [...langs[lang].symbol]
 		out += '<tr><th>Symbols</th><td class="large">'
-		for (j=0;j<charList.length;j++) out += charList[j]+' '
+		for (j=0;j<charList.length;j++)  { 
+			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+			while (cp.length<4) cp = cp+'0'
+			name = 'U+'+cp+' '+charData[charList[j]]
+			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
+			}
 		out += '<a href="/uniview?charlist='+langs[lang].symbol+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].other) {
@@ -121,7 +147,9 @@ function showLanguage (lang) {
 		case 'carib': region = 'Caribbean';break
 		}
 	out += '<tr><th>Region</th><td>'+region+'</td></tr>'
-	out += '<tr><th>Speakers</th><td>'+parseInt(langs[lang].speakers).toLocaleString('en')+'</td></tr>'
+	var speakers = langs[lang].speakers.replace(/~/,'')
+	speakers = speakers.replace(/\?/,'0')
+	out += '<tr><th>Speakers</th><td>'+parseInt(speakers).toLocaleString('en')+'</td></tr>'
 	return out
 	}
 </script>
@@ -199,6 +227,7 @@ function showLanguage (lang) {
 <section>
   <h3>Tips:</h3>
   <ul>
+  <li>Mouse over the characters displayed to see their Unicode code point value and name. The <samp>U</samp> icon will show all characters in that cell in UniView. This can be useful if you don't have fonts for that script, since UniView uses images by default.</li>
   <li> The control <samp>Use language name</samp> works as follows: Type in a name, or part of a name, of a language. Select the language you want from the suggestions offered. This will put the BCP47 code into the control. Hit return and you'll display information for that language.<br>
 Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need to find a BCP47 code for a language, go to <a href="https://r12a.github.io/app-subtags/">https://r12a.github.io/app-subtags/</a>.</li>
 </ul>
@@ -230,7 +259,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 </details>
 
 <div class="smallprint"><span id="version">First published  24 Jul 2013.  This version <span id="version-info"> 
-<!-- #BeginDate format:IS1m -->2017-10-28  6:21<!-- #EndDate --> 
+<!-- #BeginDate format:IS1m -->2017-10-28  7:49<!-- #EndDate --> 
 </span> GMT. &nbsp;&bull;&nbsp; Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a>.</span></div>
 </body>
 </html>
