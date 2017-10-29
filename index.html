@@ -44,7 +44,8 @@ function findChars (str) {
 				var languageNames = ''
 				var population = 0
 				for (let l=0;l<languages.length;l++) {
-					languageNames += langs[languages[l]].name.replace(/ \([^\)]+\)/g,'')
+					//languageNames += langs[languages[l]].name.replace(/ \([^\)]+\)/g,'')
+					languageNames += '<span onclick="document.getElementById(\'langDetails\').innerHTML = showLanguage(\''+languages[l]+'\')">'+langs[languages[l]].name.replace(/ \([^\)]+\)/g,'')+'</span>'
 					if (l<languages.length-1) languageNames += ', '
 					speakerNum = langs[languages[l]].speakers.replace(/~/,'')
 					speakerNum = speakerNum.replace(/\?/,'0')
