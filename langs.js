@@ -534,6 +534,8 @@ var langs = {
 
 "se": { name:"Northern Sami", source:"CLDR,UDHR", region:"eur", speakers:"25000", letter:"áÁčđŋšŧžČĐŊŠŦŽ", mark:"\u{0301}\u{030C}" },
 
+"no": { name:"Norwegian", source:"r12a", region:"eur", speakers:"5000000", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}", punctuation:"«»§–" },
+
 "nb": { name:"Norwegian Bokmål", source:"CLDR,UDHR", region:"eur", speakers:"0", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}", punctuation:"«»§–" },
 
 "nn": { name:"Norwegian Nynorsk", source:"CLDR,UDHR", region:"eur", speakers:"0", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}" },
