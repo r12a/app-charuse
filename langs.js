@@ -618,7 +618,7 @@ var langs = {
 
 "fuf-adlm": { name:"Pular (Adlam)", source:"UDHR", region:"afr", speakers:"3000000", letter:"𞤩𞤢𞤲𞤺𞤭𞤣𞤫𞤸𞤤𞤴𞤳𞤮𞤪𞤶𞤯𞤼𞤵𞤱𞤬𞤥𞤧𞤨𞤻𞤦𞤷𞤰𞤾𞤇𞤀𞤐𞤘𞤋𞤁𞤉𞤖𞤂𞤒𞤑𞤌𞤈𞤔𞤍𞤚𞤓𞤏𞤊𞤃𞤅𞤆𞤙𞤄𞤕𞤎𞤜ŋŊƭƬ", mark:"\u{1E946}\u{1E945}\u{1E944}", punctuation:"،؛’⹁", number:"𞥒𞥓𞥔𞥕𞥖𞥗𞥘𞥙𞥑𞥐" },
 
-"tsz": { name:"Purépecha, Tarascan)", source:"UDHR", region:"cam", speakers:"125000", letter:"áïéíÁÏÉÍⱭƲŋŊɑʋ", mark:"\u{0301}\u{0308}" },
+"tsz": { name:"Purépecha (Tarascan)", source:"UDHR", region:"cam", speakers:"125000", letter:"áïéíÁÏÉÍⱭƲŋŊɑʋ", mark:"\u{0301}\u{0308}" },
 
 "pbb": { name:"Páez (Paez, Paes, Nasa Yuwe)", source:"UDHR", region:"sam", speakers:"40000", letter:"üëäïáÜËÄÏÁ", mark:"\u{0308}\u{0301}" },
 
