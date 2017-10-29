@@ -178,3 +178,7 @@ thead th { text-align: left; }
 	float: right;
 	vertical-align: bottom;
 	}
+
+#output span {
+	cursor: pointer;
+	}
