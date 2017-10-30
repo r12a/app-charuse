@@ -271,6 +271,7 @@ function convertEscapes ( str ) {
 Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need to find a BCP47 code for a language, go to <a href="https://r12a.github.io/app-subtags/">https://r12a.github.io/app-subtags/</a>.</li>
   <li>When adding characters you want to look up to the input field, you can add Unicode code point numbers with space to either side, or escapes. For example, for આ any of the following escapes will work: <code>&amp;#x0A86; \u0A86 \u{A86} \0A86 U+0A86 0xA86</code>. No extra space is needed between escapes, and supplementary characters work too.</li>
   <li>After you have generated a list of languages that use a given character, if you click on a language name then details for that language will be displayed above.</li>
+  <li>You can automatically display data via the URL. For example, try <a href="https://r12a.github.io/app-charuse/?language=vi&amp;charlist=đỹã">https://r12a.github.io/app-charuse/?language=vi&amp;charlist=đỹã</a>.
 </ul>
 </section>
 
@@ -299,10 +300,22 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->29-Oct-2017<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->30-Oct-2017<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
 </div>
+
+
+<script>
+// check for parameters and take appropriate action
+parameters = location.search.split('&');
+parameters[0] = parameters[0].substring(1);
+for (var p=0;p<parameters.length;p++) {  
+	pairs = parameters[p].split('=');
+	if (pairs[0] == 'charlist') { if (pairs[1]) { document.getElementById('characters').value = decodeURIComponent(pairs[1]); document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value); } }
+	if (pairs[0] == 'language') { if (pairs[1]) { document.getElementById('languageSelector').value = pairs[1]; document.getElementById('langDetails').innerHTML = showLanguage(pairs[1]); } }
+	}
+    </script>
 </body>
 </html>
