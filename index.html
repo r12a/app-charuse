@@ -231,25 +231,25 @@ function convertEscapes ( str ) {
  
      <p><button style="vertical-align:top;" onclick="document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)">Look up</button></p>
 <table style="margin-top: 3em;margin-right: 3em;">
-<thead><th></th><th>Languages</th><th>Native speakers</th></thead>
+<thead><th></th><th>Languages (out of <span id="totalLanguages"></span>)</th><th>Native speakers</th></thead>
 <tbody id="output"><td></td><td></td><td></td></tbody></table>
 </section>
 
 <details style="margin-top: 5em;">
-  <summary style="margin-left: 7.5%; cursor: pointer;"><strong>Notes:</strong></summary> 
+  <summary style="margin-left: 7.5%; cursor: pointer;"><strong>Notes</strong></summary> 
 
 <aside class="sidebar">
   <div class="section">
     <h2 class="flush">Related links</h2>
-    <p><a target="_blank" href="http://www.w3.org/TR/css-counter-styles-3/">CSS3 Counter Styles</a></p>
-    <p><a target="_blank" href="http://www.w3.org/TR/predefined-counter-styles/">Predefined Counter Styles</a></p>
+    <p><a target="_blank" href="https://www.unicode.org/cldr/charts/latest/summary/root.html">CLDR</a></p>
+    <p><a target="_blank" href="http://unicode.org/udhr/translations.html">UDHR</a></p>
   </div>
 </aside>
 
 <p id="status">Updated Fri 20 Feb 2015  &bull; tags <a href="http://rishida.net/blog/index.php?tag=counterstyles" title="Show all blog posts tagged with 'counterstyles'">counterstyles</a>, <a href="http://rishida.net/blog/?tag=scriptnotes" title="Show all blog posts tagged with 'scriptnotes'">scriptnotes</a>, <a href="http://rishida.net/blog/?tag=apps" title="Show all blog posts tagged with 'apps'">apps</a></p>
 
 <section>
-<p>This page allows you to track the correspondances between languages and Unicode characters. <span id="totalLanguages"></span> language+script pairs have been checked using CLDR and/or the Unicode site's UDHR transcripts. It isn't claimed that this list is exhaustively correct, so you should treat it as an approximation.  </p>
+<p>This page allows you to track the correspondences between languages and Unicode characters. The language+script pairs are derived from CLDR and/or the Unicode site's UDHR transcripts, although some characters are added on the basis of other sources. It isn't claimed that this list is exhaustively correct, so you should treat it as an approximation.  </p>
 </section>
 
 <section>
@@ -280,7 +280,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
   <ul>
   <li>CLDR: <a href="https://www.unicode.org/cldr/charts/latest/summary/root.html">https://www.unicode.org/cldr/charts/latest/summary/root.html</a></li>
   <li>UDHR: <a href="http://unicode.org/udhr/translations.html">http://unicode.org/udhr/translations.html</a></li>
-  <li>r12a: personal research.</li>
+  <li>r12a: mainly the articles under the heading "Script Notes" at <a href="https://r12a.github.io/doclist#nonlatin">https://r12a.github.io/doclist#nonlatin</a>.</li>
 </ul>
 </section>
 
@@ -289,7 +289,6 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
   <ul>
 <li>Add a graphic to show the number of speakers using a rectangle that grows with population.</li>
   <li>Show character names in HTML rather than tooltips when doing mouseover?</li>
-<li>Allow passing parameters for language or character</li>
 <li>Add symbols in the relevant block that are not included in the list? (Useful for checking the data.)</li>
 <li>Add CLDR auxiliary characters in a different colour?</li>
 <li>Have a section, initially hidden, that shows how many languages in the system per region, how many per block, etc.</li>
