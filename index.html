@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <title>Character usage</title>
-<meta name="description" content="Tool to ascertain whether a UTF8-encoded file on the web has a BOM at the beginning or not." />
-<link rel="stylesheet" type="text/css"href="/shared/style/docs.css" />
+<meta name="description" content="Characters used by any particular langauge, and languages which use any particular character." />
+<link rel="stylesheet" type="text/css" href="/shared/style/docs.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="/shared/code/boilerplate.js"></script>
 <script type="text/javascript" src="/shared/code/all-names.js"></script>
@@ -25,6 +25,114 @@ function makeBCPList () {
 function makeLangList () {
 	out = ''
 	for (l in langs) out += '<option value="'+l+'">'+langs[l].name+'</option>\n'
+	return out
+	}
+
+function listLangsByRegion () {
+    var regionList = { eur:[], wasia:[], casia:[], sasia:[], seasia:[], nasia:[], easia:[], afr:[], oce:[], carib:[], sam:[], cam:[], nam:[] }
+    for (l in langs) {
+        var language = Object.assign({bcp:l}, langs[l])
+        regionList[langs[l].region].push(language)
+        }
+	out = ''
+	for (r in regionList) {
+        switch (r) {
+            case 'afr': region = 'Africa';break
+            case 'oce': region = 'Oceania';break
+            case 'eur': region = 'Europe';break
+            case 'nam': region = 'Northern America';break
+            case 'cam': region = 'Central America';break
+            case 'sam': region = 'South America';break
+            case 'wasia': region = 'Western Asia';break
+            case 'casia': region = 'Central Asia';break
+            case 'nasia': region = 'Northern Asia';break
+            case 'sasia': region = 'South Asia';break
+            case 'seasia': region = 'South East Asia';break
+            case 'easia': region = 'East Asia';break
+            case 'carib': region = 'Caribbean';break
+            }
+        out += '<tr><th>'+region+'</th><td>'+regionList[r].length+' languages: '
+        for (let l=0;l<regionList[r].length;l++ ) {
+           out += '<span onclick="document.getElementById(\'langDetails\').innerHTML = showLanguage(\''+regionList[r][l].bcp+'\')">'+regionList[r][l].name.replace(/ \([^\)]+\)/g,'')+'</span>, '
+            }
+        out += '</td></tr>'
+        }
+	return out
+	}
+// regions:
+// nam (Northern America), sam (South America), cam (Central America), carib (Caribbean)
+// eur (Europe - includes Russia to Urals and Georgia, but not Armenia or Azerbaijan)
+// easia (East Asia - includes China, Mongolia, Japan, Korea)
+// nasia (Northern Asia - Russia east of Urals)
+// seasia (Southeast Asia - including Indonesia, Philippines
+// casia (Central Asia - north of Iran, S of Russia, W of China)
+// wasia (Western Asia - includes Armenian, Azerbaijan, Turkey, & middle east)
+// afr (Africa)
+// oce (Oceania - includes Australia, NZ, and Pacific Islands)
+
+
+function listLangsByScript () {
+    // code to find out what script tags are there
+    //var myset = new Set([])
+    //for (l in langs) {
+    //    if (myset.has(langs[l].script)) { }
+    //    else myset.add(langs[l].script)
+    //    }
+    //console.log(myset)
+
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], beng:[], bugi:[], cakm:[], cans:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], mlym:[], mymr:[], orya:[], sinh:[], syrc:[], lana:[], tavt:[], taml:[], telu:[], thaa:[],thai:[], tfng:[], tibt:[],  vaii:[], yiii:[] }
+    for (l in langs) {
+        var language = Object.assign({bcp:l}, langs[l])
+        regionList[langs[l].script].push(language)
+        }
+	out = ''
+	for (r in regionList) {
+        switch (r) {
+            case 'ascii': region = 'ASCII only';break
+            case 'latn': region = 'Latin';break
+            case 'cyrl': region = 'Cyrillic';break
+            case 'ethi': region = 'Ethiopic';break
+            case 'arab': region = 'Arabic';break
+            case 'armn': region = 'Armenian';break
+            case 'beng': region = 'Bengali';break
+            case 'syrc': region = 'Syriac';break
+            case 'deva': region = 'Devanagari';break
+            case 'bugi': region = 'Buginese';break
+            case 'mymr': region = 'Myanmar';break
+            case 'tfng': region = 'Tifinagh';break
+            case 'cher': region = 'Cherokee';break
+            case 'thaa': region = 'Thaana';break
+            case 'yiii': region = 'Yi';break
+            case 'orya': region = 'Oriya';break
+            case 'guru': region = 'Gurmukhi';break
+            case 'adlm': region = 'Adlam';break
+            case 'sinh': region = 'Sinhala';break
+            case 'taml': region = 'Tamil';break
+            case 'telu': region = 'Telugu';break
+            case 'thai': region = 'Thai';break
+            case 'tavt': region = 'Tai Viet';break
+            case 'vaii': region = 'Vai';break
+            case 'cakm': region = 'Caribbean';break
+            case 'cans': region = 'Canadian Syllabics';break
+            case 'tibt': region = 'Tibetan';break
+            case 'geor': region = 'Georgian';break
+            case 'grek': region = 'Greek';break
+            case 'gujr': region = 'Gujarati';break
+            case 'hebr': region = 'Hebrew';break
+            case 'java': region = 'Javanese';break
+            case 'knda': region = 'Kannada';break
+            case 'khmr': region = 'Khmer';break
+            case 'lana': region = 'Tai Tham';break
+            case 'laoo': region = 'Lao';break
+            case 'mlym': region = 'Malayalam';break
+            }
+        out += '<tr><th>'+region+'</th><td>'+regionList[r].length+' languages: '
+        for (let l=0;l<regionList[r].length;l++ ) {
+           out += '<span onclick="document.getElementById(\'langDetails\').innerHTML = showLanguage(\''+regionList[r][l].bcp+'\')">'+regionList[r][l].name.replace(/ \([^\)]+\)/g,'')+'</span>'
+           if (l<regionList[r].length-1) out += ', '
+            }
+        out += '</td></tr>'
+        }
 	return out
 	}
 
@@ -196,7 +304,7 @@ function convertEscapes ( str ) {
 </script>
 </head>
 
-<body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('langNames').innerHTML = makeLangList()">
+<body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('langNames').innerHTML = makeLangList(); document.getElementById('languageByRegion').innerHTML = listLangsByRegion(); document.getElementById('languageByScript').innerHTML = listLangsByScript()">
 <header>
 <div id="header-boilerplate"></div>
 <script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('/shared/images/world.gif','Character usage lookup','');</script>
@@ -235,7 +343,25 @@ function convertEscapes ( str ) {
 <tbody id="output"><td></td><td></td><td></td></tbody></table>
 </section>
 
-<details style="margin-top: 5em;">
+
+
+
+<!--details style="margin-top: 5em;">
+  <summary style="margin-left: 7.5%; cursor: pointer;"><strong>Stats</strong></summary--> 
+
+    <details>
+    <summary style="margin-top: 5em; margin-left: 7.5%; cursor: pointer;">Show languages by region</summary>
+    <table><tbody id="languageByRegion"></tbody></table>
+    </details>
+
+    <details>
+    <summary style="margin-top: 1em; margin-left: 7.5%; cursor: pointer;">Show languages by script</summary>
+    <table><tbody id="languageByScript"></tbody></table>
+    </details>
+    
+<!--/details-->
+
+<details style="margin-top: 2em;">
   <summary style="margin-left: 7.5%; cursor: pointer;"><strong>Notes</strong></summary> 
 
 <aside class="sidebar">
@@ -299,7 +425,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->30-Oct-2017<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->31-Oct-2017<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>

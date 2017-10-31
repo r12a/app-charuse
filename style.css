@@ -179,6 +179,21 @@ thead th { text-align: left; }
 	vertical-align: bottom;
 	}
 
-#output span {
+#output span, #languageByRegion span, #languageByScript span {
 	cursor: pointer;
 	}
+#languageByRegion td, #languageByScript td {
+    text-align: left;
+    padding: .5em;
+    vertical-align: top;
+    font-size: 90%;
+    }
+#languageByRegion th, #languageByScript th {
+    padding: 1em;
+    vertical-align: top;
+    }
+table {
+    margin: 1em 3em 2em 10%;
+    }
+
+
