@@ -758,7 +758,7 @@ var langs = {
 
 "blt": { name:"Tai Dam (Black Tai)", source:"UDHR", region:"seasia", speakers:"760000", letter:"ꪁꪫꪱꪣꪜꪹꪕꪉꪵꪠꪙꪒꪘꪀꪩꫛꪶꪔꪄꪮꪨꪭꪚꪺꪼꪥꪻꪐꪎꪈꪬꪊꪽꪝꪋꪤꪏꪡꪅꪑꪗꪢꫜꪖꪪꪯ", mark:"\u{AAB8}\u{AAB2}\u{AABE}\u{AAB4}\u{AAB7}\u{AAB0}\u{AAB3}" },
 
-"tg": { name:"Tajiki (Tajik, Tajiki Persian)", source:"UDHR", region:"casia", speakers:"8400000", letter:"эъломияуҳқбашрпегфтднзкхсвӣёҷчғюӯйжьЭЪЛОМИЯУҲҚБАШРПЕГФТДНЗКХСВӢЁҶЧҒЮӮЙЖЬ", mark:"\u{0304}\u{0308}\u{0306}" },
+"tg": { name:"Tajik (Tajiki, Tajiki Persian)", source:"UDHR", region:"casia", speakers:"8400000", letter:"эъломияуҳқбашрпегфтднзкхсвӣёҷчғюӯйжьЭЪЛОМИЯУҲҚБАШРПЕГФТДНЗКХСВӢЁҶЧҒЮӮЙЖЬ", mark:"\u{0304}\u{0308}\u{0306}" },
 
 "tly": { name:"Talysh", source:"UDHR", region:"wasia", speakers:"900000", letter:"çÇƏığşİĞŞə", mark:"\u{0327}\u{0307}\u{0306}" },
 
