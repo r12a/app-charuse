@@ -314,7 +314,7 @@ var langs = {
 
 "iu": { name:"Inuktitut (Eastern Canadian Inuktitut)", source:"UDHR", region:"nam", script:"cans", speakers:"34000", letter:"ᓯᓚᕐᔪᐊᒥᐅᑦᓇᓗᐃᖅᑎᖓᑭᒃᑯᑐᓐᐱᖏᕆᑲᓂᔾᔨᓄᒪᒻᑖᕈᖃᑕᕋᓪᒍᓴᖕᓕᕇᖢᕗᒋᒧᒐᖁᔭᑰᒌᙱᒫᕌᕙᒎᕕᕝᓘᓃᓱᓈᙵᓅᐹᓵᐸᔫᓲᐳᓖᖂᑑᐆᖑᙳᖔᕿᒡᓛᓰᖤᐋᑉᔮᔅᒨᑏᒦ", mark:"\u{0303}" },
 
-"kl": { name:"Greenlandic Inuktitut", source:"UDHR", region:"eur", script:"ascii", speakers:"60000" }, // kl: CLDR adds, letter:"áâãéêíîôúûæøåÁÂÃÉÊÍÎÔÚÛÆØÅĩĸũĨŨ", mark:"\u{0301}\u{0302}\u{0303}\u{030A}" but i don't see any in use
+"kl": { name:"Kalaalisut (West Greenlandic)", source:"UDHR", region:"eur", script:"ascii", speakers:"60000" }, // kl: CLDR adds, letter:"áâãéêíîôúûæøåÁÂÃÉÊÍÎÔÚÛÆØÅĩĸũĨŨ", mark:"\u{0301}\u{0302}\u{0303}\u{030A}" but i don't see any in use
 
 "dyo": { name:"Jola-Fonyi", source:"UDHR", region:"afr", script:"latn", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"\u{0301}\u{0303}\u{0300}", punctuation:"“”", symbol:"°" },
 
