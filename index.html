@@ -272,6 +272,7 @@ function showLanguage (lang) {
 		}
 	//speakers = speakers.replace(/\?/,'0')
 	out += '<tr><th>Speakers</th><td>'+speakers+'</td></tr>'
+	if (langs[lang].notes) out += '<tr><th>Notes</th><td style="font-size:90%">'+langs[lang].notes+'</td></tr>'
 	return out
 	}
 
@@ -369,6 +370,8 @@ function convertEscapes ( str ) {
     <h2 class="flush">Related links</h2>
     <p><a target="_blank" href="https://www.unicode.org/cldr/charts/latest/summary/root.html">CLDR</a></p>
     <p><a target="_blank" href="http://unicode.org/udhr/translations.html">UDHR</a></p>
+    <p><a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">Raise an issue</a></p>
+    <p><a href="https://github.com/r12a/app-charuse/issues/">See open issues</a></p>
   </div>
 </aside>
 

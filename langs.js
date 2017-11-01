@@ -280,7 +280,7 @@ var langs = {
 
 "he": { name:"Hebrew", source:"CLDR,UDHR", region:"wasia", script:"hebr", speakers:"9000000", letter:"אבגדהוזחטיכךלמםנןסעפףצץקרשת",  punctuation:"׳״־‐–—" },
 
-"hi": { name:"Hindi", source:"CLDR,UDHR", region:"sasia", script:"deva", speakers:"260000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0944}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"॰।‘’“”—", number:"१०९४८२३५६७" },
+"hi": { name:"Hindi", source:"CLDR,UDHR", region:"sasia", script:"deva", speakers:"260000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"॰।‘’“”—", number:"१०९४८२३५६७", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR​</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
 
 "hu": { name:"Hungarian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"13000000", letter:"áéíóöúüÁÉÍÓÖÚÜőűŐŰ", mark:"\u{0301}\u{0308}\u{030B}", punctuation:"«»§–…’”„", symbol:"⁒" },
 
@@ -314,7 +314,7 @@ var langs = {
 
 "iu": { name:"Inuktitut (Eastern Canadian Inuktitut)", source:"UDHR", region:"nam", script:"cans", speakers:"34000", letter:"ᓯᓚᕐᔪᐊᒥᐅᑦᓇᓗᐃᖅᑎᖓᑭᒃᑯᑐᓐᐱᖏᕆᑲᓂᔾᔨᓄᒪᒻᑖᕈᖃᑕᕋᓪᒍᓴᖕᓕᕇᖢᕗᒋᒧᒐᖁᔭᑰᒌᙱᒫᕌᕙᒎᕕᕝᓘᓃᓱᓈᙵᓅᐹᓵᐸᔫᓲᐳᓖᖂᑑᐆᖑᙳᖔᕿᒡᓛᓰᖤᐋᑉᔮᔅᒨᑏᒦ", mark:"\u{0303}" },
 
-"kl": { name:"Kalaalisut (West Greenlandic)", source:"UDHR", region:"eur", script:"ascii", speakers:"60000" }, // kl: CLDR adds, letter:"áâãéêíîôúûæøåÁÂÃÉÊÍÎÔÚÛÆØÅĩĸũĨŨ", mark:"\u{0301}\u{0302}\u{0303}\u{030A}" but i don't see any in use
+"kl": { name:"Kalaalisut (West Greenlandic)", source:"UDHR", region:"eur", script:"ascii", speakers:"60000", notes:"CLDR adds accented characters such as áâãéêíîôúûæøåĩĸũ, but this appears to be based on an older (pre 1973) orthography. See wikipedia." },
 
 "dyo": { name:"Jola-Fonyi", source:"UDHR", region:"afr", script:"latn", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"\u{0301}\u{0303}\u{0300}", punctuation:"“”", symbol:"°" },
 
@@ -344,7 +344,7 @@ var langs = {
 
 "rw": { name:"Kinyarwanda", source:"CLDR,UDHR", region:"afr", script:"ascii", speakers:"9800000" },
 
-"kok": { name:"Konkani", source:"CLDR", region:"afr", script:"deva", speakers:"7400000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0944}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", number:"०१२३४५६७८९" },
+"kok": { name:"Konkani", source:"CLDR", region:"afr", script:"deva", speakers:"7400000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", number:"०१२३४५६७८९", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR​</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
 
 "khq": { name:"Koyra Chiini (Western Songhay)", source:"CLDR", region:"afr", script:"latn", speakers:"200000", letter:"ãõÃÕƝŋšžŊŠŽẽẼɲ", mark:"\u{0303}\u{030C}" },
 
@@ -454,7 +454,7 @@ var langs = {
 
 "gv": { name:"Manx (Manx Gaelic, Manks)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"0", letter:"çÇ", mark:"\u{0327}", punctuation:"’" },
 
-"mr": { name:"Marathi", source:"CLDR,UDHR", region:"sasia", script:"deva", speakers:"73000000", letter:"ऱॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0944}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"‐–—…‘’“”′″", number:"१२३४५६७८९०", other:"\u{200C}\u{200D}" },
+"mr": { name:"Marathi", source:"CLDR,UDHR", region:"sasia", script:"deva", speakers:"73000000", letter:"ऱॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"‐–—…‘’“”′″", number:"१२३४५६७८९०", other:"\u{200C}\u{200D}", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR​</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
 
 "mas": { name:"Masai (Maasai, Maa)", source:"CLDR", region:"afr", script:"latn", speakers:"1300000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛƐƗƆɄāēīŋōūĀĒĪŊŌŪɛɨɔʉ", mark:"\u{0301}\u{0300}\u{0302}\u{0304}" },
 
@@ -522,7 +522,7 @@ var langs = {
 
 "naq": { name:"Khoekhoe (Nama, Hottentot)", source:"CLDR", region:"afr", script:"latn", speakers:"300000", letter:"ǀǁǂǃâîôûÂÎÔÛ", mark:"\u{0302}" },
 
-"ne": { name:"Nepali", source:"CLDR,UDHR", region:"sasia", script:"deva", speakers:"40000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"\u{093C}\u{0901}\u{0902}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0944}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"।", number:"१२३४५६७८९०", other:"\u{200D}" },
+"ne": { name:"Nepali", source:"CLDR,UDHR", region:"sasia", script:"deva", speakers:"40000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"\u{093C}\u{0901}\u{0902}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"।", number:"१२३४५६७८९०", other:"\u{200D}", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR​</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
 
 "nnh": { name:"Ngiemboon", source:"CLDR", region:"afr", script:"latn", speakers:"250000", letter:"ʼáàâéèêíìóòôúùûÿÁÀÂÉÈÊÍÌÓÒÔÚÙÛǎǒǔǍƐǑƆǓɄěńŋĚŃŊŸḿẅḾẄɛɔʉ", mark:"\u{0301}\u{0300}\u{0302}\u{030C}\u{0308}", punctuation:"«»‘’" },
 
@@ -678,7 +678,7 @@ var langs = {
 
 "sm": { name:"Samoan", source:"UDHR", region:"oce", script:"ascii", speakers:"510000" },
 
-"sa": { name:"Sanskrit", source:"UDHR", region:"sasia", script:"deva", speakers:"~15000", letter:"मनवधकरणजगतअभघषयपचशसएछबदटडहइआञउठथलढऽ", mark:"\u{093E}\u{093F}\u{0902}\u{094B}\u{094D}\u{0942}\u{0947}\u{0941}\u{094C}\u{0948}\u{0940}\u{0943}\u{093C}", punctuation:"।" },
+"sa": { name:"Sanskrit", source:"UDHR", region:"sasia", script:"deva", speakers:"~15000", letter:"मनवधकरणजगतअभघषयपचशसएछबदटडहइआञउठथलढऽ", mark:"\u{093E}\u{093F}\u{0902}\u{094B}\u{094D}\u{0942}\u{0947}\u{0941}\u{094C}\u{0948}\u{0940}\u{0943}\u{0944}\u{093C}", punctuation:"।", notes:"Added <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR​</span>]</span>." },
 
 "sc": { name:"Sardinian (Sard)", source:"UDHR", region:"eur", script:"latn", speakers:"~1000000", letter:"òìàèùÒÌÀÈÙ", mark:"\u{0300}" },
 
