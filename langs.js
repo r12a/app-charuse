@@ -848,7 +848,7 @@ var langs = {
 
 "guc": { name:"Wayuu (Wayu, Wayúu, Guajiro, Wahiro)", source:"UDHR", region:"sam", script:"latn", speakers:"437780", letter:"üñÜÑ", mark:"\u{0308}\u{0303}" },
 
-"wo": { name:"Wolof", source:"UDHR", region:"afr", script:"latn", speakers:"4200000", letter:"ëñàéóËÑÀÉÓ", mark:"\u{0308}\u{0303}\u{0300}\u{0301}" },
+"wo": { name:"Wolof", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"4200000", letter:"ëñàéóËÑÀÉÓŋŊ", mark:"\u{0308}\u{0303}\u{0300}\u{0301}", punctuation:"‰" },
 
 "xh": { name:"Xhosa", source:"UDHR", region:"afr", script:"ascii", speakers:"8200000" },
 
