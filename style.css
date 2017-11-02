@@ -196,4 +196,28 @@ table {
     margin: 1em 3em 2em 10%;
     }
 
+#comparisonInput {
+    display:flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+#comparisonInput p {
+    margin: 0;
+    font-size: 90%;
+    text-align: start;
+    }
+#comparisonInput textarea {
+    margin-right: 1em;
+    border-radius: 2px;
+    box-shadow: unset;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
 

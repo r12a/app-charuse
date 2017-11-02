@@ -302,6 +302,35 @@ function convertEscapes ( str ) {
 	return str.replace(/\s/g,'');
 	}
 
+function compareLists () {
+    var left = document.getElementById('leftList').value
+    var right = document.getElementById('rightList').value
+    
+    var leftArray = [...left]
+    var rightArray = [...right]
+    
+    var leftResult = ''
+    var rightResult = ''
+    
+    for (let i=0;i<leftArray.length;i++) {
+        var found = false
+        for (let j=0;j<rightArray.length;j++) {
+            if (leftArray[i] === rightArray[j]) { found = true; break }
+            }
+        if (! found) leftResult += leftArray[i]
+        }
+    document.getElementById('leftOut').textContent = leftResult
+
+    for (let i=0;i<rightArray.length;i++) {
+        var found = false
+        for (let j=0;j<leftArray.length;j++) {
+            if (rightArray[i] === leftArray[j]) { found = true; break }
+            }
+        if (! found) rightResult += rightArray[i]
+        }
+    document.getElementById('rightOut').textContent = rightResult
+
+    }
 </script>
 </head>
 
@@ -346,12 +375,20 @@ function convertEscapes ( str ) {
 
 
 
-
 <!--details style="margin-top: 5em;">
   <summary style="margin-left: 7.5%; cursor: pointer;"><strong>Stats</strong></summary--> 
 
     <details>
-    <summary style="margin-top: 5em; margin-left: 7.5%; cursor: pointer;">Show languages by region</summary>
+    <summary style="margin-top: 5em; margin-left: 7.5%; cursor: pointer;">Compare lists</summary>
+    <div style="margin-left: 7.5%;" id="comparisonInput">
+    <div><textarea name="left" id="leftList" cols="30" rows="10"></textarea><p id="leftResult">Characters unique to this side:<br/><span id="leftOut"></span></p></div>
+    <div><textarea name="right" id="rightList" cols="30" rows="10"></textarea><p id="rightResult">Characters unique to this side:<br/><span id="rightOut"></span></p></div>
+    </div>
+    <p><button onClick="compareLists()">Compare</button></p>
+    </details>
+
+    <details>
+    <summary style="margin-top: 1em; margin-left: 7.5%; cursor: pointer;">Show languages by region</summary>
     <table><tbody id="languageByRegion"></tbody></table>
     </details>
 
@@ -429,7 +466,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->01-Nov-2017<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->02-Nov-2017<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
