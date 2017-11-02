@@ -144,7 +144,7 @@ var langs = {
 
 "cbi": { name:"Chachi (Cha'palaa, Cayapa)", source:"UDHR", region:"sam", script:"latn", speakers:"9500", letter:"ñóúáíéÑÓÚÁÍÉ", mark:"\u{0303}\u{0301}", punctuation:"¿¡" },
 
-"ccp": { name:"Chakma", source:"UDHR", region:"sasia", script:"cakm", speakers:"330000", letter:"𑄟𑄚𑄃𑄇𑄥𑄢𑄝𑄅𑄉𑄌𑄙𑄡𑄠𑄖𑄑𑄎𑄘𑄦𑄣𑄛𑄏𑄈𑄊𑄜𑄓𑄋𑄗𑄞𑄍𑄕𑄒", mark:"\u{1112C}\u{1112D}\u{11134}\u{11127}\u{11101}\u{1112E}\u{11133}\u{11128}\u{11129}\u{1112A}\u{11131}\u{11130}\u{1112B}\u{1112F}\u{11132}", number:"𑄷𑄸𑄹𑄺𑄻𑄼𑄽𑄾𑄿𑄶২", punctuation:"𑅁" },
+"ccp": { name:"Chakma", source:"CLDR,UDHR", region:"sasia", script:"cakm", speakers:"330000", letter:"𑄟𑄚𑄃𑄇𑄥𑄢𑄝𑄅𑄉𑄌𑄙𑄡𑄠𑄖𑄑𑄎𑄘𑄦𑄣𑄛𑄏𑄈𑄊𑄜𑄓𑄋𑄗𑄞𑄍𑄕𑄒𑄄𑄆𑄐𑄔𑄤", mark:"\u{1112C}\u{1112D}\u{11134}\u{11127}\u{11101}\u{1112E}\u{11133}\u{11128}\u{11129}\u{1112A}\u{11131}\u{11130}\u{1112B}\u{1112F}\u{11132}\u{11100}\u{11102}", number:"০১২৩৪৫৬৭৮৯𑄷𑄸𑄹𑄺𑄻𑄼𑄽𑄾𑄿𑄶", punctuation:"𑅁𑅃𑅂𑅀‰‐–—…‘’“”†‡′″§", notes:"UDHR uses Chakma digits, whereas CLDR shows only Bengali digits." },
 
 "ch": { name:"Chamorro", source:"UDHR", region:"oce", script:"ascii", speakers:"95000" },
 
