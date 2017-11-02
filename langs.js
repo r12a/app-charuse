@@ -568,7 +568,7 @@ var langs = {
 
 "nzi": { name:"Nzima (Appolo)", source:"UDHR", region:"afr", script:"latn", speakers:"330000", letter:"ɔɛƆƐ" },
 
-"or": { name:"Oriya (Odia)", source:"CLDR", region:"sasia", script:"orya", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"\u{0B3C}\u{0B01}\u{0B02}\u{0B03}\u{0B3E}\u{0B3F}\u{0B40}\u{0B41}\u{0B42}\u{0B43}\u{0B47}\u{0B48}\u{0B4B}\u{0B4C}\u{0B4D}\u{0B56}\u{0B57}" },
+"or": { name:"Oriya (Odia)", source:"CLDR", region:"sasia", script:"orya", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"\u{0B3C}\u{0B01}\u{0B02}\u{0B03}\u{0B3E}\u{0B3F}\u{0B40}\u{0B41}\u{0B42}\u{0B43}\u{0B47}\u{0B48}\u{0B4B}\u{0B4C}\u{0B4D}\u{0B56}\u{0B57}", number:"୦୧୨୩୪୫୬୭୮୯" },
 
 "om": { name:"Oromo", source:"CLDR,UDHR", region:"afr", script:"ascii", speakers:"25542000" },
 
