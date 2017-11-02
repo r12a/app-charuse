@@ -764,7 +764,7 @@ var langs = {
 
 "tly": { name:"Talysh", source:"UDHR", region:"wasia", script:"latn", speakers:"900000", letter:"çÇƏığşİĞŞə", mark:"\u{0327}\u{0307}\u{0306}" },
 
-"tt": { name:"Tatar", source:"UDHR", region:"eur", script:"cyrl", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖ", mark:"\u{0306}" },
+"tt": { name:"Tatar", source:"CLDR,UDHR", region:"eur", script:"cyrl", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖёщЁЩ", mark:"\u{0308}\u{0306}" },
 
 "kdh": { name:"Tem (Temba, Kotokoli, Cotocoli)", source:"UDHR", region:"afr", script:"latn", speakers:"290000", letter:"íáéúóÿÍÁÉÚÓƖƱƐƉƆńŋŃŸŊḿḾɩʊɛɖɔ", mark:"\u{0301}\u{0308}" },
 
