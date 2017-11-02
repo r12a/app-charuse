@@ -326,7 +326,7 @@ var langs = {
 
 "kea": { name:"Kabuverdianu (Cape Verdean Creole)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"1200000", letter:"ñçêéâíèáôóãºõúàòÑÇÊÉÂÍÈÁÔÓÃÕÚÀÒ", mark:"\u{0327}\u{0303}\u{0302}\u{0301}\u{0300}", punctuation:"’" },
 
-"kab": { name:"Kabyle (Kabylian)", source:"CLDR", region:"afr", script:"latn", speakers:"5500000", letter:"ǧƐǦƔčČḍḥṛṣṭẓḌḤṚṢṬẒɛɣ", mark:"\u{0323}\u{030C}" },
+"kab": { name:"Kabyle (Kabylian)", source:"CLDR", region:"afr", script:"latn", speakers:"5500000", letter:"ǧƐǦƔčČḍḥṛṣṭẓḌḤṚṢṬẒɛɣ", mark:"\u{0323}\u{030C}", punctuation:"‰" },
 
 "kkj": { name:"Kako (Mkako, Mkaka)", source:"CLDR", region:"afr", script:"latn", speakers:"120000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǌƁƊƐǊƆŋŊɓɗɛɔ", mark:"\u{0327}\u{0301}\u{0300}\u{0302}", punctuation:"«»…‘‹›“”" },
 
@@ -586,7 +586,7 @@ var langs = {
 
 "lot": { name:"Otuho (Lotuko)", source:"UDHR", region:"afr", script:"ascii", speakers:"140000" },
 
-"ps": { name:"Pashto (Pushtu, Pushto)", source:"CLDR", region:"casia", script:"arab", speakers:"~50000000", letter:"آاأءبپتټثجځچڅحخدډذرړزژږسشښصضطظعغفقکګگلمنڼهةوؤیيېۍئ", mark:"\u{064B}\u{064C}\u{064D}\u{064E}\u{064F}\u{0650}\u{0651}\u{0652}\u{0670}\u{0654}\u{0653}" },
+"ps": { name:"Pashto (Pushtu, Pushto)", source:"CLDR", region:"casia", script:"arab", speakers:"~50000000", letter:"آاأءبپتټثجځچڅحخدډذرړزژږسشښصضطظعغفقکګگلمنڼهةوؤیيېۍئ", mark:"\u{064B}\u{064C}\u{064D}\u{064E}\u{064F}\u{0650}\u{0651}\u{0652}\u{0670}\u{0654}\u{0653}", punctuation:"٫٬٪؉‰", number:"۰۱۲۳۴۵۶۷۸۹", symbol:"−" },
 
 "pl": { name:"Polish", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"55000000", letter:"óÓąćęłńśźżĄĆĘŁŃŚŹŻ", mark:"\u{0328}\u{0301}\u{0307}", punctuation:"«»§‐–—…”„†‡′″", symbol:"°" },
 
