@@ -684,6 +684,8 @@ var langs = {
 
 "sco": { name:"Scots (Lowland Scots)", source:"UDHR", region:"eur", script:"ascii", speakers:"110000" },
 
+"sd": { name:"Sindhi", source:"CLDR", region:"sasia", script:"arab", speakers:"25000000", letter:"آابٻپڀتثٺٽٿجھڃڄچڇحخدذڊڌڍڏرزڙسشصضطظعغفڦقکڪگڱڳلمنڻهوي", mark:"\u{0653}", punctuation:"‰" },
+
 "sey": { name:"Secoya", source:"UDHR", region:"sam", script:"latn", speakers:"400", letter:"ëñàéËÑÀÉ", mark:"\u{0331}\u{0308}\u{0303}\u{0300}\u{0301}" },
 
 "skr": { name:"Saraiki (Siraiki, Seraiki)", source:"UDHR", region:"sasia", script:"arab", speakers:"20000000", letter:"انسیحقودعلمشرپہڱھےکڄئتڻزںگڈفظجچبڑصڋخڔٹطآذضغةثٻي", mark:"\u{064F}\u{0654}\u{0653}", punctuation:"۔،", number:"۱۲۳۴۵۶۷۸۹۰" },
