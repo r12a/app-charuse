@@ -114,7 +114,7 @@ var langs = {
 
 "zgh": { name:"Standard Moroccan Tamazight (Amazigh, Tamazight) (Tifinagh)", source:"UDHR", script:"tfng", speakers:"?", region:"afr", letter:"ⴰⵍⵖⵓⵎⴹⵏⵉⵣⵔⴼⴳⴷⵊⴱⵜⵡⴽⵢⵙⵀⵛⵥⵇⵯⴻⵕⵟⵃⵅⵚ" },
 
-"ckb-arab": { name:"Central Kurdish (Sorani) (Arabic)", source:"CLDR", region:"wasia", script:"arab", speakers:"7000000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێئ" },
+"ckb-arab": { name:"Central Kurdish (Sorani) (Arabic)", source:"CLDR", region:"wasia", script:"arab", speakers:"7000000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"\u{0654}", punctuation:"٫٬٪؉", number:"٠١٢٣٤٥٦٧٨٩" },
 
 "ckb-latn": { name:"Central Kurdish (Sorani) (Latin)", source:"UDHR", region:"wasia", script:"latn", speakers:"7000000", letter:"şŞûîêçÛÎÊÇ", mark:"\u{0327}\u{0302}" },
 
