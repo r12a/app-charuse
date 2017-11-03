@@ -238,7 +238,7 @@ var langs = {
 
 "fat": { name:"Fanti (Fantse, Mfantse, Fante)", source:"UDHR", region:"afr", script:"latn", speakers:"1900000", letter:"ãõÃÕƆƐɔɛ", mark:"\u{0303}" },
 
-"fa": { name:"Persian (Farsi)", source:"CLDR,UDHR", region:"wasia", script:"arab", speakers:"~50000000", letter:"آاءأؤئبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهةیـإي", mark:"\u{064B}\u{064C}\u{064D}\u{0651}\u{0654}\u{0650}\u{0653}\u{0655}", punctuation:"،٫٬؛؟«»‐…‹›", number:"۱۲۳۴۰۵۶۷۸۹", other:"\u{200C}" },
+"fa": { name:"Persian (Farsi)", source:"CLDR,UDHR", region:"wasia", script:"arab", speakers:"~50000000", letter:"آاءأؤئبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهةیإي", mark:"\u{064B}\u{064D}\u{064C}\u{0651}\u{0654}\u{0650}\u{0653}\u{0655}", punctuation:"٫٬٪؉،؛؟‰‐…‹›«»", number:"۰۱۲۳۴۵۶۷۸۹", symbol:"−", other:"\u{200C}" },
 
 "fj": { name:"Fijian", source:"UDHR", region:"oce", script:"ascii", speakers:"339210" },
 
