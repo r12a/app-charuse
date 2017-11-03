@@ -8,17 +8,17 @@ var langs = {
 
 "ady": { name:"Adyghe (West Circassian)", source:"UDHR", region:"eur", script:"cyrl", speakers:"590000", letter:"цыхуэфащмтеднйпсожлъкрзгьишбячівюЦЫХУЭФАЩМТЕДНЙПСОЖЛЪКРЗГЬИШБЯЧІВЮ", number:"", punctuation:"", separator:"", symbol:"", mark:"\u{0306}" },
 
-"af": { name:"Afrikaans", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"7100000", letter:"áâéèêëîïôöûÁÂÉÈÊËÎÏÔÖÛ", mark:"\u{0301}\u{0302}\u{0300}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
+"af": { name:"Afrikaans", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"7100000", letter:"áâéèêëîïôöûÁÂÉÈÊËÎÏÔÖÛ", mark:"\u{0301}\u{0302}\u{0300}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″‰" },
 
-"agq": { name:"Aghem (Wum, Yum)", source:"CLDR", region:"afr", script:"latn", speakers:"27000", letter:"àâèêìîòôùûÀÂÈÊÌÎÒÔÙÛǎǐǒǔǍƐǏƗǑƆǓɄāěēīŋōūĀĚĒĪŊŌŪɛɨɔʉʔ", mark:"\u{0300}\u{0302}\u{030C}\u{0304}" },
+"agq": { name:"Aghem (Wum, Yum)", source:"CLDR", region:"afr", script:"latn", speakers:"27000", letter:"àâèêìîòôùûÀÂÈÊÌÎÒÔÙÛǎǐǒǔǍƐǏƗǑƆǓɄāěēīŋōūĀĚĒĪŊŌŪɛɨɔʉʔ", mark:"\u{0300}\u{0302}\u{030C}\u{0304}", punctuation:"‰" },
 
 "agr": { name:"Aguaruna (Awajún)", source:"UDHR", region:"sam", script:"latn", speakers:"8000", letter:"áíÁÍ", mark:"\u{0301}", punctuation:"¡¿‐" },
 
 "ajg": { name:"Aja", source:"UDHR", region:"afr", script:"latn", speakers:"550000", letter:"úóòùàèéìíõáÚÓÒÙÀÈÉÌÍÕÁƆƉƐƷŋŊɔɖɛʒ", mark:"\u{0300}\u{0301}\u{0303}" },
 
-"ak": { name:"Akan", source:"CLDR", region:"afr", script:"latn", speakers:"22000000", letter:"ɛɔƐƆ" },
+"ak": { name:"Akan", source:"CLDR", region:"afr", script:"latn", speakers:"22000000", letter:"ɛɔƐƆ", punctuation:"‰" },
 
-"sq": { name:"Albanian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"5400000", letter:"çëÇË", mark:"\u{0327}\u{0308}", punctuation:"«»§‐–—…‘’“”′″" },
+"sq": { name:"Albanian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"5400000", letter:"çëÇË", mark:"\u{0327}\u{0308}", punctuation:"«»§‐–—…‘’“”′″‰​" },
 
 "alt": { name:"Southern Altai", source:"UDHR", region:"nasia", script:"cyrl", speakers:"57000", letter:"кижнҥтапэрешдлцязыгьйсмбјчӱоуӧвщюъфхКИЖНҤТАПЭРЕШДЛЦЯЗЫГЬЙСМБЈЧӰОУӦВЩЮЪФХ", punctuation:"‐", separator:"", symbol:"" },
 
@@ -42,11 +42,11 @@ var langs = {
 
 "prq": { name:"Ashéninka Perené", source:"UDHR", region:"sam", script:"latn", speakers:"~50000", letter:"íÍ", mark:"\u{0301}", punctuation:"¿" },
 
-"ast": { name:"Asturian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"110000", letter:"áéíñóúüÁÉÍÑÓÚÜḥḷḤḶ", mark:"\u{0323}\u{0301}\u{0303}\u{0308}", punctuation:"¡¿«»§‐–—…‘’“”†‡′″" },
+"ast": { name:"Asturian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"110000", letter:"áéíñóúüÁÉÍÑÓÚÜḥḷḤḶ", mark:"\u{0323}\u{0301}\u{0303}\u{0308}", punctuation:"¡¿«»§‐–—…‘’“”†‡′″‰" },
 
 "cpu": { name:"Pichis Ashéninka", source:"UDHR", region:"sam", script:"latn", speakers:"~50000", letter:"ñáéÑÁÉ", mark:"\u{0303}\u{0301}" },
 
-"asm": { name:"Assamese (Asamiya)", source:"CLDR", region:"sasia", script:"beng", speakers:"15000000", letter:"অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযৰলৱশষসহ", mark:"\u{09BC}\u{0982}\u{0981}\u{0983}\u{09CD}\u{09BE}\u{09BF}\u{09C0}\u{09C1}\u{09C2}\u{09C3}\u{09C7}\u{09C8}\u{09CB}\u{09CC}\u{09D7}" },
+"as": { name:"Assamese (Asamiya)", source:"CLDR", region:"sasia", script:"beng", speakers:"15000000", letter:"অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযৰলৱশষসহ", mark:"\u{09BC}\u{0982}\u{0981}\u{0983}\u{09CD}\u{09BE}\u{09BF}\u{09C0}\u{09C1}\u{09C2}\u{09C3}\u{09C7}\u{09C8}\u{09CB}\u{09CC}\u{09D7}", number:"০১২৩৪৫৬৭৮৯", punctuation:"‰" },
 
 "aii": { name:"Assyrian Neo-Aramaic", source:"UDHR", region:"wasia", script:"syrc", speakers:"232300", letter:"ܒܘܕܩܐܬܝܠܦܙܢܫܥܡܣܪܟܗܚܓܛܨ", mark:"\u{0742}\u{0735}\u{073C}\u{0739}\u{0330}", punctuation:"܆", separator:"", symbol:"" },
 
@@ -57,6 +57,8 @@ var langs = {
 "ayr": { name:"Central Aymara", source:"UDHR", region:"sam", script:"latn", speakers:"2800000", letter:"ñïäíáëúÑÏÄÍÁËÚ", mark:"\u{0303}\u{0308}\u{0301}" },
 
 "az-latn": { name:"Azerbaijani (Azeri) (Latin)", source:"CLDR,UDHR", region:"wasia", script:"latn", speakers:"26000000", letter:"çöüÇÖÜƏğışĞŞİə", mark:"\u{0327}\u{0307}\u{0306}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
+
+"az-cyrl": { name:"Azerbaijani (Azeri) (Cyrillic)", source:"CLDR,UDHR", region:"wasia", script:"latn", speakers:"26000000", letter:"аәбвгғдежзийјкҝлмноөпрстуүфхһчҹшыАӘБВГҒДЕЖЗИЙЈКҜЛМНОӨПРСТУҮФХҺЧҸШЫ", mark:"\u{0306}", punctuation:"‐–—…‘’“”†‡′″‰§" },
 
 "bba": { name:"Baatonum (Bariba, Baatombu, Baatonu, Barba, Barganchi, Bargawa, Bargu, Baruba, Berba, Bogung, Burgu)", source:"UDHR", region:"afr", script:"latn", speakers:"560000", letter:"àéùèóÀÉÙÈÓǹƐƆǸɛɔ", mark:"\u{0300}\u{0301}" },
 
@@ -538,7 +540,7 @@ var langs = {
 
 "nb": { name:"Norwegian Bokmål", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"0", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}", punctuation:"«»§–" },
 
-"nn": { name:"Norwegian Nynorsk", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"0", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}" },
+"nn": { name:"Norwegian Nynorsk", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"0", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}", punctuation:"‰", symbol:"−" },
 
 "nus": { name:"Nuer (Thok Naath)", source:"CLDR", region:"afr", script:"latn", speakers:"890000", letter:"äëïöÄËÏÖƐƔƆŋŊɛɣɔ", mark:"\u{0331}\u{0308}" },
 
@@ -750,7 +752,7 @@ var langs = {
 
 "tr": { name:"Turkish (Istanbul Turkish)", source:"CLDR,UDHR", region:"wasia", script:"latn", speakers:"71000000", letter:"çöüâÇÖÜÂğışĞŞİ", mark:"\u{0327}\u{0307}\u{0306}\u{0308}\u{0302}", punctuation:"̧̇̆̈̂§‐–—…‘’“”†‡′″" },
 
-"tk": { name:"Turkmen", source:"CLDR,UDHR", region:"casia", script:"latn", speakers:"7500000", letter:"çäöüýÇÄÖÜÝžňşŽŇŞ", mark:"\u{0327}\u{0308}\u{030C}\u{0301}", punctuation:"§–—…“”‐" },
+"tk": { name:"Turkmen", source:"CLDR,UDHR", region:"casia", script:"latn", speakers:"7500000", letter:"çäöüýÇÄÖÜÝžňşŽŇŞ", mark:"\u{0327}\u{0308}\u{030C}\u{0301}", punctuation:"§–—…“”‐‰" },
 
 "tk-cyrl": { name:"Turkmen (Cyrillic)", source:"UDHR", region:"casia", script:"cyrl", speakers:"7500000", letter:"адмхуклрынңәиецясгшбптчвзэоҗйөүъюжфёАДМХУКЛРЫНҢӘИЕЦЯСГШБПТЧВЗЭОҖЙӨҮЪЮЖФЁ", mark:"\u{0306}\u{0308}", punctuation:"‐–" },
 
