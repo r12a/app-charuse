@@ -32,7 +32,7 @@ var langs = {
 
 "arl": { name:"Arabela (Chiripuno, Chiripunu)", source:"UDHR", region:"sam", script:"latn", speakers:"50", letter:"úÚ", mark:"\u{0301}", punctuation:"¿" },
 
-"ar": { name:"Arabic", source:"CLDR,UDHR", region:"wasia", script:"arab", speakers:"290000000", letter:"ءأؤإئاآبةتثجحخدذرزسشصضطظعغفقكلمنهوىي", mark:"\u{064B}\u{064C}\u{064D}\u{064E}\u{064F}\u{0650}\u{0651}\u{0652}\u{0670}\u{0655}\u{0654}\u{0653}", number:"", punctuation:"،؛؟‐–—…«»" },
+"ar": { name:"Arabic", source:"CLDR,UDHR", region:"wasia", script:"arab", speakers:"290000000", letter:"ءأؤإئاآبةتثجحخدذرزسشصضطظعغفقكلمنهوىي", mark:"\u{064B}\u{064C}\u{064D}\u{064E}\u{064F}\u{0650}\u{0651}\u{0652}\u{0670}\u{0654}\u{0655}\u{0653}", number:"٠١٢٣٤٥٦٧٨٩", punctuation:"٫٬٪؉،؛؟‰‐–—…«»" },
 
 "hy": { name:"Armenian", source:"CLDR,UDHR", region:"wasia", script:"armn", speakers:"10000000", letter:"աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքևօֆԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖ", punctuation:"֊՝՜՞՚՛՟։․«»" },
 
