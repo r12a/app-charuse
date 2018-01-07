@@ -446,6 +446,8 @@ var langs = {
 
 "mg": { name:"Malagasy", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"18000000", letter:"àâéèêëìîïñôÀÂÉÈÊËÌÎÏÑÔ", mark:"\u{0300}\u{0302}\u{0301}\u{0308}\u{0303}" },  // UDHR has no accents
 
+"mid": { name:"Neo-Mandaic", source:"r12a", region:"wasia", script:"mand", speakers:"200", letter:"ࡀࡁࡂࡃࡄࡅࡆࡇࡈࡉࡊࡋࡌࡍࡎࡏࡐࡑࡒࡓࡔࡕࡖࡗࡘ", mark:"\u{0859}\u{085A}\u{085B}", punctuation:"࡞" },
+
 "zml": { name:"Malay", source:"CLDR,UDHR", region:"seasia", script:"ascii", speakers:"77000000" },
 
 "zml-arab": { name:"Malay (Arabic)", source:"UDHR", region:"seasia", script:"arab", speakers:"77000000", letter:"ڤراشتهنحقسيمأجڬدبوڽڠعفكلچخظصزطۏؤئذ", mark:"\u{0654}", punctuation:"،", number:"٢" },
