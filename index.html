@@ -80,7 +80,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], beng:[], bugi:[], cakm:[], cans:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], mand:[], mlym:[], mymr:[], orya:[], sinh:[], syrc:[], lana:[], tavt:[], taml:[], telu:[], thaa:[],thai:[], tfng:[], tibt:[],  vaii:[], yiii:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], beng:[], bugi:[], cakm:[], cans:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], mand:[], mlym:[], mymr:[], nkoo:[], orya:[], sinh:[], sund:[], syrc:[], lana:[], tavt:[], taml:[], telu:[], thaa:[],thai:[], tfng:[], tibt:[],  vaii:[], yiii:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
@@ -107,6 +107,7 @@ function listLangsByScript () {
             case 'guru': region = 'Gurmukhi';break
             case 'adlm': region = 'Adlam';break
             case 'sinh': region = 'Sinhala';break
+            case 'sund': region = 'Sundanese';break
             case 'taml': region = 'Tamil';break
             case 'telu': region = 'Telugu';break
             case 'thai': region = 'Thai';break
@@ -126,6 +127,7 @@ function listLangsByScript () {
             case 'laoo': region = 'Lao';break
             case 'mlym': region = 'Malayalam';break
             case 'mlym': region = 'Mandaic';break
+            case 'nkoo': region = 'NKo';break
             }
         out += '<tr><th>'+region+'</th><td>'+regionList[r].length+' languages: '
         for (let l=0;l<regionList[r].length;l++ ) {
@@ -175,11 +177,15 @@ function showLanguage (lang) {
 	console.log(lang)
 	out = ''
 	var charList
+    var stats = 'Non-ASCII character count: &nbsp; '
+    var total = 0
 	// "agq": { name:"Aghem", source:"CLDR", region:"afr", speakers:"27000", letter:"Ã Ã¢Ã¨ÃªÃ¬Ã®Ã²Ã´Ã¹Ã»Ã€Ã‚ÃˆÃŠÃŒÃŽÃ’Ã”Ã™Ã›ÇŽÇÇ’Ç”ÇÆÇÆ—Ç‘Æ†Ç“É„ÄÄ›Ä“Ä«Å‹ÅÅ«Ä€ÄšÄ’ÄªÅŠÅŒÅªÉ›É¨É”Ê‰Ê”", mark:"\u{0300}\u{0302}\u{030C}\u{0304}" },
 	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+' ['+lang+'] <a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" style="float:right;" /></a></td></tr>'
 	if (langs[lang].letter) {
 		charList = [...langs[lang].letter]
 		charList.sort()
+        stats += charList.length + ' letters'
+        total += charList.length
 		out += '<tr><th>Letters</th><td class="large">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
@@ -191,6 +197,9 @@ function showLanguage (lang) {
 		}
 	if (langs[lang].mark) {
 		charList = [...langs[lang].mark]
+        if (total > 0) stats += ', '
+        stats += charList.length + ' marks'
+        total += charList.length
 		out += '<tr><th>Marks</th><td class="large">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
@@ -202,6 +211,9 @@ function showLanguage (lang) {
 		}
 	if (langs[lang].punctuation) {
 		charList = [...langs[lang].punctuation]
+        if (total > 0) stats += ', '
+        stats += charList.length + ' punctuation'
+        total += charList.length
 		out += '<tr><th>Punctuation</th><td class="large">'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
@@ -213,6 +225,9 @@ function showLanguage (lang) {
 		}
 	if (langs[lang].number) {
 		charList = [...langs[lang].number]
+        if (total > 0) stats += ', '
+        stats += charList.length + ' numbers'
+        total += charList.length
 		out += '<tr><th>Numbers</th><td class="large">'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
@@ -224,6 +239,9 @@ function showLanguage (lang) {
 		}
 	if (langs[lang].symbol) {
 		charList = [...langs[lang].symbol]
+        if (total > 0) stats += ', '
+        stats += charList.length + ' symbols'
+        total += charList.length
 		out += '<tr><th>Symbols</th><td class="large">'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
@@ -235,6 +253,9 @@ function showLanguage (lang) {
 		}
 	if (langs[lang].other) {
 		charList = [...langs[lang].other]
+        if (total > 0) stats += ', '
+        stats += charList.length + ' other'
+        total += charList.length
 		out += '<tr><th>Other</th><td>'
 		//out += langs[lang].other
 		for (j=0;j<charList.length;j++)  { 
@@ -246,9 +267,11 @@ function showLanguage (lang) {
 		//for (j=0;j<charList.length;j++) out += charList[j].codepointAt(0)+' '
 		out += '<a href="/uniview?charlist='+langs[lang].other+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
+    stats += ' : &nbsp; total ' + total
 	if (!langs[lang].letter && !langs[lang].mark && !langs[lang].punctuation && !langs[lang].number && !langs[lang].symbol && !langs[lang].other) {
 		out += '<tr><th></th><td class="large">ASCII only</td></tr>'
 		}
+	else out += '<tr><th></th><td style="border:0; font-size: 70%; font-style: italic; line-height: 1; color:gray;">'+stats+'</td></tr>'
 	out += '<tr><th>Source</th><td>'+langs[lang].source+'</td></tr>'
 	switch (langs[lang].region) {
 		case 'afr': region = 'Africa';break
@@ -272,7 +295,7 @@ function showLanguage (lang) {
 		speakers = parseInt(speakers).toLocaleString('en')
 		}
 	//speakers = speakers.replace(/\?/,'0')
-	out += '<tr><th>Speakers</th><td>'+speakers+'</td></tr>'
+	out += '<tr><th>Native speakers</th><td>'+speakers+'</td></tr>'
 	if (langs[lang].notes) out += '<tr><th>Notes</th><td style="font-size:90%">'+langs[lang].notes+'</td></tr>'
 	return out
 	}

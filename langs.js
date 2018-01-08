@@ -48,7 +48,7 @@ var langs = {
 
 "as": { name:"Assamese (Asamiya)", source:"CLDR", region:"sasia", script:"beng", speakers:"15000000", letter:"অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযৰলৱশষসহ", mark:"\u{09BC}\u{0982}\u{0981}\u{0983}\u{09CD}\u{09BE}\u{09BF}\u{09C0}\u{09C1}\u{09C2}\u{09C3}\u{09C7}\u{09C8}\u{09CB}\u{09CC}\u{09D7}", number:"০১২৩৪৫৬৭৮৯", punctuation:"‰" },
 
-"aii": { name:"Assyrian Neo-Aramaic", source:"UDHR", region:"wasia", script:"syrc", speakers:"232300", letter:"ܒܘܕܩܐܬܝܠܦܙܢܫܥܡܣܪܟܗܚܓܛܨ", mark:"\u{0742}\u{0735}\u{073C}\u{0739}\u{0330}", punctuation:"܆", separator:"", symbol:"" },
+"aii": { name:"Assyrian Neo-Aramaic", source:"UDHR,r12a", region:"wasia", script:"syrc", speakers:"232300", letter:"ܒܘܕܩܐܬܝܠܦܙܢܫܥܡܣܪܟܗܚܓܛܨ", mark:"\u{0738}\u{0739}\u{073C}\u{0732}\u{0735}\u{073F}\u{0742}\u{0741}\u{0740}\u{0747}", punctuation:"܆،؛؟" },
 
 "asa": { name:"Asu (Pare, Kipare, Casu, Chasu, Athu, Chathu)", source:"CLDR", region:"afr", script:"ascii", speakers:"500000" },
 
@@ -67,6 +67,8 @@ var langs = {
 "ksf": { name:"Bafia", source:"CLDR", region:"afr", script:"latn", speakers:"60000", letter:"áéíóúÁÉÍÓÚǝƎƐƆŋŊɛɔ", mark:"\u{0301}" },
 
 "bm": { name:"Bambara (Bamanankan)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"4000000", letter:"ƐƝƆŋŊɛɲɔ", punctuation:"’" },
+
+"bm-nkoo": { name:"Bambara (N'Ko)", source:"r12a", region:"afr", script:"nkoo", speakers:"4000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߨߩߪߴߵߺ", mark:"\u{07EB}\u{07EC}\u{07ED}\u{07EE}\u{07EF}\u{07F0}\u{07F1}\u{07F2}\u{07F3}", number:"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶" },
 
 "bax-latn": { name:"Bamum (Bamun, Bamoun) (Latin)", source:"UDHR", region:"afr", script:"latn", speakers:"420000", letter:"úéêüûâôîáèùàÚÉÊÜÛÂÔÎÁÈÙÀṅṄ", mark:"\u{0301}\u{0302}\u{0308}\u{0300}\u{0307}", punctuation:"‘’" },
 
@@ -488,6 +490,8 @@ var langs = {
 
 "emk": { name:"Eastern Maninkakan", source:"UDHR", region:"afr", script:"latn", speakers:"5000000", letter:"ɲɛɔƝƐƆ" },
 
+"emk-nkoo": { name:"Eastern Maninkakan (N'Ko)", source:"r12a", region:"afr", script:"nkoo", speakers:"5000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߨߩߪߴߵߺ", mark:"\u{07EB}\u{07EC}\u{07ED}\u{07EE}\u{07EF}\u{07F0}\u{07F1}\u{07F2}\u{07F3}", number:"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶" },
+
 "mi": { name:"Maori (Te Reo)", source:"UDHR", region:"oce", script:"latn", speakers:"60000", letter:"ïÏ", mark:"\u{0308}" },
 
 "arn": { name:"Mapudungun (Mapuzugun, Mapudungu, Araucanian)", source:"UDHR", region:"sam", script:"latn", speakers:"260000", letter:"ñáíóÑÁÍÓ", mark:"\u{0303}\u{0301}" },
@@ -723,6 +727,8 @@ var langs = {
 "suk": { name:"Sukuma", source:"UDHR", region:"afr", script:"ascii", speakers:"5400000" },
 
 "su": { name:"Sundanese", source:"UDHR", region:"seasia", script:"ascii", speakers:"42000000" },
+
+"su-sund": { name:"Sundanese (Sundanese)", source:"r12a", region:"seasia", script:"sund", speakers:"42000000", letter:"ᮊᮋᮌᮍᮎᮏᮐᮑᮒᮓᮔᮕᮖᮗᮘᮙᮚᮛᮜᮝᮞᮟᮠᮮᮯᮃᮄᮅᮆᮇᮈᮉ", mark:"\u{1BA1}\u{1BA2}\u{1BA3}\u{1B80}\u{1B81}\u{1B82}\u{1BA4}\u{1BA5}\u{1BA6}\u{1BA7}\u{1BA8}\u{1BA9}" },
 
 "sus": { name:"Susu", source:"UDHR", region:"afr", script:"latn", speakers:"1060000", letter:"ƐƆƝɛɔɲ" },
 
