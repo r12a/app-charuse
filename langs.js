@@ -814,7 +814,7 @@ var langs = {
 
 "uk": { name:"Ukrainian", source:"CLDR,UDHR", region:"eur", script:"cyrl", speakers:"45000000", letter:"абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯʼ", mark:"\u{0308}\u{0306}", punctuation:"–’“„‐«»§", symbol:"№" },
 
-"ur": { name:"Urdu", source:"CLDR,UDHR", region:"sasia", script:"arab", speakers:"65000000", letter:"اأآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےةهي", mark:"\u{0650}\u{064B}\u{064F}\u{0670}\u{064E}\u{0651}\u{0654}\u{0653}", punctuation:"،؍٫٬؛؟۔”“؁", number:"۱۰۹۴۸۲۳۵۶۷" },
+"ur": { name:"Urdu", source:"CLDR,UDHR", region:"sasia", script:"arab", speakers:"65000000", letter:"اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےهي", mark:"\u{0650}\u{064B}\u{064F}\u{0670}\u{064E}\u{0651}\u{0654}\u{0653}", punctuation:"،؍٫٬؛؟۔”“؁٪", number:"۰۱۲۳۴۵۶۷۸۹", aux:"\u{0652}\u{064C}\u{064D}\u{0657}\u{0656}\u{0658}\u{0612}\u{0614}\u{0613}\u{0611}\u{0610}؀؄؎؏؂﷽", notes:"Removed CLDR's teh marbuta and alef with hamza below.<br/>Added arabic percent sign." },
 
 "ug": { name:"Uyghur (Uighur, Eastern Turki)", source:"CLDR,UDHR", region:"casia", script:"arab", speakers:"25000000", letter:"ئاەبپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىي", mark:"\u{0654}", punctuation:"،؛" },
 
@@ -908,3 +908,4 @@ var langs = {
 
 // Notes
 // kl: CLDR adds, letter:"áâãéêíîôúûæøåÁÂÃÉÊÍÎÔÚÛÆØÅĩĸũĨŨ", mark:"\u{0301}\u{0302}\u{0303}\u{030A}" but i don't see any in use
+// aux field holds things you would find but not often, and is determined by my research rather than simply from CLDR's auxiliary field
