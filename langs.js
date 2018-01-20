@@ -742,7 +742,7 @@ var langs = {
 
 "dav": { name:"Taita (Dawida)", source:"CLDR", region:"afr", script:"ascii", speakers:"400000" },
 
-"ta": { name:"Tamil", source:"CLDR,UDHR", region:"sasia", script:"taml", speakers:"70000000", letter:"அஆஇஈஉஊஎஏஐஒஓஔஃகஙசஞடணதநபமயரலவழளறனஜஷஸஹ", mark:"\u{0BBE}\u{0BBF}\u{0BC0}\u{0BC1}\u{0BC2}\u{0BC6}\u{0BC7}\u{0BC8}\u{0BCA}\u{0BCB}\u{0BCC}\u{0BCD}\u{0BD7}", punctuation:"§‐–—…‘’“”†‡′″" },
+"ta": { name:"Tamil", source:"CLDR,UDHR,r12a", region:"sasia", script:"taml", speakers:"70000000", letter:"அஆஇஈஉஊஎஏஐஒஓஔஃகஙசஞடணதநபமயரலவழளறனஜஷஸஹ", mark:"\u{0BBE}\u{0BBF}\u{0BC0}\u{0BC1}\u{0BC2}\u{0BC6}\u{0BC7}\u{0BC8}\u{0BCA}\u{0BCB}\u{0BCC}\u{0BCD}\u{0BD7}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ஶ௦௧௨௩௪௫௬௭௮௯௰௱௲௳௴௵௶௷௸௹௺ௐ।॥" },
 
 "twq": { name:"Tasawaq", source:"CLDR", region:"afr", script:"latn", speakers:"8000", letter:"ɲẽẼŋšžŊŠŽƝãõÃÕ", mark:"\u{0303}\u{030C}" },
 
