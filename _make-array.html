@@ -89,6 +89,7 @@ function create () {
         if (langs[lang].symbol) list += langs[lang].symbol
         if (langs[lang].separator) list += langs[lang].separator
         if (langs[lang].other) list += langs[lang].other
+        if (langs[lang].aux) list += langs[lang].aux
         console.log(list,lang)
         if (list != '') updateCL(list,lang)+'\n'
         }
