@@ -151,7 +151,8 @@ function findChars (str) {
 			out += '<tr><th>'+chars[i]+'</td>'
 			if (cl[cp]) {
 				out += '<td>'
-				languages = cl[cp]
+				languages = cl[cp][0]
+				auxlanguages = cl[cp][1]
 				var languageNames = ''
 				var population = 0
 				for (let l=0;l<languages.length;l++) {
@@ -162,8 +163,18 @@ function findChars (str) {
 					speakerNum = speakerNum.replace(/\?/,'0')
 					population += parseInt(speakerNum)
 					}
+                if (languages.length>0 && auxlanguages.length>0) languageNames += ', '
+				for (let l=0;l<auxlanguages.length;l++) {
+					//languageNames += langs[languages[l]].name.replace(/ \([^\)]+\)/g,'')
+					languageNames += '<span style="font-style:italic" onclick="document.getElementById(\'langDetails\').innerHTML = showLanguage(\''+auxlanguages[l]+'\')">'+langs[auxlanguages[l]].name.replace(/ \([^\)]+\)/g,'')+'</span>'
+					if (l<auxlanguages.length-1) languageNames += ', '
+					speakerNum = langs[auxlanguages[l]].speakers.replace(/~/,'')
+					speakerNum = speakerNum.replace(/\?/,'0')
+					population += parseInt(speakerNum)
+					}
 				//out += languageNames+' ('+languages.length+' languages)</td>'
-				out += languages.length+' languages: '+languageNames+'</td>'
+                totallanguages = languages.length+auxlanguages.length
+				out += totallanguages+' languages: '+languageNames+'</td>'
 				out += '<td>'+population.toLocaleString('en')+'</td>'
 				}
 			else out += '<td>Unknown</td><td>-</td>'
@@ -410,7 +421,7 @@ function compareLists () {
  
      <p><button style="vertical-align:top;" onclick="document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)">Look up</button></p>
 <table style="margin-top: 3em;margin-right: 3em;">
-<thead><th></th><th>Languages (out of <span id="totalLanguages"></span>)</th><th>Native speakers</th></thead>
+<thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th></thead>
 <tbody id="output"><td></td><td></td><td></td></tbody></table>
 </section>
 
@@ -498,7 +509,6 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 <li>Add a graphic to show the number of speakers using a rectangle that grows with population.</li>
   <li>Show character names in HTML rather than tooltips when doing mouseover?</li>
 <li>Add symbols in the relevant block that are not included in the list? (Useful for checking the data.)</li>
-<li>Add CLDR auxiliary characters in a different colour?</li>
 <li>Allow multiple regions per language for things like English, Spanish, Portuguese, etc.?</li>
   </ul>
 </section>
@@ -506,7 +516,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->20-Jan-2018<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->11-Mar-2018<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>

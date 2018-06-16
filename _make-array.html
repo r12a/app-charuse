@@ -15,7 +15,7 @@ cl = []
 totalLangs = 0
 totalChars = 0
 
-function makeList (list, lang) {
+function makeList (list, lang) { 
 	list = list.trim()
 	list = list.replace(/\s+/g,'')
 	var listarray = [...list]
@@ -45,33 +45,45 @@ function makeList (list, lang) {
 	}
 
 
-function updateCL (list, lang) {
+function updateCL (list, auxlist, lang) { console.log('UPDATECL: list ',list, 'auxlist ',auxlist, 'lang', lang)
 	list = list.trim()
+	auxlist = auxlist.trim()
 	list = list.replace(/\s+/g,'')
+	auxlist = auxlist.replace(/\s+/g,'')
 	var listarray = [...list]
+	var auxarray = [...auxlist]
 	//console.log(listarray)
     
 	for (let i=0;i<listarray.length;i++) {
         var dec = listarray[i].codePointAt(0)
         //console.log(dec, cl[dec])
-        if (cl[dec]) cl[dec].push(lang)
+        if (cl[dec]) cl[dec][0].push(lang)
         else {
-            cl[dec] = []
-            cl[dec].push(lang)
+            cl[dec] = [[],[]]
+            cl[dec][0].push(lang)
+            }
+        }
+	for (let i=0;i<auxarray.length;i++) {
+        var dec = auxarray[i].codePointAt(0)
+        if (cl[dec]) cl[dec][1].push(lang)
+        else {
+            cl[dec] = [[],[]]
+            cl[dec][1].push(lang)
             }
         }
 	}
 
 
-function dump () {
+function dump () { 
     out = ''
 	for (let i=0;i<cl.length;i++) {
         if (cl[i]) {
             window.totalChars++
-            out += 'cl[0x'+i.toString(16).toUpperCase()+']=['
-            //out += 'cl[0x'+String.fromCodePoint(i)+']=['
-            for (let x=0;x<cl[i].length;x++) out += '"'+cl[i][x]+'",'
-            out += ']\n'
+            out += 'cl[0x'+i.toString(16).toUpperCase()+']=[['
+            for (let x=0;x<cl[i][0].length;x++) out += '"'+cl[i][0][x]+'",'
+            out += '], ['
+            if (cl[i][1]) for (let x=0;x<cl[i][1].length;x++) out += '"'+cl[i][1][x]+'",'
+            out += ']]\n'
             }
         }
 	return 'var cl = []\n\n'+out
@@ -81,6 +93,7 @@ function dump () {
 function create () {
     for (var lang in langs) {
         list = ''
+        auxlist = ''
         window.totalLangs++
         if (langs[lang].letter) list += langs[lang].letter
         if (langs[lang].mark) list += langs[lang].mark
@@ -89,9 +102,9 @@ function create () {
         if (langs[lang].symbol) list += langs[lang].symbol
         if (langs[lang].separator) list += langs[lang].separator
         if (langs[lang].other) list += langs[lang].other
-        if (langs[lang].aux) list += langs[lang].aux
-        console.log(list,lang)
-        if (list != '') updateCL(list,lang)+'\n'
+        if (langs[lang].aux) auxlist += langs[lang].aux
+        console.log(list,lang,auxlist)
+        if (list != '') updateCL(list,auxlist,lang)+'\n'
         }
     console.log(cl)
     var out = dump()
