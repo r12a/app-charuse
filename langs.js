@@ -338,7 +338,7 @@ var langs = {
 
 "kn": { name:"Kannada (Canarese, Kanarese)", source:"CLDR,UDHR", region:"sasia", script:"knda", speakers:"37700000", letter:"ಅಆಇಈಉಊಋೠಌೡಎಏಐಒಓಔಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳಽ", mark:"\u{0303}\u{0CBC}\u{0C82}\u{0C83}\u{0CBE}\u{0CBF}\u{0CC0}\u{0CC1}\u{0CC2}\u{0CC3}\u{0CC4}\u{0CC6}\u{0CC7}\u{0CC8}\u{0CCA}\u{0CCB}\u{0CCC}\u{0CCD}\u{0CD5}\u{0CD6}", punctuation:"‐–—…‘’“”′″", number:"೦೧೨೩೪೫೬೭೮೯", other:"\u{200C}" },
 
-"ks": { name:"Kashmiri (Koshur)", source:"CLDR", region:"sasia", script:"arab", speakers:"5600000", letter:"ءآأٲؤاٮبپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںھہوۄیۍے", mark:"\u{064E}\u{064F}\u{0650}\u{06EA}\u{06ED}\u{0655}\u{0656}\u{0654}\u{0657}\u{065A}\u{065B}\u{0653}" },
+"ks": { name:"Kashmiri (Koshur)", source:"CLDR", region:"sasia", script:"arab", speakers:"5600000", letter:"ءآأٲؤاٮبپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںھہوۄیۍے", mark:"\u{064E}\u{064F}\u{0650}\u{0654}\u{0655}\u{0656}\u{0657}\u{065A}\u{065B}\u{06EA}\u{06ED}" },
 
 "kk": { name:"Kazakh", source:"CLDR,UDHR", region:"casia", script:"cyrl", speakers:"15000000", letter:"аәбвгғдеёжзийкқлмнңоөпрстуұүфхһцчшщъыіьэюяАӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯ", punctuation:"‐–—…‘’“”«»§" },
 
