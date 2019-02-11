@@ -658,7 +658,7 @@ var langs = {
 
 "seh": { name:"Sena", source:"CLDR", region:"afr", script:"latn", speakers:"1600000", letter:"áàâãçéêíóòôõúÁÀÂÃÇÉÊÍÓÒÔÕÚ", mark:"\u{0327}\u{0301}\u{0300}\u{0302}\u{0303}" },
 
-"sr": { name:"Serbian", source:"CLDR,UDHR", region:"eur", script:"cyrl", speakers:"~9700000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–…‘‚“„" },
+"sr": { name:"Serbian", source:"CLDR,UDHR", region:"eur", script:"cyrl", speakers:"~9700000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", mark:"\u{0302}", punctuation:"‐–…‘‚“„" },
 
 "sr-latn": { name:"Serbian (Latin)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"~9700000", letter:"čćžđšČĆŽĐŠ", mark:"\u{030C}\u{0301}", punctuation:"‐–…‘‚“„" },
 
