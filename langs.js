@@ -254,7 +254,7 @@ var langs = {
 
 "lg": { name:"Ganda (Luganda)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"4100000", letter:"ŋŊ" },
 
-"ka": { name:"Georgian", source:"cldrka,udhr_kat,r12a", region:"eur", script:"geor", speakers:"3700000", letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ", punctuation:"჻«»§‐–—…‘‚“„†‡′″", symbol:"№", aux:"ᲐᲑᲒᲓᲔᲕᲖᲗᲘᲙᲚᲛᲜᲝᲞᲟᲠᲡᲢᲣᲤᲥᲦᲧᲨᲩᲪᲫᲬᲭᲮᲯᲰ" },
+"ka": { name:"Georgian", source:"cldrka,udhr_kat,2cafedfc80733bd49fb1ee6af49657333a88c1a3", region:"eur", script:"geor", speakers:"3700000", letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ", punctuation:"჻«»§‐–—…‘‚“„†‡′″", symbol:"№", aux:"ᲐᲑᲒᲓᲔᲕᲖᲗᲘᲙᲚᲛᲜᲝᲞᲟᲠᲡᲢᲣᲤᲥᲦᲧᲨᲩᲪᲫᲬᲭᲮᲯᲰ" },
 
 "de": { name:"German", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"95000000", letter:"äößüÄÖÜ", mark:"\u{0308}", punctuation:"«»§‐–—…‘‚“„" },
 
