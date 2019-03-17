@@ -1,5 +1,7 @@
 var langs = {
 
+// Any time this is changed, run _make-array.html to generate new code for char_lang.js !
+
 "ab":{ name:"Abkhaz (Abxaz, Abkhazian)", source:"UDHR", region:"wasia", script:"cyrl", speakers:"113000", letter: "ауҩытәсизнқегьцрҧшдклжҭхҳҟмобчӡҵҕџҿпҽвҷфАУҨЫТӘСИЗНҚЕГЬЦРҦШДКЛЖҬХҲҞМОБЧӠҴҔЏҾПҼВҶФ", punctuation:"–‐" },
 
 "ace": { name:"Acehnese", source:"UDHR", region:"seasia", script:"ascii", speakers:"3500000", punctuation:"‐“”" },
@@ -252,7 +254,7 @@ var langs = {
 
 "lg": { name:"Ganda (Luganda)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"4100000", letter:"ŋŊ" },
 
-"ka": { name:"Georgian", source:"CLDR,UDHR", region:"eur", script:"geor", speakers:"3700000", letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ", punctuation:"჻«»§‐–—…‘‚“„†‡′″", symbol:"№" },
+"ka": { name:"Georgian", source:"cldrka,udhr_kat,r12a", region:"eur", script:"geor", speakers:"3700000", letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ", punctuation:"჻«»§‐–—…‘‚“„†‡′″", symbol:"№", aux:"ᲐᲑᲒᲓᲔᲕᲖᲗᲘᲙᲚᲛᲜᲝᲞᲟᲠᲡᲢᲣᲤᲥᲦᲧᲨᲩᲪᲫᲬᲭᲮᲯᲰ" },
 
 "de": { name:"German", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"95000000", letter:"äößüÄÖÜ", mark:"\u{0308}", punctuation:"«»§‐–—…‘‚“„" },
 
@@ -742,7 +744,7 @@ var langs = {
 
 "dav": { name:"Taita (Dawida)", source:"CLDR", region:"afr", script:"ascii", speakers:"400000" },
 
-"ta": { name:"Tamil", source:"CLDR,UDHR,r12a", region:"sasia", script:"taml", speakers:"70000000", letter:"அஆஇஈஉஊஎஏஐஒஓஔஃகஙசஞடணதநபமயரலவழளறனஜஷஸஹ", mark:"\u{0BBE}\u{0BBF}\u{0BC0}\u{0BC1}\u{0BC2}\u{0BC6}\u{0BC7}\u{0BC8}\u{0BCA}\u{0BCB}\u{0BCC}\u{0BCD}\u{0BD7}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ஶ௦௧௨௩௪௫௬௭௮௯௰௱௲௳௴௵௶௷௸௹௺ௐ।॥" },
+"ta": { name:"Tamil", source:"CLDR,UDHR,r12a,b58628669c02b347a127405429a903afbcc07eb7", region:"sasia", script:"taml", speakers:"70000000", letter:"அஆஇஈஉஊஎஏஐஒஓஔஃகஙசஞடணதநபமயரலவழளறனஜஷஸஹ", mark:"\u{0BBE}\u{0BBF}\u{0BC0}\u{0BC1}\u{0BC2}\u{0BC6}\u{0BC7}\u{0BC8}\u{0BCA}\u{0BCB}\u{0BCC}\u{0BCD}\u{0BD7}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ஶ௦௧௨௩௪௫௬௭௮௯௰௱௲௳௴௵௶௷௸௹௺ௐ।॥" },
 
 "twq": { name:"Tasawaq", source:"CLDR", region:"afr", script:"latn", speakers:"8000", letter:"ɲẽẼŋšžŊŠŽƝãõÃÕ", mark:"\u{0303}\u{030C}" },
 
@@ -909,3 +911,7 @@ var langs = {
 // Notes
 // kl: CLDR adds, letter:"áâãéêíîôúûæøåÁÂÃÉÊÍÎÔÚÛÆØÅĩĸũĨŨ", mark:"\u{0301}\u{0302}\u{0303}\u{030A}" but i don't see any in use
 // aux field holds things you would find but not often, and is determined by my research rather than simply from CLDR's auxiliary field
+
+
+
+
