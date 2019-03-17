@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <title>Character usage</title>
-<meta name="description" content="Characters used by any particular langauge, and languages which use any particular character." />
+<meta name="description" content="Characters used by any particular language, and languages which use any particular character." />
 <link rel="stylesheet" type="text/css" href="/shared/style/docs.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="/shared/code/boilerplate.js"></script>
@@ -13,12 +13,14 @@
 <script>
 
 function makeBCPList () {
-	out = '<option value=""> </option>'
+	//out = '<option value=""> </option>'
+	out = ''
 	array = []
 	for (l in langs) array.push(l)
 	array.sort()
-	for (let i=0;i<array.length;i++) out += '<option value="'+array[i]+'">'+array[i]+'</option>\n'
+	for (let i=0;i<array.length;i++) out += '<option value="'+array[i]+'">'+array[i]+' '+langs[array[i]].name+'</option>\n'
 	document.getElementById('totalLanguages').textContent = array.length
+	document.getElementById('total').textContent = array.length
 	return out
 	}
 
@@ -380,32 +382,62 @@ function compareLists () {
     document.getElementById('rightOut').textContent = rightResult
 
     }
+
+
+function xfilter (str) {
+	str = str.toLowerCase()
+	str = str.replace(/ /,'.*')
+	var total = 0
+	var names = document.querySelectorAll('#listrecord p')
+	for (var i=0;i<langs.length;i++) {
+		if (! langs[i].name.toLowerCase().match(str)) names[i].style.display = 'none'
+		else { names[i].style.display = 'block'; total++ }
+		}
+	document.getElementById('total').textContent = total
+	}
+
+function filter (str) {
+	str = str.toLowerCase()
+	str = str.replace(/ /,'.*')
+	var total = 0
+	var names = document.querySelectorAll('#languageSelector option')
+	for (var i=0;i<names.length;i++) {
+		if (! names[i].textContent.toLowerCase().match(str)) names[i].style.display = 'none'
+		else { names[i].style.display = 'block'; total++ }
+		}
+	document.getElementById('total').textContent = total
+	}
 </script>
 </head>
 
-<body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('langNames').innerHTML = makeLangList(); document.getElementById('languageByRegion').innerHTML = listLangsByRegion(); document.getElementById('languageByScript').innerHTML = listLangsByScript()">
+<!body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('langNames').innerHTML = makeLangList(); document.getElementById('languageByRegion').innerHTML = listLangsByRegion(); document.getElementById('languageByScript').innerHTML = listLangsByScript()"-->
+<body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('languageByRegion').innerHTML = listLangsByRegion(); document.getElementById('languageByScript').innerHTML = listLangsByScript()">
 <header>
 <div id="header-boilerplate"></div>
 <script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('/shared/images/world.gif','Character usage lookup','');</script>
 </header>
-<aside class="sidebar">
+<!--aside class="sidebar">
 <section>
   <p style="font-size: 90%;"><samp>Find a language tag</samp> works for Firefox and Chrome only. For other browsers, <a href="/app-subtags/">find a tag here</a>.</p>
 </section>
-</aside>
+</aside-->
 
 
 <p style="font-size: 90%;">Find characters used by a given language, or languages that use a given non-ASCII character. The information may not be 100% reliable. <strong><a href="#notesSection" onClick="document.getElementById('notesSection').open = true;">Please read the notes below.</a></strong></p>
 
 <section style="margin-top: 3em;">
-<p><strong>List characters for the following language tag:</strong>
-<label>
-<select id="languageSelector" onChange="document.getElementById('langDetails').innerHTML = showLanguage(this.value)"></select></label><br/>
+<p><strong>Pick a language:</strong></p>
+
+<p>Filter the list <input id="filter" type="text" onInput="filter(this.value);" /> <span style="font-size: 70%; margin-left:2em;">Total: <span id="total"></span></span></p>
+
+<p><label>
+<select id="languageSelector" onChange="document.getElementById('langDetails').innerHTML = showLanguage(this.value)" size="5"></select></label><!--br/>
 <i style="font-size:80%;">
 <label>Find a language tag: 
 <input style="width:30em;" list="langNames" id="langNameInput"  onChange="document.getElementById('langDetails').innerHTML = showLanguage(this.value)" placeholder="Type, then select name, then hit return." /></label></i>
-<datalist id="langNames"></datalist>
+<datalist id="langNames"></datalist-->
 </p>
+
 
 
 <table id="langDetails"></table>
@@ -421,8 +453,8 @@ function compareLists () {
  
      <p><button style="vertical-align:top;" onclick="document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)">Look up</button></p>
 <table style="margin-top: 3em;margin-right: 3em;">
-<thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th></thead>
-<tbody id="output"><td></td><td></td><td></td></tbody></table>
+<thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th>
+<tbody id="output"><td></td><td></td><td></td></table>
 </section>
 
 
@@ -486,8 +518,10 @@ function compareLists () {
   <h3>Tips:</h3>
   <ul>
   <li>Mouse over the characters displayed to see their Unicode code point value and name. The <img src="univ.png" alt="U"> icon will show all characters in that cell in UniView. This can be useful if you don't have fonts for that script, since UniView uses images by default.</li>
-  <li> The control <samp>Find a language tag</samp> works as follows: Type in a name, or part of a name, of a language. Select the language you want from the suggestions offered. This will put the BCP47 code into the control. Hit return and you'll display information for that language.<br>
-Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need to find a BCP47 code for a language, go to <a href="https://r12a.github.io/app-subtags/">https://r12a.github.io/app-subtags/</a>.</li>
+  <!--li> The control <samp>Find a language tag</samp> works as follows: Type in a name, or part of a name, of a language. Select the language you want from the suggestions offered. This will put the BCP47 code into the control. Hit return and you'll display information for that language.<br>
+Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need to find a BCP47 code for a language, go to <a href="https://r12a.github.io/app-subtags/">https://r12a.github.io/app-subtags/</a>.</li-->
+  <li> The control <samp>Filter the list</samp> allows you to type in a name, or part of a name, of a language in order to find an option. Select the language you want from the suggestions offered. To see all options, just empty the box.<br>
+Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for a language, go to <a href="https://r12a.github.io/app-subtags/">https://r12a.github.io/app-subtags/</a>.</li>
   <li>When adding characters you want to look up to the input field, you can add Unicode code point numbers with space to either side, or escapes. For example, for આ any of the following escapes will work: <code>&amp;#x0A86; \u0A86 \u{A86} \0A86 U+0A86 0xA86</code>. No extra space is needed between escapes, and supplementary characters work too.</li>
   <li>After you have generated a list of languages that use a given character, if you click on a language name then details for that language will be displayed above.</li>
   <li>You can automatically display data via the URL. For example, try <a href="https://r12a.github.io/app-charuse/?language=vi&amp;charlist=đỹã">https://r12a.github.io/app-charuse/?language=vi&amp;charlist=đỹã</a>.</li>
@@ -516,7 +550,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->11-Mar-2018<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->17-Mar-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
