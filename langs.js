@@ -210,13 +210,13 @@ var langs = {
 
 "ebu": { name:"Embu (Kîembu)", source:"CLDR", region:"afr", script:"latn", speakers:"320000", letter:"ĩũĨŨ", mark:"\u{0303}" },
 
-"en": { name:"English", source:"CLDR,UDHR", region:"eur", script:"ascii", speakers:"~380000000", punctuation:"§‐–—…‘’“”†‡′″" },
+"en": { name:"English", source:"cldr_en,udhr_eng", region:"eur", script:"ascii", speakers:"~380000000", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̃̄" },
 
 "eo": { name:"Esperanto", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"~3000", letter:"ĉĝĥĵŝŭĈĜĤĴŜŬ", mark:"\u{0302}\u{0306}", punctuation:"‐–—…‘’“”" },
 
-"et": { name:"Estonian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"1100000", letter:"õäöüÕÄÖÜšžŠŽ", mark:"\u{030C}\u{0303}\u{0308}" },
+"et": { name:"Estonian", source:"cldr_et,udhr_est", region:"eur", script:"latn", speakers:"1100000", letter:"õäöüÕÄÖÜšžŠŽ", mark:"\u{030C}\u{0303}\u{0308}", aux:"āēīŏōœūĀĒĪŎŌŒŪáàâåæçéèêëíìîïñóòôøúùûÁÀÂÅÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧́̀̂̊̄̆" },
 
-"ee": { name:"Ewe", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"20000000", letter:"áàãéèíìóòõúùÁÀÃÉÈÍÌÓÒÕÚÙƒƉƐƑƔƆƲĩŋũĨŊŨẽẼɖɛɣɔʋ", mark:"\u{0301}\u{0300}\u{0303}", punctuation:"§‐–—…‘’“”†‡′″" },
+"ee": { name:"Ewe", source:"cldr_ee,udhr_ewe", region:"afr", script:"latn", speakers:"20000000", letter:"áàãéèíìóòõúùÁÀÃÉÈÍÌÓÒÕÚÙƒƉƐƑƔƆƲĩŋũĨŊŨẽẼɖɛɣɔʋ", mark:"\u{0301}\u{0300}\u{0303}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕĭŏœŭĂĀĔĬŎŒŬŸâåäæçêëîïñôöøûüÿÂÅÄÆÇÊËÎÏÑÔÖØÛÜ̧̆̂̊̈̄" },
 
 "ewo": { name:"Ewondo (Kolo)", source:"CLDR", region:"afr", script:"latn", speakers:"580000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǎǐǹǒǔǍƏƐǏǸǑƆǓěńŋĚŃŊəɛɔ", mark:"\u{0301}\u{0300}\u{0302}\u{030C}" },
 
