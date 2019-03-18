@@ -112,13 +112,13 @@ var langs = {
 
 "buc": { name:"Bushi (Shibushi, Kibushi)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"41700", letter:"ìàãÌÀÃɓŋĩŊĨƁ", mark:"\u{0300}\u{0303}", punctuation:"’" },
 
-"ca": { name:"Catalan", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"4100000", letter:"àçéèíïóòúüÀÇÉÈÍÏÓÒÚÜ", mark:"\u{0327}\u{0300}\u{0301}\u{0308}", punctuation:"·¡¿«»§‐–—…‘’“”†‡′″" },
+"ca": { name:"Catalan", source:"cldr_ca,udhr_cat", region:"eur", script:"latn", speakers:"4100000", letter:"àçéèíïóòúüÀÇÉÈÍÏÓÒÚÜ", mark:"\u{0327}\u{0300}\u{0301}\u{0308}", punctuation:"·¡¿«»§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŀŏōœŭūĂĀĔĒĬĪĿŎŌŒŬŪŸáâåäãæêëìîñºôöøùûÿÁÂÅÄÃÆÊËÌÎÑÔÖØÙÛ̆̂̊̃̄" },
 
 "tzm": { name:"Central Atlas Tamazight (Central Morocco Tamazight, Middle Atlas Tamazight, Central Shilha, Beraber, Braber) (Latin)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"2500000", letter:"ɛɣḍḥṛṣṭẓỵḌḤṚṢṬẒỴƐƔâéçÂÉÇʷ", mark:"\u{0327}\u{0323}\u{0302}\u{0301}" },
 
 "zgh": { name:"Standard Moroccan Tamazight (Amazigh, Tamazight) (Tifinagh)", source:"CLDR,UDHR", script:"tfng", speakers:"?", region:"afr", letter:"ⴰⵍⵖⵓⵎⴹⵏⵉⵣⵔⴼⴳⴷⵊⴱⵜⵡⴽⵢⵙⵀⵛⵥⵇⵯⴻⵕⵟⵃⵄⵅⵚ" },
 
-"ckb-arab": { name:"Central Kurdish (Sorani) (Arabic)", source:"CLDR", region:"wasia", script:"arab", speakers:"7000000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"\u{0654}", punctuation:"٫٬٪؉", number:"٠١٢٣٤٥٦٧٨٩" },
+"ckb-arab": { name:"Central Kurdish (Sorani) (Arabic)", source:"cldr_ckb", region:"wasia", script:"arab", speakers:"7000000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"\u{0654}", punctuation:"٫٬٪؉", number:"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْ" },
 
 "ckb-latn": { name:"Central Kurdish (Sorani) (Latin)", source:"UDHR", region:"wasia", script:"latn", speakers:"7000000", letter:"şŞûîêçÛÎÊÇ", mark:"\u{0327}\u{0302}" },
 
@@ -128,15 +128,15 @@ var langs = {
 
 "cgg": { name:"Chiga (Rukiga, Ruchiga)", source:"CLDR", region:"afr", script:"ascii", speakers:"1600000" },
 
-"cu": { name:"Church Slavonic (Church Slavic, New Church Slavonic)", source:"CLDR", region:"eur", script:"cyrl", speakers:"0", letter:"абвгдеєжѕзиіїйклмнѻоѡѽѿпрстуфхцчшщъыьѣюѧѫѯѱѳѵѷАБВГДЕЄЖЅЗИІЇЙКЛМНѺОѠѼѾПРСТУФХЦЧШЩЪЫЬѢЮѦѪѮѰѲѴѶꙿꙁꙍꙋꙗꙀꙌꙊꙖⸯ", mark:"\u{0487}\u{0483}\u{2DE0}\u{2DE1}\u{2DE2}\u{2DE3}\u{2DE4}\u{2DE5}\u{2DE6}\u{2DE7}\u{2DE8}\u{2DE9}\u{2DEA}\u{2DEC}\u{2DED}\u{2DEF}\u{2DF1}\u{2DF4}\u{A67D}", punctuation:"꙾꙳–—‐", symbol:"҂" },
+"cu": { name:"Church Slavonic (Church Slavic, New Church Slavonic)", source:"cldr_cu", region:"eur", script:"cyrl", speakers:"0", letter:"абвгдеєжѕзиіїйклмнѻоѡѽѿпрстуфхцчшщъыьѣюѧѫѯѱѳѵѷАБВГДЕЄЖЅЗИІЇЙКЛМНѺОѠѼѾПРСТУФХЦЧШЩЪЫЬѢЮѦѪѮѰѲѴѶꙿꙁꙍꙋꙗꙀꙌꙊꙖⸯ", mark:"\u{0487}\u{0483}\u{2DE0}\u{2DE1}\u{2DE2}\u{2DE3}\u{2DE4}\u{2DE5}\u{2DE6}\u{2DE7}\u{2DE8}\u{2DE9}\u{2DEA}\u{2DEC}\u{2DED}\u{2DEF}\u{2DF1}\u{2DF4}\u{A67D}", punctuation:"꙾꙳–—‐", symbol:"҂", aux:"҈҉҄ҥҁџѥѩѭҤҀЏѤѨѬⷶⷷⷸⷫⷵⷮⷹⷰⷲⷳⷺⷻⷼⷽⷾⷿ꙰꙱꙲꙯ꙣꙴꙃꙅꙵꙶꙇꙉꙥꙧꙩꙫꙭꙮꚙꚛꙷꚞꙻꙡꙏꙸꙑꙹꙺꙓꙕꚟꙙꙛꙝꙟꙢꙂꙄꙆꙈꙤꙦꙨꙪꙬꚘꚚꙠꙎꙐꙒꙔꙘꙚꙜꙞ︯︮" },
 
-"ksh": { name:"Kölsch (Colognian)", source:"CLDR", region:"eur", script:"latn", speakers:"250000", letter:"ėœůĖŒŮåäæëößüÅÄÆËÖÜ", mark:"\u{030A}\u{0308}\u{0307}", punctuation:"‐–—…‘‚“„†‡§⸗", symbol:"°" },
+"ksh": { name:"Kölsch (Colognian)", source:"cldr_ksh", region:"eur", script:"latn", speakers:"250000", letter:"ėœůĖŒŮåäæëößüÅÄÆËÖÜ", mark:"\u{030A}\u{0308}\u{0307}", punctuation:"‐–—…‘‚“„†‡§⸗", symbol:"°", aux:"ăāĕēğĭīĳıłŏōŭūĂĀĔĒĞĬĪĲŁŎŌŬŪŸáàâãçéèêíìîïñóòôøúùûÿÁÀÂÃÇÉÈÊÍÌÎÏÑÓÒÔØÚÙÛ̧́̀̆̂̃̄" },
 
 "kw": { name:"Cornish", source:"CLDR", region:"eur", script:"ascii", speakers:"~350" },
 
 "hr": { name:"Croatian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"5600000", letter:"čćžđšČĆŽĐŠ", mark:"\u{030C}\u{0301}", punctuation:"‐–—…‘’‚“”„′″" },
 
-"cs": { name:"Czech (Bohemian)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"10700000", letter:"áéíóúýÁÉÍÓÚÝčďěňřšťůžČĎĚŇŘŠŤŮŽ", mark:"\u{0301}\u{030C}\u{030A}", punctuation:"‐–…‘‚“„§" },
+"cs": { name:"Czech (Bohemian)", source:"cldr_cs,udhr_ces", region:"eur", script:"latn", speakers:"10700000", letter:"áéíóúýÁÉÍÓÚÝčďěňřšťůžČĎĚŇŘŠŤŮŽ", mark:"\u{0301}\u{030C}\u{030A}", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīľłŏōœŕŭūĂĀĔĒĬĪĽŁŎŌŒŔŬŪŸàâåäãæçèêëìîïñòôöøùûüÿÀÂÅÄÃÆÇÈÊËÌÎÏÑÒÔÖØÙÛǛ̧̆̂̈̃̄" },
 
 "cbu": { name:"Candoshi-Shapra (Candoxi, Kandoshi, Murato)", source:"UDHR", region:"sam", script:"latn", speakers:"1100", letter:"íáÍÁ", mark:"\u{0301}", punctuation:"¿¡" },
 
