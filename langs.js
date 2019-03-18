@@ -230,13 +230,13 @@ var langs = {
 
 "fo": { name:"Faroese", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"66000", letter:"áðíóúýæøÁÐÍÓÚÝÆØ", mark:"\u{0301}", punctuation:"́§‐–…‘’“”†′″" },
 
-"fil": { name:"Filipino", source:"CLDR", region:"seasia", script:"latn", speakers:"28000000", letter:"ñÑ", mark:"\u{0303}", punctuation:"§‐–—…‘’“”′″" },
+"fil": { name:"Filipino", source:"cldr_fil", region:"seasia", script:"latn", speakers:"28000000", letter:"ñÑ", mark:"\u{0303}", punctuation:"§‐–—…‘’“”′″", aux:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛ́̀̂" },
 
-"fi": { name:"Finnish", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"5400000", letter:"åäöÅÄÖšžŠŽ", mark:"\u{030C}\u{030A}\u{0308}", punctuation:"»§‐–…’”" },
+"fi": { name:"Finnish", source:"cldr_fi,udhr_fin", region:"eur", script:"latn", speakers:"5400000", letter:"åäöÅÄÖšžŠŽ", mark:"\u{030C}\u{030A}\u{0308}", punctuation:"»§‐–…’”", aux:"ăąāćčċďđěėęēğģħįīıķĺľļłńňņŋőœŕřśŝşťţŧůűųūźżĂĄĀĆČĊĎĐĚĖĘĒĞĢĦİĮĪĶĹĽĻŁŃŇŅŊŐŒŔŘŚŜŞŤŢŦŮŰŲŪŸŹŻʒǧǥȟǩșțǯǦǤȞǨȘȚƷǮáàâãçðéèêëíîïñóòôõßúùûýÿüþæøÁÀÂÃÇÐÉÈÊËÍÎÏÑÓÒÔÕÚÙÛÝÜÞÆØ̨̧̦̇́̀̆̂̃̄̋" },
 
-"fr": { name:"French", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"150000000", letter:"àâæçéèêëîïôùûüÿÀÂÆÇÉÈÊËÎÏÔÙÛÜœŒŸ", mark:"\u{0327}\u{0300}\u{0302}\u{0301}\u{0308}", punctuation:"«»§‐–—…’“”†‡" },
+"fr": { name:"French", source:"cldr_fr,udhr_fra", region:"eur", script:"latn", speakers:"150000000", letter:"àâæçéèêëîïôùûüÿÀÂÆÇÉÈÊËÎÏÔÙÛÜœŒŸ", mark:"\u{0327}\u{0300}\u{0302}\u{0301}\u{0308}", punctuation:"«»§‐–—…’“”†‡", aux:"āćēīĳřšſĀĆĒĪĲŘŠǔǓáåäãíìñóòöõøßúÁÅÄÃÍÌÑÓÒÖÕØÚ̊̃̄̌" },
 
-"fur": { name:"Friulian (Friulan, Eastern Ladin)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"600000", letter:"àâçèêìîòôùûÀÂÇÈÊÌÎÒÔÙÛ", mark:"\u{0327}\u{0300}\u{0302}" },
+"fur": { name:"Friulian (Friulan, Eastern Ladin)", source:"cldr_fur,udhr_fur", region:"eur", script:"latn", speakers:"600000", letter:"àâçèêìîòôùûÀÂÇÈÊÌÎÒÔÙÛ", mark:"\u{0327}\u{0300}\u{0302}", aux:"čğšČĞŠåéëïñóüÅÉËÏÑÓÜ̊̌́̈̆̃" },
 
 "ff": { name:"Fulah (Fulani)", source:"CLDR", region:"afr", script:"latn", speakers:"24000000", letter:"ñÑƴƁƊƳŋŊɓɗ", mark:"\u{0303}" },
 
