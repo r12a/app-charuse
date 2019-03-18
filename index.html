@@ -306,8 +306,8 @@ function showLanguage (lang) {
 	out += '<tr><th>Source</th><td>'
 	for (let i=0;i<sources.length;i++) {
 		if (i>0) out += ', '
-		if (sources[i].startsWith('cldr')) out += '<a href="https://www.unicode.org/cldr/charts/latest/summary/'+sources[i].substr(4)+'.html">CLDR</a>'
-		else if (sources[i].startsWith('udhr')) out += '<a href="https://unicode.org/udhr/d/'+sources[i]+'.html">UDHR</a>'
+		if (sources[i].startsWith('cldr_')) out += '<a href="https://www.unicode.org/cldr/charts/latest/summary/'+sources[i].substr(5)+'.html">CLDR</a>'
+		else if (sources[i].startsWith('udhr_')) out += '<a href="https://unicode.org/udhr/d/'+sources[i]+'.html">UDHR</a>'
 		else if (sources[i] === 'r12a' || sources[i] === 'CLDR' || sources[i] === 'UDHR') out += sources[i]
 		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">r12a</a>'
 		}
@@ -564,7 +564,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->17-Mar-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->18-Mar-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
