@@ -184,13 +184,13 @@ var langs = {
 
 "csw": { name:"Swampy Cree (Maskekon, Omaškêkowak, Omushkego)", source:"UDHR", region:"nam", script:"cans", speakers:"2500", letter:"ᐁᐢᐱᑕᑲᒥᐠᐊᑭᒋᐃᑗᐎᐣᓂᑯᓯᓇᐅᔑᒧᓀᐡᑐᑌᑎᐸᐗᐳᒪᒶᐌᔭᓄᑾᔦᒣᐤᓴᓶᔕᑴᐯᐟᑫᓱᓉᐺᑡᐨᔓᑺᓋᔗᔾᔀᑊᔡᒬᒼ", punctuation:"᙮" },
 
-"da": { name:"Danish", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"5500000", letter:"æøåÆØÅ", mark:"\u{030A}", punctuation:"§‐–…‘’“”†′″" },
+"da": { name:"Danish", source:"cldr_da,udhr_dan", region:"eur", script:"latn", speakers:"5500000", letter:"æøåÆØÅ", mark:"\u{030A}", punctuation:"§‐–…‘’“”†′″", aux:"œŒŸǿǾáàâçéèêëíîïñóôúùûÿüäöÁÀÂÇÉÈÊËÍÎÏÑÓÔÚÙÛÜÄÖ̧́̀̂̈̃" },
 
 "dua": { name:"Duala (Douala, Diwala, Dwela, Dualla, Dwala)", source:"CLDR", region:"afr", script:"latn", speakers:"90000", letter:"áéíóúÁÉÍÓÚƁƊƐƆŋūŊŪɓɗɛɔ", mark:"\u{0301}\u{0304}" },
 
-"nl": { name:"Dutch", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"24000000", letter:"áäéëíïóöúüÁÄÉËÍÏÓÖÚÜ", mark:"\u{0301}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
+"nl": { name:"Dutch", source:"cldr_nl,udhr_nld", region:"eur", script:"latn", speakers:"24000000", letter:"áäéëíïóöúüÁÄÉËÍÏÓÖÚÜ", mark:"\u{0301}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″", aux:"œŒŸàâåãæçèêîñôøùûÿÀÂÅÃÆÇÈÊÎÑÔØÙÛ̧̀̂̊̃" },
 
-"dz": { name:"Dzongkha (Bhutanese)", source:"CLDR,UDHR", region:"sasia", script:"tibt", speakers:"171080", letter:"ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ", mark:"\u{0F72}\u{0F7A}\u{0F7C}\u{0F74}\u{0F90}\u{0F91}\u{0F92}\u{0F94}\u{0F97}\u{0F99}\u{0F9F}\u{0FA0}\u{0FA1}\u{0FA3}\u{0FA4}\u{0FA5}\u{0FA6}\u{0FA8}\u{0FA9}\u{0FAA}\u{0FAB}\u{0FAD}\u{0FB1}\u{0FB2}\u{0FB3}\u{0FB5}\u{0FB6}\u{0FB7}\u{0F71}\u{0F95}", punctuation:"༼༽༄༅༆༈༉༊࿐࿑༒࿒࿓࿔༌།༎༏༐༑༔་§‐–—…‘’“”†‡", number:"༡༢༣༤༥༦༧༨༩༠", symbol:"༶྾྿༴" },
+"dz": { name:"Dzongkha (Bhutanese)", source:"cldr_dz,udhr_dzo", region:"sasia", script:"tibt", speakers:"171080", letter:"ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ", mark:"\u{0F72}\u{0F7A}\u{0F7C}\u{0F74}\u{0F90}\u{0F91}\u{0F92}\u{0F94}\u{0F97}\u{0F99}\u{0F9F}\u{0FA0}\u{0FA1}\u{0FA3}\u{0FA4}\u{0FA5}\u{0FA6}\u{0FA8}\u{0FA9}\u{0FAA}\u{0FAB}\u{0FAD}\u{0FB1}\u{0FB2}\u{0FB3}\u{0FB5}\u{0FB6}\u{0FB7}\u{0F71}\u{0F95}", punctuation:"༼༽༄༅༆༈༉༊࿐࿑༒࿒࿓࿔༌།༎༏༐༑༔་§‐–—…‘’“”†‡", number:"༡༢༣༤༥༦༧༨༩༠", symbol:"༶྾྿༴", aux:"྄ཊཋཌཎཾཥྀཻཽྚྛྜྞྺྻྼ" },
 
 "dga": { name:"Dagaare", source:"UDHR", region:"afr", script:"latn", speakers:"1100000", letter:"ãÃƐƆũŨɛɔ", mark:"\u{0303}" },
 
