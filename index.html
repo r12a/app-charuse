@@ -285,7 +285,7 @@ function showLanguage (lang) {
         if (total > 0) stats += ', '
         stats += charList.length + ' infrequent'
         total += charList.length
-		out += '<tr><th>Infrequent</th><td class="large">'
+		out += '<tr><th>Infrequent</th><td class="infrequent">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = cp+'0'

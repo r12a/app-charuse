@@ -216,6 +216,9 @@ table {
     border: 1px solid #ccc;
 }
 
+.infrequent {
+	font-size: 20px; line-height: 1.5;
+	}
 
 
 
