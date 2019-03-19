@@ -722,7 +722,7 @@ var langs = {
 
 "snk": { name:"Soninke", source:"UDHR", region:"afr", script:"latn", speakers:"2100000", letter:"ñÑŋŊ", mark:"\u{0303}" },
 
-"hsb": { name:"Upper Sorbian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"13000", letter:"čćźěłńřšžČĆŹĚŁŃŘŠŽóÓ", mark:"\u{030C}\u{0301}", punctuation:"«»§‐–—…‘’‚“„" },
+"hsb": { name:"Upper Sorbian", source:"cldr_hsb,udhr_hsb", region:"eur", script:"latn", speakers:"13000", letter:"čćźěłńřšžČĆŹĚŁŃŘŠŽóÓ", mark:"\u{030C}\u{0301}", punctuation:"«»§‐–—…‘’‚“„", aux:"ăąāďđĕėęēğĭīıĺľňŏőōœŕśşťŭůűūżĂĄĀĎĐĔĖĘĒĞĬİĪĹĽŇŎŐŌŒŔŚŞŤŬŮŰŪŸŻáàâåäãæçéèêëíìîïñòôöøßúùûüýÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÒÔÖØÚÙÛÜÝ̨̧̇̀̆̂̊̈̃̄̋" },
 
 "nso": { name:"Northern Sotho", source:"UDHR", region:"afr", script:"latn", speakers:"4700000", letter:"šŠ", mark:"\u{030C}" },
 
@@ -816,9 +816,9 @@ var langs = {
 
 "tzo": { name:"Tzotzil", source:"UDHR", region:"cam", script:"latn", speakers:"400000", letter:"óáéíúÓÁÉÍÚ", mark:"\u{0301}", punctuation:"’" },
 
-"uk": { name:"Ukrainian", source:"CLDR,UDHR", region:"eur", script:"cyrl", speakers:"45000000", letter:"абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯʼ", mark:"\u{0308}\u{0306}", punctuation:"–’“„‐«»§", symbol:"№" },
+"uk": { name:"Ukrainian", source:"cldr_uk,udhr_ukr", region:"eur", script:"cyrl", speakers:"45000000", letter:"абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯʼ", mark:"\u{0308}\u{0306}", punctuation:"–’“„‐«»§", symbol:"№", aux:"ёъыэЁЪЫЭ́" },
 
-"ur": { name:"Urdu", source:"CLDR,UDHR", region:"sasia", script:"arab", speakers:"65000000", letter:"اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےهي", mark:"\u{0650}\u{064B}\u{064F}\u{0670}\u{064E}\u{0651}\u{0654}\u{0653}", punctuation:"،؍٫٬؛؟۔”“؁٪", number:"۰۱۲۳۴۵۶۷۸۹", aux:"\u{0652}\u{064C}\u{064D}\u{0657}\u{0656}\u{0658}\u{0612}\u{0614}\u{0613}\u{0611}\u{0610}؀؄؎؏؂﷽", notes:"Removed CLDR's teh marbuta and alef with hamza below.<br/>Added arabic percent sign." },
+"ur": { name:"Urdu", source:"cldr_urdu,udhr_urd", region:"sasia", script:"arab", speakers:"65000000", letter:"اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےهي", mark:"\u{0650}\u{064B}\u{064F}\u{0670}\u{064E}\u{0651}\u{0654}\u{0653}", punctuation:"،؍٫٬؛؟۔”“؁٪", number:"۰۱۲۳۴۵۶۷۸۹", aux:"\u{0652}\u{064C}\u{064D}\u{0657}\u{0656}\u{0658}\u{0612}\u{0614}\u{0613}\u{0611}\u{0610}؀؄؎؏؂﷽", aux:"؃ۃٻٺټٽي", notes:"Removed CLDR's teh marbuta and alef with hamza below.<br/>Added arabic percent sign." },
 
 "ug": { name:"Uyghur (Uighur, Eastern Turki)", source:"CLDR,UDHR", region:"casia", script:"arab", speakers:"25000000", letter:"ئاەبپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىي", mark:"\u{0654}", punctuation:"،؛" },
 
@@ -826,7 +826,7 @@ var langs = {
 
 "uz": { name:"Uzbek", source:"CLDR,UDHR", region:"casia", script:"latn", speakers:"27000000", letter:"ʻʼ", punctuation:"‐–—…‘’“”„′″«»§" },
 
-"uz-cyrl": { name:"Uzbek (Cyrillic)", source:"UDHR", region:"casia", script:"cyrl", speakers:"27000000", letter:"инсоҳуқлармждекцяйбшгтўвэъпчзёфхюғИНСОҲУҚЛАРМЖДЕКЦЯЙБШГТЎВЭЪПЧЗЁФХЮҒ", mark:"\u{0306}\u{0308}", punctuation:"‐–" },
+"uz-cyrl": { name:"Uzbek (Cyrillic)", source:"cldr_uz_Cyrl,udhr_uzn_cyrl", region:"casia", script:"cyrl", speakers:"27000000", letter:"инсоҳуқлармждекцяйбшгтўвэъпчзёфхюғИНСОҲУҚЛАРМЖДЕКЦЯЙБШГТЎВЭЪПЧЗЁФХЮҒ", mark:"\u{0306}\u{0308}", punctuation:"‐–", aux:"щыьЩЫЬ" },
 
 "umb": { name:"Umbundu (South Mbundu)", source:"UDHR", region:"afr", script:"latn", speakers:"6000000", letter:"ñêãîõâÑÊÃÎÕÂ", mark:"\u{0303}\u{0302}", punctuation:"’" },
 
