@@ -442,7 +442,7 @@ var langs = {
 
 "lue": { name:"Luvale", source:"UDHR", region:"afr", script:"ascii", speakers:"640000" },
 
-"mk": { name:"Macedonian", source:"CLDR,UDHR", region:"eur", script:"cyrl", speakers:"~2000000", letter:"абвгдѓежзѕијклљмнњопрстќуфхцчџшАБВГДЃЕЖЗЅИЈКЛЉМНЊОПРСТЌУФХЦЧЏШ", mark:"\u{0301}", punctuation:"́‐–—…‘‚“„" },
+"mk": { name:"Macedonian", source:"cldr_mk,udhr_mkd", region:"eur", script:"cyrl", speakers:"~2000000", letter:"абвгдѓежзѕијклљмнњопрстќуфхцчџшАБВГДЃЕЖЗЅИЈКЛЉМНЊОПРСТЌУФХЦЧЏШ", mark:"\u{0301}", punctuation:"‐–—…‘‚“„", aux:"ѐѝЀЍ̀" },
 
 "jmc": { name:"Machame", source:"CLDR", region:"afr", script:"ascii", speakers:"400000" },
 
@@ -468,13 +468,13 @@ var langs = {
 
 "mas": { name:"Masai (Maasai, Maa)", source:"CLDR", region:"afr", script:"latn", speakers:"1300000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛƐƗƆɄāēīŋōūĀĒĪŊŌŪɛɨɔʉ", mark:"\u{0301}\u{0300}\u{0302}\u{0304}" },
 
-"mzn": { name:"Mazanderani (Tabari, Geleki)", source:"CLDR", region:"wasia", script:"arab", speakers:"6000000", letter:"ءآأؤئابپةتثجچحخدذرزژسشصضطظعغفقکگلمنهویي", mark:"\u{064B}\u{064C}\u{064D}\u{0651}\u{0654}\u{0653}", punctuation:"،٫٬؛؟‐…‹›«»" },
+"mzn": { name:"Mazanderani (Tabari, Geleki)", source:"cldr_mzn", region:"wasia", script:"arab", speakers:"6000000", letter:"ءآأؤئابپةتثجچحخدذرزژسشصضطظعغفقکگلمنهویي", mark:"\u{064B}\u{064C}\u{064D}\u{0651}\u{0654}\u{0653}", punctuation:"،٫٬؛؟‐…‹›«»", aux:"َُِْٰٖإكىٕ" },
 
 "mer": { name:"Meru", source:"CLDR", region:"afr", script:"latn", speakers:"2000000", letter:"ĩũĨŨ", mark:"\u{0303}" },
 
 "mgo": { name:"Meta'", source:"CLDR", region:"afr", script:"latn", speakers:"190000", letter:"ʼàèìòùÀÈÌÒÙƏƆŋŊəɔ", mark:"\u{0300}", punctuation:"‘’“”" },
 
-"mn-cyrl": { name:"Mongolian (Cyrillic)", source:"CLDR,UDHR", region:"easia", script:"cyrl", speakers:"5200000", letter:"абвгдеёжзийклмноөпрстуүфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОӨПРСТУҮФХЦЧШЩЪЫЬЭЮЯ", mark:"\u{0308}\u{0306}", punctuation:"̈̆‐–—…‘’“”†‡′″§" },
+"mn-cyrl": { name:"Mongolian (Cyrillic)", source:"cldr_mn,udhr_khk", region:"easia", script:"cyrl", speakers:"5200000", letter:"абвгдеёжзийклмноөпрстуүфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОӨПРСТУҮФХЦЧШЩЪЫЬЭЮЯ", mark:"\u{0308}\u{0306}", punctuation:"̈̆‐–—…‘’“”†‡′″§", aux:"әҗӊһӘҖӉҺ" },
 
 "mfe": { name:"Morisyen (Mauritian Creole, Morisien)", source:"CLDR", region:"afr", script:"ascii", speakers:"1070000" },
 
