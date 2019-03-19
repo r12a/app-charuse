@@ -250,17 +250,17 @@ var langs = {
 
 "fy": { name:"West Frisian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"470000", letter:"ûâêúôòëïáàäéèíóöüýÛÂÊÚÔÒËÏÁÀÄÉÈÍÓÖÜÝ", mark:"\u{0302}\u{0301}\u{0300}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
 
-"gl": { name:"Galician", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"2400000", letter:"áéíñóúüªÁÉÍÑÓÚÜ", mark:"\u{0301}\u{0303}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
+"gl": { name:"Galician", source:"cldr_gl,udhr_glg", region:"eur", script:"latn", speakers:"2400000", letter:"áéíñóúüªÁÉÍÑÓÚÜ", mark:"\u{0301}\u{0303}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ªàâåäãçèêëìîïºòôöõùûÀÂÅÄÃÇÈÊËÌÎÏÒÔÖÕÙÛ̧̀̂̊" },
 
 "lg": { name:"Ganda (Luganda)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"4100000", letter:"ŋŊ" },
 
 "ka": { name:"Georgian", source:"cldr_ka,udhr_kat,2cafedfc80733bd49fb1ee6af49657333a88c1a3", region:"eur", script:"geor", speakers:"3700000", letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ", punctuation:"჻«»§‐–—…‘‚“„†‡′″", symbol:"№", aux:"ᲐᲑᲒᲓᲔᲕᲖᲗᲘᲙᲚᲛᲜᲝᲞᲟᲠᲡᲢᲣᲤᲥᲦᲧᲨᲩᲪᲫᲬᲭᲮᲯᲰ" },
 
-"de": { name:"German", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"95000000", letter:"äößüÄÖÜ", mark:"\u{0308}", punctuation:"«»§‐–—…‘‚“„" },
+"de": { name:"German", source:"cldr_de,udhr_udhr_deu_1996", region:"eur", script:"latn", speakers:"95000000", letter:"äößüÄÖÜ", mark:"\u{0308}", punctuation:"«»§‐–—…‘‚“„", aux:"ăāĕēğĭīıŏōœşŭūĂĀĔĒĞĬİĪŎŌŒŞŬŪŸáàâåãæçéèêëíìîïñóòôøúùûÿÁÀÂÅÃÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧̇́̀̆̂̊̃̄" },
 
-"el": { name:"Greek", source:"CLDR,UDHR", region:"eur", script:"grek", speakers:"12000000", letter:"αάβγδεέζηήθιίϊΐκλμνξοόπρσςτυύϋΰφχψωώΑΆΒΓΔΕΈΖΗΉΘΙΊΪΚΛΜΝΞΟΌΠΡΣΤΥΎΫΦΧΨΩΏἐἘ", mark:"\u{0301}\u{0308}\u{0313}", punctuation:"«»§‐–—…" },
+"el": { name:"Greek", source:"cldr_el,udhr_udhr_ell_monotonic", region:"eur", script:"grek", speakers:"12000000", letter:"αάβγδεέζηήθιίϊΐκλμνξοόπρσςτυύϋΰφχψωώΑΆΒΓΔΕΈΖΗΉΘΙΊΪΚΛΜΝΞΟΌΠΡΣΤΥΎΫΦΧΨΩΏἐἘ", mark:"\u{0301}\u{0308}\u{0313}", punctuation:"«»§‐–—…", aux:"ἀἄἂἆἁἅἃἇὰᾶἐἔἒἑἕἓὲἠἤἢἦἡἥἣἧὴῆἰἴἲἶἱἵἳἷὶῖῒῗὄὂὃὸὐὔὒὖὑὕὓὗὺῦῢῧὤὢὦὥὣὧὼῶἈἌἊἎἉἍἋἏᾺἘἜἚἙἝἛῈἨἬἪἮἩἭἫἯῊἸἼἺἾἹἽἻἿῚὌὊὋῸὙὝὛὟῪὬὪὮὭὫὯῺ̓̀͂̔" },
 
-"gu": { name:"Gujarati", source:"CLDR,UDHR", region:"sasia", script:"gujr", speakers:"49000000", letter:"ૐઅઆઇઈઉઊઋૠઍએઐઑઓઔકખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળઽ", mark:"\u{0ABC}\u{0A82}\u{0A81}\u{0A83}\u{0ABE}\u{0ABF}\u{0AC0}\u{0AC1}\u{0AC2}\u{0AC3}\u{0AC4}\u{0AC5}\u{0AC7}\u{0AC8}\u{0AC9}\u{0ACB}\u{0ACC}\u{0ACD}", punctuation:"§‐–—…‘’“”†‡′″", number:"૧૨૩૪૫૬૭૮૯૦" },
+"gu": { name:"Gujarati", source:"cldr_gu,udhr_guj", region:"sasia", script:"gujr", speakers:"49000000", letter:"ૐઅઆઇઈઉઊઋૠઍએઐઑઓઔકખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળઽ", mark:"\u{0ABC}\u{0A82}\u{0A81}\u{0A83}\u{0ABE}\u{0ABF}\u{0AC0}\u{0AC1}\u{0AC2}\u{0AC3}\u{0AC4}\u{0AC5}\u{0AC7}\u{0AC8}\u{0AC9}\u{0ACB}\u{0ACC}\u{0ACD}", punctuation:"§‐–—…‘’“”†‡′″", number:"૧૨૩૪૫૬૭૮૯૦", aux:"૰" },
 
 "guz": { name:"Gusii (Kisii, Ekegusii)", source:"CLDR", region:"afr", script:"ascii", speakers:"2200000" },
 
