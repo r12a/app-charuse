@@ -542,15 +542,15 @@ var langs = {
 
 "nd": { name:"Northern Ndebele (isiNdebele, Sindebele, Ndebele, North Ndebele, Matabele)", source:"CLDR", region:"afr", script:"ascii", speakers:"1600000" },
 
-"lrc": { name:"Luri (Lurish)", source:"CLDR", region:"wasia", script:"arab", speakers:"13000000", letter:"آأؤئابپتثجچحخدذرزژسشصضطظعغفڤقکگلمنھەوۉۊیؽي", mark:"\u{0659}\u{065B}\u{0653}\u{0654}", punctuation:"،٫٬؛؟‐…‹›«»" },
+"lrc": { name:"Luri (Lurish)", source:"cldr_lrc", region:"wasia", script:"arab", speakers:"13000000", letter:"آأؤئابپتثجچحخدذرزژسشصضطظعغفڤقکگلمنھەوۉۊیؽي", mark:"\u{0659}\u{065B}\u{0653}\u{0654}", punctuation:"،٫٬؛؟‐…‹›«»", aux:"ًٌٍَُِّْإةكهىٕ" },
 
-"se": { name:"Northern Sami", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"25000", letter:"áÁčđŋšŧžČĐŊŠŦŽ", mark:"\u{0301}\u{030C}" },
+"se": { name:"Northern Sami", source:"cldr_se", region:"eur", script:"latn", speakers:"25000", letter:"áÁčđŋšŧžČĐŊŠŦŽ", mark:"\u{0301}\u{030C}", aux:"ńŃàçéèíñóòúüøæåäãöÀÇÉÈÍÑÓÒÚÜØÆÅÄÃÖ̧̀̃̈̊" },
 
 "no": { name:"Norwegian", source:"r12a", region:"eur", script:"latn", speakers:"5000000", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}", punctuation:"«»§–" },
 
-"nb": { name:"Norwegian Bokmål", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"0", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}", punctuation:"«»§–" },
+"nb": { name:"Norwegian Bokmål", source:"cldr_nb,udhr_nob", region:"eur", script:"latn", speakers:"0", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}", punctuation:"«»§–", aux:"čđńŋšŧžČĐŃŊŠŦŽǎǍáãçèêíñúüäöÁÃÇÈÊÍÑÚÜÄÖ̧̌̃̈" },
 
-"nn": { name:"Norwegian Nynorsk", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"0", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}", punctuation:"‰", symbol:"−" },
+"nn": { name:"Norwegian Nynorsk", source:"cldr_nn,udhr_nno", region:"eur", script:"latn", speakers:"0", letter:"àéóòôæøåÀÉÓÒÔÆØÅ", mark:"\u{0300}\u{0301}\u{0302}\u{030A}", punctuation:"‰", symbol:"−", aux:"čđńŋšŧžČĐŃŊŠŦŽǎǍáçèêñüäöÁÇÈÊÑÜÄÖ̧̌̃̈" },
 
 "nus": { name:"Nuer (Thok Naath)", source:"CLDR", region:"afr", script:"latn", speakers:"890000", letter:"äëïöÄËÏÖƐƔƆŋŊɛɣɔ", mark:"\u{0331}\u{0308}" },
 
