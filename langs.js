@@ -636,15 +636,15 @@ var langs = {
 
 "pbb": { name:"Páez (Paez, Paes, Nasa Yuwe)", source:"UDHR", region:"sam", script:"latn", speakers:"40000", letter:"üëäïáÜËÄÏÁ", mark:"\u{0308}\u{0301}" },
 
-"ro": { name:"Romanian (Rumanian, Roumanian)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"~25000000", letter:"âîÂÎșțȘȚăĂ", mark:"\u{0326}\u{0306}\u{0302}", punctuation:"«»‐–—…‘“”„" },
+"ro": { name:"Romanian (Rumanian, Roumanian)", source:"cldr_ro,udhr_ron_2006,udhr_ron_1993,udhr_ron_1953", region:"eur", script:"latn", speakers:"~25000000", letter:"âîÂÎșțȘȚăĂ", mark:"\u{0326}\u{0306}\u{0302}", punctuation:"«»‐–—…‘“”„", aux:"şţŞŢáàåäçéèêëñöüÁÀÅÄÇÉÈÊËÑÖǗ̧̀̊̈̃" },
 
-"rm": { name:"Romansh (Romansch, Rumantsch, Romanche)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"36622", letter:"àüöéèìòùÀÜÖÉÈÌÒÙ", mark:"\u{0300}\u{0308}\u{0301}" },
+"rm": { name:"Romansh (Romansch, Rumantsch, Romanche)", source:"cldr_rm,udhr_roh_rumgr,udhr_roh_puter,udhr_roh_surmiran,udhr_roh_sursilv,udhr_roh_sutsilv,udhr_roh_vallader", region:"eur", script:"latn", speakers:"36622", letter:"àüöéèìòùÀÜÖÉÈÌÒÙ", mark:"\u{0300}\u{0308}\u{0301}", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáâåäæçêëíîïñóôöøúûüÿÁÂÅÄÆÇÊËÍÎÏÑÓÔÖØÚÛÜ̧̆̂̊̈̄̃" },
 
 "rof": { name:"Rombo (Kirombo)", source:"CLDR", region:"afr", script:"ascii", speakers:"?" },
 
 "rn": { name:"Rundi (Kirundi)", source:"CLDR,UDHR", region:"afr", script:"ascii", speakers:"8800000" },
 
-"ru": { name:"Russian", source:"CLDR,UDHR", region:"eur", script:"cyrl", speakers:"150000000", letter:"всеобщаядклрципчнтзгшюйьмуыхъжэфёВСЕОБЩАЯДКЛРЦИПЧНТЗГШЮЙЬМУЫХЪЖЭФЁ", mark:"\u{0306}\u{0308}", punctuation:"‐–—…‘‚“„«»§" },
+"ru": { name:"Russian", source:"cldr_ru,udhr_rus", region:"eur", script:"cyrl", speakers:"150000000", letter:"всеобщаядклрципчнтзгшюйьмуыхъжэфёВСЕОБЩАЯДКЛРЦИПЧНТЗГШЮЙЬМУЫХЪЖЭФЁ", mark:"\u{0306}\u{0308}", punctuation:"‐–—…‘‚“„«»§", aux:"́" },
 
 "rwk": { name:"Rwa (Rwo, Meru, Kirwo)", source:"CLDR", region:"afr", script:"ascii", speakers:"400000" },
 
