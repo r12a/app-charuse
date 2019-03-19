@@ -404,21 +404,21 @@ var langs = {
 
 "lag": { name:"Langi (Rangi)", source:"CLDR", region:"afr", script:"latn", speakers:"410000", letter:"áéíóúÁÉÍÓÚƗɄɨʉ", mark:"\u{0301}" },
 
-"lo": { name:"Lao (Laotian)", source:"CLDR,UDHR", region:"seasia", script:"laoo", speakers:"~25000000", letter:"ໆກຂຄງຈສຊຍດຕຖທນບປຜຝພຟມຢຣລວຫໜໝອຮຯະາຳຽເແໂໃໄ", mark:"\u{0301}\u{0EC8}\u{0EC9}\u{0ECA}\u{0ECB}\u{0ECC}\u{0ECD}\u{0EB1}\u{0EB4}\u{0EB5}\u{0EB6}\u{0EB7}\u{0EB8}\u{0EB9}\u{0EBB}\u{0EBC}" },
+"lo": { name:"Lao (Laotian)", source:"cldr_lo,udhr_lao", region:"seasia", script:"laoo", speakers:"~25000000", letter:"ໆກຂຄງຈສຊຍດຕຖທນບປຜຝພຟມຢຣລວຫໜໝອຮຯະາຳຽເແໂໃໄ", mark:"\u{0301}\u{0EC8}\u{0EC9}\u{0ECA}\u{0ECB}\u{0ECC}\u{0ECD}\u{0EB1}\u{0EB4}\u{0EB5}\u{0EB6}\u{0EB7}\u{0EB8}\u{0EB9}\u{0EBB}\u{0EBC}", aux:"໐໑໒໓໔໕໖໗໘໙" },
 
-"lv": { name:"Latvian (Lettish)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"1750000", letter:"āčēģīķļņšūžĀČĒĢĪĶĻŅŠŪŽ", mark:"\u{0327}\u{0304}\u{030C}", punctuation:"§‐–—…‘’‚“”„†‡′″" },
+"lv": { name:"Latvian (Lettish)", source:"cldr_lv,udhr_lav", region:"eur", script:"latn", speakers:"1750000", letter:"āčēģīķļņšūžĀČĒĢĪĶĻŅŠŪŽ", mark:"\u{0327}\u{0304}\u{030C}", punctuation:"§‐–—…‘’‚“”„†‡′″", aux:"ōŗŌŖ" },
 
 "ln": { name:"Lingala", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"5500000", letter:"áâéêíîóôúÁÂÉÊÍÎÓÔÚǎǐǒǍƐǏǑƆěĚɛɔ", mark:"\u{0301}\u{0302}\u{030C}", punctuation:"’" }, // UDHR has no accents
 
-"lt": { name:"Lithuanian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"3000000", letter:"éÉąčęėįšųūžĄČĘĖĮŠŲŪŽ", mark:"\u{0328}\u{030C}\u{0307}\u{0304}\u{0301}", punctuation:"‐–—…“„" },
+"lt": { name:"Lithuanian", source:"cldr_lt,udhr_lit", region:"eur", script:"latn", speakers:"3000000", letter:"éÉąčęėįšųūžĄČĘĖĮŠŲŪŽ", mark:"\u{0328}\u{030C}\u{0307}\u{0304}\u{0301}", punctuation:"‐–—…“„", aux:"ẽẼĩũĨŨáàãéèíìñóòõúùÁÀÃÉÈÍÌÑÓÒÕÚÙ́̃̀" },
 
-"nds": { name:"Low German (Low Saxon)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"301000", letter:"åäöüÅÄÖÜ", mark:"\u{030A}\u{0308}", punctuation:"’" },
+"nds": { name:"Low German (Low Saxon)", source:"cldr_nds,udhr_nds", region:"eur", script:"latn", speakers:"301000", letter:"åäöüÅÄÖÜ", mark:"\u{030A}\u{0308}", punctuation:"’", aux:"ăāĕęēĭīŏōœŭūĂĀĔĘĒĬĪŎŌŒŬŪŸáàâæçéèêëíìîïñóòôøúùûÿÁÀÂÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧̨́̀̆̂̄̃" },
 
-"dsb": { name:"Lower Sorbian", source:"CLDR", region:"eur", script:"latn", speakers:"6900", letter:"óÓčćěłńŕšśžźČĆĚŁŃŔŠŚŽŹ", mark:"\u{030C}\u{0301}", punctuation:"«»§‐–—…‘’‚“„" },
+"dsb": { name:"Lower Sorbian", source:"cldr_dsb", region:"eur", script:"latn", speakers:"6900", letter:"óÓčćěłńŕšśžźČĆĚŁŃŔŠŚŽŹ", mark:"\u{030C}\u{0301}", punctuation:"«»§‐–—…‘’‚“„", aux:"ăąāďđĕėęēğĭīıĺľňŏőōœřşťŭůűūżĂĄĀĎĐĔĖĘĒĞĬİĪĹĽŇŎŐŌŒŘŞŤŬŮŰŪŸŻáàâåäãæçéèêëíìîïñòôöøßúùûüýÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÒÔÖØÚÙÛÜÝ̨̧̇̀̆̂̊̈̃̄̋" },
 
 "lu": { name:"Luba-Katanga (Luba-Shaba, Kiluba)", source:"CLDR", region:"afr", script:"latn", speakers:"1500000", letter:"áàéèíìóòúùÁÀÉÈÍÌÓÒÚÙƐƆɛɔ", mark:"\u{0301}\u{0300}" },
 
-"lb": { name:"Luxembourgish (Luxemburgish, Letzeburgesch)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"390000", letter:"äéëêüöôàÄÉËÊÜÖÔÀ", mark:"\u{0308}\u{0301}\u{0302}\u{0300}", punctuation:"«»§‐–—…‘‚“„" }, // UDHR has many more accented characters
+"lb": { name:"Luxembourgish (Luxemburgish, Letzeburgesch)", source:"cldr_lb,udhr_ltz", region:"eur", script:"latn", speakers:"390000", letter:"äéëêüöôàÄÉËÊÜÖÔÀ", mark:"\u{0308}\u{0301}\u{0302}\u{0300}", punctuation:"«»§‐–—…‘‚“„", aux:"ăāĕēğĭīıŏōœşŭūĂĀĔĒĞĬİĪŎŌŒŞŬŪŸáàâåãæçèêíìîïñóòôöøßúùûüÿÁÀÂÅÃÆÇÈÊÍÌÎÏÑÓÒÔÖØÚÙÛÜ̧̇̀̆̂̊̃̄" }, // UDHR has many more accented characters
 
 "luy": { name:"Luhya (Luyia, Luhia, Luhiya)", source:"CLDR", region:"afr", script:"ascii", speakers:"1200000" },
 
