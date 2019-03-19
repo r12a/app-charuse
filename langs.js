@@ -242,7 +242,7 @@ var langs = {
 
 "fat": { name:"Fanti (Fantse, Mfantse, Fante)", source:"UDHR", region:"afr", script:"latn", speakers:"1900000", letter:"ãõÃÕƆƐɔɛ", mark:"\u{0303}" },
 
-"fa": { name:"Persian (Farsi)", source:"CLDR,UDHR", region:"wasia", script:"arab", speakers:"~50000000", letter:"آاءأؤئبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهةیإي", mark:"\u{064B}\u{064D}\u{064C}\u{0651}\u{0654}\u{0650}\u{0653}\u{0655}", punctuation:"٫٬٪؉،؛؟‰‐…‹›«»", number:"۰۱۲۳۴۵۶۷۸۹", symbol:"−", other:"\u{200C}" },
+"fa": { name:"Persian (Farsi)", source:"cldr_fa,udhr_pes", region:"wasia", script:"arab", speakers:"~50000000", letter:"آاءأؤئبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهةیإي", mark:"\u{064B}\u{064D}\u{064C}\u{0651}\u{0654}\u{0650}\u{0653}\u{0655}", punctuation:"٫٬٪؉،؛؟‰‐…‹›«»", number:"۰۱۲۳۴۵۶۷۸۹", symbol:"−", other:"\u{200C}", aux:"ـَُِْٰٖإكىٕ" },
 
 "fj": { name:"Fijian", source:"UDHR", region:"oce", script:"ascii", speakers:"339210" },
 
@@ -600,13 +600,13 @@ var langs = {
 
 "ps": { name:"Pashto (Pushtu, Pushto)", source:"CLDR", region:"casia", script:"arab", speakers:"~50000000", letter:"آاأءبپتټثجځچڅحخدډذرړزژږسشښصضطظعغفقکګگلمنڼهةوؤیيېۍئ", mark:"\u{064B}\u{064C}\u{064D}\u{064E}\u{064F}\u{0650}\u{0651}\u{0652}\u{0670}\u{0654}\u{0653}", punctuation:"٫٬٪؉‰", number:"۰۱۲۳۴۵۶۷۸۹", symbol:"−" },
 
-"pl": { name:"Polish", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"55000000", letter:"óÓąćęłńśźżĄĆĘŁŃŚŹŻ", mark:"\u{0328}\u{0301}\u{0307}", punctuation:"«»§‐–—…”„†‡′″", symbol:"°" },
+"pl": { name:"Polish", source:"cldr_pl,udhr_pol", region:"eur", script:"latn", speakers:"55000000", letter:"óÓąćęłńśźżĄĆĘŁŃŚŹŻ", mark:"\u{0328}\u{0301}\u{0307}", punctuation:"«»§‐–—…”„†‡′″", symbol:"°", aux:"œŒŸàâåäæçéèêëîïôößùûüÿÀÂÅÄÆÇÉÈÊËÎÏÔÖÙÛǛ̧̂̊̈" },
 
-"pt": { name:"Portuguese", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"215000000", letter:"áàâãçéêíóòôõúºÁÀÂÃÇÉÊÍÓÒÔÕÚ", mark:"\u{0327}\u{0301}\u{0300}\u{0302}\u{0303}", punctuation:"§‐–—…‘’“”†‡′″" },
+"pt": { name:"Portuguese", source:"cldr_pt,udhr_por_PT,udhr_por_BR", region:"eur", script:"latn", speakers:"215000000", letter:"áàâãçéêíóòôõúºÁÀÂÃÇÉÊÍÓÒÔÕÚ", mark:"\u{0327}\u{0301}\u{0300}\u{0302}\u{0303}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªåäæèëìîïñºöøùûüÿÅÄÆÈËÌÎÏÑÖØÙÛÜ̆̊̈̄" },
 
 "prg": { name:"Prussian (Old Prussian)", source:"CLDR", region:"eur", script:"latn", speakers:"0", letter:"țȚāēģīķņōŗšūžĀĒĢĪĶŅŌŖŠŪŽḑḐ", mark:"\u{0327}\u{0326}\u{0304}\u{030C}", punctuation:"‐–—…“„" },
 
-"pa": { name:"Punjabi", source:"CLDR,UDHR", region:"sasia", script:"guru", speakers:"122000000", letter:"ੴੳਉਊਓਅਆਐਔੲਇਈਏਸਹਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜ", mark:"\u{0A71}\u{0A70}\u{0A3C}\u{0A4D}\u{0A3E}\u{0A3F}\u{0A40}\u{0A41}\u{0A42}\u{0A47}\u{0A48}\u{0A4B}\u{0A4C}\u{0A02}", punctuation:"‐–—‘’“”′″।", number:"੦੧੨੩੪੫੬੭੮੯" },
+"pa": { name:"Punjabi", source:"cldr_pa,udhr_pan", region:"sasia", script:"guru", speakers:"122000000", letter:"ੴੳਉਊਓਅਆਐਔੲਇਈਏਸਹਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜ", mark:"\u{0A71}\u{0A70}\u{0A3C}\u{0A4D}\u{0A3E}\u{0A3F}\u{0A40}\u{0A41}\u{0A42}\u{0A47}\u{0A48}\u{0A4B}\u{0A4C}\u{0A02}", punctuation:"‐–—‘’“”′″।", number:"੦੧੨੩੪੫੬੭੮੯", aux:"ਃਂਁ" },
 
 "pnb": { name:"Western Panjabi", source:"CLDR,UDHR", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںهھہویےي", mark:"\u{064F}\u{0653}\u{0654}", punctuation:"‐–—‘’“”′″" },
 
