@@ -268,7 +268,7 @@ var langs = {
 
 "ga": { name:"Irish", source:"cldr_ga,udhr_gle", region:"eur", script:"latn", speakers:"74000", letter:"áéíóúÁÉÍÓÚ", mark:"\u{0301}", aux:"ḃḋḟṁṗṡṫḂḊḞṀṖṠṪċġĊĠåÅ̊̇" },
 
-"gd": { name:"Gaelic (Scots Gaelic)", source:"UDHR", region:"eur", script:"latn", speakers:"57000", letter:"ìàòèùÌÀÒÈÙ", mark:"\u{0300}" },
+"gd": { name:"Gaelic (Scots Gaelic)", source:"cldr_gd,udhr_gla", region:"eur", script:"latn", speakers:"57000", letter:"ìàòèùÌÀÒÈÙ", mark:"\u{0300}", aux:"ḋḟṁṗṡṫḊḞṀṖṠṪăāċĕēġĭīıłŏōœşŭūĂĀĊĔĒĠĬĪŁŎŌŒŞŬŪŸșȘáâåäãæçéêëíîïñóôöøúûüÿÁÂÅÄÃÆÇÉÊËÍÎÏÑÓÔÖØÚÛǗ̧̦̆̂̊̈̃̄̇" },
 
 "gag": { name:"Gagauz", source:"UDHR", region:"eur", script:"latn", speakers:"590000", letter:"üäêöçÜÄÊÖÇışţŞİŢ", mark:"\u{0327}\u{0307}\u{0308}\u{0302}", punctuation:"—" },
 
@@ -652,7 +652,7 @@ var langs = {
 
 "rom": { name:"Romani (Romany, Gypsy, Gipsy)", source:"UDHR", region:"eur", script:"latn", speakers:"~1500000", letter:"àõùèìòâÀÕÙÈÌÒÂƟśěćŕăąňűźőģůščžŚĚĆŔĂĄŇŰŹŐĢŮŠČŽɵ", mark:"\u{0328}\u{0327}\u{0300}\u{0301}\u{030C}\u{0303}\u{0306}\u{030B}\u{0302}\u{030A}" },
 
-"sah": { name:"Yakut (Sakha)", source:"CLDR,UDHR", region:"nasia", script:"cyrl", speakers:"450000", letter:"абгҕдьийклмнҥоөпрстуүхһчыэецязювщъжфАБГҔДЬИЙКЛМНҤОӨПРСТУҮХҺЧЫЭЕЦЯЗЮВЩЪЖФ", mark:"\u{0306}" },
+"sah": { name:"Yakut (Sakha)", source:"cldr_sah,udhr_sah", region:"nasia", script:"cyrl", speakers:"450000", letter:"абгҕдьийклмнҥоөпрстуүхһчыэецязювщъжфАБГҔДЬИЙКЛМНҤОӨПРСТУҮХҺЧЫЭЕЦЯЗЮВЩЪЖФ", mark:"\u{0306}", aux:"веёжзфцшщъюяВЕЁЖЗФЦШЩЪЮЯ̈" },
 
 "saq": { name:"Samburu", source:"CLDR", region:"afr", script:"ascii", speakers:"240000" },
 
@@ -662,31 +662,31 @@ var langs = {
 
 "seh": { name:"Sena", source:"CLDR", region:"afr", script:"latn", speakers:"1600000", letter:"áàâãçéêíóòôõúÁÀÂÃÇÉÊÍÓÒÔÕÚ", mark:"\u{0327}\u{0301}\u{0300}\u{0302}\u{0303}" },
 
-"sr": { name:"Serbian", source:"CLDR,UDHR", region:"eur", script:"cyrl", speakers:"~9700000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–…‘‚“„" },
+"sr": { name:"Serbian", source:"cldr_sr,udhr_srp_cyrl", region:"eur", script:"cyrl", speakers:"~9700000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–…‘‚“„", aux:"ёйщъыьэюяЁЙЩЪЫЬЭЮЯ̈̆" },
 
-"sr-latn": { name:"Serbian (Latin)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"~9700000", letter:"čćžđšČĆŽĐŠ", mark:"\u{030C}\u{0301}", punctuation:"‐–…‘‚“„" },
+"sr-latn": { name:"Serbian (Latin)", source:"cldr_sr_Latn,udhr_srp_latn", region:"eur", script:"latn", speakers:"~9700000", letter:"čćžđšČĆŽĐŠ", mark:"\u{030C}\u{0301}", punctuation:"‐–…‘‚“„", aux:"åÅ̊" },
 
 "ksb": { name:"Shambala (Shambaa)", source:"CLDR", region:"afr", script:"ascii", speakers:"660000" },
 
 "sn": { name:"Shona", source:"CLDR,UDHR", region:"afr", script:"ascii", speakers:"15000000" },
 
-"si": { name:"Sinhala (Sinhalese)", source:"CLDR,UDHR", region:"sasia", script:"sinh", speakers:"16000000", letter:"අආඇඈඉඊඋඌඍඑඒඓඔඕඖකඛගඝඞඟචඡජඣඥඤටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ", mark:"\u{0D82}\u{0D83}\u{0DCF}\u{0DD0}\u{0DD1}\u{0DD2}\u{0DD3}\u{0DD4}\u{0DD6}\u{0DD8}\u{0DF2}\u{0DDF}\u{0DD9}\u{0DDA}\u{0DDB}\u{0DDC}\u{0DDD}\u{0DDE}\u{0DCA}", punctuation:"§‐–—…‘’“”†‡′″", symbol:"\u{200D}" },
+"si": { name:"Sinhala (Sinhalese)", source:"cldr_si,udhr_sin", region:"sasia", script:"sinh", speakers:"16000000", letter:"අආඇඈඉඊඋඌඍඑඒඓඔඕඖකඛගඝඞඟචඡජඣඥඤටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ", mark:"\u{0D82}\u{0D83}\u{0DCF}\u{0DD0}\u{0DD1}\u{0DD2}\u{0DD3}\u{0DD4}\u{0DD6}\u{0DD8}\u{0DF2}\u{0DDF}\u{0DD9}\u{0DDA}\u{0DDB}\u{0DDC}\u{0DDD}\u{0DDE}\u{0DCA}", punctuation:"§‐–—…‘’“”†‡′″", symbol:"\u{200D}", aux:"ඎඏඐඦෳ" },
 
-"sk": { name:"Slovak", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"5200000", letter:"čďĺľňŕšťžűČĎĹĽŇŔŠŤŽŰáäéíóôúýÁÄÉÍÓÔÚÝ", mark:"\u{0301}\u{0308}\u{030C}\u{0302}\u{030B}", punctuation:"‐–…‘‚“„§" },
+"sk": { name:"Slovak", source:"cldr_sk,udhr_slk", region:"eur", script:"latn", speakers:"5200000", letter:"čďĺľňŕšťžűČĎĹĽŇŔŠŤŽŰáäéíóôúýÁÄÉÍÓÔÚÝ", mark:"\u{0301}\u{0308}\u{030C}\u{0302}\u{030B}", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīŏōœřŭūĂĀĔĒĬĪŎŌŒŘŬŪŸàâåæçèêëìîïñòöøùûüÿÀÂÅÆÇÈÊËÌÎÏÑÒÖØÙÛǛ̧̆̊̄̃" },
 
-"sl": { name:"Slovene (Slovenian)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"2500000", letter:"čšžČŠŽ", mark:"\u{030C}" },
+"sl": { name:"Slovene (Slovenian)", source:"cldr_sl,udhr_slv", region:"eur", script:"latn", speakers:"2500000", letter:"čšžČŠŽ", mark:"\u{030C}", aux:"ăāćđĕēĭīŏōœŭūĂĀĆĐĔĒĬĪŎŌŒŬŪŸáàâåäæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̄̃" },
 
 "sog": { name:"Soga (Lusoga)", source:"CLDR", region:"afr", script:"ascii", speakers:"2100000" },
 
 "so": { name:"Somali", source:"CLDR,UDHR", region:"afr", script:"ascii", speakers:"15000000" },
 
-"es": { name:"Spanish (Castilian)", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"480000000", letter:"áéíïñóúüýÁÉÍÏÑÓÚÜÝ", mark:"\u{0301}\u{0308}\u{0303}", punctuation:"‐–—…‘’“”†‡′″¡¿«»§" },
+"es": { name:"Spanish (Castilian)", source:"cldr_es,udhr_spa", region:"eur", script:"latn", speakers:"480000000", letter:"áéíïñóúüýÁÉÍÏÑÓÚÜÝ", mark:"\u{0301}\u{0308}\u{0303}", punctuation:"‐–—…‘’“”†‡′″¡¿«»§", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªàâåäãæçèêëìîºòôöøùûÿÀÂÅÄÃÆÇÈÊËÌÎÒÔÖØÙÛ̧̀̆̂̊̄" },
 
 "sw": { name:"Swahili (Kiswahili)", source:"CLDR,UDHR", region:"afr", script:"ascii", speakers:"~7000000" },
 
-"sv": { name:"Swedish", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"10000000", letter:"àéåäöÀÉÅÄÖ", mark:"\u{0300}\u{0301}\u{030A}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
+"sv": { name:"Swedish", source:"cldr_sv,udhr_swe", region:"eur", script:"latn", speakers:"10000000", letter:"àéåäöÀÉÅÄÖ", mark:"\u{0300}\u{0301}\u{030A}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″", aux:"āīĀĪŸáâãçèëíîïñóúÿüæøÁÂÃÇÈËÍÎÏÑÓÚÜÆØ̧̂̃̄" },
 
-"gsw": { name:"Swiss German", source:"CLDR", region:"eur", script:"latn", speakers:"4930000", letter:"äöüÄÖÜ", mark:"\u{0308}" },
+"gsw": { name:"Swiss German", source:"cldr_gsw", region:"eur", script:"latn", speakers:"4930000", letter:"äöüÄÖÜ", mark:"\u{0308}", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåæçéèêëíìîïñóòôøúùûÿÁÀÂÅÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧́̀̆̂̊̄̃" },
 
 "sm": { name:"Samoan", source:"UDHR", region:"oce", script:"ascii", speakers:"510000" },
 
@@ -696,7 +696,7 @@ var langs = {
 
 "sco": { name:"Scots (Lowland Scots)", source:"UDHR", region:"eur", script:"ascii", speakers:"110000" },
 
-"sd": { name:"Sindhi", source:"CLDR", region:"sasia", script:"arab", speakers:"25000000", letter:"آابٻپڀتثٺٽٿجھڃڄچڇحخدذڊڌڍڏرزڙسشصضطظعغفڦقکڪگڱڳلمنڻهوي", mark:"\u{0653}", punctuation:"‰" },
+"sd": { name:"Sindhi", source:"cldr_sd", region:"sasia", script:"arab", speakers:"25000000", letter:"آابٻپڀتثٺٽٿجھڃڄچڇحخدذڊڌڍڏرزڙسشصضطظعغفڦقکڪگڱڳلمنڻهوي", mark:"\u{0653}", punctuation:"‰", aux:"ئٔ" },
 
 "sey": { name:"Secoya", source:"UDHR", region:"sam", script:"latn", speakers:"400", letter:"ëñàéËÑÀÉ", mark:"\u{0331}\u{0308}\u{0303}\u{0300}\u{0301}" },
 
