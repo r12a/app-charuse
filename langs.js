@@ -280,15 +280,15 @@ var langs = {
 
 "gyr": { name:"Guarayu", source:"UDHR", region:"sam", script:"latn", speakers:"5900", letter:"ëñäüöéïËÑÄÜÖÉÏ", mark:"\u{0308}\u{0303}\u{0301}", punctuation:"’" },
 
-"ha": { name:"Hausa", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"70000000", letter:"ƙƴƁƊƘƳɓɗʼ", punctuation:"‐’‘" },
+"ha": { name:"Hausa", source:"cldr_ha,udhr_hau_NE,udhr_hau_NG", region:"afr", script:"latn", speakers:"70000000", letter:"ƙƴƁƊƘƳɓɗʼ", punctuation:"‐’‘", aux:"ƴƳáàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛ̃́̀̂" },
 
 "haw": { name:"Hawaiian", source:"CLDR,UDHR", region:"oce", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"\u{0304}", punctuation:"’‘“”" },
 
-"he": { name:"Hebrew", source:"CLDR,UDHR", region:"wasia", script:"hebr", speakers:"9000000", letter:"אבגדהוזחטיכךלמםנןסעפףצץקרשת",  punctuation:"׳״־‐–—" },
+"he": { name:"Hebrew", source:"cldr_he,udhr_heb", region:"wasia", script:"hebr", speakers:"9000000", letter:"אבגדהוזחטיכךלמםנןסעפףצץקרשת",  punctuation:"׳״־‐–—", aux:"ְֱֲֳִֵֶַָֹֻּֽֿׁׂׄ״" },
 
 "hi": { name:"Hindi", source:"CLDR,UDHR", region:"sasia", script:"deva", speakers:"260000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"॰।‘’“”—", number:"१०९४८२३५६७", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR​</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
 
-"hu": { name:"Hungarian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"13000000", letter:"áéíóöúüÁÉÍÓÖÚÜőűŐŰ", mark:"\u{0301}\u{0308}\u{030B}", punctuation:"«»§–…’”„", symbol:"⁒" },
+"hu": { name:"Hungarian", source:"cldr_hu,udhr_hun", region:"eur", script:"latn", speakers:"13000000", letter:"áéíóöúüÁÉÍÓÖÚÜőűŐŰ", mark:"\u{0301}\u{0308}\u{030B}", punctuation:"«»§–…’”„", symbol:"⁒", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸàâåäãæçèêëìîïñòôøùûÿÀÂÅÄÃÆÇÈÊËÌÎÏÑÒÔØÙÛ̧̀̆̂̊̃̄" },
 
 "ht": { name:"Haitian Creole", source:"UDHR", region:"carib", script:"latn", speakers:"113000", letter:"èéòÈÉÒ", mark:"\u{0300}\u{0301}" },
 
