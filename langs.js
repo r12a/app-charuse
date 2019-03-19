@@ -266,7 +266,7 @@ var langs = {
 
 "gaa": { name:"Ga", source:"UDHR", region:"afr", script:"latn", speakers:"745000", letter:"ãÃƆƐŋŊɔɛ", mark:"\u{0303}" },
 
-"ga": { name:"Irish", source:"UDHR", region:"eur", script:"latn", speakers:"74000", letter:"úíéáóÚÍÉÁÓ", mark:"\u{0301}", symbol:"´" },
+"ga": { name:"Irish", source:"cldr_ga,udhr_gle", region:"eur", script:"latn", speakers:"74000", letter:"áéíóúÁÉÍÓÚ", mark:"\u{0301}", aux:"ḃḋḟṁṗṡṫḂḊḞṀṖṠṪċġĊĠåÅ̊̇" },
 
 "gd": { name:"Gaelic (Scots Gaelic)", source:"UDHR", region:"eur", script:"latn", speakers:"57000", letter:"ìàòèùÌÀÒÈÙ", mark:"\u{0300}" },
 
@@ -306,11 +306,11 @@ var langs = {
 
 "ig": { name:"Igbo", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"24000000", letter:"ẹịṅọụẸỊṄỌỤ", mark:"\u{0323}\u{0307}", punctuation:"‐" },
 
-"smn": { name:"Inari Sami", source:"CLDR", region:"eur", script:"latn", speakers:"300", letter:"âäáÂÄÁčđŋšžČĐŊŠŽ", mark:"\u{0302}\u{030C}\u{0308}\u{0301}" },
+"smn": { name:"Inari Sami", source:"cldr_smn", region:"eur", script:"latn", speakers:"300", letter:"âäáÂÄÁčđŋšžČĐŊŠŽ", mark:"\u{0302}\u{030C}\u{0308}\u{0301}", aux:"ńŃàçéèíñóòúüæøåãöÀÇÉÈÍÑÓÒÚÜÆØÅÃÖ̧̀̃̊" },
 
-"id": { name:"Indonesian", source:"CLDR,UDHR", region:"seasia", script:"ascii", speakers:"43000000", punctuation:"‐–—…‘’“”" },
+"id": { name:"Indonesian", source:"cldr_id,udhr_ind", region:"seasia", script:"ascii", speakers:"43000000", punctuation:"‐–—…‘’“”", aux:"å" },
 
-"it": { name:"Italian", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"64000000", letter:"àéèìóòùÀÉÈÌÓÒÙ", mark:"\u{0300}\u{0301}", punctuation:"«»—…’“”" },
+"it": { name:"Italian", source:"cldr_it,udhr_ita", region:"eur", script:"latn", speakers:"64000000", letter:"àéèìóòùÀÉÈÌÓÒÙ", mark:"\u{0300}\u{0301}", punctuation:"«»—…’“”", aux:"œŒŸªáâåäãæçêëíîïñºôöõøßúûüÿÁÂÅÄÃÆÇÊËÍÎÏÑÔÖÕØÚÛÜ̧̂̊̈̃" },
 
 "ibb": { name:"Ibibio", source:"UDHR", region:"afr", script:"latn", speakers:"2000000", letter:"ñÑ", mark:"\u{0303}" },
 
