@@ -320,7 +320,7 @@ var langs = {
 
 "iu": { name:"Inuktitut (Eastern Canadian Inuktitut)", source:"UDHR", region:"nam", script:"cans", speakers:"34000", letter:"ᓯᓚᕐᔪᐊᒥᐅᑦᓇᓗᐃᖅᑎᖓᑭᒃᑯᑐᓐᐱᖏᕆᑲᓂᔾᔨᓄᒪᒻᑖᕈᖃᑕᕋᓪᒍᓴᖕᓕᕇᖢᕗᒋᒧᒐᖁᔭᑰᒌᙱᒫᕌᕙᒎᕕᕝᓘᓃᓱᓈᙵᓅᐹᓵᐸᔫᓲᐳᓖᖂᑑᐆᖑᙳᖔᕿᒡᓛᓰᖤᐋᑉᔮᔅᒨᑏᒦ", mark:"\u{0303}" },
 
-"kl": { name:"Kalaalisut (West Greenlandic)", source:"UDHR", region:"eur", script:"ascii", speakers:"60000", notes:"CLDR adds accented characters such as áâãéêíîôúûæøåĩĸũ, but this appears to be based on an older (pre 1973) orthography. See wikipedia." },
+"kl": { name:"Kalaalisut (West Greenlandic)", source:"cldr_kl,udhr_kal", region:"eur", script:"ascii", speakers:"60000", aux:"ĸ", notes:"CLDR adds accented characters such as áâãéêíîôúûæøåĩĸũ, but this appears to be based on an older (pre 1973) orthography. See wikipedia." },
 
 "dyo": { name:"Jola-Fonyi", source:"UDHR", region:"afr", script:"latn", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"\u{0301}\u{0303}\u{0300}", punctuation:"“”", symbol:"°" },
 
@@ -330,7 +330,7 @@ var langs = {
 
 "dyu": { name:"Dyula (Jula, Dioula)", source:"UDHR", region:"afr", script:"latn", speakers:"2500000", letter:"úàìóáòùèíéÚÀÌÓÁÒÙÈÍÉƐƆƝŋŊɛɔɲ", mark:"\u{0301}\u{0300}", punctuation:"’‘" },
 
-"kea": { name:"Kabuverdianu (Cape Verdean Creole)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"1200000", letter:"ñçêéâíèáôóãºõúàòÑÇÊÉÂÍÈÁÔÓÃÕÚÀÒ", mark:"\u{0327}\u{0303}\u{0302}\u{0301}\u{0300}", punctuation:"’" },
+"kea": { name:"Kabuverdianu (Cape Verdean Creole)", source:"cldr_kea,udhr_kea", region:"afr", script:"latn", speakers:"1200000", letter:"ñçêéâíèáôóãºõúàòÑÇÊÉÂÍÈÁÔÓÃÕÚÀÒ", mark:"\u{0327}\u{0303}\u{0302}\u{0301}\u{0300}", punctuation:"’", aux:"ẽẼăāĕēĭĩīŏōœŭũūĂĀĔĒĬĨĪŎŌŒŬŨŪŸªáàâåäãæçéèêëíìîïºóòôöõøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÓÒÔÖÕØÚÙÛǗ̧̀̆̂̊̈̄" },
 
 "kab": { name:"Kabyle (Kabylian)", source:"CLDR", region:"afr", script:"latn", speakers:"5500000", letter:"ǧƐǦƔčČḍḥṛṣṭẓḌḤṚṢṬẒɛɣ", mark:"\u{0323}\u{030C}", punctuation:"‰" },
 
@@ -338,13 +338,13 @@ var langs = {
 
 "kam": { name:"Kamba (Kikamba)", source:"CLDR", region:"afr", script:"latn", speakers:"3900000", letter:"ĩũĨŨ", mark:"\u{0303}" },
 
-"kn": { name:"Kannada (Canarese, Kanarese)", source:"CLDR,UDHR", region:"sasia", script:"knda", speakers:"37700000", letter:"ಅಆಇಈಉಊಋೠಌೡಎಏಐಒಓಔಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳಽ", mark:"\u{0303}\u{0CBC}\u{0C82}\u{0C83}\u{0CBE}\u{0CBF}\u{0CC0}\u{0CC1}\u{0CC2}\u{0CC3}\u{0CC4}\u{0CC6}\u{0CC7}\u{0CC8}\u{0CCA}\u{0CCB}\u{0CCC}\u{0CCD}\u{0CD5}\u{0CD6}", punctuation:"‐–—…‘’“”′″", number:"೦೧೨೩೪೫೬೭೮೯", other:"\u{200C}" },
+"kn": { name:"Kannada (Canarese, Kanarese)", source:"cldr_kn,udhr_kan", region:"sasia", script:"knda", speakers:"37700000", letter:"ಅಆಇಈಉಊಋೠಌೡಎಏಐಒಓಔಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳಽ", mark:"\u{0303}\u{0CBC}\u{0C82}\u{0C83}\u{0CBE}\u{0CBF}\u{0CC0}\u{0CC1}\u{0CC2}\u{0CC3}\u{0CC4}\u{0CC6}\u{0CC7}\u{0CC8}\u{0CCA}\u{0CCB}\u{0CCC}\u{0CCD}\u{0CD5}\u{0CD6}", punctuation:"‐–—…‘’“”′″", number:"೦೧೨೩೪೫೬೭೮೯", other:"\u{200C}", aux:"ೞ" },
 
 "ks": { name:"Kashmiri (Koshur)", source:"CLDR", region:"sasia", script:"arab", speakers:"5600000", letter:"ءآأٲؤاٮبپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںھہوۄیۍے", mark:"\u{064E}\u{064F}\u{0650}\u{06EA}\u{06ED}\u{0655}\u{0656}\u{0654}\u{0657}\u{065A}\u{065B}\u{0653}" },
 
 "kk": { name:"Kazakh", source:"CLDR,UDHR", region:"casia", script:"cyrl", speakers:"15000000", letter:"аәбвгғдеёжзийкқлмнңоөпрстуұүфхһцчшщъыіьэюяАӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯ", punctuation:"‐–—…‘’“”«»§" },
 
-"km": { name:"Khmer (Cambodian)", source:"CLDR,UDHR", region:"seasia", script:"khmr", speakers:"16000000", letter:"កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរឫឬលឭឮវសហឡអឥឦឧឩឪឯឰឱឲឳៗ", mark:"\u{17D0}\u{17C8}\u{17CB}\u{17C9}\u{17CA}\u{17CD}\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}\u{17C6}\u{17C7}\u{17D2}\u{17CC}\u{17CF}", punctuation:"៖។៕៙៚‘’“”", number:"២១៧០៩៤៨៣៥៦" },
+"km": { name:"Khmer (Cambodian)", source:"cldr_km,udhr_khm", region:"seasia", script:"khmr", speakers:"16000000", letter:"កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរឫឬលឭឮវសហឡអឥឦឧឩឪឯឰឱឲឳៗ", mark:"\u{17D0}\u{17C8}\u{17CB}\u{17C9}\u{17CA}\u{17CD}\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}\u{17C6}\u{17C7}\u{17D2}\u{17CC}\u{17CF}", punctuation:"៖។៕៙៚‘’“”", number:"២១៧០៩៤៨៣៥៦", aux:"឴឵៌៎៏៑ឝឞ" },
 
 "ki": { name:"Kikuyu (Gikuyu)", source:"CLDR", region:"afr", script:"latn", speakers:"6600000", letter:"ĩũĨŨ", mark:"\u{0303}" },
 
@@ -358,7 +358,7 @@ var langs = {
 
 "nmg": { name:"Kwasio (Ngumba, Mvumbo, Bujeba, Gyele, Kola)", source:"CLDR", region:"afr", script:"latn", speakers:"26000", letter:"áâäéêíîïóôöúûÁÂÄÉÊÍÎÏÓÔÖÚÛǎǝǐǒǔǍƁƎƐǏǑƆǓāěēīńŋōŕūĀĚĒĪŃŊŌŔŪɓɛɔ", mark:"\u{0301}\u{0302}\u{030C}\u{0304}\u{0308}" },
 
-"ky": { name:"Kyrgyz (Kirghiz)", source:"CLDR,UDHR", region:"casia", script:"cyrl", speakers:"4300000", letter:"абгдеёжзийклмнӊоөпрстуүхчшъыэюяцңвьфАБГДЕЁЖЗИЙКЛМНӉОӨПРСТУҮХЧШЪЫЭЮЯЦҢВЬФ", mark:"\u{0308}\u{0306}", punctuation:"‐–—…‘‚“„«»§" },
+"ky": { name:"Kyrgyz (Kirghiz)", source:"cldr_ky,udhr_kir", region:"casia", script:"cyrl", speakers:"4300000", letter:"абгдеёжзийклмнӊоөпрстуүхчшъыэюяцңвьфАБГДЕЁЖЗИЙКЛМНӉОӨПРСТУҮХЧШЪЫЭЮЯЦҢВЬФ", mark:"\u{0308}\u{0306}", punctuation:"‐–—…‘‚“„«»§", aux:"вфцщьВФЦЩЬ" },
 
 "quc": { name:"K'iche' (Quiché)", source:"UDHR", region:"cam", script:"ascii", speakers:"2300000" },
 
@@ -397,6 +397,8 @@ var langs = {
 "nku": { name:"Bouna Kulango", source:"UDHR", region:"afr", script:"latn", speakers:"130000", letter:"ƖƆƐƝƲŋŊɩɔɛɲʋ", punctuation:"’" },
 
 "kmr": { name:"Northern Kurdish (Kurmanji)", source:"UDHR", region:"wasia", script:"latn", speakers:"15000000", letter:"ûîêçÛÎÊÇşŞ", mark:"\u{0327}\u{0302}" },
+
+"ku": { name:"Kurdish", source:"https://r12a.github.io/app-subtags/?lookup=ku", region:"wasia", script:"latn", speakers:"0", notes:"This is a macrolanguage. See kmr (Northern Kurdish) or ckb (Central Kurdish) or sdh (Southern Kurdish)." },
 
 "lkt": { name:"Lakota (Lakhota, Teton, Teton Sioux)", source:"CLDR", region:"nam", script:"latn", speakers:"6000", letter:"ʼáéíóúÁÉÍÓÚǧȟǦȞŋčšžŊČŠŽ", mark:"\u{0301}\u{030C}", punctuation:"́̌‐–—“”" },
 
