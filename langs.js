@@ -750,19 +750,19 @@ var langs = {
 
 "twq": { name:"Tasawaq", source:"CLDR", region:"afr", script:"latn", speakers:"8000", letter:"ɲẽẼŋšžŊŠŽƝãõÃÕ", mark:"\u{0303}\u{030C}" },
 
-"te": { name:"Telugu", source:"CLDR,UDHR", region:"sasia", script:"telu", speakers:"74002586", letter:"అఆఇఈఉఊఋౠఌౡఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరఱలవశషసహళ", mark:"\u{0C01}\u{0C02}\u{0C03}\u{0C3E}\u{0C3F}\u{0C40}\u{0C41}\u{0C42}\u{0C43}\u{0C44}\u{0C46}\u{0C47}\u{0C48}\u{0C4A}\u{0C4B}\u{0C4C}\u{0C4D}\u{0C55}\u{0C56}", punctuation:"‘’“”" },
+"te": { name:"Telugu", source:"cldr_te,udhr_tel", region:"sasia", script:"telu", speakers:"74002586", letter:"అఆఇఈఉఊఋౠఌౡఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరఱలవశషసహళ", mark:"\u{0C01}\u{0C02}\u{0C03}\u{0C3E}\u{0C3F}\u{0C40}\u{0C41}\u{0C42}\u{0C43}\u{0C44}\u{0C46}\u{0C47}\u{0C48}\u{0C4A}\u{0C4B}\u{0C4C}\u{0C4D}\u{0C55}\u{0C56}", punctuation:"‘’“”", aux:"౦౧౨౩౪౫౬౭౮౯" },
 
 "teo": { name:"Teso", source:"CLDR", region:"afr", script:"ascii", speakers:"1900000" },
 
 "th": { name:"Thai (Siamese)", source:"CLDR,UDHR", region:"seasia", script:"thai", speakers:"44000000", letter:"ฯๆกขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลฦวศษสหฬอฮะาๅำเแโใไ", mark:"\u{0E4E}\u{0E4C}\u{0E47}\u{0E48}\u{0E49}\u{0E4A}\u{0E4B}\u{0E4D}\u{0E31}\u{0E34}\u{0E35}\u{0E36}\u{0E37}\u{0E38}\u{0E39}\u{0E3A}", punctuation:"‐–—‘’“”…′″" },
 
-"bo": { name:"Tibetan", source:"CLDR,UDHR", region:"easia", script:"tibt", speakers:"1200000", letter:"ཀཁགངཅཆཇཉཊཋཌཎཏཐདནཔཕབམཙཚཛཝཞཟའཡརཪལཤཥསཧཨ", mark:"\u{0F7E}\u{0F7F}\u{0FB5}\u{0F90}\u{0F91}\u{0FB7}\u{0F92}\u{0F94}\u{0F95}\u{0F96}\u{0F97}\u{0F99}\u{0F9A}\u{0F9B}\u{0F9C}\u{0F9E}\u{0F9F}\u{0FA0}\u{0FA1}\u{0FA3}\u{0FA4}\u{0FA5}\u{0FA6}\u{0FA8}\u{0FA9}\u{0FAA}\u{0FAB}\u{0FAD}\u{0FBA}\u{0FAE}\u{0FAF}\u{0FB0}\u{0FB1}\u{0FBB}\u{0FB2}\u{0FBC}\u{0FB3}\u{0FB4}\u{0FB6}\u{0FB8}\u{0F71}\u{0F72}\u{0F80}\u{0F74}\u{0F77}\u{0F79}\u{0F84}\u{0F7A}\u{0F7B}\u{0F7C}\u{0F7D}", punctuation:"་།༄༅༎༌༈", number:"༠༡༢༣༤༥༦༧༨༩" },
+"bo": { name:"Tibetan", source:"cldr_bo,udhr_bod", region:"easia", script:"tibt", speakers:"1200000", letter:"ཀཁགངཅཆཇཉཊཋཌཎཏཐདནཔཕབམཙཚཛཝཞཟའཡརཪལཤཥསཧཨ", mark:"\u{0F7E}\u{0F7F}\u{0FB5}\u{0F90}\u{0F91}\u{0FB7}\u{0F92}\u{0F94}\u{0F95}\u{0F96}\u{0F97}\u{0F99}\u{0F9A}\u{0F9B}\u{0F9C}\u{0F9E}\u{0F9F}\u{0FA0}\u{0FA1}\u{0FA3}\u{0FA4}\u{0FA5}\u{0FA6}\u{0FA8}\u{0FA9}\u{0FAA}\u{0FAB}\u{0FAD}\u{0FBA}\u{0FAE}\u{0FAF}\u{0FB0}\u{0FB1}\u{0FBB}\u{0FB2}\u{0FBC}\u{0FB3}\u{0FB4}\u{0FB6}\u{0FB8}\u{0F71}\u{0F72}\u{0F80}\u{0F74}\u{0F77}\u{0F79}\u{0F84}\u{0F7A}\u{0F7B}\u{0F7C}\u{0F7D}", punctuation:"་།༄༅༎༌༈", number:"༠༡༢༣༤༥༦༧༨༩", aux:"ༀ" },
 
-"ti": { name:"Tigrinya", source:"CLDR,UDHR", region:"afr", script:"ethi", speakers:"6900000", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍቐቑቒቓቔቕቖቘቚቛቜቝበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾዀዂዃዄዅወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ", mark:"\u{135F}", punctuation:"፣፡’" },
+"ti": { name:"Tigrinya", source:"cldr_ti,udhr_tir", region:"afr", script:"ethi", speakers:"6900000", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍቐቑቒቓቔቕቖቘቚቛቜቝበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾዀዂዃዄዅወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ", mark:"\u{135F}", punctuation:"፣፡’", aux:"ሇቇኇኯዏዯዸዹዺዻዼዽዾዿጏጘጙጚጛጜጝጞጟፘፙፚⶀⶁⶂⶃⶄⶅⶆⶇⶈⶉⶊⶋⶌⶍⶎⶓⶔⶕⶖⶏⶐⶑⶒⶠⶡⶢⶣⶤⶥⶦⶨⶩⶪⶫⶬⶭⶮⶰⶱⶲⶳⶴⶵⶶⶸⶹⶺⶻⶼⶽⶾⷀⷁⷂⷃⷄⷅⷆⷈⷉⷊⷋⷌⷍⷎⷐⷑⷒⷓⷔⷕⷖⷘⷙⷚⷛⷜⷝⷞ᎐᎑᎒᎓᎔᎕᎖᎗᎘᎙ᎀᎁᎂᎃᎄᎅᎆᎇᎈᎉᎊᎋᎌᎍᎎᎏ" },
 
-"to": { name:"Tongan", source:"CLDR,UDHR", region:"oce", script:"latn", speakers:"169000", letter:"āēīōūĀĒĪŌŪáéíóúÁÉÍÓÚʻ", mark:"\u{0301}\u{0304}", punctuation:"§‐–—…‘’“”†‡′″" },
+"to": { name:"Tongan", source:"cldr_to,udhr_ton", region:"oce", script:"latn", speakers:"169000", letter:"āēīōūĀĒĪŌŪáéíóúÁÉÍÓÚʻ", mark:"\u{0301}\u{0304}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăĕĭŏœŭĂĔĬŎŒŬŸàâåäæçèêëìîïñòôöøùûüÿÀÂÅÄÆÇÈÊËÌÎÏÑÒÔÖØÙÛǛ̧̆̂̊̈̃" },
 
-"tr": { name:"Turkish (Istanbul Turkish)", source:"CLDR,UDHR", region:"wasia", script:"latn", speakers:"71000000", letter:"çöüâÇÖÜÂğışĞŞİ", mark:"\u{0327}\u{0307}\u{0306}\u{0308}\u{0302}", punctuation:"̧̇̆̈̂§‐–—…‘’“”†‡′″" },
+"tr": { name:"Turkish (Istanbul Turkish)", source:"cldr_tr,udhr_tur", region:"wasia", script:"latn", speakers:"71000000", letter:"çöüâÇÖÜÂğışĞŞİ", mark:"\u{0327}\u{0307}\u{0306}\u{0308}\u{0302}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăĕĭŏœŭĂĔĬŎŒŬŸàåäæèêëìîïñòôøùûÿÀÅÄÆÈÊËÌÎÏÑÒÔØÙÛ̀̊̃" },
 
 "tk": { name:"Turkmen", source:"CLDR,UDHR", region:"casia", script:"latn", speakers:"7500000", letter:"çäöüýÇÄÖÜÝžňşŽŇŞ", mark:"\u{0327}\u{0308}\u{030C}\u{0301}", punctuation:"§–—…“”‐‰" },
 
@@ -774,11 +774,11 @@ var langs = {
 
 "blt": { name:"Tai Dam (Black Tai)", source:"UDHR", region:"seasia", script:"tavt", speakers:"760000", letter:"ꪁꪫꪱꪣꪜꪹꪕꪉꪵꪠꪙꪒꪘꪀꪩꫛꪶꪔꪄꪮꪨꪭꪚꪺꪼꪥꪻꪐꪎꪈꪬꪊꪽꪝꪋꪤꪏꪡꪅꪑꪗꪢꫜꪖꪪꪯ", mark:"\u{AAB8}\u{AAB2}\u{AABE}\u{AAB4}\u{AAB7}\u{AAB0}\u{AAB3}" },
 
-"tg": { name:"Tajik (Tajiki, Tajiki Persian)", source:"CLDR,UDHR", region:"casia", script:"cyrl", speakers:"8400000", letter:"эъломияуҳқбашрпегфтднзкхсвӣёҷчғюӯйжьЭЪЛОМИЯУҲҚБАШРПЕГФТДНЗКХСВӢЁҶЧҒЮӮЙЖЬ", mark:"\u{0304}\u{0308}\u{0306}", punctuation:"‰" },
+"tg": { name:"Tajik (Tajiki, Tajiki Persian)", source:"cldr_tj,udhr_tgk", region:"casia", script:"cyrl", speakers:"8400000", letter:"эъломияуҳқбашрпегфтднзкхсвӣёҷчғюӯйжьЭЪЛОМИЯУҲҚБАШРПЕГФТДНЗКХСВӢЁҶЧҒЮӮЙЖЬ", mark:"\u{0304}\u{0308}\u{0306}", punctuation:"‰", aux:"цщыьЦЩЫЬ" },
 
 "tly": { name:"Talysh", source:"UDHR", region:"wasia", script:"latn", speakers:"900000", letter:"çÇƏığşİĞŞə", mark:"\u{0327}\u{0307}\u{0306}" },
 
-"tt": { name:"Tatar", source:"CLDR,UDHR", region:"eur", script:"cyrl", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖёщЁЩ", mark:"\u{0308}\u{0306}" },
+"tt": { name:"Tatar", source:"cldr_tt,udhr_tat", region:"eur", script:"cyrl", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖёщЁЩ", mark:"\u{0308}\u{0306}", aux:"ғқӯҒҚӮ̄" },
 
 "kdh": { name:"Tem (Temba, Kotokoli, Cotocoli)", source:"UDHR", region:"afr", script:"latn", speakers:"290000", letter:"íáéúóÿÍÁÉÚÓƖƱƐƉƆńŋŃŸŊḿḾɩʊɛɖɔ", mark:"\u{0301}\u{0308}" },
 
