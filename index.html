@@ -306,8 +306,9 @@ function showLanguage (lang) {
 		if (i>0) out += ', '
 		if (sources[i].startsWith('cldr_')) out += '<a href="https://www.unicode.org/cldr/charts/latest/summary/'+sources[i].substr(5)+'.html">CLDR</a>'
 		else if (sources[i].startsWith('udhr_')) out += '<a href="https://unicode.org/udhr/d/'+sources[i]+'.html">UDHR</a>'
+		else if (sources[i].startsWith('http')) out += '<a href="'+sources[i]+'">link</a>'
 		else if (sources[i] === 'r12a' || sources[i] === 'CLDR' || sources[i] === 'UDHR') out += sources[i]
-		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">r12a</a>'
+		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">link</a>'
 		}
 	out += '</td></tr>'
 	
@@ -508,7 +509,7 @@ function filter (str) {
   </div>
 </aside>
 
-<p id="status">Updated Fri 20 Feb 2015  &bull; tags <a href="http://rishida.net/blog/index.php?tag=counterstyles" title="Show all blog posts tagged with 'counterstyles'">counterstyles</a>, <a href="http://rishida.net/blog/?tag=scriptnotes" title="Show all blog posts tagged with 'scriptnotes'">scriptnotes</a>, <a href="http://rishida.net/blog/?tag=apps" title="Show all blog posts tagged with 'apps'">apps</a></p>
+<p id="status">Updated Fri 20 Feb 2015  &bull; tags <a href="http://r12a.github.io/blog/index.php?tag=counterstyles" title="Show all blog posts tagged with 'counterstyles'">counterstyles</a>, <a href="http://r12a.github.io/blog/?tag=scriptnotes" title="Show all blog posts tagged with 'scriptnotes'">scriptnotes</a>, <a href="http://r12a.github.io/blog/?tag=apps" title="Show all blog posts tagged with 'apps'">apps</a></p>
 
 <section>
 <p>This page allows you to track the correspondences between languages and non-ASCII Unicode characters. The language+script pairs are derived from CLDR and/or the Unicode site's UDHR transcripts, although some characters are added on the basis of other sources. It isn't claimed that this list is exhaustively correct, so you should treat it as an approximation.</p>
@@ -562,7 +563,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->19-Mar-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->20-Mar-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
