@@ -96,6 +96,7 @@ function listLangsByScript () {
             case 'ethi': region = 'Ethiopic';break
             case 'arab': region = 'Arabic';break
             case 'armn': region = 'Armenian';break
+            case 'bali': region = 'Balinese';break
             case 'beng': region = 'Bengali';break
             case 'syrc': region = 'Syriac';break
             case 'deva': region = 'Devanagari';break
@@ -187,7 +188,6 @@ function findChars (str) {
 	}
 
 function showLanguage (lang) {
-	console.log(lang)
 	out = ''
 	var charList
     var stats = 'Non-ASCII character count: &nbsp; '
@@ -300,7 +300,6 @@ function showLanguage (lang) {
 	
 	// source
 	var sources = langs[lang].source.split(',')
-	console.log('sources',sources)
 	out += '<tr><th>Source</th><td>'
 	for (let i=0;i<sources.length;i++) {
 		if (i>0) out += ', '
