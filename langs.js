@@ -2,7 +2,7 @@ var langs = {
 
 // Any time this is changed, run _make-array.html to generate new code for char_lang.js !
 
-"ab":{ name:"Abkhaz (Abxaz, Abkhazian)", source:"UDHR", region:"wasia", script:"cyrl", speakers:"113000", letter: "ауҩытәсизнқегьцрҧшдклжҭхҳҟмобчӡҵҕџҿпҽвҷфАУҨЫТӘСИЗНҚЕГЬЦРҦШДКЛЖҬХҲҞМОБЧӠҴҔЏҾПҼВҶФ", punctuation:"–‐" },
+"ab":{ name:"Abkhaz (Abxaz, Abkhazian)", source:"udhr_abk", region:"wasia", script:"cyrl", speakers:"113000", letter: "ЏАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЫЬабвгдежзиклмнопрстуфхцчшыьџҔҕҚқҞҟҦҧҨҩҬҭҲҳҴҵҶҷҼҽҾҿӘәӠӡӶӷ", punctuation:"–‐" },
 
 "ace": { name:"Acehnese", source:"UDHR", region:"seasia", script:"ascii", speakers:"3500000", punctuation:"‐“”" },
 
