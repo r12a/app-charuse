@@ -36,7 +36,7 @@ var langs = {
 
 "ar": { name:"Arabic", source:"CLDR,UDHR", region:"wasia", script:"arab", speakers:"290000000", letter:"ءأؤإئاآبةتثجحخدذرزسشصضطظعغفقكلمنهوىي", mark:"\u{064B}\u{064C}\u{064D}\u{064E}\u{064F}\u{0650}\u{0651}\u{0652}\u{0670}\u{0654}\u{0655}\u{0653}", number:"٠١٢٣٤٥٦٧٨٩", punctuation:"٫٬٪؉،؛؟‰‐–—…«»" },
 
-"hy": { name:"Armenian", source:"cldr_hy,udhr_hye", region:"wasia", script:"armn", speakers:"10000000", letter:"աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքևօֆԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖ", punctuation:"֊՝՜՞՛՟։․«»", aux:"՚֍֎֏" },
+"hy": { name:"Armenian", source:"cldr_hy,udhr_hye,86422c72473b4ace41b3971e55e41a49a44dcbda", region:"wasia", script:"armn", speakers:"10000000", letter:"աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքևօֆԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖ", punctuation:"֊՝՜՞՛՟։․«»", aux:"՚֍֎֏" },
 
 "rup": { name:"Aromanian", source:"UDHR", region:"eur", script:"latn", speakers:"250000", letter:"ãâÃÂ", mark:"\u{0303}\u{0302}" },
 
