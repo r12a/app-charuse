@@ -66,6 +66,8 @@ var langs = {
 
 "ban-latn": { name:"Bali (Balinese) (Latin)", source:"UDHR", region:"seasia", script:"ascii", speakers:"3300000" },
 
+"ban-bali": { name:"Bali (Balinese) (Balinese)", source:"xxx", region:"seasia", script:"bali", speakers:"3300000", letter:"ᬅᬆᬇᬈᬉᬊᬋᬌᬍᬎᬏᬐᬑᬒᬓᬔᬕᬖᬗᬘᬙᬚᬛᬜᬝᬞᬟᬠᬡᬢᬣᬤᬥᬦᬧᬨᬩᬪᬫᬬᬭᬮᬯᬰᬱᬲᬳ", mark:"ᬂᬃᬄ᬴ᬵᬶᬷᬸᬹᬺᬻᬼᬽᬾᬿᭀᭁᭂᭃ᭄", punctuation:"᭞᭟", number:"᭐᭑᭒᭓᭔᭕᭖᭗᭘᭙", aux:"ᬀᬁ᭚᭛᭜᭝᭠" },
+
 "ksf": { name:"Bafia", source:"CLDR", region:"afr", script:"latn", speakers:"60000", letter:"áéíóúÁÉÍÓÚǝƎƐƆŋŊɛɔ", mark:"\u{0301}" },
 
 "bm": { name:"Bambara (Bamanankan)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"4000000", letter:"ƐƝƆŋŊɛɲɔ", punctuation:"’" },

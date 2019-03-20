@@ -82,7 +82,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], beng:[], bugi:[], cakm:[], cans:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], mand:[], mlym:[], mymr:[], nkoo:[], orya:[], sinh:[], sund:[], syrc:[], lana:[], tavt:[], taml:[], telu:[], thaa:[],thai:[], tfng:[], tibt:[],  vaii:[], yiii:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], beng:[], bugi:[], cakm:[], cans:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], mand:[], mlym:[], mymr:[], nkoo:[], orya:[], sinh:[], sund:[], syrc:[], lana:[], tavt:[], taml:[], telu:[], thaa:[],thai:[], tfng:[], tibt:[],  vaii:[], yiii:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
