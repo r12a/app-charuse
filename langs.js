@@ -710,7 +710,7 @@ var langs = {
 
 "mcd": { name:"Sharanahua (Marinawa)", source:"UDHR", region:"sam", script:"latn", speakers:"3100", letter:"úíóáÚÍÓÁ", mark:"\u{0301}", punctuation:"¿" },
 
-"shk": { name:"Shilluk", source:"UDHR", region:"afr", script:"latn", speakers:"175000", letter:"øáïöäëàóìíØÁÏÖÄËÀÓÌÍ", mark:"\u{0301}\u{0308}\u{0300}" },
+"shk": { name:"Shilluk", source:"UDHR", region:"afr", script:"latn", speakers:"175000", letter:"ÀÁÄÈÉËÌÍÏÓÖØÙÚàáäèéëìíïóöøùú", mark:"\u{0301}\u{0308}\u{0300}" },
 
 "shp": { name:"Shipibo-Conibo (Shipibo-Konibo)", source:"UDHR", region:"sam", script:"latn", speakers:"26000", letter:"íáóéñúÍÁÓÉÑÚ", mark:"\u{0301}\u{0303}", punctuation:"¿" },
 
