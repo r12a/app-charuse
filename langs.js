@@ -384,7 +384,7 @@ var langs = {
 
 "kha": { name:"Khasi", source:"UDHR", region:"sasia", script:"latn", speakers:"1128575", letter:"ïñÏÑ", mark:"\u{0308}\u{0303}" },
 
-"kkh": { name:"Khün (Tai Khün)", source:"UDHR", region:"seasia", script:"lana", speakers:"100000", letter:"ᨠᨲᩅᨯᨿᨾᨶᩔᨩᨣᨷᩁᩉᩋᨳᨪᨦᩓᩈᨴᨵᨹᨻᨸᨽᨡᩃᨧᩀᨮᨭᨤᪧᨬᨨᩑᨱᨥᩐᨰᨼ", mark:"\u{1A65}\u{1A63}\u{1A64}\u{1A75}\u{1A60}\u{1A62}\u{1A69}\u{1A74}\u{1A55}\u{1A6B}\u{1A68}\u{1A76}\u{1A66}\u{1A70}\u{1A6A}\u{1A71}\u{1A73}\u{1A6E}\u{1A56}\u{1A6F}\u{1A7C}\u{1A6D}\u{1A67}\u{1A5B}\u{1A61}" },
+"kkh": { name:"Khün (Tai Khün)", source:"udhr_kkh_lana", region:"seasia", script:"lana", speakers:"100000", letter:"ᨠᨡᨣᨤᨥᨦᨧᨨᨩᨪᨫᨬᨭᨮᨯᨰᨱᨲᨳᨴᨵᨶᨷᨸᨹᨺᨻᨼᨽᨾᨿᩀᩁᩃᩅᩆᩇᩈᩉᩊᩋᩌᩍᩎᩏᩐᩑᩒᩓᩔᪧ", mark:"\u{1A55}\u{1A56}\u{1A58}\u{1A59}\u{1A5B}\u{1A5C}\u{1A5D}\u{1A5E}\u{1A60}\u{1A61}\u{1A62}\u{1A63}\u{1A64}\u{1A65}\u{1A66}\u{1A67}\u{1A68}\u{1A69}\u{1A6A}\u{1A6B}\u{1A6C}\u{1A6D}\u{1A6E}\u{1A6F}\u{1A70}\u{1A71}\u{1A73}\u{1A74}\u{1A75}\u{1A76}\u{1A77}\u{1A78}\u{1A79}\u{1A7A}\u{1A7C}", number:"᪀᪁᪂᪃᪄᪅᪆᪇᪈᪉", punctuation:"᪨᪩᪪᪫", aux:"᩿᪐᪑᪒᪓᪔᪕᪖᪗᪘᪙᪠᪡᪢᪣᪤᪥᪦᪬᪭" },
 
 "ktu": { name:"Kituba", source:"UDHR", region:"afr", script:"ascii", speakers:"5400000" },
 
