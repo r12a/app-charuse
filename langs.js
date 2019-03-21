@@ -434,7 +434,7 @@ var langs = {
 
 "lia": { name:"Limba", source:"UDHR", region:"afr", script:"latn", speakers:"340000", letter:"ƆƐŋŊɔɛ" },
 
-"lis": { name:"Lisu (Fraser script)", source:"xxxx", region:"easia", script:"lisu", speakers:"940000", letter:"ꓐꓑꓒꓓꓔꓕꓖꓗꓘꓙꓚꓛꓜꓝꓞꓟꓠꓡꓢꓣꓤꓥꓦꓧꓨꓩꓪꓫꓬꓭꓮꓯꓰꓱꓲꓳꓴꓵꓶꓷꓸꓹꓺꓻꓼꓽʼˍ", punctuation:"《》…꓾꓿" },
+"lis": { name:"Lisu (Fraser script)", source:"d6a5076cb77188fd52722d4a57b621ac1390c714", region:"easia", script:"lisu", speakers:"940000", letter:"ꓐꓑꓒꓓꓔꓕꓖꓗꓘꓙꓚꓛꓜꓝꓞꓟꓠꓡꓢꓣꓤꓥꓦꓧꓨꓩꓪꓫꓬꓭꓮꓯꓰꓱꓲꓳꓴꓵꓶꓷꓸꓹꓺꓻꓼꓽʼˍ", punctuation:"《》…꓾꓿" },
 
 "lob": { name:"Lobi (Miwa, Lobiri)", source:"UDHR", region:"afr", script:"latn", speakers:"440000", letter:"àáäÀÁÄƲƖƆƐʋɩɔɛʔ", mark:"\u{0300}\u{0301}\u{0308}" },
 
