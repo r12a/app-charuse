@@ -205,7 +205,7 @@ function showLanguage (lang) {
 		out += '<tr><th>Letters</th><td class="large">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = cp+'0'
+			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+charList[j]+'</span> ' 
 			}
@@ -219,7 +219,7 @@ function showLanguage (lang) {
 		out += '<tr><th>Marks</th><td class="large">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = cp+'0'
+			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
@@ -233,7 +233,7 @@ function showLanguage (lang) {
 		out += '<tr><th>Punctuation</th><td class="large">'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = cp+'0'
+			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
@@ -247,7 +247,7 @@ function showLanguage (lang) {
 		out += '<tr><th>Numbers</th><td class="large">'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = cp+'0'
+			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
@@ -261,7 +261,7 @@ function showLanguage (lang) {
 		out += '<tr><th>Symbols</th><td class="large">'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = cp+'0'
+			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
@@ -276,7 +276,7 @@ function showLanguage (lang) {
 		//out += langs[lang].other
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = cp+'0'
+			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">U+'+cp+'</span> ' 
 			}
@@ -290,7 +290,7 @@ function showLanguage (lang) {
 		out += '<tr><th>Infrequent</th><td class="infrequent">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = cp+'0'
+			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
@@ -565,7 +565,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->21-Mar-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->23-Mar-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
