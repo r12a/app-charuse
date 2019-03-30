@@ -284,9 +284,10 @@ function showLanguage (lang) {
 		out += '<a href="/uniview?charlist='+langs[lang].other+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
     stats += ' : &nbsp; total ' + total
+	if (langs[lang].aux || langs[lang].deprecated) stats += ' &nbsp; &nbsp; + ( '
 	if (langs[lang].aux) {
 		charList = [...langs[lang].aux]
-        stats += ' &nbsp; &nbsp; ( +' + charList.length + ' infrequent )'
+        stats += charList.length + ' infrequent '
 		out += '<tr><th>Infrequent</th><td class="infrequent">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
@@ -296,6 +297,21 @@ function showLanguage (lang) {
 			}
 		out += '<a href="/uniview?charlist='+langs[lang].aux+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
+	if (langs[lang].deprecated) {
+		charList = [...langs[lang].deprecated]
+        if (total > 0) stats += ', '
+        stats += charList.length + ' deprecated'
+        total += charList.length
+		out += '<tr><th>Deprecated</th><td class="large">'
+		for (j=0;j<charList.length;j++)  { 
+			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+			while (cp.length<4) cp = '0'+cp
+			name = 'U+'+cp+' '+charData[charList[j]]
+			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
+			}
+		out += '<a href="/uniview?charlist='+langs[lang].symbol+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		}
+	if (langs[lang].aux || langs[lang].deprecated) stats += ' )'
 	if (!langs[lang].letter && !langs[lang].mark && !langs[lang].punctuation && !langs[lang].number && !langs[lang].symbol && !langs[lang].other) {
 		out += '<tr><th></th><td class="large">ASCII only</td></tr>'
 		}
@@ -565,7 +581,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->23-Mar-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->29-Mar-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
