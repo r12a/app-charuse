@@ -78,7 +78,7 @@ var langs = {
 
 "bax-latn": { name:"Bamum (Bamun, Bamoun) (Latin)", source:"UDHR", region:"afr", script:"latn", speakers:"420000", letter:"úéêüûâôîáèùàÚÉÊÜÛÂÔÎÁÈÙÀṅṄ", mark:"\u{0301}\u{0302}\u{0308}\u{0300}\u{0307}", punctuation:"‘’" },
 
-"bn": { name:"Bengali (Bangla)", source:"cldr_bn,udhr_ben", region:"sasia", script:"beng", speakers:"238000000", letter:"অআইঈউঊঋৠঌৡএঐওঔকষখগঘঙচছজঝঞটঠডঢণতৎথদধনপফবভমযরলশসহঽ", mark:"\u{09BC}\u{0982}\u{0983}\u{0981}\u{09CD}\u{09BE}\u{09BF}\u{09C0}\u{09C1}\u{09C2}\u{09C3}\u{09C4}\u{09E2}\u{09E3}\u{09C7}\u{09C8}\u{09CB}\u{09CC}\u{09D7}", number:"১২৩৪৫৬৭৮৯০", punctuation:"।", symbol:"৺", other:"\u{200C}\u{200D}", aux:"৲৳৴৵৶৷৸৹ৰৱ" },
+"bn": { name:"Bengali (Bangla)", source:"cldr_bn,udhr_ben", region:"sasia", script:"beng", speakers:"238000000", letter:"অআইঈউঊঋএঐওঔকষখগঘঙচছজঝঞটঠডঢণতৎথদধনপফবভমযরলশসহঽ", mark:"\u{09BC}\u{0982}\u{0983}\u{0981}\u{09CD}\u{09BE}\u{09BF}\u{09C0}\u{09C1}\u{09C2}\u{09C3}\u{09C7}\u{09C8}\u{09CB}\u{09CC}\u{09D7}", number:"১২৩৪৫৬৭৮৯০", punctuation:"।", symbol:"৺৳", other:"\u{200C}\u{200D}", aux:"ৠঌৡৄৢৣ" },
 
 "bas": { name:"Basaa (Bassa, Basa, Bissa, Mbene)", source:"CLDR", region:"afr", script:"latn", speakers:"300000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǎǐǹǒǔǍƁƐǏǸǑƆǓāěēīńŋōūĀĚĒĪŃŊŌŪɓɛɔ", mark:"\u{1DC6}\u{1DC7}\u{0301}\u{0300}\u{0302}\u{030C}\u{0304}", number:"", punctuation:"", separator:"", symbol:"" },
 
