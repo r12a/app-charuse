@@ -104,7 +104,7 @@ var langs = {
 
 "br": { name:"Breton", source:"cldr_br,udhr_bre", region:"eur", script:"latn", speakers:"226000", letter:"êñùÊÑÙʼ", mark:"\u{0302}\u{0303}\u{0300}", punctuation:"’–", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèëíìîïóòôöøúûüÿÁÀÂÅÄÃÆÇÉÈËÍÌÎÏÓÒÔÖØÚÛǗ̧̆̊̈̄" },
 
-"bug": { name:"Buginese", source:"r12a", region:"seasia", script:"bugi", speakers:"5000000", letter:"ᨀᨁᨂᨄᨅᨆᨈᨉᨊᨌᨍᨎᨐᨑᨒᨓᨔᨖᨃᨏᨋᨇᨕ", mark:"\u{1A17}\u{1A18}\u{1A19}\u{1A1A}\u{1A1B}", punctuation:"᨞᨟" },
+"bug": { name:"Buginese", source:"d997476f6f5d5a7525a2cdf2d0790e944bfa83f2", region:"seasia", script:"bugi", speakers:"5000000", letter:"ᨀᨁᨂᨄᨅᨆᨈᨉᨊᨌᨍᨎᨐᨑᨒᨓᨔᨖᨃᨏᨋᨇᨕ", mark:"\u{1A17}\u{1A18}\u{1A19}\u{1A1A}\u{1A1B}", punctuation:"᨞᨟" },
 
 "bug-latn": { name:"Buginese (Latin)", source:"UDHR", region:"seasia", script:"ascii", speakers:"5000000" },
 
