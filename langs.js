@@ -290,7 +290,7 @@ var langs = {
 
 "he": { name:"Hebrew", source:"cldr_he,udhr_heb", region:"wasia", script:"hebr", speakers:"9000000", letter:"אבגדהוזחטיכךלמםנןסעפףצץקרשת",  punctuation:"׳״־‐–—", aux:"ְֱֲֳִֵֶַָֹֻּֽֿׁׂׄ״" },
 
-"hi": { name:"Hindi", source:"CLDR,UDHR", region:"sasia", script:"deva", speakers:"260000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"॰।‘’“”—", number:"१०९४८२३५६७", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
+"hi": { name:"Hindi", source:"cldr_hi,udhr_hin", region:"sasia", script:"deva", speakers:"260000000", letter:"अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह\u{958}\u{959}\u{95A}\u{95B}\u{95C}\u{95D}\u{95E}", mark:"\u{901}\u{902}\u{903}\u{93C}\u{93E}\u{93F}\u{940}\u{941}\u{942}\u{943}\u{947}\u{948}\u{94B}\u{94C}\u{94D}", punctuation:"।॥॰‘’“”—", number:"०१२३४५६७८९", other:"\u{200D}\u{200C}", aux:"ऍऑऽॐॅॉ" },
 
 "hu": { name:"Hungarian", source:"cldr_hu,udhr_hun", region:"eur", script:"latn", speakers:"13000000", letter:"áéíóöúüÁÉÍÓÖÚÜőűŐŰ", mark:"\u{0301}\u{0308}\u{030B}", punctuation:"«»§–…’”„", symbol:"⁒", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸàâåäãæçèêëìîïñòôøùûÿÀÂÅÄÃÆÇÈÊËÌÎÏÑÒÔØÙÛ̧̀̆̂̊̃̄" },
 
