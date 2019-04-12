@@ -288,7 +288,7 @@ var langs = {
 
 "haw": { name:"Hawaiian", source:"CLDR,UDHR", region:"oce", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"\u{0304}", punctuation:"’‘“”" },
 
-"he": { name:"Hebrew", source:"cldr_he,udhr_heb", region:"wasia", script:"hebr", speakers:"9000000", letter:"אבגדהוזחטיכךלמםנןסעפףצץקרשת",  punctuation:"׳״־‐–—", aux:"ְֱֲֳִֵֶַָֹֻּֽֿׁׂׄ״" },
+"he": { name:"Hebrew", source:"cldr_he,udhr_heb", region:"wasia", script:"hebr", speakers:"9000000", letter:"אבגדהוזחטיכךלמםנןסעפףצץקרשת",  punctuation:"׳״־‐–—", symbol:"₪", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}", aux:"ְֱֲֳִֵֶַָֹֻּׁׂ" },
 
 "hi": { name:"Hindi", source:"cldr_hi,udhr_hin,9d8e188be96400153901b55006feaaf9fd4bf3b1", region:"sasia", script:"deva", speakers:"260000000", letter:"अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह\u{958}\u{959}\u{95A}\u{95B}\u{95C}\u{95D}\u{95E}", mark:"\u{901}\u{902}\u{903}\u{93C}\u{93E}\u{93F}\u{940}\u{941}\u{942}\u{943}\u{947}\u{948}\u{94B}\u{94C}\u{94D}", punctuation:"।॥॰‘’“”—", number:"०१२३४५६७८९", other:"\u{200D}\u{200C}", aux:"ऍऑऽॐॅॉ" },
 
