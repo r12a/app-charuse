@@ -159,7 +159,10 @@ thead th { text-align: left; }
 #langDetails { color: #C33; margin: 1em 30% 2em 7.5%; line-height: 1.2em; min-width: 70%;}
 #langDetails th { color:#777; font-weight: normal; }
 #langDetails th, #langDetails td { text-align: left; vertical-align: top; padding: 10px; }
-#langDetails  td.large { font-size: 30px; line-height: 1.5; }
+#langDetails  td.large { font-size: 1.7em; line-height: 1.5; }
+#langDetails  td.small { font-size: 1.2em; line-height: 1.5; }
+#langDetails  td.sources { font-size: 0.9em; line-height: 1.5; }
+#langDetails  td.other { font-size: 0.9em; line-height: 1.5; }
 #langDetails th { text-align: right;  width:5em; }
 
 .inputbox { width: 100%; border-radius: 10px; border: 2px solid #eee; }
