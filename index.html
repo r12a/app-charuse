@@ -209,10 +209,11 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+charList[j]+'</span> ' 
 			}
-		out += '<a href="/uniview?charlist='+langs[lang].letter+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '<a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].mark) {
 		charList = [...langs[lang].mark]
+ 		charList.sort()
         if (total > 0) stats += ', '
         stats += charList.length + ' marks'
         total += charList.length
@@ -223,10 +224,11 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
-		out += '<a href="/uniview?charlist='+langs[lang].mark+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '<a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].punctuation) {
 		charList = [...langs[lang].punctuation]
+ 		charList.sort()
         if (total > 0) stats += ', '
         stats += charList.length + ' punctuation'
         total += charList.length
@@ -237,7 +239,7 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
-		out += '<a href="/uniview?charlist='+langs[lang].punctuation+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '<a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].number) {
 		charList = [...langs[lang].number]
@@ -272,7 +274,7 @@ function showLanguage (lang) {
         if (total > 0) stats += ', '
         stats += charList.length + ' other'
         total += charList.length
-		out += '<tr><th>Other</th><td>'
+		out += '<tr><th>Other</th><td class="other">'
 		//out += langs[lang].other
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
@@ -288,7 +290,7 @@ function showLanguage (lang) {
 	if (langs[lang].aux) {
 		charList = [...langs[lang].aux]
         stats += charList.length + ' infrequent '
-		out += '<tr><th>Infrequent</th><td class="infrequent">'
+		out += '<tr><th>Infrequent</th><td class="small">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -302,7 +304,7 @@ function showLanguage (lang) {
         if (total > 0) stats += ', '
         stats += charList.length + ' deprecated'
         total += charList.length
-		out += '<tr><th>Deprecated</th><td class="large">'
+		out += '<tr><th>Deprecated</th><td class="small">'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -319,14 +321,14 @@ function showLanguage (lang) {
 	
 	// source
 	var sources = langs[lang].source.split(',')
-	out += '<tr><th>Source</th><td>'
+	out += '<tr><th>Source</th><td class="sources">'
 	for (let i=0;i<sources.length;i++) {
 		if (i>0) out += ', '
 		if (sources[i].startsWith('cldr_')) out += '<a href="https://www.unicode.org/cldr/charts/latest/summary/'+sources[i].substr(5)+'.html">CLDR</a>'
 		else if (sources[i].startsWith('udhr_')) out += '<a href="https://unicode.org/udhr/d/'+sources[i]+'.html">UDHR</a>'
 		else if (sources[i].startsWith('http')) out += '<a href="'+sources[i]+'">link</a>'
 		else if (sources[i] === 'r12a' || sources[i] === 'CLDR' || sources[i] === 'UDHR') out += sources[i]
-		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">link</a>'
+		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
 		}
 	out += '</td></tr>'
 	
@@ -581,7 +583,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->29-Mar-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->11-Apr-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
