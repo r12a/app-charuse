@@ -330,7 +330,7 @@ var langs = {
 
 "jv": { name:"Javanese", source:"UDHR", region:"seasia", script:"ascii", speakers:"94000000" },
 
-"jv-java": { name:"Javanese (Javanese)", source:"r12a", region:"seasia", script:"java", speakers:"94000000", letter:"ꦏꦑꦒꦓꦔꦕꦖꦗꦛꦚꦘꦠꦡꦢꦝꦤꦟꦥꦦꦧꦨꦩꦪꦭꦫꦱꦯꦮꦲꦰꦣꦞꦙꦜꦉꦊꦄꦆꦈꦌꦎꧏ", mark:"\u{A9BD}\u{A9BE}\u{A9BF}\u{A980}\u{A981}\u{A982}\u{A983}\u{A9B3}\u{A9B6}\u{A9B8}\u{A9BA}\u{A9BC}\u{A9B4}", punctuation:"꧊꧋꧌꧍꧈꧉꧇꧁꧂꧅꧄꧃꧆" },
+"jv-java": { name:"Javanese (Javanese)", source:"r12a", region:"seasia", script:"java", speakers:"94000000", letter:"ꦄꦆꦇꦈꦉꦊꦋꦌꦎꦏꦑꦒꦓꦔꦕꦖꦗꦘꦚꦛꦝꦟꦠꦡꦢꦤꦥꦦꦧꦨꦩꦪꦫꦭꦮꦱꦲꧏ", mark:"\u{A980}\u{A981}\u{A982}\u{A983}\u{A9B3}\u{A9B4}\u{A9B6}\u{A9B8}\u{A9BA}\u{A9BC}\u{A9BD}\u{A9BE}\u{A9BF}\u{A9C0}", number:"꧐꧑꧒꧓꧔꧕꧖꧗꧘꧙", punctuation:"꧁꧂꧃꧄꧅꧆꧇꧈꧉꧊꧋꧌꧍", aux:"ꦙꦜꦞꦣꦯꦰ꧞꧟" },
 
 "dyu": { name:"Dyula (Jula, Dioula)", source:"UDHR", region:"afr", script:"latn", speakers:"2500000", letter:"úàìóáòùèíéÚÀÌÓÁÒÙÈÍÉƐƆƝŋŊɛɔɲ", mark:"\u{0301}\u{0300}", punctuation:"’‘" },
 
