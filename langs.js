@@ -348,7 +348,7 @@ var langs = {
 
 "kk": { name:"Kazakh", source:"CLDR,UDHR", region:"casia", script:"cyrl", speakers:"15000000", letter:"аәбвгғдеёжзийкқлмнңоөпрстуұүфхһцчшщъыіьэюяАӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯ", punctuation:"‐–—…‘’“”«»§" },
 
-"km": { name:"Khmer (Cambodian)", source:"cldr_km,udhr_khm", region:"seasia", script:"khmr", speakers:"16000000", letter:"កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរឫឬលឭឮវសហឡអឥឦឧឩឪឯឰឱឲឳៗ", mark:"\u{17D0}\u{17C8}\u{17CB}\u{17C9}\u{17CA}\u{17CD}\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}\u{17C6}\u{17C7}\u{17D2}\u{17CC}\u{17CF}", punctuation:"៖។៕៙៚‘’“”", number:"២១៧០៩៤៨៣៥៦", aux:"឴឵៌៎៏៑ឝឞ" },
+"km": { name:"Khmer (Cambodian)", source:"cldr_km,udhr_khm", region:"seasia", script:"khmr", speakers:"16000000", letter:"ឥឦឪឧឩឯឰឱឳឲឫឬឭឮកខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរឡលវសហអៗ", mark:"ាិីឹឺុូួើឿៀេែៃោៅំះ៉៊់៍័្", punctuation:"៖។៕៙៚‘’“”", number:"០១២៣៤៥៦៧៨៩", symbol:"៛", aux:"៑៌៝៎៏" },
 
 "ki": { name:"Kikuyu (Gikuyu)", source:"CLDR", region:"afr", script:"latn", speakers:"6600000", letter:"ĩũĨŨ", mark:"\u{0303}" },
 
