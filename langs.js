@@ -468,7 +468,7 @@ var langs = {
 
 "zml-arab": { name:"Malay (Arabic)", source:"UDHR", region:"seasia", script:"arab", speakers:"77000000", letter:"ڤراشتهنحقسيمأجڬدبوڽڠعفكلچخظصزطۏؤئذ", mark:"\u{0654}", punctuation:"،", number:"٢" },
 
-"ml": { name:"Malayalam", source:"CLDR,UDHR", region:"sasia", script:"mlym", speakers:"38000000", letter:"അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔകൿഖഗഘങചഛജഝഞടഠഡഢണൺതഥദധനൻപഫബഭമയരർലൽവശഷസഹളൾഴറ", mark:"\u{0D03}\u{0D02}\u{0D3E}\u{0D3F}\u{0D40}\u{0D41}\u{0D42}\u{0D43}\u{0D46}\u{0D47}\u{0D48}\u{0D4A}\u{0D4B}\u{0D4C}\u{0D57}\u{0D4D}", punctuation:"‘’“”", other:"\u{200C}\u{200D}" },
+"ml": { name:"Malayalam", source:"cldr_ml,udhr_mal", region:"sasia", script:"mlym", speakers:"38000000", letter:"അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔകൿഖഗഘങചഛജഝഞടഠഡഢണൺതഥദധനൻപഫബഭമയരർലൽവശഷസഹളൾഴറ", mark:"\u{0D03}\u{0D02}\u{0D3E}\u{0D3F}\u{0D40}\u{0D41}\u{0D42}\u{0D43}\u{0D46}\u{0D47}\u{0D48}\u{0D4A}\u{0D4B}\u{0D4C}\u{0D57}\u{0D4D}", punctuation:"‘’“”", other:"\u{200C}\u{200D}", aux:"൦൧൨൩൪൫൬൭൮൯൹।॥" },
 
 "mt": { name:"Maltese", source:"CLDR,UDHR", region:"eur", script:"latn", speakers:"520000", letter:"àèìòùÀÈÌÒÙċġħżĊĠĦŻ", mark:"\u{0300}\u{0307}", punctuation:"‘’“”" },
 
