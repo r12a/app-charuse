@@ -112,7 +112,7 @@ var langs = {
 
 "bum": { name:"Bulu", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"860000", letter:"óñôéáÓÑÔÉÁōńŌŃ", mark:"\u{0304}\u{0301}\u{0303}\u{0302}" },
 
-"my": { name:"Burmese (Myanmar)", source:"cldr_my,udhr_mya", region:"seasia", script:"mymr", speakers:"33000000", letter:"ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအဣဤဥဦဧဩဪဿ", mark:"\u{102C}\u{102B}\u{102D}\u{102E}\u{102F}\u{1030}\u{1031}\u{1032}\u{1036}\u{103B}\u{103C}\u{103D}\u{103E}\u{1037}\u{1039}\u{103A}\u{1038}", number:"၁၉၄၈၀၂၃၅၆၇", punctuation:"၏၊။၍၌၎‘’“”", aux:"ၒၓၔၕၖၗၘၙ" },
+"my": { name:"Burmese (Myanmar)", source:"cldr_my,udhr_mya,43fe649806182b69d852d8c5881f6cc16d8731ca", region:"seasia", script:"mymr", speakers:"33000000", letter:"ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအဣဤဥဦဧဩဪဿ", mark:"\u{102C}\u{102B}\u{102D}\u{102E}\u{102F}\u{1030}\u{1031}\u{1032}\u{1036}\u{103B}\u{103C}\u{103D}\u{103E}\u{1037}\u{1039}\u{103A}\u{1038}", number:"၁၉၄၈၀၂၃၅၆၇", punctuation:"၏၊။၍၌၎‘’“”", aux:"ၒၓၔၕၖၗၘၙ" },
 
 "buc": { name:"Bushi (Shibushi, Kibushi)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"41700", letter:"ìàãÌÀÃɓŋĩŊĨƁ", mark:"\u{0300}\u{0303}", punctuation:"’" },
 
