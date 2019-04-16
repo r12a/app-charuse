@@ -262,7 +262,7 @@ var langs = {
 
 "de": { name:"German", source:"cldr_de,udhr_udhr_deu_1996", region:"eur", script:"latn", speakers:"95000000", letter:"äößüÄÖÜ", mark:"\u{0308}", punctuation:"«»§‐–—…‘‚“„", aux:"ăāĕēğĭīıŏōœşŭūĂĀĔĒĞĬİĪŎŌŒŞŬŪŸáàâåãæçéèêëíìîïñóòôøúùûÿÁÀÂÅÃÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧̇́̀̆̂̊̃̄" },
 
-"el": { name:"Greek", source:"cldr_el,udhr_udhr_ell_monotonic", region:"eur", script:"grek", speakers:"12000000", letter:"αάβγδεέζηήθιίϊΐκλμνξοόπρσςτυύϋΰφχψωώΑΆΒΓΔΕΈΖΗΉΘΙΊΪΚΛΜΝΞΟΌΠΡΣΤΥΎΫΦΧΨΩΏἐἘ", mark:"\u{0301}\u{0308}\u{0313}", punctuation:"«»§‐–—…", aux:"ἀἄἂἆἁἅἃἇὰᾶἐἔἒἑἕἓὲἠἤἢἦἡἥἣἧὴῆἰἴἲἶἱἵἳἷὶῖῒῗὄὂὃὸὐὔὒὖὑὕὓὗὺῦῢῧὤὢὦὥὣὧὼῶἈἌἊἎἉἍἋἏᾺἘἜἚἙἝἛῈἨἬἪἮἩἭἫἯῊἸἼἺἾἹἽἻἿῚὌὊὋῸὙὝὛὟῪὬὪὮὭὫὯῺ̓̀͂̔" },
+"el": { name:"Greek", source:"cldr_el,udhr_udhr_ell_monotonic", region:"eur", script:"grek", speakers:"12000000", letter:"ΆΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώ", mark:"\u{301}\u{308}", punctuation:"«»§‐–—…", aux:"ἀἁἂἃἄἅἆἇἈἉἊἋἌἍἎἏἐἑἒἓἔἕἘἙἚἛἜἝἠἡἢἣἤἥἦἧἨἩἪἫἬἭἮἯἰἱἲἳἴἵἶἷἸἹἺἻἼἽἾἿὀὁὂὃὄὅὈὉὊὋὌὍὐὑὒὓὔὕὖὗὙὛὝὟὠὡὢὣὤὥὦὧὨὩὪὫὬὭὮὯὰὲὴὶὸὺὼᾀᾁᾂᾃᾄᾅᾆᾇᾈᾉᾊᾋᾌᾍᾎᾏᾐᾑᾒᾓᾔᾕᾖᾗᾘᾙᾚᾛᾜᾝᾞᾟᾠᾡᾢᾣᾤᾥᾦᾧᾨᾩᾪᾫᾬᾭᾮᾯᾰᾱᾲᾳᾴᾶᾷᾸᾹᾺᾼῂῃῄῆῇῈῊῌῐῑῒῖῗῘῙῚῠῡῢῤῥῦῧῨῩῪῬῲῳῴῶῷῸῺῺ́̄̆̈̓̔͂ͅͅ" },
 
 "gu": { name:"Gujarati", source:"cldr_gu,udhr_guj,cd18536eac759a61da40080d717664d64a29b397", region:"sasia", script:"gujr", speakers:"49000000", letter:"ૐઅઆઇઈઉઊઋૠઍએઐઑઓઔકખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળઽ", mark:"\u{0ABC}\u{0A82}\u{0A81}\u{0A83}\u{0ABE}\u{0ABF}\u{0AC0}\u{0AC1}\u{0AC2}\u{0AC3}\u{0AC4}\u{0AC5}\u{0AC7}\u{0AC8}\u{0AC9}\u{0ACB}\u{0ACC}\u{0ACD}", punctuation:"§‐–—…‘’“”†‡′″", symbol:"૱", number:"૧૨૩૪૫૬૭૮૯૦", other:"\u{200D}\u{200C}", aux:"૰।॥" },
 
