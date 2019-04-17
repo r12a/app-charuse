@@ -74,7 +74,7 @@ var langs = {
 
 "bm": { name:"Bambara (Bamanankan)", source:"CLDR,UDHR", region:"afr", script:"latn", speakers:"4000000", letter:"ƐƝƆŋŊɛɲɔ", punctuation:"’" },
 
-"bm-nkoo": { name:"Bambara (N'Ko)", source:"e04c91748b5079b9b5077f2206f53c2223dc7839", region:"afr", script:"nkoo", speakers:"4000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߨߩߪߴߵߺ", mark:"\u{07EB}\u{07EC}\u{07ED}\u{07EE}\u{07EF}\u{07F0}\u{07F1}\u{07F2}\u{07F3}", number:"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶" },
+"bm-nkoo": { name:"Bambara (N'Ko)", source:"e04c91748b5079b9b5077f2206f53c2223dc7839", region:"afr", script:"nkoo", speakers:"4000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"\u{07EB}\u{07EC}\u{07ED}\u{07EE}\u{07EF}\u{07F0}\u{07F1}\u{07F2}\u{07F3}", number:"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶" },
 
 "bax-latn": { name:"Bamum (Bamun, Bamoun) (Latin)", source:"UDHR", region:"afr", script:"latn", speakers:"420000", letter:"úéêüûâôîáèùàÚÉÊÜÛÂÔÎÁÈÙÀṅṄ", mark:"\u{0301}\u{0302}\u{0308}\u{0300}\u{0307}", punctuation:"‘’" },
 
@@ -504,7 +504,7 @@ var langs = {
 
 "emk": { name:"Eastern Maninkakan", source:"UDHR", region:"afr", script:"latn", speakers:"5000000", letter:"ɲɛɔƝƐƆ" },
 
-"emk-nkoo": { name:"Eastern Maninkakan (N'Ko)", source:"e04c91748b5079b9b5077f2206f53c2223dc7839", region:"afr", script:"nkoo", speakers:"5000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߨߩߪߴߵߺ", mark:"\u{07EB}\u{07EC}\u{07ED}\u{07EE}\u{07EF}\u{07F0}\u{07F1}\u{07F2}\u{07F3}", number:"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶" },
+"emk-nkoo": { name:"Eastern Maninkakan (N'Ko)", source:"e04c91748b5079b9b5077f2206f53c2223dc7839", region:"afr", script:"nkoo", speakers:"5000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"\u{07EB}\u{07EC}\u{07ED}\u{07EE}\u{07EF}\u{07F0}\u{07F1}\u{07F2}\u{07F3}", number:"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶" },
 
 "mi": { name:"Maori (Te Reo)", source:"UDHR", region:"oce", script:"latn", speakers:"60000", letter:"ïÏ", mark:"\u{0308}" },
 
