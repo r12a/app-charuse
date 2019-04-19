@@ -680,7 +680,7 @@ var langs = {
 
 "sn": { name:"Shona", source:"CLDR,UDHR", region:"afr", script:"ascii", speakers:"15000000" },
 
-"si": { name:"Sinhala (Sinhalese)", source:"cldr_si,udhr_sin", region:"sasia", script:"sinh", speakers:"16000000", letter:"අආඇඈඉඊඋඌඍඑඒඓඔඕඖකඛගඝඞඟචඡජඣඥඤටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ", mark:"\u{0D82}\u{0D83}\u{0DCF}\u{0DD0}\u{0DD1}\u{0DD2}\u{0DD3}\u{0DD4}\u{0DD6}\u{0DD8}\u{0DF2}\u{0DDF}\u{0DD9}\u{0DDA}\u{0DDB}\u{0DDC}\u{0DDD}\u{0DDE}\u{0DCA}", punctuation:"§‐–—…‘’“”†‡′″", symbol:"\u{200D}", aux:"ඎඏඐඦෳ" },
+"si": { name:"Sinhala (Sinhalese)", source:"cldr_si,udhr_sin", region:"sasia", script:"sinh", speakers:"16000000", letter:"අආඇඈඉඊඋඌඍඑඒඓඔඕඖකඛගඝඞඟචඡජඣඥටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ", mark:"\u{D82}\u{D83}\u{DCA}\u{DCF}\u{DD0}\u{DD1}\u{DD2}\u{DD3}\u{DD4}\u{DD6}\u{DD8}\u{DD9}\u{DDA}\u{DDB}\u{DDC}\u{DDD}\u{DDE}\u{DDF}", punctuation:"§‐–—…‘’“”†‡′″", other:"\u{200D}" },
 
 "sk": { name:"Slovak", source:"cldr_sk,udhr_slk", region:"eur", script:"latn", speakers:"5200000", letter:"čďĺľňŕšťžűČĎĹĽŇŔŠŤŽŰáäéíóôúýÁÄÉÍÓÔÚÝ", mark:"\u{0301}\u{0308}\u{030C}\u{0302}\u{030B}", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīŏōœřŭūĂĀĔĒĬĪŎŌŒŘŬŪŸàâåæçèêëìîïñòöøùûüÿÀÂÅÆÇÈÊËÌÎÏÑÒÖØÙÛǛ̧̆̊̄̃" },
 
