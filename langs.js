@@ -680,7 +680,7 @@ var langs = {
 
 "sn": { name:"Shona", source:"CLDR,UDHR", region:"afr", script:"ascii", speakers:"15000000" },
 
-"si": { name:"Sinhala (Sinhalese)", source:"cldr_si,udhr_sin", region:"sasia", script:"sinh", speakers:"16000000", letter:"අආඇඈඉඊඋඌඍඑඒඓඔඕඖකඛගඝඞඟචඡජඣඥටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ", mark:"\u{D82}\u{D83}\u{DCA}\u{DCF}\u{DD0}\u{DD1}\u{DD2}\u{DD3}\u{DD4}\u{DD6}\u{DD8}\u{DD9}\u{DDA}\u{DDB}\u{DDC}\u{DDD}\u{DDE}\u{DDF}", punctuation:"§‐–—…‘’“”†‡′″", other:"\u{200D}" },
+"si": { name:"Sinhala (Sinhalese)", source:"cldr_si,udhr_sin,0de67cc747d85485d1c6e7c99ee9a6e885c80803", region:"sasia", script:"sinh", speakers:"16000000", letter:"අආඇඈඉඊඋඌඍඑඒඓඔඕඖකඛගඝඞඟචඡජඣඥටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ", mark:"\u{D82}\u{D83}\u{DCA}\u{DCF}\u{DD0}\u{DD1}\u{DD2}\u{DD3}\u{DD4}\u{DD6}\u{DD8}\u{DD9}\u{DDA}\u{DDB}\u{DDC}\u{DDD}\u{DDE}\u{DDF}", punctuation:"§‐–—…‘’“”†‡′″", other:"\u{200D}" },
 
 "sk": { name:"Slovak", source:"cldr_sk,udhr_slk", region:"eur", script:"latn", speakers:"5200000", letter:"čďĺľňŕšťžűČĎĹĽŇŔŠŤŽŰáäéíóôúýÁÄÉÍÓÔÚÝ", mark:"\u{0301}\u{0308}\u{030C}\u{0302}\u{030B}", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīŏōœřŭūĂĀĔĒĬĪŎŌŒŘŬŪŸàâåæçèêëìîïñòöøùûüÿÀÂÅÆÇÈÊËÌÎÏÑÒÖØÙÛǛ̧̆̊̄̃" },
 
@@ -742,7 +742,7 @@ var langs = {
 
 "su": { name:"Sundanese", source:"UDHR", region:"seasia", script:"ascii", speakers:"42000000" },
 
-"su-sund": { name:"Sundanese (Sundanese)", source:"e04c91748b5079b9b5077f2206f53c2223dc7839", region:"seasia", script:"sund", speakers:"42000000", letter:"ᮊᮋᮌᮍᮎᮏᮐᮑᮒᮓᮔᮕᮖᮗᮘᮙᮚᮛᮜᮝᮞᮟᮠᮮᮯᮃᮄᮅᮆᮇᮈᮉ", mark:"\u{1BA1}\u{1BA2}\u{1BA3}\u{1B80}\u{1B81}\u{1B82}\u{1BA4}\u{1BA5}\u{1BA6}\u{1BA7}\u{1BA8}\u{1BA9}" },
+"su-sund": { name:"Sundanese (Sundanese)", source:"e04c91748b5079b9b5077f2206f53c2223dc7839", region:"seasia", script:"sund", speakers:"42000000", letter:"ᮊᮋᮌᮍᮎᮏᮐᮑᮒᮓᮔᮕᮖᮗᮘᮙᮚᮛᮜᮝᮞᮟᮠᮮᮯᮃᮄᮅᮆᮇᮈᮉ", mark:"\u{1BA1}\u{1BA2}\u{1BA3}\u{1B80}\u{1B81}\u{1B82}\u{1BA4}\u{1BA5}\u{1BA6}\u{1BA7}\u{1BA8}\u{1BA9}\u{1BAA}", number:"᮰᮱᮲᮳᮴᮵᮶᮷᮸᮹" },
 
 "sus": { name:"Susu", source:"UDHR", region:"afr", script:"latn", speakers:"1060000", letter:"ƐƆƝɛɔɲ" },
 
