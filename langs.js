@@ -782,7 +782,7 @@ var langs = {
 
 "ty": { name:"Tahitian", source:"UDHR", region:"oce", script:"latn", speakers:"68000", letter:"āūōēīĀŪŌĒĪ", mark:"\u{0304}" },
 
-"blt": { name:"Tai Dam (Black Tai)", source:"UDHR", region:"seasia", script:"tavt", speakers:"760000", letter:"ꪁꪫꪱꪣꪜꪹꪕꪉꪵꪠꪙꪒꪘꪀꪩꫛꪶꪔꪄꪮꪨꪭꪚꪺꪼꪥꪻꪐꪎꪈꪬꪊꪽꪝꪋꪤꪏꪡꪅꪑꪗꪢꫜꪖꪪꪯ", mark:"\u{AAB8}\u{AAB2}\u{AABE}\u{AAB4}\u{AAB7}\u{AAB0}\u{AAB3}" },
+"blt": { name:"Tai Dam (Black Tai)", source:"UDHR", region:"seasia", script:"tavt", speakers:"760000", letter:"ꪀꪁꪂꪃꪄꪅꪆꪇꪈꪉꪊꪋꪌꪍꪎꪏꪐꪑꪒꪓꪔꪕꪖꪗꪘꪙꪚꪛꪜꪝꪞꪟꪠꪡꪢꪣꪤꪥꪦꪧꪨꪩꪪꪫꪬꪭꪮꪯꪱꪵꪶꪹꪺꪻꪼꪽꫀꫂꫛꫜꫝ", mark:"ꪴꪰꪲꪳꪷꪸꪾ꪿꫁", aux:"꫞꫟" },
 
 "tdd": { name:"Tai Nüa (Nɯa, Dehong Dai, Chinese Shan, Tai Mau, Tai Kong)", source:"7bbb60b1ae185293cf14c8d8088e14351477c26b", region:"seasia", script:"tale", speakers:"720000", letter:"ᥐᥑᥒᥓᥔᥕᥖᥗᥘᥙᥚᥛᥜᥝᥞᥟᥠᥡᥢᥣᥤᥥᥦᥧᥨᥩᥪᥫᥬᥭᥰᥱᥲᥳᥴ", aux:"၀၁၂၃၄၅၆၇၈၉̀́̇̈̌" },
 
