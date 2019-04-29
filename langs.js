@@ -498,7 +498,7 @@ var langs = {
 
 "vmw": { name:"Makhuwa (Makua, Macua)", source:"UDHR", region:"afr", script:"latn", speakers:"6600000", letter:"çõãÇÕÃ", mark:"\u{0327}\u{0303}", punctuation:"’…" },
 
-"dv": { name:"Dhivehi (Maldivian, Divehi)", source:"UDHR", region:"sasia", script:"thaa", speakers:"340000", letter:"ޑސމބރގއދޖލހޢނފކށވޙޤތޕޓޔޝޞޅޚޣޒޠޗޏޘޛޟޜޡޥޱ", mark:"\u{07A8}\u{07AC}\u{07B0}\u{07A6}\u{07A9}\u{07AA}\u{07A7}\u{07AE}\u{07AD}\u{07AB}\u{07AF}", punctuation:"،؛" },
+"dv": { name:"Dhivehi (Maldivian, Divehi)", source:"udhr_div,e9188c572c9c158255cede2459f076ecb3b50b9f", region:"sasia", script:"thaa", speakers:"340000", letter:"ޑސމބރގއދޖލހޢނފކށވޙޤތޕޓޔޝޞޅޚޣޒޠޗޏޘޛޟޜޡޥޱ", mark:"\u{07A8}\u{07AC}\u{07B0}\u{07A6}\u{07A9}\u{07AA}\u{07A7}\u{07AE}\u{07AD}\u{07AB}\u{07AF}", punctuation:"،؛" },
 
 "mam": { name:"Mam", source:"UDHR", region:"cam", script:"ascii", speakers:"540000" },
 
