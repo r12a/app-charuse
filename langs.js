@@ -326,6 +326,8 @@ var langs = {
 
 "kl": { name:"Kalaalisut (West Greenlandic)", source:"cldr_kl,udhr_kal", region:"eur", script:"ascii", speakers:"60000", aux:"ĸ", notes:"CLDR adds accented characters such as áâãéêíîôúûæøåĩĸũ, but this appears to be based on an older (pre 1973) orthography. See wikipedia." },
 
+"kln": { name:"Kalenjin", source:"cldr_kln", region:"afr", script:"ascii", speakers:"60000", notes:"kln is a macrolanguage that encompasses the following more specific primary language subtags: enb eyo niq oki pko sgc spy tec tuy. kln is often preferred by legacy applications rather than spy (Sabaot)." },
+
 "dyo": { name:"Jola-Fonyi", source:"cldr_dyo,udhr_dyo,cd01ae44156075d3e8aa249200adf6c04edb6acb", region:"afr", script:"latn", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"\u{0301}\u{0303}\u{0300}", punctuation:"“”‰", symbol:"°" },
 
 "jv": { name:"Javanese", source:"cldr_jv,udhr_jav,87bfc19c48736ce0e4045004f1485477badda620", region:"seasia", script:"ascii", speakers:"94000000", letter:"ÂÅÈÉÊÌÒÙâåèéêìòù", mark:"̀́̂̊", punctuation:"‰"},
