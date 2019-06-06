@@ -328,7 +328,7 @@ var langs = {
 
 "dyo": { name:"Jola-Fonyi", source:"UDHR", region:"afr", script:"latn", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"\u{0301}\u{0303}\u{0300}", punctuation:"“”", symbol:"°" },
 
-"jv": { name:"Javanese", source:"cldr_jv,udhr_jav", region:"seasia", script:"ascii", speakers:"94000000", letter:"ÂÅÈÉÊÌÒÙâåèéêìòù", mark:"̀́̂̊", punctuation:"‰"},
+"jv": { name:"Javanese", source:"cldr_jv,udhr_jav,87bfc19c48736ce0e4045004f1485477badda620", region:"seasia", script:"ascii", speakers:"94000000", letter:"ÂÅÈÉÊÌÒÙâåèéêìòù", mark:"̀́̂̊", punctuation:"‰"},
 
 "jv-java": { name:"Javanese (Javanese)", source:"6c4597409a211714769081f0db0c92a0314ede5f", region:"seasia", script:"java", speakers:"94000000", letter:"ꦄꦆꦇꦈꦉꦊꦋꦌꦎꦏꦑꦒꦓꦔꦕꦖꦗꦘꦚꦛꦝꦟꦠꦡꦢꦤꦥꦦꦧꦨꦩꦪꦫꦭꦮꦱꦲꧏ", mark:"\u{A980}\u{A981}\u{A982}\u{A983}\u{A9B3}\u{A9B4}\u{A9B6}\u{A9B8}\u{A9BA}\u{A9BC}\u{A9BD}\u{A9BE}\u{A9BF}\u{A9C0}", number:"꧐꧑꧒꧓꧔꧕꧖꧗꧘꧙", punctuation:"꧁꧂꧃꧄꧅꧆꧇꧈꧉꧊꧋꧌꧍", aux:"ꦙꦜꦞꦣꦯꦰ꧞꧟" },
 
