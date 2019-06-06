@@ -468,9 +468,9 @@ var langs = {
 
 "mid": { name:"Neo-Mandaic", source:"280e6a9f98147de582820ff2179ebb7727e96147", region:"wasia", script:"mand", speakers:"200", letter:"ࡀࡁࡂࡃࡄࡅࡆࡇࡈࡉࡊࡋࡌࡍࡎࡏࡐࡑࡒࡓࡔࡕࡖࡗࡘ", mark:"\u{0859}\u{085A}\u{085B}", punctuation:"࡞" },
 
-"zml": { name:"Malay", source:"cldr_zml,UDHR", region:"seasia", script:"ascii", speakers:"77000000" },
+"zlm": { name:"Malay", source:"cldr_ms,udhr_mly_latn", region:"seasia", script:"ascii", speakers:"77000000" },
 
-"zml-arab": { name:"Malay (Arabic)", source:"UDHR", region:"seasia", script:"arab", speakers:"77000000", letter:"ڤراشتهنحقسيمأجڬدبوڽڠعفكلچخظصزطۏؤئذ", mark:"\u{0654}", punctuation:"،", number:"٢" },
+"zlm-arab": { name:"Malay (Arabic)", source:"udhr_mly_arab", region:"seasia", script:"arab", speakers:"77000000", letter:"ڤراشتهنحقسيمأجڬدبوڽڠعفكلچخظصزطۏؤئذ", mark:"\u{0654}", punctuation:"،", number:"٢" },
 
 "ml": { name:"Malayalam", source:"cldr_ml,udhr_mal,d347047791774df1311d53dee98495c224fe0166", region:"sasia", script:"mlym", speakers:"38000000", letter:"അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔകൿഖഗഘങചഛജഝഞടഠഡഢണൺതഥദധനൻപഫബഭമയരർലൽവശഷസഹളൾഴറ", mark:"\u{0D03}\u{0D02}\u{0D3E}\u{0D3F}\u{0D40}\u{0D41}\u{0D42}\u{0D43}\u{0D46}\u{0D47}\u{0D48}\u{0D4A}\u{0D4B}\u{0D4C}\u{0D57}\u{0D4D}", punctuation:"‘’“”", other:"\u{200C}\u{200D}", aux:"൦൧൨൩൪൫൬൭൮൯൹।॥" },
 
