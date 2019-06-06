@@ -422,6 +422,8 @@ var langs = {
 
 "lt": { name:"Lithuanian", source:"cldr_lt,udhr_lit", region:"eur", script:"latn", speakers:"3000000", letter:"éÉąčęėįšųūžĄČĘĖĮŠŲŪŽ", mark:"\u{0328}\u{030C}\u{0307}\u{0304}\u{0301}", punctuation:"‐–—…“„", aux:"ẽẼĩũĨŨáàãéèíìñóòõúùÁÀÃÉÈÍÌÑÓÒÕÚÙ́̃̀" },
 
+"luo": { name:"Luo (Dholuo)", source:"cldr_luo", region:"afr", script:"ascii", speakers:"4200000" },
+
 "nds": { name:"Low German (Low Saxon)", source:"cldr_nds,udhr_nds", region:"eur", script:"latn", speakers:"301000", letter:"åäöüÅÄÖÜ", mark:"\u{030A}\u{0308}", punctuation:"’", aux:"ăāĕęēĭīŏōœŭūĂĀĔĘĒĬĪŎŌŒŬŪŸáàâæçéèêëíìîïñóòôøúùûÿÁÀÂÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧̨́̀̆̂̄̃" },
 
 "dsb": { name:"Lower Sorbian", source:"cldr_dsb", region:"eur", script:"latn", speakers:"6900", letter:"óÓčćěłńŕšśžźČĆĚŁŃŔŠŚŽŹ", mark:"\u{030C}\u{0301}", punctuation:"«»§‐–—…‘’‚“„", aux:"ăąāďđĕėęēğĭīıĺľňŏőōœřşťŭůűūżĂĄĀĎĐĔĖĘĒĞĬİĪĹĽŇŎŐŌŒŘŞŤŬŮŰŪŸŻáàâåäãæçéèêëíìîïñòôöøßúùûüýÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÒÔÖØÚÙÛÜÝ̨̧̇̀̆̂̊̈̃̄̋" },
