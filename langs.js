@@ -510,7 +510,7 @@ var langs = {
 
 "emk-nkoo": { name:"Eastern Maninkakan (N'Ko)", source:"4dd61a887ac709179e0e709861288a0b0098c5d8", region:"afr", script:"nkoo", speakers:"5000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"\u{07EB}\u{07EC}\u{07ED}\u{07EE}\u{07EF}\u{07F0}\u{07F1}\u{07F2}\u{07F3}", number:"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶" },
 
-"mi": { name:"Maori (Te Reo)", source:"cldr_mi,udhr_mri", region:"oce", script:"latn", speakers:"60000", letter:"ĀāĒēĪīŌōŪūïÏ", mark:"\u{0304}\u{0308}", punctuation:"‰" },
+"mi": { name:"Maori (Te Reo)", source:"cldr_mi,udhr_mri,61f0a8014764c40b5937e54a104576fdf07d24d1", region:"oce", script:"latn", speakers:"60000", letter:"ĀāĒēĪīŌōŪūïÏ", mark:"\u{0304}\u{0308}", punctuation:"‰" },
 
 "arn": { name:"Mapudungun (Mapuzugun, Mapudungu, Araucanian)", source:"UDHR", region:"sam", script:"latn", speakers:"260000", letter:"ñáíóÑÁÍÓ", mark:"\u{0303}\u{0301}" },
 
