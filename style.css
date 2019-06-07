@@ -223,8 +223,12 @@ table {
 	font-size: 20px; line-height: 1.5;
 	}
 
-
-
+#langDetails td.links {
+	border: 0;
+    vertical-align: top;
+    padding: .5em .25em;
+    text-align: center;
+	}
 
 
 

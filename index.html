@@ -196,7 +196,7 @@ function showLanguage (lang) {
     var stats = 'Non-ASCII character count: &nbsp; '
     var total = 0
 	// "agq": { name:"Aghem", source:"CLDR", region:"afr", speakers:"27000", letter:"Ã Ã¢Ã¨ÃªÃ¬Ã®Ã²Ã´Ã¹Ã»Ã€Ã‚ÃˆÃŠÃŒÃŽÃ’Ã”Ã™Ã›ÇŽÇÇ’Ç”ÇÆÇÆ—Ç‘Æ†Ç“É„ÄÄ›Ä“Ä«Å‹ÅÅ«Ä€ÄšÄ’ÄªÅŠÅŒÅªÉ›É¨É”Ê‰Ê”", mark:"\u{0300}\u{0302}\u{030C}\u{0304}" },
-	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+' ['+lang+'] <a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" style="float:right;" /></a></td></tr>'
+	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+' ['+lang+']</td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" style="float:right;" /></a></td></tr>'
 	if (langs[lang].letter) {
 		charList = [...langs[lang].letter]
 		charList.sort()
@@ -209,7 +209,7 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+charList[j]+'</span> ' 
 			}
-		out += '<a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].mark) {
 		charList = [...langs[lang].mark]
@@ -224,7 +224,7 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
-		out += '<a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].punctuation) {
 		charList = [...langs[lang].punctuation]
@@ -239,7 +239,7 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
-		out += '<a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].number) {
 		charList = [...langs[lang].number]
@@ -253,7 +253,7 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
-		out += '<a href="/uniview?charlist='+langs[lang].number+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].number+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].symbol) {
 		charList = [...langs[lang].symbol]
@@ -267,7 +267,7 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
-		out += '<a href="/uniview?charlist='+langs[lang].symbol+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].symbol+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].other) {
 		charList = [...langs[lang].other]
@@ -283,7 +283,7 @@ function showLanguage (lang) {
 			out += '<span title="'+name+'">U+'+cp+'</span> ' 
 			}
 		//for (j=0;j<charList.length;j++) out += charList[j].codepointAt(0)+' '
-		out += '<a href="/uniview?charlist='+langs[lang].other+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].other+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
     stats += ' : &nbsp; total ' + total
 	if (langs[lang].aux || langs[lang].deprecated) stats += ' &nbsp; &nbsp; + ( '
@@ -297,7 +297,7 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
-		out += '<a href="/uniview?charlist='+langs[lang].aux+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].aux+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].deprecated) {
 		charList = [...langs[lang].deprecated]
@@ -311,7 +311,7 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
-		out += '<a href="/uniview?charlist='+langs[lang].symbol+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].symbol+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].aux || langs[lang].deprecated) stats += ' )'
 	if (!langs[lang].letter && !langs[lang].mark && !langs[lang].punctuation && !langs[lang].number && !langs[lang].symbol && !langs[lang].other) {
@@ -330,7 +330,7 @@ function showLanguage (lang) {
 		else if (sources[i] === 'r12a' || sources[i] === 'CLDR' || sources[i] === 'UDHR') out += sources[i]
 		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
 		}
-	out += '</td></tr>'
+	out += '</td></td><td class="links"></tr>'
 	
 	// region
 	switch (langs[lang].region) {
@@ -348,7 +348,7 @@ function showLanguage (lang) {
 		case 'easia': region = 'East Asia';break
 		case 'carib': region = 'Caribbean';break
 		}
-	out += '<tr><th>Region</th><td>'+region+'</td></tr>'
+	out += '<tr><th>Region</th><td>'+region+'</td></td><td class="links"></tr>'
 	if (langs[lang].speakers === '?') var speakers = 'Not known'
 	else { 
 		speakers = langs[lang].speakers.replace(/~/,'')
@@ -356,7 +356,7 @@ function showLanguage (lang) {
 		}
 	//speakers = speakers.replace(/\?/,'0')
 	out += '<tr><th>Native speakers</th><td>'+speakers+'</td></tr>'
-	if (langs[lang].notes) out += '<tr><th>Notes</th><td style="font-size:90%">'+langs[lang].notes+'</td></tr>'
+	if (langs[lang].notes) out += '<tr><th>Notes</th><td style="font-size:90%">'+langs[lang].notes+'</td></td><td class="links"></tr>'
 	return out
 	}
 
@@ -583,7 +583,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->11-Apr-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->07-Jun-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
