@@ -906,7 +906,7 @@ var langs = {
 
 "ykg": { name:"Tundra Yukaghir (Northern Yukaghir)", source:"UDHR", region:"nasia", script:"cyrl", speakers:"370", letter:"эльистачйкөдҥнбпрумогецяҕхжѳқзвфыющЭЛЬИСТАЧЙКӨДҤНБПРУМОГЕЦЯҔХЖѲҚЗВФЫЮЩ", mark:"\u{0306}" },
 
-"dje": { name:"Zarma (Djerma, Dyabarma, Dyarma, Dyerma, Adzerma, Zabarma, Zarbarma, Zarmaci, Zerma)", source:"UDHR", region:"afr", script:"latn", speakers:"24000000", letter:"ãõÃÕƝŋšžŊŠŽẽẼɲ", mark:"\u{0303}\u{030C}" },
+"dje": { name:"Zarma (Djerma, Dyabarma, Dyarma, Dyerma, Adzerma, Zabarma, Zarbarma, Zarmaci, Zerma)", source:"cldr_dje", region:"afr", script:"latn", speakers:"24000000", letter:"ãõÃÕƝŋšžŊŠŽẽẼɲ", mark:"\u{0303}\u{030C}" },
 
 "zu": { name:"Zulu", source:"cldr_zu,udhr_zul", region:"afr", script:"ascii", speakers:"12000000", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̃̄" },
 
