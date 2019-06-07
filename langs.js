@@ -760,7 +760,7 @@ var langs = {
 
 "shi": { name:"Tachelhit (Tashelhiyt, Shilha)", source:"cldr_shi", region:"afr", script:"tfng", speakers:"4000000", letter:"ⴰⴱⴳⵯⴷⴹⴻⴼⴽⵀⵃⵄⵅⵇⵉⵊⵍⵎⵏⵓⵔⵕⵖⵙⵚⵛⵜⵟⵡⵢⵣⵥ" },
 
-"shi-latn": { name:"Tachelhit (Tashelhiyt, Shilha) (Latin)", source:"cldr_shi-latn", region:"afr", script:"latn", speakers:"4000000", letter:"ḍḥṛṣṭḌḤṚṢṬƐƔɛɣʷ", mark:"\u{0323}" },
+"shi-latn": { name:"Tachelhit (Tashelhiyt, Shilha) (Latin)", source:"cldr_shi_Latn", region:"afr", script:"latn", speakers:"4000000", letter:"ḍḥṛṣṭḌḤṚṢṬƐƔɛɣʷ", mark:"\u{0323}" },
 
 "dav": { name:"Taita (Dawida)", source:"cldr_dav", region:"afr", script:"ascii", speakers:"400000" },
 
