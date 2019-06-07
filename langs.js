@@ -694,7 +694,7 @@ var langs = {
 
 "sl": { name:"Slovene (Slovenian)", source:"cldr_sl,udhr_slv", region:"eur", script:"latn", speakers:"2500000", letter:"čšžČŠŽ", mark:"\u{030C}", aux:"ăāćđĕēĭīŏōœŭūĂĀĆĐĔĒĬĪŎŌŒŬŪŸáàâåäæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̄̃" },
 
-"sog": { name:"Soga (Lusoga)", source:"cldr_sog", region:"afr", script:"ascii", speakers:"2100000" },
+"xog": { name:"Soga (Lusoga)", source:"cldr_xog", region:"afr", script:"ascii", speakers:"2100000" },
 
 "so": { name:"Somali", source:"cldr_so,UDHR", region:"afr", script:"ascii", speakers:"15000000" },
 
