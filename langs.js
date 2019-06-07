@@ -4,51 +4,49 @@ var langs = {
 
 "ab":{ name:"Abkhaz (Abxaz, Abkhazian)", source:"udhr_abk,b03748de41ccb9a6e724e938c3fea5013517b8fa", region:"wasia", script:"cyrl", speakers:"113000", letter: "ЏАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЫЬабвгдежзиклмнопрстуфхцчшыьџҔҕҚқҞҟҦҧҨҩҬҭҲҳҴҵҶҷҼҽҾҿӘәӠӡӶӷ", punctuation:"–‐" },
 
-"ace": { name:"Acehnese", source:"UDHR", region:"seasia", script:"ascii", speakers:"3500000", punctuation:"‐“”" },
+"ace": { name:"Acehnese", source:"udhr_ace", region:"seasia", script:"ascii", speakers:"3500000", punctuation:"‐“”" },
 
-"acu": { name:"Achaur-Shiwiar", source:"UDHR", region:"sam", script:"latn", speakers:"7500", letter:"úáÚÁ", punctuation:"¿", mark:"\u{0301}" },
+"acu": { name:"Achaur-Shiwiar", source:"udhr_acu,udhr_acu_1", region:"sam", script:"latn", speakers:"7500", letter:"úáÚÁ", punctuation:"¿", mark:"\u{0301}" },
 
-"ady": { name:"Adyghe (West Circassian)", source:"UDHR", region:"eur", script:"cyrl", speakers:"590000", letter:"цыхуэфащмтеднйпсожлъкрзгьишбячівюЦЫХУЭФАЩМТЕДНЙПСОЖЛЪКРЗГЬИШБЯЧІВЮ", number:"", punctuation:"", separator:"", symbol:"", mark:"\u{0306}" },
+"ady": { name:"Adyghe (West Circassian)", source:"udhr_ady", region:"eur", script:"cyrl", speakers:"590000", letter:"цыхуэфащмтеднйпсожлъкрзгьишбячівюЦЫХУЭФАЩМТЕДНЙПСОЖЛЪКРЗГЬИШБЯЧІВЮ", number:"", punctuation:"", separator:"", symbol:"", mark:"\u{0306}" },
 
-"af": { name:"Afrikaans", source:"cldr_af,UDHR", region:"afr", script:"latn", speakers:"7100000", letter:"áâéèêëîïôöûÁÂÉÈÊËÎÏÔÖÛ", mark:"\u{0301}\u{0302}\u{0300}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″‰", aux:"àåäãæçíìóòúùüý̧̊̃" },
+"af": { name:"Afrikaans", source:"cldr_af,udhr_afr", region:"afr", script:"latn", speakers:"7100000", letter:"áâéèêëîïôöûÁÂÉÈÊËÎÏÔÖÛ", mark:"\u{0301}\u{0302}\u{0300}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″‰", aux:"àåäãæçíìóòúùüý̧̊̃" },
 
 "agq": { name:"Aghem (Wum, Yum)", source:"cldr_agq", region:"afr", script:"latn", speakers:"27000", letter:"àâèêìîòôùûÀÂÈÊÌÎÒÔÙÛǎǐǒǔǍƐǏƗǑƆǓɄāěēīŋōūĀĚĒĪŊŌŪɛɨɔʉʔ", mark:"\u{0300}\u{0302}\u{030C}\u{0304}", punctuation:"‰" },
 
-"agr": { name:"Aguaruna (Awajún)", source:"UDHR", region:"sam", script:"latn", speakers:"8000", letter:"áíÁÍ", mark:"\u{0301}", punctuation:"¡¿‐" },
+"agr": { name:"Aguaruna (Awajún)", source:"udhr_agr", region:"sam", script:"latn", speakers:"8000", letter:"áíÁÍ", mark:"\u{0301}", punctuation:"¡¿‐" },
 
-"ajg": { name:"Aja", source:"UDHR", region:"afr", script:"latn", speakers:"550000", letter:"úóòùàèéìíõáÚÓÒÙÀÈÉÌÍÕÁƆƉƐƷŋŊɔɖɛʒ", mark:"\u{0300}\u{0301}\u{0303}" },
+"ajg": { name:"Aja", source:"udhr_ajg", region:"afr", script:"latn", speakers:"550000", letter:"úóòùàèéìíõáÚÓÒÙÀÈÉÌÍÕÁƆƉƐƷŋŊɔɖɛʒ", mark:"\u{0300}\u{0301}\u{0303}" },
 
 "ak": { name:"Akan", source:"cldr_ak", region:"afr", script:"latn", speakers:"22000000", letter:"ɛɔƐƆ", punctuation:"‰" },
 
 "sq": { name:"Albanian", source:"cldr_sq,UDHR", region:"eur", script:"latn", speakers:"5400000", letter:"çëÇË", mark:"\u{0327}\u{0308}", punctuation:"«»§‐–—…‘’“”′″‰" },
 
-"alt": { name:"Southern Altai", source:"UDHR", region:"nasia", script:"cyrl", speakers:"57000", letter:"кижнҥтапэрешдлцязыгьйсмбјчӱоуӧвщюъфхКИЖНҤТАПЭРЕШДЛЦЯЗЫГЬЙСМБЈЧӰОУӦВЩЮЪФХ", punctuation:"‐", separator:"", symbol:"" },
+"alt": { name:"Southern Altai", source:"udhr_alt", region:"nasia", script:"cyrl", speakers:"57000", letter:"кижнҥтапэрешдлцязыгьйсмбјчӱоуӧвщюъфхКИЖНҤТАПЭРЕШДЛЦЯЗЫГЬЙСМБЈЧӰОУӦВЩЮЪФХ", punctuation:"‐", separator:"", symbol:"" },
 
-"amc": { name:"Amahuaca", source:"UDHR", region:"sam", script:"latn", speakers:"500", letter:"óÓ", mark:"\u{0301}" },
+"amc": { name:"Amahuaca", source:"udhr_amc", region:"sam", script:"latn", speakers:"500", letter:"óÓ", mark:"\u{0301}" },
 
-"amr": { name:"Amarakaeri", source:"UDHR", region:"sam", script:"latn", speakers:"500", mark:"\u{0331}", punctuation:"¿’" },
+"amr": { name:"Amarakaeri", source:"udhr_amr", region:"sam", script:"latn", speakers:"500", mark:"\u{0331}", punctuation:"¿’" },
 
 "am": { name:"Amharic", source:"cldr_am,udhr_amh", region:"afr", script:"ethi", speakers:"21634396", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ", number:"፩፪፫፬፭፮፯፰፱፲፳፴", punctuation:"፡፣፤፥፦።‐–‹›«»" },
 
-"ami": { name:"Amis", source:"UDHR", region:"easia", script:"ascii", speakers:"180000" },
+"ami": { name:"Amis", source:"udhr_ami", region:"easia", script:"ascii", speakers:"180000" },
 
-"arl": { name:"Arabela (Chiripuno, Chiripunu)", source:"UDHR", region:"sam", script:"latn", speakers:"50", letter:"úÚ", mark:"\u{0301}", punctuation:"¿" },
-
-//"ar": { name:"Arabic", source:"cldr_ar,udhr_arb", region:"wasia", script:"arab", speakers:"290000000", letter:"ءأؤإئاآبةتثجحخدذرزسشصضطظعغفقكلمنهوىي", mark:"\u{064B}\u{064C}\u{064D}\u{064E}\u{064F}\u{0650}\u{0651}\u{0652}\u{0670}\u{0654}\u{0655}\u{0653}", number:"٠١٢٣٤٥٦٧٨٩", punctuation:"٫٬٪؉،؛؟‰‐–—…«»" },
+"arl": { name:"Arabela (Chiripuno, Chiripunu)", source:"udhr_arl", region:"sam", script:"latn", speakers:"50", letter:"úÚ", mark:"\u{0301}", punctuation:"¿" },
 
 "ar": { name:"Arabic", source:"cldr_ar,udhr_arb,927e530285eebcb2cc78d1fee4df691ab6def77e", region:"wasia", script:"arab", speakers:"290000000", letter:"ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىي", mark:"\u{64B}\u{64C}\u{64D}\u{64E}\u{64F}\u{650}\u{651}\u{652}\u{653}\u{654}\u{655}\u{670}", number:"٠١٢٣٤٥٦٧٨٩", punctuation:"؉،؛؟٪٫٬‐–—…‰«»", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", aux:"ڢڧࢲـﷲٱ؍٬٭" },  
 
 "hy": { name:"Armenian", source:"cldr_hy,udhr_hye,86422c72473b4ace41b3971e55e41a49a44dcbda", region:"wasia", script:"armn", speakers:"10000000", letter:"աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքևօֆԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖ", punctuation:"֊՝՜՞՛։․«»", aux:"֍֎֏", deprecated:"\u{55A}" },
 
-"rup": { name:"Aromanian", source:"UDHR", region:"eur", script:"latn", speakers:"250000", letter:"ãâÃÂ", mark:"\u{0303}\u{0302}" },
+"rup": { name:"Aromanian", source:"udhr_rmy", region:"eur", script:"latn", speakers:"250000", letter:"ãâÃÂ", mark:"\u{0303}\u{0302}" },
 
-"cni": { name:"Asháninka", source:"UDHR", region:"sam", script:"latn", speakers:"~35000", letter:"áéÁÉ", mark:"\u{0301}" },
+"cni": { name:"Asháninka", source:"udhr_cni", region:"sam", script:"latn", speakers:"~35000", letter:"áéÁÉ", mark:"\u{0301}" },
 
-"prq": { name:"Ashéninka Perené", source:"UDHR", region:"sam", script:"latn", speakers:"~50000", letter:"íÍ", mark:"\u{0301}", punctuation:"¿" },
+"prq": { name:"Ashéninka Perené", source:"udhr_prq", region:"sam", script:"latn", speakers:"~50000", letter:"íÍ", mark:"\u{0301}", punctuation:"¿" },
 
-"ast": { name:"Asturian", source:"cldr_ast,UDHR", region:"eur", script:"latn", speakers:"110000", letter:"áéíñóúüÁÉÍÑÓÚÜḥḷḤḶ", mark:"\u{0323}\u{0301}\u{0303}\u{0308}", punctuation:"¡¿«»§‐–—…‘’“”†‡′″‰", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªàâåäãæçèêëìîïºòôöøùûÿÀÂÅÄÃÆÇÈÊËÌÎÏÒÔÖØÙÛ\u{300}\u{306}\u{302}\u{30A}\u{304}\u{327}" },
+"ast": { name:"Asturian", source:"cldr_ast,udhr_ast", region:"eur", script:"latn", speakers:"110000", letter:"áéíñóúüÁÉÍÑÓÚÜḥḷḤḶ", mark:"\u{0323}\u{0301}\u{0303}\u{0308}", punctuation:"¡¿«»§‐–—…‘’“”†‡′″‰", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªàâåäãæçèêëìîïºòôöøùûÿÀÂÅÄÃÆÇÈÊËÌÎÏÒÔÖØÙÛ\u{300}\u{306}\u{302}\u{30A}\u{304}\u{327}" },
 
-"cpu": { name:"Pichis Ashéninka", source:"UDHR", region:"sam", script:"latn", speakers:"~50000", letter:"ñáéÑÁÉ", mark:"\u{0303}\u{0301}" },
+"cpu": { name:"Pichis Ashéninka", source:"udhr_cpu", region:"sam", script:"latn", speakers:"~50000", letter:"ñáéÑÁÉ", mark:"\u{0303}\u{0301}" },
 
 "as": { name:"Assamese (Asamiya)", source:"cldr_as", region:"sasia", script:"beng", speakers:"15000000", letter:"অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযৰলৱশষসহ", mark:"\u{09BC}\u{0982}\u{0981}\u{0983}\u{09CD}\u{09BE}\u{09BF}\u{09C0}\u{09C1}\u{09C2}\u{09C3}\u{09C7}\u{09C8}\u{09CB}\u{09CC}\u{09D7}", number:"০১২৩৪৫৬৭৮৯", punctuation:"‰", aux:"৲ৎর" },
 
@@ -56,27 +54,27 @@ var langs = {
 
 "asa": { name:"Asu (Pare, Kipare, Casu, Chasu, Athu, Chathu)", source:"cldr_asa", region:"afr", script:"ascii", speakers:"500000" },
 
-"kwi": { name:"Awa-Cuaiquer (Awa Pit)", source:"UDHR", region:"sam", script:"latn", speakers:"13000", letter:"áñëóçâùéàêÁÑËÓÇÂÙÉÀÊ", mark:"\u{0327}\u{0301}\u{0303}\u{0308}\u{0302}\u{0300}", punctuation:"·" },
+"kwi": { name:"Awa-Cuaiquer (Awa Pit)", source:"udhr_kwi", region:"sam", script:"latn", speakers:"13000", letter:"áñëóçâùéàêÁÑËÓÇÂÙÉÀÊ", mark:"\u{0327}\u{0301}\u{0303}\u{0308}\u{0302}\u{0300}", punctuation:"·" },
 
 "ayr": { name:"Central Aymara", source:"UDHR", region:"sam", script:"latn", speakers:"2800000", letter:"ñïäíáëúÑÏÄÍÁËÚ", mark:"\u{0303}\u{0308}\u{0301}" },
 
-"az-latn": { name:"Azerbaijani (Azeri) (Latin)", source:"cldr_az,UDHR", region:"wasia", script:"latn", speakers:"26000000", letter:"çöüÇÖÜƏğışĞŞİə", mark:"\u{0327}\u{0307}\u{0306}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
+"az-latn": { name:"Azerbaijani (Azeri) (Latin)", source:"cldr_az,udhr_azj_latn", region:"wasia", script:"latn", speakers:"26000000", letter:"çöüÇÖÜƏğışĞŞİə", mark:"\u{0327}\u{0307}\u{0306}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″" },
 
-"az-cyrl": { name:"Azerbaijani (Azeri) (Cyrillic)", source:"cldr_az_Cyrl,UDHR", region:"wasia", script:"latn", speakers:"26000000", letter:"аәбвгғдежзийјкҝлмноөпрстуүфхһчҹшыАӘБВГҒДЕЖЗИЙЈКҜЛМНОӨПРСТУҮФХҺЧҸШЫ", mark:"\u{0306}", punctuation:"‐–—…‘’“”†‡′″‰§", aux:"цщъьэюяЦЩЪЬЭЮЯ" },
+"az-cyrl": { name:"Azerbaijani (Azeri) (Cyrillic)", source:"cldr_az_Cyrl,udhr_azj_cyrl", region:"wasia", script:"latn", speakers:"26000000", letter:"аәбвгғдежзийјкҝлмноөпрстуүфхһчҹшыАӘБВГҒДЕЖЗИЙЈКҜЛМНОӨПРСТУҮФХҺЧҸШЫ", mark:"\u{0306}", punctuation:"‐–—…‘’“”†‡′″‰§", aux:"цщъьэюяЦЩЪЬЭЮЯ" },
 
-"bba": { name:"Baatonum (Bariba, Baatombu, Baatonu, Barba, Barganchi, Bargawa, Bargu, Baruba, Berba, Bogung, Burgu)", source:"UDHR", region:"afr", script:"latn", speakers:"560000", letter:"àéùèóÀÉÙÈÓǹƐƆǸɛɔ", mark:"\u{0300}\u{0301}" },
+"bba": { name:"Baatonum (Bariba, Baatombu, Baatonu, Barba, Barganchi, Bargawa, Bargu, Baruba, Berba, Bogung, Burgu)", source:"udhr_bba", region:"afr", script:"latn", speakers:"560000", letter:"àéùèóÀÉÙÈÓǹƐƆǸɛɔ", mark:"\u{0300}\u{0301}" },
 
-"ban-latn": { name:"Bali (Balinese) (Latin)", source:"UDHR", region:"seasia", script:"ascii", speakers:"3300000" },
+"ban-latn": { name:"Bali (Balinese) (Latin)", source:"udhr_ban", region:"seasia", script:"ascii", speakers:"3300000" },
 
 "ban-bali": { name:"Bali (Balinese) (Balinese script)", source:"c6399677b86828b4f094bb4d4d3174446d92bef5", region:"seasia", script:"bali", speakers:"3300000", letter:"ᬅᬆᬇᬈᬉᬊᬋᬌᬍᬎᬏᬐᬑᬒᬓᬔᬕᬖᬗᬘᬙᬚᬛᬜᬝᬞᬟᬠᬡᬢᬣᬤᬥᬦᬧᬨᬩᬪᬫᬬᬭᬮᬯᬰᬱᬲᬳ", mark:"ᬂᬃᬄ᬴ᬵᬶᬷᬸᬹᬺᬻᬼᬽᬾᬿᭀᭁᭂᭃ᭄", punctuation:"᭞᭟᭚᭛᭜᭝᭠", number:"᭐᭑᭒᭓᭔᭕᭖᭗᭘᭙", aux:"ᬀᬁ" },
 
 "ksf": { name:"Bafia", source:"cldr_ksf", region:"afr", script:"latn", speakers:"60000", letter:"áéíóúÁÉÍÓÚǝƎƐƆŋŊɛɔ", mark:"\u{0301}" },
 
-"bm": { name:"Bambara (Bamanankan)", source:"cldr_bm,UDHR", region:"afr", script:"latn", speakers:"4000000", letter:"ƐƝƆŋŊɛɲɔ", punctuation:"’" },
+"bm": { name:"Bambara (Bamanankan)", source:"cldr_bm,udhr_bam", region:"afr", script:"latn", speakers:"4000000", letter:"ƐƝƆŋŊɛɲɔ", punctuation:"’" },
 
 "bm-nkoo": { name:"Bambara (N'Ko)", source:"4dd61a887ac709179e0e709861288a0b0098c5d8", region:"afr", script:"nkoo", speakers:"4000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"\u{07EB}\u{07EC}\u{07ED}\u{07EE}\u{07EF}\u{07F0}\u{07F1}\u{07F2}\u{07F3}", number:"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶" },
 
-"bax-latn": { name:"Bamum (Bamun, Bamoun) (Latin)", source:"UDHR", region:"afr", script:"latn", speakers:"420000", letter:"úéêüûâôîáèùàÚÉÊÜÛÂÔÎÁÈÙÀṅṄ", mark:"\u{0301}\u{0302}\u{0308}\u{0300}\u{0307}", punctuation:"‘’" },
+"bax-latn": { name:"Bamum (Bamun, Bamoun) (Latin)", source:"udhr_bax", region:"afr", script:"latn", speakers:"420000", letter:"úéêüûâôîáèùàÚÉÊÜÛÂÔÎÁÈÙÀṅṄ", mark:"\u{0301}\u{0302}\u{0308}\u{0300}\u{0307}", punctuation:"‘’" },
 
 "bn": { name:"Bengali (Bangla)", source:"cldr_bn,udhr_ben,f10b0a319d5c8ff26cc820cd9c84bc1150888ce9", region:"sasia", script:"beng", speakers:"238000000", letter:"অআইঈউঊঋএঐওঔকষখগঘঙচছজঝঞটঠডঢণতৎথদধনপফবভমযরলশসহঽ", mark:"\u{09BC}\u{0982}\u{0983}\u{0981}\u{09CD}\u{09BE}\u{09BF}\u{09C0}\u{09C1}\u{09C2}\u{09C3}\u{09C7}\u{09C8}\u{09CB}\u{09CC}\u{09D7}", number:"১২৩৪৫৬৭৮৯০", punctuation:"।", symbol:"৺৳", other:"\u{200C}\u{200D}", aux:"ৠঌৡৄৢৣ" },
 
@@ -86,35 +84,35 @@ var langs = {
 
 "be": { name:"Belorussian", source:"cldr_be,udhr_bel", region:"eur", script:"cyrl", speakers:"5000000", letter:"абвгджзеёійклмнопрстуўфхцчшыьэюяиАБВГДЖЗЕЁІЙКЛМНОПРСТУЎФХЦЧШЫЬЭЮЯИʼ", mark:"\u{0308}\u{0306}", punctuation:"‐«»", aux:"\u{301}" },
 
-"bem": { name:"Bemba (ChiBemba, Cibemba, Ichibemba, Icibemba, Chiwemba)", source:"cldr_bem,UDHR", region:"afr", script:"ascii", speakers:"4100000" },
+"bem": { name:"Bemba (ChiBemba, Cibemba, Ichibemba, Icibemba, Chiwemba)", source:"cldr_bem,udhr_bem", region:"afr", script:"ascii", speakers:"4100000" },
 
 "bez": { name:"Bena", source:"cldr_bez", region:"afr", script:"ascii", speakers:"670000" },
 
-"bho": { name:"Bhojpuri", source:"UDHR", region:"sasia", script:"deva", speakers:"40000000", letter:"मनवधकरखतसयषटउचबहलघणपगठदभअएआओथशजडइछऔफढईझऐञ", mark:"\u{093E}\u{093F}\u{0902}\u{0941}\u{094D}\u{0947}\u{094B}\u{0940}\u{093C}\u{0942}\u{094C}\u{0943}\u{0948}", punctuation:"।" },
+"bho": { name:"Bhojpuri", source:"udhr_bho", region:"sasia", script:"deva", speakers:"40000000", letter:"मनवधकरखतसयषटउचबहलघणपगठदभअएआओथशजडइछऔफढईझऐञ", mark:"\u{093E}\u{093F}\u{0902}\u{0941}\u{094D}\u{0947}\u{094B}\u{0940}\u{093C}\u{0942}\u{094C}\u{0943}\u{0948}", punctuation:"।" },
 
-"bcl": { name:"Central Bicol (Bikol Naga)", source:"UDHR", region:"seasia", script:"ascii", speakers:"2500000" },
+"bcl": { name:"Central Bicol (Bikol Naga)", source:"udhr_bcl", region:"seasia", script:"ascii", speakers:"2500000" },
 
 "brx": { name:"Bodo (Mech)", source:"cldr_brx", region:"sasia", script:"deva", speakers:"1330775", letter:"अआइईउऊऍएऐऑओऔकखगघचछजझञटठडढणतथदधनपफबभमयरलळवशषसह", mark:"\u{093C}\u{0901}\u{0902}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}" },
 
-"boa": { name:"Bora", source:"UDHR", region:"sam", script:"latn", speakers:"2400", letter:"úáéñíóÚÁÉÑÍÓɨȉƗȈ", mark:"\u{0301}\u{0303}\u{030F}" },
+"boa": { name:"Bora", source:"udhr_boa", region:"sam", script:"latn", speakers:"2400", letter:"úáéñíóÚÁÉÑÍÓɨȉƗȈ", mark:"\u{0301}\u{0303}\u{030F}" },
 
-"bs-latn": { name:"Bosnian (Latin)", source:"cldr_bs,UDHR", region:"eur", script:"latn", speakers:"~3000000", letter:"čćžđšČĆŽĐŠ", mark:"\u{030C}\u{0301}", punctuation:"‐–—…‘’“”′″" },
+"bs-latn": { name:"Bosnian (Latin)", source:"cldr_bs,udhr_bos_latn", region:"eur", script:"latn", speakers:"~3000000", letter:"čćžđšČĆŽĐŠ", mark:"\u{030C}\u{0301}", punctuation:"‐–—…‘’“”′″" },
 
-"bs-cyrl": { name:"Bosnian (Cyrillic)", source:"cldr_bs_Cyrl,UDHR", region:"eur", script:"cyrl", speakers:"~3000000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–—…‘’“”′″" },
+"bs-cyrl": { name:"Bosnian (Cyrillic)", source:"cldr_bs_Cyrl,udhr_bos_cyrl", region:"eur", script:"cyrl", speakers:"~3000000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–—…‘’“”′″" },
 
 "br": { name:"Breton", source:"cldr_br,udhr_bre", region:"eur", script:"latn", speakers:"226000", letter:"êñùÊÑÙʼ", mark:"\u{0302}\u{0303}\u{0300}", punctuation:"’–", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèëíìîïóòôöøúûüÿÁÀÂÅÄÃÆÇÉÈËÍÌÎÏÓÒÔÖØÚÛǗ̧̆̊̈̄" },
 
 "bug": { name:"Buginese", source:"d997476f6f5d5a7525a2cdf2d0790e944bfa83f2", region:"seasia", script:"bugi", speakers:"5000000", letter:"ᨀᨁᨂᨄᨅᨆᨈᨉᨊᨌᨍᨎᨐᨑᨒᨓᨔᨖᨃᨏᨋᨇᨕ", mark:"\u{1A17}\u{1A18}\u{1A19}\u{1A1A}\u{1A1B}", punctuation:"᨞᨟" },
 
-"bug-latn": { name:"Buginese (Latin)", source:"UDHR", region:"seasia", script:"ascii", speakers:"5000000" },
+"bug-latn": { name:"Buginese (Latin)", source:"udhr_bug", region:"seasia", script:"ascii", speakers:"5000000" },
 
 "bg": { name:"Bulgarian", source:"cldr_bg,udhr_bul", region:"eur", script:"cyrl", speakers:"9000000", letter:"абвгдежзийклмнопрстуфхцчшщъьюяАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯ", mark:"\u{0306}", punctuation:"‐–—…‘‚“„″§", symbol:"№", aux:"ѐёѝыѣэѫЀЁЍЫѢЭѪ̀̈" },
 
-"bum": { name:"Bulu", source:"cldr_bum,UDHR", region:"afr", script:"latn", speakers:"860000", letter:"óñôéáÓÑÔÉÁōńŌŃ", mark:"\u{0304}\u{0301}\u{0303}\u{0302}" },
+"bum": { name:"Bulu", source:"cldr_bum,udhr_btb", region:"afr", script:"latn", speakers:"860000", letter:"óñôéáÓÑÔÉÁōńŌŃ", mark:"\u{0304}\u{0301}\u{0303}\u{0302}" },
 
 "my": { name:"Burmese (Myanmar)", source:"cldr_my,udhr_mya,43fe649806182b69d852d8c5881f6cc16d8731ca", region:"seasia", script:"mymr", speakers:"33000000", letter:"ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအဣဤဥဦဧဩဪဿ", mark:"\u{102C}\u{102B}\u{102D}\u{102E}\u{102F}\u{1030}\u{1031}\u{1032}\u{1036}\u{103B}\u{103C}\u{103D}\u{103E}\u{1037}\u{1039}\u{103A}\u{1038}", number:"၁၉၄၈၀၂၃၅၆၇", punctuation:"၏၊။၍၌၎‘’“”", aux:"ၒၓၔၕၖၗၘၙ" },
 
-"buc": { name:"Bushi (Shibushi, Kibushi)", source:"cldr_buc,UDHR", region:"afr", script:"latn", speakers:"41700", letter:"ìàãÌÀÃɓŋĩŊĨƁ", mark:"\u{0300}\u{0303}", punctuation:"’" },
+"buc": { name:"Bushi (Shibushi, Kibushi)", source:"cldr_buc,udhr_buc", region:"afr", script:"latn", speakers:"41700", letter:"ìàãÌÀÃɓŋĩŊĨƁ", mark:"\u{0300}\u{0303}", punctuation:"’" },
 
 "ca": { name:"Catalan", source:"cldr_ca,udhr_cat", region:"eur", script:"latn", speakers:"4100000", letter:"àçéèíïóòúüÀÇÉÈÍÏÓÒÚÜ", mark:"\u{0327}\u{0300}\u{0301}\u{0308}", punctuation:"·¡¿«»§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŀŏōœŭūĂĀĔĒĬĪĿŎŌŒŬŪŸáâåäãæêëìîñºôöøùûÿÁÂÅÄÃÆÊËÌÎÑÔÖØÙÛ̆̂̊̃̄" },
 
@@ -124,7 +122,7 @@ var langs = {
 
 "ckb-arab": { name:"Central Kurdish (Sorani) (Arabic)", source:"cldr_ckb", region:"wasia", script:"arab", speakers:"7000000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"\u{0654}", punctuation:"٫٬٪؉", number:"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْ" },
 
-"ckb-latn": { name:"Central Kurdish (Sorani) (Latin)", source:"UDHR", region:"wasia", script:"latn", speakers:"7000000", letter:"şŞûîêçÛÎÊÇ", mark:"\u{0327}\u{0302}" },
+"ckb-latn": { name:"Central Kurdish (Sorani) (Latin)", source:"udhr_ckb", region:"wasia", script:"latn", speakers:"7000000", letter:"şŞûîêçÛÎÊÇ", mark:"\u{0327}\u{0302}" },
 
 "ce": { name:"Chechen", source:"cldr_ce", region:"eur", script:"cyrl", speakers:"1400000", letter:"аьбвгӏдеёжзийкхлмнопрстуфцчшщъыэюяАЬБВГӀДЕЁЖЗИЙКХЛМНОПРСТУФЦЧШЩЪЫЭЮЯ", mark:"\u{0308}\u{0306}", number:"", punctuation:"‐–—…‘‚“„«»§" },
 
@@ -138,55 +136,55 @@ var langs = {
 
 "kw": { name:"Cornish", source:"cldr_kw", region:"eur", script:"ascii", speakers:"~350" },
 
-"hr": { name:"Croatian", source:"cldr_hr,UDHR", region:"eur", script:"latn", speakers:"5600000", letter:"čćžđšČĆŽĐŠ", mark:"\u{030C}\u{0301}", punctuation:"‐–—…‘’‚“”„′″" },
+"hr": { name:"Croatian", source:"cldr_hr,udhr_hrv", region:"eur", script:"latn", speakers:"5600000", letter:"čćžđšČĆŽĐŠ", mark:"\u{030C}\u{0301}", punctuation:"‐–—…‘’‚“”„′″" },
 
 "cs": { name:"Czech (Bohemian)", source:"cldr_cs,udhr_ces", region:"eur", script:"latn", speakers:"10700000", letter:"áéíóúýÁÉÍÓÚÝčďěňřšťůžČĎĚŇŘŠŤŮŽ", mark:"\u{0301}\u{030C}\u{030A}", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīľłŏōœŕŭūĂĀĔĒĬĪĽŁŎŌŒŔŬŪŸàâåäãæçèêëìîïñòôöøùûüÿÀÂÅÄÃÆÇÈÊËÌÎÏÑÒÔÖØÙÛǛ̧̆̂̈̃̄" },
 
-"cbu": { name:"Candoshi-Shapra (Candoxi, Kandoshi, Murato)", source:"UDHR", region:"sam", script:"latn", speakers:"1100", letter:"íáÍÁ", mark:"\u{0301}", punctuation:"¿¡" },
+"cbu": { name:"Candoshi-Shapra (Candoxi, Kandoshi, Murato)", source:"udhr_cbu", region:"sam", script:"latn", speakers:"1100", letter:"íáÍÁ", mark:"\u{0301}", punctuation:"¿¡" },
 
-"cot": { name:"Caquinte (Poyenisati)", source:"UDHR", region:"sam", script:"latn", speakers:"500", letter:"óÓ", mark:"\u{0301}", punctuation:"¿" },
+"cot": { name:"Caquinte (Poyenisati)", source:"udhr_cot", region:"sam", script:"latn", speakers:"500", letter:"óÓ", mark:"\u{0301}", punctuation:"¿" },
 
-"cbr": { name:"Cashibo (Caxibo, Cacibo, Cachibo, Cahivo, Cacataibo, Managua, Hagueti)", source:"UDHR", region:"sam", script:"latn", speakers:"1200", letter:"ñëúíáéóÑËÚÍÁÉÓ", mark:"\u{0301}\u{0303}\u{0308}\u{0301}", punctuation:"¿" },
+"cbr": { name:"Cashibo (Caxibo, Cacibo, Cachibo, Cahivo, Cacataibo, Managua, Hagueti)", source:"udhr_cbr", region:"sam", script:"latn", speakers:"1200", letter:"ñëúíáéóÑËÚÍÁÉÓ", mark:"\u{0301}\u{0303}\u{0308}\u{0301}", punctuation:"¿" },
 
-"cbs": { name:"Cashinahua (Kashinawa, Kaxinawá, Caxinawá, Hantxa Kuin, Huni Kui)", source:"UDHR", region:"sam", script:"latn", speakers:"1200", letter:"íÍ", mark:"\u{0301}", punctuation:"¿" },
+"cbs": { name:"Cashinahua (Kashinawa, Kaxinawá, Caxinawá, Hantxa Kuin, Huni Kui)", source:"udhr_cbs", region:"sam", script:"latn", speakers:"1200", letter:"íÍ", mark:"\u{0301}", punctuation:"¿" },
 
-"ceb": { name:"Cebuano (Bisaya)", source:"cldr_ceb,UDHR", region:"seasia", script:"ascii", speakers:"21000000" },
+"ceb": { name:"Cebuano (Bisaya)", source:"cldr_ceb,udhr_ceb", region:"seasia", script:"ascii", speakers:"21000000" },
 
-"cbi": { name:"Chachi (Cha'palaa, Cayapa)", source:"UDHR", region:"sam", script:"latn", speakers:"9500", letter:"ñóúáíéÑÓÚÁÍÉ", mark:"\u{0303}\u{0301}", punctuation:"¿¡" },
+"cbi": { name:"Chachi (Cha'palaa, Cayapa)", source:"udhr_cbi", region:"sam", script:"latn", speakers:"9500", letter:"ñóúáíéÑÓÚÁÍÉ", mark:"\u{0303}\u{0301}", punctuation:"¿¡" },
 
-"ccp": { name:"Chakma", source:"cldr_ccp,UDHR", region:"sasia", script:"cakm", speakers:"330000", letter:"𑄟𑄚𑄃𑄇𑄥𑄢𑄝𑄅𑄉𑄌𑄙𑄡𑄠𑄖𑄑𑄎𑄘𑄦𑄣𑄛𑄏𑄈𑄊𑄜𑄓𑄋𑄗𑄞𑄍𑄕𑄒𑄄𑄆𑄐𑄔𑄤", mark:"\u{1112C}\u{1112D}\u{11134}\u{11127}\u{11101}\u{1112E}\u{11133}\u{11128}\u{11129}\u{1112A}\u{11131}\u{11130}\u{1112B}\u{1112F}\u{11132}\u{11100}\u{11102}", number:"০১২৩৪৫৬৭৮৯𑄷𑄸𑄹𑄺𑄻𑄼𑄽𑄾𑄿𑄶", punctuation:"𑅁𑅃𑅂𑅀‰‐–—…‘’“”†‡′″§", notes:"UDHR uses Chakma digits, whereas CLDR shows only Bengali digits." },
+"ccp": { name:"Chakma", source:"cldr_ccp,udhr_ccp", region:"sasia", script:"cakm", speakers:"330000", letter:"𑄟𑄚𑄃𑄇𑄥𑄢𑄝𑄅𑄉𑄌𑄙𑄡𑄠𑄖𑄑𑄎𑄘𑄦𑄣𑄛𑄏𑄈𑄊𑄜𑄓𑄋𑄗𑄞𑄍𑄕𑄒𑄄𑄆𑄐𑄔𑄤", mark:"\u{1112C}\u{1112D}\u{11134}\u{11127}\u{11101}\u{1112E}\u{11133}\u{11128}\u{11129}\u{1112A}\u{11131}\u{11130}\u{1112B}\u{1112F}\u{11132}\u{11100}\u{11102}", number:"০১২৩৪৫৬৭৮৯𑄷𑄸𑄹𑄺𑄻𑄼𑄽𑄾𑄿𑄶", punctuation:"𑅁𑅃𑅂𑅀‰‐–—…‘’“”†‡′″§", notes:"UDHR uses Chakma digits, whereas CLDR shows only Bengali digits." },
 
-"ch": { name:"Chamorro", source:"UDHR", region:"oce", script:"ascii", speakers:"95000" },
+"ch": { name:"Chamorro", source:"udhr_cha", region:"oce", script:"ascii", speakers:"95000" },
 
-"cbt": { name:"Chayahuita", source:"UDHR", region:"sam", script:"latn", speakers:"7900", letter:"ëóíËÓÍ", mark:"\u{0308}\u{0301}", punctuation:"¿" },
+"cbt": { name:"Chayahuita", source:"udhr_cbt", region:"sam", script:"latn", speakers:"7900", letter:"ëóíËÓÍ", mark:"\u{0308}\u{0301}", punctuation:"¿" },
 
-"cic": { name:"Chickasaw", source:"UDHR", region:"nam", script:"latn", speakers:"70", letter:"óáíÓÁÍ", mark:"\u{0331}\u{0301}", punctuation:"—" },
+"cic": { name:"Chickasaw", source:"udhr_cic", region:"nam", script:"latn", speakers:"70", letter:"óáíÓÁÍ", mark:"\u{0331}\u{0301}", punctuation:"—" },
 
-"cfm": { name:"Falam Chin (Baro Halam)", source:"UDHR", region:"seasia", script:"ascii", speakers:"107000" },
+"cfm": { name:"Falam Chin (Baro Halam)", source:"udhr_flm", region:"seasia", script:"ascii", speakers:"107000" },
 
-"cnh": { name:"Haka Chin (Lai)", source:"UDHR", region:"seasia", script:"ascii", speakers:"446264" },
+"cnh": { name:"Haka Chin (Lai)", source:"udhr_cnh", region:"seasia", script:"ascii", speakers:"446264" },
 
-"hlt": { name:"Matu Chin", source:"UDHR", region:"seasia", script:"ascii", speakers:"40000" },
+"hlt": { name:"Matu Chin", source:"udhr_hlt", region:"seasia", script:"ascii", speakers:"40000" },
 
-"ctd": { name:"Tedim Chin", source:"UDHR", region:"seasia", script:"ascii", speakers:"340000" },
+"ctd": { name:"Tedim Chin", source:"udhr_ctd", region:"seasia", script:"ascii", speakers:"340000" },
 
-"csa": { name:"Chiltepec Chinantec", source:"UDHR", region:"cam", script:"latn", speakers:"1800", letter:"öüïóáñäëéíúÖÜÏÓÁÑÄËÉÍÚ", mark:"\u{0337}\u{0331}\u{030D}\u{030E}\u{0308}\u{0301}\u{0303}", punctuation:"†" },
+"csa": { name:"Chiltepec Chinantec", source:"udhr_csa", region:"cam", script:"latn", speakers:"1800", letter:"öüïóáñäëéíúÖÜÏÓÁÑÄËÉÍÚ", mark:"\u{0337}\u{0331}\u{030D}\u{030E}\u{0308}\u{0301}\u{0303}", punctuation:"†" },
 
-"chj": { name:"Ojitlán Chinantec", source:"UDHR", region:"cam", script:"latn", speakers:"38000", letter:"öíäñáéúïüëóÖÍÄÑÁÉÚÏÜËÓ", mark:"\u{0308}\u{0301}\u{0303}", punctuation:"–", symbol:"°" },
+"chj": { name:"Ojitlán Chinantec", source:"udhr_chj", region:"cam", script:"latn", speakers:"38000", letter:"öíäñáéúïüëóÖÍÄÑÁÉÚÏÜËÓ", mark:"\u{0308}\u{0301}\u{0303}", punctuation:"–", symbol:"°" },
 
-"cjk": { name:"Chokwe", source:"UDHR", region:"afr", script:"ascii", speakers:"980000" },
+"cjk": { name:"Chokwe", source:"udhr_cjk", region:"afr", script:"ascii", speakers:"980000" },
 
-"chk": { name:"Chuukese (Trukese)", source:"UDHR", region:"oce", script:"ascii", speakers:"51000" },
+"chk": { name:"Chuukese (Trukese)", source:"udhr_chk", region:"oce", script:"ascii", speakers:"51000" },
 
-"cof": { name:"Colorado (Tsafiki, Tsáchila)", source:"UDHR", region:"sam", script:"latn", speakers:"2300", letter:"íÍ", mark:"\u{0301}" },
+"cof": { name:"Colorado (Tsafiki, Tsáchila)", source:"udhr_cof", region:"sam", script:"latn", speakers:"2300", letter:"íÍ", mark:"\u{0301}" },
 
-"swb": { name:"Maore Comorian (Shimaore)", source:"UDHR", region:"afr", script:"latn", speakers:"97000", letter:"ãÃƁƊĩĨẽẼɓɗ", mark:"\u{0303}" },
+"swb": { name:"Maore Comorian (Shimaore)", source:"udhr_swb", region:"afr", script:"latn", speakers:"97000", letter:"ãÃƁƊĩĨẽẼɓɗ", mark:"\u{0303}" },
 
-"zdj": { name:"Ngazidja Comorian", source:"UDHR", region:"afr", script:"ascii", speakers:"700000" },
+"zdj": { name:"Ngazidja Comorian", source:"udhr_zdj", region:"afr", script:"ascii", speakers:"700000" },
 
-"co": { name:"Corsican", source:"UDHR", region:"eur", script:"latn", speakers:"200000", letter:"àèìùòÀÈÌÙÒ", mark:"\u{0300}", punctuation:"’" },
+"co": { name:"Corsican", source:"udhr_cos", region:"eur", script:"latn", speakers:"200000", letter:"àèìùòÀÈÌÙÒ", mark:"\u{0300}", punctuation:"’" },
 
-"csw": { name:"Swampy Cree (Maskekon, Omaškêkowak, Omushkego)", source:"UDHR", region:"nam", script:"cans", speakers:"2500", letter:"ᐁᐢᐱᑕᑲᒥᐠᐊᑭᒋᐃᑗᐎᐣᓂᑯᓯᓇᐅᔑᒧᓀᐡᑐᑌᑎᐸᐗᐳᒪᒶᐌᔭᓄᑾᔦᒣᐤᓴᓶᔕᑴᐯᐟᑫᓱᓉᐺᑡᐨᔓᑺᓋᔗᔾᔀᑊᔡᒬᒼ", punctuation:"᙮" },
+"csw": { name:"Swampy Cree (Maskekon, Omaškêkowak, Omushkego)", source:"udhr_csw", region:"nam", script:"cans", speakers:"2500", letter:"ᐁᐢᐱᑕᑲᒥᐠᐊᑭᒋᐃᑗᐎᐣᓂᑯᓯᓇᐅᔑᒧᓀᐡᑐᑌᑎᐸᐗᐳᒪᒶᐌᔭᓄᑾᔦᒣᐤᓴᓶᔕᑴᐯᐟᑫᓱᓉᐺᑡᐨᔓᑺᓋᔗᔾᔀᑊᔡᒬᒼ", punctuation:"᙮" },
 
 "da": { name:"Danish", source:"cldr_da,udhr_dan", region:"eur", script:"latn", speakers:"5500000", letter:"æøåÆØÅ", mark:"\u{030A}", punctuation:"§‐–…‘’“”†′″", aux:"œŒŸǿǾáàâçéèêëíîïñóôúùûÿüäöÁÀÂÇÉÈÊËÍÎÏÑÓÔÚÙÛÜÄÖ̧́̀̂̈̃" },
 
@@ -196,27 +194,27 @@ var langs = {
 
 "dz": { name:"Dzongkha (Bhutanese)", source:"cldr_dz,udhr_dzo", region:"sasia", script:"tibt", speakers:"171080", letter:"ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ", mark:"\u{0F72}\u{0F7A}\u{0F7C}\u{0F74}\u{0F90}\u{0F91}\u{0F92}\u{0F94}\u{0F97}\u{0F99}\u{0F9F}\u{0FA0}\u{0FA1}\u{0FA3}\u{0FA4}\u{0FA5}\u{0FA6}\u{0FA8}\u{0FA9}\u{0FAA}\u{0FAB}\u{0FAD}\u{0FB1}\u{0FB2}\u{0FB3}\u{0FB5}\u{0FB6}\u{0FB7}\u{0F71}\u{0F95}", punctuation:"༼༽༄༅༆༈༉༊࿐࿑༒࿒࿓࿔༌།༎༏༐༑༔་§‐–—…‘’“”†‡", number:"༡༢༣༤༥༦༧༨༩༠", symbol:"༶྾྿༴", aux:"྄ཊཋཌཎཾཥྀཻཽྚྛྜྞྺྻྼ" },
 
-"dga": { name:"Dagaare", source:"UDHR", region:"afr", script:"latn", speakers:"1100000", letter:"ãÃƐƆũŨɛɔ", mark:"\u{0303}" },
+"dga": { name:"Dagaare", source:"udhr_dga", region:"afr", script:"latn", speakers:"1100000", letter:"ãÃƐƆũŨɛɔ", mark:"\u{0303}" },
 
-"dag": { name:"Dagbani (Dagbanli, Dagbanle)", source:"UDHR", region:"afr", script:"latn", speakers:"1160000", letter:"ƐƆƔƷŋŊɛɔɣʒ" },
+"dag": { name:"Dagbani (Dagbanli, Dagbanle)", source:"udhr_dag", region:"afr", script:"latn", speakers:"1160000", letter:"ƐƆƔƷŋŊɛɔɣʒ" },
 
-"ada": { name:"Dangme (Adaŋgbi)", source:"UDHR", region:"afr", script:"latn", speakers:"800000", letter:"íÍƆƐɔɛ", mark:"\u{0301}" },
+"ada": { name:"Dangme (Adaŋgbi)", source:"udhr_ada", region:"afr", script:"latn", speakers:"800000", letter:"íÍƆƐɔɛ", mark:"\u{0301}" },
 
-"dhw": { name:"Danwar (Danuwar, Denwar, Dhanvar, Dhanwar, Rai)", source:"UDHR", region:"sasia", script:"ascii", speakers:"46000" },
+"dhw": { name:"Danwar (Danuwar, Denwar, Dhanvar, Dhanwar, Rai)", source:"udhr_dhw", region:"sasia", script:"ascii", speakers:"46000" },
 
-"prs": { name:"Dari (Afghan Persian)", source:"UDHR", region:"casia", script:"arab", speakers:"12500000", letter:"اعلمیهجنحقوبشرصدسزآکئثتذضخپگظفغطأچژءي", mark:"\u{0654}\u{064B}\u{0653}", punctuation:"،‐", number:"۱۹۴۸۲۳۵۶۷۰", other:"\u{200C}" },
+"prs": { name:"Dari (Afghan Persian)", source:"udhr_pes_2", region:"casia", script:"arab", speakers:"12500000", letter:"اعلمیهجنحقوبشرصدسزآکئثتذضخپگظفغطأچژءي", mark:"\u{0654}\u{064B}\u{0653}", punctuation:"،‐", number:"۱۹۴۸۲۳۵۶۷۰", other:"\u{200C}" },
 
-"ddn": { name:"Dendi", source:"UDHR", region:"afr", script:"latn", speakers:"32000", letter:"ãâõÃÂÕǎǒƆƐǍƉǑŋŊɔɛɖ", mark:"\u{0303}\u{030C}\u{0302}" },
+"ddn": { name:"Dendi", source:"udhr_ddn", region:"afr", script:"latn", speakers:"32000", letter:"ãâõÃÂÕǎǒƆƐǍƉǑŋŊɔɛɖ", mark:"\u{0303}\u{030C}\u{0302}" },
 
-"tbz": { name:"Ditammari (Tammari)", source:"UDHR", region:"afr", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"\u{0303}\u{0301}\u{0300}" },
+"tbz": { name:"Ditammari (Tammari)", source:"udhr_tbz", region:"afr", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"\u{0303}\u{0301}\u{0300}" },
 
-"duu": { name:"Drung (Dulong, Derung, Rawang, Trung)", source:"UDHR", region:"easia", script:"ascii", speakers:"14000" },
+"duu": { name:"Drung (Dulong, Derung, Rawang, Trung)", source:"udhr_020", region:"easia", script:"ascii", speakers:"14000" },
 
 "ebu": { name:"Embu (Kîembu)", source:"cldr_ebu", region:"afr", script:"latn", speakers:"320000", letter:"ĩũĨŨ", mark:"\u{0303}" },
 
 "en": { name:"English", source:"cldr_en,udhr_eng", region:"eur", script:"ascii", speakers:"~380000000", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̃̄" },
 
-"eo": { name:"Esperanto", source:"cldr_eo,UDHR", region:"eur", script:"latn", speakers:"~3000", letter:"ĉĝĥĵŝŭĈĜĤĴŜŬ", mark:"\u{0302}\u{0306}", punctuation:"‐–—…‘’“”" },
+"eo": { name:"Esperanto", source:"cldr_eo,udhr_epo", region:"eur", script:"latn", speakers:"~3000", letter:"ĉĝĥĵŝŭĈĜĤĴŜŬ", mark:"\u{0302}\u{0306}", punctuation:"‐–—…‘’“”" },
 
 "et": { name:"Estonian", source:"cldr_et,udhr_est", region:"eur", script:"latn", speakers:"1100000", letter:"õäöüÕÄÖÜšžŠŽ", mark:"\u{030C}\u{0303}\u{0308}", aux:"āēīŏōœūĀĒĪŎŌŒŪáàâåæçéèêëíìîïñóòôøúùûÁÀÂÅÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧́̀̂̊̄̆" },
 
@@ -224,15 +222,15 @@ var langs = {
 
 "ewo": { name:"Ewondo (Kolo)", source:"cldr_ewo", region:"afr", script:"latn", speakers:"580000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǎǐǹǒǔǍƏƐǏǸǑƆǓěńŋĚŃŊəɛɔ", mark:"\u{0301}\u{0300}\u{0302}\u{030C}" },
 
-"bin": { name:"Edo (Bini)", source:"UDHR", region:"afr", script:"ascii", speakers:"1000000" },
+"bin": { name:"Edo (Bini)", source:"udhr_bin", region:"afr", script:"ascii", speakers:"1000000" },
 
-"sja": { name:"Epena (Eperara)", source:"UDHR", region:"sam", script:"ascii", speakers:"8300" },
+"sja": { name:"Epena (Eperara)", source:"udhr_sja", region:"sam", script:"ascii", speakers:"8300" },
 
-"eve": { name:"Even (Lamut, Ewen, Eben, Orich, Ilqan)", source:"UDHR", region:"nasia", script:"cyrl", speakers:"5700", letter:"стаьябэйилокчурмнхдеҥгөыцпвһюзѳшжъфщСТАЬЯБЭЙИЛОКЧУРМНХДЕҤГӨЫЦПВҺЮЗѲШЖЪФЩ", mark:"\u{0306}", punctuation:"‐" },
+"eve": { name:"Even (Lamut, Ewen, Eben, Orich, Ilqan)", source:"udhr_eve", region:"nasia", script:"cyrl", speakers:"5700", letter:"стаьябэйилокчурмнхдеҥгөыцпвһюзѳшжъфщСТАЬЯБЭЙИЛОКЧУРМНХДЕҤГӨЫЦПВҺЮЗѲШЖЪФЩ", mark:"\u{0306}", punctuation:"‐" },
 
-"evn": { name:"Evenki (Tungus, Solon)", source:"UDHR", region:"nasia", script:"cyrl", speakers:"17000", letter:"упкатңилэбгдерӣынӯмвчзоюцяьйсёһъщжхфУПКАТҢИЛЭБГДЕРӢЫНӮМВЧЗОЮЦЯЬЙСЁҺЪЩЖХФ", mark:"\u{0304}\u{0306}\u{0308}", punctuation:"–" },
+"evn": { name:"Evenki (Tungus, Solon)", source:"udhr_evn", region:"nasia", script:"cyrl", speakers:"17000", letter:"упкатңилэбгдерӣынӯмвчзоюцяьйсёһъщжхфУПКАТҢИЛЭБГДЕРӢЫНӮМВЧЗОЮЦЯЬЙСЁҺЪЩЖХФ", mark:"\u{0304}\u{0306}\u{0308}", punctuation:"–" },
 
-"fo": { name:"Faroese", source:"cldr_fo,UDHR", region:"eur", script:"latn", speakers:"66000", letter:"áðíóúýæøÁÐÍÓÚÝÆØ", mark:"\u{0301}", punctuation:"́§‐–…‘’“”†′″" },
+"fo": { name:"Faroese", source:"cldr_fo,udhr_fao", region:"eur", script:"latn", speakers:"66000", letter:"áðíóúýæøÁÐÍÓÚÝÆØ", mark:"\u{0301}", punctuation:"́§‐–…‘’“”†′″" },
 
 "fil": { name:"Filipino", source:"cldr_fil", region:"seasia", script:"latn", speakers:"28000000", letter:"ñÑ", mark:"\u{0303}", punctuation:"§‐–—…‘’“”′″", aux:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛ́̀̂" },
 
@@ -244,19 +242,19 @@ var langs = {
 
 "ff": { name:"Fulah (Fulani)", source:"cldr_ff", region:"afr", script:"latn", speakers:"24000000", letter:"ñÑƴƁƊƳŋŊɓɗ", mark:"\u{0303}" },
 
-"fat": { name:"Fanti (Fantse, Mfantse, Fante)", source:"UDHR", region:"afr", script:"latn", speakers:"1900000", letter:"ãõÃÕƆƐɔɛ", mark:"\u{0303}" },
+"fat": { name:"Fanti (Fantse, Mfantse, Fante)", source:"udhr_aka_fante", region:"afr", script:"latn", speakers:"1900000", letter:"ãõÃÕƆƐɔɛ", mark:"\u{0303}" },
 
 "fa": { name:"Persian (Farsi)", source:"cldr_fa,udhr_pes", region:"wasia", script:"arab", speakers:"~50000000", letter:"آاءأؤئبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهةیإي", mark:"\u{064B}\u{064D}\u{064C}\u{0651}\u{0654}\u{0650}\u{0653}\u{0655}", punctuation:"٫٬٪؉،؛؟‰‐…‹›«»", number:"۰۱۲۳۴۵۶۷۸۹", symbol:"−", other:"\u{200C}", aux:"ـَُِْٰٖإكىٕ" },
 
-"fj": { name:"Fijian", source:"UDHR", region:"oce", script:"ascii", speakers:"339210" },
+"fj": { name:"Fijian", source:"udhr_fij", region:"oce", script:"ascii", speakers:"339210" },
 
-"fon": { name:"Fon", source:"UDHR", region:"afr", script:"latn", speakers:"2200000", letter:"óéòèáúàìùíÓÉÒÈÁÚÀÌÙÍǎǐǔƐƆƉǍǏǓěđĚĐɛɔɖ", mark:"\u{0301}\u{030C}\u{0300}" },
+"fon": { name:"Fon", source:"udhr_fon", region:"afr", script:"latn", speakers:"2200000", letter:"óéòèáúàìùíÓÉÒÈÁÚÀÌÙÍǎǐǔƐƆƉǍǏǓěđĚĐɛɔɖ", mark:"\u{0301}\u{030C}\u{0300}" },
 
 "fy": { name:"West Frisian", source:"cldr_fy,udhr_fri", region:"eur", script:"latn", speakers:"470000", letter:"ûâêúôòëïáàäéèíóöüýÛÂÊÚÔÒËÏÁÀÄÉÈÍÓÖÜÝ", mark:"\u{0302}\u{0301}\u{0300}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″", aux:"æùÆÙ" },
 
 "gl": { name:"Galician", source:"cldr_gl,udhr_glg", region:"eur", script:"latn", speakers:"2400000", letter:"áéíñóúüªÁÉÍÑÓÚÜ", mark:"\u{0301}\u{0303}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ªàâåäãçèêëìîïºòôöõùûÀÂÅÄÃÇÈÊËÌÎÏÒÔÖÕÙÛ̧̀̂̊" },
 
-"lg": { name:"Ganda (Luganda)", source:"cldr_lg,UDHR", region:"afr", script:"latn", speakers:"4100000", letter:"ŋŊ" },
+"lg": { name:"Ganda (Luganda)", source:"cldr_lg,udhr_lug", region:"afr", script:"latn", speakers:"4100000", letter:"ŋŊ" },
 
 "ka": { name:"Georgian", source:"cldr_ka,udhr_kat,2cafedfc80733bd49fb1ee6af49657333a88c1a3", region:"eur", script:"geor", speakers:"3700000", letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ", punctuation:"჻«»§‐–—…‘‚“„†‡′″", symbol:"№", aux:"ᲐᲑᲒᲓᲔᲕᲖᲗᲘᲙᲚᲛᲜᲝᲞᲟᲠᲡᲢᲣᲤᲥᲦᲧᲨᲩᲪᲫᲬᲭᲮᲯᲰ" },
 
@@ -268,25 +266,25 @@ var langs = {
 
 "guz": { name:"Gusii (Kisii, Ekegusii)", source:"cldr_guz", region:"afr", script:"ascii", speakers:"2200000" },
 
-"gaa": { name:"Ga", source:"UDHR", region:"afr", script:"latn", speakers:"745000", letter:"ãÃƆƐŋŊɔɛ", mark:"\u{0303}" },
+"gaa": { name:"Ga", source:"udhr_gaa", region:"afr", script:"latn", speakers:"745000", letter:"ãÃƆƐŋŊɔɛ", mark:"\u{0303}" },
 
 "ga": { name:"Irish", source:"cldr_ga,udhr_gle", region:"eur", script:"latn", speakers:"74000", letter:"áéíóúÁÉÍÓÚ", mark:"\u{0301}", aux:"ḃḋḟṁṗṡṫḂḊḞṀṖṠṪċġĊĠåÅ̊̇" },
 
 "gd": { name:"Gaelic (Scots Gaelic)", source:"cldr_gd,udhr_gla", region:"eur", script:"latn", speakers:"57000", letter:"ìàòèùÌÀÒÈÙ", mark:"\u{0300}", aux:"ḋḟṁṗṡṫḊḞṀṖṠṪăāċĕēġĭīıłŏōœşŭūĂĀĊĔĒĠĬĪŁŎŌŒŞŬŪŸșȘáâåäãæçéêëíîïñóôöøúûüÿÁÂÅÄÃÆÇÉÊËÍÎÏÑÓÔÖØÚÛǗ̧̦̆̂̊̈̃̄̇" },
 
-"gag": { name:"Gagauz", source:"UDHR", region:"eur", script:"latn", speakers:"590000", letter:"üäêöçÜÄÊÖÇışţŞİŢ", mark:"\u{0327}\u{0307}\u{0308}\u{0302}", punctuation:"—" },
+"gag": { name:"Gagauz", source:"udhr_gag", region:"eur", script:"latn", speakers:"590000", letter:"üäêöçÜÄÊÖÇışţŞİŢ", mark:"\u{0327}\u{0307}\u{0308}\u{0302}", punctuation:"—" },
 
-"cab": { name:"Garifuna", source:"UDHR", region:"cam", script:"latn", speakers:"190000", letter:"üúñáéíèóÜÚÑÁÉÍÈÓ", mark:"\u{0308}\u{0301}\u{0303}\u{0300}" },
+"cab": { name:"Garifuna", source:"udhr_cab", region:"cam", script:"latn", speakers:"190000", letter:"üúñáéíèóÜÚÑÁÉÍÈÓ", mark:"\u{0308}\u{0301}\u{0303}\u{0300}" },
 
-"gjn": { name:"Gonja", source:"UDHR", region:"afr", script:"latn", speakers:"230000", letter:"ƐƆŋŊɛɔ" },
+"gjn": { name:"Gonja", source:"udhr_gjn", region:"afr", script:"latn", speakers:"230000", letter:"ƐƆŋŊɛɔ" },
 
-"gug": { name:"Paraguayan Guarani", source:"UDHR", region:"sam", script:"latn", speakers:"6000000", letter:"óáñéãíúõèÓÁÑÉÃÍÚÕÈʼĩũĨŨẽẼ", mark:"\u{0301}\u{0303}\u{0300}" },
+"gug": { name:"Paraguayan Guarani", source:"udhr_gug", region:"sam", script:"latn", speakers:"6000000", letter:"óáñéãíúõèÓÁÑÉÃÍÚÕÈʼĩũĨŨẽẼ", mark:"\u{0301}\u{0303}\u{0300}" },
 
-"gyr": { name:"Guarayu", source:"UDHR", region:"sam", script:"latn", speakers:"5900", letter:"ëñäüöéïËÑÄÜÖÉÏ", mark:"\u{0308}\u{0303}\u{0301}", punctuation:"’" },
+"gyr": { name:"Guarayu", source:"udhr_gyr", region:"sam", script:"latn", speakers:"5900", letter:"ëñäüöéïËÑÄÜÖÉÏ", mark:"\u{0308}\u{0303}\u{0301}", punctuation:"’" },
 
 "ha": { name:"Hausa", source:"cldr_ha,udhr_hau_NE,udhr_hau_NG", region:"afr", script:"latn", speakers:"70000000", letter:"ƙƴƁƊƘƳɓɗʼ", punctuation:"‐’‘", aux:"ƴƳáàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛ̃́̀̂" },
 
-"haw": { name:"Hawaiian", source:"cldr_haw,UDHR", region:"oce", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"\u{0304}", punctuation:"’‘“”" },
+"haw": { name:"Hawaiian", source:"cldr_haw,udhr_haw", region:"oce", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"\u{0304}", punctuation:"’‘“”" },
 
 "he": { name:"Hebrew", source:"cldr_he,udhr_heb,354bc8cccb82991d56ad51ac6f1c3b8437b28055", region:"wasia", script:"hebr", speakers:"9000000", letter:"אבגדהוזחטיכךלמםנןסעפףצץקרשת",  punctuation:"׳״־‐–—", symbol:"₪", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}", aux:"ְֱֲֳִֵֶַָֹֻּׁׂ" },
 
@@ -294,21 +292,21 @@ var langs = {
 
 "hu": { name:"Hungarian", source:"cldr_hu,udhr_hun", region:"eur", script:"latn", speakers:"13000000", letter:"áéíóöúüÁÉÍÓÖÚÜőűŐŰ", mark:"\u{0301}\u{0308}\u{030B}", punctuation:"«»§–…’”„", symbol:"⁒", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸàâåäãæçèêëìîïñòôøùûÿÀÂÅÄÃÆÇÈÊËÌÎÏÑÒÔØÙÛ̧̀̆̂̊̃̄" },
 
-"ht": { name:"Haitian Creole", source:"UDHR", region:"carib", script:"latn", speakers:"113000", letter:"èéòÈÉÒ", mark:"\u{0300}\u{0301}" },
+"ht": { name:"Haitian Creole", source:"udhr_hat_kreyol,udhr_hat_popular", region:"carib", script:"latn", speakers:"113000", letter:"èéòÈÉÒ", mark:"\u{0300}\u{0301}" },
 
-"hni": { name:"Hani", source:"UDHR", region:"easia", script:"ascii", speakers:"760000" },
+"hni": { name:"Hani", source:"udhr_hni", region:"easia", script:"ascii", speakers:"760000" },
 
-"hil": { name:"Hiligaynon (Ilonggo)", source:"UDHR", region:"seasia", script:"ascii", speakers:"9300000" },
+"hil": { name:"Hiligaynon (Ilonggo)", source:"udhr_hil", region:"seasia", script:"ascii", speakers:"9300000" },
 
-"hns": { name:"Caribbean Hindustani", source:"UDHR", region:"carib", script:"latn", speakers:"166000", letter:"áêòíèàëÁÊÒÍÈÀË", mark:"\u{0301}\u{0302}\u{0300}\u{0308}", punctuation:"‘’" },
+"hns": { name:"Caribbean Hindustani", source:"udhr_hns", region:"carib", script:"latn", speakers:"166000", letter:"áêòíèàëÁÊÒÍÈÀË", mark:"\u{0301}\u{0302}\u{0300}\u{0308}", punctuation:"‘’" },
 
-"hus": { name:"Huastec (Wasteko, Teenek)", source:"UDHR", region:"cam", script:"latn", speakers:"160000", letter:"íáúéóàÍÁÚÉÓÀ", mark:"\u{00B0}\u{0301}\u{0300}" },
+"hus": { name:"Huastec (Wasteko, Teenek)", source:"udhr_hus", region:"cam", script:"latn", speakers:"160000", letter:"íáúéóàÍÁÚÉÓÀ", mark:"\u{00B0}\u{0301}\u{0300}" },
 
-"huu": { name:"Murui Huitoto (Bue, Witoto Murui, Witoto)", source:"UDHR", region:"sam", script:"latn", speakers:"7800", letter:"úñáÚÑÁƗɨ", mark:"\u{0301}\u{0303}" },
+"huu": { name:"Murui Huitoto (Bue, Witoto Murui, Witoto)", source:"udhr_huu", region:"sam", script:"latn", speakers:"7800", letter:"úñáÚÑÁƗɨ", mark:"\u{0301}\u{0303}" },
 
-"is": { name:"Icelandic", source:"cldr_is,UDHR", region:"eur", script:"latn", speakers:"331000", letter:"áðéíóúýþæöÁÐÉÍÓÚÝÞÆÖ", mark:"\u{0301}\u{0308}", punctuation:"§‐–—…‘‚“„†‡′″" },
+"is": { name:"Icelandic", source:"cldr_is,udhr_isl", region:"eur", script:"latn", speakers:"331000", letter:"áðéíóúýþæöÁÐÉÍÓÚÝÞÆÖ", mark:"\u{0301}\u{0308}", punctuation:"§‐–—…‘‚“„†‡′″" },
 
-"ig": { name:"Igbo", source:"cldr_ig,UDHR", region:"afr", script:"latn", speakers:"24000000", letter:"ẹịṅọụẸỊṄỌỤ", mark:"\u{0323}\u{0307}", punctuation:"‐" },
+"ig": { name:"Igbo", source:"cldr_ig,udhr_ibo", region:"afr", script:"latn", speakers:"24000000", letter:"ẹịṅọụẸỊṄỌỤ", mark:"\u{0323}\u{0307}", punctuation:"‐" },
 
 "smn": { name:"Inari Sami", source:"cldr_smn", region:"eur", script:"latn", speakers:"300", letter:"âäáÂÄÁčđŋšžČĐŊŠŽ", mark:"\u{0302}\u{030C}\u{0308}\u{0301}", aux:"ńŃàçéèíñóòúüæøåãöÀÇÉÈÍÑÓÒÚÜÆØÅÃÖ̧̀̃̊" },
 
@@ -316,13 +314,13 @@ var langs = {
 
 "it": { name:"Italian", source:"cldr_it,udhr_ita", region:"eur", script:"latn", speakers:"64000000", letter:"àéèìóòùÀÉÈÌÓÒÙ", mark:"\u{0300}\u{0301}", punctuation:"«»—…’“”", aux:"œŒŸªáâåäãæçêëíîïñºôöõøßúûüÿÁÂÅÄÃÆÇÊËÍÎÏÑÔÖÕØÚÛÜ̧̂̊̈̃" },
 
-"ibb": { name:"Ibibio", source:"UDHR", region:"afr", script:"latn", speakers:"2000000", letter:"ñÑ", mark:"\u{0303}" },
+"ibb": { name:"Ibibio", source:"udhr_ibb", region:"afr", script:"latn", speakers:"2000000", letter:"ñÑ", mark:"\u{0303}" },
 
-"io": { name:"Ido", source:"UDHR", region:"eur", script:"ascii", speakers:"300" },
+"io": { name:"Ido", source:"udhr_ido", region:"eur", script:"ascii", speakers:"300" },
 
-"ilo": { name:"Ilocano (Ilokano)", source:"UDHR", region:"seasia", script:"ascii", speakers:"9100000" },
+"ilo": { name:"Ilocano (Ilokano)", source:"udhr_ilo", region:"seasia", script:"ascii", speakers:"9100000" },
 
-"iu": { name:"Inuktitut (Eastern Canadian Inuktitut)", source:"UDHR", region:"nam", script:"cans", speakers:"34000", letter:"ᓯᓚᕐᔪᐊᒥᐅᑦᓇᓗᐃᖅᑎᖓᑭᒃᑯᑐᓐᐱᖏᕆᑲᓂᔾᔨᓄᒪᒻᑖᕈᖃᑕᕋᓪᒍᓴᖕᓕᕇᖢᕗᒋᒧᒐᖁᔭᑰᒌᙱᒫᕌᕙᒎᕕᕝᓘᓃᓱᓈᙵᓅᐹᓵᐸᔫᓲᐳᓖᖂᑑᐆᖑᙳᖔᕿᒡᓛᓰᖤᐋᑉᔮᔅᒨᑏᒦ", mark:"\u{0303}" },
+"iu": { name:"Inuktitut (Eastern Canadian Inuktitut)", source:"udhr_ike", region:"nam", script:"cans", speakers:"34000", letter:"ᓯᓚᕐᔪᐊᒥᐅᑦᓇᓗᐃᖅᑎᖓᑭᒃᑯᑐᓐᐱᖏᕆᑲᓂᔾᔨᓄᒪᒻᑖᕈᖃᑕᕋᓪᒍᓴᖕᓕᕇᖢᕗᒋᒧᒐᖁᔭᑰᒌᙱᒫᕌᕙᒎᕕᕝᓘᓃᓱᓈᙵᓅᐹᓵᐸᔫᓲᐳᓖᖂᑑᐆᖑᙳᖔᕿᒡᓛᓰᖤᐋᑉᔮᔅᒨᑏᒦ", mark:"\u{0303}" },
 
 "kl": { name:"Kalaalisut (West Greenlandic)", source:"cldr_kl,udhr_kal", region:"eur", script:"ascii", speakers:"60000", aux:"ĸ", notes:"CLDR adds accented characters such as áâãéêíîôúûæøåĩĸũ, but this appears to be based on an older (pre 1973) orthography. See wikipedia." },
 
@@ -334,7 +332,7 @@ var langs = {
 
 "jv-java": { name:"Javanese (Javanese)", source:"6c4597409a211714769081f0db0c92a0314ede5f", region:"seasia", script:"java", speakers:"94000000", letter:"ꦄꦆꦇꦈꦉꦊꦋꦌꦎꦏꦑꦒꦓꦔꦕꦖꦗꦘꦚꦛꦝꦟꦠꦡꦢꦤꦥꦦꦧꦨꦩꦪꦫꦭꦮꦱꦲꧏ", mark:"\u{A980}\u{A981}\u{A982}\u{A983}\u{A9B3}\u{A9B4}\u{A9B6}\u{A9B8}\u{A9BA}\u{A9BC}\u{A9BD}\u{A9BE}\u{A9BF}\u{A9C0}", number:"꧐꧑꧒꧓꧔꧕꧖꧗꧘꧙", punctuation:"꧁꧂꧃꧄꧅꧆꧇꧈꧉꧊꧋꧌꧍", aux:"ꦙꦜꦞꦣꦯꦰ꧞꧟" },
 
-"dyu": { name:"Dyula (Jula, Dioula)", source:"UDHR", region:"afr", script:"latn", speakers:"2500000", letter:"úàìóáòùèíéÚÀÌÓÁÒÙÈÍÉƐƆƝŋŊɛɔɲ", mark:"\u{0301}\u{0300}", punctuation:"’‘" },
+"dyu": { name:"Dyula (Jula, Dioula)", source:"udhr_dyu", region:"afr", script:"latn", speakers:"2500000", letter:"úàìóáòùèíéÚÀÌÓÁÒÙÈÍÉƐƆƝŋŊɛɔɲ", mark:"\u{0301}\u{0300}", punctuation:"’‘" },
 
 "kea": { name:"Kabuverdianu (Cape Verdean Creole)", source:"cldr_kea,udhr_kea", region:"afr", script:"latn", speakers:"1200000", letter:"ñçêéâíèáôóãºõúàòÑÇÊÉÂÍÈÁÔÓÃÕÚÀÒ", mark:"\u{0327}\u{0303}\u{0302}\u{0301}\u{0300}", punctuation:"’", aux:"ẽẼăāĕēĭĩīŏōœŭũūĂĀĔĒĬĨĪŎŌŒŬŨŪŸªáàâåäãæçéèêëíìîïºóòôöõøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÓÒÔÖÕØÚÙÛǗ̧̀̆̂̊̈̄" },
 
@@ -348,13 +346,13 @@ var langs = {
 
 "ks": { name:"Kashmiri (Koshur)", source:"cldr_ks", region:"sasia", script:"arab", speakers:"5600000", letter:"ءآأٲؤاٮبپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںھہوۄیۍے", mark:"\u{064E}\u{064F}\u{0650}\u{06EA}\u{06ED}\u{0655}\u{0656}\u{0654}\u{0657}\u{065A}\u{065B}\u{0653}" },
 
-"kk": { name:"Kazakh", source:"cldr_kk,UDHR", region:"casia", script:"cyrl", speakers:"15000000", letter:"аәбвгғдеёжзийкқлмнңоөпрстуұүфхһцчшщъыіьэюяАӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯ", punctuation:"‐–—…‘’“”«»§" },
+"kk": { name:"Kazakh", source:"cldr_kk,udhr_kaz", region:"casia", script:"cyrl", speakers:"15000000", letter:"аәбвгғдеёжзийкқлмнңоөпрстуұүфхһцчшщъыіьэюяАӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯ", punctuation:"‐–—…‘’“”«»§" },
 
 "km": { name:"Khmer (Cambodian)", source:"cldr_km,udhr_khm,e50f6f6c10d9857db18430e54a9ec953abb77225", region:"seasia", script:"khmr", speakers:"16000000", letter:"ឥឦឪឧឩឯឰឱឳឲឫឬឭឮកខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរឡលវសហអៗ", mark:"ាិីឹឺុូួើឿៀេែៃោៅំះ៉៊់៍័្", punctuation:"៖។៕៙៚‘’“”", number:"០១២៣៤៥៦៧៨៩", symbol:"៛", aux:"៑៌៝៎៏" },
 
 "ki": { name:"Kikuyu (Gikuyu)", source:"cldr_ki", region:"afr", script:"latn", speakers:"6600000", letter:"ĩũĨŨ", mark:"\u{0303}" },
 
-"rw": { name:"Kinyarwanda", source:"cldr_rw,UDHR", region:"afr", script:"ascii", speakers:"9800000" },
+"rw": { name:"Kinyarwanda", source:"cldr_rw,udhr_kin", region:"afr", script:"ascii", speakers:"9800000" },
 
 "kok": { name:"Konkani", source:"cldr_kok", region:"afr", script:"deva", speakers:"7400000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", number:"०१२३४५६७८९", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
 
@@ -368,45 +366,45 @@ var langs = {
 
 "ky": { name:"Kyrgyz (Kirghiz)", source:"cldr_ky,udhr_kir", region:"casia", script:"cyrl", speakers:"4300000", letter:"абгдеёжзийклмнӊоөпрстуүхчшъыэюяцңвьфАБГДЕЁЖЗИЙКЛМНӉОӨПРСТУҮХЧШЪЫЭЮЯЦҢВЬФ", mark:"\u{0308}\u{0306}", punctuation:"‐–—…‘‚“„«»§", aux:"вфцщьВФЦЩЬ" },
 
-"quc": { name:"K'iche' (Quiché)", source:"UDHR", region:"cam", script:"ascii", speakers:"2300000" },
+"quc": { name:"K'iche' (Quiché)", source:"udhr_quc", region:"cam", script:"ascii", speakers:"2300000" },
 
-"kbd": { name:"Kabardian (Kabardino-Cherkess, East Circassian)", source:"UDHR", region:"eur", script:"cyrl", speakers:"1600000", letter:"цӏыхуэфащмтеднйпсожлъкрзгьибяшвчіюЦӀЫХУЭФАЩМТЕДНЙПСОЖЛЪКРЗГЬИБЯШВЧІЮ", mark:"\u{0306}" },
+"kbd": { name:"Kabardian (Kabardino-Cherkess, East Circassian)", source:"udhr_kbd", region:"eur", script:"cyrl", speakers:"1600000", letter:"цӏыхуэфащмтеднйпсожлъкрзгьибяшвчіюЦӀЫХУЭФАЩМТЕДНЙПСОЖЛЪКРЗГЬИБЯШВЧІЮ", mark:"\u{0306}" },
 
-"kbp": { name:"Kabiye", source:"UDHR", region:"afr", script:"latn", speakers:"1000000", letter:"ñÑƆƐƱƉƖƔŋŊɔɛʊɖɩɣ", mark:"\u{0303}" },
+"kbp": { name:"Kabiye", source:"udhr_kpb", region:"afr", script:"latn", speakers:"1000000", letter:"ñÑƆƐƱƉƖƔŋŊɔɛʊɖɩɣ", mark:"\u{0303}" },
 
-"knc": { name:"Kanuri", source:"UDHR", region:"afr", script:"latn", speakers:"4200000", letter:"əƏ" },
+"knc": { name:"Kanuri", source:"udhr_knc", region:"afr", script:"latn", speakers:"4200000", letter:"əƏ" },
 
-"kqn": { name:"Kaonde", source:"UDHR", region:"afr", script:"ascii", speakers:"240000" },
+"kqn": { name:"Kaonde", source:"udhr_kqn", region:"afr", script:"ascii", speakers:"240000" },
 
-"cak": { name:"Kaqchikel (Kaqchiquel, Cakchiquel, Cakchiquiel)", source:"UDHR", region:"cam", script:"latn", speakers:"450000", letter:"äïöüÄÏÖÜ", mark:"\u{0308}" },
+"cak": { name:"Kaqchikel (Kaqchiquel, Cakchiquel, Cakchiquiel)", source:"udhr_cak", region:"cam", script:"latn", speakers:"450000", letter:"äïöüÄÏÖÜ", mark:"\u{0308}" },
 
-"krl": { name:"Karelian", source:"UDHR", region:"eur", script:"latn", speakers:"36000", letter:"äöÄÖčžšČŽŠ", mark:"\u{0308}\u{030C}", punctuation:"’" },
+"krl": { name:"Karelian", source:"udhr_krl", region:"eur", script:"latn", speakers:"36000", letter:"äöÄÖčžšČŽŠ", mark:"\u{0308}\u{030C}", punctuation:"’" },
 
-"xsm": { name:"Kasem", source:"UDHR", region:"afr", script:"latn", speakers:"250000", letter:"ƐƆŋŊɛɔ" },
+"xsm": { name:"Kasem", source:"udhr_xsm", region:"afr", script:"latn", speakers:"250000", letter:"ƐƆŋŊɛɔ" },
 
-"kjh": { name:"Khakas", source:"UDHR", region:"nasia", script:"cyrl", speakers:"43000", letter:"прайтиксізледјвоцяыгнмбңюьчуғхжҷэфщъПРАЙТИКСІЗЛЕДЈВОЦЯЫГНМБҢЮЬЧУҒХЖҶЭФЩЪ", mark:"\u{0306}" },
+"kjh": { name:"Khakas", source:"udhr_kjh", region:"nasia", script:"cyrl", speakers:"43000", letter:"прайтиксізледјвоцяыгнмбңюьчуғхжҷэфщъПРАЙТИКСІЗЛЕДЈВОЦЯЫГНМБҢЮЬЧУҒХЖҶЭФЩЪ", mark:"\u{0306}" },
 
-"kha": { name:"Khasi", source:"UDHR", region:"sasia", script:"latn", speakers:"1128575", letter:"ïñÏÑ", mark:"\u{0308}\u{0303}" },
+"kha": { name:"Khasi", source:"udhr_kha", region:"sasia", script:"latn", speakers:"1128575", letter:"ïñÏÑ", mark:"\u{0308}\u{0303}" },
 
 "kkh": { name:"Khün (Tai Khün)", source:"udhr_kkh_lana,2d9827ce4589c5c4a76d7a1526db598162373c1d", region:"seasia", script:"lana", speakers:"100000", letter:"ᨠᨡᨣᨤᨥᨦᨧᨨᨩᨪᨫᨬᨭᨮᨯᨰᨱᨲᨳᨴᨵᨶᨷᨸᨹᨺᨻᨼᨽᨾᨿᩀᩁᩃᩅᩆᩇᩈᩉᩊᩋᩌᩍᩎᩏᩐᩑᩒᩓᩔᪧ", mark:"ᩕᩖᩘᩙᩚᩛ᩠ᩡᩢᩣᩤᩥᩦᩧᩨᩩᩪᩫᩬᩭᩮᩯᩰᩱᩳᩴ᩵᩶᩺᩼", number:"᪀᪁᪂᪃᪄᪅᪆᪇᪈᪉", punctuation:"᪨᪩᪪᪫", aux:"᩷᩸᩹᪐᪑᪒᪓᪔᪕᪖᪗᪘᪙᪠᪡᪢᪣᪤᪥᪦᪬᪭" },
 
 "nod": { name:"Northern Thai (Lanna, Kam Mueang)", source:"812b1d7d423d404b2e251f335553dd05b8999f08", region:"seasia", script:"lana", speakers:"6000000", letter:"ᨠᨡᨢᨣᨤᨥᨦᨧᨨᨩᨪᨫᨬᨭᨮᨯᨰᨱᨲᨳᨴᨵᨶᨷᨸᨹᨺᨻᨼᨽᨾᨿᩀᩁᩃᩅᩆᩇᩈᩉᩊᩋᩌᩍᩎᩏᩐᩑᩓᩔᪧ", mark:"ᩕᩖᩘᩙᩚᩛ᩠ᩡᩢᩣᩤᩥᩦᩧᩨᩩᩪᩫᩬᩮᩯᩰᩱᩲᩳᩴ᩵᩶᩺᩻", number:"᪀᪁᪂᪃᪄᪅᪆᪇᪈᪉", punctuation:"᪨᪩᪪᪫", aux:"᩿᪐᪑᪒᪓᪔᪕᪖᪗᪘᪙᪠᪡᪢᪣᪤᪥᪦᪬᪭" },
 
-"ktu": { name:"Kituba", source:"UDHR", region:"afr", script:"ascii", speakers:"5400000" },
+"ktu": { name:"Kituba", source:"udhr_ktu", region:"afr", script:"ascii", speakers:"5400000" },
 
-"koi": { name:"Komi-Permyak", source:"UDHR", region:"eur", script:"cyrl", speakers:"63000", letter:"мортпавэзлӧнбыдсиьекцяюгйучішжёщъфхМОРТПАВЭЗЛӦНБЫДСИЬЕКЦЯЮГЙУЧІШЖЁЩЪФХ", mark:"\u{0308}\u{0306}", punctuation:"–" },
+"koi": { name:"Komi-Permyak", source:"udhr_koi", region:"eur", script:"cyrl", speakers:"63000", letter:"мортпавэзлӧнбыдсиьекцяюгйучішжёщъфхМОРТПАВЭЗЛӦНБЫДСИЬЕКЦЯЮГЙУЧІШЖЁЩЪФХ", mark:"\u{0308}\u{0306}", punctuation:"–" },
 
-"koo": { name:"Konjo (Konzo)", source:"UDHR", region:"afr", script:"ascii", speakers:"610000" },
+"koo": { name:"Konjo (Konzo)", source:"udhr_koo", region:"afr", script:"ascii", speakers:"610000" },
 
-"kg": { name:"Kongo (Kikongo)", source:"UDHR", region:"afr", script:"ascii", speakers:"6500000" },
+"kg": { name:"Kongo (Kikongo)", source:"udhr_kng", region:"afr", script:"ascii", speakers:"6500000" },
 
-"kpe": { name:"Kpelle", source:"UDHR", region:"afr", script:"latn", speakers:"1300000", letter:"ƐƁƆƝƏĝŋĜŊɛɓɔɲə", mark:"\u{0302}" },
+"kpe": { name:"Kpelle", source:"udhr_gkp", region:"afr", script:"latn", speakers:"1300000", letter:"ƐƁƆƝƏĝŋĜŊɛɓɔɲə", mark:"\u{0302}" },
 
-"kri": { name:"Krio (Sierra Leonean Creole)", source:"UDHR", region:"afr", script:"latn", speakers:"500000", letter:"ƐƆŋŊɛɔ", punctuation:"–" },
+"kri": { name:"Krio (Sierra Leonean Creole)", source:"udhr_kri", region:"afr", script:"latn", speakers:"500000", letter:"ƐƆŋŊɛɔ", punctuation:"–" },
 
-"nku": { name:"Bouna Kulango", source:"UDHR", region:"afr", script:"latn", speakers:"130000", letter:"ƖƆƐƝƲŋŊɩɔɛɲʋ", punctuation:"’" },
+"nku": { name:"Bouna Kulango", source:"udhr_nku", region:"afr", script:"latn", speakers:"130000", letter:"ƖƆƐƝƲŋŊɩɔɛɲʋ", punctuation:"’" },
 
-"kmr": { name:"Northern Kurdish (Kurmanji)", source:"UDHR", region:"wasia", script:"latn", speakers:"15000000", letter:"ûîêçÛÎÊÇşŞ", mark:"\u{0327}\u{0302}" },
+"kmr": { name:"Northern Kurdish (Kurmanji)", source:"udhr_kmr", region:"wasia", script:"latn", speakers:"15000000", letter:"ûîêçÛÎÊÇşŞ", mark:"\u{0327}\u{0302}" },
 
 "ku": { name:"Kurdish", source:"https://r12a.github.io/app-subtags/?lookup=ku", region:"wasia", script:"latn", speakers:"0", notes:"This is a macrolanguage. See kmr (Northern Kurdish) or ckb (Central Kurdish) or sdh (Southern Kurdish)." },
 
@@ -418,7 +416,7 @@ var langs = {
 
 "lv": { name:"Latvian (Lettish)", source:"cldr_lv,udhr_lav", region:"eur", script:"latn", speakers:"1750000", letter:"āčēģīķļņšūžĀČĒĢĪĶĻŅŠŪŽ", mark:"\u{0327}\u{0304}\u{030C}", punctuation:"§‐–—…‘’‚“”„†‡′″", aux:"ōŗŌŖ" },
 
-"ln": { name:"Lingala", source:"cldr_ln,UDHR", region:"afr", script:"latn", speakers:"5500000", letter:"áâéêíîóôúÁÂÉÊÍÎÓÔÚǎǐǒǍƐǏǑƆěĚɛɔ", mark:"\u{0301}\u{0302}\u{030C}", punctuation:"’" }, // UDHR has no accents
+"ln": { name:"Lingala", source:"cldr_ln,udhr_lin", region:"afr", script:"latn", speakers:"5500000", letter:"áâéêíîóôúÁÂÉÊÍÎÓÔÚǎǐǒǍƐǏǑƆěĚɛɔ", mark:"\u{0301}\u{0302}\u{030C}", punctuation:"’" }, // UDHR has no accents
 
 "lt": { name:"Lithuanian", source:"cldr_lt,udhr_lit", region:"eur", script:"latn", speakers:"3000000", letter:"éÉąčęėįšųūžĄČĘĖĮŠŲŪŽ", mark:"\u{0328}\u{030C}\u{0307}\u{0304}\u{0301}", punctuation:"‐–—…“„", aux:"ẽẼĩũĨŨáàãéèíìñóòõúùÁÀÃÉÈÍÌÑÓÒÕÚÙ́̃̀" },
 
@@ -434,27 +432,27 @@ var langs = {
 
 "luy": { name:"Luhya (Luyia, Luhia, Luhiya)", source:"cldr_luy", region:"afr", script:"ascii", speakers:"1200000" },
 
-"lld": { name:"Ladin (Judaeo-Spanish, Judeo-Spanish)", source:"UDHR", region:"eur", script:"latn", speakers:"31000", letter:"ëéüêàèöìùîâôòóûËÉÜÊÀÈÖÌÙÎÂÔÒÓÛćĆ", mark:"\u{0308}\u{0301}\u{0302}\u{0300}", punctuation:"’" },
+"lld": { name:"Ladin (Judaeo-Spanish, Judeo-Spanish)", source:"udhr_lld", region:"eur", script:"latn", speakers:"31000", letter:"ëéüêàèöìùîâôòóûËÉÜÊÀÈÖÌÙÎÂÔÒÓÛćĆ", mark:"\u{0308}\u{0301}\u{0302}\u{0300}", punctuation:"’" },
 
-"lad": { name:"Ladino", source:"UDHR", region:"wasia", script:"latn", speakers:"100000", letter:"íÍ", mark:"\u{0301}", punctuation:"–" },
+"lad": { name:"Ladino", source:"udhr_lad", region:"wasia", script:"latn", speakers:"100000", letter:"íÍ", mark:"\u{0301}", punctuation:"–" },
 
-"lns": { name:"Lamnso' (Nso)", source:"UDHR", region:"afr", script:"latn", speakers:"240000", letter:"áéùìòúíóàèÁÉÙÌÒÚÍÓÀÈƏŋŊə", mark:"\u{0300}\u{0301}", punctuation:"’" },
+"lns": { name:"Lamnso' (Nso)", source:"udhr_lns", region:"afr", script:"latn", speakers:"240000", letter:"áéùìòúíóàèÁÉÙÌÒÚÍÓÀÈƏŋŊə", mark:"\u{0300}\u{0301}", punctuation:"’" },
 
-"lij": { name:"Ligurian", source:"UDHR", region:"eur", script:"latn", speakers:"500000", letter:"çòæéùöôâîàêÇÒÆÉÙÖÔÂÎÀÊ", mark:"\u{0327}\u{0300}\u{0301}\u{0308}\u{0302}", punctuation:"’" },
+"lij": { name:"Ligurian", source:"udhr_lij", region:"eur", script:"latn", speakers:"500000", letter:"çòæéùöôâîàêÇÒÆÉÙÖÔÂÎÀÊ", mark:"\u{0327}\u{0300}\u{0301}\u{0308}\u{0302}", punctuation:"’" },
 
-"lia": { name:"Limba", source:"UDHR", region:"afr", script:"latn", speakers:"340000", letter:"ƆƐŋŊɔɛ" },
+"lia": { name:"Limba", source:"udhr_lia", region:"afr", script:"latn", speakers:"340000", letter:"ƆƐŋŊɔɛ" },
 
 "lis": { name:"Lisu (Fraser script)", source:"d6a5076cb77188fd52722d4a57b621ac1390c714", region:"easia", script:"lisu", speakers:"940000", letter:"ꓐꓑꓒꓓꓔꓕꓖꓗꓘꓙꓚꓛꓜꓝꓞꓟꓠꓡꓢꓣꓤꓥꓦꓧꓨꓩꓪꓫꓬꓭꓮꓯꓰꓱꓲꓳꓴꓵꓶꓷꓸꓹꓺꓻꓼꓽʼˍ", punctuation:"《》…꓾꓿" },
 
-"lob": { name:"Lobi (Miwa, Lobiri)", source:"UDHR", region:"afr", script:"latn", speakers:"440000", letter:"àáäÀÁÄƲƖƆƐʋɩɔɛʔ", mark:"\u{0300}\u{0301}\u{0308}" },
+"lob": { name:"Lobi (Miwa, Lobiri)", source:"udhr_lob", region:"afr", script:"latn", speakers:"440000", letter:"àáäÀÁÄƲƖƆƐʋɩɔɛʔ", mark:"\u{0300}\u{0301}\u{0308}" },
 
-"loz": { name:"Lozi (siLozi, Rozi)", source:"UDHR", region:"afr", script:"ascii", speakers:"725000" },
+"loz": { name:"Lozi (siLozi, Rozi)", source:"udhr_loz", region:"afr", script:"ascii", speakers:"725000" },
 
-"lua": { name:"Luba-Kasai (Western Luba)", source:"UDHR", region:"afr", script:"ascii", speakers:"6300000" },
+"lua": { name:"Luba-Kasai (Western Luba)", source:"udhr_lua", region:"afr", script:"ascii", speakers:"6300000" },
 
-"lun": { name:"Lunda (Chilunda)", source:"UDHR", region:"afr", script:"ascii", speakers:"400000" },
+"lun": { name:"Lunda (Chilunda)", source:"udhr_lun", region:"afr", script:"ascii", speakers:"400000" },
 
-"lue": { name:"Luvale", source:"UDHR", region:"afr", script:"ascii", speakers:"640000" },
+"lue": { name:"Luvale", source:"udhr_lue", region:"afr", script:"ascii", speakers:"640000" },
 
 "mk": { name:"Macedonian", source:"cldr_mk,udhr_mkd", region:"eur", script:"cyrl", speakers:"~2000000", letter:"абвгдѓежзѕијклљмнњопрстќуфхцчџшАБВГДЃЕЖЗЅИЈКЛЉМНЊОПРСТЌУФХЦЧЏШ", mark:"\u{0301}", punctuation:"‐–—…‘‚“„", aux:"ѐѝЀЍ̀" },
 
@@ -462,9 +460,9 @@ var langs = {
 
 "mgh": { name:"Makhuwa-Meetto", source:"cldr_mgh", region:"afr", script:"ascii", speakers:"6600000" },
 
-"kde": { name:"Makonde (Kimakonde)", source:"cldr_kde,UDHR", region:"afr", script:"ascii", speakers:"1400000" },
+"kde": { name:"Makonde (Kimakonde)", source:"cldr_kde,udhr_kde", region:"afr", script:"ascii", speakers:"1400000" },
 
-"mg": { name:"Malagasy", source:"cldr_mg,UDHR", region:"afr", script:"latn", speakers:"18000000", letter:"àâéèêëìîïñôÀÂÉÈÊËÌÎÏÑÔ", mark:"\u{0300}\u{0302}\u{0301}\u{0308}\u{0303}" },  // UDHR has no accents
+"mg": { name:"Malagasy", source:"cldr_mg,udhr_plt", region:"afr", script:"latn", speakers:"18000000", letter:"àâéèêëìîïñôÀÂÉÈÊËÌÎÏÑÔ", mark:"\u{0300}\u{0302}\u{0301}\u{0308}\u{0303}" },  // UDHR has no accents
 
 "mid": { name:"Neo-Mandaic", source:"280e6a9f98147de582820ff2179ebb7727e96147", region:"wasia", script:"mand", speakers:"200", letter:"ࡀࡁࡂࡃࡄࡅࡆࡇࡈࡉࡊࡋࡌࡍࡎࡏࡐࡑࡒࡓࡔࡕࡖࡗࡘ", mark:"\u{0859}\u{085A}\u{085B}", punctuation:"࡞" },
 
@@ -474,11 +472,11 @@ var langs = {
 
 "ml": { name:"Malayalam", source:"cldr_ml,udhr_mal,d347047791774df1311d53dee98495c224fe0166", region:"sasia", script:"mlym", speakers:"38000000", letter:"അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔകൿഖഗഘങചഛജഝഞടഠഡഢണൺതഥദധനൻപഫബഭമയരർലൽവശഷസഹളൾഴറ", mark:"\u{0D03}\u{0D02}\u{0D3E}\u{0D3F}\u{0D40}\u{0D41}\u{0D42}\u{0D43}\u{0D46}\u{0D47}\u{0D48}\u{0D4A}\u{0D4B}\u{0D4C}\u{0D57}\u{0D4D}", punctuation:"‘’“”", other:"\u{200C}\u{200D}", aux:"൦൧൨൩൪൫൬൭൮൯൹।॥" },
 
-"mt": { name:"Maltese", source:"cldr_mt,UDHR", region:"eur", script:"latn", speakers:"520000", letter:"àèìòùÀÈÌÒÙċġħżĊĠĦŻ", mark:"\u{0300}\u{0307}", punctuation:"‘’“”" },
+"mt": { name:"Maltese", source:"cldr_mt,udhr_mlt", region:"eur", script:"latn", speakers:"520000", letter:"àèìòùÀÈÌÒÙċġħżĊĠĦŻ", mark:"\u{0300}\u{0307}", punctuation:"‘’“”" },
 
-"gv": { name:"Manx (Manx Gaelic, Manks)", source:"cldr_gv,UDHR", region:"eur", script:"latn", speakers:"0", letter:"çÇ", mark:"\u{0327}", punctuation:"’" },
+"gv": { name:"Manx (Manx Gaelic, Manks)", source:"cldr_gv,udhr_glv", region:"eur", script:"latn", speakers:"0", letter:"çÇ", mark:"\u{0327}", punctuation:"’" },
 
-"mr": { name:"Marathi", source:"cldr_mr,UDHR", region:"sasia", script:"deva", speakers:"73000000", letter:"ऱॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"‐–—…‘’“”′″", number:"१२३४५६७८९०", other:"\u{200C}\u{200D}", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
+"mr": { name:"Marathi", source:"cldr_mr,udhr_mar", region:"sasia", script:"deva", speakers:"73000000", letter:"ऱॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"\u{093C}\u{0902}\u{0901}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"‐–—…‘’“”′″", number:"१२३४५६७८९०", other:"\u{200C}\u{200D}", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
 
 "mas": { name:"Masai (Maasai, Maa)", source:"cldr_mas", region:"afr", script:"latn", speakers:"1300000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛƐƗƆɄāēīŋōūĀĒĪŊŌŪɛɨɔʉ", mark:"\u{0301}\u{0300}\u{0302}\u{0304}" },
 
@@ -494,61 +492,61 @@ var langs = {
 
 "mua": { name:"Mundang", source:"cldr_mua", region:"afr", script:"latn", speakers:"240000", letter:"ãëõÃËÕǝƁƊƎĩŋĨŊṽṼɓɗ", mark:"\u{0303}\u{0308}" },
 
-"mad": { name:"Madurese", source:"UDHR", region:"seasia", script:"ascii", speakers:"15000000" },
+"mad": { name:"Madurese", source:"udhr_mad", region:"seasia", script:"ascii", speakers:"15000000" },
 
-"mag": { name:"Magahi (Magadhi)", source:"UDHR", region:"sasia", script:"deva", speakers:"14000000", letter:"मनवधकरलसयतषटउचबघणपगठदहभअएऔथओशईजखआडइछफढझञऐ", mark:"\u{093E}\u{093F}\u{0947}\u{0902}\u{0941}\u{094D}\u{094B}\u{0940}\u{093C}\u{0942}\u{094C}\u{0943}\u{0948}\u{0901}", punctuation:"।" },
+"mag": { name:"Magahi (Magadhi)", source:"udhr_mag", region:"sasia", script:"deva", speakers:"14000000", letter:"मनवधकरलसयतषटउचबघणपगठदहभअएऔथओशईजखआडइछफढझञऐ", mark:"\u{093E}\u{093F}\u{0947}\u{0902}\u{0941}\u{094D}\u{094B}\u{0940}\u{093C}\u{0942}\u{094C}\u{0943}\u{0948}\u{0901}", punctuation:"।" },
 
-"mai": { name:"Maithili", source:"UDHR", region:"sasia", script:"deva", speakers:"33900000", letter:"सरवभमनधकघषणटदबएतआउलजपठगअछहऐयशओचथखफइढडङईञʼ", mark:"\u{093E}\u{094D}\u{094C}\u{093F}\u{094B}\u{0902}\u{0947}\u{0901}\u{0940}\u{0943}\u{0942}\u{0941}\u{0903}\u{0948}\u{093C}", punctuation:"।–" },
+"mai": { name:"Maithili", source:"udhr_mai,udhr_mai_2", region:"sasia", script:"deva", speakers:"33900000", letter:"सरवभमनधकघषणटदबएतआउलजपठगअछहऐयशओचथखफइढडङईञʼ", mark:"\u{093E}\u{094D}\u{094C}\u{093F}\u{094B}\u{0902}\u{0947}\u{0901}\u{0940}\u{0943}\u{0942}\u{0941}\u{0903}\u{0948}\u{093C}", punctuation:"।–" },
 
-"vmw": { name:"Makhuwa (Makua, Macua)", source:"UDHR", region:"afr", script:"latn", speakers:"6600000", letter:"çõãÇÕÃ", mark:"\u{0327}\u{0303}", punctuation:"’…" },
+"vmw": { name:"Makhuwa (Makua, Macua)", source:"udhr_vmw", region:"afr", script:"latn", speakers:"6600000", letter:"çõãÇÕÃ", mark:"\u{0327}\u{0303}", punctuation:"’…" },
 
 "dv": { name:"Dhivehi (Maldivian, Divehi)", source:"udhr_div,e9188c572c9c158255cede2459f076ecb3b50b9f", region:"sasia", script:"thaa", speakers:"340000", letter:"ޑސމބރގއދޖލހޢނފކށވޙޤތޕޓޔޝޞޅޚޣޒޠޗޏޘޛޟޜޡޥޱ", mark:"\u{07A8}\u{07AC}\u{07B0}\u{07A6}\u{07A9}\u{07AA}\u{07A7}\u{07AE}\u{07AD}\u{07AB}\u{07AF}", punctuation:"،؛" },
 
-"mam": { name:"Mam", source:"UDHR", region:"cam", script:"ascii", speakers:"540000" },
+"mam": { name:"Mam", source:"udhr_mam", region:"cam", script:"ascii", speakers:"540000" },
 
-"emk": { name:"Eastern Maninkakan", source:"UDHR", region:"afr", script:"latn", speakers:"5000000", letter:"ɲɛɔƝƐƆ" },
+"emk": { name:"Eastern Maninkakan", source:"udhr_emk", region:"afr", script:"latn", speakers:"5000000", letter:"ɲɛɔƝƐƆ" },
 
 "emk-nkoo": { name:"Eastern Maninkakan (N'Ko)", source:"4dd61a887ac709179e0e709861288a0b0098c5d8", region:"afr", script:"nkoo", speakers:"5000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"\u{07EB}\u{07EC}\u{07ED}\u{07EE}\u{07EF}\u{07F0}\u{07F1}\u{07F2}\u{07F3}", number:"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶" },
 
 "mi": { name:"Maori (Te Reo)", source:"cldr_mi,udhr_mri,61f0a8014764c40b5937e54a104576fdf07d24d1", region:"oce", script:"latn", speakers:"60000", letter:"ĀāĒēĪīŌōŪūïÏ", mark:"\u{0304}\u{0308}", punctuation:"‰" },
 
-"arn": { name:"Mapudungun (Mapuzugun, Mapudungu, Araucanian)", source:"UDHR", region:"sam", script:"latn", speakers:"260000", letter:"ñáíóÑÁÍÓ", mark:"\u{0303}\u{0301}" },
+"arn": { name:"Mapudungun (Mapuzugun, Mapudungu, Araucanian)", source:"udhr_arn", region:"sam", script:"latn", speakers:"260000", letter:"ñáíóÑÁÍÓ", mark:"\u{0303}\u{0301}" },
 
-"mh": { name:"Marshallese (Ebon)", source:"UDHR", region:"oce", script:"ascii", speakers:"55000" },
+"mh": { name:"Marshallese (Ebon)", source:"udhr_mah", region:"oce", script:"ascii", speakers:"55000" },
 
-"mcf": { name:"Matsés (Mayoruna)", source:"UDHR", region:"sam", script:"latn", speakers:"3200", letter:"ëË", mark:"\u{0308}" },
+"mcf": { name:"Matsés (Mayoruna)", source:"udhr_mcf", region:"sam", script:"latn", speakers:"3200", letter:"ëË", mark:"\u{0308}" },
 
-"yua": { name:"Yucatán Maya", source:"UDHR", region:"cam", script:"latn", speakers:"790000", letter:"ʼóíáúéÓÍÁÚÉ", mark:"\u{0301}", punctuation:"‐" },
+"yua": { name:"Yucatán Maya", source:"udhr_yua", region:"cam", script:"latn", speakers:"790000", letter:"ʼóíáúéÓÍÁÚÉ", mark:"\u{0301}", punctuation:"‐" },
 
-"maz": { name:"Central Mazahua", source:"UDHR", region:"cam", script:"latn", speakers:"140000", letter:"ñÑ", mark:"\u{0338}\u{0331}\u{0303}" },
+"maz": { name:"Central Mazahua", source:"udhr_maz", region:"cam", script:"latn", speakers:"140000", letter:"ñÑ", mark:"\u{0338}\u{0331}\u{0303}" },
 
-"mzi": { name:"Ixcatlán Mazatec", source:"UDHR", region:"cam", script:"latn", speakers:"8600", letter:"áñíóéÁÑÍÓÉ", mark:"\u{0301}\u{0303}", punctuation:"’" },
+"mzi": { name:"Ixcatlán Mazatec", source:"udhr_mzi", region:"cam", script:"latn", speakers:"8600", letter:"áñíóéÁÑÍÓÉ", mark:"\u{0301}\u{0303}", punctuation:"’" },
 
-"kmb": { name:"Kimbundu (North Mbundu)", source:"UDHR", region:"afr", script:"latn", speakers:"4000000", letter:"êâôÊÂÔ", mark:"\u{0302}", punctuation:"’" },
+"kmb": { name:"Kimbundu (North Mbundu)", source:"udhr_kmb", region:"afr", script:"latn", speakers:"4000000", letter:"êâôÊÂÔ", mark:"\u{0302}", punctuation:"’" },
 
-"men": { name:"Mende", source:"UDHR", region:"afr", script:"latn", speakers:"1400000", letter:"ƆƐŋŊɔɛ", punctuation:"–‐" },
+"men": { name:"Mende", source:"udhr_men", region:"afr", script:"latn", speakers:"1400000", letter:"ƆƐŋŊɔɛ", punctuation:"–‐" },
 
-"mic": { name:"Mi'kmaq (Micmac, Migmaw, Mikmaw)", source:"UDHR", region:"nam", script:"ascii", speakers:"14200" },
+"mic": { name:"Mi'kmaq (Micmac, Migmaw, Mikmaw)", source:"udhr_mic", region:"nam", script:"ascii", speakers:"14200" },
 
-"hna": { name:"Mina (Hina, Besleri)", source:"UDHR", region:"afr", script:"latn", speakers:"11000", letter:"éáìóòúíàèùÉÁÌÓÒÚÍÀÈÙǒǐǔǹƉƐƆǑǏǓǸŋŊɖɛɔ", mark:"\u{0300}\u{0301}\u{030C}" },
+"hna": { name:"Mina (Hina, Besleri)", source:"udhr_hna", region:"afr", script:"latn", speakers:"11000", letter:"éáìóòúíàèùÉÁÌÓÒÚÍÀÈÙǒǐǔǹƉƐƆǑǏǓǸŋŊɖɛɔ", mark:"\u{0300}\u{0301}\u{030C}" },
 
-"min": { name:"Minangkabau", source:"UDHR", region:"seasia", script:"ascii", speakers:"5500000" },
+"min": { name:"Minangkabau", source:"udhr_min", region:"seasia", script:"ascii", speakers:"5500000" },
 
-"mto": { name:"Totontepec Mixe (North Highland Mixe)", source:"UDHR", region:"cam", script:"latn", speakers:"5500", letter:"äüëöéÄÜËÖÉ", mark:"\u{0308}\u{0301}", punctuation:"’" },
+"mto": { name:"Totontepec Mixe (North Highland Mixe)", source:"udhr_mto", region:"cam", script:"latn", speakers:"5500", letter:"äüëöéÄÜËÖÉ", mark:"\u{0308}\u{0301}", punctuation:"’" },
 
-"lus": { name:"Mizo", source:"UDHR", region:"sasia", script:"latn", speakers:"690000", letter:"âêûîãÂÊÛÎÃ", mark:"\u{0302}\u{0303}" },
+"lus": { name:"Mizo", source:"udhr_lus", region:"sasia", script:"latn", speakers:"690000", letter:"âêûîãÂÊÛÎÃ", mark:"\u{0302}\u{0303}" },
 
-"mnw": { name:"Mon", source:"UDHR", region:"seasia", script:"mymr", speakers:"851000", letter:"လကၚအခရမဟပဍစတသဂဒဇနဘဝဗဓထၜယညဆဏဖဿဥဋဉဌဠ", mark:"\u{102D}\u{103A}\u{1031}\u{102C}\u{102B}\u{105E}\u{102F}\u{1036}\u{103D}\u{1032}\u{1039}\u{1035}\u{105F}\u{1033}\u{103C}\u{103E}\u{1030}\u{1060}\u{1038}\u{1034}\u{102E}\u{103B}", punctuation:"၊။", number:"၁၉၄၈၀၂၃၅၆၇" },
+"mnw": { name:"Mon", source:"udhr_mnw", region:"seasia", script:"mymr", speakers:"851000", letter:"လကၚအခရမဟပဍစတသဂဒဇနဘဝဗဓထၜယညဆဏဖဿဥဋဉဌဠ", mark:"\u{102D}\u{103A}\u{1031}\u{102C}\u{102B}\u{105E}\u{102F}\u{1036}\u{103D}\u{1032}\u{1039}\u{1035}\u{105F}\u{1033}\u{103C}\u{103E}\u{1030}\u{1060}\u{1038}\u{1034}\u{102E}\u{103B}", punctuation:"၊။", number:"၁၉၄၈၀၂၃၅၆၇" },
 
-"mxi": { name:"Mozarabic (Andalusi Romance)", source:"UDHR", region:"eur", script:"latn", speakers:"0", letter:"àùèòÀÙÈÒ", mark:"\u{0300}", punctuation:"’" },
+"mxi": { name:"Mozarabic (Andalusi Romance)", source:"udhr_mxi", region:"eur", script:"latn", speakers:"0", letter:"àùèòÀÙÈÒ", mark:"\u{0300}", punctuation:"’" },
 
-"miq": { name:"Mískitu (Miskito)", source:"UDHR", region:"cam", script:"latn", speakers:"150000", letter:"áâÁÂ", mark:"\u{0301}\u{0302}" },
+"miq": { name:"Mískitu (Miskito)", source:"udhr_miq", region:"cam", script:"latn", speakers:"150000", letter:"áâÁÂ", mark:"\u{0301}\u{0302}" },
 
-"mos": { name:"Mòoré (Mossi, Mooré)", source:"UDHR", region:"afr", script:"latn", speakers:"7600000", letter:"ãõÃÕƖƱƐĩũœĨŨŒẽẼɩʊɛ", mark:"\u{0303}", punctuation:"’" },
+"mos": { name:"Mòoré (Mossi, Mooré)", source:"udhr_mos", region:"afr", script:"latn", speakers:"7600000", letter:"ãõÃÕƖƱƐĩũœĨŨŒẽẼɩʊɛ", mark:"\u{0303}", punctuation:"’" },
 
 "naq": { name:"Khoekhoe (Nama, Hottentot)", source:"cldr_naq", region:"afr", script:"latn", speakers:"300000", letter:"ǀǁǂǃâîôûÂÎÔÛ", mark:"\u{0302}" },
 
-"ne": { name:"Nepali", source:"cldr_ne,UDHR", region:"sasia", script:"deva", speakers:"40000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"\u{093C}\u{0901}\u{0902}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"।", number:"१२३४५६७८९०", other:"\u{200D}", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
+"ne": { name:"Nepali", source:"cldr_ne,udhr_nep", region:"sasia", script:"deva", speakers:"40000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"\u{093C}\u{0901}\u{0902}\u{0903}\u{093E}\u{093F}\u{0940}\u{0941}\u{0942}\u{0943}\u{0945}\u{0947}\u{0948}\u{0949}\u{094B}\u{094C}\u{094D}", punctuation:"।", number:"१२३४५६७८९०", other:"\u{200D}", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here." },
 
 "nnh": { name:"Ngiemboon", source:"cldr_nnh", region:"afr", script:"latn", speakers:"250000", letter:"ʼáàâéèêíìóòôúùûÿÁÀÂÉÈÊÍÌÓÒÔÚÙÛǎǒǔǍƐǑƆǓɄěńŋĚŃŊŸḿẅḾẄɛɔʉ", mark:"\u{0301}\u{0300}\u{0302}\u{030C}\u{0308}", punctuation:"«»‘’" },
 
@@ -568,49 +566,49 @@ var langs = {
 
 "nus": { name:"Nuer (Thok Naath)", source:"cldr_nus", region:"afr", script:"latn", speakers:"890000", letter:"äëïöÄËÏÖƐƔƆŋŊɛɣɔ", mark:"\u{0331}\u{0308}" },
 
-"nyn": { name:"Nyankore (Nkore, Nkole, Nyankole, Orunyankore, Orunyankole, Runyankore, Runyankole)", source:"cldr_nyn,UDHR", region:"afr", script:"ascii", speakers:"2300000" },
+"nyn": { name:"Nyankore (Nkore, Nkole, Nyankole, Orunyankore, Orunyankole, Runyankore, Runyankole)", source:"cldr_nyn,udhr_nyn", region:"afr", script:"ascii", speakers:"2300000" },
 
-"nah": { name:"Nahuatl (Aztec)", source:"UDHR", region:"cam", script:"latn", speakers:"1700000", letter:"íÍ", mark:"\u{0301}" },
+"nah": { name:"Nahuatl (Aztec)", source:"udhr_nhn", region:"cam", script:"latn", speakers:"1700000", letter:"íÍ", mark:"\u{0301}" },
 
-"gld": { name:"Nanai (Gold, Goldi, Hezhen)", source:"UDHR", region:"nasia", script:"cyrl", speakers:"1400", letter:"найпрвослиебщдкцягьмзюуёчэӈтхӣӯъфжНАЙПРВОСЛИЕБЩДКЦЯГЬМЗЮУЁЧЭӇТХӢӮЪФЖ", mark:"\u{0304}\u{0306}\u{0308}", punctuation:"–" },
+"gld": { name:"Nanai (Gold, Goldi, Hezhen)", source:"udhr_gld", region:"nasia", script:"cyrl", speakers:"1400", letter:"найпрвослиебщдкцягьмзюуёчэӈтхӣӯъфжНАЙПРВОСЛИЕБЩДКЦЯГЬМЗЮУЁЧЭӇТХӢӮЪФЖ", mark:"\u{0304}\u{0306}\u{0308}", punctuation:"–" },
 
-"nv": { name:"Navajo (Navaho)", source:"UDHR", region:"nam", script:"latn", speakers:"266000", letter:"ʼéóáíÉÓÁÍǫǪąłįęĄŁĮĘ", mark:"\u{0328}\u{0301}" },
+"nv": { name:"Navajo (Navaho)", source:"udhr_nav", region:"nam", script:"latn", speakers:"266000", letter:"ʼéóáíÉÓÁÍǫǪąłįęĄŁĮĘ", mark:"\u{0328}\u{0301}" },
 
-"nr": { name:"Ndebele (Southern Ndebele, Transvaal Ndebele)", source:"UDHR", region:"afr", script:"ascii", speakers:"1100000" },
+"nr": { name:"Ndebele (Southern Ndebele, Transvaal Ndebele)", source:"udhr_nbl", region:"afr", script:"ascii", speakers:"1100000" },
 
-"ng": { name:"Ndonga, (Oshindonga)", source:"UDHR", region:"afr", script:"ascii", speakers:"810000" },
+"ng": { name:"Ndonga, (Oshindonga)", source:"udhr_ndo", region:"afr", script:"ascii", speakers:"810000" },
 
-"nio": { name:"Nganasan", source:"UDHR", region:"nasia", script:"cyrl", speakers:"130", letter:"нерәзытбуоясикаӈҫүдйхлмпвгөъцьчэщжюНЕРӘЗЫТБУОЯСИКАӇҪҮДЙХЛМПВГӨЪЦЬЧЭЩЖЮ", mark:"\u{0306}", punctuation:"”" },
+"nio": { name:"Nganasan", source:"udhr_nio", region:"nasia", script:"cyrl", speakers:"130", letter:"нерәзытбуоясикаӈҫүдйхлмпвгөъцьчэщжюНЕРӘЗЫТБУОЯСИКАӇҪҮДЙХЛМПВГӨЪЦЬЧЭЩЖЮ", mark:"\u{0306}", punctuation:"”" },
 
-"not": { name:"Nomatsiguenga", source:"UDHR", region:"sam", script:"latn", speakers:"6500", letter:"ëíáóñËÍÁÓÑ", mark:"\u{0308}\u{0301}\u{0303}" },
+"not": { name:"Nomatsiguenga", source:"udhr_not", region:"sam", script:"latn", speakers:"6500", letter:"ëíáóñËÍÁÓÑ", mark:"\u{0308}\u{0301}\u{0303}" },
 
 "ii": { name:"Nuosu (Nosu, Northern Yi, Liangshan Yi, Sichuan Yi)", source:"cldr_ii,udhr_iii", region:"easia", script:"yiii", speakers:"2000000", letter:"ꀀꀁꀂꀃꀄꀅꀆꀇꀈꀉꀊꀋꀌꀍꀎꀏꀐꀑꀒꀓꀔꀕꀖꀗꀘꀙꀚꀛꀜꀝꀞꀟꀠꀡꀢꀣꀤꀥꀦꀧꀨꀩꀪꀫꀬꀭꀮꀯꀰꀱꀲꀳꀴꀵꀶꀷꀸꀹꀺꀻꀼꀽꀾꀿꁀꁁꁂꁃꁄꁅꁆꁇꁈꁉꁊꁋꁌꁍꁎꁏꁐꁑꁒꁓꁔꁕꁖꁗꁘꁙꁚꁛꁜꁝꁞꁟꁠꁡꁢꁣꁤꁥꁦꁧꁨꁩꁪꁫꁬꁭꁮꁯꁰꁱꁲꁳꁴꁵꁶꁷꁸꁹꁺꁻꁼꁽꁾꁿꂀꂁꂂꂃꂄꂅꂆꂇꂈꂉꂊꂋꂌꂍꂎꂏꂐꂑꂒꂓꂔꂕꂖꂗꂘꂙꂚꂛꂜꂝꂞꂟꂠꂡꂢꂣꂤꂥꂦꂧꂨꂩꂪꂫꂬꂭꂮꂯꂰꂱꂲꂳꂴꂵꂶꂷꂸꂹꂺꂻꂼꂽꂾꂿꃀꃁꃂꃃꃄꃅꃆꃇꃈꃉꃊꃋꃌꃍꃎꃏꃐꃑꃒꃓꃔꃕꃖꃗꃘꃙꃚꃛꃜꃝꃞꃟꃠꃡꃢꃣꃤꃥꃦꃧꃨꃩꃪꃫꃬꃭꃮꃯꃰꃱꃲꃳꃴꃵꃶꃷꃸꃹꃺꃻꃼꃽꃾꃿꄀꄁꄂꄃꄄꄅꄆꄇꄈꄉꄊꄋꄌꄍꄎꄏꄐꄑꄒꄓꄔꄕꄖꄗꄘꄙꄚꄛꄜꄝꄞꄟꄠꄡꄢꄣꄤꄥꄦꄧꄨꄩꄪꄫꄬꄭꄮꄯꄰꄱꄲꄳꄴꄵꄶꄷꄸꄹꄺꄻꄼꄽꄾꄿꅀꅁꅂꅃꅄꅅꅆꅇꅈꅉꅊꅋꅌꅍꅎꅏꅐꅑꅒꅓꅔꅕꅖꅗꅘꅙꅚꅛꅜꅝꅞꅟꅠꅡꅢꅣꅤꅥꅦꅧꅨꅩꅪꅫꅬꅭꅮꅯꅰꅱꅲꅳꅴꅵꅶꅷꅸꅹꅺꅻꅼꅽꅾꅿꆀꆁꆂꆃꆄꆅꆆꆇꆈꆉꆊꆋꆌꆍꆎꆏꆐꆑꆒꆓꆔꆕꆖꆗꆘꆙꆚꆛꆜꆝꆞꆟꆠꆡꆢꆣꆤꆥꆦꆧꆨꆩꆪꆫꆬꆭꆮꆯꆰꆱꆲꆳꆴꆵꆶꆷꆸꆹꆺꆻꆼꆽꆾꆿꇀꇁꇂꇃꇄꇅꇆꇇꇈꇉꇊꇋꇌꇍꇎꇏꇐꇑꇒꇓꇔꇕꇖꇗꇘꇙꇚꇛꇜꇝꇞꇟꇠꇡꇢꇣꇤꇥꇦꇧꇨꇩꇪꇫꇬꇭꇮꇯꇰꇱꇲꇳꇴꇵꇶꇷꇸꇹꇺꇻꇼꇽꇾꇿꈀꈁꈂꈃꈄꈅꈆꈇꈈꈉꈊꈋꈌꈍꈎꈏꈐꈑꈒꈓꈔꈕꈖꈗꈘꈙꈚꈛꈜꈝꈞꈟꈠꈡꈢꈣꈤꈥꈦꈧꈨꈩꈪꈫꈬꈭꈮꈯꈰꈱꈲꈳꈴꈵꈶꈷꈸꈹꈺꈻꈼꈽꈾꈿꉀꉁꉂꉃꉄꉅꉆꉇꉈꉉꉊꉋꉌꉍꉎꉏꉐꉑꉒꉓꉔꉕꉖꉗꉘꉙꉚꉛꉜꉝꉞꉟꉠꉡꉢꉣꉤꉥꉦꉧꉨꉩꉪꉫꉬꉭꉮꉯꉰꉱꉲꉳꉴꉵꉶꉷꉸꉹꉺꉻꉼꉽꉾꉿꊀꊁꊂꊃꊄꊅꊆꊇꊈꊉꊊꊋꊌꊍꊎꊏꊐꊑꊒꊓꊔꊕꊖꊗꊘꊙꊚꊛꊜꊝꊞꊟꊠꊡꊢꊣꊤꊥꊦꊧꊨꊩꊪꊫꊬꊭꊮꊯꊰꊱꊲꊳꊴꊵꊶꊷꊸꊹꊺꊻꊼꊽꊾꊿꋀꋁꋂꋃꋄꋅꋆꋇꋈꋉꋊꋋꋌꋍꋎꋏꋐꋑꋒꋓꋔꋕꋖꋗꋘꋙꋚꋛꋜꋝꋞꋟꋠꋡꋢꋣꋤꋥꋦꋧꋨꋩꋪꋫꋬꋭꋮꋯꋰꋱꋲꋳꋴꋵꋶꋷꋸꋹꋺꋻꋼꋽꋾꋿꌀꌁꌂꌃꌄꌅꌆꌇꌈꌉꌊꌋꌌꌍꌎꌏꌐꌑꌒꌓꌔꌕꌖꌗꌘꌙꌚꌛꌜꌝꌞꌟꌠꌡꌢꌣꌤꌥꌦꌧꌨꌩꌪꌫꌬꌭꌮꌯꌰꌱꌲꌳꌴꌵꌶꌷꌸꌹꌺꌻꌼꌽꌾꌿꍀꍁꍂꍃꍄꍅꍆꍇꍈꍉꍊꍋꍌꍍꍎꍏꍐꍑꍒꍓꍔꍕꍖꍗꍘꍙꍚꍛꍜꍝꍞꍟꍠꍡꍢꍣꍤꍥꍦꍧꍨꍩꍪꍫꍬꍭꍮꍯꍰꍱꍲꍳꍴꍵꍶꍷꍸꍹꍺꍻꍼꍽꍾꍿꎀꎁꎂꎃꎄꎅꎆꎇꎈꎉꎊꎋꎌꎍꎎꎏꎐꎑꎒꎓꎔꎕꎖꎗꎘꎙꎚꎛꎜꎝꎞꎟꎠꎡꎢꎣꎤꎥꎦꎧꎨꎩꎪꎫꎬꎭꎮꎯꎰꎱꎲꎳꎴꎵꎶꎷꎸꎹꎺꎻꎼꎽꎾꎿꏀꏁꏂꏃꏄꏅꏆꏇꏈꏉꏊꏋꏌꏍꏎꏏꏐꏑꏒꏓꏔꏕꏖꏗꏘꏙꏚꏛꏜꏝꏞꏟꏠꏡꏢꏣꏤꏥꏦꏧꏨꏩꏪꏫꏬꏭꏮꏯꏰꏱꏲꏳꏴꏵꏶꏷꏸꏹꏺꏻꏼꏽꏾꏿꐀꐁꐂꐃꐄꐅꐆꐇꐈꐉꐊꐋꐌꐍꐎꐏꐐꐑꐒꐓꐔꐕꐖꐗꐘꐙꐚꐛꐜꐝꐞꐟꐠꐡꐢꐣꐤꐥꐦꐧꐨꐩꐪꐫꐬꐭꐮꐯꐰꐱꐲꐳꐴꐵꐶꐷꐸꐹꐺꐻꐼꐽꐾꐿꑀꑁꑂꑃꑄꑅꑆꑇꑈꑉꑊꑋꑌꑍꑎꑏꑐꑑꑒꑓꑔꑕꑖꑗꑘꑙꑚꑛꑜꑝꑞꑟꑠꑡꑢꑣꑤꑥꑦꑧꑨꑩꑪꑫꑬꑭꑮꑯꑰꑱꑲꑳꑴꑵꑶꑷꑸꑹꑺꑻꑼꑽꑾꑿꒀꒁꒂꒃꒄꒅꒆꒇꒈꒉꒊꒋꒌ", punctuation:"《》。、，（）：" },
 
-"nym": { name:"Nyamwezi", source:"UDHR", region:"afr", script:"ascii", speakers:"1000000" },
+"nym": { name:"Nyamwezi", source:"udhr_nym", region:"afr", script:"ascii", speakers:"1000000" },
 
-"ny": { name:"Chichewa (Chewa, Nyanja, Chichewa, Chinyanja)", source:"UDHR", region:"afr", script:"ascii", speakers:"12000000" },
+"ny": { name:"Chichewa (Chewa, Nyanja, Chichewa, Chinyanja)", source:"udhr_nya_chechewa", region:"afr", script:"ascii", speakers:"12000000" },
 
-"nba": { name:"Nyemba", source:"UDHR", region:"afr", script:"latn", speakers:"900000", letter:"ñÑ", mark:"\u{0303}" },
+"nba": { name:"Nyemba", source:"udhr_nba", region:"afr", script:"latn", speakers:"900000", letter:"ñÑ", mark:"\u{0303}" },
 
-"nzi": { name:"Nzima (Appolo)", source:"UDHR", region:"afr", script:"latn", speakers:"330000", letter:"ɔɛƆƐ" },
+"nzi": { name:"Nzima (Appolo)", source:"udhr_nzi", region:"afr", script:"latn", speakers:"330000", letter:"ɔɛƆƐ" },
 
 "or": { name:"Oriya (Odia)", source:"cldr_or", region:"sasia", script:"orya", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"\u{0B3C}\u{0B01}\u{0B02}\u{0B03}\u{0B3E}\u{0B3F}\u{0B40}\u{0B41}\u{0B42}\u{0B43}\u{0B47}\u{0B48}\u{0B4B}\u{0B4C}\u{0B4D}\u{0B56}\u{0B57}", number:"୦୧୨୩୪୫୬୭୮୯" },
 
-"om": { name:"Oromo", source:"cldr_om,UDHR", region:"afr", script:"ascii", speakers:"25542000" },
+"om": { name:"Oromo", source:"cldr_om,udhr_gax", region:"afr", script:"ascii", speakers:"25542000" },
 
-"os": { name:"Ossetian (Ossete, Ossetic)", source:"cldr_os,UDHR", region:"eur", script:"cyrl", speakers:"570000", letter:"аӕбвгъджзеёийклмнопрстуфхцчшщыьэюяАӔБВГЪДЖЗЕЁИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ", punctuation:"‐–—…‘‚“„«»§" },
+"os": { name:"Ossetian (Ossete, Ossetic)", source:"cldr_os,udhr_oss", region:"eur", script:"cyrl", speakers:"570000", letter:"аӕбвгъджзеёийклмнопрстуфхцчшщыьэюяАӔБВГЪДЖЗЕЁИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ", punctuation:"‐–—…‘‚“„«»§" },
 
-"oc": { name:"Occitan", source:"UDHR", region:"eur", script:"latn", speakers:"~200000", letter:"óèéçàïòìùúâêîëáôüûÓÈÉÇÀÏÒÌÙÚÂÊÎËÁÔÜÛ", mark:"\u{0301}\u{0300}\u{0327}\u{0308}\u{0302}", punctuation:"«»’—" },
+"oc": { name:"Occitan", source:"udhr_lnc", region:"eur", script:"latn", speakers:"~200000", letter:"óèéçàïòìùúâêîëáôüûÓÈÉÇÀÏÒÌÙÚÂÊÎËÁÔÜÛ", mark:"\u{0301}\u{0300}\u{0327}\u{0308}\u{0302}", punctuation:"«»’—" },
 
-"oj": { name:"Ojibwe (Ojibwa, Ojibway, Chippewa, Otchipwe)", source:"UDHR", region:"nam", script:"cans", speakers:"100880", letter:"ᐯᒪᑎᓯᑦᑌᐸᑫᑕᑯᐎᓇᓐᒥᐌᑲᒃᔭᐊᓂᐃᔑᑭᔝᐤᐅᑾᐱᔦᑐᐗᒣᒋᐁᔅᓱᓀᓄᒧᓭᔥᐨᑡᔕᓴᓶᓉᐺᓪᑉᐼᑴᑄᒐᒬᔐᔗᑺᔡᒻᒡᑶ" },
+"oj": { name:"Ojibwe (Ojibwa, Ojibway, Chippewa, Otchipwe)", source:"udhr_ojb", region:"nam", script:"cans", speakers:"100880", letter:"ᐯᒪᑎᓯᑦᑌᐸᑫᑕᑯᐎᓇᓐᒥᐌᑲᒃᔭᐊᓂᐃᔑᑭᔝᐤᐅᑾᐱᔦᑐᐗᒣᒋᐁᔅᓱᓀᓄᒧᓭᔥᐨᑡᔕᓴᓶᓉᐺᓪᑉᐼᑴᑄᒐᒬᔐᔗᑺᔡᒻᒡᑶ" },
 
-"oki": { name:"Okiek", source:"UDHR", region:"afr", script:"ascii", speakers:"79000" },
+"oki": { name:"Okiek", source:"udhr_oki", region:"afr", script:"ascii", speakers:"79000" },
 
-"oaa": { name:"Orok (Uilta, Ulta, Ujlta)", source:"UDHR", region:"nasia", script:"cyrl", speakers:"50", letter:"ƝūŪɲԩԨчипалнесдкробуӡгэӈмхтөвӯзЧИПАЛНЕСДКРОБУӠГЭӇМХТӨВӮЗ", mark:"\u{0304}", punctuation:"–" },
+"oaa": { name:"Orok (Uilta, Ulta, Ujlta)", source:"udhr_oaa", region:"nasia", script:"cyrl", speakers:"50", letter:"ƝūŪɲԩԨчипалнесдкробуӡгэӈмхтөвӯзЧИПАЛНЕСДКРОБУӠГЭӇМХТӨВӮЗ", mark:"\u{0304}", punctuation:"–" },
 
-"ote": { name:"Mezquital Otomi", source:"UDHR", region:"cam", script:"latn", speakers:"130000", letter:"öüäéñúíáèÖÜÄÉÑÚÍÁÈ", mark:"\u{0331}\u{0308}\u{0301}\u{0303}\u{0300}" },
+"ote": { name:"Mezquital Otomi", source:"udhr_ote", region:"cam", script:"latn", speakers:"130000", letter:"öüäéñúíáèÖÜÄÉÑÚÍÁÈ", mark:"\u{0331}\u{0308}\u{0301}\u{0303}\u{0300}" },
 
-"lot": { name:"Otuho (Lotuko)", source:"UDHR", region:"afr", script:"ascii", speakers:"140000" },
+"lot": { name:"Otuho (Lotuko)", source:"udhr_lot", region:"afr", script:"ascii", speakers:"140000" },
 
 "ps": { name:"Pashto (Pushtu, Pushto)", source:"cldr_ps", region:"casia", script:"arab", speakers:"~50000000", letter:"آاأءبپتټثجځچڅحخدډذرړزژږسشښصضطظعغفقکګگلمنڼهةوؤیيېۍئ", mark:"\u{064B}\u{064C}\u{064D}\u{064E}\u{064F}\u{0650}\u{0651}\u{0652}\u{0670}\u{0654}\u{0653}", punctuation:"٫٬٪؉‰", number:"۰۱۲۳۴۵۶۷۸۹", symbol:"−" },
 
@@ -624,35 +622,35 @@ var langs = {
 
 "pa-arab": { name:"Punjabi (Arabic)", source:"cldr_pa_Arab", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابتثجحخدذرزسشصضطظعغفقلمنهويٹپچڈڑژکگںھہیے", mark:"ُٓٔ", punctuation:"‰", other:"\u{200E}\u{200F}", aux:"أاةٔٺٻټٽ" },
 
-"pnb": { name:"Western Panjabi", source:"cldr_pnb,UDHR", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںهھہویےي", mark:"\u{064F}\u{0653}\u{0654}", punctuation:"‐–—‘’“”′″" },
+"pnb": { name:"Western Panjabi", source:"cldr_pnb,udhr_pnb", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںهھہویےي", mark:"\u{064F}\u{0653}\u{0654}", punctuation:"‐–—‘’“”′″" },
 
-"pau": { name:"Palauan", source:"UDHR", region:"seasia", script:"ascii", speakers:"17000" },
+"pau": { name:"Palauan", source:"udhr_pau", region:"seasia", script:"ascii", speakers:"17000" },
 
-"pam": { name:"Pampangan (Kapampangan)", source:"UDHR", region:"seasia", script:"ascii", speakers:"1900000" },
+"pam": { name:"Pampangan (Kapampangan)", source:"udhr_pam", region:"seasia", script:"ascii", speakers:"1900000" },
 
-"pap": { name:"Papiamento (Papiamentu)", source:"UDHR", region:"carib", script:"latn", speakers:"271261", letter:"ñÑ", mark:"\u{0303}", punctuation:"’" },
+"pap": { name:"Papiamento (Papiamentu)", source:"udhr_pap", region:"carib", script:"latn", speakers:"271261", letter:"ñÑ", mark:"\u{0303}", punctuation:"’" },
 
-"pcd": { name:"Picard", source:"UDHR", region:"eur", script:"latn", speakers:"700000", letter:"èåûîéôçÈÅÛÎÉÔÇ", mark:"\u{0327}\u{0300}\u{030A}\u{0302}\u{0301}", symbol:"°" },
+"pcd": { name:"Picard", source:"udhr_pcd", region:"eur", script:"latn", speakers:"700000", letter:"èåûîéôçÈÅÛÎÉÔÇ", mark:"\u{0327}\u{0300}\u{030A}\u{0302}\u{0301}", symbol:"°" },
 
-"pcm": { name:"Nigerian Pidgin", source:"UDHR", region:"afr", script:"ascii", speakers:"30000000" },
+"pcm": { name:"Nigerian Pidgin", source:"udhr_pcm", region:"afr", script:"ascii", speakers:"30000000" },
 
-"pis": { name:"Pijin", source:"UDHR", region:"oce", script:"ascii", speakers:"24000" },
+"pis": { name:"Pijin", source:"udhr_pis", region:"oce", script:"ascii", speakers:"24000" },
 
-"piu": { name:"Pintupi-Luritja", source:"UDHR", region:"oce", script:"ascii", speakers:"1703" },
+"piu": { name:"Pintupi-Luritja", source:"udhr_piu", region:"oce", script:"ascii", speakers:"1703" },
 
-"ppl": { name:"Pipil", source:"UDHR", region:"cam", script:"latn", speakers:"500", letter:"áéÁÉ", mark:"\u{0301}" },
+"ppl": { name:"Pipil", source:"udhr_ppl", region:"cam", script:"latn", speakers:"500", letter:"áéÁÉ", mark:"\u{0301}" },
 
-"pon": { name:"Pohnpeian (Ponapean)", source:"UDHR", region:"oce", script:"ascii", speakers:"31000" },
+"pon": { name:"Pohnpeian (Ponapean)", source:"udhr_pon", region:"oce", script:"ascii", speakers:"31000" },
 
 "qu": { name:"Quechua", source:"cldr_qu", region:"sam", script:"latn", speakers:"?", letter:"Ññʼ", mark:"̃", punctuation:"‰", aux:"ĀāĂăĒēĔĕĪīĬĭŌōŎŏŒœŪūŬŭŸÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÒÓÔÖØÙÚÛÜàáâãäåæçèéêëìíîïòóôöøùúûüÿ̧̀́̂̃̄̆̈̊", notes:"qu is a macrolanguage that encompasses the following more specific primary language subtags: cqu qub qud quf qug quh quk qul qup qur qus quw qux quy quz qva qvc qve qvh qvi qvj qvl qvm qvn qvo qvp qvs qvw qvz qwa qwc qwh qws qxa qxc qxh qxl qxn qxo qxp qxr qxt qxu qxw. qu is often preferred by legacy applications rather than qxp (Quechua, Puno)." },
 
-"fuf": { name:"Pular", source:"UDHR", region:"afr", script:"ascii", speakers:"3000000" },
+"fuf": { name:"Pular", source:"udhr_fuf", region:"afr", script:"ascii", speakers:"3000000" },
 
-"fuf-adlm": { name:"Pular (Adlam)", source:"UDHR", region:"afr", script:"adlm", speakers:"3000000", letter:"𞤩𞤢𞤲𞤺𞤭𞤣𞤫𞤸𞤤𞤴𞤳𞤮𞤪𞤶𞤯𞤼𞤵𞤱𞤬𞤥𞤧𞤨𞤻𞤦𞤷𞤰𞤾𞤇𞤀𞤐𞤘𞤋𞤁𞤉𞤖𞤂𞤒𞤑𞤌𞤈𞤔𞤍𞤚𞤓𞤏𞤊𞤃𞤅𞤆𞤙𞤄𞤕𞤎𞤜ŋŊƭƬ", mark:"\u{1E946}\u{1E945}\u{1E944}", punctuation:"،؛’⹁", number:"𞥒𞥓𞥔𞥕𞥖𞥗𞥘𞥙𞥑𞥐" },
+"fuf-adlm": { name:"Pular (Adlam)", source:"udhr_fuf_adlm", region:"afr", script:"adlm", speakers:"3000000", letter:"𞤩𞤢𞤲𞤺𞤭𞤣𞤫𞤸𞤤𞤴𞤳𞤮𞤪𞤶𞤯𞤼𞤵𞤱𞤬𞤥𞤧𞤨𞤻𞤦𞤷𞤰𞤾𞤇𞤀𞤐𞤘𞤋𞤁𞤉𞤖𞤂𞤒𞤑𞤌𞤈𞤔𞤍𞤚𞤓𞤏𞤊𞤃𞤅𞤆𞤙𞤄𞤕𞤎𞤜ŋŊƭƬ", mark:"\u{1E946}\u{1E945}\u{1E944}", punctuation:"،؛’⹁", number:"𞥒𞥓𞥔𞥕𞥖𞥗𞥘𞥙𞥑𞥐" },
 
-"tsz": { name:"Purépecha (Tarascan)", source:"UDHR", region:"cam", script:"latn", speakers:"125000", letter:"áïéíÁÏÉÍⱭƲŋŊɑʋ", mark:"\u{0301}\u{0308}" },
+"tsz": { name:"Purépecha (Tarascan)", source:"udhr_tsz", region:"cam", script:"latn", speakers:"125000", letter:"áïéíÁÏÉÍⱭƲŋŊɑʋ", mark:"\u{0301}\u{0308}" },
 
-"pbb": { name:"Páez (Paez, Paes, Nasa Yuwe)", source:"UDHR", region:"sam", script:"latn", speakers:"40000", letter:"üëäïáÜËÄÏÁ", mark:"\u{0308}\u{0301}" },
+"pbb": { name:"Páez (Paez, Paes, Nasa Yuwe)", source:"udhr_pbb", region:"sam", script:"latn", speakers:"40000", letter:"üëäïáÜËÄÏÁ", mark:"\u{0308}\u{0301}" },
 
 "ro": { name:"Romanian (Rumanian, Roumanian)", source:"cldr_ro,udhr_ron_2006,udhr_ron_1993,udhr_ron_1953", region:"eur", script:"latn", speakers:"~25000000", letter:"âîÂÎșțȘȚăĂ", mark:"\u{0326}\u{0306}\u{0302}", punctuation:"«»‐–—…‘“”„", aux:"şţŞŢáàåäçéèêëñöüÁÀÅÄÇÉÈÊËÑÖǗ̧̀̊̈̃" },
 
@@ -660,15 +658,15 @@ var langs = {
 
 "rof": { name:"Rombo (Kirombo)", source:"cldr_rof", region:"afr", script:"ascii", speakers:"?" },
 
-"rn": { name:"Rundi (Kirundi)", source:"cldr_rn,UDHR", region:"afr", script:"ascii", speakers:"8800000" },
+"rn": { name:"Rundi (Kirundi)", source:"cldr_rn,udhr_run", region:"afr", script:"ascii", speakers:"8800000" },
 
 "ru": { name:"Russian", source:"cldr_ru,udhr_rus", region:"eur", script:"cyrl", speakers:"150000000", letter:"всеобщаядклрципчнтзгшюйьмуыхъжэфёВСЕОБЩАЯДКЛРЦИПЧНТЗГШЮЙЬМУЫХЪЖЭФЁ", mark:"\u{0306}\u{0308}", punctuation:"‐–—…‘‚“„«»§", aux:"́" },
 
 "rwk": { name:"Rwa (Rwo, Meru, Kirwo)", source:"cldr_rwk", region:"afr", script:"ascii", speakers:"400000" },
 
-"rar": { name:"Cook Islands Māori (Rarotongan)", source:"UDHR", region:"oce", script:"ascii", speakers:"21725" },
+"rar": { name:"Cook Islands Māori (Rarotongan)", source:"udhr_rar", region:"oce", script:"ascii", speakers:"21725" },
 
-"rom": { name:"Romani (Romany, Gypsy, Gipsy)", source:"UDHR", region:"eur", script:"latn", speakers:"~1500000", letter:"àõùèìòâÀÕÙÈÌÒÂƟśěćŕăąňűźőģůščžŚĚĆŔĂĄŇŰŹŐĢŮŠČŽɵ", mark:"\u{0328}\u{0327}\u{0300}\u{0301}\u{030C}\u{0303}\u{0306}\u{030B}\u{0302}\u{030A}" },
+"rom": { name:"Romani (Romany, Gypsy, Gipsy)", source:"udhr_rmn,udhr_rmn_1", region:"eur", script:"latn", speakers:"~1500000", letter:"àõùèìòâÀÕÙÈÌÒÂƟśěćŕăąňűźőģůščžŚĚĆŔĂĄŇŰŹŐĢŮŠČŽɵ", mark:"\u{0328}\u{0327}\u{0300}\u{0301}\u{030C}\u{0303}\u{0306}\u{030B}\u{0302}\u{030A}" },
 
 "sah": { name:"Yakut (Sakha)", source:"cldr_sah,udhr_sah", region:"nasia", script:"cyrl", speakers:"450000", letter:"абгҕдьийклмнҥоөпрстуүхһчыэецязювщъжфАБГҔДЬИЙКЛМНҤОӨПРСТУҮХҺЧЫЭЕЦЯЗЮВЩЪЖФ", mark:"\u{0306}", aux:"веёжзфцшщъюяВЕЁЖЗФЦШЩЪЮЯ̈" },
 
@@ -686,7 +684,7 @@ var langs = {
 
 "ksb": { name:"Shambala (Shambaa)", source:"cldr_ksb", region:"afr", script:"ascii", speakers:"660000" },
 
-"sn": { name:"Shona", source:"cldr_sn,UDHR", region:"afr", script:"ascii", speakers:"15000000" },
+"sn": { name:"Shona", source:"cldr_sn,udhr_sna", region:"afr", script:"ascii", speakers:"15000000" },
 
 "si": { name:"Sinhala (Sinhalese)", source:"cldr_si,udhr_sin,0de67cc747d85485d1c6e7c99ee9a6e885c80803", region:"sasia", script:"sinh", speakers:"16000000", letter:"අආඇඈඉඊඋඌඍඑඒඓඔඕඖකඛගඝඞඟචඡජඣඥටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ", mark:"\u{D82}\u{D83}\u{DCA}\u{DCF}\u{DD0}\u{DD1}\u{DD2}\u{DD3}\u{DD4}\u{DD6}\u{DD8}\u{DD9}\u{DDA}\u{DDB}\u{DDC}\u{DDD}\u{DDE}\u{DDF}", punctuation:"§‐–—…‘’“”†‡′″", other:"\u{200D}" },
 
@@ -696,67 +694,67 @@ var langs = {
 
 "xog": { name:"Soga (Lusoga)", source:"cldr_xog", region:"afr", script:"ascii", speakers:"2100000" },
 
-"so": { name:"Somali", source:"cldr_so,UDHR", region:"afr", script:"ascii", speakers:"15000000" },
+"so": { name:"Somali", source:"cldr_so,udhr_som", region:"afr", script:"ascii", speakers:"15000000" },
 
 "es": { name:"Spanish (Castilian)", source:"cldr_es,udhr_spa", region:"eur", script:"latn", speakers:"480000000", letter:"áéíïñóúüýÁÉÍÏÑÓÚÜÝ", mark:"\u{0301}\u{0308}\u{0303}", punctuation:"‐–—…‘’“”†‡′″¡¿«»§", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªàâåäãæçèêëìîºòôöøùûÿÀÂÅÄÃÆÇÈÊËÌÎÒÔÖØÙÛ̧̀̆̂̊̄" },
 
-"sw": { name:"Swahili (Kiswahili)", source:"cldr_sw,UDHR", region:"afr", script:"ascii", speakers:"~7000000" },
+"sw": { name:"Swahili (Kiswahili)", source:"cldr_sw,udhr_swh", region:"afr", script:"ascii", speakers:"~7000000" },
 
 "sv": { name:"Swedish", source:"cldr_sv,udhr_swe", region:"eur", script:"latn", speakers:"10000000", letter:"àéåäöÀÉÅÄÖ", mark:"\u{0300}\u{0301}\u{030A}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″", aux:"āīĀĪŸáâãçèëíîïñóúÿüæøÁÂÃÇÈËÍÎÏÑÓÚÜÆØ̧̂̃̄" },
 
 "gsw": { name:"Swiss German", source:"cldr_gsw", region:"eur", script:"latn", speakers:"4930000", letter:"äöüÄÖÜ", mark:"\u{0308}", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåæçéèêëíìîïñóòôøúùûÿÁÀÂÅÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧́̀̆̂̊̄̃" },
 
-"sm": { name:"Samoan", source:"UDHR", region:"oce", script:"ascii", speakers:"510000" },
+"sm": { name:"Samoan", source:"udhr_smo", region:"oce", script:"ascii", speakers:"510000" },
 
-"sa": { name:"Sanskrit", source:"UDHR", region:"sasia", script:"deva", speakers:"~15000", letter:"मनवधकरणजगतअभघषयपचशसएछबदटडहइआञउठथलढऽ", mark:"\u{093E}\u{093F}\u{0902}\u{094B}\u{094D}\u{0942}\u{0947}\u{0941}\u{094C}\u{0948}\u{0940}\u{0943}\u{0944}\u{093C}", punctuation:"।", notes:"Added <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>." },
+"sa": { name:"Sanskrit", source:"udhr_san", region:"sasia", script:"deva", speakers:"~15000", letter:"मनवधकरणजगतअभघषयपचशसएछबदटडहइआञउठथलढऽ", mark:"\u{093E}\u{093F}\u{0902}\u{094B}\u{094D}\u{0942}\u{0947}\u{0941}\u{094C}\u{0948}\u{0940}\u{0943}\u{0944}\u{093C}", punctuation:"।", notes:"Added <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>." },
 
-"sc": { name:"Sardinian (Sard)", source:"UDHR", region:"eur", script:"latn", speakers:"~1000000", letter:"òìàèùÒÌÀÈÙ", mark:"\u{0300}" },
+"sc": { name:"Sardinian (Sard)", source:"udhr_src", region:"eur", script:"latn", speakers:"~1000000", letter:"òìàèùÒÌÀÈÙ", mark:"\u{0300}" },
 
-"sco": { name:"Scots (Lowland Scots)", source:"UDHR", region:"eur", script:"ascii", speakers:"110000" },
+"sco": { name:"Scots (Lowland Scots)", source:"udhr_sco", region:"eur", script:"ascii", speakers:"110000" },
 
 "sd": { name:"Sindhi", source:"cldr_sd", region:"sasia", script:"arab", speakers:"25000000", letter:"آابٻپڀتثٺٽٿجھڃڄچڇحخدذڊڌڍڏرزڙسشصضطظعغفڦقکڪگڱڳلمنڻهوي", mark:"\u{0653}", punctuation:"‰", aux:"ئٔ" },
 
-"sey": { name:"Secoya", source:"UDHR", region:"sam", script:"latn", speakers:"400", letter:"ëñàéËÑÀÉ", mark:"\u{0331}\u{0308}\u{0303}\u{0300}\u{0301}" },
+"sey": { name:"Secoya", source:"udhr_sey", region:"sam", script:"latn", speakers:"400", letter:"ëñàéËÑÀÉ", mark:"\u{0331}\u{0308}\u{0303}\u{0300}\u{0301}" },
 
-"skr": { name:"Saraiki (Siraiki, Seraiki)", source:"UDHR", region:"sasia", script:"arab", speakers:"20000000", letter:"انسیحقودعلمشرپہڱھےکڄئتڻزںگڈفظجچبڑصڋخڔٹطآذضغةثٻي", mark:"\u{064F}\u{0654}\u{0653}", punctuation:"۔،", number:"۱۲۳۴۵۶۷۸۹۰" },
+"skr": { name:"Saraiki (Siraiki, Seraiki)", source:"udhr_skr", region:"sasia", script:"arab", speakers:"20000000", letter:"انسیحقودعلمشرپہڱھےکڄئتڻزںگڈفظجچبڑصڋخڔٹطآذضغةثٻي", mark:"\u{064F}\u{0654}\u{0653}", punctuation:"۔،", number:"۱۲۳۴۵۶۷۸۹۰" },
 
-"srr": { name:"Serer", source:"UDHR", region:"afr", script:"latn", speakers:"1230000", letter:"ñÑƭƴƊƁƬƳŋćŊĆṕṔɗɓ", mark:"\u{0303}\u{0301}" },
+"srr": { name:"Serer", source:"udhr_srr", region:"afr", script:"latn", speakers:"1230000", letter:"ñÑƭƴƊƁƬƳŋćŊĆṕṔɗɓ", mark:"\u{0303}\u{0301}" },
 
-"crs": { name:"Seychellois Creole (Seselwa)", source:"UDHR", region:"afr", script:"latn", speakers:"73000", letter:"íÍ", mark:"\u{0301}", punctuation:"’" },
+"crs": { name:"Seychellois Creole (Seselwa)", source:"udhr_crs", region:"afr", script:"latn", speakers:"73000", letter:"íÍ", mark:"\u{0301}", punctuation:"’" },
 
-"shn": { name:"Shan", source:"UDHR", region:"seasia", script:"mymr", speakers:"3300000", letter:"လၵပၼၽဝငသဢတမၸၾႁယၶၺထရ", mark:"\u{102D}\u{103A}\u{1088}\u{102F}\u{1062}\u{1087}\u{103D}\u{1086}\u{1030}\u{1038}\u{1035}\u{102E}\u{108A}\u{1085}\u{1083}\u{1089}\u{1031}\u{1082}\u{1084}\u{103C}", punctuation:"။၊" },
+"shn": { name:"Shan", source:"udhr_shn", region:"seasia", script:"mymr", speakers:"3300000", letter:"လၵပၼၽဝငသဢတမၸၾႁယၶၺထရ", mark:"\u{102D}\u{103A}\u{1088}\u{102F}\u{1062}\u{1087}\u{103D}\u{1086}\u{1030}\u{1038}\u{1035}\u{102E}\u{108A}\u{1085}\u{1083}\u{1089}\u{1031}\u{1082}\u{1084}\u{103C}", punctuation:"။၊" },
 
-"mcd": { name:"Sharanahua (Marinawa)", source:"UDHR", region:"sam", script:"latn", speakers:"3100", letter:"úíóáÚÍÓÁ", mark:"\u{0301}", punctuation:"¿" },
+"mcd": { name:"Sharanahua (Marinawa)", source:"udhr_mcd", region:"sam", script:"latn", speakers:"3100", letter:"úíóáÚÍÓÁ", mark:"\u{0301}", punctuation:"¿" },
 
 "shk": { name:"Shilluk", source:"udhr_shk,7b9b98a8ced343c0f2356595d76c12d32b5dd0a5", region:"afr", script:"latn", speakers:"175000", letter:"ÀÁÄÈÉËÌÍÏÓÖØÙÚàáäèéëìíïóöøùú", mark:"\u{0301}\u{0308}\u{0300}" },
 
-"shp": { name:"Shipibo-Conibo (Shipibo-Konibo)", source:"UDHR", region:"sam", script:"latn", speakers:"26000", letter:"íáóéñúÍÁÓÉÑÚ", mark:"\u{0301}\u{0303}", punctuation:"¿" },
+"shp": { name:"Shipibo-Conibo (Shipibo-Konibo)", source:"udhr_shp", region:"sam", script:"latn", speakers:"26000", letter:"íáóéñúÍÁÓÉÑÚ", mark:"\u{0301}\u{0303}", punctuation:"¿" },
 
-"cjs": { name:"Shor", source:"UDHR", region:"nasia", script:"cyrl", speakers:"2800", letter:"кижнтолағыңудерцязчқшйъӱгьсмбюпӧэвфхКИЖНТОЛАҒЫҢУДЕРЦЯЗЧҚШЙЪӰГЬСМБЮПӦЭВФХ", mark:"\u{0306}\u{0308}" },
+"cjs": { name:"Shor", source:"udhr_cjs", region:"nasia", script:"cyrl", speakers:"2800", letter:"кижнтолағыңудерцязчқшйъӱгьсмбюпӧэвфхКИЖНТОЛАҒЫҢУДЕРЦЯЗЧҚШЙЪӰГЬСМБЮПӦЭВФХ", mark:"\u{0306}\u{0308}" },
 
-"jiv": { name:"Shuar", source:"UDHR", region:"sam", script:"latn", speakers:"35000", letter:"áíúéÁÍÚÉ", mark:"\u{0301}" },
+"jiv": { name:"Shuar", source:"udhr_jiv", region:"sam", script:"latn", speakers:"35000", letter:"áíúéÁÍÚÉ", mark:"\u{0301}" },
 
-"snn": { name:"Siona", source:"UDHR", region:"sam", script:"latn", speakers:"500", letter:"ëñíäéËÑÍÄÉ", mark:"\u{0331}\u{0308}\u{0303}\u{0301}" },
+"snn": { name:"Siona", source:"udhr_snn", region:"sam", script:"latn", speakers:"500", letter:"ëñíäéËÑÍÄÉ", mark:"\u{0331}\u{0308}\u{0303}\u{0301}" },
 
-"snk": { name:"Soninke", source:"UDHR", region:"afr", script:"latn", speakers:"2100000", letter:"ñÑŋŊ", mark:"\u{0303}" },
+"snk": { name:"Soninke", source:"udhr_snk", region:"afr", script:"latn", speakers:"2100000", letter:"ñÑŋŊ", mark:"\u{0303}" },
 
 "hsb": { name:"Upper Sorbian", source:"cldr_hsb,udhr_hsb", region:"eur", script:"latn", speakers:"13000", letter:"čćźěłńřšžČĆŹĚŁŃŘŠŽóÓ", mark:"\u{030C}\u{0301}", punctuation:"«»§‐–—…‘’‚“„", aux:"ăąāďđĕėęēğĭīıĺľňŏőōœŕśşťŭůűūżĂĄĀĎĐĔĖĘĒĞĬİĪĹĽŇŎŐŌŒŔŚŞŤŬŮŰŪŸŻáàâåäãæçéèêëíìîïñòôöøßúùûüýÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÒÔÖØÚÙÛÜÝ̨̧̇̀̆̂̊̈̃̄̋" },
 
-"nso": { name:"Northern Sotho", source:"UDHR", region:"afr", script:"latn", speakers:"4700000", letter:"šŠ", mark:"\u{030C}" },
+"nso": { name:"Northern Sotho", source:"udhr_nso", region:"afr", script:"latn", speakers:"4700000", letter:"šŠ", mark:"\u{030C}" },
 
-"st": { name:"Southern Sotho (Sotho, Sesotho, Southern Sesotho)", source:"UDHR", region:"afr", script:"ascii", speakers:"5600000" },
+"st": { name:"Southern Sotho (Sotho, Sesotho, Southern Sesotho)", source:"udhr_sot", region:"afr", script:"ascii", speakers:"5600000" },
 
-"suk": { name:"Sukuma", source:"UDHR", region:"afr", script:"ascii", speakers:"5400000" },
+"suk": { name:"Sukuma", source:"udhr_suk", region:"afr", script:"ascii", speakers:"5400000" },
 
-"su": { name:"Sundanese", source:"UDHR", region:"seasia", script:"ascii", speakers:"42000000" },
+"su": { name:"Sundanese", source:"udhr_sun", region:"seasia", script:"ascii", speakers:"42000000" },
 
 "su-sund": { name:"Sundanese (Sundanese)", source:"ba3345132c34462391346964eea198c4041e1a52", region:"seasia", script:"sund", speakers:"42000000", letter:"ᮊᮋᮌᮍᮎᮏᮐᮑᮒᮓᮔᮕᮖᮗᮘᮙᮚᮛᮜᮝᮞᮟᮠᮮᮯᮃᮄᮅᮆᮇᮈᮉ", mark:"\u{1BA1}\u{1BA2}\u{1BA3}\u{1B80}\u{1B81}\u{1B82}\u{1BA4}\u{1BA5}\u{1BA6}\u{1BA7}\u{1BA8}\u{1BA9}\u{1BAA}", number:"᮰᮱᮲᮳᮴᮵᮶᮷᮸᮹" },
 
-"sus": { name:"Susu", source:"UDHR", region:"afr", script:"latn", speakers:"1060000", letter:"ƐƆƝɛɔɲ" },
+"sus": { name:"Susu", source:"udhr_sus", region:"afr", script:"latn", speakers:"1060000", letter:"ƐƆƝɛɔɲ" },
 
-"ss": { name:"Swati (Swazi)", source:"UDHR", region:"afr", script:"ascii", speakers:"2300000" },
+"ss": { name:"Swati (Swazi)", source:"udhr_ssw", region:"afr", script:"ascii", speakers:"2300000" },
 
-"cri": { name:"Sãotomense (Forro Creole, Santomense)", source:"UDHR", region:"afr", script:"latn", speakers:"70000", letter:"çóêéáâôºíÇÓÊÉÁÂÔÍ", mark:"\u{0327}\u{0301}\u{0302}" },
+"cri": { name:"Sãotomense (Forro Creole, Santomense)", source:"udhr_007", region:"afr", script:"latn", speakers:"70000", letter:"çóêéáâôºíÇÓÊÉÁÂÔÍ", mark:"\u{0327}\u{0301}\u{0302}" },
 
 "shi": { name:"Tachelhit (Tashelhiyt, Shilha)", source:"cldr_shi", region:"afr", script:"tfng", speakers:"4000000", letter:"ⴰⴱⴳⵯⴷⴹⴻⴼⴽⵀⵃⵄⵅⵇⵉⵊⵍⵎⵏⵓⵔⵕⵖⵙⵚⵛⵜⵟⵡⵢⵣⵥ" },
 
@@ -782,13 +780,13 @@ var langs = {
 
 "tr": { name:"Turkish (Istanbul Turkish)", source:"cldr_tr,udhr_tur", region:"wasia", script:"latn", speakers:"71000000", letter:"çöüâÇÖÜÂğışĞŞİ", mark:"\u{0327}\u{0307}\u{0306}\u{0308}\u{0302}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăĕĭŏœŭĂĔĬŎŒŬŸàåäæèêëìîïñòôøùûÿÀÅÄÆÈÊËÌÎÏÑÒÔØÙÛ̀̊̃" },
 
-"tk": { name:"Turkmen", source:"cldr_tk,UDHR", region:"casia", script:"latn", speakers:"7500000", letter:"çäöüýÇÄÖÜÝžňşŽŇŞ", mark:"\u{0327}\u{0308}\u{030C}\u{0301}", punctuation:"§–—…“”‐‰" },
+"tk": { name:"Turkmen", source:"cldr_tk,udhr_tuk_latn", region:"casia", script:"latn", speakers:"7500000", letter:"çäöüýÇÄÖÜÝžňşŽŇŞ", mark:"\u{0327}\u{0308}\u{030C}\u{0301}", punctuation:"§–—…“”‐‰" },
 
-"tk-cyrl": { name:"Turkmen (Cyrillic)", source:"UDHR", region:"casia", script:"cyrl", speakers:"7500000", letter:"адмхуклрынңәиецясгшбптчвзэоҗйөүъюжфёАДМХУКЛРЫНҢӘИЕЦЯСГШБПТЧВЗЭОҖЙӨҮЪЮЖФЁ", mark:"\u{0306}\u{0308}", punctuation:"‐–" },
+"tk-cyrl": { name:"Turkmen (Cyrillic)", source:"udhr_tuk_cyrl", region:"casia", script:"cyrl", speakers:"7500000", letter:"адмхуклрынңәиецясгшбптчвзэоҗйөүъюжфёАДМХУКЛРЫНҢӘИЕЦЯСГШБПТЧВЗЭОҖЙӨҮЪЮЖФЁ", mark:"\u{0306}\u{0308}", punctuation:"‐–" },
 
-"tl": { name:"Tagalog", source:"UDHR", region:"seasia", script:"ascii", speakers:"28000000" },
+"tl": { name:"Tagalog", source:"udhr_tgl_tglg", region:"seasia", script:"ascii", speakers:"28000000" },
 
-"ty": { name:"Tahitian", source:"UDHR", region:"oce", script:"latn", speakers:"68000", letter:"āūōēīĀŪŌĒĪ", mark:"\u{0304}" },
+"ty": { name:"Tahitian", source:"udhr_tah", region:"oce", script:"latn", speakers:"68000", letter:"āūōēīĀŪŌĒĪ", mark:"\u{0304}" },
 
 "blt": { name:"Tai Dam (Black Tai)", source:"udhr_blt,a220b3a422c42646d07427217c800b9d9663991f", region:"seasia", script:"tavt", speakers:"760000", letter:"ꪀꪁꪂꪃꪄꪅꪆꪇꪈꪉꪊꪋꪌꪍꪎꪏꪐꪑꪒꪓꪔꪕꪖꪗꪘꪙꪚꪛꪜꪝꪞꪟꪠꪡꪢꪣꪤꪥꪦꪧꪨꪩꪪꪫꪬꪭꪮꪯꪱꪵꪶꪹꪺꪻꪼꪽꫀꫂꫛꫜꫝ", mark:"ꪴꪰꪲꪳꪷꪸꪾ꪿꫁", aux:"꫞꫟" },
 
@@ -796,93 +794,93 @@ var langs = {
 
 "tg": { name:"Tajik (Tajiki, Tajiki Persian)", source:"cldr_tg,udhr_tgk", region:"casia", script:"cyrl", speakers:"8400000", letter:"эъломияуҳқбашрпегфтднзкхсвӣёҷчғюӯйжьЭЪЛОМИЯУҲҚБАШРПЕГФТДНЗКХСВӢЁҶЧҒЮӮЙЖЬ", mark:"\u{0304}\u{0308}\u{0306}", punctuation:"‰", aux:"цщыьЦЩЫЬ" },
 
-"tly": { name:"Talysh", source:"UDHR", region:"wasia", script:"latn", speakers:"900000", letter:"çÇƏığşİĞŞə", mark:"\u{0327}\u{0307}\u{0306}" },
+"tly": { name:"Talysh", source:"udhr_tly", region:"wasia", script:"latn", speakers:"900000", letter:"çÇƏığşİĞŞə", mark:"\u{0327}\u{0307}\u{0306}" },
 
 "tt": { name:"Tatar", source:"cldr_tt,udhr_tat", region:"eur", script:"cyrl", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖёщЁЩ", mark:"\u{0308}\u{0306}", aux:"ғқӯҒҚӮ̄" },
 
-"kdh": { name:"Tem (Temba, Kotokoli, Cotocoli)", source:"UDHR", region:"afr", script:"latn", speakers:"290000", letter:"íáéúóÿÍÁÉÚÓƖƱƐƉƆńŋŃŸŊḿḾɩʊɛɖɔ", mark:"\u{0301}\u{0308}" },
+"kdh": { name:"Tem (Temba, Kotokoli, Cotocoli)", source:"udhr_kdh", region:"afr", script:"latn", speakers:"290000", letter:"íáéúóÿÍÁÉÚÓƖƱƐƉƆńŋŃŸŊḿḾɩʊɛɖɔ", mark:"\u{0301}\u{0308}" },
 
-"tet": { name:"Tetum (Tetun)", source:"UDHR", region:"seasia", script:"ascii", speakers:"500000" },
+"tet": { name:"Tetum (Tetun)", source:"udhr_tet", region:"seasia", script:"ascii", speakers:"500000" },
 
-"tdt": { name:"Tetun Dili", source:"UDHR", region:"seasia", script:"latn", speakers:"?", letter:"áíúóÁÍÚÓ", mark:"\u{0301}", punctuation:"’" },
+"tdt": { name:"Tetun Dili", source:"udhr_010", region:"seasia", script:"latn", speakers:"?", letter:"áíúóÁÍÚÓ", mark:"\u{0301}", punctuation:"’" },
 
-"tem": { name:"Temne (Themne, Timne)", source:"UDHR", region:"afr", script:"latn", speakers:"1200000", letter:"ɅƆƏƐŋŊʌɔəɛ", punctuation:"‐" },
+"tem": { name:"Temne (Themne, Timne)", source:"udhr_tem", region:"afr", script:"latn", speakers:"1200000", letter:"ɅƆƏƐŋŊʌɔəɛ", punctuation:"‐" },
 
-"tca": { name:"Ticuna (Tikuna)", source:"UDHR", region:"sam", script:"latn", speakers:"47000", letter:"üéãñõúáíóÜÉÃÑÕÚÁÍÓĩũĨŨẽṯḏṉẼṮḎṈ", mark:"\u{0331}\u{0303}\u{0301}\u{0308}\u{035F}" },
+"tca": { name:"Ticuna (Tikuna)", source:"udhr_tca", region:"sam", script:"latn", speakers:"47000", letter:"üéãñõúáíóÜÉÃÑÕÚÁÍÓĩũĨŨẽṯḏṉẼṮḎṈ", mark:"\u{0331}\u{0303}\u{0301}\u{0308}\u{035F}" },
 
-"tiv": { name:"Tiv", source:"UDHR", region:"afr", script:"latn", speakers:"2200000", letter:"ôÔ", mark:"\u{0302}" },
+"tiv": { name:"Tiv", source:"udhr_tiv", region:"afr", script:"latn", speakers:"2200000", letter:"ôÔ", mark:"\u{0302}" },
 
-"tob": { name:"Toba (Qom, Kom, Chaco Sur, Toba Sur)", source:"UDHR", region:"sam", script:"latn", speakers:"40000", letter:"ỹỸíÍ", mark:"\u{0303}\u{0301}" },
+"tob": { name:"Toba (Qom, Kom, Chaco Sur, Toba Sur)", source:"udhr_tob", region:"sam", script:"latn", speakers:"40000", letter:"ỹỸíÍ", mark:"\u{0303}\u{0301}" },
 
-"toj": { name:"Tojolab'al", source:"UDHR", region:"cam", script:"ascii", speakers:"52000", punctuation:"’" },
+"toj": { name:"Tojolab'al", source:"udhr_toj", region:"cam", script:"ascii", speakers:"52000", punctuation:"’" },
 
-"tpi": { name:"Tok Pisin (Pidgin English)", source:"UDHR", region:"seasia", script:"ascii", speakers:"4000000" },
+"tpi": { name:"Tok Pisin (Pidgin English)", source:"udhr_tpi", region:"seasia", script:"ascii", speakers:"4000000" },
 
-"toi": { name:"Tonga (Chitonga, Zambezi)", source:"UDHR", region:"afr", script:"ascii", speakers:"1500000" },
+"toi": { name:"Tonga (Chitonga, Zambezi)", source:"udhr_toi", region:"afr", script:"ascii", speakers:"1500000" },
 
-"top": { name:"Papantla Totonac (Lowland Totonac)", source:"UDHR", region:"cam", script:"ascii", speakers:"80000" },
+"top": { name:"Papantla Totonac (Lowland Totonac)", source:"udhr_top", region:"cam", script:"ascii", speakers:"80000" },
 
-"ts": { name:"Tsonga (Xitsonga)", source:"UDHR", region:"afr", script:"latn", speakers:"13000000", letter:"ìàçãòèùíéáúÌÀÇÃÒÈÙÍÉÁÚ", mark:"\u{0327}\u{0300}\u{0303}\u{0301}", punctuation:"’" },
+"ts": { name:"Tsonga (Xitsonga)", source:"udhr_tso_MZ,udhr_tso_ZW", region:"afr", script:"latn", speakers:"13000000", letter:"ìàçãòèùíéáúÌÀÇÃÒÈÙÍÉÁÚ", mark:"\u{0327}\u{0300}\u{0303}\u{0301}", punctuation:"’" },
 
-"tn": { name:"Tswana (Setswana)", source:"UDHR", region:"afr", script:"latn", speakers:"5000000", letter:"šŠ", mark:"\u{030C}", punctuation:"·‐" },
+"tn": { name:"Tswana (Setswana)", source:"udhr_tsn", region:"afr", script:"latn", speakers:"5000000", letter:"šŠ", mark:"\u{030C}", punctuation:"·‐" },
 
-"tyv": { name:"Tuvan (Tuvinian, Tyvan, Tuvin)", source:"UDHR", region:"nasia", script:"cyrl", speakers:"280000", letter:"кижнңэргелбүтуазычдьсмяоюцхпшөйвъфёКИЖНҢЭРГЕЛБҮТУАЗЫЧДЬСМЯОЮЦХПШӨЙВЪФЁ", mark:"\u{0306}\u{0308}" },
+"tyv": { name:"Tuvan (Tuvinian, Tyvan, Tuvin)", source:"udhr_tyv", region:"nasia", script:"cyrl", speakers:"280000", letter:"кижнңэргелбүтуазычдьсмяоюцхпшөйвъфёКИЖНҢЭРГЕЛБҮТУАЗЫЧДЬСМЯОЮЦХПШӨЙВЪФЁ", mark:"\u{0306}\u{0308}" },
 
-"tw-asante": { name:"Ashanti (Asante, Asante Twi)", source:"UDHR", region:"afr", script:"latn", speakers:"2800000", letter:"ɛɔƐƆ" },
+"tw-asante": { name:"Ashanti (Asante, Asante Twi)", source:"udhr_aka_asante", region:"afr", script:"latn", speakers:"2800000", letter:"ɛɔƐƆ" },
 
-"tw-akuapem": { name:"Akuapem Twi", source:"UDHR", region:"afr", script:"latn", speakers:"6000000", letter:"ɛɔƐƆòÒ", mark:"\u{0300}" },
+"tw-akuapem": { name:"Akuapem Twi", source:"udhr_aka_akuapem", region:"afr", script:"latn", speakers:"6000000", letter:"ɛɔƐƆòÒ", mark:"\u{0300}" },
 
-"tzh": { name:"Tzeltal (Ts'eltal)", source:"UDHR", region:"cam", script:"ascii", speakers:"450000", symbol:"´" },
+"tzh": { name:"Tzeltal (Ts'eltal)", source:"udhr_tzh", region:"cam", script:"ascii", speakers:"450000", symbol:"´" },
 
-"tzo": { name:"Tzotzil", source:"UDHR", region:"cam", script:"latn", speakers:"400000", letter:"óáéíúÓÁÉÍÚ", mark:"\u{0301}", punctuation:"’" },
+"tzo": { name:"Tzotzil", source:"udhr_tzc", region:"cam", script:"latn", speakers:"400000", letter:"óáéíúÓÁÉÍÚ", mark:"\u{0301}", punctuation:"’" },
 
 "uk": { name:"Ukrainian", source:"cldr_uk,udhr_ukr", region:"eur", script:"cyrl", speakers:"45000000", letter:"абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯʼ", mark:"\u{0308}\u{0306}", punctuation:"–’“„‐«»§", symbol:"№", aux:"ёъыэЁЪЫЭ́" },
 
 "ur": { name:"Urdu", source:"cldr_urdu,udhr_urd,2a19c3255e234cbb86e12ec0dc966684ccdb2965", region:"sasia", script:"arab", speakers:"65000000", letter:"اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےهي", mark:"\u{0650}\u{064B}\u{064F}\u{0670}\u{064E}\u{0651}\u{0654}\u{0653}", punctuation:"،؍٫٬؛؟۔”“؁٪", number:"۰۱۲۳۴۵۶۷۸۹", aux:"\u{0652}\u{064C}\u{064D}\u{0657}\u{0656}\u{0658}\u{0612}\u{0614}\u{0613}\u{0611}\u{0610}؀؄؎؏؂﷽", aux:"؃ۃٻٺټٽي" },
 
-"ug": { name:"Uyghur (Uighur, Eastern Turki)", source:"cldr_ug,UDHR", region:"casia", script:"arab", speakers:"25000000", letter:"ئاەبپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىي", mark:"\u{0654}", punctuation:"،؛" },
+"ug": { name:"Uyghur (Uighur, Eastern Turki)", source:"cldr_ug,udhr_uig_arab", region:"casia", script:"arab", speakers:"25000000", letter:"ئاەبپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىي", mark:"\u{0654}", punctuation:"،؛" },
 
-"ug-latn": { name:"Uyghur (Uighur, Eastern Turki) (Latin)", source:"UDHR", region:"casia", script:"latn", speakers:"25000000", letter:"öéüÖÉÜ", mark:"\u{0308}\u{0301}", punctuation:"’" },
+"ug-latn": { name:"Uyghur (Uighur, Eastern Turki) (Latin)", source:"udhr_uig_latn", region:"casia", script:"latn", speakers:"25000000", letter:"öéüÖÉÜ", mark:"\u{0308}\u{0301}", punctuation:"’" },
 
-"uz": { name:"Uzbek", source:"cldr_uz,UDHR", region:"casia", script:"latn", speakers:"27000000", letter:"ʻʼ", punctuation:"‐–—…‘’“”„′″«»§" },
+"uz": { name:"Uzbek", source:"cldr_uz,udhr_uzn_latn", region:"casia", script:"latn", speakers:"27000000", letter:"ʻʼ", punctuation:"‐–—…‘’“”„′″«»§" },
 
 "uz-cyrl": { name:"Uzbek (Cyrillic)", source:"cldr_uz_Cyrl,udhr_uzn_cyrl", region:"casia", script:"cyrl", speakers:"27000000", letter:"инсоҳуқлармждекцяйбшгтўвэъпчзёфхюғИНСОҲУҚЛАРМЖДЕКЦЯЙБШГТЎВЭЪПЧЗЁФХЮҒ", mark:"\u{0306}\u{0308}", punctuation:"‐–", aux:"щыьЩЫЬ" },
 
 "uz-arab": { name:"Uzbek (Arabic)", source:"cldr_uz_Arab", region:"casia", script:"arab", speakers:"27000000", letter:"ءآأؤئابةتثجحخدذرزسشصضطظعغفقلمنهويپچژکگۇۉی", mark:"ًٌٍَُِّْٰٓٔ", punctuation:"؉٪٫٬", number:"۰۱۲۳۴۵۶۷۸۹", aux:"يټځڅډړږښګڼۍې", other:"\u{200C}\u{200D}\u{200E}\u{200F}" },
 
-"umb": { name:"Umbundu (South Mbundu)", source:"UDHR", region:"afr", script:"latn", speakers:"6000000", letter:"ñêãîõâÑÊÃÎÕÂ", mark:"\u{0303}\u{0302}", punctuation:"’" },
+"umb": { name:"Umbundu (South Mbundu)", source:"udhr_umb,udhr_011", region:"afr", script:"latn", speakers:"6000000", letter:"ñêãîõâÑÊÃÎÕÂ", mark:"\u{0303}\u{0302}", punctuation:"’" },
 
-"ura": { name:"Urarina (Itucali, Simacu, Shimacu)", source:"UDHR", region:"sam", script:"latn", speakers:"6000", letter:"úóíÚÓÍ", mark:"\u{0301}" },
+"ura": { name:"Urarina (Itucali, Simacu, Shimacu)", source:"udhr_ura", region:"sam", script:"latn", speakers:"6000", letter:"úóíÚÓÍ", mark:"\u{0301}" },
 
 "vai": { name:"Vai (Vy, Gallinas)", source:"cldr_vai,udhr_vai,a5c6b1f62cb3d71b6acccbe995ff47db10e94963", region:"afr", script:"vaii", speakers:"120000", letter:"ꔀꔁꔂꔃꔄꔅꔆꔇꔈꔉꔊꔋꔌꔍꔎꔏꔐꔑꔒꔓꔔꔕꔖꔗꔘꔙꔚꔛꔜꔝꔞꔟꔠꔡꔢꔣꔤꔥꔦꔧꔨꔩꔪꔫꔬꔭꔮꔯꔰꔱꔲꔳꔴꔵꔶꔷꔸꔹꔺꔻꔼꔽꔾꔿꕀꕁꕂꕃꕄꕅꕆꕇꕈꕉꕊꕋꕌꕍꕎꕏꕐꕑꕒꕓꕔꕕꕖꕗꕘꕙꕚꕛꕜꕝꕞꕟꕠꕡꕢꕣꕤꕥꕦꕧꕨꕩꕪꕫꕬꕭꕮꕯꕰꕱꕲꕳꕴꕵꕶꕷꕸꕹꕺꕻꕼꕽꕾꕿꖀꖁꖂꖃꖄꖅꖆꖇꖈꖉꖊꖋꖌꖍꖎꖏꖐꖑꖒꖓꖔꖕꖖꖗꖘꖙꖚꖛꖜꖝꖞꖟꖠꖡꖢꖣꖤꖥꖦꖧꖨꖩꖪꖫꖬꖭꖮꖯꖰꖱꖲꖳꖴꖵꖶꖷꖸꖹꖺꖻꖼꖽꖾꖿꗀꗁꗂꗃꗄꗅꗆꗇꗈꗉꗊꗋꗌꗍꗎꗏꗐꗑꗒꗓꗔꗕꗖꗗꗘꗙꗚꗛꗜꗝꗞꗟꗠꗡꗢꗣꗤꗥꗦꗧꗨꗩꗪꗫꗬꗭꗮꗯꗰꗱꗲꗳꗴꗵꗶꗷꗸꗹꗺꗻꗼꗽꗾꗿꘀꘁꘂꘃꘄꘅꘆꘇꘈꘉꘊꘋꘌ", aux:"ꘓꘘ꘍꘎꘏" },
 
 "vai-latn": { name:"Vai (Vy, Gallinas) (Latin)", source:"cldr_vai_Latn", region:"afr", script:"ascii", speakers:"120000", letter:"áãéíóõúÁÃÉÍÓÕÚƁƊƐƆĩŋũĨŊŨẽẼɓɗɛɔ", mark:"\u{0301}\u{0303}" },
 
-"vi": { name:"Vietnamese", source:"cldr_vi,UDHR", region:"seasia", script:"latn", speakers:"75000000", letter:"àãáâèéêìíòõóôùúýÀÃÁÂÈÉÊÌÍÒÕÓÔÙÚÝơưƠƯăđĩũĂĐĨŨảạằẳẵắặầẩẫấậẻẽẹềểễếệỉịỏọồổỗốộờởỡớợủụừửữứựỳỷỹỵẢẠẰẲẴẮẶẦẨẪẤẬẺẼẸỀỂỄẾỆỈỊỎỌỒỔỖỐỘỜỞỠỚỢỦỤỪỬỮỨỰỲỶỸỴ", mark:"\u{031B}\u{0323}\u{0300}\u{0309}\u{0303}\u{0301}\u{0306}\u{0302}", punctuation:"§‐–—…‘’“”†‡′″" },
+"vi": { name:"Vietnamese", source:"cldr_vi,udhr_vie", region:"seasia", script:"latn", speakers:"75000000", letter:"àãáâèéêìíòõóôùúýÀÃÁÂÈÉÊÌÍÒÕÓÔÙÚÝơưƠƯăđĩũĂĐĨŨảạằẳẵắặầẩẫấậẻẽẹềểễếệỉịỏọồổỗốộờởỡớợủụừửữứựỳỷỹỵẢẠẰẲẴẮẶẦẨẪẤẬẺẼẸỀỂỄẾỆỈỊỎỌỒỔỖỐỘỜỞỠỚỢỦỤỪỬỮỨỰỲỶỸỴ", mark:"\u{031B}\u{0323}\u{0300}\u{0309}\u{0303}\u{0301}\u{0306}\u{0302}", punctuation:"§‐–—…‘’“”†‡′″" },
 
 "vo": { name:"Volapük", source:"cldr_vo", region:"eur", script:"latn", speakers:"20", letter:"äöüÄÖÜ", mark:"\u{0308}", punctuation:"«»§‐–—…‘’“”" },
 
 "vun": { name:"Wuunjo (Wunjo, Vunjo, Kivunjo)", source:"cldr_vun", region:"afr", script:"ascii", speakers:"?" },
 
-"ve": { name:"Venda (Tshivenḓa, Luvenḓa)", source:"UDHR", region:"afr", script:"latn", speakers:"1300000", letter:"ṱḽḓṅṋṰḼḒṄṊ", mark:"\u{032D}\u{0307}", punctuation:"“”" },
+"ve": { name:"Venda (Tshivenḓa, Luvenḓa)", source:"udhr_ven", region:"afr", script:"latn", speakers:"1300000", letter:"ṱḽḓṅṋṰḼḒṄṊ", mark:"\u{032D}\u{0307}", punctuation:"“”" },
 
-"ven": { name:"Venetian (Venetan)", source:"UDHR", region:"eur", script:"latn", speakers:"3900000", letter:"óàòèùéìçÓÀÒÈÙÉÌÇƚȽđĐ", mark:"\u{0327}\u{0301}\u{0300}", punctuation:"’—" },
+"ven": { name:"Venetian (Venetan)", source:"udhr_vec", region:"eur", script:"latn", speakers:"3900000", letter:"óàòèùéìçÓÀÒÈÙÉÌÇƚȽđĐ", mark:"\u{0327}\u{0301}\u{0300}", punctuation:"’—" },
 
-"vep": { name:"Veps (Vepsian)", source:"UDHR", region:"eur", script:"latn", speakers:"5900", letter:"üäöÜÄÖšžčŠŽČ", mark:"\u{0308}\u{030C}", punctuation:"’" },
+"vep": { name:"Veps (Vepsian)", source:"udhr_vep", region:"eur", script:"latn", speakers:"5900", letter:"üäöÜÄÖšžčŠŽČ", mark:"\u{0308}\u{030C}", punctuation:"’" },
 
 "wae": { name:"Walser German (Walliser German)", source:"cldr_wae", region:"eur", script:"latn", speakers:"22000", letter:"áäãéíóöõúüÁÄÃÉÍÓÖÕÚÜčšũČŠŨ", mark:"\u{0301}\u{0308}\u{0303}\u{030C}", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸàâåæçèêëìîïñòôøßùûÿÀÂÅÆÇÈÊËÌÎÏÑÒÔØÙÛ̧̀̆̂̊̄" },
 
 "cy": { name:"Welsh (Cymraeg, y Gymraeg)", source:"cldr_cy,udhr_cym", region:"eur", script:"latn", speakers:"700000", letter:"áàâäéèêëíìîïóòôöúùûüýÿÁÀÂÄÉÈÊËÍÌÎÏÓÒÔÖÚÙÛÜÝŵŷŴŶŸẃẁẅỳẂẀẄỲ", mark:"\u{0301}\u{0300}\u{0302}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪåãæçñøÅÃÆÇÑØ̧̆̊̃̄" },
 
-"wwa": { name:"Waama (Yoabu)", source:"UDHR", region:"afr", script:"latn", speakers:"50000", letter:"ãìàùèÃÌÀÙÈǹƆƐǸũŋŨŊɔɛ", mark:"\u{0303}\u{0300}" },
+"wwa": { name:"Waama (Yoabu)", source:"udhr_wwa", region:"afr", script:"latn", speakers:"50000", letter:"ãìàùèÃÌÀÙÈǹƆƐǸũŋŨŊɔɛ", mark:"\u{0303}\u{0300}" },
 
-"wa": { name:"Walloon", source:"UDHR", region:"eur", script:"latn", speakers:"600000", letter:"éåèûîôâêçàÉÅÈÛÎÔÂÊÇÀ", mark:"\u{0327}\u{0301}\u{030A}\u{0300}\u{0302}" },
+"wa": { name:"Walloon", source:"udhr_wln", region:"eur", script:"latn", speakers:"600000", letter:"éåèûîôâêçàÉÅÈÛÎÔÂÊÇÀ", mark:"\u{0327}\u{0301}\u{030A}\u{0300}\u{0302}" },
 
-"auc": { name:"Waorani (Huaorani, Sabela, Wao, Huao, Auishiri, Aushiri, Ssabela)", source:"UDHR", region:"sam", script:"latn", speakers:"1800", letter:"ñíéóÑÍÉÓ", mark:"\u{0303}\u{0301}" },
+"auc": { name:"Waorani (Huaorani, Sabela, Wao, Huao, Auishiri, Aushiri, Ssabela)", source:"udhr_auc", region:"sam", script:"latn", speakers:"1800", letter:"ñíéóÑÍÉÓ", mark:"\u{0303}\u{0301}" },
 
-"war": { name:"Waray", source:"UDHR", region:"seasia", script:"ascii", speakers:"2600000" },
+"war": { name:"Waray", source:"udhr_war", region:"seasia", script:"ascii", speakers:"2600000" },
 
-"guc": { name:"Wayuu (Wayu, Wayúu, Guajiro, Wahiro)", source:"UDHR", region:"sam", script:"latn", speakers:"437780", letter:"üñÜÑ", mark:"\u{0308}\u{0303}" },
+"guc": { name:"Wayuu (Wayu, Wayúu, Guajiro, Wahiro)", source:"udhr_guc", region:"sam", script:"latn", speakers:"437780", letter:"üñÜÑ", mark:"\u{0308}\u{0303}" },
 
 "wo": { name:"Wolof", source:"cldr_wo,udhr_wol", region:"afr", script:"latn", speakers:"4200000", letter:"ëñàéóËÑÀÉÓŋŊ", mark:"\u{0308}\u{0303}\u{0300}\u{0301}", punctuation:"‰", aux:"ãÃ" },
 
@@ -890,33 +888,33 @@ var langs = {
 
 "yav": { name:"Yangben (Central Yambasa)", source:"cldr_yav", region:"afr", script:"latn", speakers:"17000", letter:"áàâéèíìîóòôúùûÁÀÂÉÈÍÌÎÓÒÔÚÙÛǎǒǔǍƐǑƆǓāīŋōūĀĪŊŌŪɛɔ", mark:"\u{0301}\u{0300}\u{0302}\u{030C}\u{0304}" },
 
-"yi": { name:"Yiddish", source:"cldr_yi,UDHR", region:"eur", script:"hebr", speakers:"1500000", letter:"אבגדזשהויחטײכךלמםנןסעפףצץקרתװױ", mark:"\u{05B7}\u{05B8}\u{05BF}\u{05BC}\u{05B4}\u{05C2}", punctuation:"׳״־‐–—", other:"\u{202E}\u{202C}" },
+"yi": { name:"Yiddish", source:"cldr_yi,udhr_ydd", region:"eur", script:"hebr", speakers:"1500000", letter:"אבגדזשהויחטײכךלמםנןסעפףצץקרתװױ", mark:"\u{05B7}\u{05B8}\u{05BF}\u{05BC}\u{05B4}\u{05C2}", punctuation:"׳״־‐–—", other:"\u{202E}\u{202C}" },
 
-"yo": { name:"Yoruba", source:"cldr_yo,UDHR", region:"afr", script:"latn", speakers:"28000000", letter:"áàéèíìóòúùÁÀÉÈÍÌÓÒÚÙńŃẹọṣẸỌṢ", mark:"\u{0329}\u{0323}\u{0301}\u{0300}\u{0304}", punctuation:"‐" },
+"yo": { name:"Yoruba", source:"cldr_yo,udhr_yor", region:"afr", script:"latn", speakers:"28000000", letter:"áàéèíìóòúùÁÀÉÈÍÌÓÒÚÙńŃẹọṣẸỌṢ", mark:"\u{0329}\u{0323}\u{0301}\u{0300}\u{0304}", punctuation:"‐" },
 
-"yad": { name:"Yagua", source:"UDHR", region:"sam", script:"latn", speakers:"5700", letter:"ñíéáÑÍÉÁ", mark:"\u{0303}\u{0301}" },
+"yad": { name:"Yagua", source:"udhr_yad", region:"sam", script:"latn", speakers:"5700", letter:"ñíéáÑÍÉÁ", mark:"\u{0303}\u{0301}" },
 
-"ame": { name:"Yanesha' (Amuesha, Amoesha)", source:"UDHR", region:"sam", script:"latn", speakers:"9800", letter:"ñëóíãõáÑËÓÍÃÕÁẽẼʼ", mark:"\u{0303}\u{0308}\u{0301}" },
+"ame": { name:"Yanesha' (Amuesha, Amoesha)", source:"udhr_ame", region:"sam", script:"latn", speakers:"9800", letter:"ñëóíãõáÑËÓÍÃÕÁẽẼʼ", mark:"\u{0303}\u{0308}\u{0301}" },
 
-"guu": { name:"Yanomamö", source:"UDHR", region:"sam", script:"latn", speakers:"20000", letter:"ëãáõíËÃÁÕÍĩũĨŨẽẼ", mark:"\u{0308}\u{0303}\u{0301}" },
+"guu": { name:"Yanomamö", source:"udhr_guu", region:"sam", script:"latn", speakers:"20000", letter:"ëãáõíËÃÁÕÍĩũĨŨẽẼ", mark:"\u{0308}\u{0303}\u{0301}" },
 
-"yao": { name:"Yao", source:"UDHR", region:"afr", script:"ascii", speakers:"3100000" },
+"yao": { name:"Yao", source:"udhr_yao", region:"afr", script:"ascii", speakers:"3100000" },
 
-"yap": { name:"Yapese", source:"UDHR", region:"oce", script:"latn", speakers:"7400", letter:"ʼ", punctuation:"‐" },
+"yap": { name:"Yapese", source:"udhr_yap", region:"oce", script:"latn", speakers:"7400", letter:"ʼ", punctuation:"‐" },
 
-"ykg": { name:"Tundra Yukaghir (Northern Yukaghir)", source:"UDHR", region:"nasia", script:"cyrl", speakers:"370", letter:"эльистачйкөдҥнбпрумогецяҕхжѳқзвфыющЭЛЬИСТАЧЙКӨДҤНБПРУМОГЕЦЯҔХЖѲҚЗВФЫЮЩ", mark:"\u{0306}" },
+"ykg": { name:"Tundra Yukaghir (Northern Yukaghir)", source:"udhr_ykg", region:"nasia", script:"cyrl", speakers:"370", letter:"эльистачйкөдҥнбпрумогецяҕхжѳқзвфыющЭЛЬИСТАЧЙКӨДҤНБПРУМОГЕЦЯҔХЖѲҚЗВФЫЮЩ", mark:"\u{0306}" },
 
 "dje": { name:"Zarma (Djerma, Dyabarma, Dyarma, Dyerma, Adzerma, Zabarma, Zarbarma, Zarmaci, Zerma)", source:"cldr_dje", region:"afr", script:"latn", speakers:"24000000", letter:"ãõÃÕƝŋšžŊŠŽẽẼɲ", mark:"\u{0303}\u{030C}" },
 
 "zu": { name:"Zulu", source:"cldr_zu,udhr_zul", region:"afr", script:"ascii", speakers:"12000000", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̃̄" },
 
-"ztu": { name:"Güilá Zapotec", source:"UDHR", region:"cam", script:"latn", speakers:"9500", letter:"ëíéËÍÉ", mark:"\u{0308}\u{0301}" },
+"ztu": { name:"Güilá Zapotec", source:"udhr_ztu", region:"cam", script:"latn", speakers:"9500", letter:"ëíéËÍÉ", mark:"\u{0308}\u{0301}" },
 
-"zam": { name:"Miahuatlán Zapotec (Cuixtla Zapotec)", source:"UDHR", region:"cam", script:"latn", speakers:"1000", letter:"óáñíÓÁÑÍʼ", mark:"\u{0301}\u{0303}" },
+"zam": { name:"Miahuatlán Zapotec (Cuixtla Zapotec)", source:"udhr_zam", region:"cam", script:"latn", speakers:"1000", letter:"óáñíÓÁÑÍʼ", mark:"\u{0301}\u{0303}" },
 
-"za": { name:"Zhuang", source:"UDHR", region:"easia", script:"ascii", speakers:"16000000" }, // i suspect this is missing some letters
+"za": { name:"Zhuang", source:"udhr_ccx", region:"easia", script:"ascii", speakers:"16000000" }, // i suspect this is missing some letters
 
-"zro": { name:"Záparo (Sápara, Zápara)", source:"UDHR", region:"sam", script:"latn", speakers:"350", letter:"ñÑ", mark:"\u{0303}" },
+"zro": { name:"Záparo (Sápara, Zápara)", source:"udhr_zro", region:"sam", script:"latn", speakers:"350", letter:"ñÑ", mark:"\u{0303}" },
 
 //"xxx": { name:"name", source:"cldr_xxx,UDHR", region:"Asia", script:"latn", speakers:"113000", letter:"", mark:"", punctuation:"", number:"", symbol:"" },
 }
