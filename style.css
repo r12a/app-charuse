@@ -229,7 +229,9 @@ table {
     padding: .5em .25em;
     text-align: left;
 	}
-
+.udhrWarning {
+	color: darkorange;
+	}
 
 
 

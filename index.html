@@ -321,6 +321,10 @@ function showLanguage (lang) {
 	
 	// source
 	var sources = langs[lang].source.split(',')
+	
+	// check whether there is only a UDHR source
+	if (sources.length === 1 && sources[0].match('udhr_')) var warning = true
+	else warning = false
 	out += '<tr><th>Source</th><td class="sources">'
 	for (let i=0;i<sources.length;i++) {
 		if (i>0) out += ', '
@@ -330,6 +334,7 @@ function showLanguage (lang) {
 		else if (sources[i] === 'r12a' || sources[i] === 'CLDR' || sources[i] === 'UDHR') out += sources[i]
 		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
 		}
+	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this language.</span>'
 	out += '</td></td><td class="links"></tr>'
 	
 	// region
