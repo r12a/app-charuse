@@ -180,11 +180,11 @@ thead th { text-align: left; }
 	border: 1px solid #DDD;
 	width: 100%;
 	}
-.ulink {
+/*.ulink {
 	float: right;
 	vertical-align: bottom;
 	}
-
+*/
 #output span, #languageByRegion span, #languageByScript span {
 	cursor: pointer;
 	}
@@ -227,7 +227,7 @@ table {
 	border: 0;
     vertical-align: top;
     padding: .5em .25em;
-    text-align: center;
+    text-align: left;
 	}
 
 

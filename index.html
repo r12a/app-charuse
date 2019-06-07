@@ -196,7 +196,7 @@ function showLanguage (lang) {
     var stats = 'Non-ASCII character count: &nbsp; '
     var total = 0
 	// "agq": { name:"Aghem", source:"CLDR", region:"afr", speakers:"27000", letter:"Ã Ã¢Ã¨ÃªÃ¬Ã®Ã²Ã´Ã¹Ã»Ã€Ã‚ÃˆÃŠÃŒÃŽÃ’Ã”Ã™Ã›ÇŽÇÇ’Ç”ÇÆÇÆ—Ç‘Æ†Ç“É„ÄÄ›Ä“Ä«Å‹ÅÅ«Ä€ÄšÄ’ÄªÅŠÅŒÅªÉ›É¨É”Ê‰Ê”", mark:"\u{0300}\u{0302}\u{030C}\u{0304}" },
-	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+' ['+lang+']</td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" style="float:right;" /></a></td></tr>'
+	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+' ['+lang+']</td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></td></tr>'
 	if (langs[lang].letter) {
 		charList = [...langs[lang].letter]
 		charList.sort()
