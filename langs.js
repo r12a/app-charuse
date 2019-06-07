@@ -622,6 +622,8 @@ var langs = {
 
 "pa": { name:"Punjabi", source:"cldr_pa,udhr_pan,f940e5c7fc381992f942120f89cd8137cb3c3eda", region:"sasia", script:"guru", speakers:"122000000", letter:"ੴਉਊਓਅਆਐਔਇਈਏਸਹਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜ\u{A33}\u{A36}\u{A59}\u{A5A}\u{A5B}\u{A5E}", mark:"\u{0A71}\u{0A70}\u{0A3C}\u{0A4D}\u{0A3E}\u{0A3F}\u{0A40}\u{0A41}\u{0A42}\u{0A47}\u{0A48}\u{0A4B}\u{0A4C}\u{0A02}", punctuation:"‐–—‘’“”′″।", number:"੦੧੨੩੪੫੬੭੮੯", symbol:"☬", other:"\u{200D}\u{200C}", aux:"ਃਁੵ", deprecated:"ੳੲ" },
 
+"pa-arab": { name:"Punjabi (Arabic)", source:"cldr_pa_Arab", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابتثجحخدذرزسشصضطظعغفقلمنهويٹپچڈڑژکگںھہیے", mark:"ُٓٔ", punctuation:"‰", other:"\u{200E}\u{200F}", aux:"أاةٔٺٻټٽ" },
+
 "pnb": { name:"Western Panjabi", source:"cldr_pnb,UDHR", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںهھہویےي", mark:"\u{064F}\u{0653}\u{0654}", punctuation:"‐–—‘’“”′″" },
 
 "pau": { name:"Palauan", source:"UDHR", region:"seasia", script:"ascii", speakers:"17000" },
