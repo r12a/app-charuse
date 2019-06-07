@@ -886,7 +886,7 @@ var langs = {
 
 "wo": { name:"Wolof", source:"cldr_wo,udhr_wol", region:"afr", script:"latn", speakers:"4200000", letter:"ëñàéóËÑÀÉÓŋŊ", mark:"\u{0308}\u{0303}\u{0300}\u{0301}", punctuation:"‰", aux:"ãÃ" },
 
-"xh": { name:"Xhosa", source:"UDHR", region:"afr", script:"ascii", speakers:"8200000" },
+"xh": { name:"Xhosa", source:"cldr_xh,udhr_xho", region:"afr", script:"ascii", speakers:"8200000" },
 
 "yav": { name:"Yangben (Central Yambasa)", source:"cldr_yav", region:"afr", script:"latn", speakers:"17000", letter:"áàâéèíìîóòôúùûÁÀÂÉÈÍÌÎÓÒÔÚÙÛǎǒǔǍƐǑƆǓāīŋōūĀĪŊŌŪɛɔ", mark:"\u{0301}\u{0300}\u{0302}\u{030C}\u{0304}" },
 
