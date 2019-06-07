@@ -848,6 +848,8 @@ var langs = {
 
 "uz-cyrl": { name:"Uzbek (Cyrillic)", source:"cldr_uz_Cyrl,udhr_uzn_cyrl", region:"casia", script:"cyrl", speakers:"27000000", letter:"инсоҳуқлармждекцяйбшгтўвэъпчзёфхюғИНСОҲУҚЛАРМЖДЕКЦЯЙБШГТЎВЭЪПЧЗЁФХЮҒ", mark:"\u{0306}\u{0308}", punctuation:"‐–", aux:"щыьЩЫЬ" },
 
+"uz-arab": { name:"Uzbek (Arabic)", source:"cldr_uz_Arab", region:"casia", script:"arab", speakers:"27000000", letter:"ءآأؤئابةتثجحخدذرزسشصضطظعغفقلمنهويپچژکگۇۉی", mark:"ًٌٍَُِّْٰٓٔ", punctuation:"؉٪٫٬", number:"۰۱۲۳۴۵۶۷۸۹", aux:"يټځڅډړږښګڼۍې", other:"\u{200C}\u{200D}\u{200E}\u{200F}" },
+
 "umb": { name:"Umbundu (South Mbundu)", source:"UDHR", region:"afr", script:"latn", speakers:"6000000", letter:"ñêãîõâÑÊÃÎÕÂ", mark:"\u{0303}\u{0302}", punctuation:"’" },
 
 "ura": { name:"Urarina (Itucali, Simacu, Shimacu)", source:"UDHR", region:"sam", script:"latn", speakers:"6000", letter:"úóíÚÓÍ", mark:"\u{0301}" },
