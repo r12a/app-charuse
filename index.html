@@ -195,8 +195,11 @@ function showLanguage (lang) {
 	var charList
     var stats = 'Non-ASCII character count: &nbsp; '
     var total = 0
-	// "agq": { name:"Aghem", source:"CLDR", region:"afr", speakers:"27000", letter:"Ã Ã¢Ã¨ÃªÃ¬Ã®Ã²Ã´Ã¹Ã»Ã€Ã‚ÃˆÃŠÃŒÃŽÃ’Ã”Ã™Ã›ÇŽÇÇ’Ç”ÇÆÇÆ—Ç‘Æ†Ç“É„ÄÄ›Ä“Ä«Å‹ÅÅ«Ä€ÄšÄ’ÄªÅŠÅŒÅªÉ›É¨É”Ê‰Ê”", mark:"\u{0300}\u{0302}\u{030C}\u{0304}" },
+
+	// name
 	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+' ['+lang+']</td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></td></tr>'
+
+	// characters
 	if (langs[lang].letter) {
 		charList = [...langs[lang].letter]
 		charList.sort()
@@ -353,7 +356,7 @@ function showLanguage (lang) {
 		case 'easia': region = 'East Asia';break
 		case 'carib': region = 'Caribbean';break
 		}
-	out += '<tr><th>Region</th><td>'+region+'</td></td><td class="links"></tr>'
+	out += '<tr><th>Region</th><td>'+region+'</td></td><td class="links"></td></tr>'
 	if (langs[lang].speakers === '?') var speakers = 'Not known'
 	else { 
 		speakers = langs[lang].speakers.replace(/~/,'')
@@ -361,7 +364,13 @@ function showLanguage (lang) {
 		}
 	//speakers = speakers.replace(/\?/,'0')
 	out += '<tr><th>Native speakers</th><td>'+speakers+'</td></tr>'
-	if (langs[lang].notes) out += '<tr><th>Notes</th><td style="font-size:90%">'+langs[lang].notes+'</td></td><td class="links"></tr>'
+			
+	// local name
+	if (langs[lang].local) out += '<tr><th>Local name</th><td style="font-size:90%">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
+	
+	// notes
+	if (langs[lang].notes) out += '<tr><th>Notes</th><td style="font-size:90%">'+langs[lang].notes+'</td></td><td class="links"></td></tr>'
+
 	return out
 	}
 
@@ -491,8 +500,8 @@ function filter (str) {
  
      <p><button style="vertical-align:top;" onclick="document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)">Look up</button></p>
 <table style="margin-top: 3em;margin-right: 3em;">
-<thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th>
-<tbody id="output"><td></td><td></td><td></td></table>
+<thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th></thead>
+<tbody id="output"><td></td><td></td><td></td></tbody></table>
 </section>
 
 
@@ -588,7 +597,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->07-Jun-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->08-Jun-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
