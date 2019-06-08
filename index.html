@@ -339,6 +339,9 @@ function showLanguage (lang) {
 		}
 	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this language.</span>'
 	out += '</td></td><td class="links"></tr>'
+			
+	// local name
+	if (langs[lang].local) out += '<tr><th>Local name</th><td style="font-size:90%">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
 	
 	// region
 	switch (langs[lang].region) {
@@ -357,6 +360,8 @@ function showLanguage (lang) {
 		case 'carib': region = 'Caribbean';break
 		}
 	out += '<tr><th>Region</th><td>'+region+'</td></td><td class="links"></td></tr>'
+	
+	// speakers
 	if (langs[lang].speakers === '?') var speakers = 'Not known'
 	else { 
 		speakers = langs[lang].speakers.replace(/~/,'')
@@ -364,9 +369,6 @@ function showLanguage (lang) {
 		}
 	//speakers = speakers.replace(/\?/,'0')
 	out += '<tr><th>Native speakers</th><td>'+speakers+'</td></tr>'
-			
-	// local name
-	if (langs[lang].local) out += '<tr><th>Local name</th><td style="font-size:90%">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
 	
 	// notes
 	if (langs[lang].notes) out += '<tr><th>Notes</th><td style="font-size:90%">'+langs[lang].notes+'</td></td><td class="links"></td></tr>'
