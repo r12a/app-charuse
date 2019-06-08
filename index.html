@@ -288,23 +288,6 @@ function showLanguage (lang) {
 		//for (j=0;j<charList.length;j++) out += charList[j].codepointAt(0)+' '
 		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].other+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
-
-	// source
-	var sources = langs[lang].source.split(',')
-	// check whether there is only a UDHR source
-	if (sources.length === 1 && sources[0].match('udhr_')) var warning = true
-	else warning = false
-	out += '<tr><th>Source</th><td class="sources">'
-	for (let i=0;i<sources.length;i++) {
-		if (i>0) out += ', '
-		if (sources[i].startsWith('cldr_')) out += '<a href="https://www.unicode.org/cldr/charts/latest/summary/'+sources[i].substr(5)+'.html">CLDR</a>'
-		else if (sources[i].startsWith('udhr_')) out += '<a href="https://unicode.org/udhr/d/'+sources[i]+'.html">UDHR</a>'
-		else if (sources[i].startsWith('http')) out += '<a href="'+sources[i]+'">link</a>'
-		else if (sources[i] === 'r12a' || sources[i] === 'CLDR' || sources[i] === 'UDHR') out += sources[i]
-		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
-		}
-	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this language.</span>'
-	out += '</td></td><td class="links"></tr>'
 			
 	// stats
 	stats += ' : &nbsp; total ' + total
@@ -338,8 +321,28 @@ function showLanguage (lang) {
 	if (langs[lang].aux || langs[lang].deprecated) stats += ' )'
 	if (!langs[lang].letter && !langs[lang].mark && !langs[lang].punctuation && !langs[lang].number && !langs[lang].symbol && !langs[lang].other) {
 		out += '<tr><th></th><td class="large">ASCII only</td></tr>'
+		stats = ''
 		}
-	else out += '<tr><th></th><td style="border:0; font-size: 70%; font-style: italic; line-height: 1; color:gray;">'+stats+'</td></tr>'
+	else stats = '<tr><th></th><td style="border:0; font-size: 70%; font-style: italic; line-height: 1; color:gray;">'+stats+'</td></tr>'
+
+	// source
+	var sources = langs[lang].source.split(',')
+	// check whether there is only a UDHR source
+	if (sources.length === 1 && sources[0].match('udhr_')) var warning = true
+	else warning = false
+	out += '<tr><th>Sources</th><td class="sources">'
+	for (let i=0;i<sources.length;i++) {
+		if (i>0) out += ', '
+		if (sources[i].startsWith('cldr_')) out += '<a href="https://www.unicode.org/cldr/charts/latest/summary/'+sources[i].substr(5)+'.html">CLDR</a>'
+		else if (sources[i].startsWith('udhr_')) out += '<a href="https://unicode.org/udhr/d/'+sources[i]+'.html">UDHR</a>'
+		else if (sources[i].startsWith('http')) out += '<a href="'+sources[i]+'">link</a>'
+		else if (sources[i] === 'r12a' || sources[i] === 'CLDR' || sources[i] === 'UDHR') out += sources[i]
+		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
+		}
+	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this language.</span>'
+	out += '</td></td><td class="links"></tr>'
+	
+	out += stats
 	
 	// local name
 	if (langs[lang].local) out += '<tr><th>Local name</th><td style="font-size:90%">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
