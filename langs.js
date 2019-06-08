@@ -8,7 +8,7 @@ var langs = {
 
 "acu": { name:"Achaur-Shiwiar", source:"udhr_acu,udhr_acu_1", region:"sam", script:"latn", speakers:"7500", letter:"úáÚÁ", punctuation:"¿", mark:"\u{0301}" },
 
-"ady": { name:"Adyghe (West Circassian)", source:"udhr_ady", region:"eur", script:"cyrl", speakers:"590000", letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёӏӀ", mark:"\u{0306}\u{0308}", local:"Адыгабзэ [aːdəɣaːbza]", notes:"The UDHR translation uses Іі (byelorussian-ukrainian i), rather than ӏ (palochka)." },
+"ady": { name:"Adyghe (West Circassian)", source:"udhr_ady,2354dbbf502e044f5b3c42824859764a3815632d", region:"eur", script:"cyrl", speakers:"590000", letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёӏӀ", mark:"\u{0306}\u{0308}", local:"Адыгабзэ [aːdəɣaːbza]", notes:"The UDHR translation uses Іі (byelorussian-ukrainian i), rather than ӏ (palochka)." },
 
 "af": { name:"Afrikaans", source:"cldr_af,udhr_afr", region:"afr", script:"latn", speakers:"7100000", letter:"áâéèêëîïôöûÁÂÉÈÊËÎÏÔÖÛ", mark:"\u{0301}\u{0302}\u{0300}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″‰", aux:"àåäãæçíìóòúùüý̧̊̃" },
 
