@@ -197,7 +197,7 @@ function showLanguage (lang) {
     var total = 0
 
 	// name
-	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+' ['+lang+']</td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></td></tr>'
+	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+'&nbsp; <a href="../app-subtags/?lookup='+lang+'" target="_blank" style="font-size:80%;">['+lang+']</a></td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></td></tr>'
 
 	// characters
 	if (langs[lang].letter) {
