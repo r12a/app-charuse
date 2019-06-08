@@ -2,13 +2,13 @@ var langs = {
 
 // Any time this is changed, run _make-array.html to generate new code for char_lang.js !
 
-"ab":{ name:"Abkhaz (Abxaz, Abkhazian)", source:"udhr_abk,b03748de41ccb9a6e724e938c3fea5013517b8fa", region:"wasia", script:"cyrl", speakers:"113000", letter: "ЏАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЫЬабвгдежзиклмнопрстуфхцчшыьџҔҕҚқҞҟҦҧҨҩҬҭҲҳҴҵҶҷҼҽҾҿӘәӠӡӶӷ", punctuation:"–‐" },
+"ab":{ name:"Abkhaz (Abxaz, Abkhazian)", source:"udhr_abk,b03748de41ccb9a6e724e938c3fea5013517b8fa", region:"wasia", script:"cyrl", speakers:"113000", letter: "ЏАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЫЬабвгдежзиклмнопрстуфхцчшыьџҔҕҚқҞҟҦҧҨҩҬҭҲҳҴҵҶҷҼҽҾҿӘәӠӡӶӷ", punctuation:"–‐", local:"Аԥсуа бызшәа /apʰswa bɨzʃʷa/" },
 
 "ace": { name:"Acehnese (Achinese)", source:"udhr_ace,84b1954bb029c0f49091d7ba866b6e43bd2c7578", region:"seasia", script:"ascii", speakers:"3500000", letter:"ÈÉËÔÖèéëôö", mark:"̀́̂̈", punctuation:"‐“”" },
 
 "acu": { name:"Achaur-Shiwiar", source:"udhr_acu,udhr_acu_1", region:"sam", script:"latn", speakers:"7500", letter:"úáÚÁ", punctuation:"¿", mark:"\u{0301}" },
 
-"ady": { name:"Adyghe (West Circassian)", source:"udhr_ady", region:"eur", script:"cyrl", speakers:"590000", letter:"цыхуэфащмтеднйпсожлъкрзгьишбячівюЦЫХУЭФАЩМТЕДНЙПСОЖЛЪКРЗГЬИШБЯЧІВЮ", number:"", punctuation:"", separator:"", symbol:"", mark:"\u{0306}" },
+"ady": { name:"Adyghe (West Circassian)", source:"udhr_ady", region:"eur", script:"cyrl", speakers:"590000", letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёӏӀ", mark:"\u{0306}\u{0308}", local:"Адыгабзэ [aːdəɣaːbza]", notes:"The UDHR translation uses Іі (byelorussian-ukrainian i), rather than ӏ (palochka)." },
 
 "af": { name:"Afrikaans", source:"cldr_af,udhr_afr", region:"afr", script:"latn", speakers:"7100000", letter:"áâéèêëîïôöûÁÂÉÈÊËÎÏÔÖÛ", mark:"\u{0301}\u{0302}\u{0300}\u{0308}", punctuation:"§‐–—…‘’“”†‡′″‰", aux:"àåäãæçíìóòúùüý̧̊̃" },
 
