@@ -603,7 +603,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->08-Jun-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->09-Jun-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
@@ -619,6 +619,36 @@ for (var p=0;p<parameters.length;p++) {
 	if (pairs[0] == 'charlist') { if (pairs[1]) { document.getElementById('characters').value = decodeURIComponent(pairs[1]); document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value); } }
 	if (pairs[0] == 'language') { if (pairs[1]) { document.getElementById('languageSelector').value = pairs[1]; document.getElementById('langDetails').innerHTML = showLanguage(pairs[1]); } }
 	}
+
+// put links around tags related to macrolanguages
+var macrolist = document.querySelectorAll('i')
+for (let i=0;i<macrolist.length;i++) { console.log(macrolist)
+	var finalList = ''
+	var tagList = macrolist[i].textContent.split(' ')
+	for (let t=0;t<tagList.length;t++) {
+		if (t>0) finalList += ' '
+		if (langs[tagList[t]]) finalList += '<a href="./?language='+tagList[t]+'">'+tagList[t]+'</a> '
+		else finalList += tagList[t]
+		}
+	macrolist[i].innerHTML = finalList
+	}
+
     </script>
+
+
+
+<!-- FOR RESORTING THE LANGS.JS FILE
+<button onclick="sortData()">Sort data</button>
+<textarea id="dump"></textarea>
+<script>
+function sortData () {
+	var out = ''
+	var keys = Object.keys(langs)
+	keys.sort()
+	console.log(keys)
+	for (const key of keys) out += '"'+key+'":'+JSON.stringify(langs[key])+',\n\n'
+	document.getElementById('dump').value = out
+	}
+</script-->
 </body>
 </html>
