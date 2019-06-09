@@ -190,6 +190,32 @@ function findChars (str) {
 	return out
 	}
 
+
+function getAll (which) { 
+	// copies characters to clipboard when you click on the stats
+	if (which === 'total') {
+		out = ''
+		if (document.getElementById('letterCell')) out += document.getElementById('letterCell').textContent
+		if (document.getElementById('markCell')) out += document.getElementById('markCell').textContent
+		if (document.getElementById('punctuationCell')) out += document.getElementById('punctuationCell').textContent
+		if (document.getElementById('numberCell')) out += document.getElementById('numberCell').textContent
+		if (document.getElementById('symbolCell')) out += document.getElementById('symbolCell').textContent
+		out = out.replace(/\s+/g,'')
+		}
+	else {
+		out = document.getElementById(which).textContent
+		out = out.replace(/\s+/g,'')
+		}
+	
+	document.getElementById('clipboardStore').value = out
+	
+	document.getElementById('clipboardStore').focus()
+	document.getElementById('clipboardStore').select()
+	document.execCommand('copy')
+	}
+
+
+
 function showLanguage (lang) {
 	out = ''
 	var charList
@@ -203,9 +229,9 @@ function showLanguage (lang) {
 	if (langs[lang].letter) {
 		charList = [...langs[lang].letter]
 		charList.sort()
-        stats += charList.length + ' letters'
+        stats += charList.length + ' <a onclick="getAll(\'letterCell\');return false;" style="cursor:pointer;">letters</a>'
         total += charList.length
-		out += '<tr><th>Letters</th><td class="large">'
+		out += '<tr><th>Letters</th><td class="large" id="letterCell">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -218,9 +244,9 @@ function showLanguage (lang) {
 		charList = [...langs[lang].mark]
  		charList.sort()
         if (total > 0) stats += ', '
-        stats += charList.length + ' marks'
+        stats += charList.length + ' <a onclick="getAll(\'markCell\');return false;" style="cursor:pointer;">marks</a>'
         total += charList.length
-		out += '<tr><th>Marks</th><td class="large">'
+		out += '<tr><th>Marks</th><td class="large" id="markCell">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -233,9 +259,9 @@ function showLanguage (lang) {
 		charList = [...langs[lang].punctuation]
  		charList.sort()
         if (total > 0) stats += ', '
-        stats += charList.length + ' punctuation'
+        stats += charList.length + ' <a onclick="getAll(\'punctuationCell\');return false;" style="cursor:pointer;">punctuation</a>'
         total += charList.length
-		out += '<tr><th>Punctuation</th><td class="large">'
+		out += '<tr><th>Punctuation</th><td class="large" id="punctuationCell">'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -247,9 +273,9 @@ function showLanguage (lang) {
 	if (langs[lang].number) {
 		charList = [...langs[lang].number]
         if (total > 0) stats += ', '
-        stats += charList.length + ' numbers'
+        stats += charList.length + ' <a onclick="getAll(\'numberCell\');return false;" style="cursor:pointer;">numbers</a>'
         total += charList.length
-		out += '<tr><th>Numbers</th><td class="large">'
+		out += '<tr><th>Numbers</th><td class="large" id="numberCell">'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -261,9 +287,9 @@ function showLanguage (lang) {
 	if (langs[lang].symbol) {
 		charList = [...langs[lang].symbol]
         if (total > 0) stats += ', '
-        stats += charList.length + ' symbols'
+        stats += charList.length + ' <a onclick="getAll(\'symbolCell\');return false;" style="cursor:pointer;">symbols</a>'
         total += charList.length
-		out += '<tr><th>Symbols</th><td class="large">'
+		out += '<tr><th>Symbols</th><td class="large" id="symbolCell">'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -277,7 +303,7 @@ function showLanguage (lang) {
         if (total > 0) stats += ', '
         stats += charList.length + ' other'
         total += charList.length
-		out += '<tr><th>Other</th><td class="other">'
+		out += '<tr><th>Other</th><td class="other" id="otherCell">'
 		//out += langs[lang].other
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
@@ -290,12 +316,12 @@ function showLanguage (lang) {
 		}
 			
 	// stats
-	stats += ' : &nbsp; total ' + total
+	stats += ' : &nbsp; <a onclick="getAll(\'total\');return false;" style="cursor:pointer;">total</a> ' + total
 	if (langs[lang].aux || langs[lang].deprecated) stats += ' &nbsp; &nbsp; + ( '
 	if (langs[lang].aux) {
 		charList = [...langs[lang].aux]
-        stats += charList.length + ' infrequent '
-		out += '<tr><th>Infrequent</th><td class="small">'
+        stats += charList.length + ' <a onclick="getAll(\'infrequentCell\');return false;" style="cursor:pointer;">infrequent</a> '
+		out += '<tr><th>Infrequent</th><td class="small" id="infrequentCell">'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -323,7 +349,7 @@ function showLanguage (lang) {
 		out += '<tr><th></th><td class="large">ASCII only</td></tr>'
 		stats = ''
 		}
-	else stats = '<tr><th></th><td style="border:0; font-size: 70%; font-style: italic; line-height: 1; color:gray;">'+stats+'</td></tr>'
+	else stats = '<tr><th></th><td style="border:0; font-size: 70%; font-style: italic; line-height: 1; color:gray;">'+stats+'  <input  id="clipboardStore" style="height:2px;width:2px;margin-left:2em;vertical-align:middle;"/></td></tr>'
 
 	// source
 	var sources = langs[lang].source.split(',')
@@ -477,6 +503,7 @@ function filter (str) {
 
 
 <p style="font-size: 90%;">Find characters used by a given language, or languages that use a given non-ASCII character. The information may not be 100% reliable. <strong><a href="#notesSection" onClick="document.getElementById('notesSection').open = true;">Please read the notes below.</a></strong></p>
+
 
 <section style="margin-top: 3em;">
 <p><strong>Pick a language:</strong></p>
