@@ -136,9 +136,9 @@ var langs = {
 
 "cfm": { name:"Falam Chin (Baro Halam)", source:"udhr_flm,1f092f9b4f53e2b4ec5dc91221d0cdb55c50c844", region:"seasia", script:"ascii", speakers:"107000", letter:"Ṭṭ", mark:"̣", local:"Laiṭawng"},
 
-"cgg": { name:"Chiga (Rukiga, Ruchiga)", source:"cldr_cgg", region:"afr", script:"ascii", speakers:"1600000"},
+"cgg": { name:"Chiga (Rukiga, Ruchiga, Kiga)", source:"cldr_cgg", region:"afr", script:"ascii", speakers:"1600000", local:"Rukiga"},
 
-"ch": { name:"Chamorro", source:"udhr_cha", region:"oce", script:"ascii", speakers:"95000"},
+"ch": { name:"Chamorro", source:"udhr_cha", region:"oce", script:"ascii", speakers:"58000", local:"Finu' Chamoru"},
 
 "chj": { name:"Ojitlán Chinantec", source:"udhr_chj", region:"cam", script:"latn", speakers:"38000", letter:"öíäñáéúïüëóÖÍÄÑÁÉÚÏÜËÓ", mark:"̈́̃", punctuation:"–", symbol:"°"},
 
