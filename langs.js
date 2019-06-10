@@ -134,7 +134,7 @@ var langs = {
 
 "ceb": { name:"Cebuano (Bisaya)", source:"cldr_ceb,udhr_ceb", region:"seasia", script:"ascii", speakers:"16000000", notes:"Wikipedia suggests that an acute accent is used to indicate stress."},
 
-"cfm": { name:"Falam Chin (Baro Halam)", source:"udhr_flm", region:"seasia", script:"ascii", speakers:"107000"},
+"cfm": { name:"Falam Chin (Baro Halam)", source:"udhr_flm", region:"seasia", script:"ascii", speakers:"107000", letter:"Ṭṭ", mark:"̣", local:"Laiṭawng"},
 
 "cgg": { name:"Chiga (Rukiga, Ruchiga)", source:"cldr_cgg", region:"afr", script:"ascii", speakers:"1600000"},
 
