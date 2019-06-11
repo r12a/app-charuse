@@ -152,7 +152,7 @@ var langs = {
 
 "cjs": { name:"Shor", source:"udhr_cjs,eec6428d9ce711e3709def0279121e23a4bf488a", region:"nasia", script:"cyrl", speakers:"2800", letter:"кижнтолағыңудерцязчқшйъӱгьсмбюпӧэвфхКИЖНТОЛАҒЫҢУДЕРЦЯЗЧҚШЙЪӰГЬСМБЮПӦЭВФХЁЩщё", mark:"̆̈", local:"Шор тили (šor tili), Тадар тили (tadar tili)"},
 
-"ckb-arab": { name:"Central Kurdish (Sorani) {Arabic}", source:"cldr_ckb", region:"wasia", script:"arab", speakers:"7250000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"ٔ", punctuation:"٫٬٪؉","number":"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْ", local:"کوردیی ناوەندی (Kurdîy nawendî), سۆرانی, (Soranî)", notes:"Macrolanguage is <i>ku</i>."},
+"ckb-arab": { name:"Central Kurdish (Sorani) {Arabic}", source:"cldr_ckb", region:"wasia", script:"arab", speakers:"7250000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"ٔ", punctuation:"٫٬٪؉","number":"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْـ", local:"کوردیی ناوەندی (Kurdîy nawendî), سۆرانی, (Soranî)", notes:"Macrolanguage is <i>ku</i>."},
 
 "ckb-latn": { name:"Central Kurdish (Sorani) {Latin}", source:"udhr_ckb", region:"wasia", script:"latn", speakers:"7250000", letter:"şŞûîêçÛÎÊÇ", mark:"̧̂", local:"Kurdîy nawendî, Soranî", notes:"Macrolanguage is <i>ku</i>."},
 
