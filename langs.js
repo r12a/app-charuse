@@ -152,9 +152,9 @@ var langs = {
 
 "cjs": { name:"Shor", source:"udhr_cjs,eec6428d9ce711e3709def0279121e23a4bf488a", region:"nasia", script:"cyrl", speakers:"2800", letter:"кижнтолағыңудерцязчқшйъӱгьсмбюпӧэвфхКИЖНТОЛАҒЫҢУДЕРЦЯЗЧҚШЙЪӰГЬСМБЮПӦЭВФХЁЩщё", mark:"̆̈", local:"Шор тили (šor tili), Тадар тили (tadar tili)"},
 
-"ckb-arab": { name:"Central Kurdish (Sorani) {Arabic}", source:"cldr_ckb,fa1e79cbcb9ca9906ebecd0c8e47c135d5a380c1", region:"wasia", script:"arab", speakers:"7250000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"ٔ", punctuation:"٫٬٪؉","number":"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْـ", local:"کوردیی ناوەندی (Kurdîy nawendî), سۆرانی, (Soranî)", notes:"Macrolanguage is <i>ku</i>."},
+"ckb": { name:"Central Kurdish (Sorani)", source:"cldr_ckb,fa1e79cbcb9ca9906ebecd0c8e47c135d5a380c1", region:"wasia", script:"arab", speakers:"7250000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"ٔ", punctuation:"٫٬٪؉","number":"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْـ", local:"کوردیی ناوەندی (Kurdîy nawendî), سۆرانی, (Soranî)", notes:"Macrolanguage is <i>ku</i>, which includes <i>ckb</i> <i>kmr</i> <i>sdh</i>."},
 
-"ckb-latn": { name:"Central Kurdish (Sorani) {Latin}", source:"udhr_ckb", region:"wasia", script:"latn", speakers:"7250000", letter:"şŞûîêçÛÎÊÇ", mark:"̧̂", local:"Kurdîy nawendî, Soranî", notes:"Macrolanguage is <i>ku</i>."},
+"ckb-latn": { name:"Central Kurdish (Sorani) {Latin}", source:"udhr_ckb", region:"wasia", script:"latn", speakers:"7250000", letter:"şŞûîêçÛÎÊÇ", mark:"̧̂", local:"Kurdîy nawendî, Soranî", notes:"Macrolanguage is <i>ku</i>, which includes <i>ckb</i> <i>kmr</i> <i>sdh</i>."},
 
 "cnh": { name:"Haka Chin (Lai)", source:"udhr_cnh", region:"seasia", script:"ascii", speakers:"446264"},
 
@@ -398,7 +398,7 @@ var langs = {
 
 "kmb": { name:"Kimbundu (North Mbundu)", source:"udhr_kmb", region:"afr", script:"latn", speakers:"4000000", letter:"êâôÊÂÔ", mark:"̂", punctuation:"’"},
 
-"kmr": { name:"Northern Kurdish (Kurmanji)", source:"udhr_kmr", region:"wasia", script:"latn", speakers:"15000000", letter:"ûîêçÛÎÊÇşŞ", mark:"̧̂"},
+"kmr": { name:"Northern Kurdish (Kurmanji)", source:"udhr_kmr", region:"wasia", script:"latn", speakers:"15000000", letter:"ûîêçÛÎÊÇşŞ", mark:"̧̂", local:"Kurmancî", notes:"Macrolanguage is <i>ku</i>, which includes <i>ckb</i> <i>kmr</i> <i>sdh</i>."},
 
 "kn": { name:"Kannada (Canarese, Kanarese)", source:"cldr_kn,udhr_kan", region:"sasia", script:"knda", speakers:"37700000", letter:"ಅಆಇಈಉಊಋೠಌೡಎಏಐಒಓಔಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳಽ", mark:"಼̃ಂಃಾಿೀುೂೃೄೆೇೈೊೋೌ್ೕೖ", punctuation:"‐–—…‘’“”′″","number":"೦೧೨೩೪೫೬೭೮೯", other:"‌", aux:"ೞ"},
 
@@ -428,7 +428,7 @@ var langs = {
 
 "ktu": { name:"Kituba", source:"udhr_ktu", region:"afr", script:"ascii", speakers:"5400000"},
 
-"ku": { name:"Kurdish", source:"https://r12a.github.io/app-subtags/?lookup=ku", region:"wasia", script:"latn", speakers:"0", notes:"This is a macrolanguage. See kmr (Northern Kurdish) or ckb (Central Kurdish) or sdh (Southern Kurdish)."},
+"ku": { name:"Kurdish", source:"https://r12a.github.io/app-subtags/?lookup=ku", region:"wasia", script:"latn", speakers:"0", notes:" ku is a macrolanguage that encompasses the following more specific primary language subtags: <i>ku</i>, which includes <i>ckb</i> <i>kmr</i> <i>sdh</i> ku is often preferred by legacy applications rather than kmr (Northern Kurdish)."},
 
 "kw": { name:"Cornish", source:"cldr_kw", region:"eur", script:"ascii", speakers:"~350"},
 
