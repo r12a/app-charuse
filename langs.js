@@ -150,7 +150,7 @@ var langs = {
 
 "cjk": { name:"Chokwe", source:"udhr_cjk", region:"afr", script:"ascii", speakers:"980000"},
 
-"cjs": { name:"Shor", source:"udhr_cjs", region:"nasia", script:"cyrl", speakers:"2800", letter:"кижнтолағыңудерцязчқшйъӱгьсмбюпӧэвфхКИЖНТОЛАҒЫҢУДЕРЦЯЗЧҚШЙЪӰГЬСМБЮПӦЭВФХ", mark:"̆̈", local:"Шор тили (šor tili), Тадар тили (tadar tili)"},
+"cjs": { name:"Shor", source:"udhr_cjs", region:"nasia", script:"cyrl", speakers:"2800", letter:"кижнтолағыңудерцязчқшйъӱгьсмбюпӧэвфхКИЖНТОЛАҒЫҢУДЕРЦЯЗЧҚШЙЪӰГЬСМБЮПӦЭВФХЁЩщё", mark:"̆̈", local:"Шор тили (šor tili), Тадар тили (tadar tili)"},
 
 "ckb-arab": { name:"Central Kurdish (Sorani) (Arabic)", source:"cldr_ckb", region:"wasia", script:"arab", speakers:"7000000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"ٔ", punctuation:"٫٬٪؉","number":"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْ"},
 
