@@ -154,7 +154,7 @@ var langs = {
 
 "ckb": { name:"Central Kurdish (Sorani)", source:"cldr_ckb,fa1e79cbcb9ca9906ebecd0c8e47c135d5a380c1", region:"wasia", script:"arab", speakers:"7250000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"ٔ", punctuation:"٫٬٪؉","number":"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْـ", local:"کوردیی ناوەندی (Kurdîy nawendî), سۆرانی, (Soranî)", notes:"Macrolanguage is <i>ku</i>, which includes <i>ckb</i> <i>kmr</i> <i>sdh</i>."},
 
-"ckb-latn": { name:"Central Kurdish (Sorani) {Latin}", source:"udhr_ckb", region:"wasia", script:"latn", speakers:"7250000", letter:"şŞûîêçÛÎÊÇ", mark:"̧̂", aux:"̣̈̌ḤḥḦḧẌẍŁłŇňŘřÜüʿ", local:"Kurdîy nawendî, Soranî", notes:"Macrolanguage is <i>ku</i>, which includes <i>ckb</i> <i>kmr</i> <i>sdh</i>."},
+"ckb-latn": { name:"Central Kurdish (Sorani) {Latin}", source:"udhr_ckb,565fb1c44c0ddde28a6bec9836935ab74c3f72c9", region:"wasia", script:"latn", speakers:"7250000", letter:"şŞûîêçÛÎÊÇ", mark:"̧̂", aux:"̣̈̌ḤḥḦḧẌẍŁłŇňŘřÜüʿ", local:"Kurdîy nawendî, Soranî", notes:"Macrolanguage is <i>ku</i>, which includes <i>ckb</i> <i>kmr</i> <i>sdh</i>."},
 
 "cnh": { name:"Haka Chin (Lai)", source:"udhr_cnh", region:"seasia", script:"ascii", speakers:"446264"},
 
