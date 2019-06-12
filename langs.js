@@ -158,7 +158,7 @@ var langs = {
 
 "cnh": { name:"Haka Chin (Lai)", source:"udhr_cnh", region:"seasia", script:"ascii", speakers:"446264"},
 
-"cni": { name:"Asháninka", source:"udhr_cni", region:"sam", script:"latn", speakers:"~35000", letter:"áéÁÉ", mark:"́"},
+"cni": { name:"Asháninka", source:"udhr_cni", region:"sam", script:"latn", speakers:"~35000", letter:"áéÁÉÑñ", mark:"́̃"},
 
 "co": { name:"Corsican", source:"udhr_cos", region:"eur", script:"latn", speakers:"200000", letter:"àèìùòÀÈÌÙÒ", mark:"̀", punctuation:"’"},
 
