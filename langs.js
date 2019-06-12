@@ -160,7 +160,7 @@ var langs = {
 
 "cni": { name:"Asháninka", source:"udhr_cni,4a72f03687c85b581a7fab4146a3d0d9420e3257", region:"sam", script:"latn", speakers:"~35000", letter:"áéÁÉÑñ", mark:"́̃"},
 
-"co": { name:"Corsican", source:"udhr_cos", region:"eur", script:"latn", speakers:"200000", letter:"àèìùòÀÈÌÙÒ", mark:"̀", punctuation:"’"},
+"co": { name:"Corsican", source:"udhr_cos", region:"eur", script:"latn", speakers:"325000", letter:"àèìùòÀÈÌÙÒ", mark:"̀", punctuation:"’", aux:"ÉÔéố̂", local:"corsu [ˈkorsu, ˈkɔrtsu], lingua corsa [ˈliŋɡwa ˈɡorsa]"},
 
 "cof": { name:"Colorado (Tsafiki, Tsáchila)", source:"udhr_cof", region:"sam", script:"latn", speakers:"2300", letter:"íÍ", mark:"́"},
 
