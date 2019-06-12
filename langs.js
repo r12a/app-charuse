@@ -186,7 +186,7 @@ var langs = {
 
 "da": { name:"Danish", source:"cldr_da,udhr_dan", region:"eur", script:"latn", speakers:"5500000", letter:"æøåÆØÅ", mark:"̊", punctuation:"§‐–…‘’“”†′″", aux:"œŒŸǿǾáàâçéèêëíîïñóôúùûÿüäöÁÀÂÇÉÈÊËÍÎÏÑÓÔÚÙÛÜÄÖ̧́̀̂̈̃"},
 
-"dag": { name:"Dagbani (Dagbanli, Dagbanle)", source:"udhr_dag", region:"afr", script:"latn", speakers:"1160000", letter:"ƐƆƔƷŋŊɛɔɣʒ"},
+"dag": { name:"Dagbani (Dagbanli, Dagbanle)", source:"udhr_dag", region:"afr", script:"latn", speakers:"1160000", letter:"ƐƆƔƷŋŊɛɔɣʒ’"},
 
 "dav": { name:"Taita (Dawida)", source:"cldr_dav", region:"afr", script:"ascii", speakers:"400000"},
 
