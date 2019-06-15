@@ -156,7 +156,7 @@ sub { color:#C30; font-style: italic; }
 #output th, #output td { text-align: left; vertical-align: top; padding: 10px; }
 thead th { text-align: left; }
 
-#langDetails { color: #C33; margin: 1em 30% 2em 7.5%; line-height: 1.2em; min-width: 70%;}
+#langDetails { color: #C33; margin: 1em 7.5% 2em 7.5%; line-height: 1.2em; min-width: 70%;}
 #langDetails th { color:#777; font-weight: normal; }
 #langDetails th, #langDetails td { text-align: start; vertical-align: top; padding: 10px; }
 #langDetails  td.large { font-size: 1.7em; line-height: 1.5; }
