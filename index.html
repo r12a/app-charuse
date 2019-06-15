@@ -83,7 +83,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mymr:[], talu:[], nkoo:[], orya:[], sinh:[], sund:[], syrc:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], na:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mymr:[], talu:[], nkoo:[], orya:[], sinh:[], sund:[], syrc:[], syrn:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], na:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
@@ -125,6 +125,7 @@ function listLangsByScript () {
             case 'sinh': region = 'Sinhala';break
             case 'sund': region = 'Sundanese';break
             case 'syrc': region = 'Syriac';break
+            case 'syrn': region = 'Eastern Syriac';break
             case 'tfng': region = 'Tifinagh';break
             case 'taml': region = 'Tamil';break
             case 'tavt': region = 'Tai Viet';break
@@ -228,7 +229,7 @@ function showLanguage (lang) {
 	out += '<tr><td colspan="2" class="links" style="text-align:right; padding: 0; font-size: 80%; vertical-align:bottom;"><span style="cursor:pointer; margin-right:1em; color:teal;" onclick="toImg(document.getElementById(\'letterCell\')); toImg(document.getElementById(\'markCell\')); toImg(document.getElementById(\'punctuationCell\')); toImg(document.getElementById(\'numberCell\')); toImg(document.getElementById(\'infrequentCell\')); toImg(document.getElementById(\'symbolCell\')); this.style.color=\'#ccc\';">Convert to images</span></td><td class="links" style="padding:0;">&nbsp;</td></tr>'
 	
 	// name
-	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+'&nbsp; <a href="../app-subtags/?lookup='+lang+'" target="_blank" style="font-size:80%;">['+lang+']</a></td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></td></tr>'
+	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+'&nbsp; <a href="../app-subtags/?lookup='+lang+'" target="_blank" style="font-size:80%;">['+lang+']</a>'+'&nbsp; <span class="scriptName" style="font-size:60%;">'+langs[lang].script+'</span></td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></td></tr>'
 
 	if (!langs[lang].redirect) {
 	
@@ -424,6 +425,9 @@ function showLanguage (lang) {
 	
 	// notes
 	if (langs[lang].notes) {
+		langs[lang].notes = langs[lang].notes.replace(/\[/g, '<i>')
+		langs[lang].notes = langs[lang].notes.replace(/\]/g, '</i>')
+	
 		lines = langs[lang].notes.split('\n')
 		inList = false
 		for (let l=0;l<lines.length;l++) {
