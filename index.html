@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="../shared/code/boilerplate.js"></script>
 <script type="text/javascript" src="../shared/code/all-names.js"></script>
+<script type="text/javascript" src="../shared/code/scriptGroups.js"></script>
 <script type="text/javascript" src="char_lang.js"></script>
 <script type="text/javascript" src="langs.js"></script>
 <script>
@@ -224,6 +225,8 @@ function showLanguage (lang) {
     var stats = 'Non-ASCII character count: &nbsp; '
     var total = 0
 
+	out += '<tr><td colspan="2" class="links" style="text-align:right; padding: 0; font-size: 80%; vertical-align:bottom;"><span style="cursor:pointer; margin-right:1em; color:teal;" onclick="toImg(document.getElementById(\'letterCell\')); toImg(document.getElementById(\'markCell\')); toImg(document.getElementById(\'punctuationCell\')); toImg(document.getElementById(\'numberCell\')); toImg(document.getElementById(\'infrequentCell\')); toImg(document.getElementById(\'symbolCell\')); this.style.color=\'#ccc\';">Convert to images</span></td><td class="links" style="padding:0;">&nbsp;</td></tr>'
+	
 	// name
 	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+'&nbsp; <a href="../app-subtags/?lookup='+lang+'" target="_blank" style="font-size:80%;">['+lang+']</a></td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></td></tr>'
 
@@ -539,6 +542,41 @@ function filter (str) {
 		}
 	document.getElementById('total').textContent = total
 	}
+
+
+function findScriptGroup ( charNum ) { 
+	// output: returns the name of the script group in which charNum falls
+	// charNum: a decimal number representing the code point of the character in question
+	if (charNum < 128) { return 'Basic Latin' }
+	var i=1
+	while ( i<scriptGroups.length && charNum > scriptGroups[i][0] ) i++
+	if ( i === scriptGroups.length ) { return( "Not a character!" ) }
+	if ( scriptGroups[i-1][1] >= charNum ) { return( scriptGroups[i-1][2]) }
+	if ( scriptGroups[i][0] == charNum ) { return( scriptGroups[i][2]) }
+	return( "Not a character!" )
+	}
+
+function toImg (node) {
+	// convert the characters shown to images
+	
+	if (! node) return
+	
+	var charlist = node.textContent.replace(/\s+/g,'')
+	//console.log(charlist)
+	var charArray = [...charlist]
+	//console.log(charArray)
+	var out = ''
+	for (let i=0;i<charArray.length;i++) {
+		cp = charArray[i].codePointAt(0)
+		scriptGroup = findScriptGroup(cp)
+		//console.log(scriptGroup)
+		hexNum = cp.toString(16)
+		while (hexNum.length < 4) hexNum = '0'+hexNum
+		out += '<img src="../c/'+scriptGroup.replace(/ /g,'_')+'/'+hexNum+'.png"/> '
+		}
+	//console.log(out)
+	node.innerHTML = out
+	}
 </script>
 </head>
 
@@ -572,7 +610,6 @@ function filter (str) {
 </p>
 
 
-
 <table id="langDetails"></table>
 </section>
 
@@ -587,7 +624,7 @@ function filter (str) {
      <p><button style="vertical-align:top;" onclick="document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)">Look up</button></p>
 <table style="margin-top: 3em;margin-right: 3em;">
 <thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th>
-<tbody id="output"><td></td><td></td><td></td></table>
+<tbody id="output"><td></td><td></td><td></td></tbody></table>
 </section>
 
 
