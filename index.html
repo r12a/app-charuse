@@ -4,10 +4,10 @@
 <meta charset="utf-8" />
 <title>Character usage</title>
 <meta name="description" content="Characters used by any particular language, and languages which use any particular character." />
-<link rel="stylesheet" type="text/css" href="/shared/style/docs.css" />
+<link rel="stylesheet" type="text/css" href="../shared/style/docs.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
-<script type="text/javascript" src="/shared/code/boilerplate.js"></script>
-<script type="text/javascript" src="/shared/code/all-names.js"></script>
+<script type="text/javascript" src="../shared/code/boilerplate.js"></script>
+<script type="text/javascript" src="../shared/code/all-names.js"></script>
 <script type="text/javascript" src="char_lang.js"></script>
 <script type="text/javascript" src="langs.js"></script>
 <script>
@@ -82,7 +82,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mymr:[], talu:[], nkoo:[], orya:[], sinh:[], sund:[], syrc:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mymr:[], talu:[], nkoo:[], orya:[], sinh:[], sund:[], syrc:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], na:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
@@ -135,6 +135,7 @@ function listLangsByScript () {
             case 'tibt': region = 'Tibetan';break
             case 'vaii': region = 'Vai';break
             case 'yiii': region = 'Yi';break
+            case 'na': region = 'NA';break
             }
         out += '<tr><th>'+region+'</th><td>'+regionList[r].length+' languages: '
         for (let l=0;l<regionList[r].length;l++ ) {
@@ -226,13 +227,20 @@ function showLanguage (lang) {
 	// name
 	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+'&nbsp; <a href="../app-subtags/?lookup='+lang+'" target="_blank" style="font-size:80%;">['+lang+']</a></td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></td></tr>'
 
+	if (!langs[lang].redirect) {
+	
+	if (langs[lang].rtl) rtl = true
+	else rtl = false
+	
 	// characters
 	if (langs[lang].letter) {
 		charList = [...langs[lang].letter]
 		charList.sort()
         stats += charList.length + ' <a onclick="getAll(\'letterCell\');return false;" style="cursor:pointer;">letters</a>'
         total += charList.length
-		out += '<tr><th>Letters</th><td class="large" id="letterCell">'
+		out += '<tr><th>Letters</th><td class="large" id="letterCell"'
+		if (rtl) out += ' dir="rtl">'
+		else out += '>'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -247,7 +255,9 @@ function showLanguage (lang) {
         if (total > 0) stats += ', '
         stats += charList.length + ' <a onclick="getAll(\'markCell\');return false;" style="cursor:pointer;">marks</a>'
         total += charList.length
-		out += '<tr><th>Marks</th><td class="large" id="markCell">'
+		out += '<tr><th>Marks</th><td class="large" id="markCell"'
+		if (rtl) out += ' dir="rtl">'
+		else out += '>'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -262,7 +272,9 @@ function showLanguage (lang) {
         if (total > 0) stats += ', '
         stats += charList.length + ' <a onclick="getAll(\'punctuationCell\');return false;" style="cursor:pointer;">punctuation</a>'
         total += charList.length
-		out += '<tr><th>Punctuation</th><td class="large" id="punctuationCell">'
+		out += '<tr><th>Punctuation</th><td class="large" id="punctuationCell"'
+		if (rtl) out += ' dir="rtl">'
+		else out += '>'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -276,7 +288,9 @@ function showLanguage (lang) {
         if (total > 0) stats += ', '
         stats += charList.length + ' <a onclick="getAll(\'numberCell\');return false;" style="cursor:pointer;">numbers</a>'
         total += charList.length
-		out += '<tr><th>Numbers</th><td class="large" id="numberCell">'
+		out += '<tr><th>Numbers</th><td class="large" id="numberCell"'
+		if (rtl) out += ' dir="rtl">'
+		else out += '>'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -290,7 +304,9 @@ function showLanguage (lang) {
         if (total > 0) stats += ', '
         stats += charList.length + ' <a onclick="getAll(\'symbolCell\');return false;" style="cursor:pointer;">symbols</a>'
         total += charList.length
-		out += '<tr><th>Symbols</th><td class="large" id="symbolCell">'
+		out += '<tr><th>Symbols</th><td class="large" id="symbolCell"'
+		if (rtl) out += ' dir="rtl">'
+		else out += '>'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -362,17 +378,18 @@ function showLanguage (lang) {
 		if (i>0) out += ', '
 		if (sources[i].startsWith('cldr_')) out += '<a href="https://www.unicode.org/cldr/charts/latest/summary/'+sources[i].substr(5)+'.html">CLDR</a>'
 		else if (sources[i].startsWith('udhr_')) out += '<a href="https://unicode.org/udhr/d/'+sources[i]+'.html">UDHR</a>'
+		else if (sources[i].startsWith('ethn_')) out += '<a href="https://ethnologue.com/language/'+sources[i].substr(5)+'">Ethnologue</a>'
 		else if (sources[i].startsWith('http')) out += '<a href="'+sources[i]+'">link</a>'
 		else if (sources[i] === 'r12a' || sources[i] === 'CLDR' || sources[i] === 'UDHR') out += sources[i]
 		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
 		}
-	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this language.</span>'
+	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this orthography.</span>'
 	out += '</td></td><td class="links"></tr>'
 	
 	out += stats
 	
 	// local name
-	if (langs[lang].local) out += '<tr><th>Local name</th><td style="font-size:90%">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
+	if (langs[lang].local) out += '<tr><th>Autonym</th><td class="localCell">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
 	
 	// region
 	switch (langs[lang].region) {
@@ -400,9 +417,29 @@ function showLanguage (lang) {
 		}
 	//speakers = speakers.replace(/\?/,'0')
 	out += '<tr><th>Native speakers</th><td>'+speakers+'</td></tr>'
+	} // ends stuff cut out for macrolanguages etc.
 	
 	// notes
-	if (langs[lang].notes) out += '<tr><th>Notes</th><td style="font-size:90%">'+langs[lang].notes+'</td></td><td class="links"></td></tr>'
+	if (langs[lang].notes) {
+		lines = langs[lang].notes.split('\n')
+		inList = false
+		for (let l=0;l<lines.length;l++) {
+			if (lines[l].startsWith('*')) {
+				if (inList) lines[l] = '<li>'+lines[l].substring(2)+'</li>'
+				else {
+					lines[l] = '<ul><li>'+lines[l].substring(2)+'</li>'
+					inList = true
+					}
+				}
+			else if (inList) {
+				lines[l] = '</ul><p>'+lines[l]+'</p>'
+				inList = false
+				}
+			else lines[l] = '<p>'+lines[l]+'</p>'
+			}
+		formattedNote = lines.join('')
+		out += '<tr><th>Notes</th><td class="notesCell">'+formattedNote+'</td></td><td class="links"></td></tr>'
+		}
 
 //	return out
 	document.getElementById('langDetails').innerHTML = out
@@ -549,8 +586,8 @@ function filter (str) {
  
      <p><button style="vertical-align:top;" onclick="document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)">Look up</button></p>
 <table style="margin-top: 3em;margin-right: 3em;">
-<thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th></thead>
-<tbody id="output"><td></td><td></td><td></td></tbody></table>
+<thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th>
+<tbody id="output"><td></td><td></td><td></td></table>
 </section>
 
 
@@ -646,7 +683,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->10-Jun-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->15-Jun-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
