@@ -226,6 +226,9 @@ function showLanguage (lang) {
     var stats = 'Non-ASCII character count: &nbsp; '
     var total = 0
 
+	// check this is a valid langtag
+	if (!langs[lang]) { alert("The tag "+lang+" was not recognised."); return }
+	
 	out += '<tr><td colspan="2" class="links" style="text-align:right; padding: 0; font-size: 80%; vertical-align:bottom;"><span style="cursor:pointer; margin-right:1em; color:teal;" onclick="toImg(document.getElementById(\'letterCell\')); toImg(document.getElementById(\'markCell\')); toImg(document.getElementById(\'punctuationCell\')); toImg(document.getElementById(\'numberCell\')); toImg(document.getElementById(\'infrequentCell\')); toImg(document.getElementById(\'symbolCell\')); this.style.color=\'#ccc\';">Convert to images</span></td><td class="links" style="padding:0;">&nbsp;</td></tr>'
 	
 	// name
