@@ -570,7 +570,7 @@ function toImg (node) {
 		cp = charArray[i].codePointAt(0)
 		scriptGroup = findScriptGroup(cp)
 		//console.log(scriptGroup)
-		hexNum = cp.toString(16)
+		hexNum = cp.toString(16).toUpperCase()
 		while (hexNum.length < 4) hexNum = '0'+hexNum
 		out += '<img src="../c/'+scriptGroup.replace(/ /g,'_')+'/'+hexNum+'.png"/> '
 		}
