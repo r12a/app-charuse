@@ -427,6 +427,9 @@ function showLanguage (lang) {
 	if (langs[lang].notes) {
 		langs[lang].notes = langs[lang].notes.replace(/\[/g, '<i>')
 		langs[lang].notes = langs[lang].notes.replace(/\]/g, '</i>')
+		
+		if (langs[lang].silcode) langcode = langs[lang].silcode
+		else langcode = lang
 	
 		lines = langs[lang].notes.split('\n')
 		inList = false
@@ -445,7 +448,7 @@ function showLanguage (lang) {
 			else lines[l] = '<p>'+lines[l]+'</p>'
 			}
 		formattedNote = lines.join('')
-		out += '<tr><th>Notes</th><td class="notesCell">'+formattedNote+'</td></td><td class="links"></td></tr>'
+		out += '<tr><th>Notes</th><td class="notesCell">'+formattedNote+'</td></td><td class="links"><a href="https://www.ethnologue.com/language/'+langcode+'" target="_blank"><img src="ethn.png" alt="Look this up in the Ethnologue." title="Look this up in the Ethnologue." class="ulink"/></a></td></tr>'
 		}
 
 //	return out
