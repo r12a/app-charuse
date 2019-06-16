@@ -603,11 +603,11 @@ function toImg (node) {
 </aside-->
 
 
-<p style="font-size: 90%;">Find characters used by a given language, or languages that use a given non-ASCII character. The information may not be 100% reliable. <strong><a href="#notesSection" onClick="document.getElementById('notesSection').open = true;">Please read the notes below.</a></strong></p>
+<p style="font-size: 90%;">Find non-ASCII characters used by a given language, or languages that use a given non-ASCII character. The information may not be 100% reliable. <strong><a href="#notesSection" onClick="document.getElementById('notesSection').open = true;">Please read the notes below.</a></strong></p>
 
 
 <section style="margin-top: 3em;">
-<p><strong>Pick a language:</strong></p>
+<p style="font-size: 150%; color: #a52a2a;">Find a language</p>
 
 <p>Filter the list <input id="filter" type="text" onInput="filter(this.value);" /> <span style="font-size: 70%; margin-left:2em;">Total: <span id="total"></span></span></p>
 
@@ -626,8 +626,9 @@ function toImg (node) {
 
 <section style="margin-top: 5em;">
   <form action="none" onsubmit=" return false;">
-    <p><strong>List the character(s) you want to look up:</strong><br/>
-      <input class="inputbox" id="characters" type="text"/>
+  <p style="font-size: 150%; color: #a52a2a;">Look up characters</p>
+  <p>
+      <input class="inputbox" id="characters" dir="auto" type="text"/>
     </p>
 </form>
  
@@ -730,7 +731,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->15-Jun-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->16-Jun-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
