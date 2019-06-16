@@ -279,7 +279,17 @@ td {
 	font-family: "Gentium Plus", "helvetica neue", helvetica, "Segoe UI", sans-serif; 
 	}
 
-
+.countries {
+	font-size: 80%;
+	margin-left: 2em;
+	margin-start: 2em;
+	}
+.countries:before {
+	content:'[ ';
+	}
+.countries:after {
+	content: ' ]'
+	}
 
 
 

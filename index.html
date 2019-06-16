@@ -414,7 +414,9 @@ function showLanguage (lang) {
 		case 'easia': region = 'East Asia';break
 		case 'carib': region = 'Caribbean';break
 		}
-	out += '<tr><th>Region</th><td>'+region+'</td></td><td class="links"></td></tr>'
+	out += '<tr><th>Region</th><td>'+region
+	if (langs[lang].countries) out += '<span class="countries">'+langs[lang].countries+'</span>'
+	out += '</td></td><td class="links"></td></tr>'
 	
 	// speakers
 	if (langs[lang].speakers === '?') var speakers = 'Not known'
