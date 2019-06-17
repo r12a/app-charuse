@@ -2,7 +2,7 @@ var langs = {
 
 // Any time this is changed, run _make-array.html to generate new code for char_lang.js !
 
-"ab": { name:"Abkhaz (Abxaz, Abkhazian)", silcode:"abk", source:"udhr_abk,b03748de41ccb9a6e724e938c3fea5013517b8fa", region:"wasia", script:"cyrl", speakers:"113000", letter:"ЏАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЫЬабвгдежзиклмнопрстуфхцчшыьџҔҕҚқҞҟҦҧҨҩҬҭҲҳҴҵҶҷҼҽҾҿӘәӠӡӶӷ", punctuation:"–‐", local:"Аԥсуа бызшәа /apʰswa bɨzʃʷa/", notes:`Dialects include: Bzyb, Abzhui, Samurzakan. Closely related to Abaza <i>abq</i>.
+"ab": { name:"Abkhaz (Abxaz, Abkhazian)", silcode:"abk", source:"udhr_abk,b03748de41ccb9a6e724e938c3fea5013517b8fa", region:"wasia", script:"cyrl", speakers:"113000", letter:"ЏАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЫЬабвгдежзиклмнопрстуфхцчшыьџҔҕҚқҞҟҦҧҨҩҬҭҲҳҴҵҶҷҼҽҾҿӘәӠӡӶӷ", punctuation:"–‐", local:"Аԥсуа бызшәа /apʰswa bɨzʃʷa/", notes:`Dialects include: Bzyb, Abzhui, Samurzakan. Closely related to Abaza [abq].
 Orthographies include:
 * Cyrillic, from 1860s <strong>(shown here)</strong>.
 * Georgian (Mkhedruli/Mtavruli), no longer in use.`},
@@ -14,7 +14,7 @@ Orthographies include:
 "ada": { name:"Dangme (Adaŋgbi)", source:"udhr_ada", region:"afr", script:"latn", speakers:"800000", letter:"íÍƆƐɔɛ", mark:"́", local:"Dangme", notes:`Dialects include: Ada, Ningo, Osu, Shai, Gbugbla, Krobo.`},
 
 "ady": { name:"Adyghe (West Circassian)", source:"udhr_ady,2354dbbf502e044f5b3c42824859764a3815632d", region:"eur", script:"cyrl", speakers:"590000", letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёӏӀ", mark:"̆̈", local:"Адыгабзэ [aːdəɣaːbza]", notes:`The UDHR translation uses Іі (byelorussian-ukrainian i), rather than ӏ (palochka).
-Dialects include: Shapsug (Sapsug, Shapsugi), Xakuchi, Bezhedukh (Bzedux, Bzhedug, Chemgui, Temirgoj), Abadzex (Abadzakh, Abadzeg), Natuzaj (Natukhai). Similar to Kabardian (<i>kbd</i>).
+Dialects include: Shapsug (Sapsug, Shapsugi), Xakuchi, Bezhedukh (Bzedux, Bzhedug, Chemgui, Temirgoj), Abadzex (Abadzakh, Abadzeg), Natuzaj (Natukhai). Similar to Kabardian ([kbd]).
 Orthographies include:
 * Arabic (naskh), no longer in use.
 * Cyrillic  <strong>(shown here)</strong>.
@@ -26,25 +26,25 @@ Orthographies include:
 
 "agr": { name:"Aguaruna (Awajún)", source:"udhr_agr", region:"sam", script:"latn", speakers:"38000", letter:"áíÁÍ", mark:"́", punctuation:"¡¿‐", local:"Awajún [ɑʋɑhʊ́n̪]"},
 
-"aii": { name:"Assyrian Neo-Aramaic", source:"udhr_aii,e04c91748b5079b9b5077f2206f53c2223dc7839,ethn_aii", region:"wasia", script:"syrn", speakers:"232300", letter:"ܒܘܕܩܐܬܝܠܦܙܢܫܥܡܣܪܟܗܚܓܛܨ", mark:"ܸܹܼ݂ܲܵܿ݁݀݇", punctuation:"܆،؛؟", rtl:true, local:"ܣܘܪܝܬ or ܣܘܪܬ [ˈsu:rɛt], [ˈsu:rɛθ], [ˈsu:rɪt], [ˈsu:rɪθ]", notes:`aii is included in the Syriac <i>syr</i> macrolanguage.
+"aii": { name:"Assyrian Neo-Aramaic", source:"udhr_aii,e04c91748b5079b9b5077f2206f53c2223dc7839", region:"wasia", script:"syrn", speakers:"232300", letter:"ܒܘܕܩܐܬܝܠܦܙܢܫܥܡܣܪܟܗܚܓܛܨ", mark:"ܸܹܼ݂ܲܵܿ݁݀݇", punctuation:"܆،؛؟", rtl:true, local:"ܣܘܪܝܬ or ܣܘܪܬ [ˈsu:rɛt], [ˈsu:rɛθ], [ˈsu:rɪt], [ˈsu:rɪθ]", notes:`aii is included in the Syriac [syr] macrolanguage.
 Dialects include: Urmi (Sipurghan, Solduz, Urmi Assyrian), Northern Assyrian (Baz, Dez, Gavar, Jilu, Qudshanis, Salamas, Upper Barwari, Van), Central Assyrian (Anhar, Mar Bishu, Nochiya, Shamezdin, Tergawar), Western Assyrian (Lewin, Lower Barwari, Tal, Tkhuma), Sapna (Aradhin, Benatha, Daudiya, Inishke, Tina). Similar linguistically to other Northeastern Aramaic varieties. Inherent intelligibility is difficult to estimate due to extensive exposure throughout the Assyrian diaspora to many dialects, especially Urmi and Iraqi Koine. As a result, intelligibility between dialects is as high as 80%–90%. Urmian group subdialects: Urmi, Sipurghan, Solduz; Northern Group: Salamas, Van, Jilu, Gavar, Qudshanis, Upper Barwari, Dez, Baz; Central Group: Mar Bishu, Nochiya (Shamezdin), Tergawar, Anhar; Western Group: Tkhuma, Lower Barwari, Tal, Lewin; Sapna Group: Aradhin, Tina, Daudiya, Inishke, Benatha. Standard literary Assyrian is based on Urmi. Many left original areas and developed a common spoken and written form based on the prestigious Urmi dialect as spoken in Baghdad, the United States, and elsewhere (Iraqi Koine). Most Christians understand it. This Urmi variety is different from Lishán Didán Urmi variety. All dialects of Western, Northern, and Central Assyrian are spoken in Syria.
 Orthographies include:
 * Syriac (maḏnḥāyā/Eastern style), used for East Syriac and Swadaya texts.
 * Arabic (Garshuni), often used today for written communication, such as letters and fliers.
 ISO 15924 has a general script code for Syriac (syrc), and another (syrn) for the Eastern Syriac orthography.`},
 
-"ajg": { name:"Aja", source:"udhr_ajg,ethn_ajg", region:"afr", script:"latn", speakers:"550000", letter:"úóòùàèéìíõáÚÓÒÙÀÈÉÌÍÕÁƆƉƐƷŋŊɔɖɛʒ", mark:"̀́̃", local:"Ajagbe", notes:`Dialects include: Dogbo, Hwe (Ehoue), Tado (Tadou), Sikpi (Shikpi), Tala. The Hwe, Sikpi, and Tado dialects are linguistically very similar; Dogbo and Tala distinct from the other 3. Lexical similarity: 92% with Hwe-Sikpi dialect, 89% with Hwe-Dogbo dialect, Hwe-Tado dialect, and Hwe-Tala dialect.`},
+"ajg": { name:"Aja", source:"udhr_ajg", region:"afr", script:"latn", speakers:"550000", letter:"úóòùàèéìíõáÚÓÒÙÀÈÉÌÍÕÁƆƉƐƷŋŊɔɖɛʒ", mark:"̀́̃", local:"Ajagbe", notes:`Dialects include: Dogbo, Hwe (Ehoue), Tado (Tadou), Sikpi (Shikpi), Tala. The Hwe, Sikpi, and Tado dialects are linguistically very similar; Dogbo and Tala distinct from the other 3. Lexical similarity: 92% with Hwe-Sikpi dialect, 89% with Hwe-Dogbo dialect, Hwe-Tado dialect, and Hwe-Tala dialect.`},
 
-"ak": { name:"Akan", silcode:"aka", source:"cldr_ak", region:"afr", script:"latn", speakers:"9800000", letter:"ɛɔƐƆ", punctuation:"‰", local:"Akan", notes:`ak is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Twi (<i>tw</i>), Fanti (<i>fat</i>).
-Legacy applications often use ak rather than <i>fat</i> (Fanti) or <i>tw</i> (Twi).
+"ak": { name:"Akan", silcode:"aka", source:"cldr_ak", region:"afr", script:"latn", speakers:"9800000", letter:"ɛɔƐƆ", punctuation:"‰", local:"Akan", notes:`ak is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Twi ([tw]), Fanti ([fat]).
+Legacy applications often use ak rather than [fat] (Fanti) or [tw] (Twi).
 ‘Akan’ was a name created by Ghanaian academics and language activists in the mid-20th century when they sought to standardize the Fante-Asante-Akuampen written language varieties.
 Orthographies include:
 * Latin, from 1978, intended to be a common orthography <strong>(shown here)</strong>.
-* Latin, for the Asante dialect of Twi (see <i>tw-asante</i>)
-* Latin, for the Akuapem dialect of Twi (see <i>tw-akuapem</i>)
-* Latin, for the Fante dialect of Fante (see <i>fat</i>)`},
+* Latin, for the Asante dialect of Twi (see [tw-asante])
+* Latin, for the Akuapem dialect of Twi (see [tw-akuapem])
+* Latin, for the Fante dialect of Fante (see [fat])`},
 
-"alt": { name:"Southern Altai (Oirot, Oyrot)", source:"udhr_alt", region:"nasia", script:"cyrl", speakers:"57000", letter:"кижнҥтапэрешдлцязыгьйсмбјчӱоуӧвщюъфхКИЖНҤТАПЭРЕШДЛЦЯЗЫГЬЙСМБЈЧӰОУӦВЩЮЪФХ", punctuation:"‐","separator":"", symbol:"", local:"алтай тили (Altay tili), алтайча‎ (Altajča)", notes:`Dialects include: Altai Proper (Altai-Kizhi, Altaj Kizi, Maina-Kizhi, Southern Altai), Talangit (Chuy, Talangit-Tolos, Telengit), Teleut. No intelligiblility of Northern Altai (<i>atv</i>).`},
+"alt": { name:"Southern Altai (Oirot, Oyrot)", source:"udhr_alt", region:"nasia", script:"cyrl", speakers:"57000", letter:"кижнҥтапэрешдлцязыгьйсмбјчӱоуӧвщюъфхКИЖНҤТАПЭРЕШДЛЦЯЗЫГЬЙСМБЈЧӰОУӦВЩЮЪФХ", punctuation:"‐","separator":"", symbol:"", local:"алтай тили (Altay tili), алтайча‎ (Altajča)", notes:`Dialects include: Altai Proper (Altai-Kizhi, Altaj Kizi, Maina-Kizhi, Southern Altai), Talangit (Chuy, Talangit-Tolos, Telengit), Teleut. No intelligiblility of Northern Altai ([atv]).`},
 
 "am": { name:"Amharic", silcode:"amh", source:"cldr_am,udhr_amh", region:"afr", script:"ethi", speakers:"21634396", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ","number":"፩፪፫፬፭፮፯፰፱፲፳፴", punctuation:"፡፣፤፥፦።‐–‹›«»", local:"አማርኛ [amarɨɲːa]"},
 
@@ -52,26 +52,26 @@ Orthographies include:
 
 "ame": { name:"Yanesha' (Amuesha, Amoesha)", source:"udhr_ame,09030b03ba151c1dbce0f407f3bfeb6cc40bb4a2", region:"sam", script:"latn", speakers:"9800", letter:"ñëóíãõáÑËÓÍÃÕÁẽẼʼ", mark:"̃̈́", local:"Yaneshac̈h/Yanešač̣ [janeʃaˀt͡ʂʰ]", notes:"Combining characters are used in decomposed sequences with several consonants, such as <u>m̃ñp̃t̃c̃c̈b̃</u>."},
 
-"ami": { name:"Amis", source:"udhr_ami,ethn_ami", region:"easia", script:"ascii", speakers:"181000", local:"Pangcah [paŋt͡saʜ]", notes:`Dialects include: Central Amis (Haian Ami, Hsiukulan Ami), Tavalong-Vataan (Kuangfu, Kwangfu), Southern Amis (Hengch’un Amis, Peinan, Taitung), Chengkung-Kwangshan, Northern Amis (Nanshi Amis). Chengkung-Kwangshan dialect is most similar to Central Amis dialect.`},
+"ami": { name:"Amis", source:"udhr_ami", region:"easia", script:"ascii", speakers:"181000", local:"Pangcah [paŋt͡saʜ]", notes:`Dialects include: Central Amis (Haian Ami, Hsiukulan Ami), Tavalong-Vataan (Kuangfu, Kwangfu), Southern Amis (Hengch’un Amis, Peinan, Taitung), Chengkung-Kwangshan, Northern Amis (Nanshi Amis). Chengkung-Kwangshan dialect is most similar to Central Amis dialect.`},
 
-"amr": { name:"Amarakaeri", source:"udhr_amr,ethn_amr", region:"sam", script:"latn", speakers:"500", mark:"̱", punctuation:"¿’", local:"aratbuten hua’a", notes:`Dialects include: Kisambaeri`},
+"amr": { name:"Amarakaeri", source:"udhr_amr", region:"sam", script:"latn", speakers:"500", mark:"̱", punctuation:"¿’", local:"aratbuten hua’a", notes:`Dialects include: Kisambaeri`},
 
-"ar": { name:"Arabic", silcode:"ara", redirect:true, region:"wasia", script:"na", notes:`ar is a macrolanguage that encompasses the following more specific primary language subtags:<br/><i>aao</i> (Algerian Saharan Arabic), <i>abh</i> (Tajiki Arabic), <i>abv</i> (Baharna Arabic), <i>acm</i> (Mesopotamian Arabic), <i>acq</i> (Ta'izzi-Adeni Arabic), <i>acw</i> (Hijazi Arabic), <i>acx</i> (Omani Arabic), <i>acy</i> (Cypriot Arabic), <i>adf</i> (Dhofari Arabic), <i>aeb</i> (Tunisian Arabic), <i>aec</i> (Saidi Arabic), <i>afb</i> (Gulf Arabic), <i>ajp</i> (South Levantine Arabic), <i>apc</i> (North Levantine Arabic), <i>apd</i> (Sudanese Arabic), <i>arb</i> (Standard Arabic), <i>arq</i> (Algerian Arabic), <i>ars</i> (Najdi Arabic), <i>ary</i> (Moroccan Arabic), <i>arz</i> (Egyptian Arabic), <i>auz</i> (Uzbeki Arabic), <i>avl</i> (Eastern Egyptian Bedawi Arabic), <i>ayh</i> (Hadrami Arabic), <i>ayl</i> (Libyan Arabic), <i>ayn</i> (Sanaani Arabic), <i>ayp</i> (North Mesopotamian Arabic), <i>bbz</i> (Babalia Creole Arabic), <i>pga</i> (Sudanese Creole Arabic), <i>shu</i> (Chadian Arabic), <i>ssh</i> (Shihhi Arabic).
-Legacy applications often use ar rather than <i>arb</i> (Standard Arabic).`},
+"ar": { name:"Arabic", silcode:"ara", redirect:true, region:"wasia", script:"na", notes:`ar is a macrolanguage that encompasses the following more specific primary language subtags:<br/>[aao] (Algerian Saharan Arabic), [abh] (Tajiki Arabic), [abv] (Baharna Arabic), [acm] (Mesopotamian Arabic), [acq] (Ta'izzi-Adeni Arabic), [acw] (Hijazi Arabic), [acx] (Omani Arabic), [acy] (Cypriot Arabic), [adf] (Dhofari Arabic), [aeb] (Tunisian Arabic), [aec] (Saidi Arabic), [afb] (Gulf Arabic), [ajp] (South Levantine Arabic), [apc] (North Levantine Arabic), [apd] (Sudanese Arabic), [arb] (Standard Arabic), [arq] (Algerian Arabic), [ars] (Najdi Arabic), [ary] (Moroccan Arabic), [arz] (Egyptian Arabic), [auz] (Uzbeki Arabic), [avl] (Eastern Egyptian Bedawi Arabic), [ayh] (Hadrami Arabic), [ayl] (Libyan Arabic), [ayn] (Sanaani Arabic), [ayp] (North Mesopotamian Arabic), [bbz] (Babalia Creole Arabic), [pga] (Sudanese Creole Arabic), [shu] (Chadian Arabic), [ssh] (Shihhi Arabic).
+Legacy applications often use ar rather than [arb] (Standard Arabic).`},
 
-"arb": { name:"Standard Arabic", source:"cldr_ar,udhr_arb,927e530285eebcb2cc78d1fee4df691ab6def77e,ethn_arb", region:"wasia", script:"arab", speakers:"273989700", letter:"ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىي", mark:"ًٌٍَُِّْٰٕٓٔ","number":"٠١٢٣٤٥٦٧٨٩", punctuation:"؉،؛؟٪٫٬‐–—…‰«»", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", aux:"ڢڧࢲـﷲٱ؍٬٭", rtl:true, local:"العَرَبِيَّة‎ [alʕaraˈbijja]", notes:`arb is included in the Arabic <i>ar</i> macrolanguage. <em>Legacy applications often use <i>ar</i> rather than arb.</em>
+"arb": { name:"Standard Arabic", source:"cldr_ar,udhr_arb,927e530285eebcb2cc78d1fee4df691ab6def77e", region:"wasia", script:"arab", speakers:"273989700", letter:"ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىي", mark:"ًٌٍَُِّْٰٕٓٔ","number":"٠١٢٣٤٥٦٧٨٩", punctuation:"؉،؛؟٪٫٬‐–—…‰«»", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", aux:"ڢڧࢲـﷲٱ؍٬٭", rtl:true, local:"العَرَبِيَّة‎ [alʕaraˈbijja]", notes:`arb is included in the Arabic [ar] macrolanguage. <em>Legacy applications often use [ar] rather than arb.</em>
 Dialects include: Modern Standard Arabic (Modern Literary Arabic), Classical Arabic (Koranic Arabic, Quranic Arabic).`},
 
 "arl": { name:"Arabela (Chiripuno, Chiripunu)", source:"udhr_arl", region:"sam", script:"latn", speakers:"50", letter:"úÚ", mark:"́", punctuation:"¿", local:"Tapweyokwaka, Tapueyocaca"},
 
-"arn": { name:"Mapudungun (Mapuzugun, Mapudungu, Araucanian)", source:"udhr_arn,ethn_arn", region:"sam", script:"latn", speakers:"260000", letter:"ñáíóÑÁÍÓ", mark:"̃́", local:"Mapudungun", notes:`This entry reflects only one of several competing and different writing systems using the Latin script, including Ragileo, Nhewenh and Azumchefi.
+"arn": { name:"Mapudungun (Mapuzugun, Mapudungu, Araucanian)", source:"udhr_arn", region:"sam", script:"latn", speakers:"260000", letter:"ñáíóÑÁÍÓ", mark:"̃́", local:"Mapudungun", notes:`This entry reflects only one of several competing and different writing systems using the Latin script, including Ragileo, Nhewenh and Azumchefi.
 Dialects include: Moluche (Manzanero, Ngoluche), Picunche, Pehuenche. Easy intelligibility among dialects. Pehuenche and Moluche are reportedly very similar.`},
 
-"as": { name:"Assamese (Asamiya)", silcode:"asm", source:"cldr_as,ethn_asm", region:"sasia", script:"beng", speakers:"15000000", letter:"অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযৰলৱশষসহ", mark:"়ংঁঃ্ািীুূৃেৈোৌৗ","number":"০১২৩৪৫৬৭৮৯", punctuation:"‰", aux:"৲ৎর", local:"অসমীয়া [ɔʃomia]", notes:`Dialects include: Jharwa (Pidgin), Mayang, Standard Assamese, Western Assamese (Kamrupi).`}, // checked against Wikipedia: only difference was rupee mark in CLDR aux, not in WP
+"as": { name:"Assamese (Asamiya)", silcode:"asm", source:"cldr_as", region:"sasia", script:"beng", speakers:"15000000", letter:"অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযৰলৱশষসহ", mark:"়ংঁঃ্ািীুূৃেৈোৌৗ","number":"০১২৩৪৫৬৭৮৯", punctuation:"‰", aux:"৲ৎর", local:"অসমীয়া [ɔʃomia]", notes:`Dialects include: Jharwa (Pidgin), Mayang, Standard Assamese, Western Assamese (Kamrupi).`}, // checked against Wikipedia: only difference was rupee mark in CLDR aux, not in WP
 
-"asa": { name:"Asu (Pare, Kipare, Casu, Chasu, Athu, Chathu)", source:"cldr_asa", region:"afr", script:"ascii", speakers:"500000", notes:`Dialects include: Gonja, Mbaga. Related to Taveta (<i>tvs</i>).`},
+"asa": { name:"Asu (Pare, Kipare, Casu, Chasu, Athu, Chathu)", source:"cldr_asa", region:"afr", script:"ascii", speakers:"500000", notes:`Dialects include: Gonja, Mbaga. Related to Taveta ([tvs]).`},
 
-"ast": { name:"Asturian (Asturleonese, Bable, Leonese)", source:"cldr_ast,udhr_ast,ethn_ast", region:"eur", script:"latn", speakers:"351791", letter:"áéíñóúüÁÉÍÑÓÚÜḥḷḤḶ", mark:"̣́̃̈", punctuation:"¡¿«»§‐–—…‘’“”†‡′″‰", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªàâåäãæçèêëìîïºòôöøùûÿÀÂÅÄÃÆÇÈÊËÌÎÏÒÔÖØÙÛ̧̀̆̂̊̄", local:"asturianu", notes:`Dialects include: Leonese (Lleones), Western Asturian, Central Asturian (Bable), Eastern Asturian, Montañes, Pasiegan (Pasiego, Pasiegu). The Vaqueiros ethnic group speaks Western Asturian. Functional intelligibility among the 3 dialects. Reportedly similar to Mirandés (<i>mwl</i>) in Portugal. Leonese may be a separate language. Central Asturian is considered the model, and has the most speakers`},
+"ast": { name:"Asturian (Asturleonese, Bable, Leonese)", source:"cldr_ast,udhr_ast", region:"eur", script:"latn", speakers:"351791", letter:"áéíñóúüÁÉÍÑÓÚÜḥḷḤḶ", mark:"̣́̃̈", punctuation:"¡¿«»§‐–—…‘’“”†‡′″‰", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªàâåäãæçèêëìîïºòôöøùûÿÀÂÅÄÃÆÇÈÊËÌÎÏÒÔÖØÙÛ̧̀̆̂̊̄", local:"asturianu", notes:`Dialects include: Leonese (Lleones), Western Asturian, Central Asturian (Bable), Eastern Asturian, Montañes, Pasiegan (Pasiego, Pasiegu). The Vaqueiros ethnic group speaks Western Asturian. Functional intelligibility among the 3 dialects. Reportedly similar to Mirandés ([mwl]) in Portugal. Leonese may be a separate language. Central Asturian is considered the model, and has the most speakers`},
 
 "auc": { name:"Waorani (Huaorani, Sabela, Wao, Huao, Auishiri, Aushiri, Ssabela)", source:"udhr_auc", region:"sam", script:"latn", speakers:"1800", letter:"ñíéóÑÍÉÓ", mark:"̃́", local:"Wao Terero"},
 
@@ -111,7 +111,7 @@ Orthographies include:
 azj is included in the Azerbaijani [az] macrolanguage. Legacy applications often use [az] rather than azj.
 For dialect and further orthographic information see [azj].`},
 
-"ban": { name:"Bali (Balinese)", source:"udhr_ban,ethn_ban", region:"seasia", script:"ascii", speakers:"3300000", local:"Basa Bali /baʃa bali/", notes:`Dialects include: Lowland Bali (Badung, Buleleng, Gianyar, Jembrana, Karangasem, Klungkung, Tabanan), Highland Bali (“Bali Aga” (pej.)), Nusa Penida. Reportedly 2 distinct dialects. High Bali is used in religion, but users are diminishing. Speech strata in several lowland varieties (1989 A. Clynes).
+"ban": { name:"Bali (Balinese)", source:"udhr_ban", region:"seasia", script:"ascii", speakers:"3300000", local:"Basa Bali /baʃa bali/", notes:`Dialects include: Lowland Bali (Badung, Buleleng, Gianyar, Jembrana, Karangasem, Klungkung, Tabanan), Highland Bali (“Bali Aga” (pej.)), Nusa Penida. Reportedly 2 distinct dialects. High Bali is used in religion, but users are diminishing. Speech strata in several lowland varieties (1989 A. Clynes).
 Orthographies include:
 * Latin, since early 20th century <strong>(shown here)</strong>.
 * Balinese (see [ban-bali]).
@@ -133,7 +133,7 @@ For dialect and further orthographic information see [bax].
 
 "bba": { name:"Baatonum (Bariba, Baatombu, Baatonu, Barba, Barganchi, Bargawa, Bargu, Baruba, Berba, Bogung, Burgu)", source:"udhr_bba", region:"afr", script:"latn", speakers:"560000", letter:"àéùèóÀÉÙÈÓǹƐƆǸɛɔ", mark:"̀́", local:"Baatonum"},
 
-"bcl": { name:"Central Bicol (Bikol Naga, Bicolano)", source:"udhr_bcl", region:"seasia", script:"ascii", speakers:"2500000", notes:"Macrolanguage is <i>bik</i>.", notes:`Dialects include: Naga, Legazpi (Legapi), Daet, Partido.`},
+"bcl": { name:"Central Bicol (Bikol Naga, Bicolano)", source:"udhr_bcl", region:"seasia", script:"ascii", speakers:"2500000", notes:"Macrolanguage is [bik].", notes:`Dialects include: Naga, Legazpi (Legapi), Daet, Partido.`},
 
 "be": { name:"Belorussian", silcode:"bel", source:"cldr_be,udhr_bel", region:"eur", script:"cyrl", speakers:"5000000", letter:"абвгджзеёійклмнопрстуўфхцчшыьэюяиАБВГДЖЗЕЁІЙКЛМНОПРСТУЎФХЦЧШЫЬЭЮЯИʼ", mark:"̈̆", punctuation:"‐«»", aux:"́", local:"беларуская мова [bʲelaˈruskaja ˈmova]", notes:`Dialects include: Northeast Belarusian (Polots, Viteb-Mogilev), Southwest Belarusian (Grodnen-Baranovich, Slutska-Mazyrski, Slutsko-Mozyr), Central Belarusian. Linguistically between Russian [ru] and Ukrainian [uk], with transitional dialects to both.`},
 
@@ -254,7 +254,7 @@ Latin orthography used since 1964.`},
 
 "ch": { name:"Chamorro", silcode:"cha", source:"udhr_cha,e97485e1a7f539f982e7cfeb56ea244d8b39af8a", region:"oce", script:"ascii", speakers:"58000", letter:"ÅÑåñ", mark:"̃̊", local:"Finu' Chamoru /finuʔ tʃəˈmɒroʊ/", notes:`Dialects include: Chamorro, Rotanese Chamorro.`},
 
-"chj": { name:"Ojitlán Chinantec", source:"udhr_chj", region:"cam", script:"latn", speakers:"38000", letter:"öíäñáéúïüëóÖÍÄÑÁÉÚÏÜËÓ", mark:"̈́̃", punctuation:"–", symbol:"°", local:"Jmiih kia’ dzä ‘vï ï, Jujmi", notes:`Although there is no macrolanguage, this is one of several Chinantecan languages that are partially mutually intelligible: <i>cco</i>, <i>chj</i>, <i>chq</i>, <i>chz</i>, <i>cle</i>, <i>cnl</i>, <i>cnt</i>, <i>cpa</i>, <i>csa</i>, <i>cso</i>, <i>cte</i>, <i>ctl</i>, <i>cuc</i>, <i>cvn</i>.
+"chj": { name:"Ojitlán Chinantec", source:"udhr_chj", region:"cam", script:"latn", speakers:"38000", letter:"öíäñáéúïüëóÖÍÄÑÁÉÚÏÜËÓ", mark:"̈́̃", punctuation:"–", symbol:"°", local:"Jmiih kia’ dzä ‘vï ï, Jujmi", notes:`Although there is no macrolanguage, this is one of several Chinantecan languages that are partially mutually intelligible: [cco], [chj], [chq], [chz], [cle], [cnl], [cnt], [cpa], [csa], [cso], [cte], [ctl], [cuc], [cvn].
 No known dialects: 49% intelligibility of Sochiapan [cso] (most similar), 43% of Usila [cuc], 39% of Palantla [cpa], 31% of Chiltepec [csa].`},
 
 "chk": { name:"Chuukese (Trukese)", source:"udhr_chk", region:"oce", script:"ascii", speakers:"51330", local:"Chuuk", notes:`Diacritics include: East Lagoon, Fayichuck.`},
@@ -288,7 +288,7 @@ For dialect and further orthographic information see [ckb].
 
 "cnh": { name:"Haka Chin (Lai)", source:"udhr_cnh", region:"seasia", script:"ascii", speakers:"446264", local:"Lai, Lai Chin", notes:`Dialects include: Thantlang (Klangklang), Zokhua.`},
 
-"cni": { name:"Asháninka", source:"udhr_cni,4a72f03687c85b581a7fab4146a3d0d9420e3257", region:"sam", script:"latn", speakers:"~35000", letter:"áéÁÉÑñ", mark:"́̃", notes:"Asháninka was recognized as a separate language from Ashéninka (<i>cpu</i>, <i>prq</i>, <i>cpc</i>, <i>cpb</i>, <i>cjo</i>, <i>cpy</i>) in 2017, and the process to fix an alphabet was underway during 2018."},
+"cni": { name:"Asháninka", source:"udhr_cni,4a72f03687c85b581a7fab4146a3d0d9420e3257", region:"sam", script:"latn", speakers:"~35000", letter:"áéÁÉÑñ", mark:"́̃", notes:"Asháninka was recognized as a separate language from Ashéninka ([cpu], [prq], [cpc], [cpb], [cjo], [cpy]) in 2017, and the process to fix an alphabet was underway during 2018."},
 
 "co": { name:"Corsican", silcode:"cos", source:"udhr_cos,3f49d57dae01202ea97c4d9eae9e2df2a8d3a65e", region:"eur", script:"latn", speakers:"325000", letter:"àèìùòÀÈÌÙÒ", mark:"̀", punctuation:"’", aux:"ÉÔéố̂", local:"corsu [ˈkorsu, ˈkɔrtsu], lingua corsa [ˈliŋɡwa ˈɡorsa]", notes:`Dialects include: Sartenais, Vico-Ajaccio, Northern Corsican (Bastia, Cape Cors), Venaco. Lexical similarity: 79%–89% with Bastia, Venaco, Vico, and Sartene dialects. Bonifacio on the southern tip of the island has 78% lexical similarity (highest) with Bastia at extreme north. Ajaccio dialect is central and prestigious.`},
 
@@ -296,7 +296,7 @@ For dialect and further orthographic information see [ckb].
 
 "cot": { name:"Caquinte (Poyenisati)", source:"udhr_cot", region:"sam", script:"latn", speakers:"500", letter:"óÓ", mark:"́", punctuation:"¿", local:"Aguenquetsatsare", notes:`No known dialects. Reportedly most similar to Asháninka [cni].`},
 
-"cpu": { name:"Pichis Ashéninka", source:"udhr_cpu", region:"sam", script:"latn", speakers:"9881", letter:"ñáéÑÁÉ", mark:"̃́", notes:`This is one of several closely related Ashéninka languages (though there is no macrolanguage), including: <i>prq</i>, <i>cpc</i>, <i>cpb</i>, <i>cjo</i>, <i>cpy</i>. Ashéninka was recognized as a separate language from Asháninka (<i>cni</i>) in 2017, and the process to fix an alphabet was underway during 2018.
+"cpu": { name:"Pichis Ashéninka", source:"udhr_cpu", region:"sam", script:"latn", speakers:"9881", letter:"ñáéÑÁÉ", mark:"̃́", notes:`This is one of several closely related Ashéninka languages (though there is no macrolanguage), including: [prq], [cpc], [cpb], [cjo], [cpy]. Ashéninka was recognized as a separate language from Asháninka ([cni]) in 2017, and the process to fix an alphabet was underway during 2018.
 Dialects include: Bajo Pichís. Somewhat intelligible with other Ashéninka languages. Bajo Pichis variety that is spoken on the Anacayali has many features of Pajonal Asheninka [cjo].`},
 
 "cr": { name:"Cree", redirect:true, source:"", region:"nam", script:"cans", speakers:"", notes:`cr is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Southern East Cree [crj], Plains Cree [crk], Northern East Cree [crl], Moose Cree [crm], Swampy Cree [csw], Woods Cree [cwd].
@@ -309,7 +309,7 @@ Wikipedia says that there is no standard orthography, and Ethnologue says that t
 
 "cs": { name:"Czech (Bohemian)", silcode:"ces", source:"cldr_cs,udhr_ces", region:"eur", script:"latn", speakers:"10700000", letter:"áéíóúýÁÉÍÓÚÝčďěňřšťůžČĎĚŇŘŠŤŮŽ", mark:"́̌̊", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīľłŏōœŕŭūĂĀĔĒĬĪĽŁŎŌŒŔŬŪŸàâåäãæçèêëìîïñòôöøùûüÿÀÂÅÄÃÆÇÈÊËÌÎÏÑÒÔÖØÙÛǛ̧̆̂̈̃̄", local:"čeština [ˈtʃɛʃcɪna]", notes:`Dialects include: Central Bohemian, Czecho-Moravian, Hanak, Lach (Yalach), Northeast Bohemian, Southwest Bohemian. All Czech and Slovak dialects mutually inherently intelligible. Czech is also intelligible with Polish [pl].`},
 
-"csa": { name:"Chiltepec Chinantec", source:"udhr_csa", region:"cam", script:"latn", speakers:"1800", letter:"öüïóáñäëéíúÖÜÏÓÁÑÄËÉÍÚ", mark:"̷̱̍̎̈́̃", punctuation:"†", notes:`Although there is no macrolanguage, this is one of several Chinantecan languages that are partially mutually intelligible: <i>cco</i>, <i>chj</i>, <i>chq</i>, <i>chz</i>, <i>cle</i>, <i>cnl</i>, <i>cnt</i>, <i>cpa</i>, <i>csa</i>, <i>cso</i>, <i>cte</i>, <i>ctl</i>, <i>cuc</i>, <i>cvn</i>.
+"csa": { name:"Chiltepec Chinantec", source:"udhr_csa", region:"cam", script:"latn", speakers:"1800", letter:"öüïóáñäëéíúÖÜÏÓÁÑÄËÉÍÚ", mark:"̷̱̍̎̈́̃", punctuation:"†", notes:`Although there is no macrolanguage, this is one of several Chinantecan languages that are partially mutually intelligible: [cco], [chj], [chq], [chz], [cle], [cnl], [cnt], [cpa], [csa], [cso], [cte], [ctl], [cuc], [cvn].
 No known dialects. 76% intelligibility of Tlacoatzintepec [ctl] (most similar), 20% of Usila [cuc] and Ojitlán [chj], 13% of Valle Nacional [cvn].`},
 
 "csw": { name:"Swampy Cree (Maskekon, Omaškêkowak, Omushkego)", source:"udhr_csw", region:"nam", script:"cans", speakers:"1805", letter:"ᐁᐢᐱᑕᑲᒥᐠᐊᑭᒋᐃᑗᐎᐣᓂᑯᓯᓇᐅᔑᒧᓀᐡᑐᑌᑎᐸᐗᐳᒪᒶᐌᔭᓄᑾᔦᒣᐤᓴᓶᔕᑴᐯᐟᑫᓱᓉᐺᑡᐨᔓᑺᓋᔗᔾᔀᑊᔡᒬᒼ", punctuation:"᙮", local:"ᓀᐦᐃᓇᐍᐏᐣ (Nêhinawêwin)", notes:`csw is included in the Cree [cr] macrolanguage.
@@ -378,36 +378,56 @@ Orthographies include:
 
 "dz": { name:"Dzongkha (Bhutanese)", source:"cldr_dz,udhr_dzo", region:"sasia", script:"tibt", speakers:"171080", letter:"ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ", mark:"ིེོུྐྑྒྔྗྙྟྠྡྣྤྥྦྨྩྪྫྭྱྲླྵྶྷཱྕ", punctuation:"༼༽༄༅༆༈༉༊࿐࿑༒࿒࿓࿔༌།༎༏༐༑༔་§‐–—…‘’“”†‡","number":"༡༢༣༤༥༦༧༨༩༠", symbol:"༶྾྿༴", aux:"྄ཊཋཌཎཾཥྀཻཽྚྛྜྞྺྻྼ", countries:"Bhutan", local:"རྫོང་ཁ་ [dzoŋkʰa]", notes:`Dialects: Wang-The (Thimphu-Punakha), Ha, Northern Thimphu, Adap...`},
 
-"ebu": { name:"Embu (Kîembu)", source:"cldr_ebu", region:"afr", script:"latn", speakers:"320000", letter:"ĩũĨŨ", mark:"̃", notes:"Has two known dialects, Mbeere (Mbere, Kimbeere) and Embu proper.<br/>The fact that Kîembu is written in Wikipedia with an i-circumflex may indicate that at least one character is missing from the CLDR list."},
+"ebu": { name:"Embu (Kîembu)", source:"cldr_ebu", region:"afr", script:"latn", speakers:"320000", letter:"ĩũĨŨ", mark:"̃", countries:"Kenya", local:"Kiembu", notes:`Has two known dialects, Mbeere (Mbere, Kimbeere) and Embu proper.
+The fact that Kîembu is written in Wikipedia with an i-circumflex may indicate that at least one character is missing from the CLDR list.`},
 
-"ee": { name:"Ewe", source:"cldr_ee,udhr_ewe", region:"afr", script:"latn", speakers:"20000000", letter:"áàãéèíìóòõúùÁÀÃÉÈÍÌÓÒÕÚÙƒƉƐƑƔƆƲĩŋũĨŊŨẽẼɖɛɣɔʋ", mark:"́̀̃", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕĭŏœŭĂĀĔĬŎŒŬŸâåäæçêëîïñôöøûüÿÂÅÄÆÇÊËÎÏÑÔÖØÛÜ̧̆̂̊̈̄", notes:"Some of the commonly named Ewe ('Vhe') dialects are Aŋlɔ, Tɔŋu (Tɔŋgu), Avenor, Evedome, Awlan, Gbín, Pekí, Kpándo, Vhlin, Hó, Avɛ́no, Vo, Kpelen, Vɛ́, Danyi, Agu, Fodome, Wancé, Wací, Adángbe (Capo)."},
+"ee": { name:"Ewe", silcode:"ewe", source:"cldr_ee,udhr_ewe", region:"afr", script:"latn", speakers:"20000000", letter:"áàãéèíìóòõúùÁÀÃÉÈÍÌÓÒÕÚÙƒƉƐƑƔƆƲĩŋũĨŊŨẽẼɖɛɣɔʋ", mark:"́̀̃", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕĭŏœŭĂĀĔĬŎŒŬŸâåäæçêëîïñôöøûüÿÂÅÄÆÇÊËÎÏÑÔÖØÛÜ̧̆̂̊̈̄", countries:"Ghana", local:"Èʋegbe‎ (Èwegbe)", notes:`Latin script used since 1850s, primary usage.`},
 
-"el": { name:"Modern Greek", source:"cldr_el,udhr_udhr_ell_monotonic,f31d3befd33d4e7a224b580bd5c3737769bba189", region:"eur", script:"grek", speakers:"12000000", letter:"ΆΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώ", mark:"́̈", punctuation:"«»§‐–—…", aux:"ᾺὰἈἀἉἁἊἂἋἃἌἄἍἅἎἆἏἇᾲᾴᾶᾷᾸᾰᾹᾱᾼᾳᾈᾀᾉᾁᾊᾂᾋᾃᾌᾄᾍᾅᾎᾆᾏᾇῈὲἘἐἙἑἚἒἛἓἜἔἝἕῊὴἨἠἩἡἪἢἫἣἬἤἭἥἮἦἯἧῆῌῃῂῄῇᾘᾐᾙᾑᾚᾒᾛᾓᾜᾔᾝᾕᾞᾖᾟᾗῚὶἸἰἹἱἺἲἻἳἼἴἽἵἾἶἿἷῘῐῙῑῒῖῗῸὸὈὀὉὁὊὂὋὃὌὄὍὅῪὺὐὒὔὖὙὑὛὓὝὕὟὗῨῠῩῡῢῦῧῺὼὨὠὩὡὪὢὫὣὬὤὭὥὮὦὯὧῼῳᾨᾠᾩᾡᾪᾢᾫᾣᾬᾤᾭᾥᾮᾦᾯᾧῲῴῶῷῤῬῥ̀̄̆̓̔͂ͅ", local:"ελληνικά (elliniká)", notes:"Related Greek language codes include <i>cpg</i> (Cappadocian Greek), <i>gmy</i> (Mycenaean Greek), <i>grc</i> (Ancient Greek (to 1453)), <i>grk</i> (Greek languages), <i>rge</i> (Romano-Greek), <i>pnt</i> (Pontic), <i>tsd</i> (Tsakonian), <i>yej</i> (Yevanic).<br/>Variants include <i>monoton</i> (Monotonic Greek), <i>polyton</i> (Polytonic Greek)."},
+"ekk": { name:"Standard Estonian", source:"cldr_et,udhr_est", region:"eur", script:"latn", speakers:"1100000", letter:"õäöüÕÄÖÜšžŠŽ", mark:"̌̃̈", aux:"āēīŏōœūĀĒĪŎŌŒŪáàâåæçéèêëíìîïñóòôøúùûÁÀÂÅÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧́̀̂̊̄̆", countries:"Estonia, Finland", local:"Eesti", notes:`ekk is included in the Estonian [et] macrolanguage, and legacy applications often use [et] rather ekk.`},
 
-"emk": { name:"Eastern Maninkakan", source:"udhr_emk", region:"afr", script:"latn", speakers:"5000000", letter:"ɲɛɔƝƐƆ", notes:"Macrolanguage is <i>man</i>."},
+"el": { name:"Modern Greek", silcode:"ell", source:"cldr_el,udhr_udhr_ell_monotonic,f31d3befd33d4e7a224b580bd5c3737769bba189", region:"eur", script:"grek", speakers:"12000000", letter:"ΆΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώ", mark:"́̈", punctuation:"«»§‐–—…", aux:"ᾺὰἈἀἉἁἊἂἋἃἌἄἍἅἎἆἏἇᾲᾴᾶᾷᾸᾰᾹᾱᾼᾳᾈᾀᾉᾁᾊᾂᾋᾃᾌᾄᾍᾅᾎᾆᾏᾇῈὲἘἐἙἑἚἒἛἓἜἔἝἕῊὴἨἠἩἡἪἢἫἣἬἤἭἥἮἦἯἧῆῌῃῂῄῇᾘᾐᾙᾑᾚᾒᾛᾓᾜᾔᾝᾕᾞᾖᾟᾗῚὶἸἰἹἱἺἲἻἳἼἴἽἵἾἶἿἷῘῐῙῑῒῖῗῸὸὈὀὉὁὊὂὋὃὌὄὍὅῪὺὐὒὔὖὙὑὛὓὝὕὟὗῨῠῩῡῢῦῧῺὼὨὠὩὡὪὢὫὣὬὤὭὥὮὦὯὧῼῳᾨᾠᾩᾡᾪᾢᾫᾣᾬᾤᾭᾥᾮᾦᾯᾧῲῴῶῷῤῬῥ̀̄̆̓̔͂ͅ", countries:"Greece, Cyprus, Albania", local:"ελληνικά (elliniká), Νέα Ελληνικά‎ (Néa Ellīniká)", notes:`Related Greek language codes include [cpg] (Cappadocian Greek), [gmy] (Mycenaean Greek), [grc] (Ancient Greek (to 1453)), [grk] (Greek languages), [rge] (Romano-Greek), [pnt] (Pontic), [tsd] (Tsakonian), [yej] (Yevanic).<br/>Variants include [monoton] (Monotonic Greek), [polyton] (Polytonic Greek).
+In Cyprus, the dialect is reportedly more similar to Classical Greek [grc] in some vocabulary and grammar than that spoken in Greece.
+Orthographies include:
+* Ancient Greek (polytonic)
+* Modern Greek (monotonic) <strong>(shown here)</strong>, however the polytonic Greek characters are included in the list of infrequently used characters.
+* Cyrillic, in Ukraine`},
 
-"emk-nkoo": { name:"Eastern Maninkakan (N'Ko)", source:"4dd61a887ac709179e0e709861288a0b0098c5d8", region:"afr", script:"nkoo", speakers:"5000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"߲߫߬߭߮߯߰߱߳","number":"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶"},
+"emk": { name:"Eastern Maninkakan", source:"udhr_emk", region:"afr", script:"latn", speakers:"5000000", letter:"ɲɛɔƝƐƆ", countries:"Guinea, Liberia, Mali, Sierra Leone", notes:`emk is included in the Mandingo [man] macrolanguage, and legacy applications often use [man] rather emk.
+Maninka of Liberia is the same as Maninka of Guinea (Eastern Maninkakan). Bambara [bam] of Mali and parts of Senegal is not vastly different. Eastern Maninkakan of Côte d’Ivoire is reportedly similar to Bambara; Western Maninkakan [mlq] of south central and southeast Senegal is considerably different.
+Orthographies include:
+* Latin  <strong>(shown here)</strong>.
+* Arabic (naskh)
+* N'Ko, in Guinea. See [emk-nkoo].`},
 
-"en": { name:"English", source:"cldr_en,udhr_eng", region:"eur", script:"ascii", speakers:"~380000000", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̃̄"},
+"emk-nkoo": { name:"Eastern Maninkakan (N'Ko)", rtl:true, source:"4dd61a887ac709179e0e709861288a0b0098c5d8", region:"afr", script:"nkoo", speakers:"5000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"߲߫߬߭߮߯߰߱߳","number":"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶", countries:"Guinea", notes:`This is an alternate, N'Ko orthography for Eastern Maninkakan.
+For other orthographies see [emk].`},
 
-"eo": { name:"Esperanto", source:"cldr_eo,udhr_epo", region:"eur", script:"latn", speakers:"~3000", letter:"ĉĝĥĵŝŭĈĜĤĴŜŬ", mark:"̂̆", punctuation:"‐–—…‘’“”"},
+"en": { name:"English", silcode:"en", source:"cldr_en,udhr_eng", region:"eur", script:"ascii", speakers:"~380000000", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̃̄", notes:`Orthographies include:
+* Latin <strong>(shown here)</strong>.
+* Deseret Alphabet, limited usage 1854-1877.
+* Shavian, no longer in use.`},
 
-"es": { name:"Spanish (Castilian)", source:"cldr_es,udhr_spa", region:"eur", script:"latn", speakers:"480000000", letter:"áéíïñóúüýÁÉÍÏÑÓÚÜÝ", mark:"́̈̃", punctuation:"‐–—…‘’“”†‡′″¡¿«»§", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªàâåäãæçèêëìîºòôöøùûÿÀÂÅÄÃÆÇÈÊËÌÎÒÔÖØÙÛ̧̀̆̂̊̄"},
+"eo": { name:"Esperanto", silcode:"epo", source:"cldr_eo,udhr_epo", region:"eur", script:"latn", speakers:"~3000", letter:"ĉĝĥĵŝŭĈĜĤĴŜŬ", mark:"̂̆", punctuation:"‐–—…‘’“”", local:"Esperanto, Lingvo Internacia"},
 
-"et": { name:"Estonian", source:"cldr_et,udhr_est", region:"eur", script:"latn", speakers:"1100000", letter:"õäöüÕÄÖÜšžŠŽ", mark:"̌̃̈", aux:"āēīŏōœūĀĒĪŎŌŒŪáàâåæçéèêëíìîïñóòôøúùûÁÀÂÅÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧́̀̂̊̄̆"},
+"es": { name:"Spanish (Castilian)", silcode:"spa", source:"cldr_es,udhr_spa", region:"eur", script:"latn", speakers:"480000000", letter:"áéíïñóúüýÁÉÍÏÑÓÚÜÝ", mark:"́̈̃", punctuation:"‐–—…‘’“”†‡′″¡¿«»§", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªàâåäãæçèêëìîºòôöøùûÿÀÂÅÄÃÆÇÈÊËÌÎÒÔÖØÙÛ̧̀̆̂̊̄", countries:"Spain, Central &amp; South America, USA, Philippines", local:"Castellano, Español"},
 
-"eu": { name:"Basque", source:"cldr_eu,udhr_eus", region:"eur", script:"latn", speakers:"550000", letter:"çñÇÑ", mark:"̧̃", punctuation:"§‐–—…‘’“”†‡′″","separator":"", symbol:"", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæéèêëíìîïóòôöøúùûüÿÁÀÂÅÄÃÆÉÈÊËÍÌÎÏÓÒÔÖØÚÙÛǗ̀̆̂̊̈̄"},
+"et": { name:"Estonian", redirect:true, source:"", region:"eur", script:"latn", speakers:"0", notes:`et is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Standard Estonian [ekk], Võro [vro]
+Legacy applications often use et rather than [ekk] (Standard Estonian).`},
 
-"eve": { name:"Even (Lamut, Ewen, Eben, Orich, Ilqan)", source:"udhr_eve", region:"nasia", script:"cyrl", speakers:"5700", letter:"стаьябэйилокчурмнхдеҥгөыцпвһюзѳшжъфщСТАЬЯБЭЙИЛОКЧУРМНХДЕҤГӨЫЦПВҺЮЗѲШЖЪФЩ", mark:"̆", punctuation:"‐"},
+"eu": { name:"Basque", silcode:"eus", source:"cldr_eu,udhr_eus", region:"eur", script:"latn", speakers:"550000", letter:"çñÇÑ", mark:"̧̃", punctuation:"§‐–—…‘’“”†‡′″","separator":"", symbol:"", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæéèêëíìîïóòôöøúùûüÿÁÀÂÅÄÃÆÉÈÊËÍÌÎÏÓÒÔÖØÚÙÛǗ̀̆̂̊̈̄", countries:"Spain, France", local:"Euskara"},
 
-"evn": { name:"Evenki (Tungus, Solon)", source:"udhr_evn", region:"nasia", script:"cyrl", speakers:"17000", letter:"упкатңилэбгдерӣынӯмвчзоюцяьйсёһъщжхфУПКАТҢИЛЭБГДЕРӢЫНӮМВЧЗОЮЦЯЬЙСЁҺЪЩЖХФ", mark:"̄̆̈", punctuation:"–"},
+"eve": { name:"Even (Lamut, Ewen, Eben, Orich, Ilqan)", source:"udhr_eve", region:"nasia", script:"cyrl", speakers:"5700", letter:"стаьябэйилокчурмнхдеҥгөыцпвһюзѳшжъфщСТАЬЯБЭЙИЛОКЧУРМНХДЕҤГӨЫЦПВҺЮЗѲШЖЪФЩ", mark:"̆", punctuation:"‐", countries:"Russia", notes:`There are two standard orthographies in Cyrillic, limited usage.`},
 
-"ewo": { name:"Ewondo (Kolo)", source:"cldr_ewo", region:"afr", script:"latn", speakers:"580000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǎǐǹǒǔǍƏƐǏǸǑƆǓěńŋĚŃŊəɛɔ", mark:"́̀̂̌"},
+"evn": { name:"Evenki (Tungus, Solon)", source:"udhr_evn", region:"nasia", script:"cyrl", speakers:"17000", letter:"упкатңилэбгдерӣынӯмвчзоюцяьйсёһъщжхфУПКАТҢИЛЭБГДЕРӢЫНӮМВЧЗОЮЦЯЬЙСЁҺЪЩЖХФ", mark:"̄̆̈", punctuation:"–", countries:"China, Russia", notes:`Orthographies include:
+* Cyrillic, since 1937, small scale use in Russia. <strong>(shown here)</strong>
+* Latin, 1931-1937 in Russia, and limited use in China and on internet since 1983.`},
+
+"ewo": { name:"Ewondo (Kolo)", source:"cldr_ewo", region:"afr", countries:"Cameroon", script:"latn", speakers:"580000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǎǐǹǒǔǍƏƐǏǸǑƆǓěńŋĚŃŊəɛɔ", mark:"́̀̂̌", local:"Ewondo"},
 
 "fa": { name:"Persian (Farsi)", source:"cldr_fa,udhr_pes", region:"wasia", script:"arab", speakers:"~50000000", letter:"آاءأؤئبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهةیإي", mark:"ًٌٍِّٕٔٓ", punctuation:"٫٬٪؉،؛؟‰‐…‹›«»","number":"۰۱۲۳۴۵۶۷۸۹", symbol:"−", other:"‌", aux:"ـَُِْٰٖإكىٕ"},
 
-"fat": { name:"Fanti (Fantse, Mfantse, Fante)", source:"udhr_aka_fante", region:"afr", script:"latn", speakers:"1900000", letter:"ãõÃÕƆƐɔɛ", mark:"̃", notes:`The Akan (<i>ak</i>) macrolanguage includes this.
-Legacy applications often use <i>ak</i> rather than fat.
+"fat": { name:"Fanti (Fantse, Mfantse, Fante)", source:"udhr_aka_fante", region:"afr", script:"latn", speakers:"1900000", letter:"ãõÃÕƆƐɔɛ", mark:"̃", notes:`The Akan ([ak]) macrolanguage includes this.
+Legacy applications often use [ak] rather than fat.
 Dialects include: Agona, Anomabo Fanti, Abura Fanti, Gomua.`},
 
 "ff": { name:"Fulah (Fulani)", source:"cldr_ff", region:"afr", script:"latn", speakers:"24000000", letter:"ñÑƴƁƊƳŋŊɓɗ", mark:"̃"},
@@ -607,8 +627,8 @@ Orthographies include:
 
 "ktu": { name:"Kituba", source:"udhr_ktu", region:"afr", script:"ascii", speakers:"5400000"},
 
-"ku": { name:"Kurdish", redirect:true, source:"https://r12a.github.io/app-subtags/?lookup=ku", region:"wasia", script:"latn", speakers:"0", notes:`ku is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Central Kurdish (<i>ckb</i>), Northern Kurdish (<i>kmr</i>), Southern Kurdish (<i>sdh</i>)
-Legacy applications often use ku rather than <i>kmr</i> (Northern Kurdish).`},
+"ku": { name:"Kurdish", redirect:true, source:"https://r12a.github.io/app-subtags/?lookup=ku", region:"wasia", script:"na", speakers:"0", notes:`ku is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Central Kurdish ([ckb]), Northern Kurdish ([kmr]), Southern Kurdish ([sdh])
+Legacy applications often use ku rather than [kmr] (Northern Kurdish).`},
 
 "kw": { name:"Cornish", source:"cldr_kw", region:"eur", script:"ascii", speakers:"~350"},
 
@@ -673,6 +693,9 @@ Legacy applications often use ku rather than <i>kmr</i> (Northern Kurdish).`},
 "mai": { name:"Maithili", source:"udhr_mai,udhr_mai_2", region:"sasia", script:"deva", speakers:"33900000", letter:"सरवभमनधकघषणटदबएतआउलजपठगअछहऐयशओचथखफइढडङईञʼ", mark:"ा्ौिोंेँीृूुःै़", punctuation:"।–"},
 
 "mam": { name:"Mam", source:"udhr_mam", region:"cam", script:"ascii", speakers:"540000"},
+
+"man": { name:"Mandingo (Manding)", redirect:true, source:"", region:"afr", script:"na", speakers:"0", notes:`man is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Eastern Maninkakan [emk], Konyanka Maninka [mku], Western Maninkakan [mlq], Mandinka [mnk], Sankaran Maninka [msc], Kita Maninkakan [mwk], Forest Maninka (deprecated, don't use) [myq].
+Legacy applications often use man rather than [emk] (Eastern Maninkakan).`},
 
 "mas": { name:"Masai (Maasai, Maa)", source:"cldr_mas", region:"afr", script:"latn", speakers:"1300000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛƐƗƆɄāēīŋōūĀĒĪŊŌŪɛɨɔʉ", mark:"́̀̂̄"},
 
@@ -828,7 +851,7 @@ Legacy applications often use ku rather than <i>kmr</i> (Northern Kurdish).`},
 
 "prg": { name:"Prussian (Old Prussian)", source:"cldr_prg", region:"eur", script:"latn", speakers:"0", letter:"țȚāēģīķņōŗšūžĀĒĢĪĶŅŌŖŠŪŽḑḐ", mark:"̧̦̄̌", punctuation:"‐–—…“„"},
 
-"prq": { name:"Ashéninka Perené", source:"udhr_prq", region:"sam", script:"latn", speakers:"~50000", letter:"íÍ", mark:"́", punctuation:"¿", notes:"This is one of several closely related Ashéninka languages (though there is no macrolanguage), including: <i>cpu</i>, <i>cpc</i>, <i>cpb</i>, <i>cjo</i>, <i>cpy</i>. Ashéninka was recognized as a separate language from Asháninka (<i>cni</i>) in 2017, and the process to fix an alphabet was underway during 2018."},
+"prq": { name:"Ashéninka Perené", source:"udhr_prq", region:"sam", script:"latn", speakers:"~50000", letter:"íÍ", mark:"́", punctuation:"¿", notes:"This is one of several closely related Ashéninka languages (though there is no macrolanguage), including: [cpu], [cpc], [cpb], [cjo], [cpy]. Ashéninka was recognized as a separate language from Asháninka ([cni]) in 2017, and the process to fix an alphabet was underway during 2018."},
 
 "prs": { name:"Dari (Afghan Persian)", source:"udhr_pes_2", region:"casia", script:"arab", speakers:"12500000", letter:"اعلمیهجنحقوبشرصدسزآکئثتذضخپگظفغطأچژءي", mark:"ًٔٓ", punctuation:"،‐","number":"۱۹۴۸۲۳۵۶۷۰", other:"‌"},
 
@@ -947,8 +970,8 @@ Orthographies include:
 
 "swb": { name:"Maore Comorian (Shimaore)", source:"udhr_swb", region:"afr", script:"latn", speakers:"97000", letter:"ãÃƁƊĩĨẽẼɓɗ", mark:"̃"},
 
-"syr": { name:"Syriac", redirect:true, region:"wasia", script:"syrc", notes:`syr is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Assyrian Neo-Aramaic (<i>aii</i>), Chaldean Neo-Aramaic (<i>cld</i>).
-Legacy applications often use syr rather than <i>cld</i> (Chaldean Neo-Aramaic).
+"syr": { name:"Syriac", redirect:true, region:"wasia", script:"syrc", notes:`syr is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Assyrian Neo-Aramaic ([aii]), Chaldean Neo-Aramaic ([cld]).
+Legacy applications often use syr rather than [cld] (Chaldean Neo-Aramaic).
 Orthographies include:
 * ʾesṭrangēlā (syre), all ancient manuscripts. West and East Syriac text uses it for headers, titles, and subtitles. It's also the current standard for Western scholarship.
 * serṭā (Western Syriac) (syrj), used in West Syriac texts, Turoyo, and Garshuni (Arabic written with Syriac).
@@ -1012,19 +1035,19 @@ ISO 15924 also has a general script code for Syriac (syrc).`},
 
 "tt": { name:"Tatar", source:"cldr_tt,udhr_tat", region:"eur", script:"cyrl", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖёщЁЩ", mark:"̈̆", aux:"ғқӯҒҚӮ̄"},
 
-"tw": { name:"Twi", redirect:true, region:"afr", script:"latn", notes:`This is a member of the Akan (<i>ak</i>) macrolanguage.
-Legacy applications often use <i>ak</i> rather than tw.
+"tw": { name:"Twi", redirect:true, region:"afr", script:"latn", notes:`This is a member of the Akan ([ak]) macrolanguage.
+Legacy applications often use [ak] rather than tw.
 Dialects include: Ahafo, Akuapem, Akyem, Asante, Asen, Dankyira, Kwawu.
 Orthographies include:
-* Latin, from 1978, intended to be a common orthography for Akan (see <i>ak</i>).
-* Latin, for the Asante dialect of Twi (see <i>tw-asante</i>)
-* Latin, for the Akuapem dialect of Twi (see <i>tw-akuapem</i>)`},
+* Latin, from 1978, intended to be a common orthography for Akan (see [ak]).
+* Latin, for the Asante dialect of Twi (see [tw-asante])
+* Latin, for the Akuapem dialect of Twi (see [tw-akuapem])`},
 
-"tw-akuapem": { name:"Akuapem Twi", source:"udhr_aka_akuapem", region:"afr", script:"latn", speakers:"6000000", letter:"ɛɔƐƆòÒ", mark:"̀", notes:`This is a dialect of Twi (<i>tw</i>), under the Akan (<i>ak</i>) macrolanguage.
-Legacy applications often use <i>ak</i> rather than tw-akuapem.`},
+"tw-akuapem": { name:"Akuapem Twi", source:"udhr_aka_akuapem", region:"afr", script:"latn", speakers:"6000000", letter:"ɛɔƐƆòÒ", mark:"̀", notes:`This is a dialect of Twi ([tw]), under the Akan ([ak]) macrolanguage.
+Legacy applications often use [ak] rather than tw-akuapem.`},
 
-"tw-asante": { name:"Ashanti (Asante, Asante Twi)", source:"udhr_aka_asante", region:"afr", script:"latn", speakers:"2800000", letter:"ɛɔƐƆ", notes:`This is a dialect of Twi (<i>tw</i>), under the Akan (<i>ak</i>) macrolanguage.
-Legacy applications often use <i>ak</i> rather than tw-asante.`},
+"tw-asante": { name:"Ashanti (Asante, Asante Twi)", source:"udhr_aka_asante", region:"afr", script:"latn", speakers:"2800000", letter:"ɛɔƐƆ", notes:`This is a dialect of Twi ([tw]), under the Akan ([ak]) macrolanguage.
+Legacy applications often use [ak] rather than tw-asante.`},
 
 "twq": { name:"Tasawaq", source:"cldr_twq", region:"afr", script:"latn", speakers:"8000", letter:"ɲẽẼŋšžŊŠŽƝãõÃÕ", mark:"̃̌"},
 
