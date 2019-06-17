@@ -229,12 +229,18 @@ function showLanguage (lang) {
 	// check this is a valid langtag
 	if (!langs[lang]) { alert("The tag "+lang+" was not recognised."); return }
 	
+	if (langs[lang].silcode) langcode = langs[lang].silcode
+	else langcode = lang
+
 	out += '<tr><td colspan="2" class="links" style="text-align:right; padding: 0; font-size: 80%; vertical-align:bottom;"><span style="cursor:pointer; margin-right:1em; color:teal;" onclick="toImg(document.getElementById(\'letterCell\')); toImg(document.getElementById(\'markCell\')); toImg(document.getElementById(\'punctuationCell\')); toImg(document.getElementById(\'numberCell\')); toImg(document.getElementById(\'infrequentCell\')); toImg(document.getElementById(\'symbolCell\')); this.style.color=\'#ccc\';">Convert to images</span></td><td class="links" style="padding:0;">&nbsp;</td></tr>'
 	
 	// name
 	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+'&nbsp; <a href="../app-subtags/?lookup='+lang+'" target="_blank" style="font-size:80%;">['+lang+']</a>'+'&nbsp; <span class="scriptName" style="font-size:60%;">'+langs[lang].script+'</span></td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></td></tr>'
 
 	if (!langs[lang].redirect) {
+	
+	// local name
+	if (langs[lang].local) out += '<tr><th>Autonym</th><td class="localCell">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
 	
 	if (langs[lang].rtl) rtl = true
 	else rtl = false
@@ -395,9 +401,6 @@ function showLanguage (lang) {
 	
 	out += stats
 	
-	// local name
-	if (langs[lang].local) out += '<tr><th>Autonym</th><td class="localCell">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
-	
 	// region
 	switch (langs[lang].region) {
 		case 'afr': region = 'Africa';break
@@ -416,7 +419,7 @@ function showLanguage (lang) {
 		}
 	out += '<tr><th>Region</th><td>'+region
 	if (langs[lang].countries) out += '<span class="countries">'+langs[lang].countries+'</span>'
-	out += '</td></td><td class="links"></td></tr>'
+	out += '</td></td><td class="links"><a href="https://www.ethnologue.com/language/'+langcode+'" target="_blank"><img src="ethn.png" alt="Look this up in the Ethnologue." title="Look this up in the Ethnologue." class="ulink"/></a></td></tr>'
 	
 	// speakers
 	if (langs[lang].speakers === '?') var speakers = 'Not known'
@@ -428,13 +431,13 @@ function showLanguage (lang) {
 	out += '<tr><th>Native speakers</th><td>'+speakers+'</td></tr>'
 	} // ends stuff cut out for macrolanguages etc.
 	
+	// local name
+	//if (langs[lang].local) out += '<tr><th>Autonym</th><td class="localCell">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
+	
 	// notes
 	if (langs[lang].notes) {
 		langs[lang].notes = langs[lang].notes.replace(/\[/g, '<i>')
 		langs[lang].notes = langs[lang].notes.replace(/\]/g, '</i>')
-		
-		if (langs[lang].silcode) langcode = langs[lang].silcode
-		else langcode = lang
 	
 		lines = langs[lang].notes.split('\n')
 		inList = false
@@ -453,7 +456,7 @@ function showLanguage (lang) {
 			else lines[l] = '<p>'+lines[l]+'</p>'
 			}
 		formattedNote = lines.join('')
-		out += '<tr><th>Notes</th><td class="notesCell">'+formattedNote+'</td></td><td class="links"><a href="https://www.ethnologue.com/language/'+langcode+'" target="_blank"><img src="ethn.png" alt="Look this up in the Ethnologue." title="Look this up in the Ethnologue." class="ulink"/></a></td></tr>'
+		out += '<tr><th>Notes</th><td class="notesCell">'+formattedNote+'</td></td><td class="links"></td></tr>'
 		}
 
 //	return out
