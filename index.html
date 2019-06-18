@@ -458,8 +458,33 @@ function showLanguage (lang) {
 		formattedNote = lines.join('')
 		out += '<tr><th>Notes</th><td class="notesCell">'+formattedNote+'</td></td><td class="links"></td></tr>'
 		}
+	
+	// related
+	if (langs[lang].related) {
+		langs[lang].related = langs[lang].related.replace(/\[/g, '<i>')
+		langs[lang].related = langs[lang].related.replace(/\]/g, '</i>')
+	
+		lines = langs[lang].related.split('\n')
+		inList = false
+		for (let l=0;l<lines.length;l++) {
+			if (lines[l].startsWith('*')) {
+				if (inList) lines[l] = '<li>'+lines[l].substring(2)+'</li>'
+				else {
+					lines[l] = '<ul><li>'+lines[l].substring(2)+'</li>'
+					inList = true
+					}
+				}
+			else if (inList) {
+				lines[l] = '</ul><p>'+lines[l]+'</p>'
+				inList = false
+				}
+			else lines[l] = '<p>'+lines[l]+'</p>'
+			}
+		formattedNote = lines.join('')
+		out += '<tr><th>Related</th><td class="notesCell">'+formattedNote+'</td></td><td class="links"></td></tr>'
+		}
 
-//	return out
+
 	document.getElementById('langDetails').innerHTML = out
 	
 
@@ -640,7 +665,7 @@ function toImg (node) {
      <p><button style="vertical-align:top;" onclick="document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)">Look up</button></p>
 <table style="margin-top: 3em;margin-right: 3em;">
 <thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th>
-<tbody id="output"><td></td><td></td><td></td></tbody></table>
+<tbody id="output"><td></td><td></td><td></td></table>
 </section>
 
 
@@ -736,7 +761,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 </details>
 
 <div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->16-Jun-2019<!-- #EndDate --></a>.
+Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->18-Jun-2019<!-- #EndDate --></a>.
 Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
 Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
 </span>
