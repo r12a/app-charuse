@@ -351,7 +351,9 @@ function showLanguage (lang) {
 	if (langs[lang].aux) {
 		charList = [...langs[lang].aux]
         stats += charList.length + ' <a onclick="getAll(\'infrequentCell\');return false;" style="cursor:pointer;">infrequent</a> '
-		out += '<tr><th>Infrequent</th><td class="small" id="infrequentCell">'
+		out += '<tr><th>Infrequent</th><td class="small" id="infrequentCell"'
+		if (rtl) out += ' dir="rtl">'
+		else out += '>'
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
@@ -365,7 +367,9 @@ function showLanguage (lang) {
         if (total > 0) stats += ', '
         stats += charList.length + ' deprecated'
         total += charList.length
-		out += '<tr><th>Deprecated</th><td class="small">'
+		out += '<tr><th>Deprecated</th><td class="small"'
+		if (rtl) out += ' dir="rtl">'
+		else out += '>'
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
