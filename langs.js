@@ -477,6 +477,11 @@ For other orthographic information see [fuf].`},
 * Cyrillic, 1957-1991.
 * Latin <strong>(shown here)</strong>.`},
 
+"gax": { name:"Borana-Arsi-Guji Oromo", source:"cldr_om,udhr_gax", region:"afr", countries:"Ethiopia, Kenya, Somalia", script:"ascii", speakers:"3949600", local:"Afaan Oromoo", related:`gax is included in the Oromo [om] macrolanguage.
+Orthographies include:
+* Latin, primary usage <strong>(shown here)</strong>.
+* Ethiopic, no longer in use.`},
+
 "gd": { name:"Gaelic (Scots Gaelic)", silcode:"gla", source:"cldr_gd,udhr_gla", region:"eur", countries:"Scotland", script:"latn", speakers:"57000", letter:"ìàòèùÌÀÒÈÙ", mark:"̀", aux:"ḋḟṁṗṡṫḊḞṀṖṠṪăāċĕēġĭīıłŏōœşŭūĂĀĊĔĒĠĬĪŁŎŌŒŞŬŪŸșȘáâåäãæçéêëíîïñóôöøúûüÿÁÂÅÄÃÆÇÉÊËÍÎÏÑÓÔÖØÚÛǗ̧̦̆̂̊̈̃̄̇", local:"Gàidhlig"},
 
 "gjn": { name:"Gonja", source:"udhr_gjn", region:"afr", countries:"Ghana", script:"latn", speakers:"230000", letter:"ƐƆŋŊɛɔ", local:"Ngbanyito", notes:`Latin script used since 1970.`},
@@ -931,71 +936,101 @@ Legacy applications often use no rather than [nb].`},
 
 "oaa": { name:"Orok (Uilta, Ulta, Ujlta)", source:"udhr_oaa", region:"nasia", script:"cyrl", speakers:"50", letter:"ƝūŪɲԩԨчипалнесдкробуӡгэӈмхтөвӯзЧИПАЛНЕСДКРОБУӠГЭӇМХТӨВӮЗ", mark:"̄", punctuation:"–"},
 
-"oc": { name:"Occitan", source:"udhr_lnc", region:"eur", script:"latn", speakers:"~200000", letter:"óèéçàïòìùúâêîëáôüûÓÈÉÇÀÏÒÌÙÚÂÊÎËÁÔÜÛ", mark:"̧́̀̈̂", punctuation:"«»’—"},
+"oc": { name:"Occitan", silcode:"oci", source:"udhr_lnc", region:"eur", countries:"France, Italy, Monaco, Spain", script:"latn", speakers:"~200000", letter:"óèéçàïòìùúâêîëáôüûÓÈÉÇÀÏÒÌÙÚÂÊÎËÁÔÜÛ", mark:"̧́̀̈̂", punctuation:"«»’—"},
 
-"oj": { name:"Ojibwe (Ojibwa, Ojibway, Chippewa, Otchipwe)", source:"udhr_ojb", region:"nam", script:"cans", speakers:"100880", letter:"ᐯᒪᑎᓯᑦᑌᐸᑫᑕᑯᐎᓇᓐᒥᐌᑲᒃᔭᐊᓂᐃᔑᑭᔝᐤᐅᑾᐱᔦᑐᐗᒣᒋᐁᔅᓱᓀᓄᒧᓭᔥᐨᑡᔕᓴᓶᓉᐺᓪᑉᐼᑴᑄᒐᒬᔐᔗᑺᔡᒻᒡᑶ"},
+"oj": { name:"Ojibwa", silcode:"oji", redirect:true, source:"", region:"nam", script:"na", speakers:"", related:`oj is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Chippewa [ciw], Northwestern Ojibwa [ojb], Central Ojibwa [ojc], Eastern Ojibwa [ojg], Severn Ojibwa [ojs], Western Ojibwa [ojw], Ottawa [otw].
+Legacy applications often use oj rather than [ojg].
+`},
 
-"oki": { name:"Okiek", source:"udhr_oki", region:"afr", script:"ascii", speakers:"79000"},
+"ojb": { name:"Northwestern Ojibwa", source:"udhr_ojb", region:"nam", countries:"Canada", script:"cans", speakers:"100880", letter:"ᐯᒪᑎᓯᑦᑌᐸᑫᑕᑯᐎᓇᓐᒥᐌᑲᒃᔭᐊᓂᐃᔑᑭᔝᐤᐅᑾᐱᔦᑐᐗᒣᒋᐁᔅᓱᓀᓄᒧᓭᔥᐨᑡᔕᓴᓶᓉᐺᓪᑉᐼᑴᑄᒐᒬᔐᔗᑺᔡᒻᒡᑶ", local:"Nakawēmowin", related:`ojb is included in the Ojibwa [oji] macrolanguage.
+Orthographies include:
+* Latin
+* UCAS, <strong>(shown here)</strong>, no longer in use according to Ethnologue.`},
 
-"om": { name:"Oromo", source:"cldr_om,udhr_gax", region:"afr", script:"ascii", speakers:"25542000"},
+"oki": { name:"Okiek", source:"udhr_oki", region:"afr", countries:"Kenya", script:"ascii", speakers:"79000", notes:`Ethnologue regards this language as unwritten.`},
 
-"or": { name:"Oriya (Odia)", source:"cldr_or", region:"sasia", script:"orya", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"଼ଁଂଃାିୀୁୂୃେୈୋୌ୍ୖୗ","number":"୦୧୨୩୪୫୬୭୮୯"},
+"om": { name:"Oromo", silcode:"orm", redirect:true, source:"", region:"afr", script:"na", speakers:"25542000", related:`om is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Borana-Arsi-Guji Oromo [gax], West Central Oromo [gaz], Eastern Oromo [hae], Orma [orc].
+Legacy applications often use om rather than [gaz].`},
 
-"os": { name:"Ossetian (Ossete, Ossetic)", source:"cldr_os,udhr_oss", region:"eur", script:"cyrl", speakers:"570000", letter:"аӕбвгъджзеёийклмнопрстуфхцчшщыьэюяАӔБВГЪДЖЗЕЁИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ", punctuation:"‐–—…‘‚“„«»§"},
+"or": { name:"Oriya (Odia)", silcode:"ori", redirect:true, source:"", region:"sasia", script:"na", speakers:"", related:`or is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Odia (individual language), Oriya (individual language) [ory], Sambalpuri, Kosli [spv].`},
 
-"ote": { name:"Mezquital Otomi", source:"udhr_ote", region:"cam", script:"latn", speakers:"130000", letter:"öüäéñúíáèÖÜÄÉÑÚÍÁÈ", mark:"̱̈́̃̀"},
+"ory": { name:"Odia (Oriya)", source:"cldr_or", region:"sasia", countries:"India", script:"orya", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"଼ଁଂଃାିୀୁୂୃେୈୋୌ୍ୖୗ","number":"୦୧୨୩୪୫୬୭୮୯", local:"ଓଡ଼ିଆ‎ (Oḍiā)", related:`ory is included in the Oriya [or] macrolanguage,`},
 
-"pa": { name:"Punjabi", source:"cldr_pa,udhr_pan,f940e5c7fc381992f942120f89cd8137cb3c3eda", region:"sasia", script:"guru", speakers:"122000000", letter:"ੴਉਊਓਅਆਐਔਇਈਏਸਹਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜ\u{A33}\u{A36}\u{A59}\u{A5A}\u{A5B}\u{A5E}", mark:"ੱੰ਼੍ਾਿੀੁੂੇੈੋੌਂ", punctuation:"‐–—‘’“”′″।","number":"੦੧੨੩੪੫੬੭੮੯", symbol:"☬", other:"\u{200D}\u{200C}", aux:"ਃਁੵ","deprecated":"ੳੲ"},
+"os": { name:"Ossetian (Ossete, Ossetic)", silcode:"oss", source:"cldr_os,udhr_oss", region:"eur", countries:"Russia, Syria, Georgia, Turkey", script:"cyrl", speakers:"570000", letter:"аӕбвгъджзеёийклмнопрстуфхцчшщыьэюяАӔБВГЪДЖЗЕЁИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ", punctuation:"‐–—…‘‚“„«»§", local:"ирон æвзаг‎ (iron ævzag)", related:`Orthographies include:
+* Cyrillic, since 1844 in Russia, since 1954 in Georgia <strong>(shown here)</strong>.
+* Georgian (mkedruli &amp; mtavruli), until 1954 in Georgia.
+* Latin, 1920s-1930s, in Russia.`},
 
-"pa-arab": { name:"Punjabi {Arabic}", source:"cldr_pa_Arab", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابتثجحخدذرزسشصضطظعغفقلمنهويٹپچڈڑژکگںھہیے", mark:"ُٓٔ", punctuation:"‰", other:"‎‏", aux:"أاةٔٺٻټٽ"},
+"ote": { name:"Mezquital Otomi", source:"udhr_ote", region:"cam", countries:"Mexico", script:"latn", speakers:"130000", letter:"öüäéñúíáèÖÜÄÉÑÚÍÁÈ", mark:"̱̈́̃̀", local:"Hñahñu"},
 
-"pam": { name:"Pampangan (Kapampangan)", source:"udhr_pam", region:"seasia", script:"ascii", speakers:"1900000"},
+"pa": { name:"Punjabi", silcode:"pan", source:"cldr_pa,udhr_pan,f940e5c7fc381992f942120f89cd8137cb3c3eda", region:"sasia", countries:"India", script:"guru", speakers:"122000000", letter:"ੴਉਊਓਅਆਐਔਇਈਏਸਹਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜ\u{A33}\u{A36}\u{A59}\u{A5A}\u{A5B}\u{A5E}", mark:"ੱੰ਼੍ਾਿੀੁੂੇੈੋੌਂ", punctuation:"‐–—‘’“”′″।","number":"੦੧੨੩੪੫੬੭੮੯", symbol:"☬", other:"\u{200D}\u{200C}", aux:"ਃਁੵ","deprecated":"ੳੲ", local:"ਪੰਜਾਬੀ‎ (Panjabi), ਪੰਜਾਬੀ ਭਾਸ਼ਾ‎ (Panjabi bhasa)", related:`Orthographies include:
+* Arabic (naskh). See [pa-arab] and [pnb].
+* Gurmukhi, primary usage <strong>(shown here)</strong>.
+* Khojki.`},
 
-"pap": { name:"Papiamento (Papiamentu)", source:"udhr_pap", region:"carib", script:"latn", speakers:"271261", letter:"ñÑ", mark:"̃", punctuation:"’"},
+"pa-arab": { name:"Punjabi", silcode:"pan", rtl:true, source:"cldr_pa_Arab", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابتثجحخدذرزسشصضطظعغفقلمنهويٹپچڈڑژکگںھہیے", mark:"ُٓٔ", punctuation:"‰", other:"‎‏", aux:"أاةٔٺٻټٽ", related:`This is an alternate, Arabic-script orthography for Punjabi.
+For other orthographies see [pa]`},
 
-"pau": { name:"Palauan", source:"udhr_pau", region:"seasia", script:"ascii", speakers:"17000"},
+"pam": { name:"Pampangan (Kapampangan)", source:"udhr_pam", region:"seasia", countries:"Philippines", script:"ascii", speakers:"1900000", local:"Kapampangan"},
 
-"pbb": { name:"Páez (Paez, Paes, Nasa Yuwe)", source:"udhr_pbb", region:"sam", script:"latn", speakers:"40000", letter:"üëäïáÜËÄÏÁ", mark:"̈́"},
+"pap": { name:"Papiamento (Papiamentu)", source:"udhr_pap", region:"carib", countries:"Curacao, Aruba, Caribbean Netherlands, Sint Marten", script:"latn", speakers:"271261", letter:"ñÑ", mark:"̃", punctuation:"’", local:"Papiamentu"},
 
-"pcd": { name:"Picard", source:"udhr_pcd", region:"eur", script:"latn", speakers:"700000", letter:"èåûîéôçÈÅÛÎÉÔÇ", mark:"̧̀̊̂́", symbol:"°"},
+"pau": { name:"Palauan", source:"udhr_pau", region:"seasia", countries:"Palau", script:"ascii", speakers:"17000", local:"Tekoi ra Belau"},
 
-"pcm": { name:"Nigerian Pidgin", source:"udhr_pcm", region:"afr", script:"ascii", speakers:"30000000"},
+"pbb": { name:"Páez (Paez, Paes, Nasa Yuwe)", source:"udhr_pbb", region:"sam", countries:"Colombia", script:"latn", speakers:"40000", letter:"üëäïáÜËÄÏÁ", mark:"̈́", local:"Nasa Yuwe"},
+
+"pbu": { name:"Northern Pashto", rtl:true, source:"cldr_ps", region:"casia", countries:"Pakistan, Afghanistan, UAE", script:"arab", speakers:"20850900", letter:"آاأءبپتټثجځچڅحخدډذرړزژږسشښصضطظعغفقکګگلمنڼهةوؤیيېۍئ", mark:"ًٌٍَُِّْٰٔٓ", punctuation:"٫٬٪؉‰","number":"۰۱۲۳۴۵۶۷۸۹", symbol:"−", local:"پښتو‎ (Pashto)", notes:`pbu is included in the Pashto [ps] macrolanguage, and legacy applications often use [ps] rather pbu.
+Orthographies use Arabic in the naskh style, primary usage, but also nastaliq.`},
+
+"pcd": { name:"Picard", source:"udhr_pcd", region:"eur", countries:"France, Belgium", script:"latn", speakers:"700000", letter:"èåûîéôçÈÅÛÎÉÔÇ", mark:"̧̀̊̂́", symbol:"°"},
+
+"pcm": { name:"Nigerian Pidgin", source:"udhr_pcm", region:"afr", countries:"Nigeria", script:"ascii", speakers:"30000000", local:"Naijá", notes:`Latin script used since 2002.`},
 
 "pes": { name:"Persian (Farsi)", rtl:true, source:"cldr_fa,udhr_pes", region:"wasia", countries:"Iran, Iraq", script:"arab", speakers:"~50000000", letter:"آاءأؤئبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهةیإي", mark:"ًٌٍِّٕٔٓ", punctuation:"٫٬٪؉،؛؟‰‐…‹›«»","number":"۰۱۲۳۴۵۶۷۸۹", symbol:"−", other:"‌", aux:"ـَُِْٰٖإكىٕ", local:" فارسی‎ (Fārsi)", notes:`pes is included in the Farsi [fa] macrolanguage, and legacy applications often use [fa] rather pes.
 Orthographies include:
 * Arabic (naskh) <strong>(shown here)</strong>.
 * Arabic (nastaliq) in Iran. There is a separate script code for nastaliq, Aran.`},
 
-"pis": { name:"Pijin", source:"udhr_pis", region:"oce", script:"ascii", speakers:"24000"},
+"pis": { name:"Pijin", source:"udhr_pis", region:"oce", countries:"Solomon Islands", script:"ascii", speakers:"24000", local:"Pijin"},
 
-"piu": { name:"Pintupi-Luritja", source:"udhr_piu", region:"oce", script:"ascii", speakers:"1703"},
+"piu": { name:"Pintupi-Luritja", source:"udhr_piu", region:"oce", countries:"Australia", script:"ascii", speakers:"1703"},
 
-"pl": { name:"Polish", source:"cldr_pl,udhr_pol", region:"eur", script:"latn", speakers:"55000000", letter:"óÓąćęłńśźżĄĆĘŁŃŚŹŻ", mark:"̨́̇", punctuation:"«»§‐–—…”„†‡′″", symbol:"°", aux:"œŒŸàâåäæçéèêëîïôößùûüÿÀÂÅÄÆÇÉÈÊËÎÏÔÖÙÛǛ̧̂̊̈"},
+"pl": { name:"Polish", silcode:"pol", source:"cldr_pl,udhr_pol", region:"eur", countries:"Poland, Germany, Lithuania, Israel, Russia, Czechia", script:"latn", speakers:"55000000", letter:"óÓąćęłńśźżĄĆĘŁŃŚŹŻ", mark:"̨́̇", punctuation:"«»§‐–—…”„†‡′″", symbol:"°", aux:"œŒŸàâåäæçéèêëîïôößùûüÿÀÂÅÄÆÇÉÈÊËÎÏÔÖÙÛǛ̧̂̊̈", local:"język polski"},
 
 "plt": { name:"Plateau Malagasy", source:"cldr_mg,udhr_plt", region:"afr", countries:"Madagascar", script:"latn", speakers:"18000000", letter:"àâéèêëìîïñôÀÂÉÈÊËÌÎÏÑÔ", mark:"̀̂́̈̃", local:"Malagasy", notes:"UDHR has no accents", related:`plt is included in the Malagasy [mg] macrolanguage, and legacy applications often use [mg] rather plt.`},
 
-"pnb": { name:"Western Panjabi", source:"cldr_pnb,udhr_pnb", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںهھہویےي", mark:"ُٓٔ", punctuation:"‐–—‘’“”′″"},
+"pnb": { name:"Western Panjabi", rtl:true, source:"cldr_pnb,udhr_pnb", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"122000000", letter:"ءآؤئابپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںهھہویےي", mark:"ُٓٔ", punctuation:"‐–—‘’“”′″", local:"پنجابی‎ (Panjābī)", notes:`Need to ascertain whether this is the same as [pa-arab].`, related:`Orthographies include:
+* Arabic (naskh and nastaliq), primary usage <strong>(shown here)</strong>. Script tag for nastaliq is [Aran].
+* Khojki.
+* Lahnda, no longer in use.
+* Latin.`},
 
-"pon": { name:"Pohnpeian (Ponapean)", source:"udhr_pon", region:"oce", script:"ascii", speakers:"31000"},
+"pon": { name:"Pohnpeian (Ponapean)", source:"udhr_pon", region:"oce", countries:"Micronesia", script:"ascii", speakers:"31000", local:"Pohnpei"},
 
-"ppl": { name:"Pipil", source:"udhr_ppl", region:"cam", script:"latn", speakers:"500", letter:"áéÁÉ", mark:"́"},
+"ppl": { name:"Nawat (Nicarao, Pipil)", source:"udhr_ppl", region:"cam", countries:"El Salvador", script:"latn", speakers:"500", letter:"áéÁÉ", mark:"́", local:"Nahuat"},
 
-"prg": { name:"Prussian (Old Prussian)", source:"cldr_prg", region:"eur", script:"latn", speakers:"0", letter:"țȚāēģīķņōŗšūžĀĒĢĪĶŅŌŖŠŪŽḑḐ", mark:"̧̦̄̌", punctuation:"‐–—…“„"},
+"prg": { name:"Prussian (Old Prussian)", source:"cldr_prg", region:"eur", countries:"Poland", script:"latn", speakers:"0", letter:"țȚāēģīķņōŗšūžĀĒĢĪĶŅŌŖŠŪŽḑḐ", mark:"̧̦̄̌", punctuation:"‐–—…“„"},
 
-"prq": { name:"Ashéninka Perené", source:"udhr_prq", region:"sam", script:"latn", speakers:"~50000", letter:"íÍ", mark:"́", punctuation:"¿", notes:"This is one of several closely related Ashéninka languages (though there is no macrolanguage), including: [cpu], [cpc], [cpb], [cjo], [cpy]. Ashéninka was recognized as a separate language from Asháninka ([cni]) in 2017, and the process to fix an alphabet was underway during 2018."},
+"prq": { name:"Ashéninka Perené", source:"udhr_prq", region:"sam", countries:"Peru", script:"latn", speakers:"~50000", letter:"íÍ", mark:"́", punctuation:"¿", notes:"This is one of several closely related Ashéninka languages (though there is no macrolanguage), including: [cpu], [cpc], [cpb], [cjo], [cpy]. Ashéninka was recognized as a separate language from Asháninka ([cni]) in 2017, and the process to fix an alphabet was underway during 2018."},
 
 "prs": { name:"Dari (Afghan Persian)", rtl:true, source:"udhr_pes_2", region:"casia", countries:"Afghanistan, Pakistan, Iran", script:"arab", speakers:"12500000", letter:"اعلمیهجنحقوبشرصدسزآکئثتذضخپگظفغطأچژءي", mark:"ًٔٓ", punctuation:"،‐","number":"۱۹۴۸۲۳۵۶۷۰", other:"‌", local:" فارسی‎ (Fārsi)", notes:`prs is included in the Farsi [fa] macrolanguage, and legacy applications often use [fa] rather prs.
 Orthographies include:
 * Arabic (naskh), used in print <strong>(shown here)</strong>.
 * Arabic (nastaliq) used in handwriting &amp; for book titles. There is a separate script code for nastaliq, Aran.`},
 
-"ps": { name:"Pashto (Pushtu, Pushto)", source:"cldr_ps", region:"casia", script:"arab", speakers:"~50000000", letter:"آاأءبپتټثجځچڅحخدډذرړزژږسشښصضطظعغفقکګگلمنڼهةوؤیيېۍئ", mark:"ًٌٍَُِّْٰٔٓ", punctuation:"٫٬٪؉‰","number":"۰۱۲۳۴۵۶۷۸۹", symbol:"−"},
+"ps": { name:"Pashto (Pushtu, Pushto)", silcode:"pus", redirect:true, source:"", region:"casia", script:"na", speakers:"~50000000", related:`ps is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Southern Pashto [pbt], Northern Pashto [pbu], Central Pashto [pst].
+Legacy applications often use ps rather than [pbu].
+`},
 
-"pt": { name:"Portuguese", source:"cldr_pt,udhr_por_PT,udhr_por_BR", region:"eur", script:"latn", speakers:"215000000", letter:"áàâãçéêíóòôõúºÁÀÂÃÇÉÊÍÓÒÔÕÚ", mark:"̧́̀̂̃", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªåäæèëìîïñºöøùûüÿÅÄÆÈËÌÎÏÑÖØÙÛÜ̆̊̈̄"},
+"pt": { name:"Portuguese", silcode:"por", source:"cldr_pt,udhr_por_PT,udhr_por_BR", region:"eur", countries:"Portugal, Brazil, Angola, Mozambique, etc.", script:"latn", speakers:"215000000", letter:"áàâãçéêíóòôõúºÁÀÂÃÇÉÊÍÓÒÔÕÚ", mark:"̧́̀̂̃", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªåäæèëìîïñºöøùûüÿÅÄÆÈËÌÎÏÑÖØÙÛÜ̆̊̈̄", local:"Português"},
 
-"qu": { name:"Quechua", source:"cldr_qu", region:"sam", script:"latn", speakers:"?", letter:"Ññʼ", mark:"̃", punctuation:"‰", aux:"ĀāĂăĒēĔĕĪīĬĭŌōŎŏŒœŪūŬŭŸÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÒÓÔÖØÙÚÛÜàáâãäåæçèéêëìíîïòóôöøùúûüÿ̧̀́̂̃̄̆̈̊", notes:"qu is a macrolanguage that encompasses the following more specific primary language subtags: cqu qub qud quf qug quh quk qul qup qur qus quw qux quy quz qva qvc qve qvh qvi qvj qvl qvm qvn qvo qvp qvs qvw qvz qwa qwc qwh qws qxa qxc qxh qxl qxn qxo qxp qxr qxt qxu qxw. qu is often preferred by legacy applications rather than qxp (Quechua, Puno)."},
+"qu": { name:"Quechua", silcode:"que", redirect:true, source:"", region:"sam", script:"latn", speakers:"?", related:`qu is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Chilean Quechua    deprecated, use quh [cqu], Huallaga Huánuco Quechua [qub], Calderón Highland Quichua [qud], Lambayeque Quechua [quf], Chimborazo Highland Quichua [qug], South Bolivian Quechua [quh], Chachapoyas Quechua [quk], North Bolivian Quechua [qul], Southern Pastaza Quechua [qup], Yanahuanca Pasco Quechua [qur], Santiago del Estero Quichua [qus], Tena Lowland Quichua [quw], Yauyos Quechua [qux], Ayacucho Quechua [quy], Cusco Quechua [quz], Ambo-Pasco Quechua [qva], Cajamarca Quechua [qvc], Eastern Apurímac Quechua [qve], Huamalíes-Dos de Mayo Huánuco Quechua [qvh], Imbabura Highland Quichua [qvi], Loja Highland Quichua [qvj], Cajatambo North Lima Quechua [qvl], Margos-Yarowilca-Lauricocha Quechua [qvm], North Junín Quechua [qvn], Napo Lowland Quechua [qvo], Pacaraos Quechua [qvp], San Martín Quechua [qvs], Huaylla Wanca Quechua [qvw], Northern Pastaza Quichua [qvz], Corongo Ancash Quechua [qwa], Classical Quechua [qwc], Huaylas Ancash Quechua [qwh], Sihuas Ancash Quechua [qws], Chiquián Ancash Quechua [qxa], Chincha Quechua [qxc], Panao Huánuco Quechua [qxh], Salasaca Highland Quichua [qxl], Northern Conchucos Ancash Quechua [qxn], Southern Conchucos Ancash Quechua [qxo], Puno Quechua [qxp], Cañar Highland Quichua [qxr], Santa Ana de Tusi Pasco Quechua [qxt], Arequipa-La Unión Quechua [qxu], Jauja Wanca Quechua [qxw].
+Legacy applications often use qu rather than [qxp].
+`},
 
-"quc": { name:"K'iche' (Quiché)", source:"udhr_quc", region:"cam", script:"ascii", speakers:"2300000"},
+"quc": { name:"K'iche' (Quiché)", source:"udhr_quc", region:"cam", countries:"Guatemala", script:"ascii", speakers:"2300000", local:"Qach’abel"},
+
+"qxp": { name:"Puno Quechua", source:"cldr_qu", region:"sam", countries:"Peru", script:"latn", speakers:"500000", letter:"Ññʼ", mark:"̃", punctuation:"‰", aux:"ĀāĂăĒēĔĕĪīĬĭŌōŎŏŒœŪūŬŭŸÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÒÓÔÖØÙÚÛÜàáâãäåæçèéêëìíîïòóôöøùúûüÿ̧̀́̂̃̄̆̈̊", local:"Runa Simi", related:`qxp is included in the Quechua [qu] macrolanguage, and legacy applications often use [qu] rather qxp.`},
 
 "rar": { name:"Cook Islands Māori (Rarotongan)", source:"udhr_rar", region:"oce", script:"ascii", speakers:"21725"},
 
