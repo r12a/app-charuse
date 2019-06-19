@@ -1167,61 +1167,80 @@ Orthographies include:
 * Arabic (Garshuni), often used today by Neo-Aramaic-speakers for written communication, such as letters and fliers.
 ISO 15924 also has a general script code for Syriac (syrc).`},
 
-"ta": { name:"Tamil", source:"cldr_ta,udhr_tam,b58628669c02b347a127405429a903afbcc07eb7", region:"sasia", script:"taml", speakers:"70000000", letter:"அஆஇஈஉஊஎஏஐஒஓஔஃகஙசஞடணதநபமயரலவழளறனஜஷஸஹ", mark:"ாிீுூெேைொோௌ்ௗ", punctuation:"§‐–—…‘’“”†‡′″", aux:"ஶ௦௧௨௩௪௫௬௭௮௯௰௱௲௳௴௵௶௷௸௹௺ௐ।॥"},
+"ta": { name:"Tamil", silcode:"tam", source:"cldr_ta,udhr_tam,b58628669c02b347a127405429a903afbcc07eb7", region:"sasia", countries:"India, Sri Lanka, Malaysia, South Africa, Singapore", script:"taml", speakers:"70000000", letter:"அஆஇஈஉஊஎஏஐஒஓஔஃகஙசஞடணதநபமயரலவழளறனஜஷஸஹ", mark:"ாிீுூெேைொோௌ்ௗ", punctuation:"§‐–—…‘’“”†‡′″", aux:"ஶ௦௧௨௩௪௫௬௭௮௯௰௱௲௳௴௵௶௷௸௹௺ௐ।॥", local:"தமிழ்‎ (Tamiḻ)"},
 
-"tbz": { name:"Ditammari (Tammari)", source:"udhr_tbz", region:"afr", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"̃́̀"},
+"tbz": { name:"Ditammari (Tammari)", source:"udhr_tbz", region:"afr", countries:"Benin, Togo", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"̃́̀", local:"Ditammari"},
 
-"tca": { name:"Ticuna (Tikuna)", source:"udhr_tca", region:"sam", script:"latn", speakers:"47000", letter:"üéãñõúáíóÜÉÃÑÕÚÁÍÓĩũĨŨẽṯḏṉẼṮḎṈ", mark:"̱̃́̈͟"},
+"tca": { name:"Ticuna (Tikuna)", source:"udhr_tca", region:"sam", countries:"Brazil, Colombia, Peru", script:"latn", speakers:"47000", letter:"üéãñõúáíóÜÉÃÑÕÚÁÍÓĩũĨŨẽṯḏṉẼṮḎṈ", mark:"̱̃́̈͟", local:"ticunagaxũ"},
 
-"tdd": { name:"Tai Nüa (Nɯa, Dehong Dai, Chinese Shan, Tai Mau, Tai Kong)", source:"7bbb60b1ae185293cf14c8d8088e14351477c26b", region:"seasia", script:"tale", speakers:"720000", letter:"ᥐᥑᥒᥓᥔᥕᥖᥗᥘᥙᥚᥛᥜᥝᥞᥟᥠᥡᥢᥣᥤᥥᥦᥧᥨᥩᥪᥫᥬᥭᥰᥱᥲᥳᥴ", aux:"၀၁၂၃၄၅၆၇၈၉̀́̇̈̌"},
+"tdd": { name:"Tai Nüa (Nɯa, Dehong Dai, Chinese Shan, Tai Mau, Tai Kong)", source:"7bbb60b1ae185293cf14c8d8088e14351477c26b", region:"seasia", countries:"China, Myanmar, Vietnam, Laos", script:"tale", speakers:"720000", letter:"ᥐᥑᥒᥓᥔᥕᥖᥗᥘᥙᥚᥛᥜᥝᥞᥟᥠᥡᥢᥣᥤᥥᥦᥧᥨᥩᥪᥫᥬᥭᥰᥱᥲᥳᥴ", aux:"၀၁၂၃၄၅၆၇၈၉̀́̇̈̌"},
 
-"tdt": { name:"Tetun Dili", source:"udhr_010", region:"seasia", script:"latn", speakers:"?", letter:"áíúóÁÍÚÓ", mark:"́", punctuation:"’"},
+"tdt": { name:"Tetun Dili", source:"udhr_010", region:"seasia", countries:"East Timor", script:"latn", speakers:"385000", letter:"áíúóÁÍÚÓ", mark:"́", punctuation:"’", local:"Tetun Dili"},
 
-"te": { name:"Telugu", source:"cldr_te,udhr_tel", region:"sasia", script:"telu", speakers:"74002586", letter:"అఆఇఈఉఊఋౠఌౡఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరఱలవశషసహళ", mark:"ఁంఃాిీుూృౄెేైొోౌ్ౕౖ", punctuation:"‘’“”", aux:"౦౧౨౩౪౫౬౭౮౯"},
+"te": { name:"Telugu", silcode:"tel", source:"cldr_te,udhr_tel", region:"sasia", countries:"India", script:"telu", speakers:"74002586", letter:"అఆఇఈఉఊఋౠఌౡఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరఱలవశషసహళ", mark:"ఁంఃాిీుూృౄెేైొోౌ్ౕౖ", punctuation:"‘’“”", aux:"౦౧౨౩౪౫౬౭౮౯", local:"తెలుగు‎ (Telugu)"},
 
-"tem": { name:"Temne (Themne, Timne)", source:"udhr_tem", region:"afr", script:"latn", speakers:"1200000", letter:"ɅƆƏƐŋŊʌɔəɛ", punctuation:"‐"},
+"tem": { name:"Temne (Themne, Timne)", source:"udhr_tem", region:"afr", countries:"Sierra Leone", script:"latn", speakers:"1200000", letter:"ɅƆƏƐŋŊʌɔəɛ", punctuation:"‐", local:"Themne"},
 
-"teo": { name:"Teso", source:"cldr_teo", region:"afr", script:"ascii", speakers:"1900000"},
+"teo": { name:"Teso", source:"cldr_teo", region:"afr", countries:"Uganda, Kenya", script:"ascii", speakers:"1900000", local:"Atεsᴐ", notes:`Latin orthography used since 1930.`},
 
-"tet": { name:"Tetum (Tetun)", source:"udhr_tet", region:"seasia", script:"ascii", speakers:"500000"},
+"tet": { name:"Tetum (Tetun)", source:"udhr_tet", region:"seasia", countries:"Indonesia, East Timor", script:"ascii", speakers:"500000", local:"Tetun"},
 
-"tg": { name:"Tajik (Tajiki, Tajiki Persian)", source:"cldr_tg,udhr_tgk", region:"casia", script:"cyrl", speakers:"8400000", letter:"эъломияуҳқбашрпегфтднзкхсвӣёҷчғюӯйжьЭЪЛОМИЯУҲҚБАШРПЕГФТДНЗКХСВӢЁҶЧҒЮӮЙЖЬ", mark:"̄̈̆", punctuation:"‰", aux:"цщыьЦЩЫЬ"},
+"tg": { name:"Tajik (Tajiki, Tajiki Persian)", silcode:"tgk", source:"cldr_tg,udhr_tgk", region:"casia", countries:"Tajikistan, Uzbekistan, Kyrgyzstan, Kazakhstan", script:"cyrl", speakers:"8400000", letter:"эъломияуҳқбашрпегфтднзкхсвӣёҷчғюӯйжьЭЪЛОМИЯУҲҚБАШРПЕГФТДНЗКХСВӢЁҶЧҒЮӮЙЖЬ", mark:"̄̈̆", punctuation:"‰", aux:"цщыьЦЩЫЬ", local:"тоҷикӣ‎ (Tojiki)", related:`Orthographies include:
+* Arabic (nask), until 1928.
+* Latin, 1928-1940.
+* Cyrillic, since 1940, primary usage <strong>(shown here)</strong>.
+* Hebrew, used by Bukharan Jews in Uzbekistan.`},
 
-"th": { name:"Thai (Siamese)", source:"cldr_th,udhr_tha,1935c4dc5720d8b5ca3fe2e8f19a794a59bba8af", region:"seasia", script:"thai", speakers:"44000000", letter:"ฯๆกขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลฦวศษสหฬอฮะาๅำเแโใไ", mark:"์็่้๊๋ัิีึืุู","number":"๐๑๒๓๔๕๖๗๘๙", punctuation:"‐–—‘’“”…′″๏๚๛", symbol:"฿", aux:"ํ"},
+"th": { name:"Thai (Siamese)", silcode:"tha", source:"cldr_th,udhr_tha,1935c4dc5720d8b5ca3fe2e8f19a794a59bba8af", region:"seasia", countries:"Thailand", script:"thai", speakers:"44000000", letter:"ฯๆกขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลฦวศษสหฬอฮะาๅำเแโใไ", mark:"์็่้๊๋ัิีึืุู","number":"๐๑๒๓๔๕๖๗๘๙", punctuation:"‐–—‘’“”…′″๏๚๛", symbol:"฿", aux:"ํ", local:"ภาษาไทย"},
 
-"ti": { name:"Tigrinya", source:"cldr_ti,udhr_tir", region:"afr", script:"ethi", speakers:"6900000", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍቐቑቒቓቔቕቖቘቚቛቜቝበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾዀዂዃዄዅወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ", mark:"፟", punctuation:"፣፡’", aux:"ሇቇኇኯዏዯዸዹዺዻዼዽዾዿጏጘጙጚጛጜጝጞጟፘፙፚⶀⶁⶂⶃⶄⶅⶆⶇⶈⶉⶊⶋⶌⶍⶎⶓⶔⶕⶖⶏⶐⶑⶒⶠⶡⶢⶣⶤⶥⶦⶨⶩⶪⶫⶬⶭⶮⶰⶱⶲⶳⶴⶵⶶⶸⶹⶺⶻⶼⶽⶾⷀⷁⷂⷃⷄⷅⷆⷈⷉⷊⷋⷌⷍⷎⷐⷑⷒⷓⷔⷕⷖⷘⷙⷚⷛⷜⷝⷞ᎐᎑᎒᎓᎔᎕᎖᎗᎘᎙ᎀᎁᎂᎃᎄᎅᎆᎇᎈᎉᎊᎋᎌᎍᎎᎏ"},
+"ti": { name:"Tigrinya", silcode:"tir", source:"cldr_ti,udhr_tir", region:"afr", countries:"Ethiopia, Eritrea", script:"ethi", speakers:"6900000", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍቐቑቒቓቔቕቖቘቚቛቜቝበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾዀዂዃዄዅወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ", mark:"፟", punctuation:"፣፡’", aux:"ሇቇኇኯዏዯዸዹዺዻዼዽዾዿጏጘጙጚጛጜጝጞጟፘፙፚⶀⶁⶂⶃⶄⶅⶆⶇⶈⶉⶊⶋⶌⶍⶎⶓⶔⶕⶖⶏⶐⶑⶒⶠⶡⶢⶣⶤⶥⶦⶨⶩⶪⶫⶬⶭⶮⶰⶱⶲⶳⶴⶵⶶⶸⶹⶺⶻⶼⶽⶾⷀⷁⷂⷃⷄⷅⷆⷈⷉⷊⷋⷌⷍⷎⷐⷑⷒⷓⷔⷕⷖⷘⷙⷚⷛⷜⷝⷞ᎐᎑᎒᎓᎔᎕᎖᎗᎘᎙ᎀᎁᎂᎃᎄᎅᎆᎇᎈᎉᎊᎋᎌᎍᎎᎏ", notes:`Ethiopic script has been used since 13th or 14th century.`},
 
-"tiv": { name:"Tiv", source:"udhr_tiv", region:"afr", script:"latn", speakers:"2200000", letter:"ôÔ", mark:"̂"},
+"tiv": { name:"Tiv", source:"udhr_tiv", region:"afr", countries:"Nigeria", script:"latn", speakers:"2200000", letter:"ôÔ", mark:"̂", local:"Tiv", notes:`Latin script used since 1936.`},
 
-"tk": { name:"Turkmen", source:"cldr_tk,udhr_tuk_latn", region:"casia", script:"latn", speakers:"7500000", letter:"çäöüýÇÄÖÜÝžňşŽŇŞ", mark:"̧̈̌́", punctuation:"§–—…“”‐‰"},
+"tk": { name:"Turkmen", silcode:"tuk", source:"cldr_tk,udhr_tuk_latn", region:"casia", countries:"Turkmenistan, Afghanistan, Iran, Iraq, Syria", script:"latn", speakers:"7500000", letter:"çäöüýÇÄÖÜÝžňşŽŇŞ", mark:"̧̈̌́", punctuation:"§–—…“”‐‰", local:"Türkmençe", related:`Orthographies include:
+* Arabic (naskh), in Afghanistan &amp; Iran.
+* [tk-cyrl] Cyrillic, in Turkmenistan (but not Afghanistan).
+* Latin, since 1991, official usage <strong>(shown here)</strong>.`},
 
-"tk-cyrl": { name:"Turkmen {Cyrillic}", source:"udhr_tuk_cyrl", region:"casia", script:"cyrl", speakers:"7500000", letter:"адмхуклрынңәиецясгшбптчвзэоҗйөүъюжфёАДМХУКЛРЫНҢӘИЕЦЯСГШБПТЧВЗЭОҖЙӨҮЪЮЖФЁ", mark:"̆̈", punctuation:"‐–"},
+"tk-cyrl": { name:"Turkmen", source:"udhr_tuk_cyrl", region:"casia", countries:"Turkmenistan, Afghanistan, Iran, Iraq, Syria", script:"cyrl", speakers:"7500000", letter:"адмхуклрынңәиецясгшбптчвзэоҗйөүъюжфёАДМХУКЛРЫНҢӘИЕЦЯСГШБПТЧВЗЭОҖЙӨҮЪЮЖФЁ", mark:"̆̈", punctuation:"‐–", local:"түркменче‎ (Türkmençe)", related:`This is an alternate, Cyrillic-script orthography for Turkmen.
+For other orthographies see [tk].`},
 
-"tl": { name:"Tagalog", source:"udhr_tgl_tglg", region:"seasia", script:"ascii", speakers:"28000000"},
+"tl": { name:"Tagalog", silcode:"tgl", source:"udhr_tgl_tglg", region:"seasia", countries:"Philippines, USA, Canada", script:"ascii", speakers:"28000000", local:"Tagalog", related:`Orthographies include:
+* Latin, primary usage <strong>(shown here)</strong>.
+* Tagalog, no longer in use.`},
 
-"tly": { name:"Talysh", source:"udhr_tly", region:"wasia", script:"latn", speakers:"900000", letter:"çÇƏığşİĞŞə", mark:"̧̇̆"},
+"tly": { name:"Talysh", source:"udhr_tly", region:"wasia", countries:"Azerbaijan, Iran", script:"latn", speakers:"900000", letter:"çÇƏığşİĞŞə", mark:"̧̇̆", local:"Tolışi", related:`Orthographies include:
+* Arabic (naskh), in Iran.
+* Cyrillic.
+* Latin, in Azerbaijan <strong>(shown here)</strong>.`},
 
-"tn": { name:"Tswana (Setswana)", source:"udhr_tsn", region:"afr", script:"latn", speakers:"5000000", letter:"šŠ", mark:"̌", punctuation:"·‐"},
+"tn": { name:"Tswana (Setswana)", silcode:"tsn", source:"udhr_tsn", region:"afr", countries:"Botswana, South Africa, Zimbabwe", script:"latn", speakers:"5000000", letter:"šŠ", mark:"̌", punctuation:"·‐", local:"Setswana, Tswana"},
 
-"to": { name:"Tongan", source:"cldr_to,udhr_ton", region:"oce", script:"latn", speakers:"169000", letter:"āēīōūĀĒĪŌŪáéíóúÁÉÍÓÚʻ", mark:"́̄", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăĕĭŏœŭĂĔĬŎŒŬŸàâåäæçèêëìîïñòôöøùûüÿÀÂÅÄÆÇÈÊËÌÎÏÑÒÔÖØÙÛǛ̧̆̂̊̈̃"},
+"to": { name:"Tongan", silcode:"ton", source:"cldr_to,udhr_ton", region:"oce", countries:"Tonga", script:"latn", speakers:"169000", letter:"āēīōūĀĒĪŌŪáéíóúÁÉÍÓÚʻ", mark:"́̄", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăĕĭŏœŭĂĔĬŎŒŬŸàâåäæçèêëìîïñòôöøùûüÿÀÂÅÄÆÇÈÊËÌÎÏÑÒÔÖØÙÛǛ̧̆̂̊̈̃", local:"Faka Tonga"},
 
-"tob": { name:"Toba (Qom, Kom, Chaco Sur, Toba Sur)", source:"udhr_tob", region:"sam", script:"latn", speakers:"40000", letter:"ỹỸíÍ", mark:"̃́"},
+"tob": { name:"Toba (Qom, Kom, Chaco Sur, Toba Sur)", source:"udhr_tob", region:"sam", countries:"Argentina", script:"latn", speakers:"40000", letter:"ỹỸíÍ", mark:"̃́", local:"Qom"},
 
-"toi": { name:"Tonga (Chitonga, Zambezi)", source:"udhr_toi", region:"afr", script:"ascii", speakers:"1500000"},
+"toi": { name:"Tonga (Chitonga, Zambezi)", source:"udhr_toi", region:"afr", countries:"Zambia, Zimbabwe", script:"ascii", speakers:"1500000", local:"Chitonga"},
 
-"toj": { name:"Tojolab'al", source:"udhr_toj", region:"cam", script:"ascii", speakers:"52000", punctuation:"’"},
+"toj": { name:"Tojolab'al", source:"udhr_toj", region:"cam", countries:"Mexico", script:"ascii", speakers:"52000", punctuation:"’", local:"Tojolabal"},
 
-"top": { name:"Papantla Totonac (Lowland Totonac)", source:"udhr_top", region:"cam", script:"ascii", speakers:"80000"},
+"top": { name:"Papantla Totonac (Lowland Totonac)", source:"udhr_top", region:"cam", countries:"Mexico", script:"ascii", speakers:"80000", local:"Tutunakú"},
 
-"tpi": { name:"Tok Pisin (Pidgin English)", source:"udhr_tpi", region:"seasia", script:"ascii", speakers:"4000000"},
+"tpi": { name:"Tok Pisin (Pidgin English)", source:"udhr_tpi", region:"seasia", countries:"Papua New Guinea", script:"ascii", speakers:"4000000", local:"Tok Pisin"},
 
-"tr": { name:"Turkish (Istanbul Turkish)", source:"cldr_tr,udhr_tur", region:"wasia", script:"latn", speakers:"71000000", letter:"çöüâÇÖÜÂğışĞŞİ", mark:"̧̇̆̈̂", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăĕĭŏœŭĂĔĬŎŒŬŸàåäæèêëìîïñòôøùûÿÀÅÄÆÈÊËÌÎÏÑÒÔØÙÛ̀̊̃"},
+"tr": { name:"Turkish (Istanbul Turkish)", silcode:"tur", source:"cldr_tr,udhr_tur", region:"wasia", countries:"Turkey, Bulgaria, Cyprus, Uzbekistan,Kazakhstan, Macedonia", script:"latn", speakers:"71000000", letter:"çöüâÇÖÜÂğışĞŞİ", mark:"̧̇̆̈̂", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăĕĭŏœŭĂĔĬŎŒŬŸàåäæèêëìîïñòôøùûÿÀÅÄÆÈÊËÌÎÏÑÒÔØÙÛ̀̊̃", local:"Türkçe", related:`Orthographies include:
+* Arabic (naskh), no longer in use.
+* Cyrillic, in Bulgaria.
+* Greek, no longer in use.
+* Latin, since 1928/1929, primary usage <strong>(shown here)</strong>.`},
 
-"ts": { name:"Tsonga (Xitsonga)", source:"udhr_tso_MZ,udhr_tso_ZW", region:"afr", script:"latn", speakers:"13000000", letter:"ìàçãòèùíéáúÌÀÇÃÒÈÙÍÉÁÚ", mark:"̧̀̃́", punctuation:"’"},
+"ts": { name:"Tsonga (Xitsonga)", silcode:"tso", source:"udhr_tso_MZ,udhr_tso_ZW", region:"afr", countries:"South Africa, Mozambique, Zimbabwe", script:"latn", speakers:"13000000", letter:"ìàçãòèùíéáúÌÀÇÃÒÈÙÍÉÁÚ", mark:"̧̀̃́", punctuation:"’", local:"Xitsonga"},
 
-"tsz": { name:"Purépecha (Tarascan)", source:"udhr_tsz", region:"cam", script:"latn", speakers:"125000", letter:"áïéíÁÏÉÍⱭƲŋŊɑʋ", mark:"́̈"},
+"tsz": { name:"Purépecha (Tarascan)", source:"udhr_tsz", region:"cam", countries:"Mexico, USA", script:"latn", speakers:"125000", letter:"áïéíÁÏÉÍⱭƲŋŊɑʋ", mark:"́̈", local:"P’urhe, P’urhépecha"},
 
-"tt": { name:"Tatar", source:"cldr_tt,udhr_tat", region:"eur", script:"cyrl", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖёщЁЩ", mark:"̈̆", aux:"ғқӯҒҚӮ̄"},
+"tt": { name:"Tatar", silcode:"tat", source:"cldr_tt,udhr_tat", region:"eur", countries:"Russia, Kazakhstan", script:"cyrl", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖёщЁЩ", mark:"̈̆", aux:"ғқӯҒҚӮ̄", local:"татар теле‎ (tatar tele), татарча‎ (tatarça)", related:`Orthographies include:
+* Cyrillic <strong>(shown here)</strong>.
+* Latin.`},
 
 "tw": { name:"Twi", redirect:true, region:"afr", script:"latn", notes:`This is a member of the Akan ([ak]) macrolanguage.
 Legacy applications often use [ak] rather than tw.
@@ -1237,35 +1256,54 @@ Legacy applications often use [ak] rather than tw-akuapem.`},
 "tw-asante": { name:"Ashanti (Asante, Asante Twi)", source:"udhr_aka_asante", region:"afr", script:"latn", speakers:"2800000", letter:"ɛɔƐƆ", notes:`This is a dialect of Twi ([tw]), under the Akan ([ak]) macrolanguage.
 Legacy applications often use [ak] rather than tw-asante.`},
 
-"twq": { name:"Tasawaq", source:"cldr_twq", region:"afr", script:"latn", speakers:"8000", letter:"ɲẽẼŋšžŊŠŽƝãõÃÕ", mark:"̃̌"},
+"twq": { name:"Tasawaq", source:"cldr_twq", region:"afr", countries:"Niger", script:"latn", speakers:"8000", letter:"ɲẽẼŋšžŊŠŽƝãõÃÕ", mark:"̃̌", local:"Ingalkoyyu’"},
 
-"ty": { name:"Tahitian", source:"udhr_tah", region:"oce", script:"latn", speakers:"68000", letter:"āūōēīĀŪŌĒĪ", mark:"̄"},
+"ty": { name:"Tahitian", silcode:"tah", source:"udhr_tah", region:"oce", script:"latn", speakers:"68000", letter:"āūōēīĀŪŌĒĪ", mark:"̄", local:"Reo Tahiti"},
 
-"tyv": { name:"Tuvan (Tuvinian, Tyvan, Tuvin)", source:"udhr_tyv", region:"nasia", script:"cyrl", speakers:"280000", letter:"кижнңэргелбүтуазычдьсмяоюцхпшөйвъфёКИЖНҢЭРГЕЛБҮТУАЗЫЧДЬСМЯОЮЦХПШӨЙВЪФЁ", mark:"̆̈"},
+"tyv": { name:"Tuvan (Tuvinian, Tyvan, Tuvin)", source:"udhr_tyv", region:"nasia", countries:"Russia, Mongolia", script:"cyrl", speakers:"280000", letter:"кижнңэргелбүтуазычдьсмяоюцхпшөйвъфёКИЖНҢЭРГЕЛБҮТУАЗЫЧДЬСМЯОЮЦХПШӨЙВЪФЁ", mark:"̆̈", local:"тыва‎ (tyva), тыва дыл‎ (tyva dyl)"},
 
-"tzh": { name:"Tzeltal (Ts'eltal)", source:"udhr_tzh", region:"cam", script:"ascii", speakers:"450000", symbol:"´"},
+"tzh": { name:"Tzeltal (Ts'eltal)", source:"udhr_tzh", region:"cam", countries:"Mexico", script:"ascii", speakers:"450000", symbol:"´", local:"Bats’il k’op"},
 
-"tzm": { name:"Central Atlas Tamazight (Central Morocco Tamazight, Middle Atlas Tamazight, Central Shilha, Beraber, Braber) {Latin}", source:"cldr_tzm,udhr_tzm_tfng", region:"afr", script:"latn", speakers:"2500000", letter:"ɛɣḍḥṛṣṭẓỵḌḤṚṢṬẒỴƐƔâéçÂÉÇʷ", mark:"̧̣̂́"},
+"tzm": { name:"Central Atlas Tamazight (Central Morocco Tamazight, Middle Atlas Tamazight, Central Shilha, Beraber, Braber)", source:"cldr_tzm,udhr_tzm_tfng", region:"afr", countries:"Morocco", script:"latn", speakers:"2500000", letter:"ɛɣḍḥṛṣṭẓỵḌḤṚṢṬẒỴƐƔâéçÂÉÇʷ", mark:"̧̣̂́", local:"Tmaziɣt, ⵜⴰⵎⴰⵣⵉⵖⵜ‎ (Tamazight)", related:`Orthographies include:
+* Arabic (naskh).
+* Latin <strong>(shown here)</strong>.
+* Tifinagh, developed 2003, official usage.`},
 
-"tzo": { name:"Tzotzil", source:"udhr_tzc", region:"cam", script:"latn", speakers:"400000", letter:"óáéíúÓÁÉÍÚ", mark:"́", punctuation:"’"},
+"tzo": { name:"Tzotzil", source:"udhr_tzc", region:"cam", countries:"Mexico", script:"latn", speakers:"400000", letter:"óáéíúÓÁÉÍÚ", mark:"́", punctuation:"’", local:"Bats’i k’op"},
 
-"ug": { name:"Uyghur (Uighur, Eastern Turki)", source:"cldr_ug,udhr_uig_arab", region:"casia", script:"arab", speakers:"25000000", letter:"ئاەبپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىي", mark:"ٔ", punctuation:"،؛"},
+"ug": { name:"Uyghur (Uighur, Eastern Turki)", silcode:"uig", rtl:true, source:"cldr_ug,udhr_uig_arab", region:"casia", countries:"China, Kazakhstan", script:"arab", speakers:"25000000", letter:"ئاەبپتجچخدرزژسشغفقكگڭلمنھوۇۆۈۋېىي", mark:"ٔ", punctuation:"،؛", local:"ئۇيغۇر تىلى‎ (Uyghur tili), ئۇيغۇرچە‎ (Uyghurche)", related:`Orthographies include:
+* Arabic (naskh), official and primary use in China, also used in Afghanistan. <strong>(shown here)</strong>
+* Cyrillic, used in Kazakhstan, previously used in China.
+* [ug-latn] Latin, used in China and Turkey.`},
 
-"ug-latn": { name:"Uyghur (Uighur, Eastern Turki) {Latin}", source:"udhr_uig_latn", region:"casia", script:"latn", speakers:"25000000", letter:"öéüÖÉÜ", mark:"̈́", punctuation:"’"},
+"ug-latn": { name:"Uyghur (Uighur, Eastern Turki)", source:"udhr_uig_latn", region:"casia", countries:"China, Kazakhstan", script:"latn", speakers:"25000000", letter:"öéüÖÉÜ", mark:"̈́", punctuation:"’", related:`This is an alternate, Latin-script orthography for Uighur.
+For other orthographies see [ug].`},
 
-"uk": { name:"Ukrainian", source:"cldr_uk,udhr_ukr", region:"eur", script:"cyrl", speakers:"45000000", letter:"абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯʼ", mark:"̈̆", punctuation:"–’“„‐«»§", symbol:"№", aux:"ёъыэЁЪЫЭ́"},
+"uk": { name:"Ukrainian", silcode:"ukr", source:"cldr_uk,udhr_ukr", region:"eur", countries:"Ukraine, Brazil, Moldova, Romania", script:"cyrl", speakers:"45000000", letter:"абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯʼ", mark:"̈̆", punctuation:"–’“„‐«»§", symbol:"№", aux:"ёъыэЁЪЫЭ́", local:"українська мова‎ (Ukrayins’ka mova)"},
 
-"umb": { name:"Umbundu (South Mbundu)", source:"udhr_umb,udhr_011", region:"afr", script:"latn", speakers:"6000000", letter:"ñêãîõâÑÊÃÎÕÂ", mark:"̃̂", punctuation:"’"},
+"umb": { name:"Umbundu (South Mbundu)", source:"udhr_umb,udhr_011", region:"afr", countries:"Angola", script:"latn", speakers:"6000000", letter:"ñêãîõâÑÊÃÎÕÂ", mark:"̃̂", punctuation:"’", local:"Umbundu"},
 
-"ur": { name:"Urdu", source:"cldr_urdu,udhr_urd,2a19c3255e234cbb86e12ec0dc966684ccdb2965", region:"sasia", script:"arab", speakers:"65000000", letter:"اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےهي", mark:"ًَُِّٰٔٓ", punctuation:"،؍٫٬؛؟۔”“؁٪","number":"۰۱۲۳۴۵۶۷۸۹", aux:"؃ۃٻٺټٽي"},
+"ur": { name:"Urdu", silcode:"urd", rtl:true, source:"cldr_urdu,udhr_urd,2a19c3255e234cbb86e12ec0dc966684ccdb2965", region:"sasia", countries:"Pakistan, India, Nepal, Bangladesh", script:"arab", speakers:"65000000", letter:"اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےهي", mark:"ًَُِّٰٔٓ", punctuation:"،؍٫٬؛؟۔”“؁٪","number":"۰۱۲۳۴۵۶۷۸۹", aux:"؃ۃٻٺټٽي", local:"اُردُو‎‎ (Urdū)", notes:`The naskh style is used, but the primary usage is in nastaliq style. There is a script subtag for nastaliq style, [Aran].`},
 
-"ura": { name:"Urarina (Itucali, Simacu, Shimacu)", source:"udhr_ura", region:"sam", script:"latn", speakers:"6000", letter:"úóíÚÓÍ", mark:"́"},
+"ura": { name:"Urarina (Itucali, Simacu, Shimacu)", source:"udhr_ura", region:"sam", countries:"Peru", script:"latn", speakers:"6000", letter:"úóíÚÓÍ", mark:"́", local:"Oruarinya"},
 
-"uz": { name:"Uzbek", source:"cldr_uz,udhr_uzn_latn", region:"casia", script:"latn", speakers:"27000000", letter:"ʻʼ", punctuation:"‐–—…‘’“”„′″«»§"},
+"uz": { name:"Uzbek", silcode:"uzb", redirect:true, source:"", region:"casia", script:"na", speakers:"27000000", related:`uz is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Northern Uzbek [uzn], Southern Uzbek [uzs].
+Legacy applications often use uz rather than [uzn].
+`},
 
-"uz-arab": { name:"Uzbek {Arabic}", source:"cldr_uz_Arab", region:"casia", script:"arab", speakers:"27000000", letter:"ءآأؤئابةتثجحخدذرزسشصضطظعغفقلمنهويپچژکگۇۉی", mark:"ًٌٍَُِّْٰٓٔ", punctuation:"؉٪٫٬","number":"۰۱۲۳۴۵۶۷۸۹", aux:"يټځڅډړږښګڼۍې", other:"‌‍‎‏"},
+"uzn": { name:"Northern Uzbek", source:"cldr_uz,udhr_uzn_latn", region:"casia", countries:"Uzbekistan, Tajikistan, Kyrgyzstan, Kazakhstan, Turkmenistan", script:"latn", speakers:"27000000", letter:"ʻʼ", punctuation:"‐–—…‘’“”„′″«»§", local:"oʻzbek tili", related:`uzn is included in the Uzbek [uz] macrolanguage, and legacy applications often use [uz] rather than uzn.
+Orthographies include:
+* [uzn-arab] Arabic (naskh), symbolic use in Uzbekistan, sometimes used in China.
+* [uzn-cyrl] Cyrillic, 1940-1992, official usage in Uzbekistan, and continued widespread use in China and Uzbekistan.
+* Latin, since 1992, official usage in Uzbekistan. <strong>(shown here)</strong>`},
 
-"uz-cyrl": { name:"Uzbek {Cyrillic}", source:"cldr_uz_Cyrl,udhr_uzn_cyrl", region:"casia", script:"cyrl", speakers:"27000000", letter:"инсоҳуқлармждекцяйбшгтўвэъпчзёфхюғИНСОҲУҚЛАРМЖДЕКЦЯЙБШГТЎВЭЪПЧЗЁФХЮҒ", mark:"̆̈", punctuation:"‐–", aux:"щыьЩЫЬ"},
+"uzn-arab": { name:"Northern Uzbek", silcode:"uzn", rtl:true, source:"cldr_uz_Arab", region:"casia", countries:"Uzbekistan, Tajikistan, Kyrgyzstan, Kazakhstan, Turkmenistan", script:"arab", speakers:"27000000", letter:"ءآأؤئابةتثجحخدذرزسشصضطظعغفقلمنهويپچژکگۇۉی", mark:"ًٌٍَُِّْٰٓٔ", punctuation:"؉٪٫٬","number":"۰۱۲۳۴۵۶۷۸۹", aux:"يټځڅډړږښګڼۍې", other:"‌‍‎‏", related:`uzn is included in the Uzbek [uz] macrolanguage, and legacy applications often use [uz] rather than uzn.
+This is an alternate, Arabic-script orthography for Uzbek.
+For other orthographies see [uzn],`},
+
+"uzn-cyrl": { name:"Northern Uzbek", silcode:"uzn", source:"cldr_uz_Cyrl,udhr_uzn_cyrl", region:"casia", countries:"Uzbekistan, Tajikistan, Kyrgyzstan, Kazakhstan, Turkmenistan", script:"cyrl", speakers:"27000000", letter:"инсоҳуқлармждекцяйбшгтўвэъпчзёфхюғИНСОҲУҚЛАРМЖДЕКЦЯЙБШГТЎВЭЪПЧЗЁФХЮҒ", mark:"̆̈", punctuation:"‐–", aux:"щыьЩЫЬ", local:"ўзбек тили‎ (oʻzbek tili)", related:`uzn is included in the Uzbek [uz] macrolanguage, and legacy applications often use [uz] rather than uzn.
+This is an alternate, Cyrillic-script orthography for Uzbek.
+For other orthographies see [uzn],`},
 
 "vai": { name:"Vai (Vy, Gallinas)", source:"cldr_vai,udhr_vai,a5c6b1f62cb3d71b6acccbe995ff47db10e94963", region:"afr", script:"vaii", speakers:"120000", letter:"ꔀꔁꔂꔃꔄꔅꔆꔇꔈꔉꔊꔋꔌꔍꔎꔏꔐꔑꔒꔓꔔꔕꔖꔗꔘꔙꔚꔛꔜꔝꔞꔟꔠꔡꔢꔣꔤꔥꔦꔧꔨꔩꔪꔫꔬꔭꔮꔯꔰꔱꔲꔳꔴꔵꔶꔷꔸꔹꔺꔻꔼꔽꔾꔿꕀꕁꕂꕃꕄꕅꕆꕇꕈꕉꕊꕋꕌꕍꕎꕏꕐꕑꕒꕓꕔꕕꕖꕗꕘꕙꕚꕛꕜꕝꕞꕟꕠꕡꕢꕣꕤꕥꕦꕧꕨꕩꕪꕫꕬꕭꕮꕯꕰꕱꕲꕳꕴꕵꕶꕷꕸꕹꕺꕻꕼꕽꕾꕿꖀꖁꖂꖃꖄꖅꖆꖇꖈꖉꖊꖋꖌꖍꖎꖏꖐꖑꖒꖓꖔꖕꖖꖗꖘꖙꖚꖛꖜꖝꖞꖟꖠꖡꖢꖣꖤꖥꖦꖧꖨꖩꖪꖫꖬꖭꖮꖯꖰꖱꖲꖳꖴꖵꖶꖷꖸꖹꖺꖻꖼꖽꖾꖿꗀꗁꗂꗃꗄꗅꗆꗇꗈꗉꗊꗋꗌꗍꗎꗏꗐꗑꗒꗓꗔꗕꗖꗗꗘꗙꗚꗛꗜꗝꗞꗟꗠꗡꗢꗣꗤꗥꗦꗧꗨꗩꗪꗫꗬꗭꗮꗯꗰꗱꗲꗳꗴꗵꗶꗷꗸꗹꗺꗻꗼꗽꗾꗿꘀꘁꘂꘃꘄꘅꘆꘇꘈꘉꘊꘋꘌ", aux:"ꘓꘘ꘍꘎꘏"},
 
