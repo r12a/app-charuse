@@ -621,11 +621,38 @@ function toImg (node) {
 	//console.log(out)
 	node.innerHTML = out
 	}
+
+
+function initialise () {
+	document.getElementById('languageSelector').innerHTML = makeBCPList()
+	document.getElementById('languageByRegion').innerHTML = listLangsByRegion()
+	document.getElementById('languageByScript').innerHTML = listLangsByScript()
+	
+	// check for parameters and take appropriate action
+	parameters = location.search.split('&');
+	parameters[0] = parameters[0].substring(1);
+	for (var p=0;p<parameters.length;p++) {  
+		pairs = parameters[p].split('=');
+		if (pairs[0] == 'charlist') { 
+			if (pairs[1]) { 
+				document.getElementById('characters').value = decodeURIComponent(pairs[1])
+				document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)
+				}
+			}
+		if (pairs[0] === 'language') { 
+			if (pairs[1]) { 
+				document.getElementById('languageSelector').value = pairs[1]
+				showLanguage(pairs[1])
+				}
+			}
+		}
+	}
 </script>
 </head>
 
-<!body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('langNames').innerHTML = makeLangList(); document.getElementById('languageByRegion').innerHTML = listLangsByRegion(); document.getElementById('languageByScript').innerHTML = listLangsByScript()"-->
-<body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('languageByRegion').innerHTML = listLangsByRegion(); document.getElementById('languageByScript').innerHTML = listLangsByScript()">
+<!--body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('langNames').innerHTML = makeLangList(); document.getElementById('languageByRegion').innerHTML = listLangsByRegion(); document.getElementById('languageByScript').innerHTML = listLangsByScript()"-->
+<!--body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('languageByRegion').innerHTML = listLangsByRegion(); document.getElementById('languageByScript').innerHTML = listLangsByScript()"-->
+<body class="app" onLoad="initialise()">
 <header>
 <div id="header-boilerplate"></div>
 <script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('/shared/images/world.gif','Character usage lookup','');</script>
@@ -764,24 +791,28 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 
 </details>
 
-<div class="smallprint"><span id="version">
-Last commit <a href="https://github.com/r12a/app-charuse"><!-- #BeginDate format:En2 -->18-Jun-2019<!-- #EndDate --></a>.
-Make a <a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">comment</a>. 
-Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> 
-</span>
-</div>
 
+<div class="smallprint" style="margin-right: 1em;"><span id="version">Latest commit <a href="https://github.com/r12a/app-subtags/commits/gh-pages"><span id="version-info"> 
+  <!-- #BeginDate format:IS1m -->2019-06-19  18:09<!-- #EndDate --> 
+	</span> GMT</a>.
+	Make a <a href="https://github.com/r12a/app-subtags/issues/new">comment</a>. 
+	Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a></span></div>
 
-<script>
+<!--script>
 // check for parameters and take appropriate action
 parameters = location.search.split('&');
 parameters[0] = parameters[0].substring(1);
 for (var p=0;p<parameters.length;p++) {  
 	pairs = parameters[p].split('=');
 	if (pairs[0] == 'charlist') { if (pairs[1]) { document.getElementById('characters').value = decodeURIComponent(pairs[1]); document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value); } }
-	if (pairs[0] == 'language') { if (pairs[1]) { document.getElementById('languageSelector').value = pairs[1]; showLanguage(pairs[1]); } }
+	if (pairs[0] === 'language') { 
+		if (pairs[1]) { 
+			document.getElementById('languageSelector').value = pairs[1]
+			showLanguage(pairs[1])
+			}
+		}
 	}
-</script>
+</script-->
 
 
 
