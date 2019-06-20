@@ -656,11 +656,19 @@ Legacy applications often use kpe rather than [xpe].
 * Cyrillic, no longer in use.
 * Latin <strong>(shown here)</strong>.`},
 
-"ks": { name:"Kashmiri (Koshur)", silcode:"kas", rtl:true, source:"cldr_ks,57237835618d4daaf27d149d55e14be159182c33", region:"sasia", countries:"India, Pakistan", script:"arab", speakers:"5600000", letter:"ؠءآأؤابتثجحخدذرزسشصضطظعغفقلمنوٲٹپچڈڑژکگںھہۄۆیۍے", mark:"ٓٔ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"‰", other:"\u200D\u200C\u200F\u200E\u2067\u2066\u2069\u202B\u202A\u202C\u034F", aux:"َُِٕٖٟٔٗ", local:"کٲشُر‎ (Koshur), कॉशुर‎ (Koshur)", related:`Orthographies include:
-* Arabic (naskh and nastaliq styles), primary usage <strong>(shown here)</strong>. The nastaliq style of Arabic has it's own script subtag, [aran].
-* Devanagari.
-* Latin.
-* Sharada, no longer in use.`},
+"ks": { name:"Kashmiri (Koshur)", silcode:"kas", rtl:true, source:"cldr_ks,57237835618d4daaf27d149d55e14be159182c33", region:"sasia", countries:"India, Pakistan", script:"arab", speakers:"5600000", letter:"ؠءآأؤابتثجحخدذرزسشصضطظعغفقلمنوٲٹپچڈڑژکگںھہۄۆیۍے", mark:"ٓٔ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"‰", other:"\u200D\u200C\u200F\u200E\u2067\u2066\u2069\u202B\u202A\u202C\u034F", aux:"َُِٕٖٟٔٗ", local:"کٲشُر‎ (Koshur)", notes:"Kashmiri is one of the languages that indicates all vowel sounds when using Arabic script.", related:`Orthographies include:
+* <strong>(shown here)</strong> Arabic – naskh style used, but nastaliq style [Aran] is primary usage. Associated with the Muslim Kashmiris.
+* [ks-deva] Devanagari, associated with the Hindu Kashmiris.
+* Latin, especially online for informal communication.
+* Sharada, from 8thC, but no longer in use, except for religious ceremonies of the Kashmiri Pandits.`},
+
+"ks-deva": { name:"Kashmiri (Koshur)", silcode:"kas", rtl:true, source:"57237835618d4daaf27d149d55e14be159182c33", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"अआइईउऊऎएऐऑऒओऔकखगचछजटठडतथदनपफबमयलवशसहॶॷ", mark:"ँं़ािीुूॅॆेैॉॊोौ्ॖॗ", local:"कॉशुर‎ (Koshur)", 
+notes:"Need clarity about use or not of Devanagari numbers, and non-ASCII punctuation.", 
+related:`Orthographies include:
+* [ks] Arabic – naskh style used, but nastaliq style [Aran] is primary usage. Associated with the Muslim Kashmiris.
+* <strong>(shown here)</strong> Devanagari, associated with the Hindu Kashmiris.
+* Latin, especially online for informal communication.
+* Sharada, from 8thC, but no longer in use, except for religious ceremonies of the Kashmiri Pandits.`},
 
 "ksb": { name:"Shambala (Shambaa)", source:"cldr_ksb", region:"afr", countries:"Tanzania", script:"ascii", speakers:"660000"},
 
