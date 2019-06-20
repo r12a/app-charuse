@@ -662,7 +662,7 @@ Legacy applications often use kpe rather than [xpe].
 * Latin, especially online for informal communication.
 * Sharada, from 8thC, but no longer in use, except for religious ceremonies of the Kashmiri Pandits.`},
 
-"ks-deva": { name:"Kashmiri (Koshur)", silcode:"kas", rtl:true, source:"57237835618d4daaf27d149d55e14be159182c33", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"अआइईउऊऎएऐऑऒओऔकखगचछजटठडतथदनपफबमयलवशसहॶॷ", mark:"ँं़ािीुूॅॆेैॉॊोौ्ॖॗ", local:"कॉशुर‎ (Koshur)", 
+"ks-deva": { name:"Kashmiri (Koshur)", silcode:"kas", rtl:true, source:"fea49eb4a3c07e0bc940abe2516d385d48fb2a5c", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"अआइईउऊऎएऐऑऒओऔकखगचछजटठडतथदनपफबमयलवशसहॶॷ", mark:"ँं़ािीुूॅॆेैॉॊोौ्ॖॗ", local:"कॉशुर‎ (Koshur)", 
 notes:"Need clarity about use or not of Devanagari numbers, and non-ASCII punctuation.", 
 related:`Orthographies include:
 * [ks] Arabic – naskh style used, but nastaliq style [Aran] is primary usage. Associated with the Muslim Kashmiris.
