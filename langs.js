@@ -58,7 +58,7 @@ Orthographies include:
 
 "amr": { name:"Amarakaeri", source:"udhr_amr", region:"sam", countries:"Peru", script:"latn", speakers:"500", mark:"̱", punctuation:"¿’", local:"aratbuten hua’a"},
 
-"ar": { name:"Arabic", silcode:"ara", redirect:true, region:"wasia", script:"na", related:`ar is a macrolanguage that encompasses the following more specific primary language subtags:<br/>[aao] (Algerian Saharan Arabic), [abh] (Tajiki Arabic), [abv] (Baharna Arabic), [acm] (Mesopotamian Arabic), [acq] (Ta'izzi-Adeni Arabic), [acw] (Hijazi Arabic), [acx] (Omani Arabic), [acy] (Cypriot Arabic), [adf] (Dhofari Arabic), [aeb] (Tunisian Arabic), [aec] (Saidi Arabic), [afb] (Gulf Arabic), [ajp] (South Levantine Arabic), [apc] (North Levantine Arabic), [apd] (Sudanese Arabic), [arb] (Standard Arabic), [arq] (Algerian Arabic), [ars] (Najdi Arabic), [ary] (Moroccan Arabic), [arz] (Egyptian Arabic), [auz] (Uzbeki Arabic), [avl] (Eastern Egyptian Bedawi Arabic), [ayh] (Hadrami Arabic), [ayl] (Libyan Arabic), [ayn] (Sanaani Arabic), [ayp] (North Mesopotamian Arabic), [bbz] (Babalia Creole Arabic), [pga] (Sudanese Creole Arabic), [shu] (Chadian Arabic), [ssh] (Shihhi Arabic).
+"ar": { name:"Arabic", silcode:"ara", redirect:true, region:"wasia", script:"macrolanguage", related:`ar is a macrolanguage that encompasses the following more specific primary language subtags:<br/>[aao] (Algerian Saharan Arabic), [abh] (Tajiki Arabic), [abv] (Baharna Arabic), [acm] (Mesopotamian Arabic), [acq] (Ta'izzi-Adeni Arabic), [acw] (Hijazi Arabic), [acx] (Omani Arabic), [acy] (Cypriot Arabic), [adf] (Dhofari Arabic), [aeb] (Tunisian Arabic), [aec] (Saidi Arabic), [afb] (Gulf Arabic), [ajp] (South Levantine Arabic), [apc] (North Levantine Arabic), [apd] (Sudanese Arabic), [arb] (Standard Arabic), [arq] (Algerian Arabic), [ars] (Najdi Arabic), [ary] (Moroccan Arabic), [arz] (Egyptian Arabic), [auz] (Uzbeki Arabic), [avl] (Eastern Egyptian Bedawi Arabic), [ayh] (Hadrami Arabic), [ayl] (Libyan Arabic), [ayn] (Sanaani Arabic), [ayp] (North Mesopotamian Arabic), [bbz] (Babalia Creole Arabic), [pga] (Sudanese Creole Arabic), [shu] (Chadian Arabic), [ssh] (Shihhi Arabic).
 Legacy applications often use ar rather than [arb] (Standard Arabic).`},
 
 "arb": { name:"Standard Arabic", source:"cldr_ar,udhr_arb,927e530285eebcb2cc78d1fee4df691ab6def77e", region:"wasia", countries:"Saudi Arabia, Egypt, Mali, Algeria, Iraq, Sudan, Yemen, Syria, Morocco, etc.", script:"arab", speakers:"273989700", letter:"ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىي", mark:"ًٌٍَُِّْٰٕٓٔ","number":"٠١٢٣٤٥٦٧٨٩", punctuation:"؉،؛؟٪٫٬‐–—…‰«»", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", aux:"ڢڧࢲـﷲٱ؍٬٭", rtl:true, local:"العَرَبِيَّة‎ [alʕaraˈbijja]", related:`arb is included in the Arabic [ar] macrolanguage. <em>Legacy applications often use [ar] rather than arb.</em>.`},
@@ -75,12 +75,12 @@ Legacy applications often use ar rather than [arb] (Standard Arabic).`},
 
 "auc": { name:"Waorani (Huaorani, Sabela, Wao, Huao, Auishiri, Aushiri, Ssabela)", source:"udhr_auc", region:"sam", countries:"Ecuador", script:"latn", speakers:"1800", letter:"ñíéóÑÍÉÓ", mark:"̃́", local:"Wao Terero"},
 
-"ay": { name:"Aymara", silcode:"aym", redirect:true, source:"", region:"sam", script:"na", speakers:"0", related:`ay is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Central Aymara [ayr], Southern Aymara [ayc].
+"ay": { name:"Aymara", silcode:"aym", redirect:true, source:"", region:"sam", script:"macrolanguage", speakers:"0", related:`ay is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Central Aymara [ayr], Southern Aymara [ayc].
 Legacy applications often use ay rather than [ayr].`},
 
 "ayr": { name:"Central Aymara", source:"udhr_ayr", region:"sam", countries:"Bolivia, Peru, Chile", script:"latn", speakers:"2800000", letter:"ñïäíáëúÑÏÄÍÁËÚ", mark:"̃̈́", local:"Aymar aru [ajmaɾ ˈaɾu]", related:`ayr is included in the Aymara [ay] macrolanguage, and legacy applications often use [ay] rather than ayr.`},
 
-"az": { name:"Azerbaijani (Azeri)", silcode:"aze", redirect:true, source:"624d905f81c5ba4f15275776ccd818ef04d3c043", region:"wasia", script:"na", speakers:"26000000", related:`az is a macrolanguage that encompasses the following more specific primary language subtags:<br/>South Azerbaijani [azb], North Azerbaijani [azj].
+"az": { name:"Azerbaijani (Azeri)", silcode:"aze", redirect:true, source:"624d905f81c5ba4f15275776ccd818ef04d3c043", region:"wasia", script:"macrolanguage", speakers:"26000000", related:`az is a macrolanguage that encompasses the following more specific primary language subtags:<br/>South Azerbaijani [azb], North Azerbaijani [azj].
 Legacy applications often use az rather than [azj].
 Orthographies include:
 * Arabic script in Iran to the present and prior to 1929 in the north. See [azb].
@@ -135,7 +135,7 @@ For further orthographic information see [azj].`},
 * Devanagari  <strong>(shown here)</strong>.
 * Kaithi`},
 
-"bik": { name:"Bikol", redirect:true, region:"seasia", script:"na", related:`bik is a macrolanguage that encompasses the following more specific primary language subtags: Central Bikol [bcl], Albay Bicolano (deprecated, don't use!) [bhk], Southern Catanduanes Bikol [bln], Rinconada Bikol [bto], Northern Catanduanes Bikol [cts], West Albay Bikol [fbl], Libon Bikol [lbl], Miraya Bikol [rbl], Buhi'non Bikol [ubl].
+"bik": { name:"Bikol", redirect:true, region:"seasia", script:"macrolanguage", related:`bik is a macrolanguage that encompasses the following more specific primary language subtags: Central Bikol [bcl], Albay Bicolano (deprecated, don't use!) [bhk], Southern Catanduanes Bikol [bln], Rinconada Bikol [bto], Northern Catanduanes Bikol [cts], West Albay Bikol [fbl], Libon Bikol [lbl], Miraya Bikol [rbl], Buhi'non Bikol [ubl].
 Legacy applications often use bik rather than [bcl].`},
 
 "bin": { name:"Edo (Bini)", source:"udhr_bin,5d2167e3d40aca7074b7d33835b1aa93e09cc088", region:"afr", countries:"Nigeria", script:"ascii", speakers:"1000000", letter:"ÀÁÈÉÌÍÒÓÙÚàáèéìíòóùúẸẹỌọ", mark:"̣̀́", local:"Ẹ̀dó", notes:"Acute and grave accents are used for tones, but the source didn't explicitly list all possible combinations, so the list of precomposed characters shown with those accents is a guess."},
@@ -381,7 +381,7 @@ Legacy applications often use et rather than [ekk] (Standard Estonian).`},
 
 "ewo": { name:"Ewondo (Kolo)", source:"cldr_ewo", region:"afr", countries:"Cameroon", script:"latn", speakers:"580000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǎǐǹǒǔǍƏƐǏǸǑƆǓěńŋĚŃŊəɛɔ", mark:"́̀̂̌", local:"Ewondo"},
 
-"fa": { name:"Persian (Farsi)", silcode:"fas", redirect:true, source:"", region:"wasia", script:"na", speakers:"0", notes:`fa is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Iranian Persian [pes], Dari, Afghan Persian [prs]
+"fa": { name:"Persian (Farsi)", silcode:"fas", redirect:true, source:"", region:"wasia", script:"macrolanguage", speakers:"0", notes:`fa is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Iranian Persian [pes], Dari, Afghan Persian [prs]
 Legacy applications often use fa rather than [pes] (Iranian Persian) or [prs] (Dari, Afghan Persian).`},
 
 "fat": { name:"Fanti (Fantse, Mfantse, Fante)", silcode:"aka", source:"udhr_aka_fante", region:"afr", countries:"Ghana", script:"latn", speakers:"1900000", letter:"ãõÃÕƆƐɔɛ", mark:"̃", notes:`fat is included in the Akan [ak] macrolanguage, and legacy applications often use [ak] rather fat.
@@ -520,7 +520,7 @@ Orthographies include:
 
 "it": { name:"Italian", silcode:"ita", source:"cldr_it,udhr_ita", region:"eur", countries:"Italy, Romania, Switzerland, Vatican State, San Marino, etc.", script:"latn", speakers:"64000000", letter:"àéèìóòùÀÉÈÌÓÒÙ", mark:"̀́", punctuation:"«»—…’“”", aux:"œŒŸªáâåäãæçêëíîïñºôöõøßúûüÿÁÂÅÄÃÆÇÊËÍÎÏÑÔÖÕØÚÛÜ̧̂̊̈̃", local:"Italiano"},
 
-"iu": { name:"Inuktitut", silcode:"iku", redirect:true, source:"", region:"nam", script:"na", speakers:"", related:`iu is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Eastern Canadian Inuktitut [ike], Inuinnaqtun, Western Canadian Inuktitut [ikt].
+"iu": { name:"Inuktitut", silcode:"iku", redirect:true, source:"", region:"nam", script:"macrolanguage", speakers:"", related:`iu is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Eastern Canadian Inuktitut [ike], Inuinnaqtun, Western Canadian Inuktitut [ikt].
 Legacy applications often use iu rather than [ike].
 `},
 
@@ -561,7 +561,7 @@ For other orthographies see [jv].`},
 
 "kea": { name:"Kabuverdianu (Cape Verdean Creole)", source:"cldr_kea,udhr_kea", region:"afr", countries:"Cape Verde Islands, USA, Portugal", script:"latn", speakers:"1200000", letter:"ñçêéâíèáôóãºõúàòÑÇÊÉÂÍÈÁÔÓÃÕÚÀÒ", mark:"̧̃̂́̀", punctuation:"’", aux:"ẽẼăāĕēĭĩīŏōœŭũūĂĀĔĒĬĨĪŎŌŒŬŨŪŸªáàâåäãæçéèêëíìîïºóòôöõøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÓÒÔÖÕØÚÙÛǗ̧̀̆̂̊̈̄", local:"Kabuverdianu, Kriol", notes:`Latin orthography known as ALUPEC.`},
 
-"kg": { name:"Kongo", silcode:"kon", redirect:true, source:"", region:"afr", script:"na", speakers:"6500000", related:`kg is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Koongo [kng], San Salvador Kongo [kwy], Laari [ldi].
+"kg": { name:"Kongo", silcode:"kon", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"6500000", related:`kg is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Koongo [kng], San Salvador Kongo [kwy], Laari [ldi].
 Legacy applications often use kg rather than [kng].
 `},
 
@@ -597,7 +597,7 @@ Orthographies include:
 
 "kl": { name:"Kalaalisut (West Greenlandic)", silcode:"kal", source:"cldr_kl,udhr_kal", region:"eur", countries:"Greenland, Denmark", script:"ascii", speakers:"60000", aux:"ĸ", local:"Kalaallisut", notes:"CLDR adds accented characters such as áâãéêíîôúûæøåĩĸũ, but this appears to be based on an older (pre 1973) orthography. See wikipedia."},
 
-"kln": { name:"Kalenjin", redirect:true, source:"", region:"afr", script:"na", speakers:"0", related:`kln is a macrolanguage that encompasses the following more specific primary language subtags: Markweeta [enb], Keiyo [eyo], Nandi [niq], Okiek [oki], Pökoot [pko], Kipsigis [sgc], Sabaot [spy], Terik [tec], Tugen [tuy].
+"kln": { name:"Kalenjin", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"0", related:`kln is a macrolanguage that encompasses the following more specific primary language subtags: Markweeta [enb], Keiyo [eyo], Nandi [niq], Okiek [oki], Pökoot [pko], Kipsigis [sgc], Sabaot [spy], Terik [tec], Tugen [tuy].
  Legacy applications often use kln rather than [spy] (Sabaot).`},
 
 "km": { name:"Khmer (Cambodian)", silcode:"khm", source:"cldr_km,udhr_khm,e50f6f6c10d9857db18430e54a9ec953abb77225", region:"seasia", countries:"Cambodia, Vietnam", script:"khmr", speakers:"16000000", letter:"ឥឦឪឧឩឯឰឱឳឲឫឬឭឮកខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរឡលវសហអៗ", mark:"ាិីឹឺុូួើឿៀេែៃោៅំះ៉៊់៍័្", punctuation:"៖។៕៙៚‘’“”","number":"០១២៣៤៥៦៧៨៩", symbol:"៛", aux:"៑៌៝៎៏", local:"ខ្មែរ‎ (Khmer)"},
@@ -638,13 +638,13 @@ Orthographies include:
 * Latin, 1930s and 1940s.
 * Old Permic, no longer in use.`},
 
-"kok": { name:"Konkani", redirect:true, source:"", region:"sasia", script:"na", speakers:"", related:`kok is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Goan Konkani [gom], Konkani (individual language) [knn].
+"kok": { name:"Konkani", redirect:true, source:"", region:"sasia", script:"macrolanguage", speakers:"", related:`kok is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Goan Konkani [gom], Konkani (individual language) [knn].
 Legacy applications often use kok rather than [knn].
 `},
 
 "koo": { name:"Konjo (Konzo)", source:"udhr_koo", region:"afr", countries:"Uganda", script:"ascii", speakers:"610000", local:"Lhukonzo", notes:`Latin orthography since 1914.`},
 
-"kpe": { name:"Kpelle", redirect:true, source:"", region:"afr", script:"na", speakers:"", related:`kpe is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Guinea Kpelle [gkp], Liberia Kpelle [xpe].
+"kpe": { name:"Kpelle", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"", related:`kpe is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Guinea Kpelle [gkp], Liberia Kpelle [xpe].
 Legacy applications often use kpe rather than [xpe].
 `},
 
@@ -670,7 +670,7 @@ Legacy applications often use kpe rather than [xpe].
 
 "ktu": { name:"Kituba", source:"udhr_ktu", region:"afr", countries:"DRC", script:"ascii", speakers:"5400000", local:"Kikongo ya leta, Kituba"},
 
-"ku": { name:"Kurdish", redirect:true, source:"https://r12a.github.io/app-subtags/?lookup=ku", region:"wasia", script:"na", speakers:"0", related:`ku is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Central Kurdish ([ckb]), Northern Kurdish ([kmr]), Southern Kurdish ([sdh])
+"ku": { name:"Kurdish", redirect:true, source:"https://r12a.github.io/app-subtags/?lookup=ku", region:"wasia", script:"macrolanguage", speakers:"0", related:`ku is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Central Kurdish ([ckb]), Northern Kurdish ([kmr]), Southern Kurdish ([sdh])
 Legacy applications often use ku rather than [kmr] (Northern Kurdish).`},
 
 "kw": { name:"Cornish", silcode:"cor", source:"cldr_kw", region:"eur", countries:"England", script:"ascii", speakers:"~350", local:"Kernewek"},
@@ -735,11 +735,11 @@ Legacy applications often use ku rather than [kmr] (Northern Kurdish).`},
 * Bengali (Bangla).
 * Latin <strong>(shown here)</strong>.`},
 
-"luy": { name:"Luhya (Oluluyia, Luyia, Luhia, Luhiya)", redirect:true, source:"", region:"afr", script:"na", speakers:"", related:`luy is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Bukusu, Lubukusu [bxk], Idakho-Isukha-Tiriki, Luidakho-Luisukha-Lutirichi [ida], Kabras, Lukabaras [lkb], Khayo, Olukhayo [lko], Kisa, Olushisa [lks], Marachi, Olumarachi [lri], Marama, Olumarama [lrm], Saamia, Olusamia [lsm], Tsotso, Olutsotso [lto], Tachoni, Lutachoni [lts], Wanga, Oluwanga [lwg], East Nyala [nle], Nyore, Olunyole [nyd], Logooli, Lulogooli [rag].
+"luy": { name:"Luhya (Oluluyia, Luyia, Luhia, Luhiya)", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"", related:`luy is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Bukusu, Lubukusu [bxk], Idakho-Isukha-Tiriki, Luidakho-Luisukha-Lutirichi [ida], Kabras, Lukabaras [lkb], Khayo, Olukhayo [lko], Kisa, Olushisa [lks], Marachi, Olumarachi [lri], Marama, Olumarama [lrm], Saamia, Olusamia [lsm], Tsotso, Olutsotso [lto], Tachoni, Lutachoni [lts], Wanga, Oluwanga [lwg], East Nyala [nle], Nyore, Olunyole [nyd], Logooli, Lulogooli [rag].
 Legacy applications often use luy rather than [bxk].
 `},
 
-"lv": { name:"Latvian (Lettish)", silcode:"lav", redirect:true, source:"", region:"eur", script:"na", speakers:"", related:`lv is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Latgalian [ltg], Standard Latvian [lvs].
+"lv": { name:"Latvian (Lettish)", silcode:"lav", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"", related:`lv is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Latgalian [ltg], Standard Latvian [lvs].
 `},
 
 "lvs": { name:"Latvian (Lettish)", source:"cldr_lv,udhr_lav", region:"eur", countries:"Latvia", script:"latn", speakers:"1750000", letter:"āčēģīķļņšūžĀČĒĢĪĶĻŅŠŪŽ", mark:"̧̄̌", punctuation:"§‐–—…‘’‚“”„†‡′″", aux:"ōŗŌŖ", local:"Latviešu valoda, Latviski"},
@@ -756,7 +756,7 @@ Legacy applications often use luy rather than [bxk].
 
 "mam": { name:"Mam", source:"udhr_mam", region:"cam", countries:"Guatemala, Mexico", script:"ascii", speakers:"540000", local:"B’anax Mam, Qyool Mam"},
 
-"man": { name:"Mandingo (Manding)", redirect:true, source:"", region:"afr", script:"na", speakers:"0", related:`man is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Eastern Maninkakan [emk], Konyanka Maninka [mku], Western Maninkakan [mlq], Mandinka [mnk], Sankaran Maninka [msc], Kita Maninkakan [mwk], Forest Maninka (deprecated, don't use) [myq].
+"man": { name:"Mandingo (Manding)", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"0", related:`man is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Eastern Maninkakan [emk], Konyanka Maninka [mku], Western Maninkakan [mlq], Mandinka [mnk], Sankaran Maninka [msc], Kita Maninkakan [mwk], Forest Maninka (deprecated, don't use) [myq].
 Legacy applications often use man rather than [emk] (Eastern Maninkakan).`},
 
 "mas": { name:"Masai (Maasai, Maa)", source:"cldr_mas", region:"afr", countries:"Kenya, Tanzania", script:"latn", speakers:"1300000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛƐƗƆɄāēīŋōūĀĒĪŊŌŪɛɨɔʉ", mark:"́̀̂̄", local:"Maa"},
@@ -775,7 +775,7 @@ Legacy applications often use man rather than [emk] (Eastern Maninkakan).`},
 
 "mfe": { name:"Morisyen (Mauritian Creole, Morisien)", source:"cldr_mfe", region:"afr", countries:"Mauritius", script:"ascii", speakers:"1070000", local:"Kreol Morisien"},
 
-"mg": { name:"Malagasy", silcode:"mlg", source:"cldr_mg,udhr_plt", region:"afr", script:"na", speakers:"", related:`mg is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Bara Malagasy [bhr], Southern Betsimisaraka Malagasy (deprecated, don't use). [bjq], Northern Betsimisaraka Malagasy [bmm], Southern Betsimisaraka Malagasy [bzc], Masikoro Malagasy [msh], Plateau Malagasy [plt], Sakalava Malagasy [skg], Tandroy-Mahafaly Malagasy [tdx], Tesaka Malagasy [tkg], Tanosy Malagasy [txy], Antankarana Malagasy, Tankarana Malagasy [xmv], Tsimihety Malagasy [xmw].
+"mg": { name:"Malagasy", silcode:"mlg", source:"cldr_mg,udhr_plt", region:"afr", script:"macrolanguage", speakers:"", related:`mg is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Bara Malagasy [bhr], Southern Betsimisaraka Malagasy (deprecated, don't use). [bjq], Northern Betsimisaraka Malagasy [bmm], Southern Betsimisaraka Malagasy [bzc], Masikoro Malagasy [msh], Plateau Malagasy [plt], Sakalava Malagasy [skg], Tandroy-Mahafaly Malagasy [tdx], Tesaka Malagasy [tkg], Tanosy Malagasy [txy], Antankarana Malagasy, Tankarana Malagasy [xmv], Tsimihety Malagasy [xmw].
 Legacy applications often use mg rather than [plt].
 `},
 
@@ -803,7 +803,7 @@ Legacy applications often use mg rather than [plt].
 * Arabic (naskh).
 * Malayalam, primary usage <strong>(shown here)</strong>.`},
 
-"mn": { name:"Mongolian", silcode:"mon", redirect:true, region:"easia", script:"na", related:`mn is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Halh Mongolian [khk], Peripheral Mongolian [mvf].
+"mn": { name:"Mongolian", silcode:"mon", redirect:true, region:"easia", script:"macrolanguage", related:`mn is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Halh Mongolian [khk], Peripheral Mongolian [mvf].
 Legacy applications often use mn rather than [mvf].`},
 
 "mnw": { name:"Mon", source:"udhr_mnw", region:"seasia", countries:"Myanmar, Thailand", script:"mymr", speakers:"851000", letter:"လကၚအခရမဟပဍစတသဂဒဇနဘဝဗဓထၜယညဆဏဖဿဥဋဉဌဠ", mark:"ိ်ောါၞုံွဲ္ဵၟဳြှူၠးဴီျ", punctuation:"၊။","number":"၁၉၄၈၀၂၃၅၆၇"},
@@ -812,7 +812,7 @@ Legacy applications often use mn rather than [mvf].`},
 
 "mr": { name:"Marathi", silcode:"mar", source:"cldr_mr,udhr_mar", region:"sasia", countries:"India", script:"deva", speakers:"73000000", letter:"ऱॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"़ंँःािीुूृॅेैॉोौ्", punctuation:"‐–—…‘’“”′″","number":"१२३४५६७८९०", other:"‌‍", local:"मराठी‎ (Marāṭhī)", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here."},
 
-"ms": { name:"Malay", silcode:"msa", source:"", region:"seasia", script:"na", speakers:"77000000", related:`ms is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Indonesian [id], Indonesian (deprecated, use id) [in], Banjar [bjn], Bacanese Malay [btj], Berau Malay [bve], Bukit Malay [bvu], Cocos Islands Malay [coa], Duano [dup], Haji [hji], Jakun [jak], Jambi Malay [jax], Kubu [kvb], Kerinci [kvr], Brunei [kxd], Loncong, Sekak [lce], Lubu [lcf], Col [liw], North Moluccan Malay [max], Kedah Malay [meo], Pattani Malay [mfa], Bangka [mfb], Minangkabau [min], Kota Bangun Kutai Malay [mqg], Sabah Malay [msi], Musi [mui], Orang Kanaq [orn], Orang Seletar [ors], Pekal [pel], Central Malay [pse], Temuan [tmw], Urak Lawoi' [urk], Kaur [vkk], Tenggarong Kutai Malay [vkt], Manado Malay [xmm], Malay (individual language) [zlm], Negeri Sembilan Malay [zmi], Standard Malay [zsm].
+"ms": { name:"Malay", silcode:"msa", source:"", region:"seasia", script:"macrolanguage", speakers:"77000000", related:`ms is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Indonesian [id], Indonesian (deprecated, use id) [in], Banjar [bjn], Bacanese Malay [btj], Berau Malay [bve], Bukit Malay [bvu], Cocos Islands Malay [coa], Duano [dup], Haji [hji], Jakun [jak], Jambi Malay [jax], Kubu [kvb], Kerinci [kvr], Brunei [kxd], Loncong, Sekak [lce], Lubu [lcf], Col [liw], North Moluccan Malay [max], Kedah Malay [meo], Pattani Malay [mfa], Bangka [mfb], Minangkabau [min], Kota Bangun Kutai Malay [mqg], Sabah Malay [msi], Musi [mui], Orang Kanaq [orn], Orang Seletar [ors], Pekal [pel], Central Malay [pse], Temuan [tmw], Urak Lawoi' [urk], Kaur [vkk], Tenggarong Kutai Malay [vkt], Manado Malay [xmm], Malay (individual language) [zlm], Negeri Sembilan Malay [zmi], Standard Malay [zsm].
 Legacy applications often use ms rather than [zsm].
 `},
 
@@ -844,7 +844,7 @@ Legacy applications often use ms rather than [zsm].
 
 "nds": { name:"Low German (Low Saxon)", source:"cldr_nds,udhr_nds", region:"eur", countries:"Germany, Brazil", script:"latn", speakers:"301000", letter:"åäöüÅÄÖÜ", mark:"̊̈", punctuation:"’", aux:"ăāĕęēĭīŏōœŭūĂĀĔĘĒĬĪŎŌŒŬŪŸáàâæçéèêëíìîïñóòôøúùûÿÁÀÂÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧̨́̀̆̂̄̃", local:"Niedersächsisch"},
 
-"ne": { name:"Nepali", silcode:"nep", redirect:true, source:"", region:"sasia", script:"na", speakers:"", related:`ne is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Dotyali [dty], Nepali (individual language) [npi].
+"ne": { name:"Nepali", silcode:"nep", redirect:true, source:"", region:"sasia", script:"macrolanguage", speakers:"", related:`ne is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Dotyali [dty], Nepali (individual language) [npi].
 Legacy applications often use ne rather than [npi].
 `},
 
@@ -864,7 +864,7 @@ Legacy applications often use ne rather than [npi].
 
 "nnh": { name:"Ngiemboon", source:"cldr_nnh", region:"afr", countries:"Cameroon", script:"latn", speakers:"250000", letter:"ʼáàâéèêíìóòôúùûÿÁÀÂÉÈÊÍÌÓÒÔÚÙÛǎǒǔǍƐǑƆǓɄěńŋĚŃŊŸḿẅḾẄɛɔʉ", mark:"́̀̂̌̈", punctuation:"«»‘’", local:"Shwoge"},
 
-"no": { name:"Norwegian", silcode:"nor", redirect:true, source:"", region:"eur", countries:"Norway", script:"na", speakers:"0", related:`no is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Norwegian Bokmål [nb], Norwegian Nynorsk [nn].
+"no": { name:"Norwegian", silcode:"nor", redirect:true, source:"", region:"eur", countries:"Norway", script:"macrolanguage", speakers:"0", related:`no is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Norwegian Bokmål [nb], Norwegian Nynorsk [nn].
 Legacy applications often use no rather than [nb].`},
 
 "nod": { name:"Northern Thai (Lanna, Kam Mueang)", source:"812b1d7d423d404b2e251f335553dd05b8999f08", region:"seasia", countries:"Thailand, Laos", script:"lana", speakers:"6000000", letter:"ᨠᨡᨢᨣᨤᨥᨦᨧᨨᨩᨪᨫᨬᨭᨮᨯᨰᨱᨲᨳᨴᨵᨶᨷᨸᨹᨺᨻᨼᨽᨾᨿᩀᩁᩃᩅᩆᩇᩈᩉᩊᩋᩌᩍᩎᩏᩐᩑᩓᩔᪧ", mark:"ᩕᩖᩘᩙᩚᩛ᩠ᩡᩢᩣᩤᩥᩦᩧᩨᩩᩪᩫᩬᩮᩯᩰᩱᩲᩳᩴ᩵᩶᩺᩻","number":"᪀᪁᪂᪃᪄᪅᪆᪇᪈᪉", punctuation:"᪨᪩᪪᪫", aux:"᩿᪐᪑᪒᪓᪔᪕᪖᪗᪘᪙᪠᪡᪢᪣᪤᪥᪦᪬᪭", local:"คำเมือง‎ (Kam Mueang)", related:`Orthographies include:
@@ -895,7 +895,7 @@ Legacy applications often use no rather than [nb].`},
 
 "oc": { name:"Occitan", silcode:"oci", source:"udhr_lnc", region:"eur", countries:"France, Italy, Monaco, Spain", script:"latn", speakers:"~200000", letter:"óèéçàïòìùúâêîëáôüûÓÈÉÇÀÏÒÌÙÚÂÊÎËÁÔÜÛ", mark:"̧́̀̈̂", punctuation:"«»’—"},
 
-"oj": { name:"Ojibwa", silcode:"oji", redirect:true, source:"", region:"nam", script:"na", speakers:"", related:`oj is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Chippewa [ciw], Northwestern Ojibwa [ojb], Central Ojibwa [ojc], Eastern Ojibwa [ojg], Severn Ojibwa [ojs], Western Ojibwa [ojw], Ottawa [otw].
+"oj": { name:"Ojibwa", silcode:"oji", redirect:true, source:"", region:"nam", script:"macrolanguage", speakers:"", related:`oj is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Chippewa [ciw], Northwestern Ojibwa [ojb], Central Ojibwa [ojc], Eastern Ojibwa [ojg], Severn Ojibwa [ojs], Western Ojibwa [ojw], Ottawa [otw].
 Legacy applications often use oj rather than [ojg].
 `},
 
@@ -906,10 +906,10 @@ Orthographies include:
 
 "oki": { name:"Okiek", source:"udhr_oki", region:"afr", countries:"Kenya", script:"ascii", speakers:"79000", notes:`Ethnologue regards this language as unwritten.`},
 
-"om": { name:"Oromo", silcode:"orm", redirect:true, source:"", region:"afr", script:"na", speakers:"25542000", related:`om is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Borana-Arsi-Guji Oromo [gax], West Central Oromo [gaz], Eastern Oromo [hae], Orma [orc].
+"om": { name:"Oromo", silcode:"orm", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"25542000", related:`om is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Borana-Arsi-Guji Oromo [gax], West Central Oromo [gaz], Eastern Oromo [hae], Orma [orc].
 Legacy applications often use om rather than [gaz].`},
 
-"or": { name:"Oriya (Odia)", silcode:"ori", redirect:true, source:"", region:"sasia", script:"na", speakers:"", related:`or is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Odia (individual language), Oriya (individual language) [ory], Sambalpuri, Kosli [spv].`},
+"or": { name:"Oriya (Odia)", silcode:"ori", redirect:true, source:"", region:"sasia", script:"macrolanguage", speakers:"", related:`or is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Odia (individual language), Oriya (individual language) [ory], Sambalpuri, Kosli [spv].`},
 
 "ory": { name:"Odia (Oriya)", source:"cldr_or", region:"sasia", countries:"India", script:"orya", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"଼ଁଂଃାିୀୁୂୃେୈୋୌ୍ୖୗ","number":"୦୧୨୩୪୫୬୭୮୯", local:"ଓଡ଼ିଆ‎ (Oḍiā)", related:`ory is included in the Oriya [or] macrolanguage,`},
 
@@ -975,7 +975,7 @@ Orthographies include:
 * Arabic (naskh), used in print <strong>(shown here)</strong>.
 * Arabic (nastaliq) used in handwriting &amp; for book titles. There is a separate script code for nastaliq, Aran.`},
 
-"ps": { name:"Pashto (Pushtu, Pushto)", silcode:"pus", redirect:true, source:"", region:"casia", script:"na", speakers:"~50000000", related:`ps is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Southern Pashto [pbt], Northern Pashto [pbu], Central Pashto [pst].
+"ps": { name:"Pashto (Pushtu, Pushto)", silcode:"pus", redirect:true, source:"", region:"casia", script:"macrolanguage", speakers:"~50000000", related:`ps is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Southern Pashto [pbt], Northern Pashto [pbu], Central Pashto [pst].
 Legacy applications often use ps rather than [pbu].
 `},
 
@@ -1007,7 +1007,7 @@ Orthographies include:
 * Greek, in Greece.
 * Latin, in Serbia <strong>(shown here)</strong>.`},
 
-"rom": { name:"Romany", redirect:true, source:"", region:"eur", script:"na", speakers:"~1500000", related:`rom is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Carpathian Romani [rmc], Kalo Finnish Romani [rmf], Baltic Romani [rml], Balkan Romani [rmn], Sinte Romani [rmo], Welsh Romani [rmw], Vlax Romani [rmy].
+"rom": { name:"Romany", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"~1500000", related:`rom is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Carpathian Romani [rmc], Kalo Finnish Romani [rmf], Baltic Romani [rml], Balkan Romani [rmn], Sinte Romani [rmo], Welsh Romani [rmw], Vlax Romani [rmy].
 Legacy applications often use rom rather than [rmy].`},
 
 "ru": { name:"Russian", silcode:"rus", source:"cldr_ru,udhr_rus", region:"eur", countries:"Russia, Ukraine, Kazakhstan, Uzbekistan, Poland, Belarus, Azerbaijan, Georgia, Kyrgyzstan, Lithuania, Latvia, Moldova, Estonia, etc.", script:"cyrl", speakers:"258227760", letter:"всеобщаядклрципчнтзгшюйьмуыхъжэфёВСЕОБЩАЯДКЛРЦИПЧНТЗГШЮЙЬМУЫХЪЖЭФЁ", mark:"̆̈", punctuation:"‐–—…‘‚“„«»§", aux:"́", local:"русский язык‎ (russkij jazyk)"},
@@ -1033,7 +1033,7 @@ Legacy applications often use rom rather than [rmy].`},
 
 "sbp": { name:"Sangu (Kisangu, Kisango, Kirori, Eshisango, Rori, Sango)", source:"cldr_sbp", region:"afr", countries:"Tanzania", script:"ascii", speakers:"75000", local:"Shisango"},
 
-"sc": { name:"Sardinian (Sard)", silcode:"srd", redirect:true, source:"", region:"eur", script:"na", speakers:"~1000000", related:`sc is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Sassarese Sardinian [sdc], Gallurese Sardinian [sdn], Logudorese Sardinian [src], Campidanese Sardinian [sro].
+"sc": { name:"Sardinian (Sard)", silcode:"srd", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"~1000000", related:`sc is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Sassarese Sardinian [sdc], Gallurese Sardinian [sdn], Logudorese Sardinian [src], Campidanese Sardinian [sro].
 Legacy applications often use sc rather than [src].`},
 
 "sco": { name:"Scots (Lowland Scots)", source:"udhr_sco", region:"eur", countries:"UK", script:"ascii", speakers:"110000", local:"Scots"},
@@ -1055,7 +1055,7 @@ Legacy applications often use sc rather than [src].`},
 
 "sg": { name:"Sango (Sangho)", silcode:"sag", source:"cldr_sg", region:"afr", countries:"CAR", script:"latn", speakers:"450000", letter:"âäêëîïôöùûüÂÄÊËÎÏÔÖÙÛÜ", mark:"̂̈̀", local:"Sango"},
 
-"sh": { name:"Serbo-Croatian", silcode:"hbs", redirect:true, source:"", region:"eur", script:"na", speakers:"", related:`sh is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Bosnian [bs], Croatian [hr], Serbian [sr], Montenegrin [cnr].
+"sh": { name:"Serbo-Croatian", silcode:"hbs", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"", related:`sh is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Bosnian [bs], Croatian [hr], Serbian [sr], Montenegrin [cnr].
 Legacy applications often use az rather than [sr].
 Orthographies include:
 * TBD`},
@@ -1105,7 +1105,7 @@ For other orthographies see [shi]`},
 
 "spy": { name:"Sabaot", source:"cldr_kln", region:"afr", countries:"Kenya", script:"ascii", speakers:"60000", local:"Sābāwōōt", notes:`The autonym suggests that there are more characters than described in CLDR, or an alternate orthography.`, related:`spy is included in the Kalenjin [kln] macrolanguage, and legacy applications often use [kln] rather spy.`},
 
-"sq": { name:"Albanian", silcode:"sqi", redirect:true, source:"", region:"eur", script:"na", speakers:"5400000", related:`sq is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Arbëreshë Albanian [aae], Arvanitika Albanian [aat], Gheg Albanian [aln], Tosk Albanian [als].
+"sq": { name:"Albanian", silcode:"sqi", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"5400000", related:`sq is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Arbëreshë Albanian [aae], Arvanitika Albanian [aat], Gheg Albanian [aln], Tosk Albanian [als].
 Legacy applications often use sq rather than [als].`},
 
 "sr": { name:"Serbian", silcode:"српски‎ (Srpski)", source:"cldr_sr,udhr_srp_cyrl", region:"eur", countries:"Serbia, Bosnia &amp; Herzegovina, Montenegro, Slovenia", script:"cyrl", speakers:"~9700000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–…‘‚“„", aux:"ёйщъыьэюяЁЙЩЪЫЬЭЮЯ̈̆", local:"српски‎ (Srpski)", related:`Orthographies include:
@@ -1142,7 +1142,7 @@ For other orthographies see [su].`},
 
 "sv": { name:"Swedish", silcode:"swe", source:"cldr_sv,udhr_swe", region:"eur", countries:"Sweden, Finland, Aland Islands", script:"latn", speakers:"10000000", letter:"àéåäöÀÉÅÄÖ", mark:"̀́̊̈", punctuation:"§‐–—…‘’“”†‡′″", aux:"āīĀĪŸáâãçèëíîïñóúÿüæøÁÂÃÇÈËÍÎÏÑÓÚÜÆØ̧̂̃̄", local:"Svenska"},
 
-"sw": { name:"Swahili (Kiswahili)", silcode:"swa", redirect:true, source:"", region:"afr", script:"na", speakers:"", related:`sw is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Congo Swahili [swc], Swahili (individual language), Kiswahili [swh], Congo Swahili [swc], Swahili (individual language), Kiswahili [swh].
+"sw": { name:"Swahili (Kiswahili)", silcode:"swa", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"", related:`sw is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Congo Swahili [swc], Swahili (individual language), Kiswahili [swh], Congo Swahili [swc], Swahili (individual language), Kiswahili [swh].
 Legacy applications often use sw rather than [swh].`},
 
 "swb": { name:"Maore Comorian (Shimaore)", source:"udhr_swb", region:"afr", countries:"Mayotte", script:"latn", speakers:"97000", letter:"ãÃƁƊĩĨẽẼɓɗ", mark:"̃", local:"Shimaore", related:`Orthographies include:
@@ -1280,7 +1280,7 @@ For other orthographies see [ug].`},
 
 "ura": { name:"Urarina (Itucali, Simacu, Shimacu)", source:"udhr_ura", region:"sam", countries:"Peru", script:"latn", speakers:"6000", letter:"úóíÚÓÍ", mark:"́", local:"Oruarinya"},
 
-"uz": { name:"Uzbek", silcode:"uzb", redirect:true, source:"", region:"casia", script:"na", speakers:"27000000", related:`uz is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Northern Uzbek [uzn], Southern Uzbek [uzs].
+"uz": { name:"Uzbek", silcode:"uzb", redirect:true, source:"", region:"casia", script:"macrolanguage", speakers:"27000000", related:`uz is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Northern Uzbek [uzn], Southern Uzbek [uzs].
 Legacy applications often use uz rather than [uzn].
 `},
 
@@ -1354,7 +1354,7 @@ Orthographies include:
 
 "ydd": { name:"Yiddish", source:"cldr_yi,udhr_ydd", region:"eur", countries:"Israel, USA, etc.", script:"hebr", speakers:"1500000", letter:"אבגדזשהויחטײכךלמםנןסעפףצץקרתװױ", mark:"ִַָּֿׂ", punctuation:"׳״־‐–—", other:"‮‬", related:`ydd is included in the Yiddish [yi] macrolanguage, and legacy applications often use [yi] rather ydd.`},
 
-"yi": { name:"Yiddish", silcode:"yid", redirect:true, source:"", region:"eur", script:"na", speakers:"1500000", related:`yi is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Eastern Yiddish [ydd], Western Yiddish [yih].
+"yi": { name:"Yiddish", silcode:"yid", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"1500000", related:`yi is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Eastern Yiddish [ydd], Western Yiddish [yih].
 Legacy applications often use yi rather than [ydd].
 `},
 
@@ -1366,7 +1366,7 @@ Legacy applications often use yi rather than [ydd].
 
 "yua": { name:"Yucatán Maya", source:"udhr_yua", region:"cam", countries:"Mexico", script:"latn", speakers:"790000", letter:"ʼóíáúéÓÍÁÚÉ", mark:"́", punctuation:"‐", local:"Maaya t’aan"},
 
-"za": { name:"Zhuang", silcode:"zha", redirect:true, source:"", region:"easia", script:"na", speakers:"16000000", related:`za is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Central Hongshuihe Zhuang [zch], Eastern Hongshuihe Zhuang [zeh], Guibei Zhuang [zgb], Minz Zhuang [zgm], Guibian Zhuang [zgn], Dai Zhuang [zhd], Nong Zhuang [zhn], Liujiang Zhuang [zlj], Lianshan Zhuang [zln], Liuqian Zhuang [zlq], Qiubei Zhuang [zqe], Yongbei Zhuang [zyb], Yang Zhuang [zyg], Youjiang Zhuang [zyj], Yongnan Zhuang [zyn], Zuojiang Zhuang [zzj].
+"za": { name:"Zhuang", silcode:"zha", redirect:true, source:"", region:"easia", script:"macrolanguage", speakers:"16000000", related:`za is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Central Hongshuihe Zhuang [zch], Eastern Hongshuihe Zhuang [zeh], Guibei Zhuang [zgb], Minz Zhuang [zgm], Guibian Zhuang [zgn], Dai Zhuang [zhd], Nong Zhuang [zhn], Liujiang Zhuang [zlj], Lianshan Zhuang [zln], Liuqian Zhuang [zlq], Qiubei Zhuang [zqe], Yongbei Zhuang [zyb], Yang Zhuang [zyg], Youjiang Zhuang [zyj], Yongnan Zhuang [zyn], Zuojiang Zhuang [zzj].
 Legacy applications often use za rather than [zyb].`},
 
 "zam": { name:"Miahuatlán Zapotec (Cuixtla Zapotec)", source:"udhr_zam", region:"cam", countries:"Mexico", script:"latn", speakers:"1000", letter:"óáñíÓÁÑÍʼ", mark:"́̃"},

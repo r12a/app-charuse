@@ -83,7 +83,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mymr:[], talu:[], nkoo:[], orya:[], sinh:[], sund:[], syrc:[], syrn:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], na:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mymr:[], talu:[], nkoo:[], orya:[], sinh:[], sund:[], syrc:[], syrn:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
@@ -137,7 +137,7 @@ function listLangsByScript () {
             case 'tibt': region = 'Tibetan';break
             case 'vaii': region = 'Vai';break
             case 'yiii': region = 'Yi';break
-            case 'na': region = 'NA';break
+            case 'macrolanguage': region = 'Macrolanguage';break
             }
         out += '<tr><th>'+region+'</th><td>'+regionList[r].length+' languages: '
         for (let l=0;l<regionList[r].length;l++ ) {
@@ -793,7 +793,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 
 
 <div class="smallprint" style="margin-right: 1em;"><span id="version">Latest commit <a href="https://github.com/r12a/app-subtags/commits/gh-pages"><span id="version-info"> 
-  <!-- #BeginDate format:IS1m -->2019-06-19  18:09<!-- #EndDate --> 
+  <!-- #BeginDate format:IS1m -->2019-06-20  8:15<!-- #EndDate --> 
 	</span> GMT</a>.
 	Make a <a href="https://github.com/r12a/app-subtags/issues/new">comment</a>. 
 	Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a></span></div>
