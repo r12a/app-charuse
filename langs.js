@@ -656,7 +656,7 @@ Legacy applications often use kpe rather than [xpe].
 * Cyrillic, no longer in use.
 * Latin <strong>(shown here)</strong>.`},
 
-"ks": { name:"Kashmiri (Koshur)", silcode:"kas", source:"cldr_ks", region:"sasia", countries:"India, Pakistan", script:"arab", speakers:"5600000", letter:"ءآأٲؤاٮبپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںھہوۄیۍے", mark:"َُِ۪ۭٕٖٔٗٚٛٓ", local:"کٲشُر‎ (Koshur), कॉशुर‎ (Koshur)", related:`Orthographies include:
+"ks": { name:"Kashmiri (Koshur)", silcode:"kas", rtl:true, source:"cldr_ks", region:"sasia", countries:"India, Pakistan", script:"arab", speakers:"5600000", letter:"ؠءآأؤابتثجحخدذرزسشصضطظعغفقلمنوٲٹپچڈڑژکگںھہۄۆیۍے", mark:"ٓٔ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"‰", other:"\u200D\u200C\u200F\u200E\u2067\u2066\u2069\u202B\u202A\u202C\u034F", aux:"َُِٕٖٟٔٗ", local:"کٲشُر‎ (Koshur), कॉशुर‎ (Koshur)", related:`Orthographies include:
 * Arabic (naskh and nastaliq styles), primary usage <strong>(shown here)</strong>. The nastaliq style of Arabic has it's own script subtag, [aran].
 * Devanagari.
 * Latin.
