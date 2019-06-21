@@ -83,62 +83,14 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mymr:[], talu:[], nkoo:[], orya:[], sinh:[], sund:[], syrc:[], syrn:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mymr:[], talu:[], nkoo:[], orya:[], shrd:[], sinh:[], sund:[], syrc:[], syrn:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
         }
 	out = ''
 	for (r in regionList) {
-        switch (r) {
-            case 'ascii': region = 'ASCII only';break
-            case 'adlm': region = 'Adlam';break
-            case 'arab': region = 'Arabic';break
-            case 'armn': region = 'Armenian';break
-            case 'bali': region = 'Balinese';break
-            case 'bamu': region = 'Bamum';break
-            case 'beng': region = 'Bengali';break
-            case 'bugi': region = 'Buginese';break
-            case 'cakm': region = 'Chakma';break
-            case 'cans': region = 'Canadian Syllabics';break
-            case 'cher': region = 'Cherokee';break
-            case 'cyrl': region = 'Cyrillic';break
-			case 'deva': region = 'Devanagari';break
-            case 'ethi': region = 'Ethiopic';break
-            case 'geor': region = 'Georgian';break
-            case 'grek': region = 'Greek';break
-            case 'gujr': region = 'Gujarati';break
-            case 'guru': region = 'Gurmukhi';break
-            case 'hebr': region = 'Hebrew';break
-            case 'java': region = 'Javanese';break
-            case 'knda': region = 'Kannada';break
-            case 'khmr': region = 'Khmer';break
-            case 'lana': region = 'Tai Tham';break
-            case 'laoo': region = 'Lao';break
-            case 'latn': region = 'Latin';break
-            case 'lisu': region = 'Lisu';break
-            case 'mand': region = 'Mandaic';break
-            case 'mlym': region = 'Malayalam';break
-            case 'mymr': region = 'Myanmar';break
-            case 'orya': region = 'Oriya';break
-            case 'nkoo': region = 'NKo';break
-            case 'sinh': region = 'Sinhala';break
-            case 'sund': region = 'Sundanese';break
-            case 'syrc': region = 'Syriac';break
-            case 'syrn': region = 'Eastern Syriac';break
-            case 'tfng': region = 'Tifinagh';break
-            case 'taml': region = 'Tamil';break
-            case 'tavt': region = 'Tai Viet';break
-            case 'tale': region = 'Tai Le';break
-            case 'talu': region = 'New Tai Lü';break
-            case 'telu': region = 'Telugu';break
-            case 'thai': region = 'Thai';break
-            case 'thaa': region = 'Thaana';break
-            case 'tibt': region = 'Tibetan';break
-            case 'vaii': region = 'Vai';break
-            case 'yiii': region = 'Yi';break
-            case 'macrolanguage': region = 'Macrolanguage';break
-            }
+		region = getScriptName(r)
         out += '<tr><th>'+region+'</th><td>'+regionList[r].length+' languages: '
         for (let l=0;l<regionList[r].length;l++ ) {
            out += '<span onclick="showLanguage(\''+regionList[r][l].bcp+'\')">'+regionList[r][l].name.replace(/ \([^\)]+\)/g,'')+'</span>'
@@ -148,6 +100,87 @@ function listLangsByScript () {
         }
 	return out
 	}
+
+
+function getScriptName (s) { 
+	// returns a name for a script subtag
+	switch (s) {
+		case 'ascii': script = 'ASCII only';break
+		case 'adlm': script = 'Adlam';break
+		case 'arab': script = 'Arabic';break
+		case 'armn': script = 'Armenian';break
+		case 'bali': script = 'Balinese';break
+		case 'bamu': script = 'Bamum';break
+		case 'beng': script = 'Bengali (Bangla)';break
+		case 'bugi': script = 'Buginese';break
+		case 'cakm': script = 'Chakma';break
+		case 'cans': script = 'Canadian Syllabics';break
+		case 'cher': script = 'Cherokee';break
+		case 'cyrl': script = 'Cyrillic';break
+		case 'deva': script = 'Devanagari';break
+		case 'dsrt': script = 'Deseret';break
+		case 'elba': script = 'Elbasan';break
+		case 'ethi': script = 'Ethiopic';break
+		case 'geok': script = 'Khutsuri';break
+		case 'geor': script = 'Georgian';break
+		case 'glag': script = 'Glagolitic';break
+		case 'grek': script = 'Greek';break
+		case 'gujr': script = 'Gujarati';break
+		case 'guru': script = 'Gurmukhi';break
+		case 'hani': script = 'Han';break
+		case 'hebr': script = 'Hebrew';break
+		case 'java': script = 'Javanese';break
+		case 'khoj': script = 'Khojki';break
+		case 'khmr': script = 'Khmer';break
+		case 'knda': script = 'Kannada';break
+		case 'kpel': script = 'Kpelle';break
+		case 'kthi': script = 'Kaithi';break
+		case 'lana': script = 'Tai Tham';break
+		case 'laoo': script = 'Lao';break
+		case 'latn': script = 'Latin';break
+		case 'lisu': script = 'Lisu';break
+		case 'mand': script = 'Mandaic';break
+		case 'marc': script = 'Marchen';break
+		case 'mend': script = 'Mende Kikakui';break
+		case 'mlym': script = 'Malayalam';break
+		case 'mong': script = 'Mongolian';break
+		case 'mymr': script = 'Myanmar';break
+		case 'nand': script = 'Nandinagari';break
+		case 'newa': script = 'Newa';break
+		case 'orya': script = 'Oriya';break
+		case 'ogam': script = 'Ogham';break
+		case 'osma': script = 'Osmanya';break
+		case 'nkoo': script = 'N’Ko';break
+		case 'perm': script = 'Old Permic';break
+		case 'phag': script = 'Phags-pa';break
+		case 'runr': script = 'Runic';break
+		case 'shrd': script = 'Sharada';break
+		case 'shaw': script = 'Shavian';break
+		case 'sinh': script = 'Sinhala';break
+		case 'sund': script = 'Sundanese';break
+		case 'syrc': script = 'Syriac';break
+		case 'syrn': script = 'Eastern Syriac';break
+		case 'taml': script = 'Tamil';break
+		case 'tavt': script = 'Tai Viet';break
+		case 'tale': script = 'Tai Le';break
+		case 'talu': script = 'New Tai Lü';break
+		case 'telu': script = 'Telugu';break
+		case 'tfng': script = 'Tifinagh';break
+		case 'tglg': script = 'Tagalog';break
+		case 'thai': script = 'Thai';break
+		case 'thaa': script = 'Thaana';break
+		case 'tibt': script = 'Tibetan';break
+		case 'tirh': script = 'Tirhuta';break
+		case 'vaii': script = 'Vai';break
+		case 'yiii': script = 'Yi';break
+		case 'macrolanguage': script = 'Macrolanguage';break
+		default: script = 'Unknown script'
+		}
+	
+	return script
+	}
+
+
 
 
 function findChars (str) {
@@ -437,6 +470,83 @@ function showLanguage (lang) {
 	
 	// local name
 	//if (langs[lang].local) out += '<tr><th>Autonym</th><td class="localCell">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
+
+	// related
+	if (langs[lang].related) {
+		langs[lang].related = langs[lang].related.replace(/\[/g, '<i>')
+		langs[lang].related = langs[lang].related.replace(/\]/g, '</i>')
+	
+		lines = langs[lang].related.split('\n')
+		inList = false
+		for (let l=0;l<lines.length;l++) {
+			if (lines[l].startsWith('*')) {
+				if (inList) lines[l] = '<li>'+lines[l].substring(2)+'</li>'
+				else {
+					lines[l] = '<ul><li>'+lines[l].substring(2)+'</li>'
+					inList = true
+					}
+				}
+			else if (inList) {
+				lines[l] = '</ul><p>'+lines[l]+'</p>'
+				inList = false
+				}
+			else lines[l] = '<p>'+lines[l]+'</p>'
+			}
+		formattedNote = lines.join('')
+		out += '<tr><th>Related</th><td class="notesCell related">'+formattedNote+'</td></td><td class="links"></td></tr>'
+		}
+
+
+	if (langs[lang].orth) out += '<tr><th>&nbsp;</th><td class="notesCell orthIntro">'+langs[lang].name+' orthographies</td></td><td class="links"></td></tr>'
+	
+	// this orthography
+	if (langs[lang].orth) {
+		langs[lang].orth = langs[lang].orth.replace(/\[/g, '<i>')
+		langs[lang].orth = langs[lang].orth.replace(/\]/g, '</i>')
+	
+		lines = langs[lang].orth.split('\n')
+		inList = false
+		for (let l=0;l<lines.length;l++) {
+			if (lines[l].startsWith('*')) {
+				if (inList) lines[l] = '<li>'+lines[l].substring(2)+'</li>'
+				else {
+					lines[l] = '<ul><li>'+lines[l].substring(2)+'</li>'
+					inList = true
+					}
+				}
+			else if (inList) {
+				lines[l] = '</ul><p>'+lines[l]+'</p>'
+				inList = false
+				}
+			else {
+				//if (l === 0) lines[l] = '<p>This orthography: &nbsp; '+lines[l]+'</p>'
+				//else lines[l] = '<p>'+lines[l]+'</p>'
+				lines[l] = '<p>'+lines[l]+'</p>'
+				}
+			}
+		formattedNote = lines.join('')
+		out += '<tr><th>This</th><td class="notesCell related" style="background-color:#fef3e6;color:#666; border:1px solid bisque;">'+formattedNote+'</td></td><td class="links"></td></tr>'
+		}
+	
+	// related orthographies
+	if (langs[lang].more) {
+		list = ''
+		for (let l=0;l<langs[lang].more.length;l++) {
+			list += '<tr><td class="orthCode"><i>'+langs[lang].more[l][0]+'</i><td>'+getScriptName(langs[lang].more[l][1])+'. '+langs[lang].more[l][2].replace(/\[/g, '<i>').replace(/\]/g, '</i>')+'</td></tr>'
+			}
+		out += '<tr><th>Others</th><td class="notesCell orth"><table>'+list+'</table></td></td><td class="links"></td></tr>'
+		}
+	
+	// additional orthographies
+	if (langs[lang].also) {
+		list = ''
+		for (let l=0;l<langs[lang].also.length;l++) {
+			var orths = langs[lang].also[l].split('|')
+			list += '<tr><td class="orthCode"><i>'+orths[0].trim()+'</i><td>'+getScriptName(orths[1].trim())+'. &nbsp; '+orths[2].replace(/\[/g, '<i>').replace(/\]/g, '</i>')+'</td></tr>'
+			}
+		out += '<tr><th>Others</th><td class="notesCell orth"><table>'+list+'</table></td></td><td class="links"></td></tr>'
+		}
+	
 	
 	// notes
 	if (langs[lang].notes) {
@@ -462,31 +572,6 @@ function showLanguage (lang) {
 		formattedNote = lines.join('')
 		out += '<tr><th>Notes</th><td class="notesCell">'+formattedNote+'</td></td><td class="links"></td></tr>'
 		}
-	
-	// related
-	if (langs[lang].related) {
-		langs[lang].related = langs[lang].related.replace(/\[/g, '<i>')
-		langs[lang].related = langs[lang].related.replace(/\]/g, '</i>')
-	
-		lines = langs[lang].related.split('\n')
-		inList = false
-		for (let l=0;l<lines.length;l++) {
-			if (lines[l].startsWith('*')) {
-				if (inList) lines[l] = '<li>'+lines[l].substring(2)+'</li>'
-				else {
-					lines[l] = '<ul><li>'+lines[l].substring(2)+'</li>'
-					inList = true
-					}
-				}
-			else if (inList) {
-				lines[l] = '</ul><p>'+lines[l]+'</p>'
-				inList = false
-				}
-			else lines[l] = '<p>'+lines[l]+'</p>'
-			}
-		formattedNote = lines.join('')
-		out += '<tr><th>Related</th><td class="notesCell">'+formattedNote+'</td></td><td class="links"></td></tr>'
-		}
 
 
 	document.getElementById('langDetails').innerHTML = out
@@ -504,7 +589,19 @@ function showLanguage (lang) {
 			}
 		macrolist[i].innerHTML = finalList
 		}
+	
+
+	// convert {script} to plain script name
+	var macrolist = document.querySelectorAll('b')
+	for (let i=0;i<macrolist.length;i++) {
+		macrolist[i].textContent = getScriptName(macrolist[i].textContent)
+		}
+	
+	// set the permalink
+	document.getElementById('permalink').innerHTML = '<a href=".?language='+lang+'">Permalink</a>'
 	}
+
+
 
 
 function convertEscapes ( str ) { 
@@ -531,6 +628,8 @@ function convertEscapes ( str ) {
 						); 
 	return str.replace(/\s/g,'');
 	}
+
+
 
 function compareLists () {
     var left = document.getElementById('leftList').value
@@ -670,6 +769,7 @@ function initialise () {
 <section style="margin-top: 3em;">
 <p style="font-size: 150%; color: #a52a2a;">Find a language</p>
 
+<p id="permalink" style="float:right;font-size:80%;">Permalink</p>
 <p>Filter the list <input id="filter" type="text" onInput="filter(this.value);" /> <span style="font-size: 70%; margin-left:2em;">Total: <span id="total"></span></span></p>
 
 <p><label>
@@ -793,7 +893,7 @@ Unfortunately, this doesn't work with iOS. If you need to find a BCP47 code for 
 
 
 <div class="smallprint" style="margin-right: 1em;"><span id="version">Latest commit <a href="https://github.com/r12a/app-charuse/commits/gh-pages"><span id="version-info"> 
-  <!-- #BeginDate format:IS1m -->2019-06-20  8:25<!-- #EndDate --> 
+  <!-- #BeginDate format:IS1m -->2019-06-21  18:06<!-- #EndDate --> 
 	</span> GMT</a>.
 	Make a <a href="https://github.com/r12a/app-charuse/issues/new">comment</a>. 
 	Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a></span></div>
