@@ -867,7 +867,7 @@ more:[
 ]
 },
 
-"ks-deva": { name:"Kashmiri (Koshur)", silcode:"kas", source:"fea49eb4a3c07e0bc940abe2516d385d48fb2a5c", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"अआइईउऊऎएऐऑऒओऔकखगचछजटठडतथदनपफबमयलवशसहॶॷ", mark:"ँं़ािीुूॅॆेैॉॊोौ्ॖॗ", local:"कॉशुर‎ (Koshur)", 
+"ks-deva": { name:"Kashmiri (Koshur)", silcode:"kas", source:"fea49eb4a3c07e0bc940abe2516d385d48fb2a5c", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"अआइईउऊऎएऐऒओऔकखगचछजटठडतथदनपफबमयरलवशसहॳॴॵॶॷ", mark:"ँंऺऻ़ािीुूॆेैॊोौ्ॏॖॗ", punctuation:"।", aux:"\u095B", local:"कॉशुर‎ (Koshur)", 
 notes:"Need clarity about use or not of Devanagari numbers, and non-ASCII punctuation.", 
 orth:`Devanagari. &nbsp; Associated with the Hindu Kashmiris.`,
 more:[
