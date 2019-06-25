@@ -869,7 +869,8 @@ more:[
 
 "ks-deva": { name:"Kashmiri (Koshur)", silcode:"kas", source:"fea49eb4a3c07e0bc940abe2516d385d48fb2a5c", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"अआइईउऊऎएऐऒओऔकखगचछजटठडतथदनपफबमयरलवशसहॳॴॵॶॷ", mark:"ँंऺऻ़ािीुूॆेैॊोौ्ॏॖॗ", punctuation:"।", aux:"\u095B", local:"कॉशुर‎ (Koshur)", 
 notes:"Need clarity about use or not of Devanagari numbers, and non-ASCII punctuation.", 
-orth:`Devanagari. &nbsp; Associated with the Hindu Kashmiris.`,
+orth:`Devanagari. &nbsp; Associated with the Hindu Kashmiris. There were orthographic reforms in 1995, 2002, and 2009. This selection of characters reflects the latter.
+<a href="../scripts/devanagari/kashmiri" target="_blank">Detailed summary</a>.`,
 more:[
 ['ks','arab','Naskh style used, but nastaliq style [Aran] is primary usage. Associated with the Muslim Kashmiris.'],
 ['ks-latn','latn','Especially online for informal communication.'],
