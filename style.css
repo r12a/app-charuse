@@ -317,4 +317,8 @@ td {
 	padding-bottom: 0;
 	}
 
-
+.ref {
+	vertical-align: super;
+	margin-left: .25em;
+	font-size: 80%;
+	}
