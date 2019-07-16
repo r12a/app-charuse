@@ -225,7 +225,7 @@ table {
 
 #langDetails td.links {
 	border: 0;
-    vertical-align: top;
+    vertical-align: middle;
     padding: .5em .25em;
     text-align: left;
 	}
@@ -322,3 +322,36 @@ td {
 	margin-left: .25em;
 	font-size: 80%;
 	}
+
+img {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 3px;
+	}
+#letterCell span, #markCell span, #punctuationCell span, #numberCell span, #symbolCell span, #infrequentCell span {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 3px;
+    min-width: 1em;
+    display: inline-block;
+    text-align: center;
+	line-height: 1.2;
+	background-color: #fef3e6;
+}
+
+#langDetails #letterCell, #langDetails #markCell, #langDetails #punctuationCell, #langDetails #numberCell, #langDetails #symbolCell, #langDetails #infrequentCell {
+    /*border: 0;*/
+	padding: 10px 15px;
+	line-height: 2;
+	}
+
+#site-navigation img, .links img {
+    border: 0;
+	}
+
+
+
+
+
+
+

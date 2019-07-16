@@ -1,14 +1,21 @@
 function makeBCPList () {
 	//out = '<option value=""> </option>'
 	out = ''
+	datalist = ''
 	array = []
 	for (l in langs) array.push(l)
 	array.sort()
-	for (let i=0;i<array.length;i++) out += '<option value="'+array[i]+'">'+array[i]+' '+langs[array[i]].name+'</option>\n'
+	for (let i=0;i<array.length;i++) {
+		out += '<option value="'+array[i]+'">'+array[i]+' '+langs[array[i]].name+'</option>\n'
+		datalist += '<option value="'+array[i]+' '+langs[array[i]].name+'">'+array[i]+' '+langs[array[i]].name+'</option>\n'
+		}
 	document.getElementById('totalLanguages').textContent = array.length
-	document.getElementById('total').textContent = array.length
-	return out
+	//document.getElementById('total').textContent = array.length
+	document.getElementById('languageSelector').innerHTML = out
+	document.getElementById('datalist').innerHTML = datalist
+	//return out
 	}
+
 
 function makeLangList () {
 	out = ''
@@ -253,7 +260,7 @@ function showLanguage (lang) {
 	out += '<tr><td colspan="2" class="links" style="text-align:right; padding: 0; font-size: 80%; vertical-align:bottom;"><span style="cursor:pointer; margin-right:1em; color:teal;" onclick="toImg(document.getElementById(\'letterCell\')); toImg(document.getElementById(\'markCell\')); toImg(document.getElementById(\'punctuationCell\')); toImg(document.getElementById(\'numberCell\')); toImg(document.getElementById(\'infrequentCell\')); toImg(document.getElementById(\'symbolCell\')); this.style.color=\'#ccc\';">Convert to images</span></td><td class="links" style="padding:0;">&nbsp;</td></tr>'
 	
 	// name
-	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+'&nbsp; <a href="../app-subtags/?lookup='+lang+'" target="_blank" style="font-size:80%;">['+lang+']</a>'+'&nbsp; <span class="scriptName" style="font-size:60%;">'+langs[lang].script+'</span></td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></td></tr>'
+	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+'&nbsp; <a href="../app-subtags/?lookup='+lang+'" target="_blank" style="font-size:80%;">['+lang+']</a>'+'&nbsp; <span class="scriptName" style="font-size:60%;">'+langs[lang].script+'</span></td><td class="links"><a href="../scripts/links?iso='+langs[lang].script+'" target="_blank"><img src="lists.png" alt="Find links for this script" title="Find links for this script"/></a></td></tr>'
 
 	if (!langs[lang].redirect) {
 	
@@ -419,9 +426,12 @@ function showLanguage (lang) {
 		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
 		}
 	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this orthography.</span>'
-	out += '</td></td><td class="links"></tr>'
+	out += '</td></td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></tr>'
 	
 	out += stats
+	
+	// change font
+	out += '<th></th><td style="border: 0; padding-top:0; font-size: 70%;font-style: italic;line-height: 1;color: gray;">Change font to <input id="fontChange" onChange="setFont(this.value)" type="text" style="border-radius: 5px; border: 1px solid #ccc;"/></td>'
 	
 	// region
 	switch (langs[lang].region) {
@@ -708,8 +718,21 @@ function toImg (node) {
 	}
 
 
+function setFont (fontName) {
+	if (document.getElementById('letterCell')) document.getElementById('letterCell').style.fontFamily = fontName
+	if (document.getElementById('markCell')) document.getElementById('markCell').style.fontFamily = fontName
+	if (document.getElementById('punctuationCell')) document.getElementById('punctuationCell').style.fontFamily = fontName
+	if (document.getElementById('numberCell')) document.getElementById('numberCell').style.fontFamily = fontName
+	if (document.getElementById('symbolCell')) document.getElementById('symbolCell').style.fontFamily = fontName
+	if (document.getElementById('infrequentCell')) document.getElementById('infrequentCell').style.fontFamily = fontName
+	}
+
+
+
+
 function initialise () {
-	document.getElementById('languageSelector').innerHTML = makeBCPList()
+	//document.getElementById('languageSelector').innerHTML = makeBCPList()
+	makeBCPList()
 	document.getElementById('languageByRegion').innerHTML = listLangsByRegion()
 	document.getElementById('languageByScript').innerHTML = listLangsByScript()
 	
