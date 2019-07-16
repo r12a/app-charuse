@@ -191,18 +191,10 @@ also:
 'blt-latn | latn | ']
 },
 
-"bm": { name:"Bambara (Bamanankan)", silcode:"bam", source:"cldr_bm,udhr_bam", region:"afr", countries:"Mali", script:"latn", speakers:"4100000", letter:"ƐƝƆŋŊɛɲɔ", punctuation:"’", local:"bamanankan", related:`Orthographies include:
-* Latin  <strong>(shown here)</strong>.
-* N'Ko, used in Mali (see [bm-nkoo]).`,
+"bm": { name:"Bambara (Bamanankan)", silcode:"bam", source:"cldr_bm,udhr_bam", region:"afr", countries:"Mali", script:"latn", speakers:"4100000", letter:"ƐƝƆŋŊɛɲɔ", punctuation:"’", local:"bamanankan", 
 orth:`[Latin] &nbsp; `,
 also:
-['bm-nkoo | nkoo | Used in Mali.']
-},
-
-"bm-nkoo": { name:"Bambara (N'Ko)", silcode:"bam", rtl:true, source:"4dd61a887ac709179e0e709861288a0b0098c5d8", region:"afr", countries:"Mali", script:"nkoo", speakers:"4100000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"߲߫߬߭߮߯߰߱߳","number":"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶", local:"ߓߡߊߣߊ߲ߞߊ߲ [bamanãkã]", 
-orth:`[N’Ko] &nbsp; Used in Mali`,
-also:
-['bm | latn | ']
+['nqo | nkoo | Written koiné used by speakers of Maninka, Bambara, Dyula and related dialects.']
 },
 
 "bn": { name:"Bengali (Bangla)", silcode:"ben", source:"cldr_bn,udhr_ben,f10b0a319d5c8ff26cc820cd9c84bc1150888ce9", region:"sasia", countries:"Bangladesh, India", script:"beng", speakers:"260000000", letter:"অআইঈউঊঋএঐওঔকষখগঘঙচছজঝঞটঠডঢণতৎথদধনপফবভমযরলশসহঽ", mark:"়ংঃঁ্ািীুূৃেৈোৌৗ","number":"১২৩৪৫৬৭৮৯০", punctuation:"।", symbol:"৺৳", other:"‌‍", aux:"ৠঌৡৄৢৣ", local:"বাংলা /ˈbʌŋlə/", 
@@ -437,7 +429,7 @@ also:
 orth:`[Latin] &nbsp; `,
 also:
 ['dyu-arab | arab | Naskh style.',
-'dyu-nkoo | nkoo | In Côte d’Ivoire &amp; Burkina Faso.']
+'nqo | nkoo |  Written koiné used by speakers of Maninka, Bambara, Dyula and related dialects. In Côte d’Ivoire &amp; Burkina Faso.']
 },
 
 "dz": { name:"Dzongkha (Bhutanese)", source:"cldr_dz,udhr_dzo", region:"sasia", script:"tibt", speakers:"171080", letter:"ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ", mark:"ིེོུྐྑྒྔྗྙྟྠྡྣྤྥྦྨྩྪྫྭྱྲླྵྶྷཱྕ", punctuation:"༼༽༄༅༆༈༉༊࿐࿑༒࿒࿓࿔༌།༎༏༐༑༔་§‐–—…‘’“”†‡","number":"༡༢༣༤༥༦༧༨༩༠", symbol:"༶྾྿༴", aux:"྄ཊཋཌཎཾཥྀཻཽྚྛྜྞྺྻྼ", countries:"Bhutan", local:"རྫོང་ཁ་ [dzoŋkʰa]"},
@@ -464,14 +456,7 @@ related:`Macrolanguage is Mandingo [man]. Legacy applications often use man rath
 orth:`[Latin] &nbsp; `,
 also:
 ['eml-arab | arab | ',
-'emk-nkoo | nkoo | Used in Guinea.']
-},
-
-"emk-nkoo": { name:"Eastern Maninkakan (N'Ko)", rtl:true, source:"4dd61a887ac709179e0e709861288a0b0098c5d8", region:"afr", script:"nkoo", speakers:"5000000", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"߲߫߬߭߮߯߰߱߳","number":"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶", countries:"Guinea", 
-orth:`[	N’Ko] &nbsp; Used in Guinea`,
-also:
-['emk | latn | ',
-'eml-arab | arab | ']
+'nqo | nkoo |  Written koiné used by speakers of Maninka, Bambara, Dyula and related dialects. Used in Guinea.']
 },
 
 "en": { name:"English", silcode:"en", source:"cldr_en,udhr_eng", region:"eur", script:"ascii", speakers:"~380000000", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̃̄", 
@@ -1130,6 +1115,10 @@ also:
 
 "npi": { name:"Nepali", source:"cldr_ne,udhr_nep", region:"sasia", countries:"Nepal, India, Bhutan", script:"deva", speakers:"40000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"़ँंःािीुूृॅेैॉोौ्", punctuation:"।","number":"१२३४५६७८९०", other:"‍", local:"नेपाली‎ (Nepālī)", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here.", 
 related:`Macrolanguage is Nepali [ne]. Legacy applications often use ne rather npi.`},
+
+"nqo": { name:"N’Ko (Kangbe)", rtl:true, source:"4dd61a887ac709179e0e709861288a0b0098c5d8", region:"afr", countries:"Guinea, Côte d'Ivoire, Mali", script:"nkoo", speakers:"0", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"߲߫߬߭߮߯߰߱߳","number":"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟", symbol:"߶", local:"ߒߞߏ", 
+orth:`[N’Ko] &nbsp; This is a written, rather than spoken, language. Used as a koiné by speakers of Maninka, Bambara, Dyula and related dialects. See <a href="../scripts/nko" target="_blank">N’Ko</a>`,
+},
 
 "nr": { name:"Ndebele (Southern Ndebele, Transvaal Ndebele)", silcode:"nbl", source:"udhr_nbl", region:"afr", countries:"South Africa", script:"ascii", speakers:"1100000", local:"IsiNdebele"},
 
