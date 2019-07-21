@@ -589,12 +589,29 @@ also:
 
 "gyr": { name:"Guarayu", source:"udhr_gyr", region:"sam", countries:"Bolivia", script:"latn", speakers:"5900", letter:"ëñäüöéïËÑÄÜÖÉÏ", mark:"̈̃́", punctuation:"’"},
 
-"ha": { name:"Hausa (boko)", silcode:"hau", source:"cldr_ha,udhr_hau_NE,udhr_hau_NG", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"latn", speakers:"70000000", letter:"ƙƴƁƊƘƳɓɗʼ", punctuation:"‐’‘", aux:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛ̃́̀̂", local:"Harshen Hausa", 
+"ha": { name:"Hausa boko", silcode:"hau", source:"cldr_ha,udhr_hau_NE,udhr_hau_NG", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"latn", speakers:"43928100", letter:"ƙƴƁƊƘƳɓɗʼ", punctuation:"‐’‘", aux:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛ̃́̀̂", local:"Harshen Hausa", 
 orth:`[Latin] &nbsp; Primary usage. Based on Pan-Nigerian alphabet since 1980s. <a href="../scripts/latin/hausa#variants" target="_blank">Details.</a>&nbsp;
 See also <a href="../scripts/latin/hausa" target="_blank">Hausa (boko)</a>`,
 also:
-['ha-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
-'ha-arab | arab | Naskh style.']
+['ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
+'ha-arab-x-warsh | arab | Not standardised. The predominant orthography for Arabic Hausa written in the Kano style.',
+'ha-arab-x-hafs | arab | Not standardised. An alternative orthography used in at least one newspaper.']
+},
+
+"ha-arab-x-hafs": { name:"Hausa ajami (Hafs)", silcode:"hau", source:"r12a", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100", letter:"أإابتثجدرزسشطعغفقكلمنهوىٻڟیۑݣ", mark:"َُِّْٰٕٜٔ", aux:"پصذظض",  local:"هَرْشَن هَوْسَ", 
+notes: "This data needs to be supplemented with information about punctuation, numbers, and symbols, for which I don't currently have a source.",
+orth:`[Arabic] &nbsp; Not standardised. An orthography used in at least one newspaper, but not usually with the Kano style. Used mostly for muslim texts. <a href="../scripts/arabic/hausa" target="_blank">Details.</a>&nbsp;`,
+also:
+['ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
+'ha-arab-x-warsh | arab | Not standardised. The predominant orthography for Arabic Hausa written in the Kano style.']
+},
+
+"ha-arab-x-warsh": { name:"Hausa ajami (Warsh)", silcode:"hau", source:"r12a", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100;", letter:"أإابتثجحدرزسشطعغؿلموىڟکیࢻࢼࢽݑݣ", mark:"َُِّْٰٕٜٔ", aux:"پصذظض",  local:"حَرْشَࢽ حَوْسَ", 
+notes: "This data needs to be supplemented with information about punctuation, numbers, and symbols, for which I don't currently have a source.",
+orth:`[Arabic] &nbsp; Not standardised. The predominant orthography for Hausa ajami written in the Kano style. Used mostly for muslim texts. <a href="../scripts/arabic/hausa" target="_blank">Details.</a>`,
+also:
+['ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
+'ha-arab-x-hafs | arab | Not standardised. An alternative orthography used in at least one newspaper.']
 },
 
 "haw": { name:"Hawaiian", source:"cldr_haw,udhr_haw", region:"oce", countries:"USA", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"̄", punctuation:"’‘“”", local:" ’Olelo Hawai’i"},
