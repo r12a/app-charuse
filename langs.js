@@ -602,7 +602,8 @@ also:
 notes: "This data needs to be supplemented with information about punctuation, numbers, and symbols, for which I don't currently have a source.",
 orth:`[Arabic] &nbsp; Not standardised. An orthography used in at least one newspaper, but not usually with the Kano style. Used mostly for muslim texts. <a href="../scripts/arabic/hausa" target="_blank">Details.</a>&nbsp;`,
 also:
-['ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
+['ha | latn | Primary usage. Based on Pan-Nigerian alphabet since 1980s.',
+'ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
 'ha-arab-x-warsh | arab | Not standardised. The predominant orthography for Arabic Hausa written in the Kano style.']
 },
 
@@ -610,7 +611,8 @@ also:
 notes: "This data needs to be supplemented with information about punctuation, numbers, and symbols, for which I don't currently have a source.",
 orth:`[Arabic] &nbsp; Not standardised. The predominant orthography for Hausa ajami written in the Kano style. Used mostly for muslim texts. <a href="../scripts/arabic/hausa" target="_blank">Details.</a>`,
 also:
-['ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
+['ha | latn | Primary usage. Based on Pan-Nigerian alphabet since 1980s.',
+'ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
 'ha-arab-x-hafs | arab | Not standardised. An alternative orthography used in at least one newspaper.']
 },
 
