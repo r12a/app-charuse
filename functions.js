@@ -491,8 +491,9 @@ function showLanguage (lang) {
 		out += '<tr><th>Related</th><td class="notesCell related">'+formattedNote+'</td></td><td class="links"></td></tr>'
 		}
 
-
-	if (langs[lang].orth) out += '<tr><th>&nbsp;</th><td class="notesCell orthIntro">'+langs[lang].name+' orthographies</td></td><td class="links"></td></tr>'
+	var shortLanguage = langs[lang].name.split('(')[0]
+	//if (langs[lang].orth) out += '<tr><th>&nbsp;</th><td class="notesCell orthIntro">'+langs[lang].name+' orthographies</td></td><td class="links"></td></tr>'
+	if (langs[lang].orth) out += '<tr><th>&nbsp;</th><td class="notesCell orthIntro">'+shortLanguage+' orthographies</td></td><td class="links"></td></tr>'
 	
 	// this orthography
 	if (langs[lang].orth) {
