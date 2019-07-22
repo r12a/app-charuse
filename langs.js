@@ -598,7 +598,7 @@ also:
 'ha-arab-x-hafs | arab | Not standardised. An alternative orthography used in at least one newspaper.']
 },
 
-"ha-arab-x-hafs": { name:"Hausa ajami (Hafs)", silcode:"hau", source:"12aeb57b4da29fd83100a0aafb291032b77d4b72", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100", letter:"أإابتثجدرزسشطعغفقكلمنهوىٻڟیۑݣ", mark:"َُِّْٰٕٜٔ", aux:"پصذظض",  local:"هَرْشَن هَوْسَ", 
+"ha-arab-x-hafs": { name:"Hausa (Hafs ajami)", silcode:"hau", source:"12aeb57b4da29fd83100a0aafb291032b77d4b72", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100", letter:"أإابتثجدرزسشطعغفقكلمنهوىٻڟیۑݣ", mark:"َُِّْٰٕٜٔ", aux:"پصذظض",  local:"هَرْشَن هَوْسَ", 
 notes: "This data needs to be supplemented with information about punctuation, numbers, and symbols, for which I don't currently have a source.",
 orth:`[Arabic] &nbsp; Not standardised. An orthography used in at least one newspaper, but not usually with the Kano style. Used mostly for muslim texts. <a href="../scripts/arabic/hausa" target="_blank">Details.</a>&nbsp;`,
 also:
@@ -607,7 +607,7 @@ also:
 'ha-arab-x-warsh | arab | Not standardised. The predominant orthography for Arabic Hausa written in the Kano style.']
 },
 
-"ha-arab-x-warsh": { name:"Hausa ajami (Warsh)", silcode:"hau", source:"12aeb57b4da29fd83100a0aafb291032b77d4b72", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100;", letter:"أإابتثجحدرزسشطعغؿلموىڟکیࢻࢼࢽݑݣ", mark:"َُِّْٰٕٜٔ", aux:"پصذظض",  local:"حَرْشَࢽ حَوْسَ", 
+"ha-arab-x-warsh": { name:"Hausa (Warsh ajami)", silcode:"hau", source:"12aeb57b4da29fd83100a0aafb291032b77d4b72", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100;", letter:"أإابتثجحدرزسشطعغؿلموىڟکیࢻࢼࢽݑݣ", mark:"َُِّْٰٕٜٔ", aux:"پصذظض",  local:"حَرْشَࢽ حَوْسَ", 
 notes: "This data needs to be supplemented with information about punctuation, numbers, and symbols, for which I don't currently have a source.",
 orth:`[Arabic] &nbsp; Not standardised. The predominant orthography for Hausa ajami written in the Kano style. Used mostly for muslim texts. <a href="../scripts/arabic/hausa" target="_blank">Details.</a>`,
 also:
