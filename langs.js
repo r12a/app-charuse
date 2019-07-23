@@ -1415,7 +1415,7 @@ related:`Macrolanguage is Kalenjin [kln]. Legacy applications often use kln rath
 "sq": { name:"Albanian", silcode:"sqi", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"5400000", related:`sq is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Arbëreshë Albanian [aae]<br/>Arvanitika Albanian [aat]<br/>Gheg Albanian [aln]<br/>Tosk Albanian [als].
 Legacy applications often use sq rather than [als].`},
 
-"sr": { name:"Serbian",  silcode:"српски‎ (Srpski)", source:"cldr_sr,udhr_srp_cyrl", region:"eur", countries:"Serbia, Bosnia &amp; Herzegovina, Montenegro, Slovenia", script:"cyrl", speakers:"~9700000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–…‘‚“„", aux:"ёйщъыьэюяЁЙЩЪЫЬЭЮЯ̈̆", local:"српски‎ (Srpski)", 
+"sr": { name:"Serbian", silcode:"српски‎ (Srpski)", source:"0a9e673e26a1afaf7b77f5a544e7e760270b1064,cldr_sr,udhr_srp_cyrl", region:"eur", countries:"Serbia, Bosnia &amp; Herzegovina, Montenegro, Slovenia", script:"cyrl", speakers:"~9700000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–…‘‚“„", aux:"ёйщъыьэюяЁЙЩЪЫЬЭЮЯ̈̆", local:"српски‎ (Srpski)", 
 orth:`Cyrillic. &nbsp; Primary usage.`,
 also:
 ['sr-latn | latn | ',]
