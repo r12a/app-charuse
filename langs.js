@@ -1353,8 +1353,8 @@ also:
 "sh": { name:"Serbo-Croatian", silcode:"hbs", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"", related:`sh is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Bosnian [bs]<br/>Croatian [hr]<br/>Serbian [sr]<br/>Montenegrin [cnr].
 Legacy applications often use az rather than [sr].`},
 
-"shi": { name:"Tachelhit (Tashelhiyt, Shilha)", source:"cldr_shi", region:"afr", countries:"Morocco", script:"tfng", speakers:"4000000", letter:"ⴰⴱⴳⵯⴷⴹⴻⴼⴽⵀⵃⵄⵅⵇⵉⵊⵍⵎⵏⵓⵔⵕⵖⵙⵚⵛⵜⵟⵡⵢⵣⵥ", 
-orth:`Tifinagh. &nbsp; Official usage.`,
+"shi": { name:"Tachelhit (Tashelhiyt, Shilha)", source:"cldr_shi", region:"afr", countries:"Morocco", script:"tfng", speakers:"4000000", letter:"ⴰⴱⴳⵯⴷⴹⴻⴼⴽⵀⵃⵄⵅⵇⵉⵊⵍⵎⵏⵓⵔⵕⵖⵙⵚⵛⵜⵟⵡⵢⵣⵥ", aux:"ⴲⴴⴸⴺⴿⵝⵠⵒ",
+orth:`Tifinagh. &nbsp; Official usage. See <a href="../scripts/tifinagh/">Tifinagh script summary</a>`,
 also:
 ['shi-arab | arab | Naskh style.',
 'shi-latn | latn | ']
