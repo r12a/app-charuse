@@ -128,7 +128,7 @@ also:
 'azj | latn | From 1992, modified Latin orthography.']
 },
 
-"ban": {  name:"Bali (Balinese)", source:"udhr_ban", region:"seasia", countries:"Indonesia", script:"ascii", speakers:"3300000", local:"Basa Bali /baʃa bali/", 
+"ban": { name:"Bali (Balinese)", source:"5e57fecd469e080a9ee7d6a6ec4ad232405d52ce,udhr_ban", region:"seasia", countries:"Indonesia", script:"ascii", speakers:"3300000", local:"Basa Bali /baʃa bali/", 
 orth:`[Latin] &nbsp; Used since early 20th century.`,
 also:
 ['ban-bali | bali | ',
