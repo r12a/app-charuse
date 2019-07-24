@@ -2,7 +2,7 @@ var langs = {
 
 // Any time this is changed, run _make-array.html to generate new code for char_lang.js !
 
-"ab": {  name:"Abkhaz (Abxaz, Abkhazian)", silcode:"abk", source:"udhr_abk,b03748de41ccb9a6e724e938c3fea5013517b8fa", region:"wasia", countries:"Georgia, Turkey", script:"cyrl", speakers:"113000", letter:"ЏАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЫЬабвгдежзиклмнопрстуфхцчшыьџҔҕҚқҞҟҦҧҨҩҬҭҲҳҴҵҶҷҼҽҾҿӘәӠӡӶӷ", punctuation:"–‐", local:"Аԥсуа бызшәа /apʰswa bɨzʃʷa/", 
+"ab": { name:"Abkhaz (Abxaz, Abkhazian)", silcode:"abk", source:"b9d21cee498f37e8fc7a2f8f7cbb6ce16d568e32,udhr_abk", region:"wasia", countries:"Georgia, Turkey", script:"cyrl", speakers:"113000", letter:"ЏАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЫЬабвгдежзиклмнопрстуфхцчшыьџҔҕҚқҞҟҦҧҨҩҬҭҲҳҴҵҶҷҼҽҾҿӘәӠӡӶӷ", punctuation:"–‐", local:"Аԥсуа бызшәа /apʰswa bɨzʃʷa/", 
 orth:`[Cyrillic.] In use since the 1860s.`,
 also:['ab-geor | geor | Mkhedruli/mtavruli, no longer in use.']
 },
