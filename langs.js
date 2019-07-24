@@ -7,7 +7,7 @@ orth:`[Cyrillic.] In use since the 1860s.`,
 also:['ab-geor | geor | Mkhedruli/mtavruli, no longer in use.']
 },
 
-"ace": { name:"Acehnese (Achinese)", source:"udhr_ace,84b1954bb029c0f49091d7ba866b6e43bd2c7578", region:"seasia", countries:"Indonesia", script:"ascii", speakers:"3500000", letter:"ÈÉËÔÖèéëôö", mark:"̀́̂̈", punctuation:"‐“”", local:"Bahsa/Basa Acèh [bahsa at͡ʃeh]"},
+"ace": {  name:"Acehnese (Achinese)", source:"udhr_ace,84b1954bb029c0f49091d7ba866b6e43bd2c7578", region:"seasia", countries:"Indonesia", script:"ascii", speakers:"3500000", letter:"ÈÉËÔÖèéëôö", mark:"̀́̂̈", punctuation:"‐“”", local:"Bahsa/Basa Acèh [bahsa at͡ʃeh]"},
 
 "acu": { name:"Achaur-Shiwiar", source:"udhr_acu,udhr_acu_1", region:"sam", countries:"Ecuador, Peru", script:"latn", speakers:"7500", letter:"úáÚÁ", punctuation:"¿", mark:"́", local:"Achuár chícham"},
 
