@@ -15,7 +15,7 @@ also:['ab-geor | geor | Mkhedruli/mtavruli, no longer in use.']
 orth:`[Latin]. In use since 1966.`,
 },
 
-"ady": { name:"Adyghe (West Circassian)", source:"udhr_ady,2354dbbf502e044f5b3c42824859764a3815632d", region:"eur", countries:"Russia, Turkey, Jordan, Iraq, Syria", script:"cyrl", speakers:"590000", letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёӏӀ", mark:"̆̈", local:"Адыгабзэ [aːdəɣaːbza]", notes:`The UDHR translation uses Іі (byelorussian-ukrainian i), rather than ӏ (palochka).`, 
+"ady": {  name:"Adyghe (West Circassian)", source:"udhr_ady,2354dbbf502e044f5b3c42824859764a3815632d", region:"eur", countries:"Russia, Turkey, Jordan, Iraq, Syria", script:"cyrl", speakers:"590000", letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёӏӀ", mark:"̆̈", local:"Адыгабзэ [aːdəɣaːbza]", notes:`The UDHR translation uses Іі (byelorussian-ukrainian i), rather than ӏ (palochka).`, 
 orth:`[Cyrillic].`,
 also:['ady-arab | arab | Naskh style. No longer in use.',
 'ady-latn | latn | Used in Turkey.']
