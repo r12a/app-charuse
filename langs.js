@@ -592,9 +592,7 @@ also:
 orth:`[Latin] &nbsp; Primary usage. Based on Pan-Nigerian alphabet since 1980s. <a href="../scripts/latin/hausa#variants" target="_blank">Details.</a>&nbsp;
 See also <a href="../scripts/latin/hausa" target="_blank">Hausa (boko)</a>`,
 also:
-['ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
-'ha-arab-x-warsh | arab | Not standardised. The predominant orthography for Arabic Hausa written in the Kano style.',
-'ha-arab-x-hafs | arab | Not standardised. An alternative orthography used in at least one newspaper.']
+['ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.']
 },
 
 "haw": { name:"Hawaiian", source:"cldr_haw,udhr_haw", region:"oce", countries:"USA", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"̄", punctuation:"’‘“”", local:" ’Olelo Hawai’i"},
