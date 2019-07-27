@@ -597,24 +597,6 @@ also:
 'ha-arab-x-hafs | arab | Not standardised. An alternative orthography used in at least one newspaper.']
 },
 
-"ha-arab-x-hafs": { name:"Hausa (Hafs ajami)", silcode:"hau", source:"12aeb57b4da29fd83100a0aafb291032b77d4b72", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100", letter:"أإابتثجدرزسشطعغفقكلمنهوىٻڟیۑݣ", mark:"َُِّْٰٕٜٔ", aux:"پصذظض",  local:"هَرْشَن هَوْسَ", 
-notes: "This data needs to be supplemented with information about punctuation, numbers, and symbols, for which I don't currently have a source.",
-orth:`[Arabic] &nbsp; Not standardised. An orthography used in at least one newspaper, but not usually with the Kano style. Used mostly for muslim texts. <a href="../scripts/arabic/hausa" target="_blank">Details.</a>&nbsp;`,
-also:
-['ha | latn | Primary usage. Based on Pan-Nigerian alphabet since 1980s.',
-'ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
-'ha-arab-x-warsh | arab | Not standardised. The predominant orthography for Arabic Hausa written in the Kano style.']
-},
-
-"ha-arab-x-warsh": { name:"Hausa (Warsh ajami)", silcode:"hau", source:"12aeb57b4da29fd83100a0aafb291032b77d4b72", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100;", letter:"أإابتثجحدرزسشطعغؿلموىڟکیࢻࢼࢽݑݣ", mark:"َُِّْٰٕٜٔ", aux:"پصذظض",  local:"حَرْشَࢽ حَوْسَ", 
-notes: "This data needs to be supplemented with information about punctuation, numbers, and symbols, for which I don't currently have a source.",
-orth:`[Arabic] &nbsp; Not standardised. The predominant orthography for Hausa ajami written in the Kano style. Used mostly for muslim texts. <a href="../scripts/arabic/hausa" target="_blank">Details.</a>`,
-also:
-['ha | latn | Primary usage. Based on Pan-Nigerian alphabet since 1980s.',
-'ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
-'ha-arab-x-hafs | arab | Not standardised. An alternative orthography used in at least one newspaper.']
-},
-
 "haw": { name:"Hawaiian", source:"cldr_haw,udhr_haw", region:"oce", countries:"USA", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"̄", punctuation:"’‘“”", local:" ’Olelo Hawai’i"},
 
 "he": { name:"Hebrew", silcode:"heb", rtl:true, source:"cldr_he,udhr_heb,354bc8cccb82991d56ad51ac6f1c3b8437b28055", region:"wasia", countries:"Israel, etc.", script:"hebr", speakers:"9000000", letter:"אבגדהוזחטיכךלמםנןסעפףצץקרשת", punctuation:"׳״־‐–—", symbol:"₪", other:"‍‌‏‎⁧⁦⁩‫‪‬͏", aux:"ְֱֲֳִֵֶַָֹֻּׁׂ", local:" עברית‎ (Ivrit), עברית חדשה‎ (ivrít ḥadašá[h])",
