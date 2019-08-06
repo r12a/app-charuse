@@ -523,9 +523,9 @@ also:
 'fuf-arab | arab | Naskh style.']
 },
 
-"fuf-adlm": { name:"Pular", rtl:true, source:"udhr_fuf_adlm", region:"afr", script:"adlm", speakers:"3000000", letter:"𞤩𞤢𞤲𞤺𞤭𞤣𞤫𞤸𞤤𞤴𞤳𞤮𞤪𞤶𞤯𞤼𞤵𞤱𞤬𞤥𞤧𞤨𞤻𞤦𞤷𞤰𞤾𞤇𞤀𞤐𞤘𞤋𞤁𞤉𞤖𞤂𞤒𞤑𞤌𞤈𞤔𞤍𞤚𞤓𞤏𞤊𞤃𞤅𞤆𞤙𞤄𞤕𞤎𞤜ŋŊƭƬ", mark:"𞥆𞥅𞥄", punctuation:"،؛’⹁","number":"𞥒𞥓𞥔𞥕𞥖𞥗𞥘𞥙𞥑𞥐", 
+"fuf-adlm": { name:"Pular", rtl:true, source:"udhr_fuf_adlm", region:"afr", script:"adlm", speakers:"3000000", letter:"𞤭𞤋𞤵𞤓𞤫𞤉𞤮𞤌𞤢𞤀𞤨𞤆𞤼𞤚𞤷𞤕𞤳𞤑𞤹𞤗𞤦𞤄𞤩𞤇𞤣𞤁𞤯𞤍𞤶𞤔𞤺𞤘𞤬𞤊𞤧𞤅𞤸𞤖𞤥𞤃𞤲𞤐𞤻𞤙𞤽𞤛𞤱𞤏𞤪𞤈𞤤𞤂𞤴𞤒𞤰𞤎𞤾𞤜𞤿𞤝𞥀𞤞𞥁𞤟𞥂𞤠𞥃𞤡𞥋", mark:"𞥊𞥆𞥅𞥄𞥈𞥉𞥇", punctuation:"𞥟𞥞؟؛،","number":"𞥐𞥑𞥒𞥓𞥔𞥕𞥖𞥗𞥘𞥙", 
 related:`Macrolanguage is Fulah [ff].`,
-orth:`[Adlam] &nbsp; Since 1989, in development.`,
+orth:`[Adlam] &nbsp; Since 1989, in development. <a href="../scripts/adlam/">Details</a>`,
 also:
 ['fuf | latn | ',
 'fuf-arab | arab | Naskh style.']
