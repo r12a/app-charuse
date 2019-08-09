@@ -238,7 +238,7 @@ also:
 'bs-arab | arab | \'Arebica\', used mainly between the 15th and 19th centuries.']
 },
 
-"bsq-bass": { name:"Bassa", silcode:"bsq", source:"github", region:"afr", countries:"Liberia", script:"bass", speakers:"648000", letter:"𖫭𖫪𖫩𖫫𖫬𖫨𖫧𖫥𖫢𖫡𖫗𖫞𖫟𖫙𖫑𖫖𖫘𖫝𖫓𖫣𖫒𖫜𖫚𖫠𖫤𖫔𖫐𖫕𖫛𖫦", mark:"𖫰𖫱𖫲𖫳𖫴", punctuation:"𖫵", local:"𖫔𖫧𖫳𖫒𖫨𖫰𖫨𖫱 (Ɓǎsɔ́ɔ̀)", 
+"bsq-bass": { name:"Bassa", silcode:"bsq", source:"feb8d27835761376c21d0c994cb1c128010d1ac0", region:"afr", countries:"Liberia", script:"bass", speakers:"648000", letter:"𖫭𖫪𖫩𖫫𖫬𖫨𖫧𖫥𖫢𖫡𖫗𖫞𖫟𖫙𖫑𖫖𖫘𖫝𖫓𖫣𖫒𖫜𖫚𖫠𖫤𖫔𖫐𖫕𖫛𖫦", mark:"𖫰𖫱𖫲𖫳𖫴", punctuation:"𖫵", local:"𖫔𖫧𖫳𖫒𖫨𖫰𖫨𖫱 (Ɓǎsɔ́ɔ̀)", 
 orth:`[Bassa Vah] &nbsp; Rediscovered in the Americas at the start of the 20th century. Now used mainly by older people.`,
 also:
 ['bsq | latn | Primary usage.']
