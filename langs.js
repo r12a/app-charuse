@@ -238,6 +238,12 @@ also:
 'bs-arab | arab | \'Arebica\', used mainly between the 15th and 19th centuries.']
 },
 
+"bsq-bass": { name:"Bassa", silcode:"bsq", source:"github", region:"afr", countries:"Liberia", script:"bass", speakers:"648000", letter:"𖫭𖫪𖫩𖫫𖫬𖫨𖫧𖫥𖫢𖫡𖫗𖫞𖫟𖫙𖫑𖫖𖫘𖫝𖫓𖫣𖫒𖫜𖫚𖫠𖫤𖫔𖫐𖫕𖫛𖫦", mark:"𖫰𖫱𖫲𖫳𖫴", punctuation:"𖫵", local:"𖫔𖫧𖫳𖫒𖫨𖫰𖫨𖫱 (Ɓǎsɔ́ɔ̀)", 
+orth:`[Bassa Vah] &nbsp; Rediscovered in the Americas at the start of the 20th century. Now used mainly by older people.`,
+also:
+['bsq | latn | Primary usage.']
+},
+
 "buc": { name:"Bushi (Shibushi, Kibushi)", source:"udhr_buc,f977666b87e87d0adfd3e3683b6d046a9de0abf5", region:"afr", countries:"Mayotte", script:"latn", speakers:"47900", letter:"ìàãÌÀÃɓŋĩŊĨƁɗƊ", mark:"̀̃", punctuation:"’", local:"Kibushi", 
 orth:`[Latin] &nbsp; Writing is limited in use.`},
 
