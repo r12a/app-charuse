@@ -863,7 +863,7 @@ also:
 
 "ks": { name:"Kashmiri (Koshur)", silcode:"kas", rtl:true, source:"cldr_ks,57237835618d4daaf27d149d55e14be159182c33", region:"sasia", countries:"India, Pakistan", script:"arab", speakers:"5600000", letter:"ؠءآأؤابتثجحخدذرزسشصضطظعغفقلمنوٲٹپچڈڑژکگںھہۄۆیۍے", mark:"ٓٔ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"‰", other:"\u200D\u200C\u200F\u200E\u2067\u2066\u2069\u202B\u202A\u202C\u034F", aux:"َُِٕٖٟٔٗ", local:"کٲشُر‎ (Koshur)", 
 orth:`Arabic. &nbsp; Nastaliq style ([Aran]) is primary usage, but naskh style also used. Associated with the Muslim Kashmiris.
-Kashmiri is one of the languages that indicates all vowel sounds when using Arabic script.`,
+Kashmiri is one of the languages that indicates all vowel sounds when using Arabic script. <a href="../scripts/arabic/kashmiri" target="_blank">Details</a>`,
 more:[
 ['ks-deva','deva','Associated with the Hindu Kashmiris.'],
 ['ks-latn','latn','Especially online for informal communication.'],
