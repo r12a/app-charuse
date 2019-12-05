@@ -1486,9 +1486,8 @@ Orthographies include:
 ISO 15924 also has a general script code for Syriac (syrc).`,
 },
 
-"ta": {  name:"Tamil", silcode:"tam", source:"cldr_ta,udhr_tam,02c655f2e4d80f65f8f280e81da3c892afc52e91", region:"sasia", countries:"India, Sri Lanka, Malaysia, South Africa, Singapore", script:"taml", speakers:"70000000", letter:"அஆஇஈஉஊஎஏஐஒஓஔஃகஙசஞடணதநபமயரலவழளறனஜஷஸஹ", mark:"ாிீுூெேைொோௌ்ௗ", punctuation:"§‐–—…‘’“”†‡′″", aux:"ஶ௦௧௨௩௪௫௬௭௮௯௰௱௲௳௴௵௶௷௸௹௺ௐ।॥", local:"தமிழ்‎ (Tamiḻ)",
-orth:`Tamil. &nbsp;  
-<a href="../scripts/tamil/" target="_blank">Detailed summary</a>.`},
+"ta": { name:"Tamil", silcode:"tam", source:"cldr_ta,udhr_tam,02c655f2e4d80f65f8f280e81da3c892afc52e91", region:"sasia", countries:"India, Sri Lanka, Malaysia, South Africa, Singapore", script:"taml", speakers:"70000000", letter:"ஃஅஆஇஈஉஊஎஏஐஒஓஔகஙசஜஞடணதநனபமயரறலளழவஶஷஸஹ", mark:"ாிீுூெேைொோௌ்ௗ", punctuation:"“”‘’", symbol:"௹", aux:"।॥§–—†‡…′″ௐ", local:"தமிழ்‎ (Tamiḻ)",
+orth:`Modern Tamil. <a href="../scripts/tamil/" target="_blank">Details</a>.`},
 
 "tbz": { name:"Ditammari (Tammari)", source:"udhr_tbz", region:"afr", countries:"Benin, Togo", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"̃́̀", local:"Ditammari"},
 
