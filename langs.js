@@ -791,7 +791,7 @@ orth:`Tai Tham. &nbsp;  <a href="../scripts/taitham/" target="_blank">Details</a
 "kln": { name:"Kalenjin", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"0", related:`kln is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Markweeta [enb]<br/>Keiyo [eyo]<br/>Nandi [niq]<br/>Okiek [oki]<br/>Pökoot [pko]<br/>Kipsigis [sgc]<br/>Sabaot [spy]<br/>Terik [tec]<br/>Tugen [tuy].
 Legacy applications often use kln rather than [spy] (Sabaot).`},
 
-"km": { name:"Khmer (Cambodian)", silcode:"khm", source:"cldr_km,udhr_khm,e50f6f6c10d9857db18430e54a9ec953abb77225", region:"seasia", countries:"Cambodia, Vietnam", script:"khmr", speakers:"16000000", letter:"ឥឦឪឧឩឯឰឱឳឲឫឬឭឮកខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរឡលវសហអៗ", mark:"ាិីឹឺុូួើឿៀេែៃោៅំះ៉៊់៍័្", punctuation:"៖។៕៙៚‘’“”","number":"០១២៣៤៥៦៧៨៩", symbol:"៛", aux:"៑៌៝៎៏", local:"ខ្មែរ‎ (Khmer)",
+"km": {  name:"Khmer (Cambodian)", silcode:"khm", source:"cldr_km,udhr_khm,e50f6f6c10d9857db18430e54a9ec953abb77225", region:"seasia", countries:"Cambodia, Vietnam", script:"khmr", speakers:"16000000", letter:"ឥឦឪឧឩឯឰឱឳឲឫឬឭឮកខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរឡលវសហអៗ", mark:"ាិីឹឺុូួើឿៀេែៃោៅំះ៉៊់៍័្", punctuation:"៖។៕៙៚‘’“”","number":"០១២៣៤៥៦៧៨៩", symbol:"៛", aux:"៑៌៝៎៏", local:"ខ្មែរ‎ (Khmer)",
 orth:`Khmer. &nbsp;  
 <a href="../scripts/khmer" target="_blank">Detailed summary</a>.`},
 
