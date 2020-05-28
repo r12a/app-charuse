@@ -626,7 +626,7 @@ also:
 type:"alpha", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"latin/hausa"
 },
 
-"ha-arab": { name:"Hausa (ajami)", silcode:"hau", source:"1167acbd65b3a57b66c0a319dc70c9603de3052f", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100", letter:"أإابتثجحدرزسشطعغلموىٻڟکیۑࢻࢼࢽݣ", mark:"َُِّْٰٕٜٔ", punctuation:"،؟‹›«»", aux:"ذصضظؿفقكنهپݑ", local:"هَرْشَن هَوْسَ", 
+"ha-arab": {  name:"Hausa (ajami)", silcode:"hau", source:"1167acbd65b3a57b66c0a319dc70c9603de3052f", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100", letter:"أإابتثجحدرزسشطعغلموىٻڟکیۑࢻࢼࢽݣ", mark:"َُِّْٰٕٜٔ", punctuation:"،؟‹›«»", aux:"ذصضظؿفقكنهپݑ", local:"هَرْشَن هَوْسَ", 
 orth:`[Arabic] &nbsp; Not standardised. The predominant orthography for Hausa ajami written in the Kano style uses Warsh forms. Used mostly for muslim texts. <a href="../scripts/arabic/hausa" target="_blank">Details.</a>`,
 also:
 ['ha | latn | Primary usage. Based on Pan-Nigerian alphabet since 1980s.',
