@@ -75,7 +75,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mymr:[], talu:[], nkoo:[], orya:[], shrd:[], sinh:[], sund:[], syrc:[], syrn:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mong:[], mymr:[], talu:[], nkoo:[], orya:[], shrd:[], sinh:[], sund:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
@@ -143,6 +143,7 @@ function getScriptName (s) {
 		case 'orya': script = 'Oriya';break
 		case 'ogam': script = 'Ogham';break
 		case 'osma': script = 'Osmanya';break
+		case 'mong': script = 'Mongolian';break
 		case 'nkoo': script = 'N’Ko';break
 		case 'perm': script = 'Old Permic';break
 		case 'phag': script = 'Phags-pa';break
@@ -153,6 +154,7 @@ function getScriptName (s) {
 		case 'sund': script = 'Sundanese';break
 		case 'syrc': script = 'Syriac';break
 		case 'syrn': script = 'Eastern Syriac';break
+		case 'syrj': script = 'Western Syriac';break
 		case 'taml': script = 'Tamil';break
 		case 'tavt': script = 'Tai Viet';break
 		case 'tale': script = 'Tai Le';break
