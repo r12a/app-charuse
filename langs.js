@@ -61,7 +61,7 @@ also:
 "am": { name:"Amharic", silcode:"amh", source:"cldr_am,udhr_amh", region:"afr", countries:"Ethiopia", script:"ethi", speakers:"21634396", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ","number":"፩፪፫፬፭፮፯፰፱፲፳፴", punctuation:"፡፣፤፥፦።‐–‹›«»", local:"አማርኛ [amarɨɲːa]",
 orth:`Ethiopic. &nbsp;  
 <a href="../scripts/ethiopic" target="_blank">Detailed summary</a>.`,
-type:"syllabic", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"wb፡/space", baseline:"mid", wrap:"char", hyphenation:"?", justify:"፡/space", linked:"ethiopic"
+type:"syllabic", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space/wb፡", baseline:"mid", wrap:"word/char", hyphenation:"?", justify:"፡/space", linked:"ethiopic"
 },
 
 "amc": { name:"Amahuaca (Amawaka, Amaguaco, Ameuhaque, Ipitineri, Sayaco)", source:"udhr_amc", region:"sam", countries:"Peru, Brazil", script:"latn", speakers:"310", letter:"óÓ", mark:"́", local:"Yora"},
