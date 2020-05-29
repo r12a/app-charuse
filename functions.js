@@ -421,12 +421,12 @@ function showLanguage (lang) {
 	out += '<tr><th>Sources</th><td class="sources">'
 	for (let i=0;i<sources.length;i++) {
 		if (i>0) out += ', '
-		if (sources[i].startsWith('cldr_')) out += '<a href="https://www.unicode.org/cldr/charts/latest/summary/'+sources[i].substr(5)+'.html">CLDR</a>'
-		else if (sources[i].startsWith('udhr_')) out += '<a href="https://unicode.org/udhr/d/'+sources[i]+'.html">UDHR</a>'
-		else if (sources[i].startsWith('ethn_')) out += '<a href="https://ethnologue.com/language/'+sources[i].substr(5)+'">Ethnologue</a>'
-		else if (sources[i].startsWith('http')) out += '<a href="'+sources[i]+'">link</a>'
+		if (sources[i].startsWith('cldr_')) out += '<a target="_blank" href="https://unicode-org.github.io/cldr-staging/charts/37/summary/'+sources[i].substr(5)+'.html">CLDR</a>'
+		else if (sources[i].startsWith('udhr_')) out += '<a target="_blank" href="https://unicode.org/udhr/d/'+sources[i]+'.html">UDHR</a>'
+		else if (sources[i].startsWith('ethn_')) out += '<a target="_blank" href="https://ethnologue.com/language/'+sources[i].substr(5)+'">Ethnologue</a>'
+		else if (sources[i].startsWith('http')) out += '<a target="_blank" href="'+sources[i]+'">link</a>'
 		else if (sources[i] === 'r12a' || sources[i] === 'CLDR' || sources[i] === 'UDHR') out += sources[i]
-		else out += '<a href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
+		else out += '<a  target="_blank" href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
 		}
 	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this orthography.</span>'
 	out += '</td></td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></tr>'
