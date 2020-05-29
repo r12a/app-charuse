@@ -33,7 +33,7 @@ orth:`[Syriac] (maḏnḥāyā/Eastern style). Used for East Syriac and Swadaya 
 ISO 15924 has a general script code for Syriac (syrc), and another (syrn) for the Eastern Syriac orthography. 
 <a href="../scripts/syriac/" target="_blank">Detailed summary</a>.`,
 also:['aii-arab | arab | \'Garshuni\', often used today for written communication, such as letters and fliers.'],
-type:"alpha", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"word/space", linked:"syriac/syrc-aii"
+type:"alpha", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp+el", linked:"syriac/syrc-aii"
 },
 
 "ajg": { name:"Aja", source:"udhr_ajg", region:"afr", countries:"Benin, Togo", script:"latn", speakers:"550000", letter:"úóòùàèéìíõáÚÓÒÙÀÈÉÌÍÕÁƆƉƐƷŋŊɔɖɛʒ", mark:"̀́̃", local:"Ajagbe"},
@@ -61,7 +61,7 @@ also:
 "am": { name:"Amharic", silcode:"amh", source:"cldr_am,udhr_amh", region:"afr", countries:"Ethiopia", script:"ethi", speakers:"21634396", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ","number":"፩፪፫፬፭፮፯፰፱፲፳፴", punctuation:"፡፣፤፥፦።‐–‹›«»", local:"አማርኛ [amarɨɲːa]",
 orth:`Ethiopic. &nbsp;  
 <a href="../scripts/ethiopic" target="_blank">Detailed summary</a>.`,
-type:"syllabic", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space/wb፡", baseline:"mid", wrap:"word/char", hyphenation:"?", justify:"፡/space", linked:"ethiopic"
+type:"syllabic", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space/wb፡", baseline:"mid", wrap:"word/char", hyphenation:"?", justify:"sp/፡", linked:"ethiopic"
 },
 
 "amc": { name:"Amahuaca (Amawaka, Amaguaco, Ameuhaque, Ipitineri, Sayaco)", source:"udhr_amc", region:"sam", countries:"Peru, Brazil", script:"latn", speakers:"310", letter:"óÓ", mark:"́", local:"Yora"},
@@ -79,7 +79,7 @@ Legacy applications often use ar rather than [arb] (Standard Arabic).`},
 "arb": {  name:"Arabic, Standard", source:"5d92060d0376b6a659e408ddc1c289cc0cecbba8,cldr_ar,udhr_arb", region:"wasia", countries:"Saudi Arabia, Egypt, Mali, Algeria, Iraq, Sudan, Yemen, Syria, Morocco, etc.", script:"arab", speakers:"273989700", letter:"ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىي", mark:"ًٌٍَُِّْٰٕٓٔ","number":"٠١٢٣٤٥٦٧٨٩", punctuation:"؉،؛؟٪٫٬‐–—…‰«»", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", aux:"ڢڧࢲـﷲٱ؍٬٭ڤپچ", rtl:true, local:"العَرَبِيَّة‎ [alʕaraˈbijja]",
 related:`Macrolanguage is Arabic [ar]. Legacy applications often use [ar] rather than arb.`,
 orth:`Arabic. &nbsp; Naskh style. <a href="../scripts/arabic" target="_blank">Details</a>.`,
-type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"n/a", justify:"word/space", linked:"arabic"
+type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"n/a", justify:"sp+el", linked:"arabic"
 },
 
 "arl": { name:"Arabela (Chiripuno, Chiripunu)", source:"udhr_arl", region:"sam", countries:"Peru", script:"latn", speakers:"50", letter:"úÚ", mark:"́", punctuation:"¿", local:"Tapweyokwaka, Tapueyocaca"},
@@ -207,7 +207,7 @@ orth:`[Bengali] &nbsp;
 <a href="../scripts/bengali" target="_blank">Detailed summary</a>.`,
 also:
 ['bn-newa | newa | No longer in use.'],
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high", wrap:"word", hyphenation:"yes?", justify:"space", linked:"bengali"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high", wrap:"word", hyphenation:"yes?", justify:"sp", linked:"bengali"
 },
 
 "bo": { name:"Tibetan", silcode:"bod", source:"cldr_bo,udhr_bod,3d4a46a3bc9bb2a2c900adf645b07f641ef2c2bf", region:"easia", countries:"China, India", script:"tibt", speakers:"1200000", letter:"ཀཁགངཅཆཇཉཊཋཌཎཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤཥསཧཨཪ", mark:"ིེོུྐྑྒྔྕྖྗྙྚྛྜྞྟྠྡྣྤྥྦྨྩྪྫྭྮྯྰྱྲླྴྵྶྷྸྺྻྼ", punctuation:"༄༅༈་༌།༎","number":"༠༡༢༣༤༥༦༧༨༩", aux:"ༀ", local:"བོད་སྐད་ (Böké); ལྷ་སའི་སྐད་ (Lhaséké)", 
@@ -216,7 +216,7 @@ orth:`[Tibetan] &nbsp; Has Uchen and Umed styles.
 also:
 ['bo-marc | marc | ',
 'bo-phag | phag | '],
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"sb ་", baseline:"high", wrap:"syllable", hyphenation:"no", justify:"special", linked:"tibetan"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"sb ་", baseline:"high", wrap:"syllable", hyphenation:"no", justify:"other", linked:"tibetan"
 },
 
 "boa": { name:"Bora", source:"udhr_boa", region:"sam", countries:"Peru, Colombia", script:"latn", speakers:"2400", letter:"úáéñíóÚÁÉÑÍÓɨȉƗȈ", mark:"́̃̏", local:"Meamuyna"},
@@ -332,7 +332,7 @@ orth:`[Cherokee] &nbsp;
 <a href="../scripts/cherokee" target="_blank">Detailed summary</a>.`,
 also:
 ['chr-latn | latn | '],
-type:"syllabic", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space", linked:"cherokee"
+type:"syllabic", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp", linked:"cherokee"
 },
 
 "cic": { name:"Chickasaw", source:"udhr_cic,f258793e409fd555ca28c242b449ca206a0bd6c0", region:"nam", countries:"USA", script:"latn", speakers:"75", letter:"óáíÓÁÍ", mark:"̱́", punctuation:"—", local:"Chikashshanompa' [tʃikaʃːanompaʔ]", notes:`U+0331 COMBINING MACRON BELOW is used with a and o, for which there are no precomposed characters.`},
@@ -386,7 +386,7 @@ Legacy applications often use cr rather than [cwd].`},
 
 "csw": { name:"Swampy Cree (Maskekon, Omaškêkowak, Omushkego)", source:"udhr_csw", region:"nam", countries:"Canada", script:"cans", speakers:"1805", letter:"ᐁᐢᐱᑕᑲᒥᐠᐊᑭᒋᐃᑗᐎᐣᓂᑯᓯᓇᐅᔑᒧᓀᐡᑐᑌᑎᐸᐗᐳᒪᒶᐌᔭᓄᑾᔦᒣᐤᓴᓶᔕᑴᐯᐟᑫᓱᓉᐺᑡᐨᔓᑺᓋᔗᔾᔀᑊᔡᒬᒼ", punctuation:"᙮", local:"ᓀᐦᐃᓇᐍᐏᐣ (Nêhinawêwin)", 
 related:`Macrolanguage is Cree [cr].`,
-type:"?", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space"
+type:"?", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp"
 },
 
 "ctd": { name:"Tedim Chin", source:"udhr_ctd", region:"seasia", countries:"Myanmar, India", script:"ascii", speakers:"340000", local:"Tidim"},
@@ -441,7 +441,7 @@ orth:`[Thaana] &nbsp;
 <a href="../scripts/thaana/" target="_blank">Detailed summary</a>.`,
 also:
 ['dv-latn | latn | ‘Maldivian Latin’.'],
-type:"alpha", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space", linked:"thaana"
+type:"alpha", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp", linked:"thaana"
 },
 
 "dyo": { name:"Jola-Fonyi", source:"cldr_dyo,udhr_dyo,cd01ae44156075d3e8aa249200adf6c04edb6acb", region:"afr", script:"latn", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"́̃̀", punctuation:"“”‰", symbol:"°", countries:"Senegal, Gambia", local:"Jóola-Fóoñi, kújoolaay", 
@@ -474,7 +474,7 @@ orth:`[Greek] &nbsp; Essentially Monotonic Greek ([el-monoton]), however the pol
 also:
 ['grc | grek | Ancient Greek, polytonic ([polyton]).',
 'el-cyrl | cyrl | Used in Ukraine.'],
-type:"alpha", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"space", linked:"greek"
+type:"alpha", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"sp", linked:"greek"
 },
 
 "emk": { name:"Eastern Maninkakan", source:"udhr_emk", region:"afr", script:"latn", speakers:"5000000", letter:"ɲɛɔƝƐƆ", countries:"Guinea, Liberia, Mali, Sierra Leone", 
@@ -602,7 +602,7 @@ orth:`[Gujurati] &nbsp; Primary usage.
 <a href="../scripts/gujarati" target="_blank">Detailed summary</a>.`,
 also:
 ['gu-khoj | khoj | '],
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high?", wrap:"word", hyphenation:"?", justify:"space", linked:"gujarati"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high?", wrap:"word", hyphenation:"?", justify:"sp", linked:"gujarati"
 },
 
 "guc": { name:"Wayuu (Wayu, Wayúu, Guajiro, Wahiro)", source:"udhr_guc", region:"sam", countries:"Colombia, Venezuela", script:"latn", speakers:"437780", letter:"üñÜÑ", mark:"̈̃", local:"Wayuunaiki"},
@@ -631,7 +631,7 @@ orth:`[Arabic] &nbsp; Not standardised. The predominant orthography for Hausa aj
 also:
 ['ha | latn | Primary usage. Based on Pan-Nigerian alphabet since 1980s.',
 'ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.'],
-type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"n/a", justify:"word/space", linked:"arabic/hausa"
+type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"n/a", justify:"sp+el", linked:"arabic/hausa"
 },
 
 "haw": { name:"Hawaiian", source:"cldr_haw,udhr_haw", region:"oce", countries:"USA", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"̄", punctuation:"’‘“”", local:" ’Olelo Hawai’i"},
@@ -639,7 +639,7 @@ type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", curs
 "he": { name:"Hebrew", silcode:"heb", rtl:true, source:"cldr_he,udhr_heb,354bc8cccb82991d56ad51ac6f1c3b8437b28055", region:"wasia", countries:"Israel, etc.", script:"hebr", speakers:"9000000", letter:"אבגדהוזחטיכךלמםנןסעפףצץקרשת", punctuation:"׳״־‐–—", symbol:"₪", other:"‍‌‏‎⁧⁦⁩‫‪‬͏", aux:"ְֱֲֳִֵֶַָֹֻּׁׂ", local:" עברית‎ (Ivrit), עברית חדשה‎ (ivrít ḥadašá[h])",
 orth:`Hebrew. &nbsp;  
 <a href="../scripts/hebrew" target="_blank">Detailed summary</a>.`,
-type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"no", cursive:"no", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"space", linked:"hebrew"
+type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"no", cursive:"no", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"sp", linked:"hebrew"
 },
 
 "hi": { name:"Hindi", silcode:"hin", source:"cldr_hi,udhr_hin,9d8e188be96400153901b55006feaaf9fd4bf3b1", region:"sasia", countries:"India, Nepal, Singapore, South Africa", script:"deva", speakers:"260000000", letter:"अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह\u{958}\u{959}\u{95A}\u{95B}\u{95C}\u{95D}\u{95E}", mark:"ँंः़ािीुूृेैोौ्", punctuation:"।॥॰‘’“”—","number":"०१२३४५६७८९", other:"‍‌", aux:"ऍऑऽॐॅॉ", local:" मानक हिन्दी‎ (Mānak Hindī), हिन्दी‎ (Hindī)", 
@@ -647,7 +647,7 @@ orth:`[Devanagari] &nbsp;
 <a href="../scripts/devanagari" target="_blank">Detailed summary</a>.`,
 also:
 ['hi-newa | newa | Archaic, no longer in use.'],
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high", wrap:"word", hyphenation:"yes", justify:"space", linked:"devanagari"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high", wrap:"word", hyphenation:"yes", justify:"sp", linked:"devanagari"
 },
 
 "hil": { name:"Hiligaynon (Ilonggo)", source:"udhr_hil", region:"seasia", countries:"Philippines", script:"ascii", speakers:"9300000", local:"Hiligaynon, Ilonggo"},
@@ -678,7 +678,7 @@ related:`Macrolanguage is Serbo-Croatian [sh].`},
 related:`See also Western Armenian [hyw].`,
 orth:`Armenian. &nbsp;
 <a href="../scripts/armenian" target="_blank">Detailed summary</a>.`,
-type:"alpha", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"sp ֊", justify:"space", linked:"armenian"
+type:"alpha", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"sp ֊", justify:"sp", linked:"armenian"
 },
 
 "ibb": { name:"Ibibio", source:"udhr_ibb", region:"afr", countries:"Nigeria", script:"latn", speakers:"2000000", letter:"ñÑ", mark:"̃", local:"Ibibio"},
@@ -742,7 +742,7 @@ orth:`[Georgian] &nbsp; Mkhedruli &amp; mtavruli. The mtavruli characters are li
 <a href="../scripts/georgian" target="_blank">Detailed summary</a>.`,
 also:
 ['ka-geok | geok | Asomtavruli &amp; nuskhuri, no longer in use except liturgically.'],
-type:"alpha", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"space", linked:"georgian"
+type:"alpha", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"sp", linked:"georgian"
 },
 
 "kab": { name:"Kabyle (Kabylian)", source:"cldr_kab", region:"afr", countries:"Algeria", script:"latn", speakers:"5500000", letter:"ǧƐǦƔčČḍḥṛṣṭẓḌḤṚṢṬẒɛɣ", mark:"̣̌", punctuation:"‰", local:"Taqbaylit", 
@@ -802,7 +802,7 @@ also:
 ['khk | cyrl | ',
 'khk-phag | phag | No longer in use.',
 'khk-tibt | tibt | No longer in use.'],
-type:"alpha", cs:"no", gpos:"yes", mcchars:"no?", matras: "no", gsub:"yes", cursive:"yes", dir:"tblr", wordsep:"space", baseline:"vertical", wrap:"word", hyphenation:"?", justify:"space", linked:"mongolian"
+type:"alpha", cs:"no", gpos:"yes", mcchars:"no?", matras: "no", gsub:"yes", cursive:"yes", dir:"tblr", wordsep:"space", baseline:"vertical", wrap:"word", hyphenation:"?", justify:"sp", linked:"mongolian"
 },
 
 "khq": { name:"Koyra Chiini (Western Songhay)", source:"cldr_khq", region:"afr", countries:"Mali", script:"latn", speakers:"200000", letter:"ãõÃÕƝŋšžŊŠŽẽẼɲ", mark:"̃̌"},
@@ -833,7 +833,7 @@ Legacy applications often use kln rather than [spy] (Sabaot).`},
 "km": { name:"Khmer (Cambodian)", silcode:"khm", source:"cldr_km,udhr_khm,7f422cd6f0781ddbcb488b785f4f0d3a5883c93b", region:"seasia", countries:"Cambodia, Vietnam", script:"khmr", speakers:"16000000", letter:"ឥឦឪឧឩឯឰឱឳឲឫឬឭឮកខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរឡលវសហអៗ", mark:"ៈាិីឹឺុូួើឿៀេែៃោៅំះ៉៊់៍័្", punctuation:"៖។៕៙៚‘’“”","number":"០១២៣៤៥៦៧៨៩", symbol:"៛", aux:"៑៌៝៎៏", local:"ខ្មែរ‎ (Khmer)",
 orth:`Khmer. &nbsp;  
 <a href="../scripts/khmer" target="_blank">Detailed summary</a>.`,
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"cluster", linked:"khmer"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"gr", linked:"khmer"
 },
 
 "kmb": { name:"Kimbundu (North Mbundu)", source:"udhr_kmb", region:"afr", countries:"Angola", script:"latn", speakers:"4000000", letter:"êâôÊÂÔ", mark:"̂", punctuation:"’", local:"Kimbundu"},
@@ -857,7 +857,7 @@ also:
 orth:`[Kannada] &nbsp; Primary usage.`,
 also:
 ['kn-nand | nand | No longer in use.',],
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp"
 },
 
 "knc": { name:"Kanuri (Yerwa)", source:"udhr_knc", region:"afr", countries:"Nigeria, Sudan, Chad, Niger, Cameroon", script:"latn", speakers:"4200000", letter:"əƏ", local:"Kanuri, Yerwa Kanuri", 
@@ -923,7 +923,7 @@ more:[
 ['ks-latn','latn','Especially online for informal communication.'],
 ['ks-shrd','shrd','From 8thC, but no longer in use, except for religious ceremonies of the Kashmiri Pandits.']
 ],
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high", wrap:"word", hyphenation:"?", justify:"space", linked:"devanagari/kashmiri"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high", wrap:"word", hyphenation:"?", justify:"sp", linked:"devanagari/kashmiri"
 },
 
 "ksb": { name:"Shambala (Shambaa)", source:"cldr_ksb", region:"afr", countries:"Tanzania", script:"ascii", speakers:"660000"},
@@ -971,7 +971,7 @@ orth:`Lisu (Fraser script). &nbsp; Since 1918, primary usage.
 <a href="../scripts/lisu" target="_blank">Detailed summary</a>.`,
 also:
 ['lis-latn | latn | 1915-1918, 1958-1966, and from 1981.',],
-type:"abugida", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"syllable", baseline:"mid", wrap:"syllable", hyphenation:"no", justify:"space", linked:"lisu"
+type:"abugida", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"syllable", baseline:"mid", wrap:"syllable", hyphenation:"no", justify:"sp", linked:"lisu"
 },
 
 "lkt": { name:"Lakota (Lakhota, Teton, Teton Sioux)", source:"cldr_lkt", region:"nam", countries:"USA", script:"latn", speakers:"6000", letter:"ʼáéíóúÁÉÍÓÚǧȟǦȞŋčšžŊČŠŽ", mark:"́̌", punctuation:"́̌‐–—“”"},
@@ -985,7 +985,7 @@ type:"abugida", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursi
 "lo": { name:"Lao (Laotian)", silcode:"lao", source:"cldr_lo,udhr_lao", region:"seasia", countries:"Laos, Cambodia, Vietnam", script:"laoo", speakers:"~25000000", letter:"ໆກຂຄງຈສຊຍດຕຖທນບປຜຝພຟມຢຣລວຫໜໝອຮຯະາຳຽເແໂໃໄ", mark:"່້໊໋́໌ໍັິີຶືຸູົຼ", aux:"໐໑໒໓໔໕໖໗໘໙", local:"ພາສາລາວ‎ (Phasa Lao)",
 orth:`Lao. &nbsp;  
 <a href="../scripts/lao" target="_blank">Detailed summary</a>.`,
-type:"alpha", cs:"no", gpos:"yes", mcchars:"yes", matras: "visual", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"cluster", linked:"lao"
+type:"alpha", cs:"no", gpos:"yes", mcchars:"yes", matras: "visual", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"gr?", linked:"lao"
 },
 
 "lob": { name:"Lobi (Miwa, Lobiri)", source:"udhr_lob", region:"afr", countries:"Burkina Faso, Côte d'Ivoire", script:"latn", speakers:"440000", letter:"àáäÀÁÄƲƖƆƐʋɩɔɛʔ", mark:"̀́̈", local:"’Lobiiri"},
@@ -1080,7 +1080,7 @@ orth:`Latin. &nbsp; Also Ethnologue lists Micmac hieroglyphs, no longer in use (
 "mid": { name:"Neo-Mandaic", rtl:true, source:"280e6a9f98147de582820ff2179ebb7727e96147", region:"wasia", countries:"Iran, Iraq", script:"mand", speakers:"200", letter:"ࡀࡁࡂࡃࡄࡅࡆࡇࡈࡉࡊࡋࡌࡍࡎࡏࡐࡑࡒࡓࡔࡕࡖࡗࡘ", mark:"࡙࡚࡛", punctuation:"࡞",
 orth:`Mandaic. &nbsp;  
 <a href="../scripts/mandaic" target="_blank">Detailed summary</a>.`,
-type:"alpha", cs:"no", gpos:"yes", mcchars:"no", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"word/space", linked:"mandaic"
+type:"alpha", cs:"no", gpos:"yes", mcchars:"no", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp+el", linked:"mandaic"
 },
 
 "min": { name:"Minangkabau", source:"udhr_min", region:"seasia", countries:"Indonesia", script:"ascii", speakers:"5500000", 
@@ -1096,7 +1096,7 @@ orth:`Malayalam. &nbsp; Primary usage.
 <a href="../scripts/malayalam" target="_blank">Detailed summary</a>.`,
 also:
 ['ml-arab | arab | Naskh style.',],
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space", linked:"malayalam"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp", linked:"malayalam"
 },
 
 "mn": { name:"Mongolian", silcode:"mon", redirect:true, region:"easia", script:"macrolanguage", speakers:"?", related:`mn is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Halh Mongolian [khk]<br/>Peripheral Mongolian [mvf].
@@ -1128,7 +1128,7 @@ also:
 "my": { name:"Burmese (Myanmar)", source:"cldr_my,udhr_mya,43fe649806182b69d852d8c5881f6cc16d8731ca", region:"seasia", countries:"Myanmar", script:"mymr", speakers:"33000000", letter:"ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအဣဤဥဦဧဩဪဿ", mark:"ာါိီုူေဲံျြွှ့္်း","number":"၁၉၄၈၀၂၃၅၆၇", punctuation:"၏၊။၍၌၎‘’“”", aux:"ၒၓၔၕၖၗၘၙ",
 orth:`Myanmar. &nbsp;  
 <a href="../scripts/myanmar" target="_blank">Detailed summary</a>.`,
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"cluster", linked:"myanmar"},
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"gr?", linked:"myanmar"},
 
 "mzi": { name:"Ixcatlán Mazatec", source:"udhr_mzi", region:"cam", countries:"Mexico", script:"latn", speakers:"8600", letter:"áñíóéÁÑÍÓÉ", mark:"́̃", punctuation:"’", local:"En ningotsie"},
 
@@ -1187,7 +1187,7 @@ related:`Macrolanguage is Nepali [ne]. Legacy applications often use ne rather n
 
 "nqo": { name:"N’Ko (Kangbe)", rtl:true, source:"13c49deccb3837263a381fe75e79bab744b7a7e1", region:"afr", countries:"Guinea, Côte d'Ivoire, Mali", script:"nkoo", speakers:"0", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"߲߽߫߬߭߮߯߰߱߳","number":"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟⸜⸝", symbol:"߶߾߿", aux:"ߨߩߪ", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", local:"ߒߞߏ", 
 orth:`[N’Ko] &nbsp; This is a written, rather than spoken, language. Used as a koiné by speakers of Maninka, Bambara, Dyula and related dialects. See <a href="../scripts/nko" target="_blank">N’Ko</a>`,
-type:"alpha", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl*", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"wd/str", linked:"nko"
+type:"alpha", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl*", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"sp+el", linked:"nko"
 },
 
 "nr": { name:"Ndebele (Southern Ndebele, Transvaal Ndebele)", silcode:"nbl", source:"udhr_nbl", region:"afr", countries:"South Africa", script:"ascii", speakers:"1100000", local:"IsiNdebele"},
@@ -1231,7 +1231,7 @@ Legacy applications often use om rather than [gaz].`},
 
 "ory": { name:"Odia (Oriya)", source:"cldr_or", region:"sasia", countries:"India", script:"orya", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"଼ଁଂଃାିୀୁୂୃେୈୋୌ୍ୖୗ","number":"୦୧୨୩୪୫୬୭୮୯", local:"ଓଡ଼ିଆ‎ (Oḍiā)", 
 related:`Macrolanguage is Oriya [or].`,
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp"
 },
 
 "os": { name:"Ossetian (Ossete, Ossetic)", silcode:"oss", source:"cldr_os,udhr_oss", region:"eur", countries:"Russia, Syria, Georgia, Turkey", script:"cyrl", speakers:"570000", letter:"аӕбвгъджзеёийклмнопрстуфхцчшщыьэюяАӔБВГЪДЖЗЕЁИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ", punctuation:"‐–—…‘‚“„«»§", local:"ирон æвзаг‎ (iron ævzag)", 
@@ -1250,7 +1250,7 @@ also:
 ['pa-arab | arab | Naskh style. See also [pnb].',
 'pa-khoj | khoj | '],
 notes:`Need to check the difference between pa-arab and pnb.`,
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high", wrap:"word", hyphenation:"?", justify:"space", linked:"gurmukhi"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high", wrap:"word", hyphenation:"?", justify:"sp", linked:"gurmukhi"
 },
 
 "pa-arab": { name:"Punjabi", silcode:"pan", rtl:true, source:"cldr_pa_Arab", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابتثجحخدذرزسشصضطظعغفقلمنهويٹپچڈڑژکگںھہیے", mark:"ُٓٔ", punctuation:"‰", other:"‎‏", aux:"أاةٔٺٻټٽ", 
@@ -1354,7 +1354,7 @@ Legacy applications often use rom rather than [rmy].`},
 "ru": { name:"Russian", silcode:"rus", source:"cldr_ru,udhr_rus", region:"eur", countries:"Russia, Ukraine, Kazakhstan, Uzbekistan, Poland, Belarus, Azerbaijan, Georgia, Kyrgyzstan, Lithuania, Latvia, Moldova, Estonia, etc.", script:"cyrl", speakers:"258227760", letter:"всеобщаядклрципчнтзгшюйьмуыхъжэфёВСЕОБЩАЯДКЛРЦИПЧНТЗГШЮЙЬМУЫХЪЖЭФЁ", mark:"̆̈", punctuation:"‐–—…‘‚“„«»§", aux:"́", local:"русский язык‎ (russkij jazyk)",
 orth:`Cyrillic. &nbsp;  
 <a href="../scripts/cyrillic" target="_blank">Detailed summary</a>.`,
-type:"alpha", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"space", linked:"cyrillic"
+type:"alpha", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"sp", linked:"cyrillic"
 },
 
 "rup": { name:"Aromanian", source:"udhr_rmy", region:"eur", countries:"Macedonia, Albania, Romania, Greece, Serbia, Bulgaria", script:"latn", speakers:"250000", letter:"ãâÃÂ", mark:"̃̂", local:"Armani", notes:`Caution: The UDHR source names this language as Aromanian, but uses a BCP47 code of [rmy], which is Vlax Romani.`, related:`Orthographies include:
@@ -1432,7 +1432,7 @@ also:
 "si": { name:"Sinhala (Sinhalese)", silcode:"sin", source:"cldr_si,udhr_sin,0de67cc747d85485d1c6e7c99ee9a6e885c80803", region:"sasia", countries:"Sri Lanka", script:"sinh", speakers:"16000000", letter:"අආඇඈඉඊඋඌඍඑඒඓඔඕඖකඛගඝඞඟචඡජඣඥටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ", mark:"ංඃ්ාැෑිීුූෘෙේෛොෝෞෟ", punctuation:"§‐–—…‘’“”†‡′″", other:"‍", local:"සිංහල‎ (Siṃhāla)",
 orth:`Sinhala. &nbsp;  
 <a href="../scripts/sinhala/" target="_blank">Detailed summary</a>.`,
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space", linked:"sinhala"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp", linked:"sinhala"
 },
 
 "sja": { name:"Epena (Eperara)", source:"udhr_sja", region:"sam", countries:"Colombia", script:"ascii", speakers:"8300", local:"Epéna Pedée"},
@@ -1555,7 +1555,7 @@ ISO 15924 also has a general script code for Syriac (syrc).`,
 
 "ta": { name:"Tamil", silcode:"tam", source:"cldr_ta,udhr_tam,02c655f2e4d80f65f8f280e81da3c892afc52e91", region:"sasia", countries:"India, Sri Lanka, Malaysia, South Africa, Singapore", script:"taml", speakers:"70000000", letter:"ஃஅஆஇஈஉஊஎஏஐஒஓஔகஙசஜஞடணதநனபமயரறலளழவஶஷஸஹ", mark:"ாிீுூெேைொோௌ்ௗ", punctuation:"“”‘’", symbol:"௹", aux:"।॥§–—†‡…′″ௐ", local:"தமிழ்‎ (Tamiḻ)",
 orth:`Modern Tamil. <a href="../scripts/tamil/" target="_blank">Details</a>.`,
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space", linked:"tamil"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp+gr", linked:"tamil"
 },
 
 "tbz": { name:"Ditammari (Tammari)", source:"udhr_tbz", region:"afr", countries:"Benin, Togo", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"̃́̀", local:"Ditammari"},
@@ -1571,7 +1571,7 @@ type:"alpha", cs:"no", gpos:"yes", mcchars:"no", matras: "yes", gsub:"yes", curs
 "tdt": { name:"Tetun Dili", source:"udhr_010", region:"seasia", countries:"East Timor", script:"latn", speakers:"385000", letter:"áíúóÁÍÚÓ", mark:"́", punctuation:"’", local:"Tetun Dili"},
 
 "te": { name:"Telugu", silcode:"tel", source:"cldr_te,udhr_tel,21cc5fdd3dd94d0bb44ca0059c7fbe514fbf60e3", region:"sasia", countries:"India", script:"telu", speakers:"74002586", letter:"అఆఇఈఉఊఋఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరఱలళవశషసహ", mark:"ంఃాిీుూృెేైొోౌ్ౖ", punctuation:"‘’“”", symbols:"₹", aux:"ఌౄౠౡౢౣ౦౧౨౩౪౫౬౭౮౯।॥", local:"తెలుగు‎ (Telugu)",
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space", linked:"telugu"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp", linked:"telugu"
 },
 
 "tem": { name:"Temne (Themne, Timne)", source:"udhr_tem", region:"afr", countries:"Sierra Leone", script:"latn", speakers:"1200000", letter:"ɅƆƏƐŋŊʌɔəɛ", punctuation:"‐", local:"Themne"},
@@ -1592,7 +1592,7 @@ also:
 "th": { name:"Thai (Siamese)", silcode:"tha", source:"cldr_th,udhr_tha,1935c4dc5720d8b5ca3fe2e8f19a794a59bba8af", region:"seasia", countries:"Thailand", script:"thai", speakers:"44000000", letter:"ฯๆกขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลฦวศษสหฬอฮะาๅำเแโใไ", mark:"์็่้๊๋ัิีึืุู","number":"๐๑๒๓๔๕๖๗๘๙", punctuation:"‐–—‘’“”…′″๏๚๛", symbol:"฿", aux:"ํ", local:"ภาษาไทย",
 orth:`Thai. &nbsp;  
 <a href="../scripts/thai/" target="_blank">Detailed summary</a>.`,
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "visual", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"cluster", linked:"thai"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "visual", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"gr", linked:"thai"
 },
 
 "ti": { name:"Tigrinya", silcode:"tir", source:"cldr_ti,udhr_tir", region:"afr", countries:"Ethiopia, Eritrea", script:"ethi", speakers:"6900000", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍቐቑቒቓቔቕቖቘቚቛቜቝበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾዀዂዃዄዅወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ", mark:"፟", punctuation:"፣፡’", aux:"ሇቇኇኯዏዯዸዹዺዻዼዽዾዿጏጘጙጚጛጜጝጞጟፘፙፚⶀⶁⶂⶃⶄⶅⶆⶇⶈⶉⶊⶋⶌⶍⶎⶓⶔⶕⶖⶏⶐⶑⶒⶠⶡⶢⶣⶤⶥⶦⶨⶩⶪⶫⶬⶭⶮⶰⶱⶲⶳⶴⶵⶶⶸⶹⶺⶻⶼⶽⶾⷀⷁⷂⷃⷄⷅⷆⷈⷉⷊⷋⷌⷍⷎⷐⷑⷒⷓⷔⷕⷖⷘⷙⷚⷛⷜⷝⷞ᎐᎑᎒᎓᎔᎕᎖᎗᎘᎙ᎀᎁᎂᎃᎄᎅᎆᎇᎈᎉᎊᎋᎌᎍᎎᎏ", 
@@ -1715,7 +1715,7 @@ orth:`Arabic. &nbsp; Naskh style. Official and primary use in China, also used i
 also:
 ['ug-latn | latn | Used in China and Turkey.',
 'ug-cyrl | cyrl | Used in Kazakhstan, previously used in China.'],
-type:"alpha", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"space", linked:"arabic/arab-ug"
+type:"alpha", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"sp", linked:"arabic/arab-ug"
 },
 
 "ug-latn": { name:"Uyghur (Uighur, Eastern Turki)", source:"udhr_uig_latn", region:"casia", countries:"China, Kazakhstan", script:"latn", speakers:"25000000", letter:"öéüÖÉÜ", mark:"̈́", punctuation:"’", 
@@ -1770,7 +1770,7 @@ orth:`Vai. &nbsp; Primary usage.
 <a href="../scripts/vai/" target="_blank">Detailed summary</a>.`,
 also:
 ['vai-latn | latn | ',],
-type:"syllabary", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space?", linked:"vai"
+type:"syllabary", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp?", linked:"vai"
 },
 
 "vai-latn": { name:"Vai (Vy, Gallinas)", source:"cldr_vai_Latn", region:"afr", countries:"Liberia, Sierra Leone", script:"latn", speakers:"120000", letter:"áãéíóõúÁÃÉÍÓÕÚƁƊƐƆĩŋũĨŊŨẽẼɓɗɛɔ", mark:"́̃", 
@@ -1861,7 +1861,7 @@ also:
 
 "zgh": { name:"Standard Moroccan Tamazight (Amazigh, Tamazight)", source:"c7db7ca11771abcda449392ca6fed00e9db62d20,cldr_zgh,udhr_zgh", script:"tfng", speakers:"?", region:"afr", countries:"Morocco", letter:"ⴰⵍⵖⵓⵎⴹⵏⵉⵣⵔⴼⴳⴷⵊⴱⵜⵡⴽⵢⵙⵀⵛⵥⵇⵯⴻⵕⵟⵃⵄⵅⵚ", aux:"ⴲⴴⴸⴺⴿⵝⵠⵒ", local:"ⵜⴰⵎⴰⵣⵉⵖⵜ‎ (tamaziɣt), ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ‎ (tamaziɣt tanawayt)",
 orth:`Tifinagh. &nbsp;  <a href="../scripts/tifinagh/" target="_blank">Details</a>.`,
-type:"alpha", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr/rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"space", linked:"tifinagh"
+type:"alpha", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr/rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"sp", linked:"tifinagh"
 },
 
 "zlm": { name:"Malay", source:"cldr_ms,udhr_mly_latn", region:"seasia", countries:"Malaysia, Indonesia, Singapore", script:"ascii", speakers:"77000000", local:"Bahasa Melayu", 
