@@ -734,7 +734,7 @@ orth:`Javanese &nbsp; No longer in common use.
 <a href="../scripts/javanese" target="_blank">Detailed summary</a>.`,
 also:
 ['jv | latn | '],
-type:"abugida", cs:"yes*", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"syllable", hyphenation:"no/sp ◌ꦺ", justify:"?", linked:"javanese"
+type:"abugida", cs:"yes*", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"syllable", hyphenation:"no/spꦺ", justify:"?", linked:"javanese"
 },
 
 "ka": { name:"Georgian", silcode:"kat", source:"cldr_ka,udhr_kat,2cafedfc80733bd49fb1ee6af49657333a88c1a3", region:"eur", countries:"Georgia, Turkey, Iran", script:"geor", speakers:"3700000", letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ", punctuation:"჻«»§‐–—…‘‚“„†‡′″", symbol:"№", aux:"ᲐᲑᲒᲓᲔᲕᲖᲗᲘᲙᲚᲛᲜᲝᲞᲟᲠᲡᲢᲣᲤᲥᲦᲧᲨᲩᲪᲫᲬᲭᲮᲯᲰ", local:"ქართული‎ (Kartuli), ქართული ენა‎ (Kartuli ena)", 
