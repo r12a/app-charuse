@@ -635,7 +635,8 @@ See also <a href="../scripts/latin/hausa" target="_blank">Hausa (boko)</a>`,
 also:
 ['ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930.',
 'ha-arab | arab | Not standardised. The used mostly by muslim communities. Typically written with Warsh forms in the Kano style.'],
-type:"alphabet", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"latin/hausa"
+type:"alphabet", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"latin/hausa",
+vowels:"letters"
 },
 
 "ha-arab": { name:"Hausa (ajami)", silcode:"hau", source:"720246f3729e525b99b5f829cdb0d44cca5a9cb6", region:"afr", countries:"Nigeria, Niger, Côte d'Ivoire, Benin, Chad, Sudan", script:"arab", speakers:"43928100", letter:"أإابتثجحدرزسشطعغلموىٻڟکیۑࢻࢼࢽݣࣃࣄ", mark:"َُِّْٰٕٜٔ", punctuation:"،؟‹›«»", aux:"ذصضظؿفقكنهپݑ", local:"هَرْشَن هَوْسَ", 
@@ -933,7 +934,8 @@ more:[
 ['ks-latn','latn','Especially online for informal communication.'],
 ['ks-shrd','shrd','From 8thC, but no longer in use, except for religious ceremonies of the Kashmiri Pandits.']
 ],
-type:"alphabet", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"arabic/kashmiri"
+type:"alphabet", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"arabic/kashmiri",
+vowels:"diacritics, matres lectionis"
 },
 
 "ks-deva": { name:"Kashmiri (Koshur)", silcode:"kas", source:"fea49eb4a3c07e0bc940abe2516d385d48fb2a5c", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"अआइईउऊऎएऐऒओऔकखगचछजटठडतथदनपफबमयरलवशसहॳॴॵॶॷ", mark:"ँंऺऻ़ािीुूॆेैॊोौ्ॏॖॗ", punctuation:"।", aux:"\u095B", local:"कॉशुर‎ (Koshur)", 
@@ -1756,7 +1758,8 @@ orth:`Arabic. &nbsp; Naskh style. Official and primary use in China, also used i
 also:
 ['ug-latn | latn | Used in China and Turkey.',
 'ug-cyrl | cyrl | Used in Kazakhstan, previously used in China.'],
-type:"alphabet", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"spaces", linked:"arabic/arab-ug"
+type:"alphabet", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"spaces", linked:"arabic/uighur",
+vowels:"letters"
 },
 
 "ug-latn": { name:"Uyghur (Uighur, Eastern Turki)", source:"udhr_uig_latn", region:"casia", countries:"China, Kazakhstan", script:"latn", speakers:"25000000", letter:"öéüÖÉÜ", mark:"̈́", punctuation:"’", 
@@ -1773,7 +1776,8 @@ also:
 "ur": { name:"Urdu", silcode:"urd", rtl:true, source:"cldr_urdu,udhr_urd,2a19c3255e234cbb86e12ec0dc966684ccdb2965", region:"sasia", countries:"Pakistan, India, Nepal, Bangladesh", script:"arab", speakers:"65000000", letter:"اآبپتٹثجچحخدڈذرڑزژسشصضطظعغفقکگلمنںوؤہۂھءیئےهي", mark:"ًَُِّٰٔٓ", punctuation:"،؍٫٬؛؟۔”“؁٪","number":"۰۱۲۳۴۵۶۷۸۹", aux:"؃ۃٻٺټٽي", local:"اُردُو‎‎ (Urdū)", 
 orth:`Arabic. &nbsp; The primary usage is nastaliq ([Aran]) style, though naskh style is used also. 
 <a href="../scripts/arabic/urdu" target="_blank">Detailed summary</a>.`,
-type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"no", justify:"spaces+elongation", linked:"arabic/arab-ur"
+type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"no", justify:"spaces+elongation", linked:"arabic/arab-ur",
+vowels:"hidden diacritics, matres lectionis"
 },
 
 "ura": { name:"Urarina (Itucali, Simacu, Shimacu)", source:"udhr_ura", region:"sam", countries:"Peru", script:"latn", speakers:"6000", letter:"úóíÚÓÍ", mark:"́", local:"Oruarinya"},
