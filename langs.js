@@ -732,7 +732,10 @@ also:
 Legacy applications often use iu rather than [ike].
 `},
 
-"ike": { name:"Eastern Canadian Inuktitut", source:"udhr_ike", region:"nam", countries:"Canada", script:"cans", speakers:"34000", letter:"ᓯᓚᕐᔪᐊᒥᐅᑦᓇᓗᐃᖅᑎᖓᑭᒃᑯᑐᓐᐱᖏᕆᑲᓂᔾᔨᓄᒪᒻᑖᕈᖃᑕᕋᓪᒍᓴᖕᓕᕇᖢᕗᒋᒧᒐᖁᔭᑰᒌᙱᒫᕌᕙᒎᕕᕝᓘᓃᓱᓈᙵᓅᐹᓵᐸᔫᓲᐳᓖᖂᑑᐆᖑᙳᖔᕿᒡᓛᓰᖤᐋᑉᔮᔅᒨᑏᒦ", mark:"̃", local:"ᐃᓄᒃᑎᑐᑦ‎ (Inuktitut)"},
+"ike": { name:"Eastern Canadian Inuktitut", source:"udhr_ike", region:"nam", countries:"Canada", script:"cans", speakers:"34000", letter:"ᓯᓚᕐᔪᐊᒥᐅᑦᓇᓗᐃᖅᑎᖓᑭᒃᑯᑐᓐᐱᖏᕆᑲᓂᔾᔨᓄᒪᒻᑖᕈᖃᑕᕋᓪᒍᓴᖕᓕᕇᖢᕗᒋᒧᒐᖁᔭᑰᒌᙱᒫᕌᕙᒎᕕᕝᓘᓃᓱᓈᙵᓅᐹᓵᐸᔫᓲᐳᓖᖂᑑᐆᖑᙳᖔᕿᒡᓛᓰᖤᐋᑉᔮᔅᒨᑏᒦ",  local:"ᐃᓄᒃᑎᑐᑦ‎ (Inuktitut)",
+type:"syllabary", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"space", linked:"cans/",
+vowels:"syllables", clusters:"superscripts"
+},
 
 "jgo": { name:"Ngomba (Ngomba Bamileke)", source:"cldr_jgo", region:"afr", countries:"Cameroon", script:"latn", speakers:"63000", letter:"áâíîúûÁÂÍÎÚÛꞌꞋǎǐǹǔǍƐǏǸƆǓɄńŋŃŊḿẅḾẄɛɔʉ", mark:"́̀̂̌̄̈", punctuation:"«»‹›", local:"Cú-Mbɔ́ndaa"},
 
