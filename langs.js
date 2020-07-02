@@ -1273,11 +1273,12 @@ related:`Macrolanguage is Oriya [or].`,
 type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces"
 },
 
-"os": { name:"Ossetian (Ossete, Ossetic)", silcode:"oss", source:"cldr_os,udhr_oss", region:"eur", countries:"Russia, Syria, Georgia, Turkey", script:"cyrl", speakers:"570000", letter:"аӕбвгъджзеёийклмнопрстуфхцчшщыьэюяАӔБВГЪДЖЗЕЁИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ", punctuation:"‐–—…‘‚“„«»§", local:"ирон æвзаг‎ (iron ævzag)", 
-orth:`Cyrillic. &nbsp; Since 1844 in Russia, since 1954 in Georgia.`,
+"osa": { name:"Osage (Wazhazhe)", source:"tbd", region:"nam", countries:"USA", script:"osge", speakers:"0", letter:"𐒰𐒱𐒲𐒳𐒴𐒵𐒶𐒷𐒸𐒹𐒺𐒻𐒼𐒽𐒾𐒿𐓀𐓁𐓂𐓃𐓄𐓅𐓆𐓇𐓈𐓉𐓊𐓋𐓌𐓍𐓎𐓏𐓐𐓑𐓒𐓓𐓘𐓙𐓚𐓛𐓜𐓝𐓞𐓟𐓠𐓡𐓢𐓣𐓤𐓥𐓦𐓧𐓨𐓩𐓪𐓫𐓬𐓭𐓮𐓯𐓰𐓱𐓲𐓳𐓴𐓵𐓶𐓷𐓸𐓹𐓺𐓻ʼ", mark:"̄́̋͘", number:"", punctuation:"", aux:"", local:"𐓏𐓘𐓻𐓘𐓻𐓟 𐓣𐓟",
+orth:`Osage. <a href="../scripts/osge" target="_blank">Details</a>. Standardised in 2015.`,
 also:
-['os-geor | geor | Mkedruli &amp; mtavruli, until 1954 in Georgia.',
-'os-latn | latn | 1920s-1930s, in Russia.']
+['osa-latn | latn | Non-standardised orthography.',],
+type:"alphabet", cs:"yes", gpos:"yes", mcchars:"yes", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"osge",
+vowels:"", clusters:""
 },
 
 "ote": { name:"Mezquital Otomi", source:"udhr_ote", region:"cam", countries:"Mexico", script:"latn", speakers:"130000", letter:"öüäéñúíáèÖÜÄÉÑÚÍÁÈ", mark:"̱̈́̃̀", local:"Hñahñu"},
@@ -1599,7 +1600,7 @@ ISO 15924 also has a general script code for Syriac (syrc).`,
 
 "ta": { name:"Tamil", silcode:"tam", source:"cldr_ta,udhr_tam,02c655f2e4d80f65f8f280e81da3c892afc52e91", region:"sasia", countries:"India, Sri Lanka, Malaysia, South Africa, Singapore", script:"taml", speakers:"70000000", letter:"ஃஅஆஇஈஉஊஎஏஐஒஓஔகஙசஜஞடணதநனபமயரறலளழவஶஷஸஹ", mark:"ாிீுூெேைொோௌ்ௗ", punctuation:"“”‘’", symbol:"௹", aux:"।॥§–—†‡…′″ௐ", local:"தமிழ்‎ (Tamiḻ)",
 orth:`Modern Tamil. <a href="../scripts/tamil/" target="_blank">Details</a>.`,
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces+glyphs", linked:"tamil",
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"spaces+glyphs", linked:"tamil",
 vowels:"vowel-signs, independent vowels, 3 circumgraphs, 6 prescripts"
 },
 

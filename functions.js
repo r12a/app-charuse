@@ -75,7 +75,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mong:[], mymr:[], talu:[], nkoo:[], orya:[], shrd:[], sinh:[], sund:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], beng:[], bugi:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mong:[], mymr:[], talu:[], nkoo:[], orya:[], osge:[], shrd:[], sinh:[], sund:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
