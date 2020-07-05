@@ -1274,7 +1274,7 @@ type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", c
 },
 
 "osa": { name:"Osage (Wazhazhe)", source:"tbd", region:"nam", countries:"USA", script:"osge", speakers:"0", letter:"𐒰𐒱𐒲𐒳𐒴𐒵𐒶𐒷𐒸𐒹𐒺𐒻𐒼𐒽𐒾𐒿𐓀𐓁𐓂𐓃𐓄𐓅𐓆𐓇𐓈𐓉𐓊𐓋𐓌𐓍𐓎𐓏𐓐𐓑𐓒𐓓𐓘𐓙𐓚𐓛𐓜𐓝𐓞𐓟𐓠𐓡𐓢𐓣𐓤𐓥𐓦𐓧𐓨𐓩𐓪𐓫𐓬𐓭𐓮𐓯𐓰𐓱𐓲𐓳𐓴𐓵𐓶𐓷𐓸𐓹𐓺𐓻ʼ", mark:"̄́̋͘", number:"", punctuation:"", aux:"", local:"𐓏𐓘𐓻𐓘𐓻𐓟 𐓣𐓟",
-orth:`Osage. <a href="../scripts/osge" target="_blank">Details</a>. Standardised in 2015.`,
+orth:`Osage. <a href="../scripts/osage" target="_blank">Details</a>. Standardised in 2015.`,
 also:
 ['osa-latn | latn | Non-standardised orthography.',],
 type:"alphabet", cs:"yes", gpos:"yes", mcchars:"yes", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"osge",

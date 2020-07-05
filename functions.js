@@ -145,6 +145,7 @@ function getScriptName (s) {
 		case 'osma': script = 'Osmanya';break
 		case 'mong': script = 'Mongolian';break
 		case 'nkoo': script = 'N’Ko';break
+		case 'osge': script = 'Osage';break
 		case 'perm': script = 'Old Permic';break
 		case 'phag': script = 'Phags-pa';break
 		case 'runr': script = 'Runic';break
