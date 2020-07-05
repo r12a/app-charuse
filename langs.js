@@ -1277,7 +1277,7 @@ type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", c
 orth:`Osage. <a href="../scripts/osage" target="_blank">Details</a>. Standardised in 2015.`,
 also:
 ['osa-latn | latn | Non-standardised orthography.',],
-type:"alphabet", cs:"yes", gpos:"yes", mcchars:"yes", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"osge",
+type:"alphabet", cs:"yes", gpos:"yes", mcchars:"yes", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"osage",
 vowels:"", clusters:""
 },
 
