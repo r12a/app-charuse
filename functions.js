@@ -274,8 +274,11 @@ function showLanguage (lang) {
 	if (langs[lang].rtl) rtl = true
 	else rtl = false
 	
+	cumulative = ''  // gathers all characters, mainly for font parameter
+	
 	// characters
 	if (langs[lang].letter) {
+		cumulative += langs[lang].letter
 		charList = [...langs[lang].letter]
 		charList.sort()
         stats += charList.length + ' <a onclick="getAll(\'letterCell\');return false;" style="cursor:pointer;">letters</a>'
@@ -292,6 +295,7 @@ function showLanguage (lang) {
 		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].mark) {
+		cumulative += langs[lang].mark
 		charList = [...langs[lang].mark]
  		charList.sort()
         if (total > 0) stats += ', '
@@ -309,6 +313,7 @@ function showLanguage (lang) {
 		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].punctuation) {
+		cumulative += langs[lang].punctuation
 		charList = [...langs[lang].punctuation]
  		charList.sort()
         if (total > 0) stats += ', '
@@ -326,6 +331,7 @@ function showLanguage (lang) {
 		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].number) {
+		cumulative += langs[lang].number
 		charList = [...langs[lang].number]
         if (total > 0) stats += ', '
         stats += charList.length + ' <a onclick="getAll(\'numberCell\');return false;" style="cursor:pointer;">numbers</a>'
@@ -342,6 +348,7 @@ function showLanguage (lang) {
 		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].number+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].symbol) {
+		cumulative += langs[lang].symbol
 		charList = [...langs[lang].symbol]
         if (total > 0) stats += ', '
         stats += charList.length + ' <a onclick="getAll(\'symbolCell\');return false;" style="cursor:pointer;">symbols</a>'
@@ -358,6 +365,7 @@ function showLanguage (lang) {
 		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].symbol+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
 	if (langs[lang].other) {
+		cumulative += langs[lang].other
 		charList = [...langs[lang].other]
         if (total > 0) stats += ', '
         stats += charList.length + ' other'
@@ -435,7 +443,14 @@ function showLanguage (lang) {
 	out += stats
 	
 	// change font
-	out += '<th></th><td style="border: 0; padding-top:0; font-size: 70%;font-style: italic;line-height: 1;color: gray;">Change font to <input id="fontChange" onChange="setFont(this.value)" type="text" style="border-radius: 5px; border: 1px solid #ccc;"/></td>'
+	out += '<th></th><td style="border: 0; padding-top:0; font-size: 70%;font-style: italic;line-height: 1;color: gray;">Change font to <input id="fontChange" onChange="setFont(this.value)" type="text" style="border-radius: 5px; border: 1px solid #ccc;"/>'
+	if (langs[lang].fonts) {
+		temp = [...cumulative]
+		parameter = temp.join(' ')
+		if (langs[lang].aux) parameter += "\n"+langs[lang].aux
+		out += ' &nbsp; <a target="_blank" href="'+langs[lang].fonts+'?showFonts=true&text='+parameter+'">Check for fonts</a>'
+		}
+	out += '</td>'
 	
 	// region
 	switch (langs[lang].region) {
