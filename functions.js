@@ -444,11 +444,16 @@ function showLanguage (lang) {
 	
 	// change font
 	out += '<th></th><td style="border: 0; padding-top:0; font-size: 70%;font-style: italic;line-height: 1;color: gray;">Change font to <input id="fontChange" onChange="setFont(this.value)" type="text" style="border-radius: 5px; border: 1px solid #ccc;"/>'
+	
+	temp = [...cumulative]
+	parameter = temp.join(' ')
+	out += ' •  &nbsp; <a target="_blank" href="../scripts/fontlist/newest?script='+langs[lang].script+'&text='+parameter+'">Show in font lister</a>'
+	
 	if (langs[lang].fonts) {
-		temp = [...cumulative]
-		parameter = temp.join(' ')
+	//	temp = [...cumulative]
+	//	parameter = temp.join(' ')
 		if (langs[lang].aux) parameter += "\n"+langs[lang].aux
-		out += ' &nbsp; <a target="_blank" href="'+langs[lang].fonts+'?showFonts=true&text='+parameter+'">Check for fonts</a>'
+		out += ' •  &nbsp; <a target="_blank" href="'+langs[lang].fonts+'?showFonts=true&text='+parameter+'">Show in character app</a>'
 		}
 	out += '</td>'
 	
