@@ -447,7 +447,7 @@ function showLanguage (lang) {
 	
 	temp = [...cumulative]
 	parameter = temp.join(' ')
-	out += ' •  &nbsp; <a target="_blank" href="../scripts/fontlist/newest?script='+langs[lang].script+'&text='+parameter+'">Show in font lister</a>'
+	out += ' •  &nbsp; <a target="_blank" href="../scripts/fontlist/?script='+langs[lang].script+'&text='+parameter+'">Show in font lister</a>'
 	
 	if (langs[lang].fonts) {
 	//	temp = [...cumulative]
