@@ -703,8 +703,8 @@ fonts:"/pickers/hano/",
 orth:`Hanunoo &nbsp; Used widely for love songs &amp; correspondence.`,
 also:
 ['hnn-latn | latn | Primary.'],
-type:"abugida", cs:"no", gpos:"yes", mcchars:"no", matras: "no", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"",
-vowels:"matras",
+type:"abugida", cs:"no", gpos:"yes", mcchars:"no", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"",
+vowels:"vowel-signs, independent vowels",
 },
 
 "hns": { name:"Caribbean Hindustani (Sarnami Hindustani)", source:"udhr_hns", region:"carib", countries:"Suriname, Guyana, Trinidad &amp; Tobago", script:"latn", speakers:"166000", letter:"áêòíèàëÁÊÒÍÈÀË", mark:"́̂̀̈", punctuation:"‘’", local:"Sarnaanie Hiendoestaanie"},
