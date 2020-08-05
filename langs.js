@@ -689,7 +689,7 @@ fonts:"/pickers/deva-hi/"
 "hni": { name:"Hani", source:"udhr_hni", region:"easia", countries:"China, Vietnam", script:"ascii", speakers:"760000", local:"Ha Nhi", 
 orth:`[Latin] &nbsp; Ethnologue says that this orthography is pinyin-based, used in 1958–1964 and from 1982, experimental, used in education, literature, and media.`},
 
-"hnn-hano": {  name:"Hanunoo", source:"github", region:"oce", countries:"Philippines", script:"hano", speakers:"25000", letter:"ᜩᜦᜣᜪᜧᜤᜰᜱᜫᜨᜥᜯᜭᜮᜬᜠᜡᜢ", mark:"ᜲᜳ᜴", punctuation:"᜵᜶", local:"ᜱᜨᜳᜨᜳᜢ (Hanunó'o)",
+"hnn-hano": {  name:"Hanunoo", source:"f9d39cb72f3eca8fa47b766a6fdb42797b8390f9", region:"oce", countries:"Philippines", script:"hano", speakers:"25000", letter:"ᜩᜦᜣᜪᜧᜤᜰᜱᜫᜨᜥᜯᜭᜮᜬᜠᜡᜢ", mark:"ᜲᜳ᜴", punctuation:"᜵᜶", local:"ᜱᜨᜳᜨᜳᜢ (Hanunó'o)",
 fonts:"/pickers/hano/",
 orth:`Hanunoo &nbsp; Used widely for love songs &amp; correspondence.`,
 also:
