@@ -689,6 +689,15 @@ fonts:"/pickers/deva-hi/"
 "hni": { name:"Hani", source:"udhr_hni", region:"easia", countries:"China, Vietnam", script:"ascii", speakers:"760000", local:"Ha Nhi", 
 orth:`[Latin] &nbsp; Ethnologue says that this orthography is pinyin-based, used in 1958–1964 and from 1982, experimental, used in education, literature, and media.`},
 
+"hnn-hano": { name:"Hanunoo", source:"github", region:"oce", countries:"Philippines", script:"hano", speakers:"25000", letter:"ᜩᜦᜣᜪᜧᜤᜰᜱᜫᜨᜥᜯᜭᜮᜬᜠᜡᜢ", mark:"ᜲᜳ᜴", punctuation:"᜵᜶", local:"ᜱᜨᜳᜨᜳᜢ (Hanunó'o)",
+fonts:"/pickers/hano/",
+orth:`Hanunoo &nbsp; Used widely for love songs &amp; correspondence.`,
+also:
+['hnn-latn | latn | Primary.'],
+type:"abugida", cs:"no", gpos:"yes", mcchars:"no", matras: "no", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"",
+vowels:"matras",
+},
+
 "hns": { name:"Caribbean Hindustani (Sarnami Hindustani)", source:"udhr_hns", region:"carib", countries:"Suriname, Guyana, Trinidad &amp; Tobago", script:"latn", speakers:"166000", letter:"áêòíèàëÁÊÒÍÈÀË", mark:"́̂̀̈", punctuation:"‘’", local:"Sarnaanie Hiendoestaanie"},
 
 "hr": { name:"Croatian", silcode:"hrv", source:"cldr_hr,udhr_hrv", region:"eur", countries:"Croatia, Slovenia, Bosnia &amp; Herzegovina, Austria, Hungary", script:"latn", speakers:"5600000", letter:"čćžđšČĆŽĐŠ", mark:"̌́", punctuation:"‐–—…‘’‚“”„′″", local:"Hrvatski", 
