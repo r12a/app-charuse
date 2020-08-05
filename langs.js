@@ -193,6 +193,15 @@ Legacy applications often use bik rather than [bcl].`},
 
 "bin": { name:"Edo (Bini)", source:"udhr_bin,5d2167e3d40aca7074b7d33835b1aa93e09cc088", region:"afr", countries:"Nigeria", script:"ascii", speakers:"1000000", letter:"ÀÁÈÉÌÍÒÓÙÚàáèéìíòóùúẸẹỌọ", mark:"̣̀́", local:"Ẹ̀dó", notes:"Acute and grave accents are used for tones, but the source didn't explicitly list all possible combinations, so the list of precomposed characters shown with those accents is a guess."},
 
+"bku-buhd": {  name:"Buhid (Bangon, Batangan, Buhid-Mangyan, Bukil)", source:"tbd", region:"oce", countries:"Philippines", script:"buhd", speakers:"11600", letter:"ᝉᝆᝃᝊᝇᝄᝐᝑᝋᝈᝅᝏᝍᝎᝌᝀᝁᝂ", mark:"ᝒᝓ", punctuation:"᜵᜶", local:"ᝊᝓᝑᝒ (Buhid)",
+fonts:"/pickers/buhd/",
+orth:`Buhid &nbsp;`,
+also:
+['bku | latn | Primary.'],
+type:"abugida", cs:"no", gpos:"yes", mcchars:"no", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"",
+vowels:"vowel-signs, independent vowels",
+},
+
 "blt": { name:"Tai Dam (Black Tai)", source:"udhr_blt,a220b3a422c42646d07427217c800b9d9663991f", region:"seasia", countries:"Vietnam, Laos, China", script:"tavt", speakers:"760000", letter:"ꪀꪁꪂꪃꪄꪅꪆꪇꪈꪉꪊꪋꪌꪍꪎꪏꪐꪑꪒꪓꪔꪕꪖꪗꪘꪙꪚꪛꪜꪝꪞꪟꪠꪡꪢꪣꪤꪥꪦꪧꪨꪩꪪꪫꪬꪭꪮꪯꪱꪵꪶꪹꪺꪻꪼꪽꫀꫂꫛꫜꫝ", mark:"ꪴꪰꪲꪳꪷꪸꪾ꪿꫁", aux:"꫞꫟", local:"ꪼꪕꪒꪾ (tai dam)", 
 orth:`Tai Viet &nbsp;  
 <a href="../scripts/taiviet/" target="_blank">Detailed summary</a>.`,
