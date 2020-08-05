@@ -193,7 +193,7 @@ Legacy applications often use bik rather than [bcl].`},
 
 "bin": { name:"Edo (Bini)", source:"udhr_bin,5d2167e3d40aca7074b7d33835b1aa93e09cc088", region:"afr", countries:"Nigeria", script:"ascii", speakers:"1000000", letter:"ÀÁÈÉÌÍÒÓÙÚàáèéìíòóùúẸẹỌọ", mark:"̣̀́", local:"Ẹ̀dó", notes:"Acute and grave accents are used for tones, but the source didn't explicitly list all possible combinations, so the list of precomposed characters shown with those accents is a guess."},
 
-"bku-buhd": {  name:"Buhid (Bangon, Batangan, Buhid-Mangyan, Bukil)", source:"tbd", region:"oce", countries:"Philippines", script:"buhd", speakers:"11600", letter:"ᝉᝆᝃᝊᝇᝄᝐᝑᝋᝈᝅᝏᝍᝎᝌᝀᝁᝂ", mark:"ᝒᝓ", punctuation:"᜵᜶", local:"ᝊᝓᝑᝒ (Buhid)",
+"bku-buhd": {  name:"Buhid (Bangon, Batangan, Buhid-Mangyan, Bukil)", source:"3bd5a62d6d969a796148fc6c805c3eb8ac27e52d", region:"oce", countries:"Philippines", script:"buhd", speakers:"11600", letter:"ᝉᝆᝃᝊᝇᝄᝐᝑᝋᝈᝅᝏᝍᝎᝌᝀᝁᝂ", mark:"ᝒᝓ", punctuation:"᜵᜶", local:"ᝊᝓᝑᝒ (Buhid)",
 fonts:"/pickers/buhd/",
 orth:`Buhid &nbsp;`,
 also:
