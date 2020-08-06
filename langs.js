@@ -1657,7 +1657,7 @@ fonts:"/pickers/tamil/"
 
 "tbz": { name:"Ditammari (Tammari)", source:"udhr_tbz", region:"afr", countries:"Benin, Togo", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"̃́̀", local:"Ditammari"},
 
-"tbw-tagb": { name:"Tagbanwa (Aborlan Tagbanwa, Apurawnon, Tagbanua)", source:"tbd", region:"oce", countries:"Philippines", script:"tagb", speakers:"17200", letter:"ᝩᝦᝣᝪᝧᝤᝰᝫᝨᝥᝯᝮᝬᝠᝡᝢ", mark:"ᝲᝳ", punctuation:"᜵᜶", local:"Tagbanwa",
+"tbw-tagb": { name:"Tagbanwa (Aborlan Tagbanwa, Apurawnon, Tagbanua)", source:"09633b7f41ba0964afe7ba85e2a36b37ceff58b7", region:"oce", countries:"Philippines", script:"tagb", speakers:"17200", letter:"ᝩᝦᝣᝪᝧᝤᝰᝫᝨᝥᝯᝮᝬᝠᝡᝢ", mark:"ᝲᝳ", punctuation:"᜵᜶", local:"ᝦᝪᝯ (Tagbanwa)",
 fonts:"/pickers/tagb/",
 orth:`Tagbanwa &nbsp;`,
 also:
