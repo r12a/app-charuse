@@ -1657,6 +1657,15 @@ fonts:"/pickers/tamil/"
 
 "tbz": { name:"Ditammari (Tammari)", source:"udhr_tbz", region:"afr", countries:"Benin, Togo", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"̃́̀", local:"Ditammari"},
 
+"tbw-tagb": { name:"Tagbanwa (Aborlan Tagbanwa, Apurawnon, Tagbanua)", source:"tbd", region:"oce", countries:"Philippines", script:"tagb", speakers:"17200", letter:"ᝩᝦᝣᝪᝧᝤᝰᝫᝨᝥᝯᝮᝬᝠᝡᝢ", mark:"ᝲᝳ", punctuation:"᜵᜶", local:"Tagbanwa",
+fonts:"/pickers/tagb/",
+orth:`Tagbanwa &nbsp;`,
+also:
+['tbw | latn | Primary.'],
+type:"abugida", cs:"no", gpos:"yes", mcchars:"no", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"",
+vowels:"vowel-signs, independent vowels",
+},
+
 "tca": { name:"Ticuna (Tikuna)", source:"udhr_tca", region:"sam", countries:"Brazil, Colombia, Peru", script:"latn", speakers:"47000", letter:"üéãñõúáíóÜÉÃÑÕÚÁÍÓĩũĨŨẽṯḏṉẼṮḎṈ", mark:"̱̃́̈͟", local:"ticunagaxũ"},
 
 "tdd": { name:"Tai Nüa (Nɯa, Dehong Dai, Chinese Shan, Tai Mau, Tai Kong)", source:"7bbb60b1ae185293cf14c8d8088e14351477c26b", region:"seasia", countries:"China, Myanmar, Vietnam, Laos", script:"tale", speakers:"720000", letter:"ᥐᥑᥒᥓᥔᥕᥖᥗᥘᥙᥚᥛᥜᥝᥞᥟᥠᥡᥢᥣᥤᥥᥦᥧᥨᥩᥪᥫᥬᥭᥰᥱᥲᥳᥴ", aux:"၀၁၂၃၄၅၆၇၈၉̀́̇̈̌",
