@@ -421,7 +421,7 @@ Legacy applications often use cr rather than [cwd].`},
 
 "cri": { name:"Sãotomense (Forro Creole, Santomense)", source:"udhr_007", region:"afr", countries:"São Tomé e Príncipe", script:"latn", speakers:"70000", letter:"çóêéáâôºíÇÓÊÉÁÂÔÍ", mark:"̧́̂", notes:`Wikipedia says that there is no standard orthography, and Ethnologue says that the language is unwritten.`},
 
-"crk": { name:"Plains Cree (Western Cree)", source:"3cc72e78bdfa007c9612513a501835f81aa20ff2", region:"nam", countries:"Canada", script:"cans", speakers:"3170", letter:"ᐍᐏᐑᐓᐕᐘᐚᐯᐱᐲᐳᐴᐸᐹᐻᐽᐿᑁᑃᑅᑇᑌᑎᑏᑐᑑᑕᑖᑘᑚᑜᑞᑠᑢᑤᑫᑭᑮᑯᑰᑲᑳᑵᑷᑹᑻᑽᑿᒁᒉᒋᒌᒍᒎᒐᒑᒓᒕᒗᒙᒛᒝᒟᒣᒥᒦᒧᒨᒪᒫᒭᒯᒱᒳᒵᒷᒹᓀᓂᓃᓄᓅᓇᓈᓊᓌᓎᓭᓯᓰᓱᓲᓴᓵᓷᓹᓻᓽᓿᔁᔃᔦᔨᔩᔪᔫᔭᔮᔰᔲᔴᔶᔸᔺᔼᐄᐃᐅᐁᐆᐊᐋᑊᐟᐠᕽᐨᐢᒼᐣᐤᕀᣟᐦᕒᓬ", punctuation:"᙮᐀",  local:"ᓀᐦᐃᔭᐍᐏᐣ‎ (nēhiyawēwin)",
+"crk": { name: "Plains Cree (Western Cree)", source:"3cc72e78bdfa007c9612513a501835f81aa20ff2", region:"nam", countries:"Canada", script:"cans", speakers:"3170", letter:"ᐍᐏᐑᐓᐕᐘᐚᐯᐱᐲᐳᐴᐸᐹᐻᐽᐿᑁᑃᑅᑇᑌᑎᑏᑐᑑᑕᑖᑘᑚᑜᑞᑠᑢᑤᑫᑭᑮᑯᑰᑲᑳᑵᑷᑹᑻᑽᑿᒁᒉᒋᒌᒍᒎᒐᒑᒓᒕᒗᒙᒛᒝᒟᒣᒥᒦᒧᒨᒪᒫᒭᒯᒱᒳᒵᒷᒹᓀᓂᓃᓄᓅᓇᓈᓊᓌᓎᓭᓯᓰᓱᓲᓴᓵᓷᓹᓻᓽᓿᔁᔃᔦᔨᔩᔪᔫᔭᔮᔰᔲᔴᔶᔸᔺᔼᐄᐃᐅᐁᐆᐊᐋᑊᐟᐠᕽᐨᐢᒼᐣᐤᕀᣟᐦᕒᓬ", punctuation:"᙮᐀",  local:"ᓀᐦᐃᔭᐍᐏᐣ‎ (nēhiyawēwin)",
 orth:`[UCAS] &nbsp; <a href="../scripts/cans/cans-crk" target="_blank">Details</a>`,
 also:
 ['crk-latn | latn | '],
