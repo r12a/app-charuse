@@ -153,7 +153,7 @@ orth:`Balinese. &nbsp;
 also:
 ['ban | latn | Used since early 20th century.',
 'ban-java | java | No longer in use.'],
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"syllable", hyphenation:"sp ᭠", justify:"none", linked:"balinese",
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no*/zwsp", baseline:"mid", wrap:"syllable", hyphenation:"sp ᭠", justify:"none", linked:"balinese",
 vowels:"1 inherent vowel, 11 vowel-signs, HA vowel-base, independent vowels, 3 circumgraphs, 2 prescripts",
 clusters:"virama-based conjuncts, stacking, conjoining",
 medials:"3 subjoined letters", finals:"3 cchars, letter+ADEG ADEG",
@@ -822,7 +822,7 @@ orth:`Javanese &nbsp; No longer in common use.
 <a href="../scripts/javanese" target="_blank">Details</a>.`,
 also:
 ['jv | latn | '],
-type:"abugida", cs:"yes*", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"syllable", hyphenation:"no/spꦺ", justify:"?", linked:"javanese",
+type:"abugida", cs:"yes*", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no*/zwsp", baseline:"mid", wrap:"syllable", hyphenation:"no/spꦺ", justify:"?", linked:"javanese",
 vowels:"vowel-signs, some independent vowels, 2 circumgraphs, 2 prescripts",
 vowels:"2 inherent vowels, 5 independent vowels, 5 vowel-signs, HA vowel-base, 1 prescript, 1 composite vowel, 2 vocalics",
 clusters:"virama-based conjuncts, stacking, conjoining, visible PANGKON",
@@ -921,7 +921,7 @@ also:
 
 "kkh": {  name:"Khün (Tai Khün)", source:"ce79bb6fd7d362af6b9792e580b42527805fe59c,udhr_kkh_lana", region:"seasia", countries:"Myanmar, Thailand", script:"lana", speakers:"100000", letter:"ᨠᨡᨣᨤᨥᨦᨧᨨᨩᨪᨫᨬᨭᨮᨯᨰᨱᨲᨳᨴᨵᨶᨷᨸᨹᨺᨻᨼᨽᨾᨿᩀᩁᩃᩅᩆᩇᩈᩉᩊᩋᩌᩍᩎᩏᩐᩑᩒᩓᩔᪧ", mark:"ᩕᩖᩘᩙᩛᩜᩝᩞ᩠ᩡᩢᩣᩤᩥᩦᩧᩨᩩᩪᩫᩬᩭᩮᩯᩰᩱᩳᩴ᩵᩶᩺᩼","number":"᪀᪁᪂᪃᪄᪅᪆᪇᪈᪉", punctuation:"᪨᪩᪪᪫", aux:"᩷᩸᩹᪐᪑᪒᪓᪔᪕᪖᪗᪘᪙᪠᪡᪢᪣᪤᪥᪦᪬᪭",
 orth:`Tai Tham. &nbsp;  <a href="../scripts/taitham/" target="_blank">Details</a>.`,
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"?", linked:"taitham",
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no*/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"?", linked:"taitham",
 vowels:"1 inherent vowel, 7 independent vowels, 18 vowel-signs, A vowel-base, 4 prescripts, 25 composite vowels",
 clusters:"virama-based conjuncts, stacking",
 medials:"2 marks, 1 subjoined letter", finals:"7 marks, ordinary letters",
@@ -1310,7 +1310,7 @@ Legacy applications often use no rather than [nb].`},
 orth:`Tai Tham. &nbsp; Limited usage. <a href="../scripts/taitham/northernthai" target="_blank">Details</a>.`,
 also:
 ['nod-thai | thai | '],
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"?", linked:"taitham/northernthai",
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no*/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"?", linked:"taitham/northernthai",
 vowels:"1 inherent vowel, 18 vowel-signs, A vowel-base, some independent vowels, 5 prescripts, 29 composite vowels",
 clusters:"stacking", medials:"2 cchars, 1 subjoined letter", finals:"6 cchars, ordinary letters"
 },
