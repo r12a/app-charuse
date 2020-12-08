@@ -429,7 +429,7 @@ type:"syllabary", cs:"no", gpos:"no", mcchars:"no", gsub:"no", cursive:"no", dir
 vowels:"7 syllables",
 clusters:"superscripts", medials:"", finals:"superscripts",
 fonts:"/pickers/cans-crk/",
-linked:"cans-crk",
+linked:"cans/cans-crk",
 },
 
 "crs": { name:"Seychellois Creole (Seselwa)", source:"udhr_crs", region:"afr", countries:"Seychelles", script:"latn", speakers:"73000", letter:"íÍ", mark:"́", punctuation:"’", local:"kreol, seselwa"},
