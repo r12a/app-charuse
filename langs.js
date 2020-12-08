@@ -421,6 +421,17 @@ Legacy applications often use cr rather than [cwd].`},
 
 "cri": { name:"Sãotomense (Forro Creole, Santomense)", source:"udhr_007", region:"afr", countries:"São Tomé e Príncipe", script:"latn", speakers:"70000", letter:"çóêéáâôºíÇÓÊÉÁÂÔÍ", mark:"̧́̂", notes:`Wikipedia says that there is no standard orthography, and Ethnologue says that the language is unwritten.`},
 
+"crk": { name:"Plains Cree (Western Cree)", source:"3cc72e78bdfa007c9612513a501835f81aa20ff2", region:"nam", countries:"Canada", script:"cans", speakers:"3170", letter:"ᐍᐏᐑᐓᐕᐘᐚᐯᐱᐲᐳᐴᐸᐹᐻᐽᐿᑁᑃᑅᑇᑌᑎᑏᑐᑑᑕᑖᑘᑚᑜᑞᑠᑢᑤᑫᑭᑮᑯᑰᑲᑳᑵᑷᑹᑻᑽᑿᒁᒉᒋᒌᒍᒎᒐᒑᒓᒕᒗᒙᒛᒝᒟᒣᒥᒦᒧᒨᒪᒫᒭᒯᒱᒳᒵᒷᒹᓀᓂᓃᓄᓅᓇᓈᓊᓌᓎᓭᓯᓰᓱᓲᓴᓵᓷᓹᓻᓽᓿᔁᔃᔦᔨᔩᔪᔫᔭᔮᔰᔲᔴᔶᔸᔺᔼᐄᐃᐅᐁᐆᐊᐋᑊᐟᐠᕽᐨᐢᒼᐣᐤᕀᣟᐦᕒᓬ", punctuation:"᙮᐀",  local:"ᓀᐦᐃᔭᐍᐏᐣ‎ (nēhiyawēwin)",
+orth:`[UCAS] &nbsp; <a href="../scripts/cans/cans-crk" target="_blank">Details</a>`,
+also:
+['crk-latn | latn | '],
+type:"syllabary", cs:"no", gpos:"no", mcchars:"no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"space",
+vowels:"7 syllables",
+clusters:"superscripts", medials:"", finals:"superscripts",
+fonts:"/pickers/cans-crk/",
+linked:"cans-crk",
+},
+
 "crs": { name:"Seychellois Creole (Seselwa)", source:"udhr_crs", region:"afr", countries:"Seychelles", script:"latn", speakers:"73000", letter:"íÍ", mark:"́", punctuation:"’", local:"kreol, seselwa"},
 
 "cs": { name:"Czech (Bohemian)", silcode:"ces", source:"cldr_cs,udhr_ces", region:"eur", countries:"Czech Republic, Slovakia, USA, Serbia, Austria", script:"latn", speakers:"10700000", letter:"áéíóúýÁÉÍÓÚÝčďěňřšťůžČĎĚŇŘŠŤŮŽ", mark:"́̌̊", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīľłŏōœŕŭūĂĀĔĒĬĪĽŁŎŌŒŔŬŪŸàâåäãæçèêëìîïñòôöøùûüÿÀÂÅÄÃÆÇÈÊËÌÎÏÑÒÔÖØÙÛǛ̧̆̂̈̃̄", local:"čeština [ˈtʃɛʃcɪna]"},
