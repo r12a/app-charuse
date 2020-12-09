@@ -156,7 +156,7 @@ also:
 type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no*/zwsp", baseline:"mid", wrap:"syllable", hyphenation:"sp ᭠", justify:"none", linked:"balinese",
 vowels:"1 inherent vowel, 11 vowel-signs, HA vowel-base, independent vowels, 3 circumgraphs, 2 prescripts",
 clusters:"virama-based conjuncts, stacking, conjoining",
-medials:"3 subjoined letters", finals:"3 cchars, letter+ADEG ADEG",
+medials:"3 subjoined letters", finals:"3 marks, letter+ADEG ADEG",
 },
 
 "bas": { name:"Basaa (Bassa, Basa, Bissa, Mbene)", source:"cldr_bas", region:"afr", countries:"Cameroon", script:"latn", speakers:"300000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǎǐǹǒǔǍƁƐǏǸǑƆǓāěēīńŋōūĀĚĒĪŃŊŌŪɓɛɔ", mark:"᷆᷇́̀̂̌̄", local:"ɓasaá",
@@ -1322,8 +1322,8 @@ orth:`Tai Tham. &nbsp; Limited usage. <a href="../scripts/taitham/northernthai" 
 also:
 ['nod-thai | thai | '],
 type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no*/zwsp", baseline:"mid", wrap:"word", hyphenation:"no", justify:"?", linked:"taitham/northernthai",
-vowels:"1 inherent vowel, 18 vowel-signs, A vowel-base, some independent vowels, 5 prescripts, 29 composite vowels",
-clusters:"stacking", medials:"2 cchars, 1 subjoined letter", finals:"6 cchars, ordinary letters"
+vowels:"1 inherent vowel, 18 vowel-signs, A vowel-base, 6 independent vowels, 5 prescripts, 29 composite vowels",
+clusters:"virama-based conjuncts, stacking", medials:"2 marks, 1 subjoined letter", finals:"6 marks, ordinary letters"
 },
 
 "not": { name:"Nomatsiguenga", source:"udhr_not", region:"sam", countries:"Peru", script:"latn", speakers:"6500", letter:"ëíáóñËÍÁÓÑ", mark:"̈́̃", local:"Nomatsigenga"},
@@ -1333,7 +1333,7 @@ related:`Macrolanguage is Nepali [ne]. Legacy applications often use ne rather n
 
 "nqo": { name:"N’Ko (Kangbe)", rtl:true, source:"13c49deccb3837263a381fe75e79bab744b7a7e1", region:"afr", countries:"Guinea, Côte d'Ivoire, Mali", script:"nkoo", speakers:"0", letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mark:"߲߽߫߬߭߮߯߰߱߳","number":"߀߁߂߃߄߅߆߇߈߉", punctuation:"߷߸߹﴾﴿،؛؟⸜⸝", symbol:"߶߾߿", aux:"ߨߩߪ", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", local:"ߒߞߏ", 
 orth:`[N’Ko] &nbsp; This is a written, rather than spoken, language. Used as a koiné by speakers of Maninka, Bambara, Dyula and related dialects. See <a href="../scripts/nko" target="_blank">N’Ko</a>`,
-type:"alphabet", cs:"no", gpos:"yes", mcchars:"yes", matras: "no", gsub:"yes", cursive:"yes", dir:"rtl*", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"spaces+elongation", linked:"nko",
+type:"alphabet", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"yes", dir:"rtl*", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"spaces+elongation", linked:"nko",
 vowels:"7-10 letters",
 clusters:"DAGBASINNA diacritic", medials:"", finals:"",
 fonts:"/pickers/nko/"
