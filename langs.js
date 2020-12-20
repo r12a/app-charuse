@@ -154,7 +154,7 @@ also:
 ['ban | latn | Used since early 20th century.',
 'ban-java | java | No longer in use.'],
 type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no*/zwsp", baseline:"mid", wrap:"syllable", hyphenation:"sp ᭠", justify:"none", linked:"balinese",
-vowels:"1 inherent vowel, 11 vowel-signs, HA vowel-base, independent vowels, 3 circumgraphs, 2 prescripts",
+vowels:"1 inherent vowel, 11 vowel-signs, HA vowel-base, 10 independent vowels, 6 circumgraphs, 2 prescripts, 4 vocalics",
 clusters:"virama-based conjuncts, stacking, conjoining",
 medials:"3 subjoined letters", finals:"3 marks, letter+ADEG ADEG",
 },
