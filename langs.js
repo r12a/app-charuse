@@ -1036,7 +1036,7 @@ clusters:"diacritic", medials:"", finals:"",
 fonts:"/pickers/arab-ks/",
 },
 
-"ks-deva": { name:"Kashmiri (Koshur)", silcode:"kas", source:"fea49eb4a3c07e0bc940abe2516d385d48fb2a5c", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"पफबतथदटठडकखगचछजवसशहमनरलयइईॶॷउऊऎएॳॴऒओॵअआऐऔऋ", mark:"िीॖॗुूॆेऺऻॊोॏाैौृं़्ँ", punctuation:"।", aux:"\u095Bणञङभधढझघषकज", local:"कॉशुर‎ (Koshur)", 
+"ks-deva": {  name:"Kashmiri (Koshur)", silcode:"kas", source:"fea49eb4a3c07e0bc940abe2516d385d48fb2a5c", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"पफबतथदटठडकखगचछजवसशहमनरलयइईॶॷउऊऎएॳॴऒओॵअआऐऔऋ", mark:"िीॖॗुूॆेऺऻॊोॏाैौृं़्ँ", punctuation:"।", aux:"\u095Bणञङभधढझघषकज", local:"कॉशुर‎ (Koshur)", 
 notes:"Need clarity about use or not of Devanagari numbers.", 
 orth:`Devanagari. &nbsp; Associated with the Hindu Kashmiris. There were orthographic reforms in 1995, 2002, and 2009. This selection of characters reflects the latter.
 <a href="../scripts/devanagari/kashmiri" target="_blank">Detailed summary</a>.`,
