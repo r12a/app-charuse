@@ -1036,8 +1036,8 @@ clusters:"diacritic", medials:"", finals:"",
 fonts:"/pickers/arab-ks/",
 },
 
-"ks-deva": { name:"Kashmiri (Koshur)", silcode:"kas", source:"fea49eb4a3c07e0bc940abe2516d385d48fb2a5c", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"अआइईउऊऎएऐऒओऔकखगचछजटठडतथदनपफबमयरलवशसहॳॴॵॶॷ", mark:"ँंऺऻ़ािीुूॆेैॊोौ्ॏॖॗ", punctuation:"।", aux:"\u095B", local:"कॉशुर‎ (Koshur)", 
-notes:"Need clarity about use or not of Devanagari numbers, and non-ASCII punctuation.", 
+"ks-deva": { name:"Kashmiri (Koshur)", silcode:"kas", source:"fea49eb4a3c07e0bc940abe2516d385d48fb2a5c", region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", letter:"पफबतथदटठडकखगचछजवसशहमनरलयइईॶॷउऊऎएॳॴऒओॵअआऐऔऋ", mark:"िीॖॗुूॆेऺऻॊोॏाैौृं़्ँ", punctuation:"।", aux:"\u095Bणञङभधढझघषकज", local:"कॉशुर‎ (Koshur)", 
+notes:"Need clarity about use or not of Devanagari numbers.", 
 orth:`Devanagari. &nbsp; Associated with the Hindu Kashmiris. There were orthographic reforms in 1995, 2002, and 2009. This selection of characters reflects the latter.
 <a href="../scripts/devanagari/kashmiri" target="_blank">Detailed summary</a>.`,
 more:[
@@ -1046,9 +1046,8 @@ more:[
 ['ks-shrd','shrd','From 8thC, but no longer in use, except for religious ceremonies of the Kashmiri Pandits.']
 ],
 type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"high", wrap:"word", hyphenation:"?", justify:"spaces", linked:"devanagari/kashmiri",
-vowels:"vowel-signs, independent vowels, 1 prescript",
 vowels:"1 inherent vowel, 17 independent vowels, 16 vowel-signs, 1 prescript",
-clusters:"virama-based conjuncts, stacking, conjoining, ligation, ra special",
+clusters:"visible virama, virama-based conjuncts, stacking, conjoining, ligation, ra special",
 medials:"", finals:"1 mark",
 fonts:"/pickers/deva-ks/"
 },
