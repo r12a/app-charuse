@@ -833,7 +833,7 @@ orth:`Javanese &nbsp; No longer in common use.
 <a href="../scripts/javanese" target="_blank">Details</a>.`,
 also:
 ['jv | latn | '],
-type:"abugida", cs:"yes*", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no*/zwsp", baseline:"mid", wrap:"syllable", hyphenation:"(yes) ꦺ", justify:"?", linked:"javanese",
+type:"abugida", cs:"(yes)*", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"no*/zwsp", baseline:"mid", wrap:"syllable", hyphenation:"(yes) ꦺ", justify:"?", linked:"javanese",
 vowels:"vowel-signs, some independent vowels, 2 circumgraphs, 2 prescripts",
 vowels:"2 inherent vowels, 5 independent vowels, 5 vowel-signs, HA vowel-base, 1 prescript, 1 composite vowel, 2 vocalics",
 clusters:"virama-based conjuncts, stacking, conjoining, visible PANGKON",
@@ -846,7 +846,7 @@ orth:`[Georgian] &nbsp; Mkhedruli &amp; mtavruli. The mtavruli characters are li
 <a href="../scripts/georgian" target="_blank">Detailed summary</a>.`,
 also:
 ['ka-geok | geok | Asomtavruli &amp; nuskhuri, no longer in use except liturgically.'],
-type:"alphabet", cs:"yes", gpos:"no", mcchars:"no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes -", justify:"spaces", linked:"georgian",
+type:"alphabet", cs:"yes**", gpos:"no", mcchars:"no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes -", justify:"spaces", linked:"georgian",
 vowels:"5 letters",
 clusters:"", medials:"", finals:"",
 fonts:"/pickers/geor-ka/"
