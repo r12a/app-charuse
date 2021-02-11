@@ -766,7 +766,7 @@ related:`Macrolanguage is Serbo-Croatian [sh].`},
 related:`See also Western Armenian [hyw].`,
 orth:`Armenian. &nbsp;
 <a href="../scripts/armenian" target="_blank">Detailed summary</a>.`,
-type:"alphabet", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes ֊", justify:"spaces", linked:"armenian",
+type:"alphabet", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes ֊*", justify:"spaces", linked:"armenian",
 vowels:"8 letters",
 clusters:"", medials:"", finals:"",
 fonts:"/pickers/armenian/"
@@ -911,7 +911,7 @@ also:
 ['khk | cyrl | ',
 'khk-phag | phag | No longer in use.',
 'khk-tibt | tibt | No longer in use.'],
-type:"alphabet", cs:"no", gpos:"yes", mcchars:"no?", matras: "no", gsub:"yes", cursive:"yes", dir:"tblr", wordsep:"space", baseline:"vertical", wrap:"word", hyphenation:"yes ↵᠆", justify:"spaces", linked:"mongolian",
+type:"alphabet", cs:"no", gpos:"yes", mcchars:"no?", matras: "no", gsub:"yes", cursive:"yes", dir:"tblr", wordsep:"space", baseline:"vertical", wrap:"word", hyphenation:"yes ↵᠆*", justify:"spaces", linked:"mongolian",
 vowels:"8 letters",
 clusters:"", medials:"", finals:"",
 fonts:"/pickers/mongolian/"
@@ -1910,7 +1910,7 @@ orth:`Arabic. &nbsp; Naskh style. Official and primary use in China, also used i
 also:
 ['ug-latn | latn | Used in China and Turkey.',
 'ug-cyrl | cyrl | Used in Kazakhstan, previously used in China.'],
-type:"alphabet", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes ـ", justify:"spaces", 
+type:"alphabet", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes ـ*", justify:"spaces", 
 vowels:"8 letters",
 fonts:"/pickers/arab-ug/",
 linked:"arabic/uighur",
