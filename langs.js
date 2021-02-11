@@ -911,7 +911,7 @@ also:
 ['khk | cyrl | ',
 'khk-phag | phag | No longer in use.',
 'khk-tibt | tibt | No longer in use.'],
-type:"alphabet", cs:"no", gpos:"yes", mcchars:"no?", matras: "no", gsub:"yes", cursive:"yes", dir:"tblr", wordsep:"space", baseline:"vertical", wrap:"word", hyphenation:"?", justify:"spaces", linked:"mongolian",
+type:"alphabet", cs:"no", gpos:"yes", mcchars:"no?", matras: "no", gsub:"yes", cursive:"yes", dir:"tblr", wordsep:"space", baseline:"vertical", wrap:"word", hyphenation:"yes ↵᠆", justify:"spaces", linked:"mongolian",
 vowels:"8 letters",
 clusters:"", medials:"", finals:"",
 fonts:"/pickers/mongolian/"
