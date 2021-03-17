@@ -1294,7 +1294,7 @@ orth:`Arabic. &nbsp; Uses both nastaliq ([Aran]) and naskh styles.`},
 Legacy applications often use ne rather than [npi].
 `},
 
-"new": { name:"Newar (Newa Bhaye, Newaah Bhaae, Newaah Bhaaye, Newah, Newal Bhaye)", source:"", region:"sasia", countries:"Nepal", script:"newa", speakers:"861000", local:"नेवाः भाय्‎ (Newah Bhay), नेपाल भाषा‎ (Nepal Bhasa)",
+"new": {  name:"Newar (Newa Bhaye, Newaah Bhaae, Newaah Bhaaye, Newah, Newal Bhaye)", source:"", region:"sasia", countries:"Nepal", script:"newa", speakers:"861000", local:"नेवाः भाय्‎ (Newah Bhay), नेपाल भाषा‎ (Nepal Bhasa)",
 letter:"𑐎𑐐𑐟𑐨𑐖𑐬𑐴𑐥𑐧𑐦𑐡𑐠𑐢𑐏𑐑𑐔𑐕𑐗𑐳𑐩𑐪𑐣𑐤𑐒𑐰𑐮𑐯𑐫𑐭𑐂𑐃𑐄𑐅𑐊𑐌𑐀𑐁𑐋𑐍𑑉", mark:"𑐶𑐷𑐸𑐹𑐾𑑀𑐵𑐿𑑁𑑅𑑃𑑄𑑂", number:"𑑐𑑑𑑒𑑓𑑔𑑕𑑖𑑗𑑘𑑙", punctuation:"𑑋𑑌“”‘’", aux:"𑐚𑐜𑐛𑐝𑐱𑐲𑐞𑐘𑐙𑐓𑐆",
 orth:`Newa. &nbsp; Resurgent orthography. <a href="../scripts/newa" target="_blank">Details</a>.`,
 more:[
