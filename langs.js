@@ -1294,6 +1294,20 @@ orth:`Arabic. &nbsp; Uses both nastaliq ([Aran]) and naskh styles.`},
 Legacy applications often use ne rather than [npi].
 `},
 
+"new": { name:"Newar (Newa Bhaye, Newaah Bhaae, Newaah Bhaaye, Newah, Newal Bhaye)", source:"", region:"sasia", countries:"Nepal", script:"newa", speakers:"861000", local:"नेवाः भाय्‎ (Newah Bhay), नेपाल भाषा‎ (Nepal Bhasa)",
+letter:"𑐎𑐐𑐟𑐨𑐖𑐬𑐴𑐥𑐧𑐦𑐡𑐠𑐢𑐏𑐑𑐔𑐕𑐗𑐳𑐩𑐪𑐣𑐤𑐒𑐰𑐮𑐯𑐫𑐭𑐂𑐃𑐄𑐅𑐊𑐌𑐀𑐁𑐋𑐍𑑉", mark:"𑐶𑐷𑐸𑐹𑐾𑑀𑐵𑐿𑑁𑑅𑑃𑑄𑑂", number:"𑑐𑑑𑑒𑑓𑑔𑑕𑑖𑑗𑑘𑑙", punctuation:"𑑋𑑌“”‘’", aux:"𑐚𑐜𑐛𑐝𑐱𑐲𑐞𑐘𑐙𑐓𑐆",
+orth:`Newa. &nbsp; Resurgent orthography. <a href="../scripts/newa" target="_blank">Details</a>.`,
+more:[
+['new-deva','deva','Primary orthography in Nepal.'],
+],
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces", linked:"newa",
+vowels:"1 inherent vowel, 10 independent vowels, 9 vowel-signs, 1 prescript, 4 circumgraphs, 1 vocalic",
+clusters:"ligation, ra-special, virama-based conjuncts, visible virama",
+medials:"", finals:"ordinary letters, clusters",
+fonts:"/pickers/newa/"
+},
+
+
 "ng": { name:"Ndonga, (Oshindonga)", silcode:"ndo", source:"udhr_ndo", region:"afr", countries:"Namibia", script:"ascii", speakers:"810000", local:"Oshindonga, Oshiwambo"},
 
 "nio": { name:"Nganasan", source:"udhr_nio", region:"nasia", script:"cyrl", countries:"Russia", speakers:"130", letter:"нерәзытбуоясикаӈҫүдйхлмпвгөъцьчэщжюНЕРӘЗЫТБУОЯСИКАӇҪҮДЙХЛМПВГӨЪЦЬЧЭЩЖЮ", mark:"̆", punctuation:"”"},
@@ -1379,7 +1393,11 @@ Legacy applications often use om rather than [gaz].`},
 
 "ory": { name:"Odia (Oriya)", source:"cldr_or", region:"sasia", countries:"India", script:"orya", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"଼ଁଂଃାିୀୁୂୃେୈୋୌ୍ୖୗ","number":"୦୧୨୩୪୫୬୭୮୯", local:"ଓଡ଼ିଆ‎ (Oḍiā)", 
 related:`Macrolanguage is Oriya [or].`,
-type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces"
+type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces", linked:"oriya",
+vowels:"1 inherent vowel, 10 independent vowels, 9 vowel-signs, 1 prescript, 3 circumgraphs, 4 vocalics",
+clusters:"virama-based conjuncts, stacking, conjoining, ligation, ra special",
+medials:"", finals:"2 marks",
+fonts:"/pickers/orya/",
 },
 
 "osa": { name:"Osage (Wazhazhe)", source:"tbd", region:"nam", countries:"USA", script:"osge", speakers:"0", letter:"𐒰𐒱𐒲𐒳𐒴𐒵𐒶𐒷𐒸𐒹𐒺𐒻𐒼𐒽𐒾𐒿𐓀𐓁𐓂𐓃𐓄𐓅𐓆𐓇𐓈𐓉𐓊𐓋𐓌𐓍𐓎𐓏𐓐𐓑𐓒𐓓𐓘𐓙𐓚𐓛𐓜𐓝𐓞𐓟𐓠𐓡𐓢𐓣𐓤𐓥𐓦𐓧𐓨𐓩𐓪𐓫𐓬𐓭𐓮𐓯𐓰𐓱𐓲𐓳𐓴𐓵𐓶𐓷𐓸𐓹𐓺𐓻ʼ", mark:"̄́̋͘", number:"", punctuation:"", aux:"", local:"𐓏𐓘𐓻𐓘𐓻𐓟 𐓣𐓟",
@@ -1538,6 +1556,15 @@ also:
 "sah": { name:"Yakut (Sakha)", source:"cldr_sah,udhr_sah", region:"nasia", countries:"Russia", script:"cyrl", speakers:"450000", letter:"абгҕдьийклмнҥоөпрстуүхһчыэецязювщъжфАБГҔДЬИЙКЛМНҤОӨПРСТУҮХҺЧЫЭЕЦЯЗЮВЩЪЖФ", mark:"̆", aux:"веёжзфцшщъюяВЕЁЖЗФЦШЩЪЮЯ̈", local:"саха тыла‎ (Saxa tıla), сахалыы‎ (saȟalyy)"},
 
 "saq": { name:"Samburu", source:"cldr_saq", region:"afr", countries:"Kenya", script:"ascii", speakers:"240000"},
+
+"sat": {  name:"Santali (Santhali)", source:"tbd", region:"sasia", countries:"India, Bangladesh, Nepal", script:"olck", speakers:"7340000", letter:"ᱯᱵᱛᱫᱪᱰᱴᱡᱠᱜᱥᱦᱢᱱᱧᱬᱝᱣᱶᱨᱲᱞᱭᱤᱩᱮᱳᱚᱟᱹᱸᱺᱻᱽᱼᱷ", mark:"", number:"᱐᱑᱒᱓᱔᱕᱖᱗᱘᱙", punctuation:"᱾᱿“”‘’", aux:"", local:"ᱥᱟᱱᱛᱟᱲᱤ",
+orth:`Ol Chiki. &nbsp; <a href="../scripts/santali/" target="_blank">Details</a>.`,
+type:"alphabet", cs:"no", gpos:"no", mcchars:"no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces", linked:"santali",
+vowels:"6 letters, 3 digraphs",
+clusters:"none",
+medials:"", finals:"",
+fonts:"/pickers/olck/",
+},
 
 "sbp": { name:"Sangu (Kisangu, Kisango, Kirori, Eshisango, Rori, Sango)", source:"cldr_sbp", region:"afr", countries:"Tanzania", script:"ascii", speakers:"75000", local:"Shisango"},
 
