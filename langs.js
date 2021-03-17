@@ -1391,7 +1391,7 @@ Legacy applications often use om rather than [gaz].`},
 
 "or": { name:"Oriya (Odia)", silcode:"ori", redirect:true, source:"", region:"sasia", script:"macrolanguage", speakers:"", related:`or is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Odia, Oriya (individual language) [ory]<br/>Sambalpuri, Kosli [spv].`},
 
-"ory": { name:"Odia (Oriya)", source:"cldr_or", region:"sasia", countries:"India", script:"orya", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"଼ଁଂଃାିୀୁୂୃେୈୋୌ୍ୖୗ","number":"୦୧୨୩୪୫୬୭୮୯", local:"ଓଡ଼ିଆ‎ (Oḍiā)", 
+"ory": {  name:"Odia (Oriya)", source:"cldr_or", region:"sasia", countries:"India", script:"orya", speakers:"33000000", letter:"ଅଆଇଈଉଊଋଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯୟରଲଳଵୱଶଷସହ", mark:"଼ଁଂଃାିୀୁୂୃେୈୋୌ୍ୖୗ","number":"୦୧୨୩୪୫୬୭୮୯", local:"ଓଡ଼ିଆ‎ (Oḍiā)", 
 related:`Macrolanguage is Oriya [or].`,
 type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces", linked:"oriya",
 vowels:"1 inherent vowel, 10 independent vowels, 9 vowel-signs, 1 prescript, 3 circumgraphs, 4 vocalics",
