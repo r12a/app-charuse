@@ -1557,7 +1557,7 @@ also:
 
 "saq": { name:"Samburu", source:"cldr_saq", region:"afr", countries:"Kenya", script:"ascii", speakers:"240000"},
 
-"sat": {  name:"Santali (Santhali)", source:"tbd", region:"sasia", countries:"India, Bangladesh, Nepal", script:"olck", speakers:"7340000", letter:"ᱯᱵᱛᱫᱪᱰᱴᱡᱠᱜᱥᱦᱢᱱᱧᱬᱝᱣᱶᱨᱲᱞᱭᱤᱩᱮᱳᱚᱟᱹᱸᱺᱻᱽᱼᱷ", mark:"", number:"᱐᱑᱒᱓᱔᱕᱖᱗᱘᱙", punctuation:"᱾᱿“”‘’", aux:"", local:"ᱥᱟᱱᱛᱟᱲᱤ",
+"sat": {   name:"Santali (Santhali)", source:"tbd", region:"sasia", countries:"India, Bangladesh, Nepal", script:"olck", speakers:"7340000", letter:"ᱯᱵᱛᱫᱪᱰᱴᱡᱠᱜᱥᱦᱢᱱᱧᱬᱝᱣᱶᱨᱲᱞᱭᱤᱩᱮᱳᱚᱟᱹᱸᱺᱻᱽᱼᱷ", mark:"", number:"᱐᱑᱒᱓᱔᱕᱖᱗᱘᱙", punctuation:"᱾᱿“”‘’", aux:"", local:"ᱥᱟᱱᱛᱟᱲᱤ",
 orth:`Ol Chiki. &nbsp; <a href="../scripts/santali/" target="_blank">Details</a>.`,
 type:"alphabet", cs:"no", gpos:"no", mcchars:"no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces", linked:"santali",
 vowels:"6 letters, 3 digraphs",
