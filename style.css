@@ -91,6 +91,7 @@ button {
     line-height: 1.5em;
     padding: 5px;
     border: 1px solid #DDD;
+    color: chocolate;
 }
 
 #registryForm fieldset {
@@ -179,6 +180,7 @@ thead th { text-align: left; }
 	padding: 5px;
 	border: 1px solid #DDD;
 	width: 100%;
+    color: chocolate;
 	}
 /*.ulink {
 	float: right;
@@ -349,7 +351,15 @@ img {
     border: 0;
 	}
 
+#langDetails a {
+    min-width: .8em;
+    display: inline-block;
+    }
 
+#langDetails a:hover {
+    background-color: bisque;
+    border-radius: .1em;
+    }
 
 
 

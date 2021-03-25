@@ -1,3 +1,88 @@
+var scriptData = {
+'ascii':{ name:'ASCII only', block:"" },
+'adlm':{ name:'Adlam', block:"adlam" },
+'arab':{ name:'Arabic', block:"arabic" },
+'armn':{ name:'Armenian', block:"armenian" },
+'bali':{ name:'Balinese', block:"balinese" },
+'bamu':{ name:'Bamum', block:"bamum" },
+'bass':{ name:'Bassa Vah', block:"bassavah" },
+'beng':{ name:'Bengali (Bangla)', block:"bengali" },
+'bugi':{ name:'Buginese', block:"buginese" },
+'buhd':{ name:'Buhid', block:"" },
+'cakm':{ name:'Chakma', block:"" },
+'cans':{ name:'Canadian Syllabics', block:"cans" },
+'cher':{ name:'Cherokee', block:"cherokee" },
+'cyrl':{ name:'Cyrillic', block:"cyrillic" },
+'deva':{ name:'Devanagari', block:"devanagari" },
+'dsrt':{ name:'Deseret', block:"" },
+'elba':{ name:'Elbasan', block:"" },
+'ethi':{ name:'Ethiopic', block:"ethiopic" },
+'geok':{ name:'Khutsuri', block:"" },
+'geor':{ name:'Georgian', block:"georgian" },
+'glag':{ name:'Glagolitic', block:"" },
+'grek':{ name:'Greek', block:"greek" },
+'gujr':{ name:'Gujarati', block:"gujarati" },
+'guru':{ name:'Gurmukhi', block:"gurmukhi" },
+'hani':{ name:'Han', block:"" },
+'hano':{ name:'Hanunoo', block:"" },
+'hebr':{ name:'Hebrew', block:"hebrew" },
+'java':{ name:'Javanese', block:"javanese" },
+'khoj':{ name:'Khojki', block:"" },
+'khmr':{ name:'Khmer', block:"khmer" },
+'knda':{ name:'Kannada', block:"" },
+'kpel':{ name:'Kpelle', block:"" },
+'kthi':{ name:'Kaithi', block:"" },
+'lana':{ name:'Tai Tham', block:"taitham" },
+'laoo':{ name:'Lao', block:"lao" },
+'latn':{ name:'Latin', block:"latin" },
+'lisu':{ name:'Lisu', block:"lisu" },
+'mand':{ name:'Mandaic', block:"mandaic" },
+'marc':{ name:'Marchen', block:"" },
+'mend':{ name:'Mende Kikakui', block:"" },
+'mlym':{ name:'Malayalam', block:"malayalam" },
+'mong':{ name:'Mongolian', block:"mongolian" },
+'mymr':{ name:'Myanmar', block:"myanmar" },
+'nand':{ name:'Nandinagari', block:"" },
+'newa':{ name:'Newa', block:"newa" },
+'nkoo':{ name:'N’Ko', block:"nko" },
+'olck':{ name:'Ol Chiki', block:"santali" },
+'orya':{ name:'Oriya', block:"Oriya" },
+'ogam':{ name:'Ogham', block:"" },
+'osge':{ name:'Osage', block:"Osage" },
+'osma':{ name:'Osmanya', block:"" },
+'perm':{ name:'Old Permic', block:"" },
+'phag':{ name:'Phags-pa', block:"" },
+'rohg':{ name:'Hanifi Rohingya', block:"rohg" },
+'runr':{ name:'Runic', block:"runic" },
+'shrd':{ name:'Sharada', block:"" },
+'shaw':{ name:'Shavian', block:"" },
+'sinh':{ name:'Sinhala', block:"sinhala" },
+'sund':{ name:'Sundanese', block:"sundanese" },
+'syrc':{ name:'Syriac', block:"syriac" },
+'syrn':{ name:'Eastern Syriac', block:"syriac" },
+'syrj':{ name:'Western Syriac', block:"syriac" },
+'tagb':{ name:'Tagbanwa', block:"" },
+'taml':{ name:'Tamil', block:"tamil" },
+'tavt':{ name:'Tai Viet', block:"taiviet" },
+'tale':{ name:'Tai Le', block:"taile" },
+'talu':{ name:'New Tai Lü', block:"newtailue" },
+'telu':{ name:'Telugu', block:"telugu" },
+'tfng':{ name:'Tifinagh', block:"tifinagh" },
+'tglg':{ name:'Tagalog', block:"" },
+'thai':{ name:'Thai', block:"thai" },
+'thaa':{ name:'Thaana', block:"thaana" },
+'tibt':{ name:'Tibetan', block:"tibetan" },
+'tirh':{ name:'Tirhuta', block:"" },
+'vaii':{ name:'Vai', block:"vai" },
+'yiii':{ name:'Yi', block:"" },
+'macrolanguage':{ name:'Macrolanguage', block:"" },
+
+}
+
+
+
+
+
 function makeBCPList () {
 	//out = '<option value=""> </option>'
 	out = ''
@@ -296,7 +381,10 @@ function showLanguage (lang) {
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'+charList[j]+'</span> ' 
+			out += '<span title="'+name+'">'
+            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+			else out += charList[j]
+			out += '</span> ' 
 			}
 		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
@@ -314,7 +402,10 @@ function showLanguage (lang) {
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
+			out += '<span title="'+name+'">'
+            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+'\u00A0'+charList[j]+'</a>'
+			else out += '\u00A0'+charList[j]
+			out += '</span> ' 
 			}
 		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
@@ -332,7 +423,10 @@ function showLanguage (lang) {
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
+			out += '<span title="'+name+'">'
+            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+			else out += charList[j]
+			out += '</span> ' 
 			}
 		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
@@ -349,7 +443,10 @@ function showLanguage (lang) {
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
+			out += '<span title="'+name+'">'
+            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+			else out += charList[j]
+			out += '</span> ' 
 			}
 		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].number+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
@@ -366,7 +463,10 @@ function showLanguage (lang) {
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
+			out += '<span title="'+name+'">'
+            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+			else out += charList[j]
+			out += '</span> ' 
 			}
 		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].symbol+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
@@ -401,7 +501,10 @@ function showLanguage (lang) {
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
+			out += '<span title="'+name+'">'
+            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+'\u00A0'+charList[j]+'</a>'
+			else out += '\u00A0'+charList[j]
+			out += '</span> ' 
 			}
 		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].aux+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
 		}
