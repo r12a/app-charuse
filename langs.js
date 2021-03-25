@@ -1504,7 +1504,7 @@ related:`Macrolanguage is Quechua [qu]. Legacy applications often use qu rather 
 
 "rar": { name:"Cook Islands Māori (Rarotongan)", source:"udhr_rar", region:"oce", countries:"Cook Islands", script:"ascii", speakers:"21725", local:"Te Reo Maori"},
 
-"rhg": { name:"Rohingya", dir:"rtl", source:"tbd", region:"seasia", countries:"Myanmar, Bangladesh, Thailand", script:"rohg", speakers:"2529250", letter:"ـ𐴀𐴁𐴂𐴃𐴄𐴅𐴆𐴇𐴈𐴉𐴊𐴌𐴍𐴎𐴏𐴐𐴑𐴒𐴓𐴔𐴕𐴖𐴗𐴘𐴙𐴚𐴛𐴝𐴞𐴟𐴠𐴡𐴢𐴣", mark:"𐴤𐴥𐴦𐴧", number:"𐴰𐴱𐴲𐴳𐴴𐴵𐴶𐴷𐴸𐴹", punctuation:"،؛۔؟“”‘’", local:"𐴌𐴟𐴇𐴥𐴝𐴚𐴒𐴙𐴝", 
+"rhg": { name:"Rohingya", dir:"rtl", source:"", region:"seasia", countries:"Myanmar, Bangladesh, Thailand", script:"rohg", speakers:"2529250", letter:"ـ𐴀𐴁𐴂𐴃𐴄𐴅𐴆𐴇𐴈𐴉𐴊𐴌𐴍𐴎𐴏𐴐𐴑𐴒𐴓𐴔𐴕𐴖𐴗𐴘𐴙𐴚𐴛𐴝𐴞𐴟𐴠𐴡𐴢𐴣", mark:"𐴤𐴥𐴦𐴧", number:"𐴰𐴱𐴲𐴳𐴴𐴵𐴶𐴷𐴸𐴹", punctuation:"،؛۔؟“”‘’", local:"𐴌𐴟𐴇𐴥𐴝𐴚𐴒𐴙𐴝", 
 orth:`Hanifi Rohingya. &nbsp; Developed in the 1980s by Mohammad Hanif and his colleagues. <a href="/scripts/rohg/">Details</a>.`,
 also:
 ['rhg-arab | arab | Developed in 1975 as an alternative to Myanmar script, but not completely successful. Also used prior to and during British rule.',
