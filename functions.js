@@ -27,6 +27,7 @@ var scriptData = {
 'hano':{ name:'Hanunoo', block:"" },
 'hebr':{ name:'Hebrew', block:"hebrew" },
 'java':{ name:'Javanese', block:"javanese" },
+'kali':{ name:'Kayah Li', block:"kali" },
 'khoj':{ name:'Khojki', block:"" },
 'khmr':{ name:'Khmer', block:"khmer" },
 'knda':{ name:'Kannada', block:"" },
@@ -160,7 +161,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], beng:[], bugi:[], buhd:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hano:[], hebr:[], java:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mong:[], mymr:[], talu:[], newa:[], nkoo:[], olck:[], orya:[], osge:[], rohg:[], shrd:[], sinh:[], sund:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tagb:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], beng:[], bugi:[], buhd:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hano:[], hebr:[], java:[], kali:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mong:[], mymr:[], talu:[], newa:[], nkoo:[], olck:[], orya:[], osge:[], rohg:[], shrd:[], sinh:[], sund:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tagb:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
@@ -210,6 +211,7 @@ function getScriptName (s) {
 		case 'hano': script = 'Hanunoo';break
 		case 'hebr': script = 'Hebrew';break
 		case 'java': script = 'Javanese';break
+		case 'kali': script = 'Kayah Li';break
 		case 'khoj': script = 'Khojki';break
 		case 'khmr': script = 'Khmer';break
 		case 'knda': script = 'Kannada';break

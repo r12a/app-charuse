@@ -1074,6 +1074,19 @@ also:
 'ky-latn | latn | Used in Turkey.',]
 },
 
+"kyu": { name:"Western Kayah (Karenni, Kayah, Red Karen, Yang Daeng)", source:"tbd", region:"seasia", countries:"Myanmar, Thailand", script:"kali", speakers:"170000", letter:"ꤟꤛꤕꤙꤖꤒꤘꤓꤊꤋꤌꤡꤠꤞꤎꤐꤏꤗꤔꤑꤍꤝꤚꤜꤢꤤꤥꤣ", mark:"ꤦꤧꤨꤩꤪ꤬꤫꤭", punctuation:"꤯“”꤮", number:"꤁꤂꤃꤄꤅꤆꤇꤈꤉꤀", local:"ꤊꤢ꤬ꤛꤢ꤭ꤜꤟꤤ꤬ ꤍꤟꤥ‎ (ka¹ya³li̤¹ ŋo̤)", 
+orth:`Kayah Li. &nbsp; Primary usage. Developed in 1962. <a href="../scripts/kali/" target="_blank">Details</a>.`,
+more:[
+['kyu-latn','latn','Preferred by Catholics.'],
+['kyu-mymr','mymr','Limited usage.']
+],
+type:"alphabet", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"?", linked:"kali/",
+vowels:"4 vowel letters, 5 vowel diacritics",
+clusters:"",
+medials:"", finals:"",
+fonts:"/pickers/kali/"
+},
+
 "lad": { name:"Ladino", source:"udhr_lad", region:"wasia", countries:"Israel, Turkey", script:"latn", speakers:"100000", letter:"íÍ", mark:"́", punctuation:"–", local:"גﬞודיאו־איספאנייול‎ (Djudeo-espanyol), לאדינו‎ (Ladino)", 
 orth:`Latin. &nbsp; Used in Turkey.`,
 also:
