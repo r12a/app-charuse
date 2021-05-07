@@ -1413,7 +1413,7 @@ medials:"", finals:"2 marks",
 fonts:"/pickers/orya/",
 },
 
-"osa": { name:"Osage (Wazhazhe)", source:"tbd", region:"nam", countries:"USA", script:"osge", speakers:"0", letter:"𐒰𐒱𐒲𐒳𐒴𐒵𐒶𐒷𐒸𐒹𐒺𐒻𐒼𐒽𐒾𐒿𐓀𐓁𐓂𐓃𐓄𐓅𐓆𐓇𐓈𐓉𐓊𐓋𐓌𐓍𐓎𐓏𐓐𐓑𐓒𐓓𐓘𐓙𐓚𐓛𐓜𐓝𐓞𐓟𐓠𐓡𐓢𐓣𐓤𐓥𐓦𐓧𐓨𐓩𐓪𐓫𐓬𐓭𐓮𐓯𐓰𐓱𐓲𐓳𐓴𐓵𐓶𐓷𐓸𐓹𐓺𐓻ʼ", mark:"̄́̋͘", number:"", punctuation:"", aux:"", local:"𐓏𐓘𐓻𐓘𐓻𐓟 𐓣𐓟",
+"osa": { name:"Osage (Wazhazhe)", source:"tbd", region:"nam", countries:"USA", script:"osge", speakers:"0", letter:"𐓄𐓬𐒴𐓜𐓈𐓰𐒼𐓤𐒾𐓦𐓊𐓲𐓌𐓴𐒵𐓝𐓍𐓵𐓆𐓮𐓒𐓺𐓇𐓯𐓓𐓻𐓐𐓸𐓑𐓹𐒹𐓡𐒺𐓢𐓀𐓨𐓁𐓩𐓏𐓷𐒿𐓧𐒻𐓣𐓎𐓶𐒷𐓟𐓂𐓪𐒳𐓛𐒰𐓘𐒱𐓙𐒸𐓠𐓃𐓫𐒲𐓚ʼ", mark: "͘", number:"", punctuation:"“”‘’‐–—…", aux:"𐓅𐓭𐓉𐓱𐒽𐓥𐓋𐓳𐒶𐓞́̄̋", local:"𐓏𐓘𐓻𐓘𐓻𐓟 𐓣𐓟",
 orth:`Osage. <a href="../scripts/osage" target="_blank">Details</a>. Standardised in 2015.`,
 also:
 ['osa-latn | latn | Non-standardised orthography.',],
