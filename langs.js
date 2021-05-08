@@ -66,7 +66,7 @@ orth:`Ethiopic. &nbsp;
 type:"syllabary", cs:"no", gpos:"no", mcchars:"no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space/wb፡", baseline:"mid", wrap:"word/char", hyphenation:"?", justify:"spaces/፡", linked:"ethiopic",
 vowels:"syllables",
 clusters:"", medials:"", finals:"",
-fonts:"/pickers/ethiopic/",
+fonts:"/pickers/ethi/",
 },
 
 "amc": { name:"Amahuaca (Amawaka, Amaguaco, Ameuhaque, Ipitineri, Sayaco)", source:"udhr_amc", region:"sam", countries:"Peru, Brazil", script:"latn", speakers:"310", letter:"óÓ", mark:"́", local:"Yora"},
@@ -87,7 +87,7 @@ orth:`Arabic. &nbsp; Naskh style. <a href="../scripts/arabic" target="_blank">De
 type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"no", justify:"spaces+elongation", linked:"arabic",
 vowels:"3-7 diacritics (hidden), 3 matres lectionis, 1 letter",
 clusters:"sukun diacritic", medials:"", finals:"",
-fonts:"/pickers/arabic/"
+fonts:"/pickers/arab-ar/"
 },
 
 "arl": { name:"Arabela (Chiripuno, Chiripunu)", source:"udhr_arl", region:"sam", countries:"Peru", script:"latn", speakers:"50", letter:"úÚ", mark:"́", punctuation:"¿", local:"Tapweyokwaka, Tapueyocaca"},
@@ -239,7 +239,7 @@ type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras:"yes", gsub:"yes", cu
 vowels:"2 inherent vowels, 10 independent vowels, 9 vowel-signs, 3 prescripts, 2 circumgraphs, 1 vocalic",
 clusters:"virama-based conjuncts, no indicator, stacking, conjoining, ligation, ra special",
 medials:"2 marks, 1 subjoined letter", finals:"2 marks, letter",
-fonts:"/pickers/bengali/"
+fonts:"/pickers/beng/"
 },
 
 "bo": { name:"Tibetan", silcode:"bod", source:"cldr_bo,udhr_bod,3d4a46a3bc9bb2a2c900adf645b07f641ef2c2bf", region:"easia", countries:"China, India", script:"tibt", speakers:"1200000", letter:"ཀཁགངཅཆཇཉཊཋཌཎཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤཥསཧཨཪ", mark:"ིེོུྐྑྒྔྕྖྗྙྚྛྜྞྟྠྡྣྤྥྦྨྩྪྫྭྮྯྰྱྲླྴྵྶྷྸྺྻྼ", punctuation:"༄༅༈་༌།༎","number":"༠༡༢༣༤༥༦༧༨༩", aux:"ༀ", local:"བོད་སྐད་ (Böké); ལྷ་སའི་སྐད་ (Lhaséké)", 
@@ -252,7 +252,7 @@ type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", di
 vowels:"1 inherent vowel, 4 vowel-signs, -A/A vowel-base",
 clusters:"stacking",
 medials:"", finals:"",
-fonts:"/pickers/tibetan/"
+fonts:"/pickers/tibt/"
 },
 
 "boa": { name:"Bora", source:"udhr_boa", region:"sam", countries:"Peru, Colombia", script:"latn", speakers:"2400", letter:"úáéñíóÚÁÉÑÍÓɨȉƗȈ", mark:"́̃̏", local:"Meamuyna"},
@@ -375,7 +375,7 @@ also:
 type:"syllabary", cs:"yes", gpos:"no", mcchars:"no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces", linked:"cherokee",
 vowels:"6 syllables",
 clusters:"", medials:"", finals:"",
-fonts:"/pickers/cherokee/",
+fonts:"/pickers/cher/",
 },
 
 "cic": { name:"Chickasaw", source:"udhr_cic,f258793e409fd555ca28c242b449ca206a0bd6c0", region:"nam", countries:"USA", script:"latn", speakers:"75", letter:"óáíÓÁÍ", mark:"̱́", punctuation:"—", local:"Chikashshanompa' [tʃikaʃːanompaʔ]", notes:`U+0331 COMBINING MACRON BELOW is used with a and o, for which there are no precomposed characters.`},
@@ -498,7 +498,7 @@ also:
 type:"alphabet", cs:"no", gpos:"no", mcchars:"no", gsub:"no", cursive:"no", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces", linked:"thaana",
 vowels:"10 diacritics, A vowel-base",
 clusters:"sukun", medials:"", finals:"",
-fonts:"/pickers/thaana/",
+fonts:"/pickers/thaa/",
 },
 
 "dyo": { name:"Jola-Fonyi", source:"cldr_dyo,udhr_dyo,cd01ae44156075d3e8aa249200adf6c04edb6acb", region:"afr", script:"latn", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"́̃̀", punctuation:"“”‰", symbol:"°", countries:"Senegal, Gambia", local:"Jóola-Fóoñi, kújoolaay", 
@@ -534,7 +534,7 @@ also:
 type:"alphabet", cs:"yes", gpos:"no", mcchars:"no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes -", justify:"spaces", linked:"greek",
 vowels:"34 letters, 8 composite vowels (digraphs)",
 clusters:"", medials:"", finals:"",
-fonts:"/pickers/greek/"
+fonts:"/pickers/grek/"
 },
 
 "emk": { name:"Eastern Maninkakan", source:"udhr_emk", region:"afr", script:"latn", speakers:"5000000", letter:"ɲɛɔƝƐƆ", countries:"Guinea, Liberia, Mali, Sierra Leone", 
@@ -669,7 +669,7 @@ type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", di
 vowels:"1 inherent vowel, 12 independent vowels, 11 vowel-signs, 1 prescript, 2 vocalics",
 clusters:"virama-based conjuncts, stacking, conjoining, ligation, touching, ra special",
 medials:"", finals:"2 marks",
-fonts:"/pickers/gujarati/",
+fonts:"/pickers/gujr/",
 },
 
 "guc": { name:"Wayuu (Wayu, Wayúu, Guajiro, Wahiro)", source:"udhr_guc", region:"sam", countries:"Colombia, Venezuela", script:"latn", speakers:"437780", letter:"üñÜÑ", mark:"̈̃", local:"Wayuunaiki"},
@@ -714,7 +714,7 @@ orth:`Hebrew. &nbsp;  <a href="../scripts/hebrew" target="_blank">Details</a>.`,
 type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", gsub:"no", cursive:"no", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", justify:"spaces", linked:"hebrew",
 vowels:"11 diacritics (hidden), 4 matres lectionis",
 clusters:"", medials:"", finals:"",
-fonts:"/pickers/hebrew/",
+fonts:"/pickers/hebr/",
 },
 
 "hi": { name:"Hindi", silcode:"hin", source:"cldr_hi,udhr_hin,9d8e188be96400153901b55006feaaf9fd4bf3b1", region:"sasia", countries:"India, Nepal, Singapore, South Africa", script:"deva", speakers:"260000000", letter:"अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह\u{958}\u{959}\u{95A}\u{95B}\u{95C}\u{95D}\u{95E}", mark:"ँंः़ािीुूृेैोौ्", punctuation:"।॥॰‘’“”—","number":"०१२३४५६७८९", other:"‍‌", aux:"ऍऑऽॐॅॉ", local:" मानक हिन्दी‎ (Mānak Hindī), हिन्दी‎ (Hindī)", 
@@ -769,7 +769,7 @@ orth:`Armenian. &nbsp;
 type:"alphabet", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes ֊*", justify:"spaces", linked:"armenian",
 vowels:"8 letters",
 clusters:"", medials:"", finals:"",
-fonts:"/pickers/armenian/"
+fonts:"/pickers/armn/"
 },
 
 "ibb": { name:"Ibibio", source:"udhr_ibb", region:"afr", countries:"Nigeria", script:"latn", speakers:"2000000", letter:"ñÑ", mark:"̃", local:"Ibibio"},
@@ -838,7 +838,7 @@ vowels:"vowel-signs, some independent vowels, 2 circumgraphs, 2 prescripts",
 vowels:"2 inherent vowels, 5 independent vowels, 5 vowel-signs, HA vowel-base, 1 prescript, 1 composite vowel, 2 vocalics",
 clusters:"virama-based conjuncts, stacking, conjoining, visible PANGKON",
 medials:"3 marks", finals:"4 marks, letter+PANGKON",
-fonts:"/pickers/javanese/",
+fonts:"/pickers/java/",
 },
 
 "ka": { name:"Georgian", silcode:"kat", source:"cldr_ka,udhr_kat,2cafedfc80733bd49fb1ee6af49657333a88c1a3", region:"eur", countries:"Georgia, Turkey, Iran", script:"geor", speakers:"3700000", letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ", punctuation:"჻«»§‐–—…‘‚“„†‡′″", symbol:"№", aux:"ᲐᲑᲒᲓᲔᲕᲖᲗᲘᲙᲚᲛᲜᲝᲞᲟᲠᲡᲢᲣᲤᲥᲦᲧᲨᲩᲪᲫᲬᲭᲮᲯᲰ", local:"ქართული‎ (Kartuli), ქართული ენა‎ (Kartuli ena)", 
@@ -914,7 +914,7 @@ also:
 type:"alphabet", cs:"no", gpos:"yes", mcchars:"no?", matras: "no", gsub:"yes", cursive:"yes", dir:"tblr", wordsep:"space", baseline:"vertical", wrap:"word", hyphenation:"yes ↵᠆*", justify:"spaces", linked:"mongolian",
 vowels:"8 letters",
 clusters:"", medials:"", finals:"",
-fonts:"/pickers/mongolian/"
+fonts:"/pickers/mong/"
 },
 
 "khq": { name:"Koyra Chiini (Western Songhay)", source:"cldr_khq", region:"afr", countries:"Mali", script:"latn", speakers:"200000", letter:"ãõÃÕƝŋšžŊŠŽẽẼɲ", mark:"̃̌"},
@@ -1227,7 +1227,7 @@ orth:`Mandaic. &nbsp;  <a href="../scripts/mandaic" target="_blank">Details</a>.
 type:"alphabet", cs:"no", gpos:"yes", mcchars:"no", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces+elongation", linked:"mandaic",
 vowels:"4 letters",
 clusters:"", medials:"", finals:"",
-fonts:"/pickers/mandaic/",
+fonts:"/pickers/mand/",
 },
 
 "min": { name:"Minangkabau", source:"udhr_min", region:"seasia", countries:"Indonesia", script:"ascii", speakers:"5500000", 
@@ -1247,7 +1247,7 @@ type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", c
 vowels:"1 inherent vowel, 12 independent vowels, 12 vowel-signs, 3 prescripts, 3 circumgraphs, 4 vocalics",
 clusters:"virama-based conjuncts, stacking, conjoining, chillus, visible chandrakkala, ra special",
 medials:"", finals:"2 marks, ordinary letters, chillu forms",
-fonts:"/pickers/malayalam/"
+fonts:"/pickers/mlym/"
 },
 
 "mn": { name:"Mongolian", silcode:"mon", redirect:true, region:"easia", script:"macrolanguage", speakers:"?", related:`mn is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Halh Mongolian [khk]<br/>Peripheral Mongolian [mvf].
@@ -1283,7 +1283,7 @@ type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", c
 vowels:"1 inherent vowel, 7 independent vowels, 8 vowel-signs, A vowel-base, 1 prescript, 6 composite vowels",
 clusters:"virama-based conjuncts, stacking",
 medials:"4 marks", finals:"1 mark, letter+ASAT",
-fonts:"/pickers/burmese/"
+fonts:"/pickers/mymr-my/"
 },
 
 "mzi": { name:"Ixcatlán Mazatec", source:"udhr_mzi", region:"cam", countries:"Mexico", script:"latn", speakers:"8600", letter:"áñíóéÁÑÍÓÉ", mark:"́̃", punctuation:"’", local:"En ningotsie"},
@@ -1437,7 +1437,7 @@ vowels:"vowel-signs, 1 prescript",
 vowels:"1 inherent vowel, 10 independent vowels, 9 vowel-signs, 1 prescript",
 clusters:"typically none, virama-based conjuncts, stacking, ra special",
 medials:"", finals:"1 mark, ordinary letters",
-fonts:"/pickers/gurmukhi/"
+fonts:"/pickers/guru/"
 },
 
 "pa-arab": { name:"Punjabi", silcode:"pan", rtl:true, source:"cldr_pa_Arab", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابتثجحخدذرزسشصضطظعغفقلمنهويٹپچڈڑژکگںھہیے", mark:"ُٓٔ", punctuation:"‰", other:"‎‏", aux:"أاةٔٺٻټٽ", 
@@ -1468,7 +1468,7 @@ orth:`Latin. &nbsp; Used since 2002.`},
 "pes": { name:"Persian (Farsi)", rtl:true, source:"cldr_fa,udhr_pes", region:"wasia", countries:"Iran, Iraq", script:"arab", speakers:"~50000000", letter:"ءآأؤئابتثجحخدذرزسشصضطظعغفقلمنهوپچژکگی", mark:"ًَِّٔ", punctuation:"٪؉،؛؟‰‐…‹›«»","number":"۰۱۲۳۴۵۶۷۸۹", symbol:"", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", aux:"ةيٌٍٕـُِْٰٖإكىٕ٫٬ٓ", local:" فارسی‎ (Fārsi)", 
 related:`Macrolanguage is Farsi [fa]. Legacy applications often use fa rather than pes.`,
 orth:`Arabic. &nbsp; Naskh style, but nastaliq ([Aran]) in Iran.`,
-fonts:"/pickers/persian/"
+fonts:"/pickers/arab-fa/"
 },
 
 "pis": { name:"Pijin", source:"udhr_pis", region:"oce", countries:"Solomon Islands", script:"ascii", speakers:"24000", local:"Pijin"},
@@ -1572,7 +1572,7 @@ orth:`Cyrillic. &nbsp;
 type:"alphabet", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes -", justify:"spaces", linked:"cyrillic",
 vowels:"11 letters",
 clusters:"", medials:"", finals:"",
-fonts:"/pickers/russian/"
+fonts:"/pickers/cyrl-ru/"
 },
 
 "rup": { name:"Aromanian", source:"udhr_rmy", region:"eur", countries:"Macedonia, Albania, Romania, Greece, Serbia, Bulgaria", script:"latn", speakers:"250000", letter:"ãâÃÂ", mark:"̃̂", local:"Armani", notes:`Caution: The UDHR source names this language as Aromanian, but uses a BCP47 code of [rmy], which is Vlax Romani.`, related:`Orthographies include:
@@ -1663,7 +1663,7 @@ type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", di
 vowels:"1 inherent vowel, 14 independent vowels, 13 vowel-signs, 1 prescript, 5 circumgraphs, 1 vocalic",
 clusters:"visible virama, virama-based conjuncts, virama+ZWJ, conjoining, touching, ra special",
 medials:"", finals:"2 marks, ordinary letters",
-fonts:"/pickers/sinhala/",
+fonts:"/pickers/sinh/",
 },
 
 "sja": { name:"Epena (Eperara)", source:"udhr_sja", region:"sam", countries:"Colombia", script:"ascii", speakers:"8300", local:"Epéna Pedée"},
@@ -1747,7 +1747,7 @@ type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"no", di
 vowels:"1 inherent vowel, 7 independent vowels, 6 vowel-signs, 1 prescript",
 clusters:"visible PAMAAEH",
 medials:"3 marks", finals:"3 marks, ordinary letters",
-fonts:"/pickers/sundanese/",
+fonts:"/pickers/sund/",
 },
 
 "suk": { name:"Sukuma", source:"udhr_suk", region:"afr", countries:"Tanzania", script:"ascii", speakers:"5400000", local:"Kisukuma"},
@@ -1794,7 +1794,7 @@ orth:`Modern Tamil. <a href="../scripts/tamil/" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", mcchars:"yes", matras: "yes", gsub:"yes", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes ∅", justify:"spaces+glyphs", linked:"tamil",
 vowels:"1 inherent vowel, 12 independent vowels, 11 vowel-signs, 3 prescripts, 3 circumgraphs",
 clusters:"visible virama", medials:"", finals:"",
-fonts:"/pickers/tamil/"
+fonts:"/pickers/taml/"
 },
 
 "tbz": { name:"Ditammari (Tammari)", source:"udhr_tbz", region:"afr", countries:"Benin, Togo", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"̃́̀", local:"Ditammari"},
@@ -1854,7 +1854,7 @@ fonts:"/pickers/thai/"
 
 "ti": { name:"Tigrinya", silcode:"tir", source:"cldr_ti,udhr_tir", region:"afr", countries:"Ethiopia, Eritrea", script:"ethi", speakers:"6900000", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍቐቑቒቓቔቕቖቘቚቛቜቝበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾዀዂዃዄዅወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ", mark:"፟", punctuation:"፣፡’", aux:"ሇቇኇኯዏዯዸዹዺዻዼዽዾዿጏጘጙጚጛጜጝጞጟፘፙፚⶀⶁⶂⶃⶄⶅⶆⶇⶈⶉⶊⶋⶌⶍⶎⶓⶔⶕⶖⶏⶐⶑⶒⶠⶡⶢⶣⶤⶥⶦⶨⶩⶪⶫⶬⶭⶮⶰⶱⶲⶳⶴⶵⶶⶸⶹⶺⶻⶼⶽⶾⷀⷁⷂⷃⷄⷅⷆⷈⷉⷊⷋⷌⷍⷎⷐⷑⷒⷓⷔⷕⷖⷘⷙⷚⷛⷜⷝⷞ᎐᎑᎒᎓᎔᎕᎖᎗᎘᎙ᎀᎁᎂᎃᎄᎅᎆᎇᎈᎉᎊᎋᎌᎍᎎᎏ", 
 orth:`Ethiopic. &nbsp; Used since 13th or 14th century.`,
-fonts:"/pickers/ethiopic/"
+fonts:"/pickers/ethi/"
 },
 
 "tiv": { name:"Tiv", source:"udhr_tiv", region:"afr", countries:"Nigeria", script:"latn", speakers:"2200000", letter:"ôÔ", mark:"̂", local:"Tiv", 
@@ -2000,7 +2000,7 @@ type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"yes", dir
 vowels:"hidden diacritics, matres lectionis",
 vowels:"4 matres lectionis, 12 diacritics",
 clusters:"", medials:"", finals:"",
-fonts:"/pickers/arabic/urdu"
+fonts:"/pickers/arab-ur/"
 },
 
 "ura": { name:"Urarina (Itucali, Simacu, Shimacu)", source:"udhr_ura", region:"sam", countries:"Peru", script:"latn", speakers:"6000", letter:"úóíÚÓÍ", mark:"́", local:"Oruarinya"},
@@ -2136,7 +2136,7 @@ orth:`Tifinagh. &nbsp;  <a href="../scripts/tifinagh/" target="_blank">Details</
 type:"alphabet", cs:"no", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr/rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces", linked:"tifinagh",
 vowels:"4 letters",
 clusters:"", medials:"", finals:"",
-fonts:"/pickers/neotifinagh/"
+fonts:"/pickers/tfng-ber/"
 },
 
 "zlm": { name:"Malay", source:"cldr_ms,udhr_mly_latn", region:"seasia", countries:"Malaysia, Indonesia, Singapore", script:"ascii", speakers:"77000000", local:"Bahasa Melayu", 
