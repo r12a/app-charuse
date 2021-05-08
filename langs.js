@@ -762,7 +762,7 @@ related:`Macrolanguage is Serbo-Croatian [sh].`},
 
 "huu": { name:"Murui Huitoto (Bue, Witoto Murui, Witoto)", source:"udhr_huu", region:"sam", countries:"Colombia, Peru", script:"latn", speakers:"7800", letter:"úñáÚÑÁƗɨ", mark:"́̃", local:"Murui"},
 
-"hy": { name:"Armenian", silcode:"hye", source:"ac321e266f0a5b1374f2b3889d418fc3399daf34,cldr_hy,udhr_hye", region:"wasia", countries:"Armenia, Russia, Azerbaijan, Iran", script:"armn", speakers:"10000000", letter:"աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքևօֆԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖ", punctuation:"֊՝՜՞՛։․«»", aux:"֍֎֏","deprecated":"ՙ՚", local:"հայերէն/հայերեն‎ (hayeren)", 
+"hy": { name:"Armenian", silcode:"hye", source:"ac321e266f0a5b1374f2b3889d418fc3399daf34,cldr_hy,udhr_hye", region:"wasia", countries:"Armenia, Russia, Azerbaijan, Iran", script:"armn", speakers:"10000000", letter:"աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքևօֆԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖ", punctuation:"֊՝՜՞՛։․«»‐’", aux:"֍֎֏","deprecated":"ՙ՚", local:"հայերէն/հայերեն‎ (hayeren)", 
 related:`See also Western Armenian [hyw].`,
 orth:`Armenian. &nbsp;
 <a href="../scripts/armenian" target="_blank">Detailed summary</a>.`,
