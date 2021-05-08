@@ -317,7 +317,17 @@ function findChars (str) {
 	}
 
 
-function getAll (which) { 
+function copyToClipboard (chars) { 
+	// copies characters to clipboard when you click on an icon	
+	document.getElementById('clipboardStore').value = chars
+	
+	document.getElementById('clipboardStore').focus()
+	document.getElementById('clipboardStore').select()
+	document.execCommand('copy')
+	}
+
+
+function getAllOLD (which) { 
 	// copies characters to clipboard when you click on the stats
 	if (which === 'total') {
 		out = ''
@@ -338,6 +348,21 @@ function getAll (which) {
 	document.getElementById('clipboardStore').focus()
 	document.getElementById('clipboardStore').select()
 	document.execCommand('copy')
+	}
+
+
+
+function getAll () { 
+	// returns a list of all characters except deprecated and infrequent
+    out = ''
+    if (document.getElementById('letterCell')) out += document.getElementById('letterCell').textContent
+    if (document.getElementById('markCell')) out += document.getElementById('markCell').textContent
+    if (document.getElementById('punctuationCell')) out += document.getElementById('punctuationCell').textContent
+    if (document.getElementById('numberCell')) out += document.getElementById('numberCell').textContent
+    if (document.getElementById('symbolCell')) out += document.getElementById('symbolCell').textContent
+    out = out.replace(/\s+/g,'')
+    
+    return out
 	}
 
 
@@ -374,9 +399,9 @@ function showLanguage (lang) {
 		cumulative += langs[lang].letter
 		charList = [...langs[lang].letter]
 		charList.sort()
-        stats += charList.length + ' <a onclick="getAll(\'letterCell\');return false;" style="cursor:pointer;">letters</a>'
+        stats += charList.length + ' letters'
         total += charList.length
-		out += '<tr><th>Letters</th><td class="large" id="letterCell"'
+		out += '<tr><th>Letters<br><span class="rowCount">'+charList.length+'</span></th><td class="large" id="letterCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
 		for (j=0;j<charList.length;j++) { 
@@ -388,16 +413,26 @@ function showLanguage (lang) {
 			else out += charList[j]
 			out += '</span> ' 
 			}
-		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+        out += '</td>'
+		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
+        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
+        out += `<div class="popup" style="position:absolute; right:0;">
+        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
+        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
+        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
+        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
+        out += '</div>'
+        out += '</td></tr>'
 		}
 	if (langs[lang].mark) {
 		cumulative += langs[lang].mark
 		charList = [...langs[lang].mark]
  		charList.sort()
         if (total > 0) stats += ', '
-        stats += charList.length + ' <a onclick="getAll(\'markCell\');return false;" style="cursor:pointer;">marks</a>'
+        stats += charList.length + ' marks'
         total += charList.length
-		out += '<tr><th>Marks</th><td class="large" id="markCell"'
+		out += '<tr><th>Marks<br><span class="rowCount">'+charList.length+'</span></th><td class="large" id="markCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
 		for (j=0;j<charList.length;j++) { 
@@ -409,16 +444,55 @@ function showLanguage (lang) {
 			else out += '\u00A0'+charList[j]
 			out += '</span> ' 
 			}
-		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td>'
+		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
+        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
+        out += `<div class="popup" style="position:absolute; right:0;">
+        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
+        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
+        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
+        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
+        out += '</div>'
+        out += '</td></tr>'
+		}
+	if (langs[lang].number) {
+		cumulative += langs[lang].number
+		charList = [...langs[lang].number]
+        if (total > 0) stats += ', '
+        stats += charList.length + ' numbers'
+        total += charList.length
+		out += '<tr><th>Numbers<br><span class="rowCount">'+charList.length+'</span></th><td class="large" id="numberCell"'
+		if (rtl) out += ' dir="rtl">'
+		else out += '>'
+		for (j=0;j<charList.length;j++)  { 
+			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+			while (cp.length<4) cp = '0'+cp
+			name = 'U+'+cp+' '+charData[charList[j]]
+			out += '<span title="'+name+'">'
+            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+			else out += charList[j]
+			out += '</span> ' 
+			}
+		out += '</td>'
+		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
+        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
+        out += `<div class="popup" style="position:absolute; right:0;">
+        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
+        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
+        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
+        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
+        out += '</div>'
 		}
 	if (langs[lang].punctuation) {
 		cumulative += langs[lang].punctuation
 		charList = [...langs[lang].punctuation]
  		charList.sort()
         if (total > 0) stats += ', '
-        stats += charList.length + ' <a onclick="getAll(\'punctuationCell\');return false;" style="cursor:pointer;">punctuation</a>'
+        stats += charList.length + ' punctuation'
         total += charList.length
-		out += '<tr><th>Punctuation</th><td class="large" id="punctuationCell"'
+		out += '<tr><th>Punctuation<br><span class="rowCount">'+charList.length+'</span></th><td class="large" id="punctuationCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
 		for (j=0;j<charList.length;j++)  { 
@@ -430,35 +504,24 @@ function showLanguage (lang) {
 			else out += charList[j]
 			out += '</span> ' 
 			}
-		out += '</td><td class="links"><a href="/uniview?charlist='+charList.join('')+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
-		}
-	if (langs[lang].number) {
-		cumulative += langs[lang].number
-		charList = [...langs[lang].number]
-        if (total > 0) stats += ', '
-        stats += charList.length + ' <a onclick="getAll(\'numberCell\');return false;" style="cursor:pointer;">numbers</a>'
-        total += charList.length
-		out += '<tr><th>Numbers</th><td class="large" id="numberCell"'
-		if (rtl) out += ' dir="rtl">'
-		else out += '>'
-		for (j=0;j<charList.length;j++)  { 
-			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = '0'+cp
-			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'
-            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
-			else out += charList[j]
-			out += '</span> ' 
-			}
-		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].number+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td>'
+		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
+        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
+        out += `<div class="popup" style="position:absolute; right:0;">
+        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
+        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
+        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
+        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
+        out += '</div>'
 		}
 	if (langs[lang].symbol) {
 		cumulative += langs[lang].symbol
 		charList = [...langs[lang].symbol]
         if (total > 0) stats += ', '
-        stats += charList.length + ' <a onclick="getAll(\'symbolCell\');return false;" style="cursor:pointer;">symbols</a>'
+        stats += charList.length + ' symbols'
         total += charList.length
-		out += '<tr><th>Symbols</th><td class="large" id="symbolCell"'
+		out += '<tr><th>Symbols<br><span class="rowCount">'+charList.length+'</span></th><td class="large" id="symbolCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
 		for (j=0;j<charList.length;j++)  { 
@@ -470,7 +533,16 @@ function showLanguage (lang) {
 			else out += charList[j]
 			out += '</span> ' 
 			}
-		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].symbol+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td>'
+		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
+        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
+        out += `<div class="popup" style="position:absolute; right:0;">
+        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
+        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
+        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
+        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
+        out += '</div>'
 		}
 	if (langs[lang].other) {
 		cumulative += langs[lang].other
@@ -478,7 +550,7 @@ function showLanguage (lang) {
         if (total > 0) stats += ', '
         stats += charList.length + ' other'
         total += charList.length
-		out += '<tr><th>Other</th><td class="other" id="otherCell">'
+		out += '<tr><th>Other<br><span class="rowCount">'+charList.length+'</span></th><td class="other" id="otherCell">'
 		//out += langs[lang].other
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
@@ -487,16 +559,25 @@ function showLanguage (lang) {
 			out += '<span title="'+name+'">U+'+cp+'</span> ' 
 			}
 		//for (j=0;j<charList.length;j++) out += charList[j].codepointAt(0)+' '
-		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].other+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td>'
+		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
+        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
+        out += `<div class="popup" style="position:absolute; right:0;">
+        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
+        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
+        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
+        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
+        out += '</div>'
 		}
 			
 	// stats
-	stats += ' : &nbsp; <a onclick="getAll(\'total\');return false;" style="cursor:pointer;">total</a> ' + total
+	stats += ' : &nbsp; total ' + total
 	if (langs[lang].aux || langs[lang].deprecated) stats += ' &nbsp; &nbsp; + ( '
 	if (langs[lang].aux) {
 		charList = [...langs[lang].aux]
-        stats += charList.length + ' <a onclick="getAll(\'infrequentCell\');return false;" style="cursor:pointer;">infrequent</a> '
-		out += '<tr><th>Infrequent</th><td class="small" id="infrequentCell"'
+        stats += charList.length + ' infrequent '
+		out += '<tr><th>Infrequent<br><span class="rowCount">'+charList.length+'</span></th><td class="small" id="infrequentCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
 		for (j=0;j<charList.length;j++) { 
@@ -508,14 +589,23 @@ function showLanguage (lang) {
 			else out += '\u00A0'+charList[j]
 			out += '</span> ' 
 			}
-		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].aux+'" target="_blank"><img src="univ.png" alt="Show characters in UniView."  title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td>'
+		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
+        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
+        out += `<div class="popup" style="position:absolute; right:0;">
+        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
+        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
+        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
+        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
+        out += '</div>'
 		}
 	if (langs[lang].deprecated) {
 		charList = [...langs[lang].deprecated]
         if (total > 0) stats += ', '
         stats += charList.length + ' deprecated'
         total += charList.length
-		out += '<tr><th>Deprecated</th><td class="small"'
+		out += '<tr><th>Deprecated<br><span class="rowCount">'+charList.length+'</span></th><td class="small"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
 		for (j=0;j<charList.length;j++)  { 
@@ -524,14 +614,36 @@ function showLanguage (lang) {
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'+'\u00A0'+charList[j]+'</span> ' 
 			}
-		out += '</td><td class="links"><a href="/uniview?charlist='+langs[lang].symbol+'" target="_blank"><img src="univ.png" alt="Show characters in UniView." title="Show characters in UniView." class="ulink"/></a></td></tr>'
+		out += '</td>'
+		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
+        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
+        out += `<div class="popup" style="position:absolute; right:0;">
+        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
+        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
+        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
+        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
+        out += '</div>'
+        out += '</td></tr>'
 		}
 	if (langs[lang].aux || langs[lang].deprecated) stats += ' )'
+    var cumulativeSpaced = [...cumulative]
+	cumulativeSpaced = cumulativeSpaced.join(' ')
 	if (!langs[lang].letter && !langs[lang].mark && !langs[lang].punctuation && !langs[lang].number && !langs[lang].symbol && !langs[lang].other) {
 		out += '<tr><th></th><td class="large">ASCII only</td></tr>'
 		stats = ''
 		}
-	else stats = '<tr><th></th><td style="border:0; font-size: 70%; font-style: italic; line-height: 1; color:gray;">'+stats+'  <input  id="clipboardStore" style="height:2px;width:2px;margin-left:2em;vertical-align:middle;"/></td></tr>'
+	else stats = '<tr><th></th><td style="border:0; font-size: 70%; font-style: italic; line-height: 1; color:gray;">'+stats+'  <input  id="clipboardStore" style="height:2px;width:2px;margin-left:2em;vertical-align:middle;"/></td>'
+		stats += `<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(getAll())"><img src="icons/copy.png"></span></td>`
+        stats += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
+        stats += `<div class="popup" style="position:absolute; right:0;">
+        <div><a href="/app-analysestring/?chars=${cumulative}" target="_blank">Show details</a></div>
+        <div><a href="/uniview?charlist=${cumulative}" target="_blank">Show characters in UniView</a></div>
+        <div><a href="/app-listcharacters?chars=${cumulative}" target="_blank">List characters by block</a></div>
+        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${cumulativeSpaced}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].fonts) stats += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${cumulative}">Show in character app</a></div>`
+        stats += '</div>'
+        stats += '</td></tr>'
 
 	// source
 	var sources = langs[lang].source.split(',')
@@ -549,23 +661,21 @@ function showLanguage (lang) {
 		else out += '<a  target="_blank" href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
 		}
 	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this orthography.</span>'
-	out += '</td></td><td class="links"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" /></a></tr>'
+	out += '</td></td><td class="links" colspan="2"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" style="width:unset;" /></a><a href="https://www.ethnologue.com/language/'+langcode+'" target="_blank"><img src="ethn.png" alt="Look this up in the Ethnologue." title="Look this up in the Ethnologue." style="width:unset;" class="ulink"/></a></td></tr>'
 	
 	out += stats
 	
 	// change font
 	out += '<th></th><td style="border: 0; padding-top:0; font-size: 70%;font-style: italic;line-height: 1;color: gray;">Change font to <input id="fontChange" onChange="setFont(this.value)" type="text" style="border-radius: 5px; border: 1px solid #ccc;"/>'
 	
-	temp = [...cumulative]
-	parameter = temp.join(' ')
-	out += ' •  &nbsp; <a target="_blank" href="../scripts/fontlist/?script='+langs[lang].script+'&text='+parameter+'">Show in font lister</a>'
+	//temp = [...cumulative]
+	//parameter = temp.join(' ')
+	//out += ' •  &nbsp; <a target="_blank" href="../scripts/fontlist/?script='+langs[lang].script+'&text='+parameter+'">Show in font lister</a>'
 	
-	if (langs[lang].fonts) {
-	//	temp = [...cumulative]
-	//	parameter = temp.join(' ')
-		if (langs[lang].aux) parameter += "\n"+langs[lang].aux
-		out += ' •  &nbsp; <a target="_blank" href="'+langs[lang].fonts+'?showFonts=true&text='+parameter+'">Show in character app</a>'
-		}
+	//if (langs[lang].fonts) {
+	//	if (langs[lang].aux) parameter += "\n"+langs[lang].aux
+	//	out += ' •  &nbsp; <a target="_blank" href="'+langs[lang].fonts+'?showFonts=true&text='+parameter+'">Show in character app</a>'
+	//	}
 	out += '</td>'
 	
 	// region
@@ -586,7 +696,7 @@ function showLanguage (lang) {
 		}
 	out += '<tr><th>Region</th><td>'+region
 	if (langs[lang].countries) out += '<span class="countries">'+langs[lang].countries+'</span>'
-	out += '</td></td><td class="links"><a href="https://www.ethnologue.com/language/'+langcode+'" target="_blank"><img src="ethn.png" alt="Look this up in the Ethnologue." title="Look this up in the Ethnologue." class="ulink"/></a></td></tr>'
+	out += '</td></td><td class="links"><!--a href="https://www.ethnologue.com/language/'+langcode+'" target="_blank"><img src="ethn.png" alt="Look this up in the Ethnologue." title="Look this up in the Ethnologue." class="ulink"/></a--></td></tr>'
 	
 	// speakers
 	if (langs[lang].speakers === '?') var speakers = 'Not known'

@@ -227,10 +227,35 @@ table {
 
 #langDetails td.links {
 	border: 0;
-    vertical-align: middle;
+    vertical-align: top;
     padding: .5em .25em;
     text-align: left;
+    white-space: nowrap;
 	}
+.links img {
+    width: 18px;
+    vertical-align: middle;
+    }
+.rowCount {
+    width: 1.5em;
+    display: inline-block;
+    
+    font-size: 1.4em;
+    color: #C33;
+    }
+
+
+.popup {
+    font-size: 80%;
+    background-color: antiquewhite;
+    padding: .25em 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    z-index: 100;
+    display: none;
+    text-align: end;
+    }
+
 .udhrWarning {
 	color: darkorange;
 	}
