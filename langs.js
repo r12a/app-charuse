@@ -1993,7 +1993,7 @@ also:
 
 "umb": { name:"Umbundu (South Mbundu)", source:"udhr_umb,udhr_011", region:"afr", countries:"Angola", script:"latn", speakers:"6000000", letter:"ñêãîõâÑÊÃÎÕÂ", mark:"̃̂", punctuation:"’", local:"Umbundu"},
 
-"ur": {  name:"Urdu", silcode:"urd", rtl:true, source:"cldr_urdu,udhr_urd,2a19c3255e234cbb86e12ec0dc966684ccdb2965", region:"sasia", countries:"Pakistan, India, Nepal, Bangladesh", script:"arab", speakers:"65000000", letter:"ےاپبتطدٹڈکگقءچجفوسثصزذضظشژخغہحھعمنںرڑلیآؤۂۓ", mark:"ًٌٍَُِّْٰٖٗٓ٘ؔؓؒؑؐٔ", punctuation:"٪٫٬؍،؛؟٪٫٬۔“”!().:‐–", number:"۰۱۲۳۴۵۶۷۸۹", other:"؀؁؂؃؄۝\u200D\u200C\u200F\u200E\u2067\u2066\u2069\u202B\u202A\u202C\u034F", aux:"ۃ؎؏﷽", deprecated:"ئيځݬࢡهةك", local:"اُردُو‎‎ (Urdū)", 
+"ur": { name:"Urdu", silcode:"urd", rtl:true, source:"db476b3d6bab736201e0829304afa25fcf4a4223,cldr_urdu,udhr_urd", region:"sasia", countries:"Pakistan, India, Nepal, Bangladesh", script:"arab", speakers:"65000000", letter:"ےاپبتطدٹڈکگقءچجفوسثصزذضظشژخغہحھعمنںرڑلیآؤۂۓ", mark:"ًٌٍَُِّْٰٖٗٓ٘ؔؓؒؑؐٔ", punctuation:"٪٫٬؍،؛؟٪٫٬۔“”!().:‐–", number:"۰۱۲۳۴۵۶۷۸۹", other:"؀؁؂؃؄۝\u200D\u200C\u200F\u200E\u2067\u2066\u2069\u202B\u202A\u202C\u034F", aux:"ۃ؎؏﷽", deprecated:"ئيځݬࢡهةك", local:"اُردُو‎‎ (Urdū)", 
 orth:`Arabic. &nbsp; The primary usage is nastaliq ([Aran]) style, though naskh style is used also. 
 <a href="../scripts/arabic/urdu" target="_blank">Detailed summary</a>.`,
 type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"no", justify:"spaces+elongation", linked:"arabic/urdu",
