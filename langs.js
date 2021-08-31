@@ -1465,10 +1465,13 @@ orth:`Arabic. &nbsp; Primary usage is naskh style, but nastaliq ([Aran]) also us
 "pcm": { name:"Nigerian Pidgin", source:"udhr_pcm", region:"afr", countries:"Nigeria", script:"ascii", speakers:"30000000", local:"Naijá", 
 orth:`Latin. &nbsp; Used since 2002.`},
 
-"pes": {  name:"Persian (Farsi)", rtl:true, source:"cldr_fa,udhr_pes", region:"wasia", countries:"Iran, Iraq", script:"arab", speakers:"~50000000", letter:"ءآأؤئابتثجحخدذرزسشصضطظعغفقلمنهوپچژکگی", mark:"ًَِّٔ", punctuation:"٪؉،؛؟‰‐…‹›«»","number":"۰۱۲۳۴۵۶۷۸۹", symbol:"", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", aux:"ةيٌٍٕـُِْٰٖإكىٕ٫٬ٓ", local:" فارسی‎ (Fārsi)", 
+"pes": { name:"Persian (Farsi)", rtl:true, source:"f6c7293e56545fe2044143ef784236e7d524019c,cldr_fa,udhr_pes", region:"wasia", countries:"Iran, Iraq", script:"arab", speakers:"~50000000", letter:"ءآأؤابتثجحخدذرزسشصضطظعغفقلمنهوپچژکگی", mark:"ٔ", punctuation:"،؛؟٪«»","number":"۰۱۲۳۴۵۶۷۸۹", symbol:"", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", aux:"ةـًٌٍَُِّْٓ", local:" فارسی‎ (Fārsi)", 
 related:`Macrolanguage is Farsi [fa]. Legacy applications often use fa rather than pes.`,
 orth:`Arabic. &nbsp; Naskh style, but nastaliq ([Aran]) in Iran.`,
-fonts:"/pickers/arab-fa/"
+fonts:"/pickers/arab-fa/",
+type:"abjad", cs:"no", gpos:"yes", mcchars:"yes", gsub:"yes", cursive:"yes", dir:"rtl", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"no", justify:"?", linked:"arabic/arab-fa",
+vowels:"4 matres lectionis, 3 diacritics",
+clusters:"", medials:"", finals:"",
 },
 
 "pis": { name:"Pijin", source:"udhr_pis", region:"oce", countries:"Solomon Islands", script:"ascii", speakers:"24000", local:"Pijin"},
