@@ -895,13 +895,17 @@ vowels:"1 inherent vowel, 17 letters, 5 visually-encoded letters, 9 composite vo
 clusters:"", medials:"6 letters", finals:"7 letters",
 },
 
-"khk": {  name:"Halh Mongolian", source:"cldr_mn,udhr_khk", region:"easia", countries:"Mongolia, Russia", script:"cyrl", speakers:"2640000", letter:"абвгдеёжзийклмноөпрстуүфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОӨПРСТУҮФХЦЧШЩЪЫЬЭЮЯ", mark:"̈̆", punctuation:"̈̆‐–—…‘’“”†‡′″§", aux:"әҗӊһӘҖӉҺ", local:"Монгол хэл‎ (Mongol khel)", 
+"khk": { name:"Halh Mongolian", source:"f41ea8a05b20e8c0c5d97f2c8d98f10aae211c03,cldr_mn,udhr_khk", region:"easia", countries:"Mongolia, Russia", script:"cyrl", speakers:"2640000", letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёҮүӨө", mark:"̈̆", punctuation:"!().:;?«»‐—“„", symbol:"₮", aux:"…", local:"Монгол хэл‎ (Mongol khel)", 
 related:`Macrolanguage is Mongolian [mn].`,
 orth:`[Cyrillic] &nbsp; `,
 also:
 ['khk-mong | mong | Before 1941, and resurgent since 1990s.',
 'khk-phag | phag | No longer in use.',
-'khk-tibt | tibt | No longer in use.']
+'khk-tibt | tibt | No longer in use.'],
+type:"alphabet", cs:"yes", gpos:"no", mcchars:"no", matras: "no", gsub:"no", cursive:"no", dir:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?", justify:"spaces", linked:"cyrillic/mn",
+vowels:"16 letters",
+clusters:"", medials:"", finals:"",
+fonts:"/pickers/cyrl-mn/"
 },
 
 "khk-mong": { name:"Halh Mongolian", source:"cldr_mn", region:"easia", countries:"Mongolia, China", script:"mong", speakers:"2640000", letter:"ᠢᠦᠤᠡᠧᠥᠣᠠᠫᠪᠲᠳᠴᠵᠬᠰᠱᠭᠨᠩᠮᠯᠶᠷᠸᠹᠺᠻᠼᠽᠾᠿᡀᡁᡂ", punctuation:"᠊᠁᠂᠃᠄()〈〉《》〔〕？！", number:"᠐᠑᠒᠓᠔᠕᠖᠗᠘᠙", aux:"ᢅᢆᢩ", local:"Монгол хэл‎ (Mongol khel)", 
