@@ -1833,7 +1833,7 @@ also:
 "shk": { name:"Shilluk", source:"udhr_shk,7b9b98a8ced343c0f2356595d76c12d32b5dd0a5", region:"afr", countries:"South Sudan", script:"latn", speakers:"175000", letter:"ÀÁÄÈÉËÌÍÏÓÖØÙÚàáäèéëìíïóöøùú", mark:"́̈̀", local:"Colo"},
 
 "shn": { name:"Shan", local:"ၵႂၢမ်းတႆ /kwáːm.táj/", 
-source:"udhr_shn", 
+source:"1144bc3ca7538fc284268c3be5d0725611cd52e5,udhr_shn", 
 region:"seasia", countries:"Myanmar, Thailand", script:"mymr", speakers:"3300000", 
 letter:"ငတထပမယရလဝသၵၶၸၺၼၽၾႁ", mark:"ိီုူေဵး်ျြွၢႂႃႄႅႆႇႈႉႊ", number:"၀၁၂၃၄၅၆၇၈၉႐႑႒႓႔႕႖႗႘႙", punctuation:"၊။", other:"\u200B", aux:"ဢၷၹၻၿႀꧦ", 
 orth:`Myanmar. &nbsp; <a href="../scripts/myanmar/mymr-shn" target="_blank">Details</a>.`,
