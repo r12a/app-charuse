@@ -865,7 +865,7 @@ linked:"hebrew", fonts:"/pickers/hebr/",
 "hi": { name:"Hindi", local:" मानक हिन्दी‎ (Mānak Hindī), हिन्दी‎ (Hindī)", silcode:"hin", 
 source:"cldr_hi,udhr_hin,9d8e188be96400153901b55006feaaf9fd4bf3b1", 
 region:"sasia", countries:"India, Nepal, Singapore, South Africa", script:"deva", speakers:"260000000", 
-letter:"अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहक़ख़ग़ज़ड़ढ़फ़", mark:"ँंः़ािीुूृेैोौ्", number:"०१२३४५६७८९", punctuation:"।॥॰‘’“”—", other:"\u200C\u200D", aux:"ऍऑऽॐॅॉ", 
+letter:"अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह\u{958}\u{95E}\u{95B}\u{959}\u{95A}\u{95C}\u{95D}", mark:"ँंः़ािीुूृेैोौ्", number:"०१२३४५६७८९", punctuation:"।॥॰‘’“”—", other:"\u200C\u200D", aux:"ऍऑऽॐॅॉ", 
 orth:`[Devanagari] &nbsp;  
 <a href="../scripts/devanagari" target="_blank">Detailed summary</a>.`,
 also:
@@ -1601,7 +1601,7 @@ linked:"osage", fonts:"/pickers/osge/",
 "pa": { name:"Punjabi", local:"ਪੰਜਾਬੀ‎ (Panjabi), ਪੰਜਾਬੀ ਭਾਸ਼ਾ‎ (Panjabi bhasa)", silcode:"pan", 
 source:"cldr_pa,udhr_pan,f940e5c7fc381992f942120f89cd8137cb3c3eda", 
 region:"sasia", countries:"India", script:"guru", speakers:"122000000", 
-letter:"ੴਉਊਓਅਆਐਔਇਈਏਸਹਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜਲ਼ਸ਼ਖ਼ਗ਼ਜ਼ਫ਼", mark:"ੱੰ਼੍ਾਿੀੁੂੇੈੋੌਂ", number:"੦੧੨੩੪੫੬੭੮੯", punctuation:"‐–—‘’“”′″।", symbol:"☬", other:"\u200C\u200D", aux:"ਃਁੵ", deprecated:"ੳੲ", 
+letter:"ਅਆਇਈਉਊਏਐਓਔਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵਸਹੜੴ", mark:"ੱੰ਼੍ਾਿੀੁੂੇੈੋੌਂ", number:"੦੧੨੩੪੫੬੭੮੯", punctuation:"‐–—‘’“”′″।", symbol:"☬", other:"\u200C\u200D", aux:"ਃਁੵ\u0A5E\u0A5B\u0A36\u0A59\u0A5A\u0A33", deprecated:"ੳੲ", 
 orth:`Gurmukhi. &nbsp; Primary usage. <a href="../scripts/gurmukhi" target="_blank">Details</a>.`,
 also:
 ["pa-arab | arab | Naskh style. See also [pnb].",
