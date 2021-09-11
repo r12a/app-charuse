@@ -1832,7 +1832,7 @@ also:
 
 "shk": { name:"Shilluk", source:"udhr_shk,7b9b98a8ced343c0f2356595d76c12d32b5dd0a5", region:"afr", countries:"South Sudan", script:"latn", speakers:"175000", letter:"ÀÁÄÈÉËÌÍÏÓÖØÙÚàáäèéëìíïóöøùú", mark:"́̈̀", local:"Colo"},
 
-"shn": {  name:"Shan", local:"ၵႂၢမ်းတႆ /kwáːm.táj/", 
+"shn": { name:"Shan", local:"ၵႂၢမ်းတႆ /kwáːm.táj/", 
 source:"udhr_shn", 
 region:"seasia", countries:"Myanmar, Thailand", script:"mymr", speakers:"3300000", 
 letter:"ငတထပမယရလဝသၵၶၸၺၼၽၾႁ", mark:"ိီုူေဵး်ျြွၢႂႃႄႅႆႇႈႉႊ", number:"၀၁၂၃၄၅၆၇၈၉႐႑႒႓႔႕႖႗႘႙", punctuation:"၊။", other:"\u200B", aux:"ဢၷၹၻၿႀꧦ", 
@@ -1841,7 +1841,6 @@ type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp"
 vowels:"inh:1 vs:11 base:ဢ/A pre:2 comp:18",  clusters:"mrk",  medials:"sj:3",  finals:"vk:1", 
 linked:"myanmar/mymr-shn", fonts:"mymr-shn", 
 },
-
 
 "shp": { name:"Shipibo-Conibo (Shipibo-Konibo)", source:"udhr_shp", region:"sam", countries:"Peru", script:"latn", speakers:"26000", letter:"íáóéñúÍÁÓÉÑÚ", mark:"́̃", punctuation:"¿"},
 
