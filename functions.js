@@ -546,18 +546,19 @@ function showLanguage (lang) {
 		}
 	if (langs[lang].other) {
 		cumulative += langs[lang].other
-		charList = [...langs[lang].other]
+		//charList = [...langs[lang].other]
+        charList = langs[lang].other.split(' ')
         if (total > 0) stats += ', '
         stats += charList.length + ' other'
         total += charList.length
 		out += '<tr><th>Other<br><span class="rowCount">'+charList.length+'</span></th><td class="other" id="otherCell">'
-		//out += langs[lang].other
-		for (j=0;j<charList.length;j++)  { 
+		out += langs[lang].other
+		/*for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">U+'+cp+'</span> ' 
-			}
+			}*/
 		//for (j=0;j<charList.length;j++) out += charList[j].codepointAt(0)+' '
 		out += '</td>'
 		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
