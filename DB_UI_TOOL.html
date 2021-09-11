@@ -1,0 +1,577 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Manage charuse db</title>
+
+<style>
+body {
+    font-family: raleway;
+    font-size: 14px;
+    }
+label {
+    white-space: pre;
+    tab-size: 30;
+    margin-inline-end: 1em;
+    }
+input { 
+    color: chocolate; 
+    font-weight: 500;
+    text-align: start;
+    padding-inline-start: .5em;
+    }
+.checkboxes {
+    margin-inline-start: 5em;
+    }
+.smallBoxList {
+    line-height: 1.4; text-align: end; margin-inline-end:50%;
+    }
+.smallBoxList input {
+    text-align: center;
+    }
+</style>
+
+<script src="/app-charuse/langs.js"> </script>
+
+<script>
+
+function makeValue (key) {
+    if (document.getElementById(key).value) return key+':"'+document.getElementById(key).value+'", '
+    else return ''
+    }
+
+function makeSubValue (key) {
+    if (document.getElementById(key).value) return key.substring(1)+':'+document.getElementById(key).value+' '
+    else return ''
+    }
+
+
+function generate () { 
+
+	out = ''
+    out += '"'+document.getElementById('key').value+'": { '
+    out += makeValue('name')
+    out += makeValue('local')
+    out += makeValue('silcode')
+    if (document.getElementById('rtl').checked) out += 'rtl:true, '
+    if (document.getElementById('redirect').checked) out += 'redirect:true, '
+    
+    out += '\n'
+    out += makeValue('source')
+    
+    out += '\n'
+    out += makeValue('region')
+    out += makeValue('countries')
+    out += makeValue('script')
+    out += makeValue('speakers')
+
+    // CHARACTERS
+    out += '\n'
+    out += makeValue('letter')
+    out += makeValue('mark')
+    out += makeValue('number')
+    out += makeValue('punctuation')
+    out += makeValue('symbol')
+    out += makeValue('other')
+    out += makeValue('aux')
+    out += makeValue('deprecated')
+    out += '\n'
+    
+    // ORTHOGRAPHY NOTES
+    if (document.getElementById('orth').value) out += 'orth:`'+document.getElementById('orth').value+'`,'
+    if (document.getElementById('also').value) {
+        out += '\nalso:\n['
+        var lines = document.getElementById('also').value.split('\n')
+        for (let i=0;i<lines.length;i++) {
+            if (lines[i] !== '') out += '"'+lines[i]+'"'
+            if (i<lines.length-2) out += ',\n'
+            }
+        out += '],'
+        }
+    if (document.getElementById('related').value) out += '\nrelated:`'+document.getElementById('related').value+'`,'
+    if (document.getElementById('notes').value) out += '\nnotes:`'+document.getElementById('notes').value+'`,'
+    out += '\n'
+
+    // FEATURES
+    out += makeValue('type')
+    out += makeValue('cs')
+    out += makeValue('gpos')
+    out += makeValue('gsub')
+    out += makeValue('cursive')
+    out += makeValue('wordsep')
+    out += makeValue('wordsepChar')
+    out += makeValue('baseline')
+    out += makeValue('wrap')
+    out += makeValue('hyphenation')
+    out += makeValue('hyphen')
+
+
+    // DIRECTION
+    var temp = ''
+    if (document.getElementById('dltr').checked) temp += 'ltr '
+    if (document.getElementById('drtl').checked) temp += 'rtl '
+    if (document.getElementById('drtl*').checked) temp += 'rtl* '
+    if (document.getElementById('dtblr').checked) temp += 'tblr '
+    if (document.getElementById('dtbrl').checked) temp += 'tbrl '
+    if (document.getElementById('dbos').checked) temp += 'bos '
+    if (document.getElementById('dbt').checked) temp += 'bt '
+    if (temp !== '') out += ' direction:"'+temp.trim()+'", '
+
+    // JUSTIFICATION
+    var temp = ''
+    if (document.getElementById('jsp').checked) temp += 'sp '
+    if (document.getElementById('jstr').checked) temp += 'str '
+    if (document.getElementById('jsw').checked) temp += 'sw '
+    if (document.getElementById('jpad').checked) temp += 'pad '
+    if (document.getElementById('jic').checked) temp += 'ic '
+    if (document.getElementById('jig').checked) temp += 'ig '
+    if (document.getElementById('jnone').checked) temp += 'none '
+    if (document.getElementById('j?').checked) temp += '? '
+    if (temp !== '') out += ' justification:"'+temp.trim()+'", '
+
+    // VOWELS
+    out += '\n'
+    temp = ''
+    temp += makeSubValue('vlet')
+    temp += makeSubValue('vinh')
+    temp += makeSubValue('vvs')
+    temp += makeSubValue('vvenc')
+    temp += makeSubValue('vind')
+    temp += makeSubValue('vml')
+    temp += makeSubValue('vcm')
+    temp += makeSubValue('vhcm')
+    temp += makeSubValue('vsyl')
+    
+    temp += makeSubValue('vbase')
+    temp += makeSubValue('vpre')
+    temp += makeSubValue('vcirc')
+    temp += makeSubValue('vcomp')
+    temp += makeSubValue('vvoc')
+    if (temp !== '') out += 'vowels:"'+temp.trim()+'", '
+
+
+    // CLUSTERS
+    temp = ''
+    if (document.getElementById('cvir').checked) temp += 'vir '
+    if (document.getElementById('cinv').checked) temp += 'inv '
+    if (document.getElementById('cstk').checked) temp += 'stk '
+    if (document.getElementById('ccnj').checked) temp += 'cnj '
+    if (document.getElementById('clig').checked) temp += 'lig '
+    if (document.getElementById('ctcg').checked) temp += 'tcg '
+    if (document.getElementById('crax').checked) temp += 'rax '
+    if (document.getElementById('cmrk').checked) temp += 'mrk '
+    if (document.getElementById('clet').checked) temp += 'let '
+    if (document.getElementById('cunm').checked) temp += 'unm '
+    if (temp !== '') out += ' clusters:"'+temp.trim()+'", '
+
+    // MEDIALS & FINALS
+    temp = ''
+    temp += makeSubValue('mcm')
+    temp += makeSubValue('msj')
+    temp += makeSubValue('mlet')
+    if (temp !== '') out += ' medials:"'+temp.trim()+'", '
+    
+    temp = ''
+    temp += makeSubValue('fcm')
+    temp += makeSubValue('flet')
+    temp += makeSubValue('fvk')
+    temp += makeSubValue('fss')
+    if (temp !== '') out += ' finals:"'+temp.trim()+'", '
+
+
+    out += '\n'
+    out += makeValue('linked')
+    out += makeValue('fonts')
+
+
+
+
+	out += '\n},\n'
+    
+    out = out.replace(/[\n]+/g,'\n')
+    
+	document.getElementById('code').value = out
+	document.getElementById('code').select()
+	}
+
+
+function readRecord (lang) {
+    var i
+    
+    if (lang === '') {
+        alert('No key value supplied.')
+        return
+        }
+    if (typeof langs[lang] === 'undefined') {
+        alert('Unknown key value:', lang)
+        return
+        }
+
+    var record = langs[lang]
+    var f, i, checkboxes
+    
+    document.getElementById('key').value = lang
+    
+    var fields = [
+        'name','local','silcode','source', 
+        'region', 'countries', 'script', 'speakers',
+        'letter', 'mark', 'number', 'punctuation', 'symbol', 'other', 'aux', 'deprecated',
+        'type', 'cs', 'gpos', 'gsub', 'cursive', 'direction', 'baseline', 'wordsep', 'wordsepChar', 'wrap', 'hyphenation', 'hyphen', 'justification', 'linked', 'fonts',
+        'vowels','clusters', 'medials', 'finals',
+        ]
+    for (var f=0;f<fields.length;f++) {
+        if (record[fields[f]]) document.getElementById(fields[f]).value = record[fields[f]]
+        else document.getElementById(fields[f]).value = ''
+        }
+    
+    // vowels
+    checkboxes = [
+        'vlet', 'vinh', 'vvs', 'vind', 'vml', 'vcm', 'vhcm', 'vsyl', 'vbase', 'vvenc', 'vpre', 'vcirc', 'vcomp', 'vvoc'
+        ]
+     // initialise all input fields
+    for (f=0;f<checkboxes.length;f++) {
+        document.getElementById(checkboxes[f]).value = ''
+        }
+    // fill in values from db
+    if (record.vowels) {
+        var vowelItems = record.vowels.split(' ')
+        for (let i=0;i<vowelItems.length;i++) {
+            var couplet = vowelItems[i].split(':')
+            if (document.getElementById('v'+couplet[0])) document.getElementById('v'+couplet[0]).value = couplet[1]
+            else console.log('Unrecognised vowel couplet in readRecord!', couplet[0])
+            }
+        }
+    
+    // medials
+    checkboxes = [
+        'mcm', 'msj', 'mlet'
+        ]
+     // initialise all input fields
+    for (f=0;f<checkboxes.length;f++) {
+        document.getElementById(checkboxes[f]).value = ''
+        }
+    // fill in values from db
+    if (record.medials) {
+        var medialItems = record.medials.split(' ')
+        for (let i=0;i<medialItems.length;i++) {
+            var couplet = medialItems[i].split(':')
+            if (document.getElementById('m'+couplet[0])) document.getElementById('m'+couplet[0]).value = couplet[1]
+            else console.log('Unrecognised medial couplet in readRecord!', couplet[0])
+            }
+        }
+    
+    // finals
+    checkboxes = [
+        'fcm', 'flet', 'fvk', 'fss'
+        ]
+     // initialise all input fields
+    for (f=0;f<checkboxes.length;f++) {
+        document.getElementById(checkboxes[f]).value = ''
+        }
+    // fill in values from db
+    if (record.finals) {
+        var finalItems = record.finals.split(' ')
+        for (let i=0;i<finalItems.length;i++) {
+            var couplet = finalItems[i].split(':')
+            if (document.getElementById('f'+couplet[0])) document.getElementById('f'+couplet[0]).value = couplet[1]
+            else console.log('Unrecognised medial couplet in readRecord!', couplet[0])
+            }
+        }
+    
+    // direction
+    checkboxes = [
+        'dltr', 'drtl', 'drtl*', 'dtblr', 'dtbrl', 'dbos', 'dbt',
+        ]
+    if (record.direction) {
+        var directionItems = new Set(record.direction.split(' '))
+        for (f=0;f<checkboxes.length;f++) {
+            if (directionItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
+            else document.getElementById(checkboxes[f]).checked = false
+            }
+        }
+    else for (f=0;f<checkboxes.length;f++) document.getElementById(checkboxes[f]).checked = false
+
+    // justification
+    checkboxes = [
+        'jsp', 'jstr', 'jsw', 'jpad', 'jic', 'jig', 'jnone', 'j?',
+        ]
+    if (record.justification) {
+        var justificationItems = new Set(record.justification.split(' '))
+        for (f=0;f<checkboxes.length;f++) {
+            if (justificationItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
+            else document.getElementById(checkboxes[f]).checked = false
+            }
+        }
+    else for (f=0;f<checkboxes.length;f++) document.getElementById(checkboxes[f]).checked = false
+
+    // clusters
+    checkboxes = [
+        'cvir', 'cinv', 'cstk', 'ccnj', 'clig', 'ctcg', 'crax', 'cmrk', 'clet', 'cunm'
+        ]
+    if (record.clusters) {
+        var clusterItems = new Set(record.clusters.split(' '))
+        for (f=0;f<checkboxes.length;f++) {
+            if (clusterItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
+            else document.getElementById(checkboxes[f]).checked = false
+            }
+        }
+    else for (f=0;f<checkboxes.length;f++) document.getElementById(checkboxes[f]).checked = false
+
+    if (record.rtl && record.rtl === true) document.getElementById('rtl').checked = true
+    else document.getElementById('rtl').checked = false
+    if (record.redirect && record.redirect === true) document.getElementById('redirect').checked = true
+    else document.getElementById('redirect').checked = false
+    
+    if (record.orth)  document.getElementById('orth').value = record.orth 
+    else document.getElementById('orth').value = ''
+
+    if (record.also) {
+        out = ''
+        for (let i=0;i<record.also.length;i++) out += record.also[i]+'\n'
+        document.getElementById('also').value = out
+        }
+    else document.getElementById('also').value = ''
+
+    if (record.related) document.getElementById('related').value = record.related 
+    else document.getElementById('related').value = ''
+
+    if (record.notes) document.getElementById('notes').value = record.notes 
+    else document.getElementById('notes').value = ''
+    }
+
+
+function fillAll () {
+    var i
+    var inputfields = document.querySelectorAll('input')
+    for (i=0;i<inputfields.length;i++) {
+        if(inputfields[i].type==='text') inputfields[i].value = 'x'
+        if(inputfields[i].type==='checkbox') inputfields[i].checked = true
+        }
+    var inputfields = document.querySelectorAll('textarea')
+    for (i=0;i<inputfields.length;i++) {
+        inputfields[i].value = 'xxxxxx'
+        }
+    }
+</script>
+<style>
+</style>
+</head>
+
+<body>
+<p style="float:right;"><button onclick="fillAll()">Fill all</button></p>
+<h1>Langs DB editor</h1>
+
+<p>Find an existing record (BCP): <input type="text" id="load" onChange="readRecord(this.value)" style="width:5em;"> <button onClick="readRecord(document.getElementById('load').value)">GO</button></p>
+<hr>
+
+<p><label>Key:&#x0009;<input type="text" id="key" style="width:5em;" placeholder="∅"></label> &nbsp;
+SIL code: <input type="text" id="silcode" style="width:5em;" placeholder="∅"> &nbsp;
+Script: <input type="text" id="script" style="width:5em;" placeholder="∅"> &nbsp;
+RTL? <input type="checkbox" id="rtl"> &nbsp;
+Redirect? <input type="checkbox" id="redirect"></p>
+
+<p><label>Name:&#x0009;<input type="text" id="name" style="width:50em;" placeholder="∅"></label></p>
+<p><label>Local name:&#x0009;<input type="text" id="local" style="width:40em;" placeholder="∅"></label></p>
+
+<p><label>Sources:&#x0009;<input type="text" id="source" style="width:50em;" placeholder="∅"></label></p>
+
+<p><label>Region:&#x0009;<select id="region">
+    <option value="eur">Europe (Russia to Urals and Georgia, but not Armenia or Azerbaijan)</option>
+    <option value="easia">East Asia (China, Mongolia, Japan, Korea)</option>
+    <option value="nasia">Northern Asia (Russia east of Urals)</option>
+    <option value="seasia">Southeast Asia (including Indonesia, Philippines)</option>
+    <option value="sasia">South Asia (including India, Sri Lanka, Maldives)</option>
+    <option value="casia">Central Asia (above Iran, below Russia, west of China)</option>
+    <option value="wasia">Western Asia (Armenian, Azerbaijan, Turkey, &amp; Middle east)</option>
+    <option value="afr">Africa</option>
+    <option value="oce">Oceania (Australia, NZ, and Pacific Islands)</option>
+    <option value="nam">North America</option>
+    <option value="sam">South America</option>
+    <option value="cam">Central America</option>
+    <option value="carib">Caribbean</option>
+    </select></label>
+    </p>
+<p><label>Countries:&#x0009;<input type="text" id="countries" style="width:40em;" placeholder="∅"></label></p>
+<p><label>Speakers:&#x0009;<input type="text" id="speakers" placeholder="∅"></label></p>
+<hr>
+
+<p><label>Letter&#x0009;<input type="text" id="letter" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Mark&#x0009;<input type="text" id="mark" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Number&#x0009;<input type="text" id="number" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Punctuation&#x0009;<input type="text" id="punctuation" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Symbol&#x0009;<input type="text" id="symbol" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Other&#x0009;<input type="text" id="other" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Infrequent&#x0009;<input type="text" id="aux" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Deprecated&#x0009;<input type="text" id="deprecated" placeholder="∅" style="width:30em;"></label></p>
+<hr>
+
+<p>Orthography:<br>
+<span style="color: #aaa; font-size: 80%;">[ScriptName.] Description. &lt;a href='../scripts/syriac/' target='_blank'&gt;Details&lt;/a&gt;</span><br>
+<textarea id="orth" style="width: 100%; height: 6em;" placeholder="[Syriac] (maḏnḥāyā/Eastern style). Used for East Syriac and Swadaya texts. ISO 15924 has a general script code for Syriac (syrc), and another (syrn) for the Eastern Syriac orthography. <a href='../scripts/syriac/' target='_blank'>Details</a>."></textarea></p>
+
+<p>Other orthographies:<br>
+<span style="color: #aaa; font-size: 80%;">One line per item: key | scriptISO | description</span><br>
+<textarea id="also" style="width: 100%; height: 6em;" placeholder="tw-asante | latn | For the Asante dialect of Twi.
+tw-akuapem | latn | For the Akuapem dialect of Twi.
+fat | latn | For the Fante dialect of Twi"></textarea></p>
+
+<p>Related:<br>
+<span style="color: #aaa; font-size: 80%;">Point to macrolanguages using [key] notation.</span><br>
+<textarea id="related" style="width: 100%; height: 4em;" placeholder="Macrolanguage is Syriac [syr]"></textarea></p>
+
+<p>Notes:<br>
+<span style="color: #aaa; font-size: 80%;">Useful information.</span><br>
+<textarea id="notes" style="width: 100%; height: 4em;" placeholder="cr is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Southern East Cree [crj]<br/> Plains Cree ..."></textarea></p>
+
+
+
+<hr>
+<p><label>Type:&#x0009;<select id="type">
+    <option value="alphabet">alphabet</option>
+    <option value="abjad">abjad</option>
+    <option value="abugida">abugida</option>
+    <option value="syllabary">syllabary</option>
+    </select></label>
+    </p>
+<p>
+<label>GPOS:&#x0009;<select id="gpos">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+    </select></label>
+    </p>
+<p>
+<label>GSUB:&#x0009;<select id="gsub">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+    </select></label>
+    </p>
+<p><label>Multiple CC&#x0009;<select id="mcchars">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+    </select></label>
+    </p>
+<p><label>Bicameral:&#x0009;<select id="cs">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+    <option value="(yes)">Similar</option>
+    </select></label>
+    </p>
+<p><label>Cursive script:&#x0009;<select id="cursive">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select></label>
+    </p>
+<p><label><strong>Text direction</strong>&#x0009;<input id="direction" type="text" style="width: 10em;color: red;font-size: 110%;"></label></p>
+<p class="checkboxes">
+<label><input type="checkbox" id="dltr">ltr</label>
+<label><input type="checkbox" id="drtl">rtl</label>
+<label><input type="checkbox" id="drtl*">rtl but ltr digits</label>
+<label><input type="checkbox" id="dtblr">vertical LR</label>
+<label><input type="checkbox" id="dtbrl">vertical RL</label>
+<label><input type="checkbox" id="dbos">boustrophedon</label>
+<label><input type="checkbox" id="dbt">bottom to top</label>
+</p>
+
+
+<p><label>Baseline&#x0009;<select id="baseline">
+    <option value="mid">mid</option>
+    <option value="high">high</option>
+    <option value="vertical">vertical</option>
+    <option value="low">low</option>
+    </select></label>
+    </p>
+<p><label>Word separator&#x0009;<select id="wordsep">
+    <option value="space">space</option>
+    <option value="space/wb">space/wb (eg. Ethiopic)</option>
+    <option value="no/zwsp">no/zwsp (eg. Thai)</option>
+    <option value="no">no (eg. CJK)</option>
+    <option value="syllable">syllable (eg. Lisu, Tibetan)</option>
+    </select></label>
+    Separator = <input type="text" id="wordsepChar" style="width:2em; text-align&#x0009;center;">
+    </p>
+<p><label>Text wrap&#x0009;<select id="wrap">
+    <option value="?">?</option>
+    <option value="word">word</option>
+    <option value="word/char">words or characters (eg. Amharic)</option>
+    <option value="syllable">syllable (eg. Balinese)</option>
+    <option value="char">character (eg. CJK)</option>
+    </select></label>
+    </p>
+<p><label>Hyphenation&#x0009;<select id="hyphenation">
+    <option value="?">?</option>
+    <option value="yes">yes</option>
+    <option value="no">no</option>
+    <option value="(yes)">similar</option>
+    </select></label> Separator = <input type="text" id="hyphen" style="width: 2em; text-align: center;">
+    </p>
+<p><label><strong>Justification</strong>&#x0009;<input id="justification" type="text" style="width: 500px;color: red;font-size: 110%;"></label></p>
+
+<p class="checkboxes">
+<label><input type="checkbox" id="jsp"> inter-word spaces/word joiners</label>
+<label><input type="checkbox" id="jstr">stretched baseline (eg. Arabic)</label> 
+<label><input type="checkbox" id="jsw">swashes (eg. Arabic)</label>
+<label><input type="checkbox" id="jpad">padding (eg. Tibetan)</label>
+<label><input type="checkbox" id="jic">inter-character (eg. Japanese)</label> 
+<label><input type="checkbox" id="jig">inter-glyph (eg. Tamil, Burmese)</label>
+<label><input type="checkbox" id="jnone">none</label>
+<label><input type="checkbox" id="j?">?</label>
+</p>
+<p><label>Link to script explainer:&#x0009;<input type="text" id="linked" placeholder="∅"></label></p>
+<p><label>Link to character app:&#x0009;<input type="text" id="fonts" placeholder="∅"></label></p>
+<hr>
+<p><label><strong>Vowels</strong>&#x0009;<input id="vowels" type="text" style="width: 500px;color: red;font-size: 110%;"></label></p>
+
+<p class="smallBoxList">
+    Letters: <input type="text" id="vlet" style="width:2em;" placeholder="#"><br>
+    Inherent vowels: <input type="text" id="vinh" style="width:2em;" placeholder="#"><br>
+    Vowel signs: <input type="text" id="vvs" style="width:2em;" placeholder="#"><br>
+    Visually encoded prebase glyphs: <input type="text" id="vvenc" style="width:2em;" placeholder="#"><br>
+    Independent vowels: <input type="text" id="vind" style="width:2em;" placeholder="#"><br>
+    Matres lectionis: <input type="text" id="vml" style="width:2em;" placeholder="#"><br>
+    Diacritics (visible): <input type="text" id="vcm" style="width:2em;" placeholder="#"><br>
+    Diacritics (hidden): <input type="text" id="vhcm" style="width:2em;" placeholder="#"><br>
+    Syllables: <input type="text" id="vsyl" style="width:2em;" placeholder="#"></p>
+    <p style="line-height: 1.4; text-align: end; margin-inline-end:50%;">Vowel base: transcription <input type="text" id="vbase" style="width:2em;" placeholder="HA"><br>
+    Prebase glyphs: <input type="text" id="vpre" style="width:2em;" placeholder="#"><br>
+    Circumgraphs: <input type="text" id="vcirc" style="width:2em;" placeholder="#"><br>
+    Composite vowels: <input type="text" id="vcomp" style="width:2em;" placeholder="#"><br>
+Vocalics: <input type="text" id="vvoc" style="width:2em;" placeholder="#">
+</p>
+
+<p><label><strong>Clusters</strong>&#x0009;<input id="clusters" type="text" style="width: 500px;color: red;font-size: 110%;"></label></p>
+<p class="checkboxes">
+    <label><input type="checkbox" id="cvir">visible virama</label>
+    <label><input type="checkbox" id="cinv">invisible virama for conjuncts</label>
+    <label><input type="checkbox" id="cstk">stacking</label>
+    <label><input type="checkbox" id="ccnj">conjoining</label>
+    <label><input type="checkbox" id="clig">ligation</label>
+    <label><input type="checkbox" id="ctcg">touching</label>
+    <label><input type="checkbox" id="crax">special RA</label>
+    <label><input type="checkbox" id="cmrk">diacritic</label>
+    <label><input type="checkbox" id="clet">special letters (eg. chillus)</label>
+    <label><input type="checkbox" id="cunm">unmarked in abugida (eg. punjabi)</label>
+</p>
+
+<p><label><strong>Medials &amp; finals</strong> <input id="medials" type="text" style="width: 15em;color: red;font-size: 110%;"></label> <input id="finals" type="text" style="width: 15em;color: red;font-size: 110%;"></p>
+<p class="smallBoxList">
+    Medial combining characters: <input type="text" id="mcm" style="width:2em;" placeholder="#"><br>
+    Subjoined medial characters: <input type="text" id="msj" style="width:2em;" placeholder="#"><br>
+    Dedicated medial characters: <input type="text" id="mlet" style="width:2em;" placeholder="#"><br>
+<br>
+    Final combining characters: <input type="text" id="fcm" style="width:2em;" placeholder="#"><br>
+    Dedicated final letters: <input type="text" id="flet" style="width:2em;" placeholder="#"><br>
+    Vowel-killer (add character): <input type="text" id="fvk" style="width:2em; text-align: center;" placeholder="#"><br>
+    Superscripts: <input type="text" id="fss" style="width:2em; text-align: center;" placeholder="#"><br>
+</p>
+
+
+
+
+
+
+<hr>
+<p>Generate code <button onClick="generate()">GO</button></p>
+<p><textarea id="code" style="height:15em; width: 100%;"></textarea></p>
+
+</body>
+</html>
