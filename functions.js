@@ -546,8 +546,8 @@ function showLanguage (lang) {
 		}
 	if (langs[lang].other) {
 		cumulative += langs[lang].other
-		//charList = [...langs[lang].other]
-        charList = langs[lang].other.split(' ')
+		charList = [...langs[lang].other]
+        //charList = langs[lang].other.split(' ')
         if (total > 0) stats += ', '
         stats += charList.length + ' other'
         total += charList.length
