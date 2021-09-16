@@ -133,17 +133,18 @@ function generate () {
     out += '\n'
     temp = ''
     temp += makeSubValue('vlet')
-    temp += makeSubValue('vinh')
-    temp += makeSubValue('vvs')
-    temp += makeSubValue('vvenc')
-    temp += makeSubValue('vind')
     temp += makeSubValue('vml')
     temp += makeSubValue('vcm')
     temp += makeSubValue('vhcm')
-    temp += makeSubValue('vsyl')
-    
+    temp += makeSubValue('vinh')
+    temp += makeSubValue('vvs')
+    temp += makeSubValue('vvsl')
+    temp += makeSubValue('vind')
     temp += makeSubValue('vbase')
+    temp += makeSubValue('vsyl')
+
     temp += makeSubValue('vpre')
+    temp += makeSubValue('vvenc')
     temp += makeSubValue('vcirc')
     temp += makeSubValue('vcomp')
     temp += makeSubValue('vvoc')
@@ -226,7 +227,7 @@ function readRecord (lang) {
     
     // vowels
     checkboxes = [
-        'vlet', 'vinh', 'vvs', 'vind', 'vml', 'vcm', 'vhcm', 'vsyl', 'vbase', 'vvenc', 'vpre', 'vcirc', 'vcomp', 'vvoc'
+        'vlet', 'vml', 'vcm', 'vhcm', 'vinh', 'vvs', 'vvsl', 'vind', 'vbase', 'vsyl',    'vpre', 'vvenc', 'vcirc', 'vcomp', 'vvoc'
         ]
      // initialise all input fields
     for (f=0;f<checkboxes.length;f++) {
@@ -522,21 +523,23 @@ fat | latn | For the Fante dialect of Twi"></textarea></p>
 <p><label><strong>Vowels</strong>&#x0009;<input id="vowels" type="text" style="width: 500px;color: red;font-size: 110%;"></label></p>
 
 <p class="smallBoxList">
-    Letters: <input type="text" id="vlet" style="width:2em;" placeholder="#"><br>
-    Inherent vowels: <input type="text" id="vinh" style="width:2em;" placeholder="#"><br>
-    Vowel signs: <input type="text" id="vvs" style="width:2em;" placeholder="#"><br>
-    Visually encoded prebase glyphs: <input type="text" id="vvenc" style="width:2em;" placeholder="#"><br>
-    Independent vowels: <input type="text" id="vind" style="width:2em;" placeholder="#"><br>
+    Alpha letters: <input type="text" id="vlet" style="width:2em;" placeholder="#"><br>
     Matres lectionis: <input type="text" id="vml" style="width:2em;" placeholder="#"><br>
     Diacritics (visible): <input type="text" id="vcm" style="width:2em;" placeholder="#"><br>
     Diacritics (hidden): <input type="text" id="vhcm" style="width:2em;" placeholder="#"><br>
-    Syllables: <input type="text" id="vsyl" style="width:2em;" placeholder="#"></p>
-    <p style="line-height: 1.4; text-align: end; margin-inline-end:50%;">Vowel base: transcription <input type="text" id="vbase" style="width:2em;" placeholder="HA"><br>
+    Inherent vowels: <input type="text" id="vinh" style="width:2em;" placeholder="#"><br>
+    Combining vowel signs: <input type="text" id="vvs" style="width:2em;" placeholder="#"><br>
+    Letter vowel signs: <input type="text" id="vvsl" style="width:2em;" placeholder="#"><br>
+    Independent vowels: <input type="text" id="vind" style="width:2em;" placeholder="#"><br>
+    <!--p style="line-height: 1.4; text-align: end; margin-inline-end:50%;">Vowel base: transcription <input type="text" id="vbase" style="width:2em;" placeholder="HA"><br-->
+    Vowel base: transcription <input type="text" id="vbase" style="width:2em;" placeholder="HA"><br>
+    Syllables: <input type="text" id="vsyl" style="width:2em;" placeholder="#"><br><br>
     Prebase glyphs: <input type="text" id="vpre" style="width:2em;" placeholder="#"><br>
+    Visually encoded prebase glyphs: <input type="text" id="vvenc" style="width:2em;" placeholder="#"><br>
     Circumgraphs: <input type="text" id="vcirc" style="width:2em;" placeholder="#"><br>
     Composite vowels: <input type="text" id="vcomp" style="width:2em;" placeholder="#"><br>
-Vocalics: <input type="text" id="vvoc" style="width:2em;" placeholder="#">
-</p>
+    Vocalics: <input type="text" id="vvoc" style="width:2em;" placeholder="#">
+    </p>
 
 <p><label><strong>Clusters</strong>&#x0009;<input id="clusters" type="text" style="width: 500px;color: red;font-size: 110%;"></label></p>
 <p class="checkboxes">
