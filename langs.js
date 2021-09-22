@@ -1444,10 +1444,10 @@ also:
 
 "mxi": { name:"Mozarabic (Andalusi Romance)", source:"udhr_mxi", region:"eur", script:"latn", speakers:"0", letter:"àùèòÀÙÈÒ", mark:"̀", punctuation:"’"},
 
-"my": {  name:"Burmese (Myanmar)", 
-source:"cldr_my,udhr_mya,43fe649806182b69d852d8c5881f6cc16d8731ca", 
+"my": { name:"Burmese (Myanmar)", 
+source:"cldr_my,udhr_mya,e658408933cd9f4d157eac1af6c6373f4c7c6f44", 
 region:"seasia", countries:"Myanmar", script:"mymr", speakers:"33000000", 
-letter:"ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအဣဤဥဦဧဩဪဿ", mark:"ာါိီုူေဲံျြွှ့္်း", number:"၁၉၄၈၀၂၃၅၆၇", punctuation:"၏၊။၍၌၎‘’“”", aux:"ၒၓၔၕၖၗၘၙ", 
+letter:"ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအဣဤဥဦဧဩဪဿ", mark:"ာါိီုူေဲံျြွှ့္်း", number:"၁၉၄၈၀၂၃၅၆၇", punctuation:"၏၊။၍၌၎“”", other:"\u200C\u200B\u2060", 
 orth:`Myanmar. &nbsp; <a href="../scripts/myanmar" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"mid", wrap:"word", hyphenation:"no",  direction:"ltr",  justification:"ig", 
 vowels:"inh:1 vs:8 vsl:2 ind:7 base:အ/A pre:1 comp:6",  clusters:"inv stk",  medials:"cm:4",  finals:"cm:1 vk:်", 
