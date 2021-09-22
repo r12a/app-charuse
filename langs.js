@@ -1444,7 +1444,7 @@ also:
 
 "mxi": { name:"Mozarabic (Andalusi Romance)", source:"udhr_mxi", region:"eur", script:"latn", speakers:"0", letter:"àùèòÀÙÈÒ", mark:"̀", punctuation:"’"},
 
-"my": { name:"Burmese (Myanmar)", 
+"my": {  name:"Burmese (Myanmar)", 
 source:"cldr_my,udhr_mya,43fe649806182b69d852d8c5881f6cc16d8731ca", 
 region:"seasia", countries:"Myanmar", script:"mymr", speakers:"33000000", 
 letter:"ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအဣဤဥဦဧဩဪဿ", mark:"ာါိီုူေဲံျြွှ့္်း", number:"၁၉၄၈၀၂၃၅၆၇", punctuation:"၏၊။၍၌၎‘’“”", aux:"ၒၓၔၕၖၗၘၙ", 
