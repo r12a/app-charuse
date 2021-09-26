@@ -11,23 +11,20 @@
 <script src="../shared/code/boilerplate.js"></script>
 <script src="../shared/code/all-names.js"></script>
 <script src="../shared/code/scriptGroups.js"></script>
-<script src="char_lang.js"></script>
+<!--script src="char_lang.js"></script-->
 <script src="langs.js"></script>
 <script src="functions.js"></script>
+<script src="makeCharLangArray.js"></script>
 </head>
 
-<!--body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('langNames').innerHTML = makeLangList(); document.getElementById('languageByRegion').innerHTML = listLangsByRegion(); document.getElementById('languageByScript').innerHTML = listLangsByScript()"-->
-<!--body class="app" onLoad="document.getElementById('languageSelector').innerHTML = makeBCPList(); document.getElementById('languageByRegion').innerHTML = listLangsByRegion(); document.getElementById('languageByScript').innerHTML = listLangsByScript()"-->
+
+
+
 <body class="app" onLoad="initialise()">
 <header>
 <div id="header-boilerplate"></div>
 <script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('/shared/images/world.gif','Character usage lookup','');</script>
 </header>
-<!--aside class="sidebar">
-<section>
-  <p style="font-size: 90%;"><samp>Find a language tag</samp> works for Firefox and Chrome only. For other browsers, <a href="/app-subtags/">find a tag here</a>.</p>
-</section>
-</aside-->
 
 
 <p style="font-size: 90%;">Find non-ASCII characters used by a given language, or languages that use a given non-ASCII character. While largely correct, the information may not all be 100% reliable. <strong><a href="#notesSection" onClick="document.getElementById('notesSection').open = true;">Please read the notes below.</a></strong> Click on green characters to learn what they are.</p>
@@ -41,16 +38,6 @@
 
 <p id="permalink" style="float:right;font-size:80%;">Permalink</p>
 <p>Find by typing 
-<!--input id="typefilter" type="text" list="datalist"
-					onChange="
-							query = this.value
-                            console.log(query)
-							langtag=this.value.split(' '); 
-							document.getElementById('languageSelector').value = langtag[0];
-							showLanguage(langtag[0]);
-							this.value = ''
-							"				
-					/-->
 <input id="typefilter" type="text" list="datalist"
 					onChange="
 							query = this.value
@@ -66,11 +53,7 @@
 <!--p>Filter the list <input id="filter" type="text" onInput="filter(this.value);" /> <span style="font-size: 70%; margin-left:2em;">Total: <span id="total"></span></span></p-->
 
 <p><label>
-<select id="languageSelector" onChange="showLanguage(this.value)" size="5"></select></label><!--br/>
-<i style="font-size:80%;">
-<label>Find a language tag: 
-<input style="width:30em;" list="langNames" id="langNameInput"  onChange="document.getElementById('langDetails').innerHTML = showLanguage(this.value)" placeholder="Type, then select name, then hit return." /></label></i>
-<datalist id="langNames"></datalist-->
+<select id="languageSelector" onChange="showLanguage(this.value)" size="5"></select></label>
 </p>
 
 <details id="langByScriptDetail">
@@ -97,8 +80,8 @@
  
      <p><button style="vertical-align:top;" onclick="document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)">Look up</button></p>
 <table style="margin-top: 3em;margin-right: 3em;">
-<thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th>
-<tbody id="output"><td></td><td></td><td></td></table>
+<thead><th></th><th>Languages (<em>italics</em> indicate infrequent), out of <span id="totalLanguages"></span></th><th>Native speakers</th></thead>
+<tbody id="output"><td></td><td></td><td></td></tbody></table>
 </section>
 
 
@@ -112,9 +95,6 @@
     <div><textarea name="right" id="rightList" cols="30" rows="10"></textarea><p id="rightResult">Characters unique to this side:<br/><span id="rightOut"></span></p></div>
     </div>
     <p><button onClick="compareLists()">Compare</button></p>
-    <!--/details-->
-
-<!--/details-->
 </section>
 
 
@@ -123,7 +103,6 @@
 
 
 <details style="margin-right: 7.5%; margin-top: 4em;" id="notesSection">
-  <!--summary style="margin-left: 7.5%; cursor: pointer;"><strong>Notes</strong></summary--> 
 <summary dir="rtl"><span style="color:white;background-color:#60ADFB; padding:.2em .4em; border-radius:5px; cursor:pointer;">Help</span></summary>
 
 <h2 class="flush">Notes</h2>
@@ -194,7 +173,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 
 
 <div class="smallprint" style="margin-right: 1em;"><span id="version">Latest commit <a href="https://github.com/r12a/app-charuse/commits/gh-pages"><span id="version-info"> 
-  <!-- #BeginDate format:IS1m -->2021-09-11  17:51<!-- #EndDate --> 
+  <!-- #BeginDate format:IS1m -->2021-09-26  10:31<!-- #EndDate --> 
 	</span> GMT</a>.
 	Make a <a href="https://github.com/r12a/app-charuse/issues/new">comment</a>. 
 	Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a></span></div>

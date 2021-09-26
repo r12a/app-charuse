@@ -162,6 +162,7 @@ thead th { text-align: left; }
 #langDetails th, #langDetails td { text-align: start; vertical-align: top; padding: 10px; }
 #langDetails  td.large { font-size: 1.7em; line-height: 1.5; }
 #langDetails  td.small { font-size: 1.2em; line-height: 1.5; }
+#langDetails  .small { font-size: .7em; line-height: 1.5; }
 #langDetails  td.sources { font-size: 0.9em; line-height: 1.5; }
 #langDetails  td.other { font-size: 0.9em; line-height: 1.5; }
 #langDetails th { text-align: right;  width:5em; }
@@ -355,7 +356,8 @@ img {
 	border-radius: 8px;
 	padding: 3px;
 	}
-#letterCell span, #markCell span, #punctuationCell span, #numberCell span, #symbolCell span, #infrequentCell span {
+/*#letterCell span, #markCell span, #punctuationCell span, #numberCell span, #symbolCell span, #infrequentCell span {*/
+.c {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 3px;

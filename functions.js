@@ -1,3 +1,6 @@
+debug = false
+
+
 var scriptData = {
 'ascii':{ name:'ASCII only', block:"" },
 'adlm':{ name:'Adlam', block:"adlam" },
@@ -84,6 +87,10 @@ var scriptData = {
 
 
 
+
+
+
+
 function makeBCPList () {
 	//out = '<option value=""> </option>'
 	out = ''
@@ -91,7 +98,7 @@ function makeBCPList () {
 	array = []
 	for (l in langs) array.push(l)
 	array.sort()
-	for (let i=0;i<array.length;i++) {
+	for (var i=0;i<array.length;i++) {
 		out += '<option value="'+array[i]+'">'+array[i]+' '+langs[array[i]].name+'</option>\n'
 		datalist += '<option value="'+array[i]+' '+langs[array[i]].name+'">'+array[i]+' '+langs[array[i]].name+'</option>\n'
 		}
@@ -366,17 +373,54 @@ function getAll () {
 	}
 
 
+function getCharsOnRow (node) {
+    // return a list of characters in a row for processing by the right column
+    spans=node.parentNode.parentNode.querySelectorAll('.c')
+    chars=''
+    for (i=0;i<spans.length;i++) chars+=spans[i].textContent
+    return chars
+    }
+
+
+function addSpacesTo (str) {
+    // adds spaces to a string, used for preparing list of characters for font app
+    array = [...str]
+    return array.join(' ')
+    }
+
+
+function addRightColContent (charlist, lang) {
+    var out = `<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard('${ charlist }')"><img src="icons/copy.png"></span></td>`
+    out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
+    out += `<div class="popup" style="position:absolute; right:0;">
+    <div><a href="/app-analysestring/?chars=${ charlist }" target="_blank">Show details</a></div>
+    <div><a href="/uniview?charlist=${ charlist }" target="_blank">Show characters in UniView</a></div>
+    <div><a href="/app-listcharacters?chars=${ charlist }" target="_blank">List characters by block</a></div>
+    <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${ addSpacesTo(charlist) }" target="_blank">Send to Font lister</a></div>`
+    if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${ charlist }">Show in character app</a></div>`
+    out += '</div>'
+    out += '</td>'
+
+    return out
+    }
+
 
 function showLanguage (lang) {
-	out = ''
-	var charList
+    // writes out the content for a given language
+    // globals
+    // langs: stored in langs.js
+    // charData:
+    // scriptData
+    
+	var out = ''
+	var charList, cp
     var stats = 'Non-ASCII character count: &nbsp; '
     var total = 0
 
 	// check this is a valid langtag
 	if (!langs[lang]) { alert("The tag "+lang+" was not recognised."); return }
 	
-	if (langs[lang].silcode) langcode = langs[lang].silcode
+	if (langs[lang].silcode) var langcode = langs[lang].silcode
 	else langcode = lang
 
 	out += '<tr><td colspan="2" class="links" style="text-align:right; padding: 0; font-size: 80%; vertical-align:bottom;"><span style="cursor:pointer; margin-right:1em; color:teal;" onclick="toImg(document.getElementById(\'letterCell\')); toImg(document.getElementById(\'markCell\')); toImg(document.getElementById(\'punctuationCell\')); toImg(document.getElementById(\'numberCell\')); toImg(document.getElementById(\'infrequentCell\')); toImg(document.getElementById(\'symbolCell\')); this.style.color=\'#ccc\';">Convert to images</span></td><td class="links" style="padding:0;">&nbsp;</td></tr>'
@@ -389,187 +433,253 @@ function showLanguage (lang) {
 	// local name
 	if (langs[lang].local) out += '<tr><th>Autonym</th><td class="localCell">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
 	
-	if (langs[lang].rtl) rtl = true
+	if (langs[lang].rtl) var rtl = true
 	else rtl = false
 	
-	cumulative = ''  // gathers all characters, mainly for font parameter
+	var cumulative = ''  // gathers all characters, mainly for font parameter
+    var main, aux
 	
 	// characters
-	if (langs[lang].letter) {
-		cumulative += langs[lang].letter
-		charList = [...langs[lang].letter]
-		charList.sort()
-        stats += charList.length + ' letters'
-        total += charList.length
-		out += '<tr><th>Letters<br><span class="rowCount">'+charList.length+'</span></th><td class="large" id="letterCell"'
+	if (langs[lang].letter || langs[lang].letteraux) {
+        if (langs[lang].letter) main = langs[lang].letter
+        else main = ''
+        if (langs[lang].letteraux) aux = langs[lang].letteraux
+        else aux = ''
+        cumulative += main + aux
+        rowCount = [...main].length+[...aux].length
+        stats += rowCount + ' letters, '
+        total += rowCount
+		out += '<tr><th>Letters<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="letterCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
-		for (j=0;j<charList.length;j++) { 
+        
+		charList = [...main]
+		for (var j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'
+			out += '<span title="'+name+'" class="c">'
             if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
 			else out += charList[j]
 			out += '</span> ' 
 			}
+        if (langs[lang].letteraux) {
+            out += ' + '
+            charList = [...langs[lang].letteraux]
+            //thisRow += charList.join('')
+            for (j=0;j<charList.length;j++) { 
+                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+                while (cp.length<4) cp = '0'+cp
+                name = 'U+'+cp+' '+charData[charList[j]]
+                out += '<span title="'+name+'" class="c small">'
+                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                else out += charList[j]
+                out += '</span> '
+                }
+            }
         out += '</td>'
-		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
-        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
-        out += `<div class="popup" style="position:absolute; right:0;">
-        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
-        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
-        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
-        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
-        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
-        out += '</div>'
-        out += '</td></tr>'
+        out += addRightColContent(main+aux, lang)
+        out += '</tr>'
 		}
-	if (langs[lang].mark) {
-		cumulative += langs[lang].mark
-		charList = [...langs[lang].mark]
- 		charList.sort()
-        if (total > 0) stats += ', '
-        stats += charList.length + ' marks'
-        total += charList.length
-		out += '<tr><th>Marks<br><span class="rowCount">'+charList.length+'</span></th><td class="large" id="markCell"'
+	if (langs[lang].mark || langs[lang].markaux) {
+        if (langs[lang].mark) main = langs[lang].mark
+        else main = ''
+        if (langs[lang].markaux) aux = langs[lang].markaux
+        else aux = ''
+        cumulative += main + aux
+        rowCount = [...main].length+[...aux].length
+        stats += rowCount + ' marks, '
+        total += rowCount
+		out += '<tr><th>Marks<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="markCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
+        
+		charList = [...main]
 		for (j=0;j<charList.length;j++) { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'
+			out += '<span title="'+name+'" class="c">'
             if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+'\u00A0'+charList[j]+'</a>'
 			else out += '\u00A0'+charList[j]
 			out += '</span> ' 
 			}
+        if (langs[lang].markaux) {
+            out += ' + '
+            charList = [...langs[lang].markaux]
+            for (j=0;j<charList.length;j++) { 
+                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+                while (cp.length<4) cp = '0'+cp
+                name = 'U+'+cp+' '+charData[charList[j]]
+                out += '<span title="'+name+'" class="c small">'
+                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                else out += charList[j]
+                out += '</span> ' 
+                }
+            }
 		out += '</td>'
-		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
-        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
-        out += `<div class="popup" style="position:absolute; right:0;">
-        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
-        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
-        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
-        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
-        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
-        out += '</div>'
-        out += '</td></tr>'
+        out += addRightColContent(main+aux, lang)
+        out += '</tr>'
 		}
-	if (langs[lang].number) {
-		cumulative += langs[lang].number
-		charList = [...langs[lang].number]
-        if (total > 0) stats += ', '
-        stats += charList.length + ' numbers'
-        total += charList.length
-		out += '<tr><th>Numbers<br><span class="rowCount">'+charList.length+'</span></th><td class="large" id="numberCell"'
+	if (langs[lang].number || langs[lang].numberaux) {
+        if (langs[lang].number) main = langs[lang].number
+        else main = ''
+        if (langs[lang].numberaux) aux = langs[lang].numberaux
+        else aux = ''
+        cumulative += main + aux
+        rowCount = [...main].length+[...aux].length
+        stats += rowCount + ' numbers, '
+        total += rowCount
+		out += '<tr><th>Numbers<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="numberCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
+        
+		charList = [...main]
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'
+			out += '<span title="'+name+'" class="c">'
             if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
 			else out += charList[j]
 			out += '</span> ' 
 			}
+        if (langs[lang].numberaux) {
+            out += ' + '
+            charList = [...langs[lang].numberaux]
+            for (j=0;j<charList.length;j++) { 
+                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+                while (cp.length<4) cp = '0'+cp
+                name = 'U+'+cp+' '+charData[charList[j]]
+                out += '<span title="'+name+'" class="c small">'
+                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                else out += charList[j]
+                out += '</span> ' 
+                }
+            }
 		out += '</td>'
-		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
-        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
-        out += `<div class="popup" style="position:absolute; right:0;">
-        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
-        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
-        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
-        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
-        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
-        out += '</div>'
+        out += addRightColContent(main+aux, lang)
+        out += '</tr>'
 		}
-	if (langs[lang].punctuation) {
-		cumulative += langs[lang].punctuation
-		charList = [...langs[lang].punctuation]
- 		charList.sort()
-        if (total > 0) stats += ', '
-        stats += charList.length + ' punctuation'
-        total += charList.length
-		out += '<tr><th>Punctuation<br><span class="rowCount">'+charList.length+'</span></th><td class="large" id="punctuationCell"'
+	if (langs[lang].punctuation || langs[lang].punctuationaux) {
+        if (langs[lang].punctuation) main = langs[lang].punctuation
+        else main = ''
+        if (langs[lang].punctuationaux) aux = langs[lang].punctuationaux
+        else aux = ''
+        cumulative += main + aux
+        rowCount = [...main].length+[...aux].length
+        stats += rowCount + ' punctuation, '
+        total += rowCount
+		out += '<tr><th>Punctuation<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="punctuationCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
+        
+		charList = [...main]
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'
+			out += '<span title="'+name+'" class="c">'
             if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
 			else out += charList[j]
 			out += '</span> ' 
 			}
+        if (langs[lang].punctuationaux) {
+            out += ' + '
+            charList = [...langs[lang].punctuationaux]
+            for (j=0;j<charList.length;j++) { 
+                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+                while (cp.length<4) cp = '0'+cp
+                name = 'U+'+cp+' '+charData[charList[j]]
+                out += '<span title="'+name+'" class="c small">'
+                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                else out += charList[j]
+                out += '</span> ' 
+                }
+            }
 		out += '</td>'
-		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
-        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
-        out += `<div class="popup" style="position:absolute; right:0;">
-        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
-        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
-        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
-        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
-        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
-        out += '</div>'
+        out += addRightColContent(main+aux, lang)
+        out += '</tr>'
 		}
-	if (langs[lang].symbol) {
-		cumulative += langs[lang].symbol
-		charList = [...langs[lang].symbol]
-        if (total > 0) stats += ', '
-        stats += charList.length + ' symbols'
-        total += charList.length
-		out += '<tr><th>Symbols<br><span class="rowCount">'+charList.length+'</span></th><td class="large" id="symbolCell"'
+	if (langs[lang].symbol || langs[lang].symbolaux) {
+        if (langs[lang].symbol) main = langs[lang].symbol
+        else main = ''
+        if (langs[lang].symbolaux) aux = langs[lang].symbolaux
+        else aux = ''
+        cumulative += main + aux
+        rowCount = [...main].length+[...aux].length
+        stats += rowCount + ' symbols, '
+        total += rowCount
+		out += '<tr><th>Symbols<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="symbolCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
+        
+		charList = [...main]
 		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">'
+			out += '<span title="'+name+'" class="c">'
             if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
 			else out += charList[j]
 			out += '</span> ' 
 			}
+        if (langs[lang].symbolaux) {
+            out += ' + '
+            charList = [...langs[lang].symbolaux]
+            for (j=0;j<charList.length;j++) { 
+                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+                while (cp.length<4) cp = '0'+cp
+                name = 'U+'+cp+' '+charData[charList[j]]
+                out += '<span title="'+name+'" class="c small">'
+                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                else out += charList[j]
+                out += '</span> ' 
+                }
+            }
 		out += '</td>'
-		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
-        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
-        out += `<div class="popup" style="position:absolute; right:0;">
-        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
-        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
-        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
-        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
-        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
-        out += '</div>'
+        out += addRightColContent(main+aux, lang)
+        out += '</tr>'
 		}
-	if (langs[lang].other) {
-		cumulative += langs[lang].other
-		charList = [...langs[lang].other]
-        //charList = langs[lang].other.split(' ')
-        if (total > 0) stats += ', '
-        stats += charList.length + ' other'
-        total += charList.length
-		out += '<tr><th>Other<br><span class="rowCount">'+charList.length+'</span></th><td class="other" id="otherCell">'
-		out += langs[lang].other
-		/*for (j=0;j<charList.length;j++)  { 
+	if (langs[lang].other || langs[lang].otheraux) {
+        if (langs[lang].other) main = langs[lang].other
+        else main = ''
+        if (langs[lang].otheraux) aux = langs[lang].otheraux
+        else aux = ''
+        cumulative += main + aux
+        rowCount = [...main].length+[...aux].length
+        stats += rowCount + ' other'
+        total += rowCount
+		out += '<tr><th>Other<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="otherCell"'
+		if (rtl) out += ' dir="rtl">'
+		else out += '>'
+        
+		charList = [...main]
+		for (j=0;j<charList.length;j++)  { 
 			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'">U+'+cp+'</span> ' 
-			}*/
-		//for (j=0;j<charList.length;j++) out += charList[j].codepointAt(0)+' '
+			out += '<bdi title="'+name+'" class="c">'
+            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+			else out += charList[j]
+			out += '</bdi> ' 
+			}
+        if (langs[lang].otheraux) {
+            out += ' + '
+            charList = [...langs[lang].otheraux]
+            for (j=0;j<charList.length;j++) { 
+                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+                while (cp.length<4) cp = '0'+cp
+                name = 'U+'+cp+' '+charData[charList[j]]
+                out += '<bdi title="'+name+'" class="c small">'
+                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                else out += charList[j]
+                out += '</bdi> ' 
+                }
+            }
 		out += '</td>'
-		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
-        out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
-        out += `<div class="popup" style="position:absolute; right:0;">
-        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
-        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
-        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
-        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
-        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
-        out += '</div>'
+        out += addRightColContent(main+aux, lang)
+        out += '</tr>'
 		}
 			
 	// stats
@@ -577,8 +687,8 @@ function showLanguage (lang) {
 	if (langs[lang].aux || langs[lang].deprecated) stats += ' &nbsp; &nbsp; + ( '
 	if (langs[lang].aux) {
 		charList = [...langs[lang].aux]
-        stats += charList.length + ' infrequent '
-		out += '<tr><th>Infrequent<br><span class="rowCount">'+charList.length+'</span></th><td class="small" id="infrequentCell"'
+        stats += charList.length + ' possible '
+		out += '<tr><th>Possible<br><span class="rowCount">'+charList.length+'</span></th><td class="small" id="infrequentCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
 		for (j=0;j<charList.length;j++) { 
@@ -604,9 +714,9 @@ function showLanguage (lang) {
 	if (langs[lang].deprecated) {
 		charList = [...langs[lang].deprecated]
         if (total > 0) stats += ', '
-        stats += charList.length + ' deprecated'
+        stats += charList.length + ' not used'
         total += charList.length
-		out += '<tr><th>Deprecated<br><span class="rowCount">'+charList.length+'</span></th><td class="small"'
+		out += '<tr><th>Not used!<br><span class="rowCount">'+charList.length+'</span></th><td class="small"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
 		for (j=0;j<charList.length;j++)  { 
@@ -977,6 +1087,8 @@ function setFont (fontName) {
 
 
 function initialise () {
+    createCLArray()
+    
 	//document.getElementById('languageSelector').innerHTML = makeBCPList()
 	makeBCPList()
 	document.getElementById('languageByRegion').innerHTML = listLangsByRegion()
