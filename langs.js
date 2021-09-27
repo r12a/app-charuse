@@ -349,7 +349,7 @@ also:
 "bn": { name:"Bengali (Bangla)", local:"বাংলা /ˈbʌŋlə/", silcode:"ben", 
 source:"10e4909416eed2f0279eb7996f90c6bab37281e2,cldr_bn,udhr_ben", 
 region:"sasia", countries:"Bangladesh, India", script:"beng", speakers:"260000000", 
-letter:"অআইঈউঊঋএঐওঔকষখগঘঙচছজঝঞটঠডঢণতৎথদধনপফবভমযরলশসহঽ", letteraux:"\u09DC\u09DD\u09DFৠঌৡ", mark:"়ংঃঁ্ািীুূৃেৈোৌৗ", markaux:"ৄৢৣ", number:"১২৩৪৫৬৭৮৯০", punctuation:"।॥“”‘’", punctuationaux:"–—…", symbol:"৺৳", other:"\u200C\u200D", aux:"†‡′″",
+letter:"অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহঽৎʼ", letteraux:"\u09DC\u09DD\u09DF", mark:"়ংঃঁ্ািীুূৃেৈোৌৗ", number:"১২৩৪৫৬৭৮৯০", punctuation:"।॥“”‘’", symbol:"৺৳", other:"\u200C\u200D", aux:"৽†‡′″–—…",
 orth:`[Bengali] &nbsp; <a href="../scripts/bengali" target="_blank">Details</a>.`,
 also:
 ["bn-newa | newa | No longer in use."],
