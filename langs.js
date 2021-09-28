@@ -1752,10 +1752,10 @@ also:
 "rom": { name:"Romany", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"~1500000", related:`rom is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Carpathian Romani [rmc]<br/>Kalo Finnish Romani [rmf]<br/>Baltic Romani [rml]<br/>Balkan Romani [rmn]<br/>Sinte Romani [rmo]<br/>Welsh Romani [rmw]<br/>Vlax Romani [rmy].
 Legacy applications often use rom rather than [rmy].`},
 
-"ru": {  name:"Russian", local:"русский язык‎ (russkij jazyk)", silcode:"rus", 
-source:"cldr_ru,udhr_rus", 
+"ru": { name:"Russian", local:"русский язык‎ (russkij jazyk)", silcode:"rus", 
+source:"3b62d1cd6732b3b939bef075192c917a41ed20da,cldr_ru,udhr_rus", 
 region:"eur", countries:"Russia, Ukraine, Kazakhstan, Uzbekistan, Poland, Belarus, Azerbaijan, Georgia, Kyrgyzstan, Lithuania, Latvia, Moldova, Estonia, etc.", script:"cyrl", speakers:"258227760", 
-letter:"всеобщаядклрципчнтзгшюйьмуыхъжэфёВСЕОБЩАЯДКЛРЦИПЧНТЗГШЮЙЬМУЫХЪЖЭФЁ", mark:"̆̈", punctuation:"‐–—…‘‚“„«»§", aux:"́", 
+letter:"всеобщаядклрципчнтзгшюйьмуыхъжэфёВСЕОБЩАЯДКЛРЦИПЧНТЗГШЮЙЬМУЫХЪЖЭФЁ", markaux:"̆̈́", punctuation:"‐–—…“„«»", aux:"§", 
 orth:`Cyrillic. &nbsp; <a href="../scripts/cyrillic" target="_blank">Details</a>.`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp",
 vowels:"let:11",
