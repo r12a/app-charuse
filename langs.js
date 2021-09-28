@@ -769,7 +769,7 @@ also:
 ["fuf | latn | ",
 "fuf-arab | arab | Sub-Saharan/Sahelian style."],
 related:`Macrolanguage is Fulah [ff].`,
-type:"alphabet", cs:"yes", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl*", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  justification:"sp",
+type:"alphabet", cs:"yes", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl*", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes",  justification:"sp",
 vowels:"let:5+2",
 linked:"adlam", fonts:"/pickers/adlm/", 
 },
