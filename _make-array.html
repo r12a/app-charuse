@@ -6,9 +6,9 @@
 
 <!-- creates markup for a list of Latin characters -->
 
-<!--script type="text/javascript" src="../../../../uniview/u.js"></script-->
-<script type="text/javascript" src="langs.js"></script>
-<script type="text/javascript">
+<!--script src="../../../../uniview/u.js"></script-->
+<script src="langs.js"></script>
+<script>
 
 
 cl = []
@@ -45,7 +45,8 @@ function makeList (list, lang) {
 	}
 
 
-function updateCL (list, auxlist, lang) { console.log('UPDATECL: list ',list, 'auxlist ',auxlist, 'lang', lang)
+function updateCL (list, auxlist, lang) { 
+    if (debug) console.log('UPDATECL: list ',list, 'auxlist ',auxlist, 'lang', lang)
 	list = list.trim()
 	auxlist = auxlist.trim()
 	list = list.replace(/\s+/g,'')
@@ -102,8 +103,18 @@ function create () {
         if (langs[lang].symbol) list += langs[lang].symbol
         if (langs[lang].separator) list += langs[lang].separator
         if (langs[lang].other) list += langs[lang].other
+
+        if (langs[lang].letteraux) auxlist += langs[lang].letteraux
+        if (langs[lang].markaux) auxlist += langs[lang].markaux
+        if (langs[lang].numberaux) auxlist += langs[lang].numberaux
+        if (langs[lang].punctuationaux) auxlist += langs[lang].punctuationaux
+        if (langs[lang].symbolaux) auxlist += langs[lang].symbolaux
+        if (langs[lang].separatoraux) auxlist += langs[lang].separatoraux
+        if (langs[lang].otheraux) auxlist += langs[lang].otheraux
+
         if (langs[lang].aux) auxlist += langs[lang].aux
         console.log(list,lang,auxlist)
+        
         if (list != '') updateCL(list,auxlist,lang)+'\n'
         }
     console.log(cl)
