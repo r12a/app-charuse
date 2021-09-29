@@ -674,7 +674,7 @@ orth:`[Latin] &nbsp; Used since 1850s, primary usage.`},
 "el": { name:"Greek, Modern", local:"ελληνικά (elliniká), Νέα Ελληνικά‎ (Néa Ellīniká)", silcode:"ell", 
 source:"699008154b84228aa76b6e70cce872c0177878c1,cldr_el,udhr_udhr_ell_monotonic", 
 region:"eur", countries:"Greece, Cyprus, Albania", script:"grek", speakers:"12000000", 
-letter:"ΆΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώ", letteraux:"ϡϟ", markaux:"́̈", punctuation:"·«»‐‑–—“”‘’…͵ʹ", aux:"ᾺὰἈἀἉἁἊἂἋἃἌἄἍἅἎἆἏἇᾲᾴᾶᾷᾸᾰᾹᾱᾼᾳᾈᾀᾉᾁᾊᾂᾋᾃᾌᾄᾍᾅᾎᾆᾏᾇῈὲἘἐἙἑἚἒἛἓἜἔἝἕῊὴἨἠἩἡἪἢἫἣἬἤἭἥἮἦἯἧῆῌῃῂῄῇᾘᾐᾙᾑᾚᾒᾛᾓᾜᾔᾝᾕᾞᾖᾟᾗῚὶἸἰἹἱἺἲἻἳἼἴἽἵἾἶἿἷῘῐῙῑῒῖῗῸὸὈὀὉὁὊὂὋὃὌὄὍὅῪὺὐὒὔὖὙὑὛὓὝὕὟὗῨῠῩῡῢῦῧῺὼὨὠὩὡὪὢὫὣὬὤὭὥὮὦὯὧῼῳᾨᾠᾩᾡᾪᾢᾫᾣᾬᾤᾭᾥᾮᾦᾯᾧῲῴῶῷῤῬῥ̀̄̆̓̔͂ͅ", deprecated:"\u{313}\u{308}\u{301}\u{387}\u{374}\u{37E}",
+letter:"ΆΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώ", letteraux:"ϗϡϠϟϞϛ", markaux:"́̈", punctuation:"·«»‐‑–—“”‘’…͵ʹ", symbol:"€", aux:"ᾺὰἈἀἉἁἊἂἋἃἌἄἍἅἎἆἏἇᾲᾴᾶᾷᾸᾰᾹᾱᾼᾳᾈᾀᾉᾁᾊᾂᾋᾃᾌᾄᾍᾅᾎᾆᾏᾇῈὲἘἐἙἑἚἒἛἓἜἔἝἕῊὴἨἠἩἡἪἢἫἣἬἤἭἥἮἦἯἧῆῌῃῂῄῇᾘᾐᾙᾑᾚᾒᾛᾓᾜᾔᾝᾕᾞᾖᾟᾗῚὶἸἰἹἱἺἲἻἳἼἴἽἵἾἶἿἷῘῐῙῑῒῖῗῸὸὈὀὉὁὊὂὋὃὌὄὍὅῪὺὐὒὔὖὙὑὛὓὝὕὟὗῨῠῩῡῢῦῧῺὼὨὠὩὡὪὢὫὣὬὤὭὥὮὦὯὧῼῳᾨᾠᾩᾡᾪᾢᾫᾣᾬᾤᾭᾥᾮᾦᾯᾧῲῴῶῷῤῬῥ̀̄̆̓̔͂ͅ", deprecated:"\u{313}\u{308}\u{301}\u{387}\u{374}\u{37E}",
 orth:`[Greek] &nbsp; Essentially Monotonic Greek ([el-monoton]), however the polytonic Greek characters are included in the list of infrequently used characters. <a href="../scripts/greek" target="_blank">Details</a>.`,
 also:
 ["grc | grek | Ancient Greek, polytonic ([polyton]).",
