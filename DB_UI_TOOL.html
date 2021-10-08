@@ -68,11 +68,17 @@ function generate () {
     // CHARACTERS
     out += '\n'
     out += makeValue('letter')
+    out += makeValue('letteraux')
     out += makeValue('mark')
+    out += makeValue('markaux')
     out += makeValue('number')
+    out += makeValue('numberaux')
     out += makeValue('punctuation')
+    out += makeValue('punctuationaux')
     out += makeValue('symbol')
+    out += makeValue('symbolaux')
     out += makeValue('other')
+    out += makeValue('otheraux')
     out += makeValue('aux')
     out += makeValue('deprecated')
     out += '\n'
@@ -216,7 +222,7 @@ function readRecord (lang) {
     var fields = [
         'name','local','silcode','source', 
         'region', 'countries', 'script', 'speakers',
-        'letter', 'mark', 'number', 'punctuation', 'symbol', 'other', 'aux', 'deprecated',
+        'letter', 'letteraux', 'mark', 'markaux', 'number', 'numberaux', 'punctuation', 'punctuationaux', 'symbol', 'symbolaux', 'other', 'otheraux', 'aux', 'deprecated',
         'type', 'cs', 'gpos', 'gsub', 'cursive', 'direction', 'baseline', 'wordsep', 'wordsepChar', 'wrap', 'hyphenation', 'hyphen', 'justification', 'linked', 'fonts',
         'vowels','clusters', 'medials', 'finals',
         ]
@@ -397,12 +403,18 @@ Redirect? <input type="checkbox" id="redirect"></p>
 <hr>
 
 <p><label>Letter&#x0009;<input type="text" id="letter" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Letter (aux)&#x0009;<input type="text" id="letteraux" placeholder="∅" style="width:30em;"></label></p>
 <p><label>Mark&#x0009;<input type="text" id="mark" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Mark (aux)&#x0009;<input type="text" id="markaux" placeholder="∅" style="width:30em;"></label></p>
 <p><label>Number&#x0009;<input type="text" id="number" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Number (aux)&#x0009;<input type="text" id="numberaux" placeholder="∅" style="width:30em;"></label></p>
 <p><label>Punctuation&#x0009;<input type="text" id="punctuation" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Punc. (aux)&#x0009;<input type="text" id="punctuationaux" placeholder="∅" style="width:30em;"></label></p>
 <p><label>Symbol&#x0009;<input type="text" id="symbol" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Symbol (aux)&#x0009;<input type="text" id="symbolaux" placeholder="∅" style="width:30em;"></label></p>
 <p><label>Other&#x0009;<input type="text" id="other" placeholder="∅" style="width:30em;"></label></p>
-<p><label>Infrequent&#x0009;<input type="text" id="aux" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Other (aux)&#x0009;<input type="text" id="otheraux" placeholder="∅" style="width:30em;"></label></p>
+<p><label>Possible&#x0009;<input type="text" id="aux" placeholder="∅" style="width:30em;"></label></p>
 <p><label>Deprecated&#x0009;<input type="text" id="deprecated" placeholder="∅" style="width:30em;"></label></p>
 <hr>
 
