@@ -876,7 +876,7 @@ linked:"hebrew", fonts:"/pickers/hebr/",
 },
 
 "hi": { name:"Hindi", local:" मानक हिन्दी‎ (Mānak Hindī), हिन्दी‎ (Hindī)", silcode:"hin", 
-source:"cldr_hi,udhr_hin,9d8e188be96400153901b55006feaaf9fd4bf3b1", 
+source:"9d8e188be96400153901b55006feaaf9fd4bf3b1,cldr_hi,udhr_hin", 
 region:"sasia", countries:"India, Nepal, Singapore, South Africa", script:"deva", speakers:"260000000", 
 letter:"अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहक़फ़ज़ख़ग़ड़ढ़", letteraux:"ऍऑऽॐ", mark:"ँंः़ािीुूृेैोौ्", markaux:"ॅॉ", number:"०१२३४५६७८९", punctuation:"।॥॰‘’“”—", symbol:"₹", other:"‌‍", 
 orth:`[Devanagari] &nbsp;  
