@@ -1254,7 +1254,7 @@ region:"seasia", countries:"Myanmar, Thailand", script:"kali", speakers:"170000"
 letter:"ꤟꤛꤕꤙꤖꤒꤘꤓꤊꤋꤌꤡꤠꤞꤎꤐꤏꤗꤔꤑꤍꤝꤚꤜꤢꤤꤥꤣ", mark:"ꤦꤧꤨꤩꤪ꤬꤫꤭", number:"꤁꤂꤃꤄꤅꤆꤇꤈꤉꤀", punctuation:"꤯“”꤮", 
 orth:`Kayah Li. &nbsp; Primary usage. Developed in 1962. <a href="../scripts/kali/" target="_blank">Details</a>.`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  justification:"?",
-vowels:"let:4 cm:5",
+vowels:"let:4 cm:5 base:ꤢ/A",
 linked:"kali/", fonts:"/pickers/kali/", 
 },
 
