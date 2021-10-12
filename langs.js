@@ -994,7 +994,7 @@ also:
 ['jv-java | java | No longer in common use.']
 },
 
-"jv-java": { name:"Javanese", silcode:"jav", 
+"jv-java": {  name:"Javanese", silcode:"jav", 
 source:"6c4597409a211714769081f0db0c92a0314ede5f", 
 region:"seasia", countries:"Indonesia, Singapore", script:"java", speakers:"94000000", 
 letter:"ꦄꦆꦇꦈꦉꦊꦋꦌꦎꦏꦑꦒꦓꦔꦕꦖꦗꦘꦚꦛꦝꦟꦠꦡꦢꦤꦥꦦꦧꦨꦩꦪꦫꦭꦮꦱꦲꧏ", mark:"ꦀꦁꦂꦃ꦳ꦴꦶꦸꦺꦼꦽꦾꦿ꧀", number:"꧐꧑꧒꧓꧔꧕꧖꧗꧘꧙", punctuation:"꧁꧂꧃꧄꧅꧆꧇꧈꧉꧊꧋꧌꧍", letteraux:"ꦙꦜꦞꦣꦯꦰ", punctuationaux:"꧞꧟", 
