@@ -865,7 +865,7 @@ linked:"arabic/hausa", fonts:"/pickers/arab-ha/",
 
 "haw": { name:"Hawaiian", source:"cldr_haw,udhr_haw", region:"oce", countries:"USA", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"̄", punctuation:"’‘“”", local:" ’Olelo Hawai’i"},
 
-"he": { name:"Hebrew", local:" עברית‎ (Ivrit), עברית חדשה‎ (ivrít ḥadašá[h])", silcode:"heb", rtl:true, 
+"he": {  name:"Hebrew", local:" עברית‎ (Ivrit), עברית חדשה‎ (ivrít ḥadašá[h])", silcode:"heb", rtl:true, 
 source:"cldr_he,udhr_heb,354bc8cccb82991d56ad51ac6f1c3b8437b28055", 
 region:"wasia", countries:"Israel, etc.", script:"hebr", speakers:"9000000", 
 letter:"אבגדהוזחטיכךלמםנןסעפףצץקרשת", punctuation:"׳״־‐–—", symbol:"₪", other:"\u200D\u200C\u200F\u200E\u2067\u2066\u2069\u202B\u202A\u202C\u034F", markaux:"ְֱֲֳִֵֶַָֹֻּׁׂ", 
