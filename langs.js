@@ -345,6 +345,17 @@ orth:`[Latin] &nbsp; `,
 also:
 ['nqo | nkoo | Written koiné used by speakers of Maninka, Bambara, Dyula and related dialects.']
 },
+"bm": { name:"Bambara (Bamanankan)", local:"bamanankan", silcode:"bam", 
+source:"cldr_bm,udhr_bam", 
+region:"afr", countries:"Mali", script:"latn", speakers:"4100000", 
+letter:"ŋɔɛɲŊƆƐƝʼ", letteraux:"àáèéìíòóùú", markaux:"̀́̂̌", punctuation:"‘’“”", 
+orth:`[Latin] &nbsp; `,
+also:
+["nqo | nkoo | Written koiné used by speakers of Maninka, Bambara, Dyula and related dialects."],
+type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
+vowels:"let:7", 
+linked:"/scripts/latin/bm", fonts:"/pickers/latn-bm", 
+},
 
 "bn": { name:"Bengali (Bangla)", local:"বাংলা /ˈbʌŋlə/", silcode:"ben", 
 source:"10e4909416eed2f0279eb7996f90c6bab37281e2,cldr_bn,udhr_ben", 
