@@ -750,7 +750,7 @@ linked:"latin/ff", fonts:"latn-ff",
 },
 
 "ff-adlm": { name:"Fula (Fulani, Fulfulde, Fulah)", rtl:true, 
-source:"udhr_fuf_adlm", 
+source:"87aa8d2418234ff41d8b66385c7475c5b8f290cb,udhr_fuf_adlm", 
 region:"afr", script:"adlm", speakers:"3000000", 
 letter:"𞤭𞤋𞤵𞤓𞤫𞤉𞤮𞤌𞤢𞤀𞤨𞤆𞤼𞤚𞤷𞤕𞤳𞤑𞤹𞤗𞤦𞤄𞤩𞤇𞤣𞤁𞤯𞤍𞤶𞤔𞤺𞤘𞤬𞤊𞤧𞤅𞤸𞤖𞤥𞤃𞤲𞤐𞤻𞤙𞤽𞤛𞤱𞤏𞤪𞤈𞤤𞤂𞤴𞤒𞤰𞤎𞤾𞤜𞤿𞤝𞥀𞤞𞥁𞤟𞥂𞤠𞥃𞤡𞥋", mark:"𞥊𞥆𞥅𞥄𞥈𞥉𞥇", number:"𞥐𞥑𞥒𞥓𞥔𞥕𞥖𞥗𞥘𞥙", punctuation:"𞥟𞥞⹁⁏؟“”…", other:"\u{200C}\u{200D}\u{2067}\u{202B}\u{2066}\u{202A}\u{2068}\u{2069}\u{202C}\u{200F}\u{200E}",
 orth:`[Adlam] &nbsp; Since 1989, in development. <a href="../scripts/adlam/">Details</a>`,
