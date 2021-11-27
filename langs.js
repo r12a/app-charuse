@@ -766,12 +766,18 @@ also:
 
 "fr": { name:"French", silcode:"fra", source:"cldr_fr,udhr_fra", region:"eur", countries:"France, etc.", script:"latn", speakers:"150000000", letter:"àâæçéèêëîïôùûüÿÀÂÆÇÉÈÊËÎÏÔÙÛÜœŒŸ", mark:"̧̀̂́̈", punctuation:"«»§‐–—…’“”†‡", aux:"āćēīĳřšſĀĆĒĪĲŘŠǔǓáåäãíìñóòöõøßúÁÅÄÃÍÌÑÓÒÖÕØÚ̊̃̄̌", local:"français"},
 
-"fuf": {  name:"Pular", source:"udhr_fuf", region:"afr", countries:"Guinea, Sierra Leone, Senegal, Mali", script:"ascii", speakers:"3000000", local:"Pular", 
-related:`Macrolanguage is Fulah [ff].`,
+"fuf": { name:"Pular", local:"Pular", 
+source:"d71a9f038980d010a2887a07d956007fe0c9b285,udhr_fuf", 
+region:"afr", countries:"Guinea, Sierra Leone, Senegal, Mali", script:"latn", speakers:"3000000", 
+letter:"ŊŋƁƊƝƳƴɓɗɲʼ", letteraux:"Ññ", 
 orth:`[Latin] &nbsp; `,
 also:
-['fuf-adlm | adlm | Since 1989, in development.',
-'fuf-arab | arab | Sub-Saharan/Sahelian style.']
+["fuf-adlm | adlm | Since 1989, in development.",
+"fuf-arab | arab | Sub-Saharan/Sahelian style."],
+related:`Macrolanguage is Fulah [ff].`,
+type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
+vowels:"let:5", 
+linked:"latin/ff", fonts:"latin-ff", 
 },
 
 "fuf-adlm": { name:"Pular", rtl:true, 
