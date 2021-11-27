@@ -749,6 +749,20 @@ vowels:"let:5",
 linked:"latin/ff", fonts:"latn-ff", 
 },
 
+"ff-adlm": { name:"Fula (Fulani, Fulfulde, Fulah)", rtl:true, 
+source:"udhr_fuf_adlm", 
+region:"afr", script:"adlm", speakers:"3000000", 
+letter:"𞤭𞤋𞤵𞤓𞤫𞤉𞤮𞤌𞤢𞤀𞤨𞤆𞤼𞤚𞤷𞤕𞤳𞤑𞤹𞤗𞤦𞤄𞤩𞤇𞤣𞤁𞤯𞤍𞤶𞤔𞤺𞤘𞤬𞤊𞤧𞤅𞤸𞤖𞤥𞤃𞤲𞤐𞤻𞤙𞤽𞤛𞤱𞤏𞤪𞤈𞤤𞤂𞤴𞤒𞤰𞤎𞤾𞤜𞤿𞤝𞥀𞤞𞥁𞤟𞥂𞤠𞥃𞤡𞥋", mark:"𞥊𞥆𞥅𞥄𞥈𞥉𞥇", number:"𞥐𞥑𞥒𞥓𞥔𞥕𞥖𞥗𞥘𞥙", punctuation:"𞥟𞥞⹁⁏؟“”…", other:"\u{200C}\u{200D}\u{2067}\u{202B}\u{2066}\u{202A}\u{2068}\u{2069}\u{202C}\u{200F}\u{200E}",
+orth:`[Adlam] &nbsp; Since 1989, in development. <a href="../scripts/adlam/">Details</a>`,
+also:
+["ff | latn | ",
+"ff-arab | arab | Sub-Saharan/Sahelian style."],
+related:``,
+type:"alphabet", cs:"yes", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl*", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes",  justification:"sp",
+vowels:"let:5+2",
+linked:"adlam", fonts:"/pickers/adlm/", 
+},
+
 "fi": { name:"Finnish", silcode:"fin", source:"cldr_fi,udhr_fin", region:"eur", countries:"Finland, Sweden, Russia", script:"latn", speakers:"5400000", letter:"åäöÅÄÖšžŠŽ", mark:"̌̊̈", punctuation:"»§‐–…’”", aux:"ăąāćčċďđěėęēğģħįīıķĺľļłńňņŋőœŕřśŝşťţŧůűųūźżĂĄĀĆČĊĎĐĚĖĘĒĞĢĦİĮĪĶĹĽĻŁŃŇŅŊŐŒŔŘŚŜŞŤŢŦŮŰŲŪŸŹŻʒǧǥȟǩșțǯǦǤȞǨȘȚƷǮáàâãçðéèêëíîïñóòôõßúùûýÿüþæøÁÀÂÃÇÐÉÈÊËÍÎÏÑÓÒÔÕÚÙÛÝÜÞÆØ̨̧̦̇́̀̆̂̃̄̋", local:"Suomi", 
 related:`Finnish is closely related to Karelian [krl] and Livvi [olo]. In the Russian Federation eastern dialects merge gradually into Karelian.`},
 
