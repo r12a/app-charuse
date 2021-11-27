@@ -735,10 +735,19 @@ Ethnologue regards Fanti as a dialect of Akan: it doesn't have its own entry.`,
 orth: `[Latin] &nbsp; Since 1978.`
 },
 
-"ff": {  name:"Fulah (Fulani)", silcode:"ful", source:"", region:"afr", countries:"Benin, Burkina Faso, Cameroon, Chad, Gambia, Ghana, Guinea, Liberia, Mali, Mauritania, Niger, Nigeria, Senegal, Sierra Leone", script:"latn", speakers:"24000000", letter:"ñÑƴƁƊƳŋŊɓɗ", mark:"̃", 
-notes:`The orthography shown here is that indicated in CLDR.  It's not clear whether it is a superset of all the latter language subtags or relates to a particular subtag or subtags.`, 
+"ff": { name:"Fula (Fulani, Fulfulde, Fulah)", silcode:"ful", local:"Fula/Fulfulde",
+source:"https://github.com/r12a/app-charuse/commit/gh-pages",
+region:"afr", countries:"Benin, Burkina Faso, Cameroon, Chad, Gambia, Ghana, Guinea, Liberia, Mali, Mauritania, Niger, Nigeria, Senegal, Sierra Leone", script:"latn", speakers:"24000000", 
+letter:"ÑñŊŋƁƊƝƳƴɓɗɲʼ", 
+orth:`[Latin] &nbsp; `,
+also:
+["ff-adlm | adlm | Since 1989, in development.","ff-arab | arab | Sub-Saharan/Sahelian style."],
 related:`ff is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Maasina Fulfulde [ffm]<br/>Adamawa Fulfulde [fub]<br/>Pulaar [fuc]<br/>Borgu Fulfulde [fue]<br/>Pular [fuf]<br/>Western Niger Fulfulde [fuh]<br/>Bagirmi Fulfulde [fui]<br/>Central-Eastern Niger Fulfulde [fuq]<br/>Nigerian Fulfulde [fuv]
-There is no indicated equivalence between one of the latter subtags and the macrolanguage subtag.`},
+There is no indicated equivalence between one of the latter subtags and the macrolanguage subtag.`,
+type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
+vowels:"let:5", 
+linked:"latin/ff", fonts:"latn-ff", 
+},
 
 "fi": { name:"Finnish", silcode:"fin", source:"cldr_fi,udhr_fin", region:"eur", countries:"Finland, Sweden, Russia", script:"latn", speakers:"5400000", letter:"åäöÅÄÖšžŠŽ", mark:"̌̊̈", punctuation:"»§‐–…’”", aux:"ăąāćčċďđěėęēğģħįīıķĺľļłńňņŋőœŕřśŝşťţŧůűųūźżĂĄĀĆČĊĎĐĚĖĘĒĞĢĦİĮĪĶĹĽĻŁŃŇŅŊŐŒŔŘŚŜŞŤŢŦŮŰŲŪŸŹŻʒǧǥȟǩșțǯǦǤȞǨȘȚƷǮáàâãçðéèêëíîïñóòôõßúùûýÿüþæøÁÀÂÃÇÐÉÈÊËÍÎÏÑÓÒÔÕÚÙÛÝÜÞÆØ̨̧̦̇́̀̆̂̃̄̋", local:"Suomi", 
 related:`Finnish is closely related to Karelian [krl] and Livvi [olo]. In the Russian Federation eastern dialects merge gradually into Karelian.`},
