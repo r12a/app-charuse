@@ -736,7 +736,7 @@ orth: `[Latin] &nbsp; Since 1978.`
 },
 
 "ff": { name:"Fula (Fulani, Fulfulde, Fulah)", silcode:"ful", local:"Fula/Fulfulde",
-source:"https://github.com/r12a/app-charuse/commit/gh-pages",
+source:"2175c4f5eeb22d1c5d1c299445a11ffe23e00a2f",
 region:"afr", countries:"Benin, Burkina Faso, Cameroon, Chad, Gambia, Ghana, Guinea, Liberia, Mali, Mauritania, Niger, Nigeria, Senegal, Sierra Leone", script:"latn", speakers:"24000000", 
 letter:"ÑñŊŋƁƊƝƳƴɓɗɲʼ", 
 orth:`[Latin] &nbsp; `,
