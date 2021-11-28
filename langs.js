@@ -343,7 +343,7 @@ linked:"taiviet",
 "bm": { name:"Bamanan (Bambara, Bamanankan)", local:"bamanankan", silcode:"bam", 
 source:"61711e9f6eb3f930b12ed40b27bf0d8c2c6ee101,cldr_bm,udhr_bam", 
 region:"afr", countries:"Mali", script:"latn", speakers:"4100000", 
-letter:"ŋɔɛɲŊƆƐƝʼ", letteraux:"àáèéìíòóùú", markaux:"̀́̂̌", punctuation:"‘’“”", 
+letter:"ŋɔɛɲŊƆƐƝʼ", letteraux:"àáǎèéěìíǐòóǒùúǔ", markaux:"̀́̌", punctuation:"‘’“”", 
 orth:`[Latin] &nbsp; `,
 also:
 ["nqo | nkoo | Written koiné used by speakers of Maninka, Bambara, Dyula and related dialects."],
