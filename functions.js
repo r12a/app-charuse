@@ -426,7 +426,7 @@ function showLanguage (lang) {
 	out += '<tr><td colspan="2" class="links" style="text-align:right; padding: 0; font-size: 80%; vertical-align:bottom;"><span style="cursor:pointer; margin-right:1em; color:teal;" onclick="toImg(document.getElementById(\'letterCell\')); toImg(document.getElementById(\'markCell\')); toImg(document.getElementById(\'punctuationCell\')); toImg(document.getElementById(\'numberCell\')); toImg(document.getElementById(\'infrequentCell\')); toImg(document.getElementById(\'symbolCell\')); this.style.color=\'#ccc\';">Convert to images</span></td><td class="links" style="padding:0;">&nbsp;</td></tr>'
 	
 	// name
-	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+'&nbsp; <a href="../app-subtags/?lookup='+lang+'" target="_blank" style="font-size:80%;">['+lang+']</a>'+'&nbsp; <span class="scriptName" style="font-size:60%;">'+langs[lang].script+'</span></td><td class="links"><a href="../scripts/links?iso='+langs[lang].script+'" target="_blank"><img src="lists.png" alt="Find links for this script" title="Find links for this script"/></a></td></tr>'
+	out += '<tr><th>Name</th><td class="large">'+langs[lang].name+'&nbsp; <a href="../app-subtags/?lookup='+lang+'" target="_blank" style="font-size:80%;">['+lang+']</a>'+'&nbsp; <span class="scriptName" style="font-size:60%;">'+langs[lang].script+'</span></td><td class="links">&nbsp;<!--a href="../scripts/links?iso='+langs[lang].script+'" target="_blank"><img src="lists.png" alt="Find links for this script" title="Find links for this script"/></a--></td></tr>'
 
 	if (!langs[lang].redirect) {
 	
@@ -755,6 +755,51 @@ function showLanguage (lang) {
         if (langs[lang].fonts) stats += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${cumulative}">Show in character app</a></div>`
         stats += '</div>'
         stats += '</td></tr>'
+/*
+	// source
+	var sources = langs[lang].source.split(',')
+	// check whether there is only a UDHR source
+	if (sources.length === 1 && sources[0].match('udhr_')) var warning = true
+	else warning = false
+	out += '<tr><th>Sources</th><td class="sources">'
+	for (let i=0;i<sources.length;i++) {
+		if (i>0) out += ', '
+		if (sources[i].startsWith('cldr_')) out += '<a target="_blank" href="https://unicode-org.github.io/cldr-staging/charts/37/summary/'+sources[i].substr(5)+'.html">CLDR</a>'
+		else if (sources[i].startsWith('udhr_')) out += '<a target="_blank" href="https://unicode.org/udhr/d/'+sources[i]+'.html">UDHR</a>'
+		else if (sources[i].startsWith('ethn_')) out += '<a target="_blank" href="https://ethnologue.com/language/'+sources[i].substr(5)+'">Ethnologue</a>'
+		else if (sources[i].startsWith('http')) out += '<a target="_blank" href="'+sources[i]+'">link</a>'
+		else if (sources[i] === 'r12a' || sources[i] === 'CLDR' || sources[i] === 'UDHR') out += sources[i]
+		else out += '<a  target="_blank" href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
+		}
+	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this orthography.</span>'
+	out += '</td></td><td class="links" colspan="2">&nbsp;<!--a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" style="width:unset;" /></a><a href="https://www.ethnologue.com/language/'+langcode+'" target="_blank"><img src="ethn.png" alt="Look this up in the Ethnologue." title="Look this up in the Ethnologue." style="width:unset;" class="ulink"/></a--></td></tr>'
+    
+    // links
+    out += `<tr>
+    <th>Links</th><td id="externalLinks">
+    <a href="https://www.ethnologue.com/language/${ langcode }" target="_blank" title="Look this up in the Ethnologue.">Ethnologue</a> • 
+    <a href="https://en.wikipedia.org/w/index.php?search=${ langs[lang].name }%20language" target="_blank" title="Search Wikipedia for this language">Wikipedia</a> • 
+    <a href="../scripts/fontlist/?script=${ langs[lang].script }" target="_blank">Fonts</a> • `
+    if (langs[lang].fonts) out += `<a href="${langs[lang].fonts}" target="_blank">Character app</a> • `
+    out += `<a href="../scripts/links?iso=${ langs[lang].script }" target="_blank">Other links</a>
+    </td>
+    </tr>`
+*/
+	out += stats
+	
+	// change font
+	out += '<th></th><td style="border: 0; padding-top:0; font-size: 70%;font-style: italic;line-height: 1;color: gray;">Change font to <input id="fontChange" onChange="setFont(this.value)" type="text" style="border-radius: 5px; border: 1px solid #ccc;"/>'
+	
+	//temp = [...cumulative]
+	//parameter = temp.join(' ')
+	//out += ' •  &nbsp; <a target="_blank" href="../scripts/fontlist/?script='+langs[lang].script+'&text='+parameter+'">Show in font lister</a>'
+	
+	//if (langs[lang].fonts) {
+	//	if (langs[lang].aux) parameter += "\n"+langs[lang].aux
+	//	out += ' •  &nbsp; <a target="_blank" href="'+langs[lang].fonts+'?showFonts=true&text='+parameter+'">Show in character app</a>'
+	//	}
+	out += '</td>'
+	
 
 	// source
 	var sources = langs[lang].source.split(',')
@@ -772,24 +817,21 @@ function showLanguage (lang) {
 		else out += '<a  target="_blank" href="https://github.com/r12a/app-charuse/commit/'+sources[i]+'">GitHub</a>'
 		}
 	if (warning) out += '<br/><span class="udhrWarning">The sole source for this language is the translation of the Universal Declaration of Human Rights. That text may not contain all characters needed for this orthography.</span>'
-	out += '</td></td><td class="links" colspan="2"><a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" style="width:unset;" /></a><a href="https://www.ethnologue.com/language/'+langcode+'" target="_blank"><img src="ethn.png" alt="Look this up in the Ethnologue." title="Look this up in the Ethnologue." style="width:unset;" class="ulink"/></a></td></tr>'
-	
-	out += stats
-	
-	// change font
-	out += '<th></th><td style="border: 0; padding-top:0; font-size: 70%;font-style: italic;line-height: 1;color: gray;">Change font to <input id="fontChange" onChange="setFont(this.value)" type="text" style="border-radius: 5px; border: 1px solid #ccc;"/>'
-	
-	//temp = [...cumulative]
-	//parameter = temp.join(' ')
-	//out += ' •  &nbsp; <a target="_blank" href="../scripts/fontlist/?script='+langs[lang].script+'&text='+parameter+'">Show in font lister</a>'
-	
-	//if (langs[lang].fonts) {
-	//	if (langs[lang].aux) parameter += "\n"+langs[lang].aux
-	//	out += ' •  &nbsp; <a target="_blank" href="'+langs[lang].fonts+'?showFonts=true&text='+parameter+'">Show in character app</a>'
-	//	}
-	out += '</td>'
-	
-	// region
+	out += '</td></td><td class="links" colspan="2">&nbsp;<!--a href="https://en.wikipedia.org/w/index.php?search='+langs[lang].name+'%20language" target="_blank"><img src="wikipedia.png" alt="Search Wikipedia for this language" title="Search Wikipedia for this language" style="width:unset;" /></a><a href="https://www.ethnologue.com/language/'+langcode+'" target="_blank"><img src="ethn.png" alt="Look this up in the Ethnologue." title="Look this up in the Ethnologue." style="width:unset;" class="ulink"/></a--></td></tr>'
+    
+    // links
+    out += `<tr>
+    <th>Links</th><td id="externalLinks">
+    <a href="https://www.ethnologue.com/language/${ langcode }" target="_blank" title="Look this up in the Ethnologue.">Ethnologue</a> • 
+    <a href="https://en.wikipedia.org/w/index.php?search=${ langs[lang].name }%20language" target="_blank" title="Search Wikipedia for this language">Wikipedia</a> • 
+    <a href="../scripts/fontlist/?script=${ langs[lang].script }" target="_blank">Fonts</a> • `
+    if (langs[lang].fonts) out += `<a href="${langs[lang].fonts}" target="_blank">Character app</a> • `
+    out += `<a href="../scripts/links?iso=${ langs[lang].script }" target="_blank">Other links</a>
+    </td>
+    </tr>`
+
+
+    // region
 	switch (langs[lang].region) {
 		case 'afr': region = 'Africa';break
 		case 'oce': region = 'Oceania';break
@@ -817,12 +859,20 @@ function showLanguage (lang) {
 		}
 	//speakers = speakers.replace(/\?/,'0')
 	out += '<tr><th>Native speakers</th><td>'+speakers+'</td></tr>'
+	/*out += `<tr>
+        <th>Links</th><td id="externalLinks">
+        <a href="https://www.ethnologue.com/language/${ langcode }" target="_blank" title="Look this up in the Ethnologue.">Ethnologue</a> • 
+        <a href="https://en.wikipedia.org/w/index.php?search=${ langs[lang].name }%20language" target="_blank" title="Search Wikipedia for this language">Wikipedia</a> • 
+        <a href="../scripts/links?iso=${ langs[lang].script }" target="_blank">Other links</a>
+        </td>
+        </tr>`*/
 	} // ends stuff cut out for macrolanguages etc.
 	
 	// local name
 	//if (langs[lang].local) out += '<tr><th>Autonym</th><td class="localCell">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
 
-	// related
+
+    // related
 	if (langs[lang].related) {
 		langs[lang].related = langs[lang].related.replace(/\[/g, '<i>')
 		langs[lang].related = langs[lang].related.replace(/\]/g, '</i>')
