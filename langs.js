@@ -746,7 +746,7 @@ related:`ff is a macrolanguage that encompasses the following more specific prim
 There is no indicated equivalence between one of the latter subtags and the macrolanguage subtag.`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
 vowels:"let:5", 
-linked:"latin/ff", fonts:"latn-ff", 
+linked:"latin/ff", fonts:"/pickers/latn-ff/", 
 },
 
 "ff-adlm": { name:"Fula (Fulani, Fulfulde, Fulah)", rtl:true, 
@@ -791,7 +791,7 @@ also:
 related:`Macrolanguage is Fulah [ff].`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
 vowels:"let:5", 
-linked:"latin/ff", fonts:"latin-ff", 
+linked:"latin/ff", fonts:"/pickers/latin-ff/", 
 },
 
 "fuf-adlm": { name:"Pular", rtl:true, 
