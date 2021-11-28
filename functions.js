@@ -826,6 +826,7 @@ function showLanguage (lang) {
     <a href="https://en.wikipedia.org/w/index.php?search=${ langs[lang].name }%20language" target="_blank" title="Search Wikipedia for this language">Wikipedia</a> • 
     <a href="../scripts/fontlist/?script=${ langs[lang].script }" target="_blank">Fonts</a> • `
     if (langs[lang].fonts) out += `<a href="${langs[lang].fonts}" target="_blank">Character app</a> • `
+    if (langs[lang].linked) out += `<a href="${langs[lang].linked}" target="_blank">Orthography description</a> • `
     out += `<a href="../scripts/links?iso=${ langs[lang].script }" target="_blank">Other links</a>
     </td>
     </tr>`
