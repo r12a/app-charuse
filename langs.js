@@ -344,7 +344,7 @@ linked:"taiviet",
 source:"61711e9f6eb3f930b12ed40b27bf0d8c2c6ee101,cldr_bm,udhr_bam", 
 region:"afr", countries:"Mali", script:"latn", speakers:"4100000", 
 letter:"ŋɔɛɲŊƆƐƝʼ", letteraux:"àáǎèéěìíǐòóǒùúǔ", markaux:"̀́̌", punctuation:"‘’“”", 
-orth:`[Latin] &nbsp; `,
+orth:`[Latin] &nbsp; <a href="../scripts/latin/bm" target="_blank">Details</a>.`,
 also:
 ["nqo | nkoo | Written koiné used by speakers of Maninka, Bambara, Dyula and related dialects."],
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
@@ -739,7 +739,7 @@ orth: `[Latin] &nbsp; Since 1978.`
 source:"2175c4f5eeb22d1c5d1c299445a11ffe23e00a2f",
 region:"afr", countries:"Benin, Burkina Faso, Cameroon, Chad, Gambia, Ghana, Guinea, Liberia, Mali, Mauritania, Niger, Nigeria, Senegal, Sierra Leone", script:"latn", speakers:"24000000", 
 letter:"ÑñŊŋƁƊƝƳƴɓɗɲʼ", 
-orth:`[Latin] &nbsp; `,
+orth:`[Latin] &nbsp; <a href="../scripts/latin/ff" target="_blank">Details</a>.`,
 also:
 ["ff-adlm | adlm | Since 1989, in development.","ff-arab | arab | Sub-Saharan/Sahelian style."],
 related:`ff is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Maasina Fulfulde [ffm]<br/>Adamawa Fulfulde [fub]<br/>Pulaar [fuc]<br/>Borgu Fulfulde [fue]<br/>Pular [fuf]<br/>Western Niger Fulfulde [fuh]<br/>Bagirmi Fulfulde [fui]<br/>Central-Eastern Niger Fulfulde [fuq]<br/>Nigerian Fulfulde [fuv]
