@@ -267,18 +267,11 @@ letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǎǐǹǒǔǍ
 vowels:"let:7",
 },
 
-"bax": { name:"Bamun (Bamum, Bamoun)", source:"udhr_bax", region:"afr", countries:"Cameroon", script:"latn", speakers:"420000", letter:"úéêüûâôîáèùàÚÉÊÜÛÂÔÎÁÈÙÀṅṄ", mark:"́̂̈̀̇", punctuation:"‘’", local:"Shü Pamom [ʃŷpǎˑmə̀m]", 
+"bax": {
+  name:"Bamun (Bamum, Bamoun)", source:"udhr_bax", region:"afr", countries:"Cameroon", script:"latn", speakers:"420000", letter:"úéêüûâôîáèùàÚÉÊÜÛÂÔÎÁÈÙÀṅṄ", mark:"́̂̈̀̇", punctuation:"‘’", local:"Shü Pamom [ʃŷpǎˑmə̀m]",
 orth:`[Latin] &nbsp; `,
 also:
 ['bax-bamu | bamu | Taught in schools until 1930s.']
-},
-"bax": { name:"Bamun (Bamum, Bamoun)", local:"Shü Pamom [ʃŷpǎˑmə̀m]", 
-source:"udhr_bax", 
-region:"afr", countries:"Cameroon", script:"latn", speakers:"420000", 
-letter:"úéêüûâôîáèùàÚÉÊÜÛÂÔÎÁÈÙÀṅṄ", mark:"́̂̈̀̇", punctuation:"‘’", 
-orth:`[Latin] &nbsp; `,
-also:
-["bax-bamu | bamu | Taught in schools until 1930s."],
 },
 
 "bax-bamu": { name:"Bamun (Bamum, Bamoun)", local:"Shü Pamom [ʃŷpǎˑmə̀m]", silcode:"bax", 
@@ -368,7 +361,7 @@ linked:"bengali", fonts:"/pickers/beng/",
 "bo": { name:"Tibetan", local:"བོད་སྐད་ (Böké); ལྷ་སའི་སྐད་ (Lhaséké)", silcode:"bod", 
 source:"cldr_bo,udhr_bod,3d4a46a3bc9bb2a2c900adf645b07f641ef2c2bf", 
 region:"easia", countries:"China, India", script:"tibt", speakers:"1200000", 
-letter:"ཀཁགངཅཆཇཉཊཋཌཎཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤཥསཧཨཪ", mark:"ིེོུྐྑྒྔྕྖྗྙྚྛྜྞྟྠྡྣྤྥྦྨྩྪྫྭྮྯྰྱྲླྴྵྶྷྸྺྻྼ", number:"༠༡༢༣༤༥༦༧༨༩", punctuation:"༄༅༈་༌།༎", aux:"ༀ", 
+letter:"ཀཁགངཅཆཇཉཊཋཌཎཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤཥསཧཨཪ", mark:"ིེོུྐྑྒྔྕྖྗྙྚྛྜྞྟྠྡྣྤྥྦྨྩྪྫྭྮྯྰྱྲླྴྵྶྷྸྺྻྼ", number:"༠༡༢༣༤༥༦༧༨༩", punctuation:"༄༅༈་༌།༎", aux:"ༀ", symbolaux:"ༀ",
 orth:`[Tibetan] &nbsp; Has Uchen and Umed styles. 
 <a href="../scripts/tibetan/" target="_blank">Detailed summary</a>.`,
 also:
@@ -377,22 +370,7 @@ also:
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"syllable", wordsepChar:"་", baseline:"high", wrap:"syllable", hyphenation:"no",  justification:"pad",
 vowels:"inh:1 vs:4 base:འ/ཨ/A",
 clusters:"stk",
-linked:"tibetan", fonts:"/pickers/tibt/", 
-},
-
-"bo": { name:"Tibetan", local:"བོད་སྐད་ (Böké); ལྷ་སའི་སྐད་ (Lhaséké)", silcode:"bod", 
-source:"3d4a46a3bc9bb2a2c900adf645b07f641ef2c2bf,cldr_bo,udhr_bod", 
-region:"easia", countries:"China, India", script:"tibt", speakers:"1200000", 
-letter:"ཀཁགངཅཆཇཉཊཋཌཎཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤཥསཧཨཪ", mark:"ིེོུྐྑྒྔྕྖྗྙྚྛྜྞྟྠྡྣྤྥྦྨྩྪྫྭྮྯྰྱྲླྴྵྶྷྸྺྻྼ", number:"༠༡༢༣༤༥༦༧༨༩", punctuation:"༄༅༈་༌།༎", symbolaux:"ༀ", 
-orth:`[Tibetan] &nbsp; Has Uchen and Umed styles. 
-<a href="../scripts/tibetan/" target="_blank">Detailed summary</a>.`,
-also:
-["bo-marc | marc | ",
-"bo-phag | phag | "],
-type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"syllable", wordsepChar:"་", baseline:"high", wrap:"syllable", hyphenation:"no",  justification:"pad",
-vowels:"inh:1 vs:4 base:འ/ཨ/A",
-clusters:"stk",
-linked:"tibetan", fonts:"/pickers/tibt/", 
+linked:"tibetan", fonts:"/pickers/tibt/",
 },
 
 "boa": { name:"Bora", source:"udhr_boa", region:"sam", countries:"Peru, Colombia", script:"latn", speakers:"2400", letter:"úáéñíóÚÁÉÑÍÓɨȉƗȈ", mark:"́̃̏", local:"Meamuyna"},
@@ -1880,8 +1858,7 @@ letter:"ငတထပမယရလဝသၵၶၸၺၼၽၾႁ", letteraux:"ဢ�
 orth:`Myanmar. &nbsp; <a href="../scripts/myanmar/mymr-shn" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"mid", wrap:"?", hyphenation:"?",  direction:"ltr",  justification:"?", 
 vowels:"inh:1 vs:14 vsl:3 base:ဢ/A pre:2 comp:18",  clusters:"mrk",  medials:"sj:3",  finals:"vk:1", 
-linked:"myanmar/mymr-shn", fonts:"mymr-shn",
-fonts:"/pickers/mymr-shn"
+linked:"myanmar/mymr-shn", fonts:"/pickers/mymr-shn"
 },
 
 "shp": { name:"Shipibo-Conibo (Shipibo-Konibo)", source:"udhr_shp", region:"sam", countries:"Peru", script:"latn", speakers:"26000", letter:"íáóéñúÍÁÓÉÑÚ", mark:"́̃", punctuation:"¿"},
@@ -2189,8 +2166,7 @@ also:
 ['tw-asante | latn | For the Asante dialect of Twi.',]
 },
 
-"tw-asante": { name:"Ashanti (Asante, Asante Twi)", source:"udhr_aka_asante", region:"afr", script:"latn", speakers:"2800000", letter:"ɛɔƐƆ", related:`This is a dialect of Twi ([tw]), under the Akan ([ak]) macrolanguage.
-Legacy applications often use [ak] rather than tw-asante.`,
+"tw-asante": { name:"Ashanti (Asante, Asante Twi)", source:"udhr_aka_asante", region:"afr", script:"latn", speakers:"2800000", letter:"ɛɔƐƆ",
 related:`This is a dialect of Twi [tw], under the Akan [ak] macrolanguage. Legacy applications often use ak rather than tw.`,
 orth:`Latin. &nbsp; For the Asante dialect of Twi.`,
 also:
