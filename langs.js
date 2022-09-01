@@ -1694,7 +1694,7 @@ related:`Macrolanguage is Malagasy [mg]. Legacy applications often use mg rather
 "pnb": { name:"Punjabi", local: "پنجابی ‎[paṁjābī]", rtl:true, source:"f940e5c7fc381992f942120f89cd8137cb3c3eda,cldr_pnb,udhr_pnb", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"125000000", letter:"آابپتٹجچخدذڈرزڑسشفکگلمنںہھوؤیئےۓ", letteraux: "ۃݨࣇءثحژصضطظعغق", mark:"\u064F\u0650\u064E\u0651", markaux: "\u064B\u0656\u0670\u0658\u0614\u0658", other: "\u200C", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"،؍؛؟٪٫٫٬٬۔“”", deprecated: "ٔٓهيكڻة", 
 orth:`Shahmukhi. &nbsp; Urdu orthography for Punjabi primarily in the Nastaliq style, primarily used in Pakistan contemporarily.`,
 also:
-['pa | guru | Primary usage for Gurmukhi.
+['pa | guru | Primary usage for Gurmukhi.',
 'pnb-khoj | khoj | Historical script used by Khoja and Sindhi communities, moreso for Sindhi than Punjabi.',
 'pnb-latn | latn | There is no standard Latin script based orthography for Punjabi.'],
 notes: `Same as [a]. [pa] is typically used for Gurmukhi and [pnb] is typically used for Shahmukhi. pa-arab is rarely used. Some providers use pa_PK.`
