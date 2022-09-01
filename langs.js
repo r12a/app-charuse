@@ -1639,26 +1639,19 @@ linked:"osage", fonts:"/pickers/osge/",
 
 "ote": { name:"Mezquital Otomi", source:"udhr_ote", region:"cam", countries:"Mexico", script:"latn", speakers:"130000", letter:"öüäéñúíáèÖÜÄÉÑÚÍÁÈ", mark:"̱̈́̃̀", local:"Hñahñu"},
 
-"pa": { name:"Punjabi", local:"ਪੰਜਾਬੀ‎ (Panjabi), ਪੰਜਾਬੀ ਭਾਸ਼ਾ‎ (Panjabi bhasa)", silcode:"pan", 
-source:"cldr_pa,udhr_pan,f940e5c7fc381992f942120f89cd8137cb3c3eda", 
-region:"sasia", countries:"India", script:"guru", speakers:"122000000", 
+"pa": { name:"Punjabi", local:"ਪੰਜਾਬੀ [paṁjābī]", 
+source:"f940e5c7fc381992f942120f89cd8137cb3c3eda,cldr_pa,udhr_pan", 
+region:"sasia", countries:"India,Pakistan", script:"guru", speakers:"125000000", 
 letter:"ਅਆਇਈਉਊਏਐਓਔਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵਸਹੜੴ", mark:"ੱੰ਼੍ਾਿੀੁੂੇੈੋੌਂ", number:"੦੧੨੩੪੫੬੭੮੯", punctuation:"‐–—‘’“”′″।", symbol:"☬", other:"\u200C\u200D", markaux:"ਃਁੵ", letteraux:"\u0A5E\u0A5B\u0A36\u0A59\u0A5A\u0A33", deprecated:"ੳੲ", 
-orth:`Gurmukhi. &nbsp; Primary usage. <a href="../scripts/gurmukhi" target="_blank">Details</a>.`,
+orth:`Gurmukhi. &nbsp; Brahmic script primarily used in India contemporarily and in Sikh literature. <a href="../scripts/gurmukhi" target="_blank">Details</a>.`,
 also:
-["pa-arab | arab | Naskh style. See also [pnb].",
-"pa-khoj | khoj | "],
-notes:`Need to check the difference between pa-arab and pnb.`,
+["pnb | arab | Primary usage for Shahmukhi.",
+"pa-arab | arab | Same as [pnb].",
+"pa-khoj | khoj | Historical script used by Khoja and Sindhi communities, moreso for Sindhi than Punjabi."],
+notes:`Same as [pnb]. [pa] is typically used for Gurmukhi and [pnb] is typically used for Shahmukhi. pa-arab is rarely used.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"high", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"inh:1 ind:10 vs:9 pre:1", clusters:"inv stk rax unm", finals:"cm:1", 
 linked:"gurmukhi", fonts:"/pickers/guru/", 
-},
-
-"pa-arab": { name:"Punjabi", silcode:"pan", rtl:true, source:"cldr_pa_Arab", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابتثجحخدذرزسشصضطظعغفقلمنهويٹپچڈڑژکگںھہیے", mark:"ُٓٔ", punctuation:"‰", other:"‎‏", aux:"أاةٔٺٻټٽ", 
-orth:`Arabic. &nbsp; Naskh style. See also [pnb].`,
-also:
-['pa | guru | Primary usage.',
-'pa-khoj | khoj | '],
-notes:`Need to check the difference between pa-arab and pnb.`
 },
 
 "pam": { name:"Pampangan (Kapampangan)", source:"udhr_pam", region:"seasia", countries:"Philippines", script:"ascii", speakers:"1900000", local:"Kapampangan"},
@@ -1698,12 +1691,13 @@ linked:"arabic/arab-fa", fonts:"/pickers/arab-fa/",
 "plt": { name:"Plateau Malagasy", source:"cldr_mg,udhr_plt", region:"afr", countries:"Madagascar", script:"latn", speakers:"18000000", letter:"àâéèêëìîïñôÀÂÉÈÊËÌÎÏÑÔ", mark:"̀̂́̈̃", local:"Malagasy", notes:"UDHR has no accents", 
 related:`Macrolanguage is Malagasy [mg]. Legacy applications often use mg rather plt.`},
 
-"pnb": { name:"Western Panjabi", rtl:true, source:"cldr_pnb,udhr_pnb", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"122000000", letter:"ءآؤئابپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںهھہویےي", mark:"ُٓٔ", punctuation:"‐–—‘’“”′″", local:"پنجابی‎ (Panjābī)", notes:`Need to ascertain whether this is the same as [pa-arab].`, 
-orth:`Arabic. &nbsp; Naskh and nastaliq ([Aran]) styles in primary usage.
-Also used Lahnda script, but no longer in use (and no ISO script tag.)`,
+"pnb": { name:"Punjabi", local: "پنجابی ‎[paṁjābī]", rtl:true, source:"f940e5c7fc381992f942120f89cd8137cb3c3eda,cldr_pnb,udhr_pnb", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"125000000", letter:"آابپتٹجچخدذڈرزڑسشفکگلمنںہھوؤیئےۓ", letteraux: "ۃݨࣇءثحژصضطظعغق", mark:"\u064F\u0650\u064E\u0651", markaux: "\u064B\u0656\u0670\u0658\u0614\u0658", other: "\u200C", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"،؍؛؟٪٫٫٬٬۔“”", deprecated: "ٔٓهيكڻة", 
+orth:`Shahmukhi. &nbsp; Urdu orthography for Punjabi primarily in the Nastaliq style, primarily used in Pakistan contemporarily.`,
 also:
-['pnb-khoj | khoj | ',
-'pnb-latn | latn | ']
+['pa | guru | Primary usage for Gurmukhi.',
+'pnb-khoj | khoj | Historical script used by Khoja and Sindhi communities, moreso for Sindhi than Punjabi.',
+'pnb-latn | latn | There is no standard Latin script based orthography for Punjabi.'],
+notes: `Same as [a]. [pa] is typically used for Gurmukhi and [pnb] is typically used for Shahmukhi. pa-arab is rarely used. Some providers use pa_PK.`
 },
 
 "pon": { name:"Pohnpeian (Ponapean)", source:"udhr_pon", region:"oce", countries:"Micronesia", script:"ascii", speakers:"31000", local:"Pohnpei"},
