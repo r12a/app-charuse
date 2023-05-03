@@ -1364,7 +1364,7 @@ also:
 "lb": { name:"Luxembourgish (Luxemburgish, Letzeburgesch)", silcode:"ltz", source:"cldr_lb,udhr_ltz", region:"eur", countries:"Luxembourg, France, Belgium, Germany", script:"latn", speakers:"390000", letter:"äéëêüöôàÄÉËÊÜÖÔÀ", mark:"̈́̂̀", punctuation:"«»§‐–—…‘‚“„", aux:"ăāĕēğĭīıŏōœşŭūĂĀĔĒĞĬİĪŎŌŒŞŬŪŸáàâåãæçèêíìîïñóòôöøßúùûüÿÁÀÂÅÃÆÇÈÊÍÌÎÏÑÓÒÔÖØÚÙÛÜ̧̇̀̆̂̊̃̄", local:"Lëtzebuergesch", notes:`UDHR has many more accented characters than CLDR.`},
 
 "lep": { name:"Lepcha", local:"ᰛᰩᰵᰛᰧᰵᰶ", 
-source:"tbd", 
+source:"b1367290d9c75505221c288a0382c33f2b3070b9", 
 region:"sasia", countries:"India", script:"lepc", speakers:"53000", 
 letter:"ᰀᰁᰂᰃᰄᰅᰆᰇᰈᰉᰊᰋᰌᰍᰎᰏᰐᰑᰒᰓᰔᰕᰖᰗᰘᰙᰚᰛᰜᰝᰞᰟᰠᰡᰢᰣᱍᱎᱏ", mark:"ᰤᰥᰭᰮᰯᰰᰱᰲᰳᰴᰵᰦᰧᰨᰩᰪᰫᰬᰶ᰷", number:"᱀᱁᱂᱃᱄᱅᱆᱇᱈᱉", punctuation:"‘’“”᰻᰼᰽᰾᰿",
 orth:`[Lepcha] <a href='../scripts/lepc/lep.html' target='_blank'>Details</a>.`,
