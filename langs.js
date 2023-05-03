@@ -1363,6 +1363,16 @@ also:
 
 "lb": { name:"Luxembourgish (Luxemburgish, Letzeburgesch)", silcode:"ltz", source:"cldr_lb,udhr_ltz", region:"eur", countries:"Luxembourg, France, Belgium, Germany", script:"latn", speakers:"390000", letter:"äéëêüöôàÄÉËÊÜÖÔÀ", mark:"̈́̂̀", punctuation:"«»§‐–—…‘‚“„", aux:"ăāĕēğĭīıŏōœşŭūĂĀĔĒĞĬİĪŎŌŒŞŬŪŸáàâåãæçèêíìîïñóòôöøßúùûüÿÁÀÂÅÃÆÇÈÊÍÌÎÏÑÓÒÔÖØÚÙÛÜ̧̇̀̆̂̊̃̄", local:"Lëtzebuergesch", notes:`UDHR has many more accented characters than CLDR.`},
 
+"lep": { name:"Lepcha", local:"ᰛᰩᰵᰛᰧᰵᰶ", 
+source:"tbd", 
+region:"sasia", countries:"India", script:"lepc", speakers:"53000", 
+letter:"ᰀᰁᰂᰃᰄᰅᰆᰇᰈᰉᰊᰋᰌᰍᰎᰏᰐᰑᰒᰓᰔᰕᰖᰗᰘᰙᰚᰛᰜᰝᰞᰟᰠᰡᰢᰣᱍᱎᱏ", mark:"ᰤᰥᰭᰮᰯᰰᰱᰲᰳᰴᰵᰦᰧᰨᰩᰪᰫᰬᰶ᰷", number:"᱀᱁᱂᱃᱄᱅᱆᱇᱈᱉", punctuation:"‘’“”᰻᰼᰽᰾᰿",
+orth:`[Lepcha] <a href='../scripts/lepc/lep.html' target='_blank'>Details</a>.`,
+type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
+vowels:"inh:1 vs:7 base:ᰣ/A pre:3",  medials:"cm:2 let:7",  finals:"cm:9", 
+linked:"lepc/lep", fonts:"lepc-lep", 
+},
+
 "lg": { name:"Ganda (Luganda)", silcode:"lug", source:"cldr_lg,udhr_lug", region:"afr", countries:"Uganda", script:"latn", speakers:"4100000", letter:"ŋŊ", local:"Luganda", 
 orth:`Latin. &nbsp; Used since 1947.`},
 
