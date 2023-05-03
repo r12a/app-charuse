@@ -9,6 +9,7 @@ var scriptData = {
 'bali':{ name:'Balinese', block:"balinese" },
 'bamu':{ name:'Bamum', block:"bamum" },
 'bass':{ name:'Bassa Vah', block:"bassavah" },
+'batk':{ name:'Batak', block:"batk" },
 'beng':{ name:'Bengali (Bangla)', block:"bengali" },
 'bugi':{ name:'Buginese', block:"buginese" },
 'buhd':{ name:'Buhid', block:"" },
@@ -40,6 +41,7 @@ var scriptData = {
 'laoo':{ name:'Lao', block:"lao" },
 'latn':{ name:'Latin', block:"latin" },
 'lisu':{ name:'Lisu', block:"lisu" },
+'lepc':{ name:'Lepcha', block:"lepc" },
 'mand':{ name:'Mandaic', block:"mandaic" },
 'marc':{ name:'Marchen', block:"" },
 'mend':{ name:'Mende Kikakui', block:"" },
@@ -168,7 +170,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], beng:[], bugi:[], buhd:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hano:[], hebr:[], java:[], kali:[], knda:[], khmr:[], laoo:[], latn:[], lisu:[], mlym:[], mand:[], mong:[], mymr:[], talu:[], newa:[], nkoo:[], olck:[], orya:[], osge:[], rohg:[], shrd:[], sinh:[], sund:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tagb:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], batk:[], beng:[], bugi:[], buhd:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hano:[], hebr:[], java:[], kali:[], knda:[], khmr:[], laoo:[], latn:[], lepc:[], lisu:[], mlym:[], mand:[], mong:[], mymr:[], talu:[], newa:[], nkoo:[], olck:[], orya:[], osge:[], rohg:[], shrd:[], sinh:[], sund:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tagb:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
@@ -197,6 +199,7 @@ function getScriptName (s) {
 		case 'bali': script = 'Balinese';break
 		case 'bamu': script = 'Bamum';break
 		case 'bass': script = 'Bassa Vah';break
+		case 'batk': script = 'Batak';break
 		case 'beng': script = 'Bengali (Bangla)';break
 		case 'bugi': script = 'Buginese';break
 		case 'buhd': script = 'Buhid';break
@@ -227,6 +230,7 @@ function getScriptName (s) {
 		case 'lana': script = 'Tai Tham';break
 		case 'laoo': script = 'Lao';break
 		case 'latn': script = 'Latin';break
+		case 'lepc': script = 'Lepcha';break
 		case 'lisu': script = 'Lisu';break
 		case 'mand': script = 'Mandaic';break
 		case 'marc': script = 'Marchen';break
