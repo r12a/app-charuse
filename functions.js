@@ -397,11 +397,11 @@ function addRightColContent (charlist, lang) {
     var out = `<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard('${ charlist }')"><img src="icons/copy.png"></span></td>`
     out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
     out += `<div class="popup" style="position:absolute; right:0;">
-    <div><a href="/app-analysestring/?chars=${ charlist }" target="_blank">Show details</a></div>
-    <div><a href="/uniview?charlist=${ charlist }" target="_blank">Show characters in UniView</a></div>
-    <div><a href="/app-listcharacters?chars=${ charlist }" target="_blank">List characters by block</a></div>
-    <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${ addSpacesTo(charlist) }" target="_blank">Send to Font lister</a></div>`
-    if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${ charlist }">Show in character app</a></div>`
+    <div><a href="../app-analysestring/index.html?chars=${ charlist }" target="_blank">Show details</a></div>
+    <div><a href="../uniview/index.html?charlist=${ charlist }" target="_blank">Show characters in UniView</a></div>
+    <div><a href="../app-listcharacters/index.html?chars=${ charlist }" target="_blank">List characters by block</a></div>
+    <div><a href="../scripts/fontlist/index.html?script=${langs[lang].script}&text=${ addSpacesTo(charlist) }" target="_blank">Send to Font lister</a></div>`
+    if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}/index.html?showFonts=true&text=${ charlist }">Show in character app</a></div>`
     out += '</div>'
     out += '</td>'
 
