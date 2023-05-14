@@ -923,7 +923,7 @@ orth:`[Latin] Used since 1970.`},
 "gu": { name:"Gujarati", local:"ગુજરાત‎ (Gujarātī)", silcode:"guj", 
 source:"cldr_gu,udhr_guj,cd18536eac759a61da40080d717664d64a29b397", 
 region:"sasia", countries:"India, Tanzania, Kenya, Bahrain, Zambia, Pakistan", script:"gujr", speakers:"49000000", 
-letter:"ૐઅઆઇઈઉઊઋૠઍએઐઑઓઔકખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળઽ", mark:"઼ંઁઃાિીુૂૃૄૅેૈૉોૌ્", number:"૧૨૩૪૫૬૭૮૯૦", punctuation:"§‐–—…‘’“”†‡′″", symbol:"૱", other:"‍‌", aux:"૰।॥", 
+letter:"અઆઇઈઉઊઋઍએઐઑઓઔકખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલળવશષસહૐૠ", mark:"ંઃ઼ાિીુૂૃૄૅેૈૉોૌ્", number:"૦૧૨૩૪૫૬૭૮૯", punctuation:"।॥૰‘’“”", symbol:"૱", other:"\u200C\u200D", 
 orth:`[Gujurati] &nbsp; Primary usage. 
 <a href="../scripts/gujarati" target="_blank">Detailed summary</a>.`,
 also:
