@@ -740,7 +740,7 @@ orth:`[Latin] &nbsp; Used since 1850s, primary usage.`},
 "el": { name:"Greek, Modern", local:"ελληνικά (elliniká), Νέα Ελληνικά‎ (Néa Ellīniká)", silcode:"ell", 
 source:"699008154b84228aa76b6e70cce872c0177878c1,cldr_el,udhr_udhr_ell_monotonic", 
 region:"eur", countries:"Greece, Cyprus, Albania", script:"grek", speakers:"12000000", 
-letter:"ΆΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώ", letteraux:"ϗϡϠϟϞϛ", markaux:"́̈", punctuation:"·«»‐‑–—“”‘’…͵ʹ", symbol:"€", aux:"ᾺὰἈἀἉἁἊἂἋἃἌἄἍἅἎἆἏἇᾲᾴᾶᾷᾸᾰᾹᾱᾼᾳᾈᾀᾉᾁᾊᾂᾋᾃᾌᾄᾍᾅᾎᾆᾏᾇῈὲἘἐἙἑἚἒἛἓἜἔἝἕῊὴἨἠἩἡἪἢἫἣἬἤἭἥἮἦἯἧῆῌῃῂῄῇᾘᾐᾙᾑᾚᾒᾛᾓᾜᾔᾝᾕᾞᾖᾟᾗῚὶἸἰἹἱἺἲἻἳἼἴἽἵἾἶἿἷῘῐῙῑῒῖῗῸὸὈὀὉὁὊὂὋὃὌὄὍὅῪὺὐὒὔὖὙὑὛὓὝὕὟὗῨῠῩῡῢῦῧῺὼὨὠὩὡὪὢὫὣὬὤὭὥὮὦὯὧῼῳᾨᾠᾩᾡᾪᾢᾫᾣᾬᾤᾭᾥᾮᾦᾯᾧῲῴῶῷῤῬῥ̀̄̆̓̔͂ͅ", deprecated:"\u{313}\u{308}\u{301}\u{387}\u{374}\u{37E}",
+letter:"ʹΆΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώ", letteraux:"ϗϛϞϟϠϡ", mark:"́̈", number:"", punctuation:"«·»‑–—‘’“”…", symbol:"͵€", other:"", 
 orth:`[Greek] &nbsp; Essentially Monotonic Greek ([el-monoton]), however the polytonic Greek characters are included in the list of infrequently used characters. <a href="../scripts/greek" target="_blank">Details</a>.`,
 also:
 ["grc | grek | Ancient Greek, polytonic ([polyton]).",
@@ -748,7 +748,7 @@ also:
 related:`Related Greek language codes include [cpg] (Cappadocian Greek), [gmy] (Mycenaean Greek), [grc] (Ancient Greek (to 1453)), [grk] (Greek languages), [rge] (Romano-Greek), [pnt] (Pontic), [tsd] (Tsakonian), [yej] (Yevanic).<br/>Variants include [monoton] (Monotonic Greek), [polyton] (Polytonic Greek).
 In Cyprus, the dialect is reportedly more similar to Classical Greek [grc] in some vocabulary and grammar than that spoken in Greece.`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp",
-vowels:"let:34 comp:8",
+vowels:"let:34 cm:(2) comp:8",
 linked:"grek/el", fonts:"/pickers/grek/", 
 },
 
@@ -1117,7 +1117,7 @@ linked:"java/jv", fonts:"/pickers/java/",
 "ka": { name:"Georgian", local:"ქართული‎ (Kartuli), ქართული ენა‎ (Kartuli ena)", silcode:"kat", 
 source:"2cafedfc80733bd49fb1ee6af49657333a88c1a3,cldr_ka,udhr_kat", 
 region:"eur", countries:"Georgia, Turkey, Iran", script:"geor", speakers:"3700000", 
-letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ", punctuation:"჻«»§‐–—…‘‚“„†‡′″", symbol:"№", letteraux:"ᲐᲑᲒᲓᲔᲕᲖᲗᲘᲙᲚᲛᲜᲝᲞᲟᲠᲡᲢᲣᲤᲥᲦᲧᲨᲩᲪᲫᲬᲭᲮᲯᲰ", 
+letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰᲐᲑᲒᲓᲔᲕᲖᲗᲘᲙᲚᲛᲜᲝᲞᲟᲠᲡᲢᲣᲤᲥᲦᲧᲨᲩᲪᲫᲬᲭᲮᲯᲰ", letteraux:"ჱჲჳჴ", mark:"", number:"", punctuation:"«»“„", punctuationaux:"჻", symbol:"₾№", other:"", 
 orth:`[Georgian] &nbsp; Mkhedruli &amp; mtavruli. The mtavruli characters are listed as infrequent because, although classed as uppercase, they are only used when a full word is uppercased. <a href="../scripts/georgian" target="_blank">Details</a>.`,
 also:
 ["ka-geok | geok | Asomtavruli &amp; nuskhuri, no longer in use except liturgically."],
