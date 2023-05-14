@@ -170,7 +170,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], batk:[], beng:[], bugi:[], buhd:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hano:[], hebr:[], java:[], kali:[], knda:[], khmr:[], laoo:[], latn:[], lepc:[], lisu:[], mlym:[], mand:[], mong:[], mymr:[], talu:[], newa:[], nkoo:[], olck:[], orya:[], osge:[], rohg:[], shrd:[], sinh:[], sund:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tagb:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
+    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], batk:[], beng:[], bugi:[], buhd:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hano:[], hebr:[], java:[], kali:[], knda:[], khmr:[], laoo:[], latn:[], lepc:[], limb:[], lisu:[], mlym:[], mand:[], mong:[], mroo:[], mymr:[], talu:[], nagm:[],newa:[], nkoo:[], olck:[], orya:[], osge:[], rohg:[], shrd:[], sinh:[], sund:[], sunu:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tagb:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
