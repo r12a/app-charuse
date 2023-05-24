@@ -3,11 +3,11 @@ debug = false
 
 var scriptData = {
 'ascii':{ name:'ASCII only', block:"" },
-'adlm':{ name:'Adlam', block:"adlam" },
-'arab':{ name:'Arabic', block:"arabic" },
-'armn':{ name:'Armenian', block:"armenian" },
-'bali':{ name:'Balinese', block:"balinese" },
-'bamu':{ name:'Bamum', block:"bamum" },
+'adlm':{ name:'Adlam', block:"adlm" },
+'arab':{ name:'Arabic', block:"arab" },
+'armn':{ name:'Armenian', block:"armn" },
+'bali':{ name:'Balinese', block:"bali" },
+'bamu':{ name:'Bamum', block:"bamu" },
 'bass':{ name:'Bassa Vah', block:"bassavah" },
 'batk':{ name:'Batak', block:"batk" },
 'beng':{ name:'Bengali (Bangla)', block:"bengali" },
@@ -47,7 +47,9 @@ var scriptData = {
 'mend':{ name:'Mende Kikakui', block:"" },
 'mlym':{ name:'Malayalam', block:"malayalam" },
 'mong':{ name:'Mongolian', block:"mongolian" },
+'mroo':{ name:'Mro', block:"mroo" },
 'mymr':{ name:'Myanmar', block:"myanmar" },
+'nagm':{ name:'Nag Mundari', block:"nagm" },
 'nand':{ name:'Nandinagari', block:"" },
 'newa':{ name:'Newa', block:"newa" },
 'nkoo':{ name:'N’Ko', block:"nko" },
@@ -237,7 +239,9 @@ function getScriptName (s) {
 		case 'mend': script = 'Mende Kikakui';break
 		case 'mlym': script = 'Malayalam';break
 		case 'mong': script = 'Mongolian';break
+		case 'mroo': script = 'Mro';break
 		case 'mymr': script = 'Myanmar';break
+		case 'nagm': script = 'Nag Mundari';break
 		case 'nand': script = 'Nandinagari';break
 		case 'newa': script = 'Newa';break
 		case 'olck': script = 'Ol Chiki';break
@@ -463,7 +467,7 @@ function showLanguage (lang) {
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'" class="c">'
-            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
 			else out += charList[j]
 			out += '</span> ' 
 			}
@@ -476,7 +480,7 @@ function showLanguage (lang) {
                 while (cp.length<4) cp = '0'+cp
                 name = 'U+'+cp+' '+charData[charList[j]]
                 out += '<span title="'+name+'" class="c small">'
-                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
                 else out += charList[j]
                 out += '</span> '
                 }
@@ -504,7 +508,7 @@ function showLanguage (lang) {
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'" class="c">'
-            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+'\u00A0'+charList[j]+'</a>'
+            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+'\u00A0'+charList[j]+'</a>'
 			else out += '\u00A0'+charList[j]
 			out += '</span> ' 
 			}
@@ -516,7 +520,7 @@ function showLanguage (lang) {
                 while (cp.length<4) cp = '0'+cp
                 name = 'U+'+cp+' '+charData[charList[j]]
                 out += '<span title="'+name+'" class="c small">'
-                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
                 else out += charList[j]
                 out += '</span> ' 
                 }
@@ -544,7 +548,7 @@ function showLanguage (lang) {
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'" class="c">'
-            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
 			else out += charList[j]
 			out += '</span> ' 
 			}
@@ -556,7 +560,7 @@ function showLanguage (lang) {
                 while (cp.length<4) cp = '0'+cp
                 name = 'U+'+cp+' '+charData[charList[j]]
                 out += '<span title="'+name+'" class="c small">'
-                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
                 else out += charList[j]
                 out += '</span> ' 
                 }
@@ -584,7 +588,7 @@ function showLanguage (lang) {
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'" class="c">'
-            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
 			else out += charList[j]
 			out += '</span> ' 
 			}
@@ -596,7 +600,7 @@ function showLanguage (lang) {
                 while (cp.length<4) cp = '0'+cp
                 name = 'U+'+cp+' '+charData[charList[j]]
                 out += '<span title="'+name+'" class="c small">'
-                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
                 else out += charList[j]
                 out += '</span> ' 
                 }
@@ -624,7 +628,7 @@ function showLanguage (lang) {
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'" class="c">'
-            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
 			else out += charList[j]
 			out += '</span> ' 
 			}
@@ -636,7 +640,7 @@ function showLanguage (lang) {
                 while (cp.length<4) cp = '0'+cp
                 name = 'U+'+cp+' '+charData[charList[j]]
                 out += '<span title="'+name+'" class="c small">'
-                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
                 else out += charList[j]
                 out += '</span> ' 
                 }
@@ -664,7 +668,7 @@ function showLanguage (lang) {
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<bdi title="'+name+'" class="c">'
-            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
 			else out += charList[j]
 			out += '</bdi> ' 
 			}
@@ -676,7 +680,7 @@ function showLanguage (lang) {
                 while (cp.length<4) cp = '0'+cp
                 name = 'U+'+cp+' '+charData[charList[j]]
                 out += '<bdi title="'+name+'" class="c small">'
-                if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+ charList[j]+'</a>'
+                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
                 else out += charList[j]
                 out += '</bdi> ' 
                 }
@@ -692,7 +696,7 @@ function showLanguage (lang) {
 	if (langs[lang].aux) {
 		charList = [...langs[lang].aux]
         stats += charList.length + ' possible '
-		out += '<tr><th>Possible<br><span class="rowCount">'+charList.length+'</span></th><td class="small" id="infrequentCell"'
+		out += '<tr><th>Investigate&#x202F;!<br><span class="rowCount">'+charList.length+'</span></th><td class="small" id="infrequentCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
 		for (j=0;j<charList.length;j++) { 
@@ -700,7 +704,7 @@ function showLanguage (lang) {
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'
-            if (langs[lang].script && scriptData[langs[lang].script].block) out += '<a target="c" href="/scripts/'+scriptData[langs[lang].script].block+'/block#char'+cp+'">'+'\u00A0'+charList[j]+'</a>'
+            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+'\u00A0'+charList[j]+'</a>'
 			else out += '\u00A0'+charList[j]
 			out += '</span> ' 
 			}
@@ -711,7 +715,7 @@ function showLanguage (lang) {
         <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
         <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
         <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
-        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        <div><a href="../scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
         if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
         out += '</div>'
 		}
@@ -736,7 +740,7 @@ function showLanguage (lang) {
         <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
         <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
         <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
-        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        <div><a href="../scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
         if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
         out += '</div>'
         out += '</td></tr>'
@@ -755,7 +759,7 @@ function showLanguage (lang) {
         <div><a href="/app-analysestring/?chars=${cumulative}" target="_blank">Show details</a></div>
         <div><a href="/uniview?charlist=${cumulative}" target="_blank">Show characters in UniView</a></div>
         <div><a href="/app-listcharacters?chars=${cumulative}" target="_blank">List characters by block</a></div>
-        <div><a href="/scripts/fontlist?script=${langs[lang].script}&text=${cumulativeSpaced}" target="_blank">Send to Font lister</a></div>`
+        <div><a href="../scripts/fontlist?script=${langs[lang].script}&text=${cumulativeSpaced}" target="_blank">Send to Font lister</a></div>`
         if (langs[lang].fonts) stats += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${cumulative}">Show in character app</a></div>`
         stats += '</div>'
         stats += '</td></tr>'
