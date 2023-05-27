@@ -1730,7 +1730,7 @@ letter:"ߊߋߌߍߎߏߐߑߒߓߔߕߖߗߘߙߚߛߜߝߞߟߠߡߢߣߤߥߦߧߴߵߺ", mar
 aux:"͏؜٪​‑–—‘’“”…‹›⁠",
 orth:`[N’Ko] &nbsp; This is a written, rather than spoken, language. Used as a koiné by speakers of Maninka, Bambara, Dyula and related dialects. <a href="../scripts/nko" target="_blank">Details</a>`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl*", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp str",
-vowels:"let:7 cm:2", clusters:"mrk",
+vowels:"let:7 cm:2 comp:3", clusters:"mrk",
 linked:"nkoo/nqo", fonts:"/pickers/nko/", 
 },
 
