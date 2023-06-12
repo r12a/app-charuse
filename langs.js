@@ -1445,7 +1445,7 @@ orth:`Lisu (Fraser script). &nbsp; Since 1918, primary usage. <a href="../script
 also:
 ["lis-latn | latn | 1915-1918, 1958-1966, and from 1981."],
 type:"abugida", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"syllable", baseline:"romn", wrap:"syllable", hyphenation:"no",  justification:"sp",
-vowels:"inh:1 let:10 other:4",
+vowels:"inh:1 let:10 other:1",
 linked:"lisu/lis", fonts:"/pickers/lisu/", 
 },
 
@@ -2287,7 +2287,7 @@ letter:"กขคฆงจฉชซฌญฎฏฐฑฒณดตถทธนบ
 aux:"%;[]§«»ʼ͏ ‌‍‑†‡‰′″‹›",
 orth:`Thai. &nbsp; <a href="../scripts/thai/" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"word", hyphenation:"no",  direction:"ltr",  justification:"sp ig", 
-vowels:"inh:2 cm:9 vs:8 let:8 other:4 vsl:12 base:อ/ɔː,a venc:5 comp:37 voc:2", 
+vowels:"inh:2 cm:9 vs:8 let:8 other:4 vsl:12 base:อ/ɔː,a venc:5 comp:28 voc:2", 
 linked:"thai/th", fonts:"/pickers/thai/", 
 },
 
