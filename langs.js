@@ -1343,7 +1343,7 @@ orth:`Arabic. &nbsp; Nastaliq style ([Aran]) is primary usage, but naskh style a
 Kashmiri is one of the languages that indicates all vowel sounds when using Arabic script. <a href="../scripts/arabic/kashmiri" target="_blank">Details</a>`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"?",
 vowels:"let:7 cm:10 other:2 comp:18(3)", clusters:"mrk",
-linked:"arab/ks", fonts:"/pickers/arab-ks/", 
+linked:"arab/ks", fonts:"/pickers/arab-ks/", font:"'Noto Nastaliq Urdu', 'Urdu Typesetting'",
 },
 
 "ks-deva": { name:"Kashmiri (Koshur)", local:"कॉशुर‎ (Koshur)", silcode:"kas", 

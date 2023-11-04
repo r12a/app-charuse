@@ -412,6 +412,46 @@ function addRightColContent (charlist, lang) {
     }
 
 
+
+
+
+	
+function drawCharacters (main, aux, lang) {
+    var out = ''
+    var charList = [...main]
+    for (var j=0;j<charList.length;j++) { 
+        cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+        while (cp.length<4) cp = '0'+cp
+        name = 'U+'+cp+' '+charData[charList[j]]
+        out += `<span title="${name }" class="c" lang="${ lang }"`
+        if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
+        out += '>'
+        if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
+        else out += charList[j]
+        out += '</span> ' 
+        }
+    if (aux) {
+        out += ' + '
+        charList = [...aux]
+        for (j=0;j<charList.length;j++) { 
+            cp = charList[j].codePointAt(0).toString(16).toUpperCase()
+            while (cp.length<4) cp = '0'+cp
+            name = 'U+'+cp+' '+charData[charList[j]]
+            out += `<span title="'+name+'" class="c small" lang="${ lang }"`
+            if (langs[lang].font) out += ` style="font-family:${ langs[lang].font };"`
+            out += '>'
+            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
+            else out += charList[j]
+            out += '</span> '
+            }
+        }
+    return out
+    }
+
+
+
+
+
 function showLanguage (lang) {
     // writes out the content for a given language
     // globals
@@ -445,7 +485,9 @@ function showLanguage (lang) {
 	
 	var cumulative = ''  // gathers all characters, mainly for font parameter
     var main, aux
-	
+    var font = langs[lang].font
+    
+    
 	// characters
 	if (langs[lang].letter || langs[lang].letteraux) {
         if (langs[lang].letter) main = langs[lang].letter
@@ -460,30 +502,8 @@ function showLanguage (lang) {
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
-		charList = [...main]
-		for (var j=0;j<charList.length;j++) { 
-			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = '0'+cp
-			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'" class="c">'
-            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-			else out += charList[j]
-			out += '</span> ' 
-			}
-        if (langs[lang].letteraux) {
-            out += ' + '
-            charList = [...langs[lang].letteraux]
-            //thisRow += charList.join('')
-            for (j=0;j<charList.length;j++) { 
-                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-                while (cp.length<4) cp = '0'+cp
-                name = 'U+'+cp+' '+charData[charList[j]]
-                out += '<span title="'+name+'" class="c small">'
-                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-                else out += charList[j]
-                out += '</span> '
-                }
-            }
+        out += drawCharacters(main, aux, lang)
+ 
         out += '</td>'
         out += addRightColContent(main+aux, lang)
         out += '</tr>'
@@ -501,30 +521,9 @@ function showLanguage (lang) {
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
-		charList = [...main]
-		for (j=0;j<charList.length;j++) { 
-			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = '0'+cp
-			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'" class="c">'
-            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+'\u00A0'+charList[j]+'</a>'
-			else out += '\u00A0'+charList[j]
-			out += '</span> ' 
-			}
-        if (langs[lang].markaux) {
-            out += ' + '
-            charList = [...langs[lang].markaux]
-            for (j=0;j<charList.length;j++) { 
-                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-                while (cp.length<4) cp = '0'+cp
-                name = 'U+'+cp+' '+charData[charList[j]]
-                out += '<span title="'+name+'" class="c small">'
-                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-                else out += charList[j]
-                out += '</span> ' 
-                }
-            }
-		out += '</td>'
+        out += drawCharacters(main, aux, lang)
+
+        out += '</td>'
         out += addRightColContent(main+aux, lang)
         out += '</tr>'
 		}
@@ -541,29 +540,8 @@ function showLanguage (lang) {
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
-		charList = [...main]
-		for (j=0;j<charList.length;j++)  { 
-			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = '0'+cp
-			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'" class="c">'
-            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-			else out += charList[j]
-			out += '</span> ' 
-			}
-        if (langs[lang].numberaux) {
-            out += ' + '
-            charList = [...langs[lang].numberaux]
-            for (j=0;j<charList.length;j++) { 
-                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-                while (cp.length<4) cp = '0'+cp
-                name = 'U+'+cp+' '+charData[charList[j]]
-                out += '<span title="'+name+'" class="c small">'
-                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-                else out += charList[j]
-                out += '</span> ' 
-                }
-            }
+        out += drawCharacters(main, aux, lang)
+
 		out += '</td>'
         out += addRightColContent(main+aux, lang)
         out += '</tr>'
@@ -581,29 +559,8 @@ function showLanguage (lang) {
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
-		charList = [...main]
-		for (j=0;j<charList.length;j++)  { 
-			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = '0'+cp
-			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'" class="c">'
-            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-			else out += charList[j]
-			out += '</span> ' 
-			}
-        if (langs[lang].punctuationaux) {
-            out += ' + '
-            charList = [...langs[lang].punctuationaux]
-            for (j=0;j<charList.length;j++) { 
-                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-                while (cp.length<4) cp = '0'+cp
-                name = 'U+'+cp+' '+charData[charList[j]]
-                out += '<span title="'+name+'" class="c small">'
-                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-                else out += charList[j]
-                out += '</span> ' 
-                }
-            }
+        out += drawCharacters(main, aux, lang)
+
 		out += '</td>'
         out += addRightColContent(main+aux, lang)
         out += '</tr>'
@@ -621,29 +578,8 @@ function showLanguage (lang) {
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
-		charList = [...main]
-		for (j=0;j<charList.length;j++)  { 
-			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = '0'+cp
-			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<span title="'+name+'" class="c">'
-            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-			else out += charList[j]
-			out += '</span> ' 
-			}
-        if (langs[lang].symbolaux) {
-            out += ' + '
-            charList = [...langs[lang].symbolaux]
-            for (j=0;j<charList.length;j++) { 
-                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-                while (cp.length<4) cp = '0'+cp
-                name = 'U+'+cp+' '+charData[charList[j]]
-                out += '<span title="'+name+'" class="c small">'
-                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-                else out += charList[j]
-                out += '</span> ' 
-                }
-            }
+        out += drawCharacters(main, aux, lang)
+
 		out += '</td>'
         out += addRightColContent(main+aux, lang)
         out += '</tr>'
@@ -661,29 +597,8 @@ function showLanguage (lang) {
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
-		charList = [...main]
-		for (j=0;j<charList.length;j++)  { 
-			cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-			while (cp.length<4) cp = '0'+cp
-			name = 'U+'+cp+' '+charData[charList[j]]
-			out += '<bdi title="'+name+'" class="c">'
-            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-			else out += charList[j]
-			out += '</bdi> ' 
-			}
-        if (langs[lang].otheraux) {
-            out += ' + '
-            charList = [...langs[lang].otheraux]
-            for (j=0;j<charList.length;j++) { 
-                cp = charList[j].codePointAt(0).toString(16).toUpperCase()
-                while (cp.length<4) cp = '0'+cp
-                name = 'U+'+cp+' '+charData[charList[j]]
-                out += '<bdi title="'+name+'" class="c small">'
-                if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-                else out += charList[j]
-                out += '</bdi> ' 
-                }
-            }
+        out += drawCharacters(main, aux, lang)
+
 		out += '</td>'
         out += addRightColContent(main+aux, lang)
         out += '</tr>'
