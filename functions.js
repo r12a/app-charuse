@@ -96,7 +96,7 @@ var scriptData = {
 
 
 function makeBCPList () {
-	//out = '<option value=""> </option>'
+	// creates the markup for the datalist selection control
 	out = ''
 	datalist = ''
 	array = []
@@ -107,10 +107,8 @@ function makeBCPList () {
 		datalist += '<option value="'+array[i]+' '+langs[array[i]].name+'">'+array[i]+' '+langs[array[i]].name+'</option>\n'
 		}
 	document.getElementById('totalLanguages').textContent = array.length
-	//document.getElementById('total').textContent = array.length
 	document.getElementById('languageSelector').innerHTML = out
 	document.getElementById('datalist').innerHTML = datalist
-	//return out
 	}
 
 
@@ -1146,10 +1144,9 @@ function setFont (fontName) {
 
 
 function initialise () {
-    createCLArray()
+    createCLArray() // creates the array cl, which used to be read in from char_lang.js
     
-	//document.getElementById('languageSelector').innerHTML = makeBCPList()
-	makeBCPList()
+	makeBCPList() // creates the markup for the datalist selection control
 	document.getElementById('languageByRegion').innerHTML = listLangsByRegion()
 	document.getElementById('languageByScript').innerHTML = listLangsByScript()
 	
