@@ -141,9 +141,10 @@ function listLangsByRegion () {
             case 'easia': region = 'East Asia';break
             case 'carib': region = 'Caribbean';break
             }
-        out += '<tr><th>'+region+'</th><td>'+regionList[r].length+' languages: '
-        for (let l=0;l<regionList[r].length;l++ ) {
-           out += '<span onclick="showLanguage(\''+regionList[r][l].bcp+'\'); document.getElementById(\'regionByScriptDetail\').open = false;">'+regionList[r][l].name.replace(/ \([^\)]+\)/g,'')+'</span>, '
+        out += '<tr><th>'+region+'</th><td><i class="leadin">'+regionList[r].length+' &nbsp;languages:</i> '
+        for (var l=0;l<regionList[r].length;l++ ) {
+           out += '<span onclick="showLanguage(\''+regionList[r][l].bcp+'\'); document.getElementById(\'regionByScriptDetail\').open = false;">'+regionList[r][l].name.replace(/ \([^\)]+\)/g,'')+'</span>'
+           if (l<regionList[r].length) out += '&nbsp;• '
             }
         out += '</td></tr>'
         }
@@ -178,10 +179,10 @@ function listLangsByScript () {
 	out = ''
 	for (r in regionList) {
 		region = getScriptName(r)
-        out += '<tr><th>'+region+'</th><td>'+regionList[r].length+' languages: '
+        out += '<tr><th>'+region+'</th><td><i class="leadin">'+regionList[r].length+' &nbsp;languages:</i> '
         for (let l=0;l<regionList[r].length;l++ ) {
            out += '<span onclick="showLanguage(\''+regionList[r][l].bcp+'\'); document.getElementById(\'langByScriptDetail\').open = false;">'+regionList[r][l].name.replace(/ \([^\)]+\)/g,'')+'</span>'
-           if (l<regionList[r].length-1) out += ', '
+           if (l<regionList[r].length-1) out += '&nbsp;• '
             }
         out += '</td></tr>'
         }

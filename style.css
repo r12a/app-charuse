@@ -190,6 +190,7 @@ thead th { text-align: left; }
 */
 #output span, #languageByRegion span, #languageByScript span {
 	cursor: pointer;
+    padding: 3px;
 	}
 #languageByRegion td, #languageByScript td {
     text-align: left;
@@ -201,6 +202,26 @@ thead th { text-align: left; }
     padding: 1em;
     vertical-align: top;
     }
+
+#languageByScript span:hover, #languageByRegion span:hover {
+    background-color: bisque;
+    border-radius: 3px;
+    }
+#languageByScript i.leadin, #languageByRegion i.leadin {
+    font-style: normal;
+    }
+
+#langByScriptDetail summary, #regionByScriptDetail summary {
+    margin-top: 1em;
+    margin-left: 7.5%;
+    cursor: pointer;
+    }
+#langByScriptDetail summary:hover, #regionByScriptDetail summary:hover {
+    background-color: bisque;
+    border-radius: 3px;
+    }
+
+
 table {
     margin: 1em 3em 2em 10%;
     }
@@ -392,6 +413,18 @@ img {
 #externalLinks {
     font-size: .8rem;
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
