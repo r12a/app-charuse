@@ -1185,7 +1185,7 @@ also:
 ["khb-lana | lana | Still used by some, particularly Buddhist monasteries in Yunnan province."],
 type:"abugida", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"no/zwsp", baseline:"romn", wrap:"?", hyphenation:"?",  justification:"?",
 vowels:"inh:1 let:17 venc:4 comp:9", medials:"let:6", finals:"cm:7", 
-linked:"talu/khb", picker:"talu-khb"
+linked:"talu/khb", picker:"talu"
 },
 
 "khk": { name:"Halh Mongolian", local:"Монгол хэл‎", localtrans:"(Mongol khel)", label:"Mongolian, Halh",
@@ -2236,7 +2236,7 @@ letter:"ᥐᥑᥒᥓᥔᥕᥖᥗᥘᥙᥚᥛᥜᥝᥞᥟᥠᥡᥢᥣᥤᥥᥦᥧ
 orth:`Tai Le. &nbsp; <a href="../scripts/taile/" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"no/zwsp", baseline:"romn", wrap:"?", hyphenation:"?",  justification:"?",
 vowels:"inh:1 let:11", 
-linked:"tale/tdd",  "tale/"
+linked:"tale/tdd", picker:"tale"
 },
 
 "tdt": { name:"Tetun Dili", source:"udhr_010", region:"seasia", countries:"East Timor", script:"latn", speakers:"385000", letter:"áíúóÁÍÚÓ", mark:"́", punctuation:"’", local:"Tetun Dili"},
