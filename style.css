@@ -330,7 +330,9 @@ td {
 
 .localtrans {
 	font-size:90%;
-	font-family: "Gentium Plus", "helvetica neue", helvetica, "Segoe UI", sans-serif; 
+	font-family: "Gentium Plus", "helvetica neue", helvetica, "Segoe UI", sans-serif;
+    color: gray;
+    margin-inline: 1rem;
 	}
 
 .countries {
