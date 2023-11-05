@@ -423,8 +423,7 @@ function drawCharacters (main, aux, lang) {
         cp = charList[j].codePointAt(0).toString(16).toUpperCase()
         while (cp.length<4) cp = '0'+cp
         name = 'U+'+cp+' '+charData[charList[j]]
-        out += `<span title="${name }" class="c" lang="${ lang }"`
-        if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
+        out += `<span title="${name }" class="c"`
         out += '>'
         if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
         else out += charList[j]
@@ -437,8 +436,7 @@ function drawCharacters (main, aux, lang) {
             cp = charList[j].codePointAt(0).toString(16).toUpperCase()
             while (cp.length<4) cp = '0'+cp
             name = 'U+'+cp+' '+charData[charList[j]]
-            out += `<span title="'+name+'" class="c small" lang="${ lang }"`
-            if (langs[lang].font) out += ` style="font-family:${ langs[lang].font };"`
+            out += `<span title="${ name }" class="c small"`
             out += '>'
             if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
             else out += charList[j]
@@ -478,7 +476,9 @@ function showLanguage (lang) {
 	if (!langs[lang].redirect) {
 	
 	// local name
-	if (langs[lang].local) out += '<tr><th>Autonym</th><td class="localCell">'+langs[lang].local+'</td></td><td class="links"></td></tr>'
+	if (langs[lang].local) out += '<tr><th>Autonym</th><td class="localCell"'
+    if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
+    out += '>'+langs[lang].local+'</td></td><td class="links"></td></tr>'
 	
 	if (langs[lang].rtl) var rtl = true
 	else rtl = false
@@ -498,7 +498,8 @@ function showLanguage (lang) {
         rowCount = [...main].length+[...aux].length
         stats += rowCount + ' letters, '
         total += rowCount
-		out += '<tr><th>Letters<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="letterCell"'
+		out += `<tr><th>Letters<br><span class="rowCount">${ rowCount }</span></th><td class="large" id="letterCell" lang="${ lang }"`
+        if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
@@ -517,7 +518,8 @@ function showLanguage (lang) {
         rowCount = [...main].length+[...aux].length
         stats += rowCount + ' marks, '
         total += rowCount
-		out += '<tr><th>Marks<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="markCell"'
+		out += `<tr><th>Marks<br><span class="rowCount">${ rowCount }</span></th><td class="large" id="markCell" lang="${ lang }"`
+        if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
@@ -536,7 +538,8 @@ function showLanguage (lang) {
         rowCount = [...main].length+[...aux].length
         stats += rowCount + ' numbers, '
         total += rowCount
-		out += '<tr><th>Numbers<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="numberCell"'
+		out += `<tr><th>Numbers<br><span class="rowCount">${ rowCount }</span></th><td class="large" id="numberCell" lang="${ lang }"`
+        if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
@@ -555,7 +558,8 @@ function showLanguage (lang) {
         rowCount = [...main].length+[...aux].length
         stats += rowCount + ' punctuation, '
         total += rowCount
-		out += '<tr><th>Punctuation<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="punctuationCell"'
+		out += `<tr><th>Punctuation<br><span class="rowCount">${ rowCount }</span></th><td class="large" id="punctuationCell" lang="${ lang }"`
+        if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
@@ -574,7 +578,8 @@ function showLanguage (lang) {
         rowCount = [...main].length+[...aux].length
         stats += rowCount + ' symbols, '
         total += rowCount
-		out += '<tr><th>Symbols<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="symbolCell"'
+		out += `<tr><th>Symbols<br><span class="rowCount">${ rowCount }</span></th><td class="large" id="symbolCell" lang="${ lang }"`
+        if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
@@ -593,7 +598,8 @@ function showLanguage (lang) {
         rowCount = [...main].length+[...aux].length
         stats += rowCount + ' other'
         total += rowCount
-		out += '<tr><th>Other<br><span class="rowCount">'+rowCount+'</span></th><td class="large" id="otherCell"'
+		out += `<tr><th>Other<br><span class="rowCount">${ rowCount }</span></th><td class="large" id="otherCell" lang="${ lang }"`
+        if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
         
