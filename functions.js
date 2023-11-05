@@ -652,9 +652,9 @@ function showLanguage (lang) {
 		out += '<td class="links"><span title="Copy to clipboard" onclick="copyToClipboard(\''+charList.join('')+'\')"><img src="icons/copy.png"></span></td>'
         out += '<td class="links" style="position:relative;" onmouseover="this.lastChild.style.display=\'block\'" onmouseout="this.lastChild.style.display=\'none\'"><img src="icons/share.png" alt="Send characters." title="Send characters." class="ulink"/>'
         out += `<div class="popup" style="position:absolute; right:0;">
-        <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
-        <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
-        <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
+        <div><a href="../app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
+        <div><a href="../uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
+        <div><a href="../app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
         <div><a href="../scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
         if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
         out += '</div>'
@@ -935,7 +935,7 @@ function showLanguage (lang) {
 		var tagList = macrolist[i].textContent.split(' ')
 		for (let t=0;t<tagList.length;t++) {
 			if (t>0) finalList = ' '+finalList
-			if (langs[tagList[t]]) finalList += '<a href="./?language='+tagList[t]+'">'+tagList[t]+'</a>'
+			if (langs[tagList[t]]) finalList += '<a href="index.html?language='+tagList[t]+'">'+tagList[t]+'</a>'
 			else finalList += tagList[t]
 			}
 		macrolist[i].innerHTML = finalList
