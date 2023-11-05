@@ -76,7 +76,7 @@ var scriptData = {
 'shaw':{ name:'Shavian', block:"" },
 'sinh':{ name:'Sinhala', block:"sinh" },
 'sund':{ name:'Sundanese', block:"sund" },
-'sunu':{ name:'Sunwar', block:"sunu" },
+'sunu':{ name:'Sunuwar', block:"sunu" },
 'syrc':{ name:'Syriac', block:"syrc" },
 'syrn':{ name:'Eastern Syriac', block:"syrc" },
 'syrj':{ name:'Western Syriac', block:"syrc" },
@@ -97,6 +97,26 @@ var scriptData = {
 'macrolanguage':{ name:'Macrolanguage', block:"" },
 
 }
+
+
+
+regionData = {
+'afr':{ name:'Africa', desc:"Includes continent & islands such as Madagascar."},
+'oce':{ name:'Oceania', desc:"Includes Australia, NZ, and the Pacific Islands."},
+'eur':{ name:'Europe', desc:"Includes Russia to Urals and Georgia, but not Armenia or Azerbaijan."},
+'nam':{ name:'Northern America', desc:"USA and Canada."},
+'cam':{ name:'Central America', desc:"Mexico to Panama."},
+'sam':{ name:'South America', desc:"Whole continent."},
+'wasia':{ name:'Western Asia', desc:"Armenian, Azerbaijan, Turkey, & the Middle East."},
+'casia':{ name:'Central Asia', desc:"North of Iran, south of Russia, and west of China"},
+'nasia':{ name:'Northern Asia', desc:"Russia east of the Urals."},
+'sasia':{ name:'South Asia', desc:"Includes Pakistan, India, Nepal, Bhutan, Bangladesh, Maldives."},
+'seasia':{ name:'South East Asia', desc:"Includes Indonesia, and the Philippines."},
+'easia':{ name:'East Asia', desc:"Includes China, Mongolia, Japan, Korea."},
+'carib':{ name:'Caribbean', desc:"Caribean islands."},
+}
+
+
 
 
 
@@ -123,13 +143,89 @@ function makeBCPList () {
 	}
 
 
-function makeLangList () {
-	out = ''
-	for (l in langs) out += '<option value="'+l+'">'+langs[l].name+'</option>\n'
-	return out
-	}
+
+
 
 function listLangsByRegion () {
+    // creates the markup behind the 'Find a language by region' details
+    
+    // suck all the data into the regiontData object, in a langs field
+    for (l in langs) {
+        if (typeof langs[l].region === 'undefined') {
+            console.log('ERROR: ',l,':region is undefined')
+            continue
+            }
+        var regionCode = langs[l].region
+        if (regionData[regionCode].langs) {
+            regionData[regionCode].langs.push(l)
+            }
+        else {
+            regionData[regionCode].langs = [l]
+            }
+        }
+    
+    // create markup for all regionData records with langs
+    var out = ''
+    for (r in regionData) {
+        if (regionData[r].langs) {
+            out += `<tr><th title="${ regionData[r].desc }">${ regionData[r].name }</th><td><i class="leadin">${ regionData[r].langs.length } &nbsp;languages:</i> `
+            for (let l=0;l<regionData[r].langs.length;l++ ) {
+               out += `<span onclick="showLanguage('${ regionData[r].langs[l] }');`
+               out += `document.getElementById('langByScriptDetail').open = false;">${ langs[regionData[r].langs[l]].name.replace(/ \([^\)]+\)/g,'') }</span>`
+               if (l<regionData[r].langs.length-1) out += '&nbsp;• '
+                }
+            out += '</td></tr>'
+            }
+    
+        }
+	return out
+    }
+
+
+
+
+
+function listLangsByScript () {
+    // creates the markup behind the 'Find a language by script' details
+    
+    // suck all the data into the scriptData object, in a langs field
+    for (l in langs) {
+        if (typeof langs[l].script === 'undefined') {
+            console.log('ERROR: ',l,':script is undefined')
+            continue
+            }
+        var scriptISO = langs[l].script
+        if (scriptData[scriptISO].langs) {
+            scriptData[scriptISO].langs.push(l)
+            }
+        else {
+            scriptData[scriptISO].langs = [l]
+            }
+        }
+    
+    // create markup for all scriptData records with langs
+    var out = ''
+    for (s in scriptData) {
+        if (scriptData[s].langs) {
+            out += `<tr><th>${ scriptData[s].name }</th><td><i class="leadin">${ scriptData[s].langs.length } &nbsp;languages:</i> `
+            for (let l=0;l<scriptData[s].langs.length;l++ ) {
+               out += `<span onclick="showLanguage('${ scriptData[s].langs[l] }');`
+               out += `document.getElementById('langByScriptDetail').open = false;">${ langs[scriptData[s].langs[l]].name.replace(/ \([^\)]+\)/g,'') }</span>`
+               if (l<scriptData[s].langs.length-1) out += '&nbsp;• '
+                }
+            out += '</td></tr>'
+            }
+    
+        }
+	return out
+    }
+
+
+
+
+
+/*
+function listLangsByRegionX () {
     var regionList = { eur:[], wasia:[], casia:[], sasia:[], seasia:[], nasia:[], easia:[], afr:[], oce:[], carib:[], sam:[], cam:[], nam:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
@@ -161,19 +257,9 @@ function listLangsByRegion () {
         }
 	return out
 	}
-// regions:
-// nam (Northern America), sam (South America), cam (Central America), carib (Caribbean)
-// eur (Europe - includes Russia to Urals and Georgia, but not Armenia or Azerbaijan)
-// easia (East Asia - includes China, Mongolia, Japan, Korea)
-// nasia (Northern Asia - Russia east of Urals)
-// seasia (Southeast Asia - including Indonesia, Philippines
-// casia (Central Asia - north of Iran, S of Russia, W of China)
-// wasia (Western Asia - includes Armenian, Azerbaijan, Turkey, & middle east)
-// afr (Africa)
-// oce (Oceania - includes Australia, NZ, and Pacific Islands)
 
 
-function listLangsByScript () {
+function listLangsByScriptX () {
     // code to find out what script tags are there
     //var myset = new Set([])
     //for (l in langs) {
@@ -185,6 +271,7 @@ function listLangsByScript () {
     var regionList = { ascii:[], adlm:[], ahom:[], arab:[], armn:[], bali:[], bamu:[], bass:[], batk:[], beng:[], bugi:[], buhd:[], cans:[], cakm:[], cham:[], cher:[], copt:[], cyrl:[], deva:[], diak:[], dogr:[], dsrt:[], egyp:[], ethi:[], geor:[], gong:[], gonm:[], grek:[], gujr:[], guru:[], hano:[], hebr:[], java:[], kali:[], knda:[], khmr:[], khti:[], knda:[], laoo:[], latn:[], lepc:[], limb:[], lisu:[], maka:[], mlym:[], mand:[], mong:[], mroo:[], mymr:[], talu:[], nagm:[],newa:[], nkoo:[], olck:[], orya:[], osge:[], rohg:[], shrd:[], sinh:[], sund:[], sunu:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tagb:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
+        console.log(language)
         regionList[langs[l].script].push(language)
         }
 	out = ''
@@ -200,10 +287,7 @@ function listLangsByScript () {
 	return out
 	}
 
-
-
-
-
+*/
 
 
 function getScriptName (s) { 
@@ -408,12 +492,14 @@ function showLanguage (lang) {
 	if (!langs[lang].redirect) {
 	
 	// local name
-	if (langs[lang].local) out += '<tr><th>Autonym</th><td><span class="localCell"'
-    if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
-    out += '>'+langs[lang].local+'</span>'
-    if (langs[lang].localtrans) out += ` <span class="localtrans">${ langs[lang].localtrans }</span>`
-    out += '</td></td><td class="links"></td></tr>'
-	
+	if (langs[lang].local) {
+        out += '<tr><th>Autonym</th><td><span class="localCell"'
+        if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
+        out += '>'+langs[lang].local+'</span>'
+        if (langs[lang].localtrans) out += ` <span class="localtrans">${ langs[lang].localtrans }</span>`
+        out += '</td></td><td class="links"></td></tr>'
+	   }
+
 	if (langs[lang].rtl) var rtl = true
 	else rtl = false
 	
