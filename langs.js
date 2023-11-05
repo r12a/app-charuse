@@ -67,7 +67,7 @@ also:["aii-arab | arab | 'Garshuni', often used today for written communication,
 related:`Macrolanguage is Syriac [syr].`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?", justification:"sp str", 
 vowels:"other:3 ml:3 cm:6 comp:4 base:ܐ/a",
-linked:"syrc/aii", fonts:"/pickers/syrc-aii/", font:"'Noto Sans Syriac Eastern'"
+linked:"syrc/aii", picker:"syrc-aii", font:"'Noto Sans Syriac Eastern'"
 },
 
 "ajg": { name:"Aja", local:"Ajagbe", 
@@ -113,7 +113,7 @@ letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመ
 orth:`Ethiopic. &nbsp; <a href="../scripts/ethiopic" target="_blank">Details</a>.`,
 type:"syllabary", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", justification:"sp", wordsep:"space/wb", wordsepChar:"፡", baseline:"romn", wrap:"word/char", hyphenation:"?", 
 vowels:"syl:15",
-linked:"ethi/am", fonts:"/pickers/ethi/", 
+linked:"ethi/am", picker:"ethi", 
 },
 
 "amc": { name:"Amahuaca (Amawaka, Amaguaco, Ameuhaque, Ipitineri, Sayaco)", local:"Yora", 
@@ -151,7 +151,7 @@ orth:`Arabic. &nbsp; Naskh style. <a href="../scripts/arabic" target="_blank">De
 related:`Macrolanguage is Arabic [ar]. Legacy applications often use [ar] rather than arb.`,
 type:"abjad", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", spacing:"base", baseline:"romn", wrap:"word", hyphenation:"no",  justification:"sp str sw",
 vowels:"let:1 ml:3 cm:0~8 hcm:y other:3 base:ا/a,i comp:0~5 ind:1", clusters:"mrk",
-linked:"arab/arb", fonts:"/pickers/arab-ar/", 
+linked:"arab/arb", picker:"arab-ar", 
 },
 
 "arl": { name:"Arabela (Chiripuno, Chiripunu)", local:"Tapweyokwaka / Tapueyocaca", 
@@ -301,7 +301,7 @@ also:
 ["bbc | latn | The predominant orthography."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"char", hyphenation:"?",  direction:"ltr",  justification:"?", 
 vowels:"vs:4 ind:3 base:A",  finals:"cm:1", 
-linked:"batk/btk", fonts:"batk/index.html", 
+linked:"batk/btk", picker:"batk", 
 },
 
 "bcl": { name:"Central Bicol (Bikol Naga, Bicolano)", source:"udhr_bcl", region:"seasia", countries:"Philippines", script:"ascii", speakers:"2500000", 
@@ -328,7 +328,7 @@ Legacy applications often use bik rather than [bcl].`},
 "bin": { name:"Edo (Bini)", source:"udhr_bin,5d2167e3d40aca7074b7d33835b1aa93e09cc088", region:"afr", countries:"Nigeria", script:"ascii", speakers:"1000000", letter:"ÀÁÈÉÌÍÒÓÙÚàáèéìíòóùúẸẹỌọ", mark:"̣̀́", local:"Ẹ̀dó", notes:"Acute and grave accents are used for tones, but the source didn't explicitly list all possible combinations, so the list of precomposed characters shown with those accents is a guess."},
 
 "bku-buhd": {  name:"Buhid (Bangon, Batangan, Buhid-Mangyan, Bukil)", source:"3bd5a62d6d969a796148fc6c805c3eb8ac27e52d", region:"oce", countries:"Philippines", script:"buhd", speakers:"11600", letter:"ᝉᝆᝃᝊᝇᝄᝐᝑᝋᝈᝅᝏᝍᝎᝌᝀᝁᝂ", mark:"ᝒᝓ", punctuation:"᜵᜶", local:"ᝊᝓᝑᝒ", localtrans:"(buhid)",
-fonts:"/pickers/buhd/",
+picker:"buhd",
 orth:`Buhid &nbsp;`,
 also:
 ['bku | latn | Primary.'],
@@ -360,7 +360,7 @@ also:
 ["nqo | nkoo | Written koiné used by speakers of Maninka, Bambara, Dyula and related dialects."],
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
 vowels:"let:7(15) cm:(3/4)", 
-linked:"latn/bm", fonts:"/pickers/latn-bm", 
+linked:"latn/bm", picker:"latn-bm", 
 },
 
 "bn": { name:"Bengali (Bangla)", local:"বাংলা", localtrans:"/ˈbʌŋlə/", silcode:"ben", 
@@ -374,7 +374,7 @@ also:
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"hang", wrap:"word", hyphenation:"(yes)", hyphen:"-", justification:"sp", 
 vowels:"inh:2 cm:9 ind:10 vs:9 pre:3 circ:2 voc:1 comp:12+2 other:1",
 clusters:"vir stk cnj lig rax unm vvir", finals:"cm:2 let:1", 
-linked:"beng/bn", fonts:"/pickers/beng/", 
+linked:"beng/bn", picker:"beng", 
 },
 
 "bo": { name:"Tibetan", local:"བོད་སྐད་ / ལྷ་སའི་སྐད་", localtrans:"(Böké / Lhaséké)", silcode:"bod", 
@@ -390,7 +390,7 @@ also:
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"syllable", wordsepChar:"་", baseline:"hang", wrap:"syllable", hyphenation:"no",  justification:"pad",
 vowels:"inh:1 cm:4 vs:4 base:འ,ཨ/à,á",
 clusters:"stk",
-linked:"tibt/bo", fonts:"/pickers/tibt/", 
+linked:"tibt/bo", picker:"tibt", 
 },
 
 "boa": { name:"Bora", source:"udhr_boa", region:"sam", countries:"Peru, Colombia", script:"latn", speakers:"2400", letter:"úáéñíóÚÁÉÑÍÓɨȉƗȈ", mark:"́̃̏", local:"Meamuyna"},
@@ -436,7 +436,7 @@ also:
 ["bsq | latn | Primary usage."],
 type:"alphabet", cs:"no", gpos:"yes", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"?", hyphenation:"?",  justification:"?",
 vowels:"let:7",
-linked:"bass/bsq", fonts:"/pickers/bass/", 
+linked:"bass/bsq", picker:"bass", 
 },
 
 "btd-batk": { name:"Batak Dairi (Pakpak)", 
@@ -448,7 +448,7 @@ also:
 ["btd | latn | The predominant orthography."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"char", hyphenation:"?",  direction:"ltr",  justification:"?", 
 vowels:"vs:5 ind:3 base:A",  finals:"cm:1", 
-linked:"batk/btk", fonts:"batk/index.html", 
+linked:"batk/btk", picker:"batk", 
 },
 
 "btm-batk": { name:"Batak Mandailing (Batta)", 
@@ -460,7 +460,7 @@ also:
 ["btm | latn | The predominant orthography."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"char", hyphenation:"?",  direction:"ltr",  justification:"?", 
 vowels:"vs:4 ind:3 base:A",  finals:"cm:1", 
-linked:"batk/btk", fonts:"batk/index.html", 
+linked:"batk/btk", picker:"batk", 
 },
 
 "bts-batk": { name:"Batak Simalungun (Simelungan, Timur)", 
@@ -472,7 +472,7 @@ also:
 ["bts | latn | The predominant orthography."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"char", hyphenation:"?",  direction:"ltr",  justification:"?", 
 vowels:"vs:6 ind:3 base:A",  finals:"cm:2", 
-linked:"batk/btk", fonts:"batk/index.html", 
+linked:"batk/btk", picker:"batk", 
 },
 
 "btx-batk": { name:"Batak Karo", 
@@ -484,7 +484,7 @@ also:
 ["btx | latn | The predominant orthography."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"char", hyphenation:"?",  direction:"ltr",  justification:"?", 
 vowels:"vs:7 ind:3 base:A",  finals:"cm:2", 
-linked:"batk/btk", fonts:"batk/index.html", 
+linked:"batk/btk", picker:"batk", 
 },
 
 "buc": { name:"Bushi (Shibushi, Kibushi)", source:"udhr_buc,f977666b87e87d0adfd3e3683b6d046a9de0abf5", region:"afr", countries:"Mayotte", script:"latn", speakers:"47900", letter:"ìàãÌÀÃɓŋĩŊĨƁɗƊ", mark:"̀̃", punctuation:"’", local:"Kibushi", 
@@ -571,7 +571,7 @@ also:
 ["chr-latn | latn | "],
 type:"syllabary", cs:"yes", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"syl:6",
-linked:"cher/chr", fonts:"/pickers/cher/", 
+linked:"cher/chr", picker:"cher", 
 },
 
 "cic": { name:"Chickasaw", source:"udhr_cic,f258793e409fd555ca28c242b449ca206a0bd6c0", region:"nam", countries:"USA", script:"latn", speakers:"75", letter:"óáíÓÁÍ", mark:"̱́", punctuation:"—", local:"Chikashshanompa'", localtrans:"[tʃikaʃːanompaʔ]", notes:`U+0331 COMBINING MACRON BELOW is used with a and o, for which there are no precomposed characters.`},
@@ -627,7 +627,7 @@ also:
 ["crk-latn | latn | "],
 type:"syllabary", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"᐀",  justification:"sp",
 vowels:"syl:7", clusters:"ss", finals:"ss:y", 
-linked:"cans/crk", fonts:"/pickers/cans-crk/", 
+linked:"cans/crk", picker:"cans-crk", 
 },
 
 "crs": { name:"Seychellois Creole (Seselwa)", source:"udhr_crs", region:"afr", countries:"Seychelles", script:"latn", speakers:"73000", letter:"íÍ", mark:"́", punctuation:"’", local:"kreol, seselwa"},
@@ -643,7 +643,7 @@ letter:"ᐁᐢᐱᑕᑲᒥᐠᐊᑭᒋᐃᑗᐎᐣᓂᑯᓯᓇᐅᔑᒧᓀᐡᑐ
 related:`Macrolanguage is Cree [cr].`,
 type:"syllabary", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?", justification:"sp",
 clusters:"ss:y", 
-fonts:"/pickers/cans/", 
+picker:"cans", 
 },
 
 "ctd": { name:"Tedim Chin", source:"udhr_ctd", region:"seasia", countries:"Myanmar, India", script:"ascii", speakers:"340000", local:"Tidim"},
@@ -705,7 +705,7 @@ also:
 ["dv-latn | latn | ‘Maldivian Latin’."],
 type:"alphabet", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"cm:10 base:އ/–", clusters:"mrk",
-linked:"thaa/dv", fonts:"/pickers/thaa/", 
+linked:"thaa/dv", picker:"thaa", 
 },
 
 "dyo": { name:"Jola-Fonyi", source:"cldr_dyo,udhr_dyo,cd01ae44156075d3e8aa249200adf6c04edb6acb", region:"afr", script:"latn", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"́̃̀", punctuation:"“”‰", symbol:"°", countries:"Senegal, Gambia", local:"Jóola-Fóoñi / kújoolaay", 
@@ -743,7 +743,7 @@ related:`Related Greek language codes include [cpg] (Cappadocian Greek), [gmy] (
 In Cyprus, the dialect is reportedly more similar to Classical Greek [grc] in some vocabulary and grammar than that spoken in Greece.`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp",
 vowels:"let:34 cm:(2) comp:8",
-linked:"grek/el", fonts:"/pickers/grek/", 
+linked:"grek/el", picker:"grek", 
 },
 
 "emk": { name:"Eastern Maninkakan", source:"udhr_emk", region:"afr", script:"latn", speakers:"5000000", letter:"ɲɛɔƝƐƆ", countries:"Guinea, Liberia, Mali, Sierra Leone", 
@@ -800,7 +800,7 @@ related:`ff is a macrolanguage that encompasses the following more specific prim
 There is no indicated equivalence between one of the latter subtags and the macrolanguage subtag.`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
 vowels:"let:5", 
-linked:"latn/ff", fonts:"/pickers/latn-ff/", 
+linked:"latn/ff", picker:"latn-ff", 
 },
 
 "ff-adlm": { name:"Fula (Fulani, Fulfulde, Fulah)", rtl:true, 
@@ -814,7 +814,7 @@ also:
 related:``,
 type:"alphabet", cs:"yes", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl*", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes",  justification:"sp",
 vowels:"let:5+2",
-linked:"adlm/fuf", fonts:"/pickers/adlm/", 
+linked:"adlm/fuf", picker:"adlm", 
 },
 
 "ff-arab": { name:"Adamawa Fulfulde (Ajamiya)", label:"Fulfulde, Adamawa",
@@ -828,7 +828,7 @@ also:
 "ff-latn | latn | Primary usage. Based on Pan-Nigerian alphabet since 1980s. <a href='../scripts/latn/ff.html' target='_blank'>Details.</a>"],
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", wordsep:"space", spacing:"base", baseline:"romn", wrap:"word", hyphenation:"no",  direction:"rtl",  justification:"sp str", 
 vowels:"cm:8 let:1 other:5 base:ع,ا/ʔ comp:6",  clusters:"mrk", 
-linked:"arab/ff", fonts:"/pickers/arab-ff/", 
+linked:"arab/ff", picker:"arab-ff", 
 },
 
 "fi": { name:"Finnish", silcode:"fin", source:"cldr_fi,udhr_fin", region:"eur", countries:"Finland, Sweden, Russia", script:"latn", speakers:"5400000", letter:"åäöÅÄÖšžŠŽ", mark:"̌̊̈", punctuation:"»§‐–…’”", aux:"ăąāćčċďđěėęēğģħįīıķĺľļłńňņŋőœŕřśŝşťţŧůűųūźżĂĄĀĆČĊĎĐĚĖĘĒĞĢĦİĮĪĶĹĽĻŁŃŇŅŊŐŒŔŘŚŜŞŤŢŦŮŰŲŪŸŹŻʒǧǥȟǩșțǯǦǤȞǨȘȚƷǮáàâãçðéèêëíîïñóòôõßúùûýÿüþæøÁÀÂÃÇÐÉÈÊËÍÎÏÑÓÒÔÕÚÙÛÝÜÞÆØ̨̧̦̇́̀̆̂̃̄̋", local:"Suomi", 
@@ -859,7 +859,7 @@ also:
 related:`Macrolanguage is Fulah [ff].`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
 vowels:"let:5", 
-linked:"latn/ff", fonts:"/pickers/latin-ff/", 
+linked:"latn/ff", picker:"latin-ff", 
 },
 
 "fuf-adlm": { name:"Pular", rtl:true, 
@@ -874,7 +874,7 @@ also:
 related:`Macrolanguage is Fulah [ff].`,
 type:"alphabet", cs:"yes", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl*", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes",  justification:"sp",
 vowels:"let:5 cm:3",
-linked:"adlm/fuf", fonts:"/pickers/adlm/", 
+linked:"adlm/fuf", picker:"adlm", 
 },
 
 "fur": { name:"Friulian (Friulan, Eastern Ladin)", source:"cldr_fur,udhr_fur", region:"eur", countries:"Italy", script:"latn", speakers:"600000", letter:"àâçèêìîòôùûÀÂÇÈÊÌÎÒÔÙÛ", mark:"̧̀̂", aux:"čğšČĞŠåéëïñóüÅÉËÏÑÓÜ̊̌́̈̆̃", local:"Furlan"},
@@ -926,7 +926,7 @@ also:
 ["gu-khoj | khoj | "],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"hang", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"inh:1 ind:12 cm:11 vs:11 pre:1 voc:2", clusters:"vir stk cnj lig tcg rax", finals:"cm:2", 
-linked:"gujr/gu", fonts:"/pickers/gujr/", 
+linked:"gujr/gu", picker:"gujr", 
 },
 
 "guc": { name:"Wayuu (Wayu, Wayúu, Guajiro, Wahiro)", source:"udhr_guc", region:"sam", countries:"Colombia, Venezuela", script:"latn", speakers:"437780", letter:"üñÜÑ", mark:"̈̃", local:"Wayuunaiki"},
@@ -952,7 +952,7 @@ also:
 "ha-arab | arab | Not standardised. The used mostly by muslim communities. Typically written with Warsh forms in the Kano style."],
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"?",
 vowels:"let:5",
-linked:"latn/ha", fonts:"/pickers/latn-ha/", 
+linked:"latn/ha", picker:"latn-ha", 
 },
 
 "ha-arab": { name:"Hausa (ajami)", local:"هَرْشَن هَوْسَ", silcode:"hau", rtl:true,
@@ -966,7 +966,7 @@ also:
 "ha-x-pre1980 | latn | Since 1880. Became official Hausa alphabet in 1930."],
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"no",  justification:"sp str",
 vowels:"let:1 other:3 cm:8 comp:5 base:أ,إ,ى,ع/ʔ",
-linked:"arab/ha", fonts:"/pickers/arab-ha/", 
+linked:"arab/ha", picker:"arab-ha", 
 },
 
 "haw": { name:"Hawaiian", source:"cldr_haw,udhr_haw", region:"oce", countries:"USA", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"̄", punctuation:"’‘“”", local:" ’Olelo Hawai’i"},
@@ -979,7 +979,7 @@ aux:"[]{}§ʼ͏‑–—‘“†‡…‰′″⁠",
 orth:`Hebrew. &nbsp;  <a href="../scripts/hebrew" target="_blank">Details</a>.`,
 type:"abjad", cs:"no", gpos:"yes", gsub:"no", cursive:"no", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp",
 vowels:"ml:4 cm:11 hcm:11 other:4",
-linked:"hebr/he", fonts:"/pickers/hebr/", 
+linked:"hebr/he", picker:"hebr", 
 },
 
 "hi": { name:"Hindi", local:" मानक हिन्दी‎ / हिन्दी‎", localtrans:"(Mānak Hindī / Hindī)", silcode:"hin", 
@@ -993,7 +993,7 @@ also:
 ["hi-newa | newa | Archaic, no longer in use."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"space", baseline:"hang", wrap:"word", hyphenation:"(yes)", hyphen:"-",  direction:"ltr",  justification:"sp", 
 vowels:"inh:1 cm:11 vs:11 ind:12 pre:1 voc:1",  clusters:"vir stk cnj lig rax",  finals:"cm:2", 
-linked:"deva/hi", fonts:"/pickers/deva-hi/", 
+linked:"deva/hi", picker:"deva-hi", 
 },
 
 "hil": { name:"Hiligaynon (Ilonggo)", source:"udhr_hil", region:"seasia", countries:"Philippines", script:"ascii", speakers:"9300000", local:"Hiligaynon / Ilonggo"},
@@ -1014,7 +1014,7 @@ also:
 ["hnn-latn | latn | Primary."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"?",
 vowels:"ind:y vs:y",
-fonts:"/pickers/hano/", 
+picker:"hano", 
 },
 
 "hns": { name:"Caribbean Hindustani (Sarnami Hindustani)", source:"udhr_hns", region:"carib", countries:"Suriname, Guyana, Trinidad &amp; Tobago", script:"latn", speakers:"166000", letter:"áêòíèàëÁÊÒÍÈÀË", mark:"́̂̀̈", punctuation:"‘’", local:"Sarnaanie Hiendoestaanie"},
@@ -1042,7 +1042,7 @@ orth:`Armenian. &nbsp;
 related:`See also Western Armenian [hyw].`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"֊*",  justification:"sp",
 vowels:"let:8",
-linked:"armn/hy", fonts:"/pickers/armn/", 
+linked:"armn/hy", picker:"armn", 
 },
 
 "ibb": { name:"Ibibio", source:"udhr_ibb", region:"afr", countries:"Nigeria", script:"latn", speakers:"2000000", letter:"ñÑ", mark:"̃", local:"Ibibio"},
@@ -1073,7 +1073,7 @@ also:
 ["ike-latn | latn | Also standardised for Inuktitut in 1976."],
 type:"syllabary", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp",
 vowels:"syl:7", clusters:"ss", finals:"ss:y", 
-linked:"cans/ike", fonts:"/pickers/cans-ike/", 
+linked:"cans/ike", picker:"cans-ike", 
 },
 
 "ilo": { name:"Ilocano (Ilokano)", source:"udhr_ilo", region:"seasia", countries:"Philippines", script:"ascii", speakers:"9100000", local:"Ilokano", 
@@ -1113,7 +1113,7 @@ also:
 ["jv | latn | "],
 type:"abugida", cs:"partial", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"syllable", hyphenation:"(yes)", hyphen:"ꦺ",  direction:"ltr",  justification:"sp ig", 
 vowels:"inh:2 vs:5 ind:5 base:ꦲ/HA pre:1 comp:1 voc:2",  clusters:"vvir stk cnj vir",  medials:"cm:3",  finals:"cm:4 vk:꧀", 
-linked:"java/jv", fonts:"/pickers/java/", 
+linked:"java/jv", picker:"java", 
 },
 
 "jv-java": { name:"Javanese", silcode:"jav", 
@@ -1126,7 +1126,7 @@ also:
 ["jv | latn | "],
 type:"abugida", cs:"partial", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"syllable", hyphenation:"(yes)", hyphen:"ꦺ",  direction:"ltr",  justification:"sp ig", 
 vowels:"inh:2 cm:5 vs:5 ind:5 base:ꦲ/h,a pre:1 comp:1 voc:2",  clusters:"vvir stk cnj vir",  medials:"cm:3",  finals:"cm:4 vk:꧀", 
-linked:"java/jv", fonts:"/pickers/java/", 
+linked:"java/jv", picker:"java", 
 },
 
 "ka": { name:"Georgian", local:"ქართული‎ / ქართული ენა‎", localtrans:"(kartuli / kartuli ena)", silcode:"kat", 
@@ -1139,7 +1139,7 @@ also:
 ["ka-geok | geok | Asomtavruli &amp; nuskhuri, no longer in use except liturgically."],
 type:"alphabet", cs:"allcaps", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp",
 vowels:"let:5",
-linked:"geor/ka", fonts:"/pickers/geor-ka/", 
+linked:"geor/ka", picker:"geor-ka", 
 },
 
 "kab": { name:"Kabyle (Kabylian)", source:"cldr_kab", region:"afr", countries:"Algeria", script:"latn", speakers:"5500000", letter:"ǧƐǦƔčČḍḥṛṣṭẓḌḤṚṢṬẒɛɣ", mark:"̣̌", punctuation:"‰", local:"Taqbaylit", 
@@ -1185,7 +1185,7 @@ also:
 ["khb-lana | lana | Still used by some, particularly Buddhist monasteries in Yunnan province."],
 type:"abugida", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"no/zwsp", baseline:"romn", wrap:"?", hyphenation:"?",  justification:"?",
 vowels:"inh:1 let:17 venc:4 comp:9", medials:"let:6", finals:"cm:7", 
-linked:"talu/khb", picker:"pickers/talu-khb/"
+linked:"talu/khb", picker:"talu-khb"
 },
 
 "khk": { name:"Halh Mongolian", local:"Монгол хэл‎", localtrans:"(Mongol khel)", label:"Mongolian, Halh",
@@ -1201,7 +1201,7 @@ also:
 related:`Macrolanguage is Mongolian [mn].`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"let:30",
-linked:"cyrl/mn", fonts:"/pickers/cyrl-mn/", 
+linked:"cyrl/mn", picker:"cyrl-mn", 
 },
 
 "khk-mong": { name:"Halh Mongolian", local:"Монгол хэл‎", localtrans:"(Mongol khel)", label:"Mongolian, Halh",
@@ -1217,7 +1217,7 @@ also:
 related:`Macrolanguage is Mongolian [mn].`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"tblr", wordsep:"space", baseline:"cntr", wrap:"word", hyphenation:"yes", hyphen:"↵᠆*",  justification:"sp",
 vowels:"let:8",
-linked:"mong/mn", fonts:"/pickers/mong/", 
+linked:"mong/mn", picker:"mong", 
 },
 
 "khq": { name:"Koyra Chiini (Western Songhay)", source:"cldr_khq", region:"afr", countries:"Mali", script:"latn", speakers:"200000", letter:"ãõÃÕƝŋšžŊŠŽẽẼɲ", mark:"̃̌"},
@@ -1258,7 +1258,7 @@ aux:"%:;[]§«»ʼ͏‑–—†‡…‰′″‹›⁠",
 orth:`Khmer. &nbsp; <a href="../scripts/khmer" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"word", hyphenation:"no",  direction:"ltr",  justification:"ig", 
 vowels:"inh:2 vs:19 cm:21 vsl:4 other:2 ind:10 base:អ/ʔ pre:3 circ:5 comp:15 voc:4",  clusters:"inv stk", 
-linked:"khmr/km", fonts:"/pickers/khmr/", 
+linked:"khmr/km", picker:"khmr", 
 },
 
 "kmb": { name:"Kimbundu (North Mbundu)", source:"udhr_kmb", region:"afr", countries:"Angola", script:"latn", speakers:"4000000", letter:"êâôÊÂÔ", mark:"̂", punctuation:"’", local:"Kimbundu"},
@@ -1334,18 +1334,6 @@ also:
 "ks": { name:"Kashmiri (Koshur)", local:"کٲشُر‎", localtrans:"(koshur)", silcode:"kas", rtl:true, 
 source:"cldr_ks,57237835618d4daaf27d149d55e14be159182c33", 
 region:"sasia", countries:"India, Pakistan", script:"arab", speakers:"5600000", 
-letter:"ؠآأؤإابتثجحخدذرزسشصضطظعغفقلمنوٲٹپچڈڑژکگںھہۂۄیے", letteraux:"ـ", mark:"͏َُِّْٕٖٟٔٗٚ", markaux:"ٓ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"،؛؟٪۔“”", symbol:"", other:"\u061C\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069",
-aux:".[]§«»ʼۓ​‑–—‘’†‡…‰′″‹›₹",
-orth:`Arabic. &nbsp; Nastaliq style ([Aran]) is primary usage, but naskh style also used. Associated with the Muslim Kashmiris.
-Kashmiri is one of the languages that indicates all vowel sounds when using Arabic script. <a href="../scripts/arabic/kashmiri" target="_blank">Details</a>`,
-type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"?",
-vowels:"let:7 cm:10 other:2 comp:18(3)", clusters:"mrk",
-linked:"arab/ks", fonts:"/pickers/arab-ks/", font:"'Noto Nastaliq Urdu', 'Urdu Typesetting'",
-},
-
-"ks": { name:"Kashmiri (Koshur)", local:"کٲشُر‎", localtrans:"(koshur)", silcode:"kas", rtl:true, 
-source:"cldr_ks,57237835618d4daaf27d149d55e14be159182c33", 
-region:"sasia", countries:"India, Pakistan", script:"arab", speakers:"5600000", 
 letter:"ؠآأؤإابتثجحخدذرزسشصضطظعغفقلمنوٲٹپچڈڑژکگںھہۂۄیے", letteraux:"ـ", mark:"͏َُِّْٕٖٟٔٗٚ", markaux:"ٓ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"،؛؟٪۔“”", other:"؜‌‍‎‏‪‫‬⁦⁧⁨⁩", aux:".[]§«»ʼۓ​‑–—‘’†‡…‰′″‹›₹", 
 orth:`Arabic. &nbsp; Nastaliq style ([Aran]) is primary usage, but naskh style also used. Associated with the Muslim Kashmiris.
 Kashmiri is one of the languages that indicates all vowel sounds when using Arabic script. <a href="../scripts/arabic/kashmiri" target="_blank">Details</a>`,
@@ -1353,21 +1341,9 @@ also:
 ["ks-deva | deva | Used by the Hindi community in Kashmir."],
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", wordsep:"space", wrap:"word", hyphenation:"?",  direction:"rtl",  justification:"?", 
 vowels:"let:7 cm:10 comp:18(3)",  clusters:"mrk", 
-linked:"arab/ks", fonts:"/pickers/arab-ks/", font:"'Noto Nastaliq Urdu', 'Urdu Typesetting'", 
+linked:"arab/ks", picker:"arab-ks", font:"'Noto Nastaliq Urdu', 'Urdu Typesetting'", 
 },
 
-
-"ks-deva": { name:"Kashmiri (Koshur)", local:"कॉशुर‎", localtrans:"(koshur)", silcode:"kas", 
-source:"7f2afe74cc91aa1c3986c9017fac92907f6cd260", 
-region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", 
-letter:"अआइईउऊऋऎएऐऒओऔकखगचछजटठडतथदनपफबमयरलवशसहज़ॳॴॵॶॷ", letteraux:"घङझञढणधभष", mark:"ँंऺऻ़ािीुूृॆेैॊोौ्ॏॖॗ", number:"", punctuation:"।॥", symbol:"", other:"\u200C\u200D", 
-aux:"%.[]§ʼ͏ॄॐॠ०१२३४५६७८९॰‑–—‘’“”†‡…‰′″⁠₹⹁",
-orth:`Devanagari. &nbsp; Associated with the Hindu Kashmiris. There were orthographic reforms in 1995, 2002, and 2009. This selection of characters reflects the latter. <a href="../scripts/devanagari/kashmiri" target="_blank">Details</a>.`,
-notes:`Need clarity about use or not of Devanagari numbers.`,
-type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"hang", wrap:"word", hyphenation:"?",  justification:"sp",
-vowels:"inh:1 ind:17 cm:16 vs:16 pre:1", clusters:"vir stk cnj lig rax", finals:"cm:1", 
-linked:"deva/ks", fonts:"/pickers/deva-ks/", 
-},
 
 "ks-deva": { name:"Kashmiri (Koshur)", local:"कॉशुर‎", localtrans:"(koshur)", silcode:"kas", 
 source:"7f2afe74cc91aa1c3986c9017fac92907f6cd260", 
@@ -1379,7 +1355,7 @@ also:
 notes:`Need clarity about use or not of Devanagari numbers.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"space", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
 vowels:"cm:16 inh:1 vs:16 ind:17 pre:1",  clusters:"vir stk cnj lig rax",  finals:"cm:1", 
-linked:"deva/ks", fonts:"/pickers/deva-ks/", 
+linked:"deva/ks", picker:"deva-ks", 
 },
 
 "ksb": { name:"Shambala (Shambaa)", source:"cldr_ksb", region:"afr", countries:"Tanzania", script:"ascii", speakers:"660000"},
@@ -1412,7 +1388,7 @@ aux:"%.[]§ʼ͏‌‍‑–—‘’†‡…′″⋯",
 orth:`Kayah Li. &nbsp; Primary usage. Developed in 1962. <a href="../scripts/kali/" target="_blank">Details</a>.`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"?",
 vowels:"let:5 cm:5 comp:12 other:3",
-linked:"kali/kyu", fonts:"/pickers/kali/", 
+linked:"kali/kyu", picker:"kali", 
 },
 
 "lad": { name:"Ladino", source:"udhr_lad", region:"wasia", countries:"Israel, Turkey", script:"latn", speakers:"100000", letter:"íÍ", mark:"́", punctuation:"–", local:"גﬞודיאו־איספאנייול‎ / לאדינו‎", localtrans:"(djudeo-espanyol / ladino)", 
@@ -1437,7 +1413,7 @@ also:
 ['lep-deva | deva.'],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
 vowels:"inh:1 cm:8 vs:7 base:ᰣ/ʔ pre:3",  medials:"cm:2 let:7",  finals:"cm:9", 
-linked:"lepc/lep", fonts:"lepc-lep", 
+linked:"lepc/lep", picker:"lepc-lep", 
 },
 
 "lg": { name:"Ganda (Luganda)", silcode:"lug", source:"cldr_lg,udhr_lug", region:"afr", countries:"Uganda", script:"latn", speakers:"4100000", letter:"ŋŊ", local:"Luganda", 
@@ -1456,7 +1432,7 @@ also:
 ['lif-deva | deva | Primary usage.'],
 type:"abugida", cs:"no", gpos:"yes", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes",  justification:"word",
 vowels:"inh:1 cm:9 vs:9 circ:2 base:ᤀ/ɔ",
-linked:"limb/lif", fonts:"/pickers/limb-lif", font:"Namdhinggo, 'Noto Sans Limbu', 'Sans Serif Collection'", 
+linked:"limb/lif", picker:"limb-lif", font:"Namdhinggo, 'Noto Sans Limbu', 'Sans Serif Collection'", 
 },
 
 "lij": { name:"Ligurian", source:"udhr_lij", region:"eur", countries:"Italy, Monaco", script:"latn", speakers:"500000", letter:"çòæéùöôâîàêÇÒÆÉÙÖÔÂÎÀÊ", mark:"̧̀́̈̂", punctuation:"’", local:"Ligure"},
@@ -1471,7 +1447,7 @@ also:
 ["lis-latn | latn | 1915-1918, 1958-1966, and from 1981."],
 type:"abugida", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"syllable", baseline:"romn", wrap:"syllable", hyphenation:"no",  justification:"sp",
 vowels:"inh:1 let:10 other:1",
-linked:"lisu/lis", fonts:"/pickers/lisu/", 
+linked:"lisu/lis", picker:"lisu", 
 },
 
 "lkt": { name:"Lakota (Lakhota, Teton, Teton Sioux)", source:"cldr_lkt", region:"nam", countries:"USA", script:"latn", speakers:"6000", letter:"ʼáéíóúÁÉÍÓÚǧȟǦȞŋčšžŊČŠŽ", mark:"́̌", punctuation:"́̌‐–—“”"},
@@ -1490,7 +1466,7 @@ aux:"%*[]_§ʼ͏‌‍–—†‡‰′″‹›",
 orth:`Lao. &nbsp; <a href="../scripts/lao" target="_blank">Details</a>.`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"word", hyphenation:"no",  direction:"ltr",  justification:"ig", 
 vowels:"let:8 cm:9 vs:9 vsl:12 base:ອ/ɔː venc:5 pre:5 other:4 comp:29",  clusters:"stk", 
-linked:"laoo/lo", fonts:"/pickers/lao/", 
+linked:"laoo/lo", picker:"lao", 
 },
 
 "lob": { name:"Lobi (Miwa, Lobiri)", source:"udhr_lob", region:"afr", countries:"Burkina Faso, Côte d'Ivoire", script:"latn", speakers:"440000", letter:"àáäÀÁÄƲƖƆƐʋɩɔɛʔ", mark:"̀́̈", local:"’Lobiiri"},
@@ -1590,7 +1566,7 @@ aux:"(),./{}٠١٢٣٤٥٦٧٨٩٪۔‘’",
 orth:`Mandaic. &nbsp;  <a href="../scripts/mandaic" target="_blank">Details</a>.`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp str",
 vowels:"let:4 cm:1",
-linked:"mand/mid", fonts:"/pickers/mand/", 
+linked:"mand/mid", picker:"mand", 
 },
 
 "min": { name:"Minangkabau", source:"udhr_min", region:"seasia", countries:"Indonesia", script:"ascii", speakers:"5500000", 
@@ -1611,7 +1587,7 @@ also:
 ["ml-arab | arab | Naskh style."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"∅",  justification:"sp",
 vowels:"inh:1 ind:12 cm:12 vs:12 pre:3 circ:3 voc:4 comp:(3)", clusters:"vvir inv stk cnj rax let", finals:"cm:2 let:6", 
-linked:"mlym/ml", fonts:"/pickers/mlym", font:"'Noto Serif Malayalam'",
+linked:"mlym/ml", picker:"mlym", font:"'Noto Serif Malayalam'",
 },
 
 "mn": { name:"Mongolian", silcode:"mon", redirect:true, region:"easia", script:"macrolanguage", speakers:"?", related:`mn is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Halh Mongolian [khk]<br/>Peripheral Mongolian [mvf].
@@ -1633,7 +1609,7 @@ aux:"%[]–—…‰",
 orth:`Mro.  <a href="../scripts/mroo/mro.html" target="_blank">Details.</a>`,
 type:"alphabet", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  justification:"word",
 vowels:"let:7",
-linked:"mroo/mro", fonts:"/pickers/mroo-mro/", 
+linked:"mroo/mro", picker:"mroo-mro", 
 },
 
 "ms": { name:"Malay", silcode:"msa", source:"", region:"seasia", script:"macrolanguage", speakers:"77000000", related:`ms is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Indonesian [id]<br/>Indonesian (deprecated, use id) [in]<br/>Banjar [bjn]<br/>Bacanese Malay [btj]<br/>Berau Malay [bve]<br/>Bukit Malay [bvu]<br/>Cocos Islands Malay [coa]<br/>Duano [dup]<br/>Haji [hji]<br/>Jakun [jak]<br/>Jambi Malay [jax]<br/>Kubu [kvb]<br/>Kerinci [kvr]<br/>Brunei [kxd]<br/>Loncong, Sekak [lce]<br/>Lubu [lcf]<br/>Col [liw]<br/>North Moluccan Malay [max]<br/>Kedah Malay [meo]<br/>Pattani Malay [mfa]<br/>Bangka [mfb]<br/>Minangkabau [min]<br/>Kota Bangun Kutai Malay [mqg]<br/>Sabah Malay [msi]<br/>Musi [mui]<br/>Orang Kanaq [orn]<br/>Orang Seletar [ors]<br/>Pekal [pel]<br/>Central Malay [pse]<br/>Temuan [tmw]<br/>Urak Lawoi' [urk]<br/>Kaur [vkk]<br/>Tenggarong Kutai Malay [vkt]<br/>Manado Malay [xmm]<br/>Malay (individual language) [zlm]<br/>Negeri Sembilan Malay [zmi]<br/>Standard Malay [zsm].
@@ -1660,7 +1636,7 @@ aux:"!§͏‍–—‘’†‡…′″",
 orth:`Myanmar. &nbsp; <a href="../scripts/myanmar" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"word", hyphenation:"no",  direction:"ltr",  justification:"ig", 
 vowels:"inh:4 cm:10 vs:9 ind:7 base:အ/ʔ pre:1 comp:6 other:2",  clusters:"inv pk stk",  medials:"cm:4",  finals:"cm:1 vk:်", 
-linked:"mymr/my", fonts:"/pickers/mymr-my/", 
+linked:"mymr/my", picker:"mymr-my", 
 },
 
 "mzi": { name:"Ixcatlán Mazatec", source:"udhr_mzi", region:"cam", countries:"Mexico", script:"latn", speakers:"8600", letter:"áñíóéÁÑÍÓÉ", mark:"́̃", punctuation:"’", local:"En ningotsie"},
@@ -1692,7 +1668,7 @@ aux:"%-.[]§ʼ͏‑–—†‡′″⋯𑐇𑐈𑐉𑐺𑐻𑐼𑐽𑑆𑑇𑑈
 orth:`Newa. &nbsp; Resurgent orthography. <a href="../scripts/newa" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"inh:1 ind:10 cm:11 vs:9 pre:1 circ:4 voc:1", clusters:"vir inv lig rax", 
-linked:"newa/new", fonts:"/pickers/newa/", 
+linked:"newa/new", picker:"newa", 
 },
 
 
@@ -1728,7 +1704,7 @@ also:
 ["nod-thai | thai | "],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"word", hyphenation:"no",  direction:"ltr",  justification:"?", 
 vowels:"inh:1 cm:20 vs:20 other:3 vsl:3 ind:6 base:ᩋ/ʔa pre:5 comp:29",  clusters:"inv stk",  medials:"cm:2 sj:1",  finals:"cm:6", 
-linked:"lana/nod", fonts:"/pickers/lana-nod/", font:"'Payap Lanna'",
+linked:"lana/nod", picker:"lana-nod", font:"'Payap Lanna'",
 },
 
 "not": { name:"Nomatsiguenga", source:"udhr_not", region:"sam", countries:"Peru", script:"latn", speakers:"6500", letter:"ëíáóñËÍÁÓÑ", mark:"̈́̃", local:"Nomatsigenga"},
@@ -1744,7 +1720,7 @@ aux:"͏؜٪​‑–—‘’“”…‹›⁠",
 orth:`[N’Ko] &nbsp; This is a written, rather than spoken, language. Used as a koiné by speakers of Maninka, Bambara, Dyula and related dialects. <a href="../scripts/nko" target="_blank">Details</a>`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl*", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp str",
 vowels:"let:7 cm:2 comp:3", clusters:"mrk",
-linked:"nkoo/nqo", fonts:"/pickers/nko/", 
+linked:"nkoo/nqo", picker:"nko", 
 },
 
 "nr": { name:"Ndebele (Southern Ndebele, Transvaal Ndebele)", silcode:"nbl", source:"udhr_nbl", region:"afr", countries:"South Africa", script:"ascii", speakers:"1100000", local:"IsiNdebele"},
@@ -1794,7 +1770,7 @@ aux:"%-[]§ʼ͏‑–—†‡′″",
 related:`Macrolanguage is Oriya [or].`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
 vowels:"inh:1 cm:11 vs:9 ind:10 pre:1 circ:3 voc:4",  clusters:"vir stk cnj lig rax",  finals:"cm:2", 
-linked:"orya/or", fonts:"/pickers/orya/", 
+linked:"orya/or", picker:"orya", 
 },
 
 "osa": { name:"Osage (Wazhazhe)", local:"𐓏𐓘𐓻𐓘𐓻𐓟 𐓣𐓟", 
@@ -1807,7 +1783,7 @@ also:
 ["osa-latn | latn | Non-standardised orthography."],
 type:"alphabet", cs:"yes", gpos:"yes", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"?",
 vowels:"let:10 cm:4",
-linked:"osge/osa", fonts:"/pickers/osge/", 
+linked:"osge/osa", picker:"osge", 
 },
 
 "ote": { name:"Mezquital Otomi", source:"udhr_ote", region:"cam", countries:"Mexico", script:"latn", speakers:"130000", letter:"öüäéñúíáèÖÜÄÉÑÚÍÁÈ", mark:"̱̈́̃̀", local:"Hñahñu"},
@@ -1824,7 +1800,7 @@ also:
 notes:`Need to check the difference between pa-arab and pnb.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"hang", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"inh:1 cm:11 ind:10 vs:9 pre:1", clusters:"vir stk rax unm", finals:"cm:1", 
-linked:"guru/pa", fonts:"/pickers/guru/", 
+linked:"guru/pa", picker:"guru", 
 },
 
 "pa-arab": { name:"Punjabi", silcode:"pan", rtl:true, source:"cldr_pa_Arab", region:"sasia", script:"arab", speakers:"122000000", letter:"ءآؤئابتثجحخدذرزسشصضطظعغفقلمنهويٹپچڈڑژکگںھہیے", mark:"ُٓٔ", punctuation:"‰", other:"‎‏", aux:"أاةٔٺٻټٽ", 
@@ -1861,7 +1837,7 @@ orth:`Arabic. &nbsp; Naskh style, but nastaliq ([Aran]) in Iran.`,
 related:`Macrolanguage is Farsi [fa]. Legacy applications often use fa rather than pes.`,
 type:"abjad", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"no",  justification:"?",
 vowels:"ml:4 cm:7 other:5 hcm:3 base:ا/a",
-linked:"arab/pes", fonts:"/pickers/arab-fa/", 
+linked:"arab/pes", picker:"arab-fa", 
 },
 
 "pis": { name:"Pijin", source:"udhr_pis", region:"oce", countries:"Solomon Islands", script:"ascii", speakers:"24000", local:"Pijin"},
@@ -1922,7 +1898,7 @@ also:
 "rhg-mymar | mymr | Used from independence in 1948."],
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"str",
 vowels:"let:8 base:𐴀/ɔ",
-linked:"rohg/rhg", fonts:"/pickers/rohg/", 
+linked:"rohg/rhg", picker:"rohg", 
 },
 
 "rhg-latn": { name:"Rohingya", local:"rohingyalish", 
@@ -1968,7 +1944,7 @@ letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабв
 orth:`Cyrillic. &nbsp; <a href="../scripts/cyrillic" target="_blank">Details</a>.`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp",
 vowels:"let:11 cm:(3)",
-linked:"cyrl/ru", fonts:"/pickers/cyrl-ru/", 
+linked:"cyrl/ru", picker:"cyrl-ru", 
 },
 
 "rup": { name:"Aromanian", source:"udhr_rmy", region:"eur", countries:"Macedonia, Albania, Romania, Greece, Serbia, Bulgaria", script:"latn", speakers:"250000", letter:"ãâÃÂ", mark:"̃̂", local:"Armani", notes:`Caution: The UDHR source names this language as Aromanian, but uses a BCP47 code of [rmy], which is Vlax Romani.`, related:`Orthographies include:
@@ -1999,7 +1975,7 @@ letter:"ᱚᱛᱜᱝᱞᱟᱠᱡᱢᱣᱤᱥᱦᱧᱨᱩᱪᱫᱬᱭᱮᱯᱰᱱ
 orth:`Ol Chiki. &nbsp; <a href="../scripts/santali/" target="_blank">Details</a>.`,
 type:"alphabet", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"let:10",
-linked:"olck/sat", fonts:"/pickers/olck/", 
+linked:"olck/sat", picker:"olck", 
 },
 
 "sbp": { name:"Sangu (Kisangu, Kisango, Kirori, Eshisango, Rori, Sango)", source:"cldr_sbp", region:"afr", countries:"Tanzania", script:"ascii", speakers:"75000", local:"Shisango"},
@@ -2057,8 +2033,7 @@ aux:"!,.:;§«»ʼ͏ံ္႞႟‌‍‑–—‘’“”†‡…′″",
 orth:`Myanmar. &nbsp; <a href="../scripts/myanmar/mymr-shn" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"?", hyphenation:"?",  direction:"ltr",  justification:"?", 
 vowels:"inh:1 cm:14 vs:14 vsl:3 base:ဢ/ʔa pre:2 comp:18",  clusters:"mrk",  medials:"sj:3",  finals:"vk:1", 
-linked:"mymr/shn", fonts:"mymr-shn",
-fonts:"/pickers/mymr-shn"
+linked:"mymr/shn", picker:"mymr-shn",
 },
 
 "shp": { name:"Shipibo-Conibo (Shipibo-Konibo)", source:"udhr_shp", region:"sam", countries:"Peru", script:"latn", speakers:"26000", letter:"íáóéñúÍÁÓÉÑÚ", mark:"́̃", punctuation:"¿"},
@@ -2071,7 +2046,7 @@ aux:"%[]§«»ʼ͏।॥​‑–—†‡…‰′″‹›⁠",
 orth:`Sinhala. &nbsp; <a href="../scripts/sinhala/" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"inh:1 ind:14 cm:13 vs:13 pre:1 circ:5 voc:1", clusters:"vvir vir cnj tcg rax", finals:"cm:2", 
-linked:"sinh/si", fonts:"/pickers/sinh/", 
+linked:"sinh/si", picker:"sinh", 
 },
 
 "sja": { name:"Epena (Eperara)", source:"udhr_sja", region:"sam", countries:"Colombia", script:"ascii", speakers:"8300", local:"Epéna Pedée"},
@@ -2147,20 +2122,6 @@ also:
 "su-sund": { name:"Sundanese", silcode:"sun", 
 source:"ba3345132c34462391346964eea198c4041e1a52", 
 region:"seasia", countries:"Indonesia", script:"sund", speakers:"42000000", 
-letter:"ᮊᮋᮌᮍᮎᮏᮐᮑᮒᮓᮔᮕᮖᮗᮘᮙᮚᮛᮜᮝᮞᮟᮠᮮᮯᮃᮄᮅᮆᮇᮈᮉ", mark:"ᮡᮢᮣᮀᮁᮂᮤᮥᮦᮧᮨᮩ᮪", number:"᮰᮱᮲᮳᮴᮵᮶᮷᮸᮹", 
-orth:`Sundanese. &nbsp; No longer in common use. <a href="../scripts/sundanese/" target="_blank">Details</a>.`,
-also:
-["su-arab | arab | Naskh style. Since 12th-13th century.",
-"su-java | java | Until 17th century.",
-"su | latn | Since mid-19th century."],
-type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"?", hyphenation:"no",  justification:"?",
-vowels:"inh:1 ind:7 vs:6 pre:1", clusters:"vvir pk", medials:"cm:3", finals:"cm:3", 
-linked:"sund/su", fonts:"/pickers/sund/", 
-},
-
-"su-sund": { name:"Sundanese", silcode:"sun", 
-source:"ba3345132c34462391346964eea198c4041e1a52", 
-region:"seasia", countries:"Indonesia", script:"sund", speakers:"42000000", 
 letter:"ᮃᮄᮅᮆᮇᮈᮉᮊᮋᮌᮍᮎᮏᮐᮑᮒᮓᮔᮕᮖᮗᮘᮙᮚᮛᮜᮝᮞᮟᮠᮮᮯ", mark:"ᮀᮁᮂᮡᮢᮣᮤᮥᮦᮧᮨᮩ᮪", number:"᮰᮱᮲᮳᮴᮵᮶᮷᮸᮹", punctuation:"‘’“”", symbol:"", other:"", 
 aux:"%-[]§«»ʼ͏​‌‍‑–—†‡…‰′″‹›⁠",
 orth:`Sundanese. &nbsp; No longer in common use. <a href="../scripts/sundanese/" target="_blank">Details</a>.`,
@@ -2170,7 +2131,7 @@ also:
 "su | latn | Since mid-19th century."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"?", hyphenation:"no",  justification:"?",
 vowels:"inh:1 cm:6 ind:7 vs:6 pre:1", clusters:"vvir pk", medials:"cm:3", finals:"cm:3", 
-linked:"sund/su", fonts:"/pickers/sund/", 
+linked:"sund/su", picker:"sund", 
 },
 
 "suk": { name:"Sukuma", source:"udhr_suk", region:"afr", countries:"Tanzania", script:"ascii", speakers:"5400000", local:"Kisukuma"},
@@ -2185,7 +2146,7 @@ also:
 ['suz-deva | deva | Primary usage.  <a href="../scripts/latn/wo.html#variants" target="_blank">Details.</a>'],
 type:"alphabet", cs:"no", gpos:"yes", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes -",  justification:"?",
 vowels:"let:6",
-linked:"sunu/suz", fonts:"/pickers/sunu-suz/", font:"Uni11BC0Sunuwar", 
+linked:"sunu/suz", picker:"sunu-suz", font:"Uni11BC0Sunuwar", 
 },
 
 "suz": { name:"Sunuwar", local:"𑯆𑯑𑯃̃𑯌 𑯎𑯄𑯂𑯒𑯂", localtrans:"/koīt͡ʃ brese/", silcode:"suz", 
@@ -2197,7 +2158,7 @@ also:
 ["suz-deva | deva | Primary usage."],
 type:"alphabet", cs:"no", gpos:"yes", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word",  direction:"ltr",  justification:"?", 
 vowels:"let:6",  medials:"sj:1", 
-linked:"sunu/suz", fonts:"../pickers/sunu-suz/", font:"Uni11BC0Sunuwar", 
+linked:"sunu/suz", picker:"..sunu-suz", font:"Uni11BC0Sunuwar", 
 },
 
 "sus": { name:"Susu", source:"udhr_sus", region:"afr", countries:"Guinea, Sierra Leone", script:"latn", speakers:"1060000", letter:"ƐƆƝɛɔɲ", local:"Sosoxui", 
@@ -2249,7 +2210,7 @@ aux:"%[]§«»ʼ‑–—†‡…‰′″‹›",
 orth:`Modern Tamil. <a href="../scripts/tamil/" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"∅",  justification:"sp ig",
 vowels:"inh:1 ind:12 cm:11 vs:11 pre:3 circ:3", clusters:"vvir vir",
-linked:"taml/ta", fonts:"/pickers/taml/", 
+linked:"taml/ta", picker:"taml", 
 },
 
 "tbz": { name:"Ditammari (Tammari)", source:"udhr_tbz", region:"afr", countries:"Benin, Togo", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"̃́̀", local:"Ditammari"},
@@ -2263,7 +2224,7 @@ also:
 ["tbw | latn | Primary."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"?",
 vowels:"ind:y vs:y",
-fonts:"/pickers/tagb/", 
+picker:"tagb", 
 },
 
 "tca": { name:"Ticuna (Tikuna)", source:"udhr_tca", region:"sam", countries:"Brazil, Colombia, Peru", script:"latn", speakers:"47000", letter:"üéãñõúáíóÜÉÃÑÕÚÁÍÓĩũĨŨẽṯḏṉẼṮḎṈ", mark:"̱̃́̈͟", local:"ticunagaxũ"},
@@ -2275,7 +2236,7 @@ letter:"ᥐᥑᥒᥓᥔᥕᥖᥗᥘᥙᥚᥛᥜᥝᥞᥟᥠᥡᥢᥣᥤᥥᥦᥧ
 orth:`Tai Le. &nbsp; <a href="../scripts/taile/" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"no/zwsp", baseline:"romn", wrap:"?", hyphenation:"?",  justification:"?",
 vowels:"inh:1 let:11", 
-linked:"tale/tdd", fonts:"/pickers/tale/"
+linked:"tale/tdd",  "tale/"
 },
 
 "tdt": { name:"Tetun Dili", source:"udhr_010", region:"seasia", countries:"East Timor", script:"latn", speakers:"385000", letter:"áíúóÁÍÚÓ", mark:"́", punctuation:"’", local:"Tetun Dili"},
@@ -2287,7 +2248,7 @@ letter:"అఆఇఈఉఊఋఎఏఐఒఓఔకఖగఘఙచఛజఝఞట
 aux:"%[]§«»ʼ͏ఁఄ౷​‑–—†‡…‰′″‹›⁠",
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp",
 vowels:"inh:1 ind:12 vs:11 cm:11 circ:1 voc:1", clusters:"vir stk cnj rax", finals:"cm:2 vk:్", 
-linked:"telu/te", fonts:"/pickers/telu/", 
+linked:"telu/te", picker:"telu", 
 },
 
 "tem": { name:"Temne (Themne, Timne)", source:"udhr_tem", region:"afr", countries:"Sierra Leone", script:"latn", speakers:"1200000", letter:"ɅƆƏƐŋŊʌɔəɛ", punctuation:"‐", local:"Themne"},
@@ -2313,12 +2274,12 @@ aux:"%;[]§«»ʼ͏ ‌‍‑†‡‰′″‹›",
 orth:`Thai. &nbsp; <a href="../scripts/thai/" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"word", hyphenation:"no",  direction:"ltr",  justification:"sp ig", 
 vowels:"inh:2 cm:9 vs:8 let:8 other:4 vsl:12 base:อ/ɔː,a venc:5 comp:28 voc:2", 
-linked:"thai/th", fonts:"/pickers/thai/", 
+linked:"thai/th", picker:"thai", 
 },
 
 "ti": { name:"Tigrinya", silcode:"tir", source:"cldr_ti,udhr_tir", region:"afr", countries:"Ethiopia, Eritrea", script:"ethi", speakers:"6900000", letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍቐቑቒቓቔቕቖቘቚቛቜቝበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾዀዂዃዄዅወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗ", mark:"፟", punctuation:"፣፡’", aux:"ሇቇኇኯዏዯዸዹዺዻዼዽዾዿጏጘጙጚጛጜጝጞጟፘፙፚⶀⶁⶂⶃⶄⶅⶆⶇⶈⶉⶊⶋⶌⶍⶎⶓⶔⶕⶖⶏⶐⶑⶒⶠⶡⶢⶣⶤⶥⶦⶨⶩⶪⶫⶬⶭⶮⶰⶱⶲⶳⶴⶵⶶⶸⶹⶺⶻⶼⶽⶾⷀⷁⷂⷃⷄⷅⷆⷈⷉⷊⷋⷌⷍⷎⷐⷑⷒⷓⷔⷕⷖⷘⷙⷚⷛⷜⷝⷞ᎐᎑᎒᎓᎔᎕᎖᎗᎘᎙ᎀᎁᎂᎃᎄᎅᎆᎇᎈᎉᎊᎋᎌᎍᎎᎏ", 
 orth:`Ethiopic. &nbsp; Used since 13th or 14th century.`,
-fonts:"/pickers/ethi/"
+picker:"ethi"
 },
 
 "tiv": { name:"Tiv", source:"udhr_tiv", region:"afr", countries:"Nigeria", script:"latn", speakers:"2200000", letter:"ôÔ", mark:"̂", local:"Tiv", 
@@ -2384,7 +2345,7 @@ ISO 15924 has a general script code for Syriac (syrc), and another (syrn) for th
 related:`Macrolanguage is Syriac [syr].`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"?",
 vowels:"ml:3 cm:5 other:3",
-linked:"syrc/tru", fonts:"/pickers/syrc-tru/", font:"'Noto Sans Syriac Western'" 
+linked:"syrc/tru", picker:"syrc-tru", font:"'Noto Sans Syriac Western'" 
 },
 
 "ts": { name:"Tsonga (Xitsonga)", silcode:"tso", source:"udhr_tso_MZ,udhr_tso_ZW", region:"afr", countries:"South Africa, Mozambique, Zimbabwe", script:"latn", speakers:"13000000", letter:"ìàçãòèùíéáúÌÀÇÃÒÈÙÍÉÁÚ", mark:"̧̀̃́", punctuation:"’", local:"Xitsonga"},
@@ -2448,7 +2409,7 @@ also:
 "ug-cyrl | cyrl | Used in Kazakhstan, previously used in China."],
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"ـ*",  justification:"sp",
 vowels:"let:9 cm:(1) base:ئ/–",
-linked:"arab/ug", fonts:"/pickers/arab-ug/", 
+linked:"arab/ug", picker:"arab-ug", 
 },
 
 "ug-latn": { name:"Uyghur (Uighur, Eastern Turki)", source:"udhr_uig_latn", region:"casia", countries:"China, Kazakhstan", script:"latn", speakers:"25000000", letter:"öéüÖÉÜ", mark:"̈́", punctuation:"’", 
@@ -2465,7 +2426,7 @@ aux:"%-[]§‑‘‚†‡‰′″‹›₽№",
 orth:`Cyrillic. &nbsp; <a href="../scripts/cyrillic/ks.html" target="_blank">Details</a>.`,
 type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"-",  justification:"sp",
 vowels:"let:20 other:4 cm:(3)",
-linked:"cyrl/uk", fonts:"/pickers/cyrl-uk/", 
+linked:"cyrl/uk", picker:"cyrl-uk", 
 },
 
 "umb": { name:"Umbundu (South Mbundu)", source:"udhr_umb,udhr_011", region:"afr", countries:"Angola", script:"latn", speakers:"6000000", letter:"ñêãîõâÑÊÃÎÕÂ", mark:"̃̂", punctuation:"’", local:"Umbundu"},
@@ -2479,7 +2440,7 @@ aux:"%-[]–—…‰",
 orth:`Nag Mundari (Mundari Bani).  <a href="../scripts/nagm/unr.html" target="_blank">Details.</a>`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  justification:"word",
 vowels:"let:5 cm:2",
-linked:"nagm/unr", fonts:"/pickers/nagm-unr/", 
+linked:"nagm/unr", picker:"nagm-unr", 
 },
 
 "ur": { name:"Urdu", local:"اُردُو‎‎", localtrans:"(urdū)", silcode:"urd", rtl:true, 
@@ -2490,7 +2451,7 @@ aux:"%,;[]§«»ʼ​‑—‘’†‡…‰′″‹›⋯",
 orth:`Arabic. &nbsp; The primary usage is nastaliq ([Aran]) style, though naskh style is used also. <a href="../scripts/arabic/urdu" target="_blank">Details</a>.`,
 type:"abjad", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"no",  justification:"sp",
 vowels:"ml:4 cm:12 hcm:12",
-linked:"arab/ur", fonts:"/pickers/arab-ur/", font:"'Noto Nastaliq Urdu', 'Urdu Typesetting'", 
+linked:"arab/ur", picker:"arab-ur", font:"'Noto Nastaliq Urdu', 'Urdu Typesetting'", 
 },
 
 "ura": { name:"Urarina (Itucali, Simacu, Shimacu)", source:"udhr_ura", region:"sam", countries:"Peru", script:"latn", speakers:"6000", letter:"úóíÚÓÍ", mark:"́", local:"Oruarinya"},
@@ -2526,18 +2487,6 @@ also:
 "vai": { name:"Vai (Vy, Gallinas)", 
 source:"cldr_vai,udhr_vai,a5c6b1f62cb3d71b6acccbe995ff47db10e94963", 
 region:"afr", countries:"Liberia, Sierra Leone", script:"vaii", speakers:"120000", 
-letter:"ꔀꔁꔂꔃꔄꔅꔆꔇꔈꔉꔊꔋꔌꔍꔎꔏꔐꔑꔒꔓꔔꔕꔖꔗꔘꔙꔚꔛꔜꔝꔞꔟꔠꔡꔢꔣꔤꔥꔦꔧꔨꔩꔪꔫꔬꔭꔮꔯꔰꔱꔲꔳꔴꔵꔶꔷꔸꔹꔺꔻꔼꔽꔾꔿꕀꕁꕂꕃꕄꕅꕆꕇꕈꕉꕊꕋꕌꕍꕎꕏꕐꕑꕒꕓꕔꕕꕖꕗꕘꕙꕚꕛꕜꕝꕞꕟꕠꕡꕢꕣꕤꕥꕦꕧꕨꕩꕪꕫꕬꕭꕮꕯꕰꕱꕲꕳꕴꕵꕶꕷꕸꕹꕺꕻꕼꕽꕾꕿꖀꖁꖂꖃꖄꖅꖆꖇꖈꖉꖊꖋꖌꖍꖎꖏꖐꖑꖒꖓꖔꖕꖖꖗꖘꖙꖚꖛꖜꖝꖞꖟꖠꖡꖢꖣꖤꖥꖦꖧꖨꖩꖪꖫꖬꖭꖮꖯꖰꖱꖲꖳꖴꖵꖶꖷꖸꖹꖺꖻꖼꖽꖾꖿꗀꗁꗂꗃꗄꗅꗆꗇꗈꗉꗊꗋꗌꗍꗎꗏꗐꗑꗒꗓꗔꗕꗖꗗꗘꗙꗚꗛꗜꗝꗞꗟꗠꗡꗢꗣꗤꗥꗦꗧꗨꗩꗪꗫꗬꗭꗮꗯꗰꗱꗲꗳꗴꗵꗶꗷꗸꗹꗺꗻꗼꗽꗾꗿꘀꘁꘂꘃꘄꘅꘆꘇꘈꘉꘊꘋꘌ", letteraux:"ꘓꘘ", aux:"꘍꘎꘏", 
-orth:`Vai. &nbsp; Primary usage. <a href="../scripts/vai/" target="_blank">Details</a>.`,
-also:
-["vai-latn | latn | "],
-type:"syllabary", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
-vowels:"syl:14",
-linked:"vaii/vai", fonts:"/pickers/vai/", 
-},
-
-"vai": { name:"Vai (Vy, Gallinas)", 
-source:"cldr_vai,udhr_vai,a5c6b1f62cb3d71b6acccbe995ff47db10e94963", 
-region:"afr", countries:"Liberia, Sierra Leone", script:"vaii", speakers:"120000", 
 letter:"ꔀꔁꔂꔃꔄꔅꔆꔇꔈꔉꔊꔋꔌꔍꔎꔏꔐꔑꔒꔓꔔꔕꔖꔗꔘꔙꔚꔛꔜꔝꔞꔟꔠꔡꔢꔣꔤꔥꔦꔧꔨꔩꔪꔫꔬꔭꔮꔯꔰꔱꔲꔳꔴꔵꔶꔷꔸꔹꔺꔻꔼꔽꔾꔿꕀꕁꕂꕃꕄꕅꕆꕇꕈꕉꕊꕋꕌꕍꕎꕏꕐꕑꕒꕓꕔꕕꕖꕗꕘꕙꕚꕛꕜꕝꕞꕟꕠꕡꕢꕣꕤꕥꕦꕧꕨꕩꕪꕫꕬꕭꕮꕯꕰꕱꕲꕳꕴꕵꕶꕷꕸꕹꕺꕻꕼꕽꕾꕿꖀꖁꖂꖃꖄꖅꖆꖇꖈꖉꖊꖋꖌꖍꖎꖏꖐꖑꖒꖓꖔꖕꖖꖗꖘꖙꖚꖛꖜꖝꖞꖟꖠꖡꖢꖣꖤꖥꖦꖧꖨꖩꖪꖫꖬꖭꖮꖯꖰꖱꖲꖳꖴꖵꖶꖷꖸꖹꖺꖻꖼꖽꖾꖿꗀꗁꗂꗃꗄꗅꗆꗇꗈꗉꗊꗋꗌꗍꗎꗏꗐꗑꗒꗓꗔꗕꗖꗗꗘꗙꗚꗛꗜꗝꗞꗟꗠꗡꗢꗣꗤꗥꗦꗧꗨꗩꗪꗫꗬꗭꗮꗯꗰꗱꗲꗳꗴꗵꗶꗷꗸꗹꗺꗻꗼꗽꗾꗿꘀꘁꘂꘃꘄꘅꘆꘇꘈꘉꘊꘋꘌꘓꘘ", mark:"", number:"", punctuation:"꘍꘎꘏", symbol:"", other:"", 
 aux:"%[]§«»ʼ͏​‌‍‑–—‘’“”†‡…‰′″‹›⁠",
 orth:`Vai. &nbsp; Primary usage. <a href="../scripts/vai/" target="_blank">Details</a>.`,
@@ -2545,7 +2494,7 @@ also:
 ["vai-latn | latn | "],
 type:"syllabary", cs:"no", gpos:"no", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"syl:14",
-linked:"vaii/vai", fonts:"/pickers/vai/", 
+linked:"vaii/vai", picker:"vai", 
 },
 
 "vai-latn": { name:"Vai (Vy, Gallinas)", source:"cldr_vai_Latn", region:"afr", countries:"Liberia, Sierra Leone", script:"latn", speakers:"120000", letter:"áãéíóõúÁÃÉÍÓÕÚƁƊƐƆĩŋũĨŊŨẽẼɓɗɛɔ", mark:"́̃", 
@@ -2588,7 +2537,7 @@ also:
 ['wo-arab | arab | Naskh style.',],
 type:"alphabet", cs:"tbc", gpos:"tbc", gsub:"tbc", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"let:18 cm:(4)",
-linked:"latn/wo", fonts:"/pickers/latn-wo/", 
+linked:"latn/wo", picker:"latn-wo", 
 },
 
 "wwa": { name:"Waama (Yoabu)", source:"udhr_wwa", region:"afr", countries:"Benin", script:"latn", speakers:"50000", letter:"ãìàùèÃÌÀÙÈǹƆƐǸũŋŨŊɔɛ", mark:"̃̀", local:"Waama"},
@@ -2648,7 +2597,7 @@ letter:"ⴰⴱⴲⴳⴴⴷⴸⴹⴺⴻⴼⴽⴿⵀⵃⵄⵅⵇⵉⵊⵍⵎⵏⵒ
 orth:`Tifinagh. &nbsp;  <a href="../scripts/tifinagh/" target="_blank">Details</a>.`,
 type:"alphabet", cs:"no", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?", justification:"sp", direction:"ltr rtl", 
 vowels:"let:4",
-linked:"tfng/zgh", fonts:"/pickers/tfng-ber/", 
+linked:"tfng/zgh", picker:"tfng-ber", 
 },
 
 "zlm": { name:"Malay", source:"cldr_ms,udhr_mly_latn", region:"seasia", countries:"Malaysia, Indonesia, Singapore", script:"ascii", speakers:"77000000", local:"Bahasa Melayu", 

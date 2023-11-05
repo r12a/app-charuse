@@ -420,7 +420,7 @@ function addRightColContent (charlist, lang) {
     <div><a href="../uniview/index.html?charlist=${ charlist }" target="_blank">Show characters in UniView</a></div>
     <div><a href="../app-listcharacters/index.html?chars=${ charlist }" target="_blank">List characters by block</a></div>
     <div><a href="../scripts/fontlist/index.html?script=${langs[lang].script}&text=${ addSpacesTo(charlist) }" target="_blank">Send to Font lister</a></div>`
-    if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}/index.html?showFonts=true&text=${ charlist }">Show in character app</a></div>`
+    if (langs[lang].picker) out += `<div><a target="_blank" href="../pickers/${langs[lang].picker}/index.html?showFonts=true&text=${ charlist }">Show in picker</a></div>`
     out += '</div>'
     out += '</td>'
 
@@ -655,8 +655,8 @@ function showLanguage (lang) {
         <div><a href="../app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
         <div><a href="../uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
         <div><a href="../app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
-        <div><a href="../scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
-        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
+        <div><a href="../scripts/fontlist/index.html?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].picker) out += `<div><a target="_blank" href="../pickers/${langs[lang].picker}/index.html?showFonts=true&text=${charList.join('')}">Show in picker</a></div>`
         out += '</div>'
 		}
 	if (langs[lang].deprecated) {
@@ -680,8 +680,8 @@ function showLanguage (lang) {
         <div><a href="/app-analysestring/?chars=${charList.join('')}" target="_blank">Show details</a></div>
         <div><a href="/uniview?charlist=${charList.join('')}" target="_blank">Show characters in UniView</a></div>
         <div><a href="/app-listcharacters?chars=${charList.join('')}" target="_blank">List characters by block</a></div>
-        <div><a href="../scripts/fontlist?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
-        if (langs[lang].fonts) out += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${charList.join('')}">Show in character app</a></div>`
+        <div><a href="../scripts/fontlist/index.html?script=${langs[lang].script}&text=${charList.join(' ')}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].picker) out += `<div><a target="_blank" href="../pickers/${langs[lang].picker}/index.html?showFonts=true&text=${charList.join('')}">Show in picker</a></div>`
         out += '</div>'
         out += '</td></tr>'
 		}
@@ -699,8 +699,8 @@ function showLanguage (lang) {
         <div><a href="/app-analysestring/?chars=${cumulative}" target="_blank">Show details</a></div>
         <div><a href="/uniview?charlist=${cumulative}" target="_blank">Show characters in UniView</a></div>
         <div><a href="/app-listcharacters?chars=${cumulative}" target="_blank">List characters by block</a></div>
-        <div><a href="../scripts/fontlist?script=${langs[lang].script}&text=${cumulativeSpaced}" target="_blank">Send to Font lister</a></div>`
-        if (langs[lang].fonts) stats += `<div><a target="_blank" href="${langs[lang].fonts}?showFonts=true&text=${cumulative}">Show in character app</a></div>`
+        <div><a href="../scripts/fontlist/index.html?script=${langs[lang].script}&text=${cumulativeSpaced}" target="_blank">Send to Font lister</a></div>`
+        if (langs[lang].picker) stats += `<div><a target="_blank" href="../pickers/${langs[lang].picker}/index.html?showFonts=true&text=${cumulative}">Show in picker</a></div>`
         stats += '</div>'
         stats += '</td></tr>'
 /*
@@ -727,8 +727,8 @@ function showLanguage (lang) {
     <th>Links</th><td id="externalLinks">
     <a href="https://www.ethnologue.com/language/${ langcode }" target="_blank" title="Look this up in the Ethnologue.">Ethnologue</a> • 
     <a href="https://en.wikipedia.org/w/index.php?search=${ langs[lang].name }%20language" target="_blank" title="Search Wikipedia for this language">Wikipedia</a> • 
-    <a href="../scripts/fontlist/?script=${ langs[lang].script }" target="_blank">Fonts</a> • `
-    if (langs[lang].fonts) out += `<a href="${langs[lang].fonts}" target="_blank">Character app</a> • `
+    <a href="../scripts/fontlist/?script=${ langs[lang].script }" target="_blank">picker</a> • `
+    if (langs[lang].picker) out += `<a href="${langs[lang].picker}" target="_blank">picker</a> • `
     out += `<a href="../scripts/links?iso=${ langs[lang].script }" target="_blank">Other links</a>
     </td>
     </tr>`
@@ -742,9 +742,9 @@ function showLanguage (lang) {
 	//parameter = temp.join(' ')
 	//out += ' •  &nbsp; <a target="_blank" href="../scripts/fontlist/?script='+langs[lang].script+'&text='+parameter+'">Show in font lister</a>'
 	
-	//if (langs[lang].fonts) {
+	//if (langs[lang].picker) {
 	//	if (langs[lang].aux) parameter += "\n"+langs[lang].aux
-	//	out += ' •  &nbsp; <a target="_blank" href="'+langs[lang].fonts+'?showFonts=true&text='+parameter+'">Show in character app</a>'
+	//	out += ' •  &nbsp; <a target="_blank" href="'+langs[lang].picker+'?showFonts=true&text='+parameter+'">Show in picker</a>'
 	//	}
 	out += '</td>'
 	
@@ -772,8 +772,8 @@ function showLanguage (lang) {
     <th>Links</th><td id="externalLinks">
     <a href="https://www.ethnologue.com/language/${ langcode }" target="_blank" title="Look this up in the Ethnologue.">Ethnologue</a> • 
     <a href="https://en.wikipedia.org/w/index.php?search=${ langs[lang].name }%20language" target="_blank" title="Search Wikipedia for this language">Wikipedia</a> • 
-    <a href="../scripts/fontlist/?script=${ langs[lang].script }" target="_blank">Fonts</a> • `
-    if (langs[lang].fonts) out += `<a href="${langs[lang].fonts}" target="_blank">Character app</a> • `
+    <a href="../scripts/fontlist/index.html?script=${ langs[lang].script }" target="_blank">picker</a> • `
+    if (langs[lang].picker) out += `<a href="${langs[lang].picker}" target="_blank">Picker</a> • `
     if (langs[lang].linked) out += `<a href="${langs[lang].linked}" target="_blank">Orthography description</a> • `
     out += `<a href="../scripts/links?iso=${ langs[lang].script }" target="_blank">Other links</a>
     </td>
