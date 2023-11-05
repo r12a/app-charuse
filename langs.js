@@ -2,7 +2,7 @@ var langs = {
 
 // Any time this is changed, run _make-array.html to generate new code for char_lang.js !
 
-"ab": { name:"Abkhaz (Abxaz, Abkhazian)", local:"Аԥсуа бызшәа /apʰswa bɨzʃʷa/", silcode:"abk", 
+"ab": { name:"Abkhaz (Abxaz, Abkhazian)", local:"Аԥсуа бызшәа", localtrans:"/apʰswa bɨzʃʷa/", silcode:"abk", 
 source:"b9d21cee498f37e8fc7a2f8f7cbb6ce16d568e32,udhr_abk", 
 region:"wasia", countries:"Georgia, Turkey", script:"cyrl", speakers:"113000", 
 letter:"ЏАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЫЬабвгдежзиклмнопрстуфхцчшыьџҔҕҚқҞҟҦҧҨҩҬҭҲҳҴҵҶҷҼҽҾҿӘәӠӡӶӷ", punctuation:"–‐", 
@@ -11,7 +11,7 @@ also:["ab-geor | geor | Mkhedruli/mtavruli, no longer in use."],
 },
 
 
-"ace": { name:"Acehnese (Achinese)", local:"Bahsa/Basa Acèh [bahsa at͡ʃeh]", 
+"ace": { name:"Acehnese (Achinese)", local:"Bahsa / Basa Acèh", localtrans:"[bahsa at͡ʃeh]", 
 source:"d84a00d33c079a885ec8b91da6c8d12d1253b6d5,udhr_ace", 
 region:"seasia", countries:"Indonesia", script:"ascii", speakers:"3500000", 
 letter:"ÈÉËÔÖèéëôö", mark:"̀́̂̈", punctuation:"‐“”", 
@@ -30,7 +30,7 @@ letter:"íÍƆƐɔɛ", mark:"́",
 orth:`[Latin]. In use since 1966.`,
 },
 
-"ady": { name:"Adyghe (West Circassian)", local:"Адыгабзэ [aːdəɣaːbza]", 
+"ady": { name:"Adyghe (West Circassian)", local:"Адыгабзэ", localtrans:"[aːdəɣaːbza]", 
 source:"4050673fa397e9ecf072706356b0feea9617aaea,udhr_ady", 
 region:"eur", countries:"Russia, Turkey, Jordan, Iraq, Syria", script:"cyrl", speakers:"590000", 
 letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёӏӀ", mark:"̆̈", 
@@ -50,13 +50,13 @@ region:"afr", countries:"Cameroon", script:"latn", speakers:"27000",
 letter:"àâèêìîòôùûÀÂÈÊÌÎÒÔÙÛǎǐǒǔǍƐǏƗǑƆǓɄāěēīŋōūĀĚĒĪŊŌŪɛɨɔʉʔ", mark:"̀̂̌̄", punctuation:"‰", 
 },
 
-"agr": { name:"Aguaruna (Awajún)", local:"Awajún [ɑʋɑhʊ́n̪]", 
+"agr": { name:"Aguaruna (Awajún)", local:"Awajún", localtrans:"[ɑʋɑhʊ́n̪]", 
 source:"udhr_agr", 
 region:"sam", countries:"Peru", script:"latn", speakers:"38000", 
 letter:"áíÁÍ", mark:"́", punctuation:"¡¿‐", 
 },
 
-"aii": { name:"Assyrian Neo-Aramaic", local:"ܣܘܪܝܬ or ܣܘܪܬ [ˈsu:rɛt], [ˈsu:rɛθ], [ˈsu:rɪt], [ˈsu:rɪθ]", rtl:true, 
+"aii": { name:"Assyrian Neo-Aramaic", local:"ܣܘܪܝܬ / ܣܘܪܬ", localtrans:"[ˈsu:rɛt / ˈsu:rɛθ / ˈsu:rɪt / ˈsu:rɪθ]", rtl:true, 
 source:"a9dcf48a64fd2fb12d3014d2f0295b003130db65,udhr_aii", 
 region:"wasia", countries:"Iraq, Syria, Iran, Georgia, Armenia", script:"syrn", speakers:"232300", 
 letter:"ـܐܒܓܕܗܘܙܚܛܝܟܠܡܢܣܥܦܨܩܪܫܬ", mark:"ܑ̣̤̭̮̰̱ܸܹܼ݂݈̃̄̇̈ܲܵܿ݀݁݇", number:"", punctuation:"،؛؟܆܇", symbol:"", other:"\u061C\u070F\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
@@ -89,7 +89,7 @@ related:`ak is a macrolanguage that encompasses the following more specific prim
 Legacy applications often use ak rather than [fat] (Fanti) or [tw] (Twi).`,
 },
 
-"alt": { name:"Southern Altai (Oirot, Oyrot)", local:"алтай тили (Altay tili), алтайча‎ (Altajča)", 
+"alt": { name:"Southern Altai (Oirot, Oyrot)", local:"алтай тили / алтайча‎ ", localtrans:"(Altay tili / Altajča)", 
 source:"udhr_alt", 
 region:"nasia", countries:"Russia", script:"cyrl", speakers:"57000", 
 letter:"кижнҥтапэрешдлцязыгьйсмбјчӱоуӧвщюъфхКИЖНҤТАПЭРЕШДЛЦЯЗЫГЬЙСМБЈЧӰОУӦВЩЮЪФХ", punctuation:"‐", 
@@ -106,7 +106,7 @@ also:
 related:`Macrolanguage is Albanian [sq]. Legacy applications often use [sq] rather als.`,
 },
 
-"am": { name:"Amharic", local:"አማርኛ [amarɨɲːa]", silcode:"amh", 
+"am": { name:"Amharic", local:"አማርኛ", localtrans:"[amarɨɲːa]", silcode:"amh", 
 source:"cldr_am,udhr_amh", 
 region:"afr", countries:"Ethiopia", script:"ethi", speakers:"21634396", 
 letter:"ሀሁሂሃሄህሆለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቈቊቋቌቍበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾዃወዉዊዋዌውዎዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮደዱዲዳዴድዶዷጀጁጂጃጄጅጆጇገጉጊጋጌግጎጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗፘፙፚ", mark:"፝፞፟", number:"፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼", punctuation:"«»፠፡።፣፤፥፦፧፨–—‘’“”‹›", symbol:"", other:"", 
@@ -122,14 +122,14 @@ region:"sam", countries:"Peru, Brazil", script:"latn", speakers:"310",
 letter:"óÓ", mark:"́", 
 },
 
-"ame": { name:"Yanesha' (Amuesha, Amoesha)", local:"Yaneshac̈h/Yanešač̣ [janeʃaˀt͡ʂʰ]", 
+"ame": { name:"Yanesha' (Amuesha, Amoesha)", local:"Yaneshac̈h / Yanešač̣", localtrans:"[janeʃaˀt͡ʂʰ]", 
 source:"udhr_ame,09030b03ba151c1dbce0f407f3bfeb6cc40bb4a2", 
 region:"sam", countries:"Peru", script:"latn", speakers:"9800", 
 letter:"ñëóíãõáÑËÓÍÃÕÁẽẼʼ", mark:"̃̈́", 
 notes:`Combining characters are used in decomposed sequences with several consonants, such as <u>m̃ñp̃t̃c̃c̈b̃</u>.`,
 },
 
-"ami": { name:"Amis", local:"Pangcah [paŋt͡saʜ]", 
+"ami": { name:"Amis", local:"Pangcah", localtrans:"[paŋt͡saʜ]", 
 source:"udhr_ami", 
 region:"easia", countries:"Taiwan", script:"ascii", speakers:"181000", 
 },
@@ -143,7 +143,7 @@ mark:"̱", punctuation:"¿’",
 "ar": { name:"Arabic", silcode:"ara", redirect:true, region:"wasia", script:"macrolanguage", related:`ar is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Algerian Saharan Arabic [aao]<br/> Tajiki Arabic [abh]<br/> Baharna Arabic [abv]<br/> Mesopotamian Arabic [acm]<br/> Ta'izzi-Adeni Arabic [acq]<br/> Hijazi Arabic [acw]<br/> Omani Arabic [acx]<br/> Cypriot Arabic [acy]<br/> Dhofari Arabic [adf]<br/> Tunisian Arabic [aeb]<br/> Saidi Arabic [aec]<br/> Gulf Arabic [afb]<br/> South Levantine Arabic [ajp]<br/> North Levantine Arabic [apc]<br/> Sudanese Arabic [apd]<br/> Standard Arabic [arb]<br/> Algerian Arabic [arq]<br/> Najdi Arabic [ars]<br/> Moroccan Arabic [ary]<br/> Egyptian Arabic [arz]<br/> Uzbeki Arabic [auz]<br/> Eastern Egyptian Bedawi Arabic [avl]<br/> Hadrami Arabic [ayh]<br/> Libyan Arabic [ayl]<br/> Sanaani Arabic [ayn]<br/> North Mesopotamian Arabic [ayp]<br/> Babalia Creole Arabic [bbz]<br/> Sudanese Creole Arabic [pga]<br/> Chadian Arabic [shu]<br/> Shihhi Arabic [ssh]
 Legacy applications often use ar rather than [arb] (Standard Arabic).`},
 
-"arb": { name:"Arabic, Standard", local:"العَرَبِيَّة‎ [alʕaraˈbijja]", rtl:true, 
+"arb": { name:"Arabic, Standard", local:"العَرَبِيَّة‎", localtrans:"[alʕaraˈbijja]", rtl:true, 
 source:"5d92060d0376b6a659e408ddc1c289cc0cecbba8,cldr_ar,udhr_arb", 
 region:"wasia", countries:"Saudi Arabia, Egypt, Mali, Algeria, Iraq, Sudan, Yemen, Syria, Morocco, etc.", script:"arab", speakers:"273989700", 
 letter:"ءآأؤإئابةتثجحخدذرزسشصضطظعغـفقكلمنهوىيپچڢڤڧࢲﷲﷺﷻ", letteraux:"ٱ", mark:"͏ًٌٍَُِّْٰ", markaux:"ٕٓٔ", number:"٠١٢٣٤٥٦٧٨٩", punctuation:"«»؉،؍؛؟٪٫٬٭–—‘’“”…‰‹›﴾﴿", punctuationaux:"۔", symbol:"﷼﷽", other:"\u061C\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069",	
@@ -154,7 +154,7 @@ vowels:"let:1 ml:3 cm:0~8 hcm:y other:3 base:ا/a,i comp:0~5 ind:1", clusters:"m
 linked:"arab/arb", fonts:"/pickers/arab-ar/", 
 },
 
-"arl": { name:"Arabela (Chiripuno, Chiripunu)", local:"Tapweyokwaka, Tapueyocaca", 
+"arl": { name:"Arabela (Chiripuno, Chiripunu)", local:"Tapweyokwaka / Tapueyocaca", 
 source:"udhr_arl", 
 region:"sam", countries:"Peru", script:"latn", speakers:"50", 
 letter:"úÚ", mark:"́", punctuation:"¿", 
@@ -167,7 +167,7 @@ letter:"ñáíóÑÁÍÓ", mark:"̃́",
 related:`This entry reflects only one of several competing and different writing systems using the Latin script, including Ragileo, Nhewenh and Azumchefi.`,
 },
 
-"as": { name:"Assamese (Asamiya)", local:"অসমীয়া [ɔʃomia]", silcode:"asm", 
+"as": { name:"Assamese (Asamiya)", local:"অসমীয়া", localtrans:"[ɔʃomia]", silcode:"asm", 
 source:"cldr_as", 
 region:"sasia", countries:"India", script:"beng", speakers:"15000000", 
 letter:"অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযৰলৱশষসহ", mark:"়ংঁঃ্ািীুূৃেৈোৌৗ", number:"০১২৩৪৫৬৭৮৯", punctuation:"‰", aux:"৲ৎর", 
@@ -194,7 +194,7 @@ letter:"ñíéóÑÍÉÓ", mark:"̃́",
 related:`ay is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Central Aymara [ayr]<br/>Southern Aymara [ayc].
 Legacy applications often use ay rather than [ayr].`},
 
-"ayr": { name:"Central Aymara", local:"Aymar aru [ajmaɾ ˈaɾu]", 
+"ayr": { name:"Central Aymara", local:"Aymar aru", localtrans:"[ajmaɾ ˈaɾu]", 
 source:"udhr_ayr", 
 region:"sam", countries:"Bolivia, Peru, Chile", script:"latn", speakers:"2800000", 
 letter:"ñïäíáëúÑÏÄÍÁËÚ", mark:"̃̈́", 
@@ -206,14 +206,14 @@ Legacy applications often use az rather than [azj].
 Orthographies include the following scripts: Arabic, Cyrillic, Latin.`
 },
 
-"azb": { name:"Azerbaijani (Azeri)", local:"آذربایجان دیلی [ɑːzæɾbɑjˈdʒɑn diˈli]", rtl:true, 
+"azb": { name:"Azerbaijani (Azeri)", local:"آذربایجان دیلی", localtrans:"[ɑːzæɾbɑjˈdʒɑn diˈli]", rtl:true, 
 source:"f0fadf1bb3cf144a0034d94f00d98e74d1d253aa", 
 region:"wasia", countries:"Iran, Iraq, Turkey, Azerbaijan, Syria", script:"arab", speakers:"26000000", 
 letter:"آؤئاتثجحخدذرزسشصضطظعغفقلمنهويٮپچژکگۆۇیەݣ", mark:"َْٓٔ", other:"\u{200D}\u{200C}\u{200F}\u{200E}\u{2067}\u{2066}\u{2069}\u{202B}\u{202A}\u{202C}\u{34F}\u{61C}", aux:"ـ", 
 related:`Macrolanguage is Azerbaijani [az].`,
 },
 
-"azj": { name:"Northern Azerbaijani", local:"Azərbaycan dili [ɑːzæɾbɑjˈdʒɑn diˈli]", 
+"azj": { name:"Northern Azerbaijani", local:"Azərbaycan dili", localtrans:"[ɑːzæɾbɑjˈdʒɑn diˈli]", 
 source:"cldr_az,udhr_azj_latn", 
 region:"wasia", countries:"Axerbaijan, Russia, Georgia, Armenia", script:"latn", speakers:"26000000", 
 letter:"çöüÇÖÜƏğışĞŞİə", mark:"̧̇̆̈", punctuation:"§‐–—…‘’“”†‡′″", 
@@ -227,7 +227,7 @@ also:
 related:`Macrolanguage is Azerbaijani [az]. Legacy applications often use az rather azj.`,
 },
 
-"azj-cyrl": { name:"Northern Azerbaijani", local:"Азәрбајҹан дили [ɑːzæɾbɑjˈdʒɑn diˈli]", silcode:"azj", 
+"azj-cyrl": { name:"Northern Azerbaijani", local:"Азәрбајҹан дили", localtrans:"[ɑːzæɾbɑjˈdʒɑn diˈli]", silcode:"azj", 
 source:"cldr_az_Cyrl,udhr_azj_cyrl", 
 region:"wasia", script:"cyrl", speakers:"26000000", 
 letter:"аәбвгғдежзийјкҝлмноөпрстуүфхһчҹшыАӘБВГҒДЕЖЗИЙЈКҜЛМНОӨПРСТУҮФХҺЧҸШЫ", mark:"̆", punctuation:"‐–—…‘’“”†‡′″‰§", aux:"цщъьэюяЦЩЪЬЭЮЯ", 
@@ -241,14 +241,14 @@ also:
 related:`Macrolanguage is Azerbaijani [az]. Legacy applications often use az rather than azj.`,
 },
 
-"ban": { name:"Bali (Balinese)", source:"5e57fecd469e080a9ee7d6a6ec4ad232405d52ce,udhr_ban", region:"seasia", countries:"Indonesia", script:"ascii", speakers:"3300000", local:"Basa Bali /baʃa bali/", 
+"ban": { name:"Bali (Balinese)", source:"5e57fecd469e080a9ee7d6a6ec4ad232405d52ce,udhr_ban", region:"seasia", countries:"Indonesia", script:"ascii", speakers:"3300000", local:"Basa Bali", localtrans:"/baʃa bali/", 
 orth:`[Latin] &nbsp; Used since early 20th century.`,
 also:
 ['ban-bali | bali | ',
 'ban-java | java | No longer in use.']
 },
 
-"ban-bali": { name:"Bali (Balinese)", local:"ᬪᬵᬱᬩᬮᬶ, ᬩᬲᬩᬮᬶ /baʃa bali/", silcode:"ban", 
+"ban-bali": { name:"Bali (Balinese)", local:"ᬪᬵᬱᬩᬮᬶ / ᬩᬲᬩᬮᬶ", localtrans:"/baʃa bali/", silcode:"ban", 
 source:"ff844379ad4006570a536dd0572148858532d87b", 
 region:"seasia", countries:"Indonesia", script:"bali", speakers:"3300000", 
 letter:"ᬅᬆᬇᬈᬉᬊᬋᬌᬍᬎᬏᬐᬑᬒᬓᬕᬖᬗᬘᬚᬜᬝᬞᬟᬠᬡᬢᬣᬤᬥᬦᬧᬨᬩᬪᬫᬬᬭᬮᬯᬰᬱᬲᬳ", letteraux:"ᬔᬙᬛ", mark:"ᬀᬁᬂᬃᬄ᬴ᬵᬶᬷᬸᬹᬺᬻᬼᬽᬾᬿᭀᭁᭂᭃ᭄", number:"᭐᭑᭒᭓᭔᭕᭖᭗᭘᭙", punctuation:"᭚᭛᭜᭝᭞᭟᭠", symbol:"", other:"\u200B\u200C", 
@@ -269,12 +269,7 @@ letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǎǐǹǒǔǍ
 vowels:"let:7",
 },
 
-"bax": { name:"Bamun (Bamum, Bamoun)", source:"udhr_bax", region:"afr", countries:"Cameroon", script:"latn", speakers:"420000", letter:"úéêüûâôîáèùàÚÉÊÜÛÂÔÎÁÈÙÀṅṄ", mark:"́̂̈̀̇", punctuation:"‘’", local:"Shü Pamom [ʃŷpǎˑmə̀m]", 
-orth:`[Latin] &nbsp; `,
-also:
-['bax-bamu | bamu | Taught in schools until 1930s.']
-},
-"bax": { name:"Bamun (Bamum, Bamoun)", local:"Shü Pamom [ʃŷpǎˑmə̀m]", 
+"bax": { name:"Bamun (Bamum, Bamoun)", local:"Shü Pamom", localtrans:"[ʃŷpǎˑmə̀m]", 
 source:"udhr_bax", 
 region:"afr", countries:"Cameroon", script:"latn", speakers:"420000", 
 letter:"úéêüûâôîáèùàÚÉÊÜÛÂÔÎÁÈÙÀṅṄ", mark:"́̂̈̀̇", punctuation:"‘’", 
@@ -283,7 +278,7 @@ also:
 ["bax-bamu | bamu | Taught in schools until 1930s."],
 },
 
-"bax-bamu": { name:"Bamun (Bamum, Bamoun)", local:"Shü Pamom [ʃŷpǎˑmə̀m]", silcode:"bax", 
+"bax-bamu": { name:"Bamun (Bamum, Bamoun)", local:"Shü Pamom", localtrans:"[ʃŷpǎˑmə̀m]", silcode:"bax", 
 source:"820f9f09ce28a3610548365c402e624a9d6e7b32", 
 region:"afr", countries:"Cameroon", script:"bamu", speakers:"420000", 
 letter:"ꚠꚡꚢꚣꚤꚥꚦꚧꚨꚩꚪꚫꚬꚭꚮꚯꚰꚱꚲꚳꚴꚵꚶꚷꚸꚹꚺꚻꚼꚽꚾꚿꛀꛁꛂꛃꛄꛅꛆꛇꛈꛉꛊꛋꛌꛍꛎꛏꛐꛑꛒꛓꛔꛕꛖꛗꛘꛙꛚꛛꛜꛝꛞꛟꛠꛡꛢꛣꛤꛥ", mark:"꛰꛱", number:"ꛦꛧꛨꛩꛪꛫꛬꛭꛮꛯ", punctuation:"꛲꛳꛴꛵꛶꛷", symbol:"", other:"", 
@@ -313,15 +308,15 @@ linked:"batk/btk", fonts:"batk/index.html",
 related:`Macrolanguage is Bikol [bik]. Legacy applications often use bik rather bcl.`
 },
 
-"be": { name:"Belorussian", silcode:"bel", source:"cldr_be,udhr_bel", region:"eur", countries:"Belarus, Ukraine, Poland", script:"cyrl", speakers:"5000000", letter:"абвгджзеёійклмнопрстуўфхцчшыьэюяиАБВГДЖЗЕЁІЙКЛМНОПРСТУЎФХЦЧШЫЬЭЮЯИʼ", mark:"̈̆", punctuation:"‐«»", aux:"́", local:"беларуская мова [bʲelaˈruskaja ˈmova]"},
+"be": { name:"Belorussian", silcode:"bel", source:"cldr_be,udhr_bel", region:"eur", countries:"Belarus, Ukraine, Poland", script:"cyrl", speakers:"5000000", letter:"абвгджзеёійклмнопрстуўфхцчшыьэюяиАБВГДЖЗЕЁІЙКЛМНОПРСТУЎФХЦЧШЫЬЭЮЯИʼ", mark:"̈̆", punctuation:"‐«»", aux:"́", local:"беларуская мова", localtrans:"[bʲelaˈruskaja ˈmova]"},
 
 "bem": { name:"Bemba (ChiBemba, Cibemba, Ichibemba, Icibemba, Chiwemba)", source:"cldr_bem,udhr_bem", region:"afr", countries:"Zambia, DRC", script:"ascii", speakers:"4100000", local:"Chibemba"},
 
 "bez": { name:"Bena", source:"cldr_bez", region:"afr", countries:"Tanzania", script:"ascii", speakers:"670000", local:"Ekibena"},
 
-"bg": { name:"Bulgarian", silcode:"bul", source:"cldr_bg,udhr_bul", region:"eur", countries:"Bulgaria, Turkey, Ukraine, Greece, Moldova, Serbia", script:"cyrl", speakers:"9000000", letter:"абвгдежзийклмнопрстуфхцчшщъьюяАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯ", mark:"̆", punctuation:"‐–—…‘‚“„″§", symbol:"№", aux:"ѐёѝыѣэѫЀЁЍЫѢЭѪ̀̈", local:"български [ˈbɤɫɡɐrski]"},
+"bg": { name:"Bulgarian", silcode:"bul", source:"cldr_bg,udhr_bul", region:"eur", countries:"Bulgaria, Turkey, Ukraine, Greece, Moldova, Serbia", script:"cyrl", speakers:"9000000", letter:"абвгдежзийклмнопрстуфхцчшщъьюяАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯ", mark:"̆", punctuation:"‐–—…‘‚“„″§", symbol:"№", aux:"ѐёѝыѣэѫЀЁЍЫѢЭѪ̀̈", local:"български", localtrans:"[ˈbɤɫɡɐrski]"},
 
-"bho": { name:"Bhojpuri", source:"udhr_bho", region:"sasia", countries:"India, Nepal, Mauritius", script:"deva", speakers:"51000000", letter:"मनवधकरखतसयषटउचबहलघणपगठदभअएआओथशजडइछऔफढईझऐञ", mark:"ािंु्ेोी़ूौृै", punctuation:"।", local:"भोजपुरी (bhōjpurī)", 
+"bho": { name:"Bhojpuri", source:"udhr_bho", region:"sasia", countries:"India, Nepal, Mauritius", script:"deva", speakers:"51000000", letter:"मनवधकरखतसयषटउचबहलघणपगठदभअएआओथशजडइछऔफढईझऐञ", mark:"ािंु्ेोी़ूौृै", punctuation:"।", local:"भोजपुरी", localtrans:"(bhōjpurī)", 
 orth:`[Devanagari] &nbsp; `,
 also:
 ['bho-kthi | kthi | ']
@@ -332,7 +327,7 @@ Legacy applications often use bik rather than [bcl].`},
 
 "bin": { name:"Edo (Bini)", source:"udhr_bin,5d2167e3d40aca7074b7d33835b1aa93e09cc088", region:"afr", countries:"Nigeria", script:"ascii", speakers:"1000000", letter:"ÀÁÈÉÌÍÒÓÙÚàáèéìíòóùúẸẹỌọ", mark:"̣̀́", local:"Ẹ̀dó", notes:"Acute and grave accents are used for tones, but the source didn't explicitly list all possible combinations, so the list of precomposed characters shown with those accents is a guess."},
 
-"bku-buhd": {  name:"Buhid (Bangon, Batangan, Buhid-Mangyan, Bukil)", source:"3bd5a62d6d969a796148fc6c805c3eb8ac27e52d", region:"oce", countries:"Philippines", script:"buhd", speakers:"11600", letter:"ᝉᝆᝃᝊᝇᝄᝐᝑᝋᝈᝅᝏᝍᝎᝌᝀᝁᝂ", mark:"ᝒᝓ", punctuation:"᜵᜶", local:"ᝊᝓᝑᝒ (Buhid)",
+"bku-buhd": {  name:"Buhid (Bangon, Batangan, Buhid-Mangyan, Bukil)", source:"3bd5a62d6d969a796148fc6c805c3eb8ac27e52d", region:"oce", countries:"Philippines", script:"buhd", speakers:"11600", letter:"ᝉᝆᝃᝊᝇᝄᝐᝑᝋᝈᝅᝏᝍᝎᝌᝀᝁᝂ", mark:"ᝒᝓ", punctuation:"᜵᜶", local:"ᝊᝓᝑᝒ", localtrans:"(buhid)",
 fonts:"/pickers/buhd/",
 orth:`Buhid &nbsp;`,
 also:
@@ -341,7 +336,7 @@ type:"abugida", cs:"no", gpos:"yes", mcchars:"no", matras: "yes", gsub:"yes", cu
 vowels:"vs:y ind:y",
 },
 
-"blt": { name:"Tai Dam (Black Tai)", local:"ꪼꪕꪒꪾ (tai dam)", 
+"blt": { name:"Tai Dam (Black Tai)", local:"ꪼꪕꪒꪾ", localtrans:"(tai dam)", 
 source:"udhr_blt,a220b3a422c42646d07427217c800b9d9663991f", 
 region:"seasia", countries:"Vietnam, Laos, China", script:"tavt", speakers:"760000", 
 letter:"ꪀꪁꪄꪅꪆꪇꪈꪉꪊꪋꪎꪏꪐꪑꪒꪓꪔꪕꪖꪗꪘꪙꪚꪛꪜꪝꪠꪡꪢꪣꪤꪥꪦꪧꪨꪩꪪꪫꪬꪭꪮꪯꪱꪵꪶꪹꪺꪻꪼꪽꫀꫂꫛꫜꫝ", mark:"ꪴꪰꪲꪳꪷꪸꪾ꪿꫁", number:"", punctuation:"–꫞꫟", symbol:"", other:"", 
@@ -368,7 +363,7 @@ vowels:"let:7(15) cm:(3/4)",
 linked:"latn/bm", fonts:"/pickers/latn-bm", 
 },
 
-"bn": { name:"Bengali (Bangla)", local:"বাংলা /ˈbʌŋlə/", silcode:"ben", 
+"bn": { name:"Bengali (Bangla)", local:"বাংলা", localtrans:"/ˈbʌŋlə/", silcode:"ben", 
 source:"10e4909416eed2f0279eb7996f90c6bab37281e2,cldr_bn,udhr_ben", 
 region:"sasia", countries:"Bangladesh, India", script:"beng", speakers:"260000000", 
 letter:"ʼঅআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহঽৎড়ঢ়য়", mark:"ঁংঃ়ািীুূৃেৈোৌ্", number:"০১২৩৪৫৬৭৮৯", punctuation:"।॥‘’“”", symbol:"৳৺", other:"\u200C\u200D", 
@@ -382,7 +377,7 @@ clusters:"vir stk cnj lig rax unm vvir", finals:"cm:2 let:1",
 linked:"beng/bn", fonts:"/pickers/beng/", 
 },
 
-"bo": { name:"Tibetan", local:"བོད་སྐད་ (Böké); ལྷ་སའི་སྐད་ (Lhaséké)", silcode:"bod", 
+"bo": { name:"Tibetan", local:"བོད་སྐད་ / ལྷ་སའི་སྐད་", localtrans:"(Böké / Lhaséké)", silcode:"bod", 
 source:"3d4a46a3bc9bb2a2c900adf645b07f641ef2c2bf,cldr_bo,udhr_bod", 
 region:"easia", countries:"China, India", script:"tibt", speakers:"1200000", 
 letter:"ༀཀཁགངཅཆཇཉཊཋཌཎཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤཥསཧཨཪྈྉྊྋྌ", mark:"ཱིེཻོཽུ༹༵༷ཾཿ྄ྀྃ྆ྐྑྒྒྷྔྕྖྗྙྚྛྜྜྷྞྟྠྡྡྷྣྤྥྦྦྷྨྩྪྫྫྷྭྮྯྰྱྲླྴྵྶྷྸྐྵྺྻྼ", markaux:"ཱཱཱིྀུ", number:"༠༡༢༣༤༥༦༧༨༩༪༫༬༭༮༯༰༱༲༳", punctuation:"༄༅༈་༌།༎༑༔༼༽྅〈〉《》", symbol:"༁༂༃༴༶༸྾྿", other:"", 
@@ -400,16 +395,16 @@ linked:"tibt/bo", fonts:"/pickers/tibt/",
 
 "boa": { name:"Bora", source:"udhr_boa", region:"sam", countries:"Peru, Colombia", script:"latn", speakers:"2400", letter:"úáéñíóÚÁÉÑÍÓɨȉƗȈ", mark:"́̃̏", local:"Meamuyna"},
 
-"br": { name:"Breton", silcode:"bre", source:"cldr_br,udhr_bre", region:"eur", countries:"France", script:"latn", speakers:"226000", letter:"êñùÊÑÙʼ", mark:"̂̃̀", punctuation:"’–", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèëíìîïóòôöøúûüÿÁÀÂÅÄÃÆÇÉÈËÍÌÎÏÓÒÔÖØÚÛǗ̧̆̊̈̄", local:"brezhoneg [bʁeˈzõːnɛk] or [brəhõˈnek]"},
+"br": { name:"Breton", silcode:"bre", source:"cldr_br,udhr_bre", region:"eur", countries:"France", script:"latn", speakers:"226000", letter:"êñùÊÑÙʼ", mark:"̂̃̀", punctuation:"’–", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåäãæçéèëíìîïóòôöøúûüÿÁÀÂÅÄÃÆÇÉÈËÍÌÎÏÓÒÔÖØÚÛǗ̧̆̊̈̄", local:"brezhoneg", localtrans:"[bʁeˈzõːnɛk / brəhõˈnek]"},
 
-"brx": { name:"Bodo (Boro, Mech)", source:"cldr_brx", region:"sasia", countries:"India", script:"deva", speakers:"1500000", letter:"अआइईउऊऍएऐऑओऔकखगघचछजझञटठडढणतथदधनपफबभमयरलळवशषसह", mark:"़ँंािीुूृॅेैॉोौ्", local:"बर'/बड़ [bɔɽo]", 
+"brx": { name:"Bodo (Boro, Mech)", source:"cldr_brx", region:"sasia", countries:"India", script:"deva", speakers:"1500000", letter:"अआइईउऊऍएऐऑओऔकखगघचछजझञटठडढणतथदधनपफबभमयरलळवशषसह", mark:"़ँंािीुूृॅेैॉोौ्", local:"बर' / बड़", localtrans:"[bɔɽo]", 
 orth:`[Devanagari] &nbsp; `,
 also:
 ['brx-beng | beng | ',
 'brx-latn | latn | ']
 },
 
-"bs": { name:"Bosnian", silcode:"bos", source:"cldr_bs,udhr_bos_latn", region:"eur", countries:"Bosnia &amp; Herzegovina, Serbia, Montenegro, Slovenia, Croatia", script:"latn", speakers:"~3000000", letter:"čćžđšČĆŽĐŠ", mark:"̌́", punctuation:"‐–—…‘’“”′″", local:"bosanski [bɔ̌sanskiː]", 
+"bs": { name:"Bosnian", silcode:"bos", source:"cldr_bs,udhr_bos_latn", region:"eur", countries:"Bosnia &amp; Herzegovina, Serbia, Montenegro, Slovenia, Croatia", script:"latn", speakers:"~3000000", letter:"čćžđšČĆŽĐŠ", mark:"̌́", punctuation:"‐–—…‘’“”′″", local:"bosanski", localtrans:"[bɔ̌sanskiː]", 
 related:`Macrolanguage is Serbo-Croatian [sh].`,
 orth:`[Latin] &nbsp; Gaj's alphabet.`,
 also:
@@ -417,7 +412,7 @@ also:
 'bs-arab | arab | \'Arebica\', used mainly between the 15th and 19th centuries.']
 },
 
-"bs-cyrl": { name:"Bosnian", sildcode:"bo", source:"cldr_bs_Cyrl,udhr_bos_cyrl", region:"eur", countries:"Bosnia &amp; Herzegovina, Serbia, Montenegro, Slovenia, Croatia", script:"cyrl", speakers:"~3000000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–—…‘’“”′″", local:"босански [bɔ̌sanskiː]", 
+"bs-cyrl": { name:"Bosnian", sildcode:"bo", source:"cldr_bs_Cyrl,udhr_bos_cyrl", region:"eur", countries:"Bosnia &amp; Herzegovina, Serbia, Montenegro, Slovenia, Croatia", script:"cyrl", speakers:"~3000000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–—…‘’“”′″", local:"босански", localtrans:"[bɔ̌sanskiː]", 
 related:`Macrolanguage is Serbo-Croatian [sh].`,
 orth:`[Cyrillic] &nbsp; \'Bosančica\', used in the Middle Ages, with some recent attempts at revival.`,
 also:
@@ -431,7 +426,7 @@ also:
 ['bsq-bass | bass | Rediscovered in the Americas at the start of the 20th century. Now used mainly by older people.']
 },
 
-"bsq-bass": { name:"Bassa", local:"𖫔𖫧𖫳𖫒𖫨𖫰𖫨𖫱 (Ɓǎsɔ́ɔ̀)", silcode:"bsq", 
+"bsq-bass": { name:"Bassa", local:"𖫔𖫧𖫳𖫒𖫨𖫰𖫨𖫱", localtrans:"(Ɓǎsɔ́ɔ̀)", silcode:"bsq", 
 source:"feb8d27835761376c21d0c994cb1c128010d1ac0", 
 region:"afr", countries:"Liberia", script:"bass", speakers:"648000", 
 letter:"𖫐𖫑𖫒𖫓𖫔𖫕𖫖𖫗𖫘𖫙𖫚𖫛𖫜𖫝𖫞𖫟𖫠𖫡𖫢𖫣𖫤𖫥𖫧𖫨𖫩𖫪𖫫𖫬𖫭", letteraux:"𖫦", mark:"𖫰𖫱𖫲𖫳𖫴", number:"", punctuation:"“”𖫵", symbol:"", other:"",
@@ -501,7 +496,7 @@ also:
 ['bug-bugi | bugi | No longer in significant use, but found on signage.'],
 },
 
-"bug-bugi": { name:"Buginese", local:"ᨅᨔ ᨕᨘᨁᨗ (basa ugi)", silcode:"bug", 
+"bug-bugi": { name:"Buginese", local:"ᨅᨔ ᨕᨘᨁᨗ", localtrans:"(basa ugi)", silcode:"bug", 
 source:"d997476f6f5d5a7525a2cdf2d0790e944bfa83f2", 
 region:"seasia", countries:"Indonesia, Malaysia", script:"bugi", speakers:"5000000", 
 letter:"ᨀᨁᨂᨃᨄᨅᨆᨇᨈᨉᨊᨋᨌᨍᨎᨏᨐᨑᨒᨓᨔᨕᨖꧏ", mark:"ᨘᨗᨙᨚᨛ", number:"", punctuation:"᨞᨟", symbol:"", other:"\u200D",
@@ -520,7 +515,7 @@ linked:"bugi/bug",
 "bxk": { name:"Bukusu", source:"cldr_luy", region:"afr", countries:"Kenya, Uganda", script:"ascii", speakers:"1200000", local:"Lubukusu", 
 related:`Macrolanguage is Luyia [luy]. Legacy applications often use luy rather bxk.`},
 
-"ca": { name:"Catalan", silcode:"cat", source:"cldr_ca,udhr_cat", region:"eur", countries:"Spain, France, Andorra, Italy", script:"latn", speakers:"4100000", letter:"àçéèíïóòúüÀÇÉÈÍÏÓÒÚÜ", mark:"̧̀́̈", punctuation:"·¡¿«»§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŀŏōœŭūĂĀĔĒĬĪĿŎŌŒŬŪŸáâåäãæêëìîñºôöøùûÿÁÂÅÄÃÆÊËÌÎÑÔÖØÙÛ̆̂̊̃̄", local:"català [kətəˈla]"},
+"ca": { name:"Catalan", silcode:"cat", source:"cldr_ca,udhr_cat", region:"eur", countries:"Spain, France, Andorra, Italy", script:"latn", speakers:"4100000", letter:"àçéèíïóòúüÀÇÉÈÍÏÓÒÚÜ", mark:"̧̀́̈", punctuation:"·¡¿«»§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŀŏōœŭūĂĀĔĒĬĪĿŎŌŒŬŪŸáâåäãæêëìîñºôöøùûÿÁÂÅÄÃÆÊËÌÎÑÔÖØÙÛ̆̂̊̃̄", local:"català", localtrans:"[kətəˈla]"},
 
 "cab": { name:"Garifuna", source:"udhr_cab", region:"cam", countries:"Honduras, Belize", script:"latn", speakers:"190000", letter:"üúñáéíèóÜÚÑÁÉÍÈÓ", mark:"̈́̃̀", local:"Garifuna"},
 
@@ -530,20 +525,20 @@ related:`Macrolanguage is Luyia [luy]. Legacy applications often use luy rather 
 
 "cbr": { name:"Cashibo (Caxibo, Cacibo, Cachibo, Cahivo, Cacataibo, Managua, Hagueti)", source:"udhr_cbr", region:"sam", countries:"Peru", script:"latn", speakers:"1200", letter:"ñëúíáéóÑËÚÍÁÉÓ", mark:"́̃̈́", punctuation:"¿", local:"Kakataibo-Kashibo"},
 
-"cbs": { name:"Cashinahua (Kashinawa, Kaxinawá, Caxinawá, Hantxa Kuin, Huni Kui)", source:"udhr_cbs", region:"sam", countries:"Peru, Brazil", script:"latn", speakers:"1200", letter:"íÍ", mark:"́", punctuation:"¿", local:"Hantxa Kuin, Juni Kuin"},
+"cbs": { name:"Cashinahua (Kashinawa, Kaxinawá, Caxinawá, Hantxa Kuin, Huni Kui)", source:"udhr_cbs", region:"sam", countries:"Peru, Brazil", script:"latn", speakers:"1200", letter:"íÍ", mark:"́", punctuation:"¿", local:"Hantxa Kuin / Juni Kuin"},
 
 "cbt": { name:"Chayahuita", source:"udhr_cbt", region:"sam", countries:"Peru", script:"latn", speakers:"14000", letter:"ëóíËÓÍ", mark:"̈́", punctuation:"¿", local:"Shahui"},
 
 "cbu": { name:"Candoshi-Shapra (Candoxi, Kandoshi, Murato)", source:"udhr_cbu", region:"sam", countries:"Peru", script:"latn", speakers:"1120", letter:"íáÍÁ", mark:"́", punctuation:"¿¡"},
 
-"ccp": { name:"Chakma", source:"cldr_ccp,udhr_ccp", region:"sasia", countries:"Bangladesh, India", script:"cakm", speakers:"330000", letter:"𑄟𑄚𑄃𑄇𑄥𑄢𑄝𑄅𑄉𑄌𑄙𑄡𑄠𑄖𑄑𑄎𑄘𑄦𑄣𑄛𑄏𑄈𑄊𑄜𑄓𑄋𑄗𑄞𑄍𑄕𑄒𑄄𑄆𑄐𑄔𑄤", mark:"𑄬𑄭𑄴𑄧𑄁𑄮𑄳𑄨𑄩𑄪𑄱𑄰𑄫𑄯𑄲𑄀𑄂","number":"০১২৩৪৫৬৭৮৯𑄷𑄸𑄹𑄺𑄻𑄼𑄽𑄾𑄿𑄶", punctuation:"𑅁𑅃𑅂𑅀‰‐–—…‘’“”†‡′″§", local:"𑄌𑄋𑄴𑄟𑄳𑄦 𑄞𑄌𑄴 (changmha bhach)", notes:`UDHR uses Chakma digits, whereas CLDR shows only Bengali digits.`, 
+"ccp": { name:"Chakma", source:"cldr_ccp,udhr_ccp", region:"sasia", countries:"Bangladesh, India", script:"cakm", speakers:"330000", letter:"𑄟𑄚𑄃𑄇𑄥𑄢𑄝𑄅𑄉𑄌𑄙𑄡𑄠𑄖𑄑𑄎𑄘𑄦𑄣𑄛𑄏𑄈𑄊𑄜𑄓𑄋𑄗𑄞𑄍𑄕𑄒𑄄𑄆𑄐𑄔𑄤", mark:"𑄬𑄭𑄴𑄧𑄁𑄮𑄳𑄨𑄩𑄪𑄱𑄰𑄫𑄯𑄲𑄀𑄂","number":"০১২৩৪৫৬৭৮৯𑄷𑄸𑄹𑄺𑄻𑄼𑄽𑄾𑄿𑄶", punctuation:"𑅁𑅃𑅂𑅀‰‐–—…‘’“”†‡′″§", local:"𑄌𑄋𑄴𑄟𑄳𑄦 𑄞𑄌𑄴", localtrans:"(changmha bhach)", notes:`UDHR uses Chakma digits, whereas CLDR shows only Bengali digits.`, 
 orth:`[Chakma] &nbsp; `,
 also:
 ['ccp-beng | beng | ',
 'ccp-latn | latn | ']
 },
 
-"ce": { name:"Chechen", silcode:"che", source:"cldr_ce", region:"eur", countries:"Russia", script:"cyrl", speakers:"1400000", letter:"аьбвгӏдеёжзийкхлмнопрстуфцчшщъыэюяАЬБВГӀДЕЁЖЗИЙКХЛМНОПРСТУФЦЧШЩЪЫЭЮЯ", mark:"̈̆","number":"", punctuation:"‐–—…‘‚“„«»§", local:"нохчийн мотт [ˈnɔx.t͡ʃiːn mu͜ɔt]", 
+"ce": { name:"Chechen", silcode:"che", source:"cldr_ce", region:"eur", countries:"Russia", script:"cyrl", speakers:"1400000", letter:"аьбвгӏдеёжзийкхлмнопрстуфцчшщъыэюяАЬБВГӀДЕЁЖЗИЙКХЛМНОПРСТУФЦЧШЩЪЫЭЮЯ", mark:"̈̆","number":"", punctuation:"‐–—…‘‚“„«»§", local:"нохчийн мотт", localtrans:"[ˈnɔx.t͡ʃiːn mu͜ɔt]", 
 orth:`[Cyrillic] &nbsp; `,
 also:
 ['ce-arab | arab | No longer in use.',
@@ -552,7 +547,7 @@ also:
 
 "ceb": { name:"Cebuano (Bisaya)", source:"cldr_ceb,udhr_ceb", region:"seasia", countries:"Philippines", script:"ascii", speakers:"16000000", local:"Binisaya", notes:`Wikipedia suggests that an acute accent is used to indicate stress.`},
 
-"cfm": { name:"Falam Chin (Baro Halam)", source:"udhr_flm,1f092f9b4f53e2b4ec5dc91221d0cdb55c50c844", region:"seasia", countries:"Myanmar, India", script:"ascii", speakers:"107000", letter:"Ṭṭ", mark:"̣", local:"Laiṭawng, Falam Chin", 
+"cfm": { name:"Falam Chin (Baro Halam)", source:"udhr_flm,1f092f9b4f53e2b4ec5dc91221d0cdb55c50c844", region:"seasia", countries:"Myanmar, India", script:"ascii", speakers:"107000", letter:"Ṭṭ", mark:"̣", local:"Laiṭawng / Falam Chin", 
 orth:`[Latin] &nbsp; Primary usage.`,
 also:
 ['cfm-beng | beng | Used in India.']
@@ -560,13 +555,13 @@ also:
 
 "cgg": { name:"Chiga (Rukiga, Ruchiga, Kiga)", source:"cldr_cgg", region:"afr", countries:"Uganda", script:"ascii", speakers:"1600000", local:"Rukiga", orth:`[Latin] Used since 1964.`},
 
-"ch": { name:"Chamorro", silcode:"cha", source:"udhr_cha,e97485e1a7f539f982e7cfeb56ea244d8b39af8a", region:"oce", countries:"Guam, USA, Northern Mariana Islands", script:"ascii", speakers:"58000", letter:"ÅÑåñ", mark:"̃̊", local:"Finu' Chamoru /finuʔ tʃəˈmɒroʊ/"},
+"ch": { name:"Chamorro", silcode:"cha", source:"udhr_cha,e97485e1a7f539f982e7cfeb56ea244d8b39af8a", region:"oce", countries:"Guam, USA, Northern Mariana Islands", script:"ascii", speakers:"58000", letter:"ÅÑåñ", mark:"̃̊", local:"Finu' Chamoru", localtrans:"/finuʔ tʃəˈmɒroʊ/"},
 
-"chj": { name:"Ojitlán Chinantec", source:"udhr_chj", region:"cam", countries:"Mexico", script:"latn", speakers:"38000", letter:"öíäñáéúïüëóÖÍÄÑÁÉÚÏÜËÓ", mark:"̈́̃", punctuation:"–", symbol:"°", local:"Jmiih kia’ dzä ‘vï ï, Jujmi", related:`Although there is no macrolanguage, this is one of several Chinantecan languages that are partially mutually intelligible: [cco], [chj], [chq], [chz], [cle], [cnl], [cnt], [cpa], [csa], [cso], [cte], [ctl], [cuc], [cvn].`},
+"chj": { name:"Ojitlán Chinantec", source:"udhr_chj", region:"cam", countries:"Mexico", script:"latn", speakers:"38000", letter:"öíäñáéúïüëóÖÍÄÑÁÉÚÏÜËÓ", mark:"̈́̃", punctuation:"–", symbol:"°", local:"Jmiih kia’ dzä ‘vï ï / Jujmi", related:`Although there is no macrolanguage, this is one of several Chinantecan languages that are partially mutually intelligible: [cco], [chj], [chq], [chz], [cle], [cnl], [cnt], [cpa], [csa], [cso], [cte], [ctl], [cuc], [cvn].`},
 
 "chk": { name:"Chuukese (Trukese)", source:"udhr_chk", region:"oce", countries:"Micronesia", script:"ascii", speakers:"51330", local:"Chuuk"},
 
-"chr": { name:"Cherokee", local:"ᏣᎳᎩ ᎦᏬᏂᎯᏍᏗ [dʒalaˈɡî ɡawónihisˈdî]", 
+"chr": { name:"Cherokee", local:"ᏣᎳᎩ ᎦᏬᏂᎯᏍᏗ", localtrans:"[dʒalaˈɡî ɡawónihisˈdî]", 
 source:"4be08b04f56e7763cde42dfbebfb49497c506a2b,cldr_chr,udhr_chr_cased,udhr_chr_uppercase", 
 region:"nam", countries:"USA", script:"cher", speakers:"1520", 
 letter:"ᎠᎡᎢᎣᎤᎥᎦᎧᎨᎩᎪᎫᎬᎭᎮᎯᎰᎱᎲᎳᎴᎵᎶᎷᎸᎹᎺᎻᎾᎿᏀᏁᏂᏃᏄᏅᏆᏇᏈᏉᏊᏋᏌᏍᏎᏏᏐᏑᏒᏓᏔᏕᏖᏗᏘᏙᏚᏛᏜᏝᏞᏟᏠᏡᏢᏣᏤᏥᏦᏧᏨᏩᏪᏫᏬᏭᏮᏯᏰᏱᏲᏳᏴᏸᏹᏺᏻᏼꭰꭱꭲꭳꭴꭵꭶꭷꭸꭹꭺꭻꭼꭽꭾꭿꮀꮁꮂꮃꮄꮅꮆꮇꮈꮉꮊꮋꮎꮏꮐꮑꮒꮓꮔꮕꮖꮗꮘꮙꮚꮛꮜꮝꮞꮟꮠꮡꮢꮣꮤꮥꮦꮧꮨꮩꮪꮫꮬꮭꮮꮯꮰꮱꮲꮳꮴꮵꮶꮷꮸꮹꮺꮻꮼꮽꮾꮿ", letteraux:"ᎼᎽꮌꮍ", mark:"̣̤̰̱", markaux:"̀́̂̄̋̌", number:"", punctuation:"‘’“”", symbol:"", other:"",
@@ -579,17 +574,17 @@ vowels:"syl:6",
 linked:"cher/chr", fonts:"/pickers/cher/", 
 },
 
-"cic": { name:"Chickasaw", source:"udhr_cic,f258793e409fd555ca28c242b449ca206a0bd6c0", region:"nam", countries:"USA", script:"latn", speakers:"75", letter:"óáíÓÁÍ", mark:"̱́", punctuation:"—", local:"Chikashshanompa' [tʃikaʃːanompaʔ]", notes:`U+0331 COMBINING MACRON BELOW is used with a and o, for which there are no precomposed characters.`},
+"cic": { name:"Chickasaw", source:"udhr_cic,f258793e409fd555ca28c242b449ca206a0bd6c0", region:"nam", countries:"USA", script:"latn", speakers:"75", letter:"óáíÓÁÍ", mark:"̱́", punctuation:"—", local:"Chikashshanompa'", localtrans:"[tʃikaʃːanompaʔ]", notes:`U+0331 COMBINING MACRON BELOW is used with a and o, for which there are no precomposed characters.`},
 
 "cjk": { name:"Chokwe", source:"udhr_cjk", region:"afr", countries:"Angola, DRC, Zambia", script:"ascii", speakers:"980000"},
 
-"cjs": { name:"Shor", source:"udhr_cjs,eec6428d9ce711e3709def0279121e23a4bf488a", region:"nasia", countries:"Russia", script:"cyrl", speakers:"2800", letter:"кижнтолағыңудерцязчқшйъӱгьсмбюпӧэвфхКИЖНТОЛАҒЫҢУДЕРЦЯЗЧҚШЙЪӰГЬСМБЮПӦЭВФХЁЩщё", mark:"̆̈", local:"Шор тили (šor tili), Тадар тили (tadar tili)", 
+"cjs": { name:"Shor", source:"udhr_cjs,eec6428d9ce711e3709def0279121e23a4bf488a", region:"nasia", countries:"Russia", script:"cyrl", speakers:"2800", letter:"кижнтолағыңудерцязчқшйъӱгьсмбюпӧэвфхКИЖНТОЛАҒЫҢУДЕРЦЯЗЧҚШЙЪӰГЬСМБЮПӦЭВФХЁЩщё", mark:"̆̈", local:"Шор тили / Тадар тили", localtrans:"(šor tili / tadar tili)", 
 orth:`[Cyrillic] &nbsp; Developed by Altai missionaries in 1880s.`,
 also:
 ['cjs-latn | latn | Used between 1930-1938.']
 },
 
-"ckb": { name:"Central Kurdish (Sorani)", rtl:true, source:"cldr_ckb,fa1e79cbcb9ca9906ebecd0c8e47c135d5a380c1", region:"wasia", countries:"Iraq, Iran", script:"arab", speakers:"7250000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"ٔ", punctuation:"٫٬٪؉","number":"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْـ", local:"کوردیی ناوەندی (Kurdîy nawendî), سۆرانی, (Soranî)", 
+"ckb": { name:"Central Kurdish (Sorani)", rtl:true, source:"cldr_ckb,fa1e79cbcb9ca9906ebecd0c8e47c135d5a380c1", region:"wasia", countries:"Iraq, Iran", script:"arab", speakers:"7250000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"ٔ", punctuation:"٫٬٪؉","number":"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْـ", local:"کوردیی ناوەندی / سۆرانی", localtrans:"(Kurdîy nawendî / Soranî)", 
 related:`Macrolanguage is Kurdish [ku].`,
 orth:`[Arabic] &nbsp; Alphabetised naskh style, from 1920s, mostly used by Kurds in Iraq and Iran.`,
 also:
@@ -609,7 +604,7 @@ also:
 
 "cni": { name:"Asháninka", source:"udhr_cni,4a72f03687c85b581a7fab4146a3d0d9420e3257", region:"sam", countries:"Peru", script:"latn", speakers:"~35000", letter:"áéÁÉÑñ", mark:"́̃", local:"Asháninka", notes:"Asháninka was recognized as a separate language from Ashéninka ([cpu], [prq], [cpc], [cpb], [cjo], [cpy]) in 2017, and the process to fix an alphabet was underway during 2018."},
 
-"co": { name:"Corsican", silcode:"cos", source:"udhr_cos,3f49d57dae01202ea97c4d9eae9e2df2a8d3a65e", region:"eur", countries:"France", script:"latn", speakers:"325000", letter:"àèìùòÀÈÌÙÒ", mark:"̀", punctuation:"’", aux:"ÉÔéố̂", local:"corsu [ˈkorsu, ˈkɔrtsu], lingua corsa [ˈliŋɡwa ˈɡorsa]"},
+"co": { name:"Corsican", silcode:"cos", source:"udhr_cos,3f49d57dae01202ea97c4d9eae9e2df2a8d3a65e", region:"eur", countries:"France", script:"latn", speakers:"325000", letter:"àèìùòÀÈÌÙÒ", mark:"̀", punctuation:"’", aux:"ÉÔéố̂", local:"corsu / lingua corsa", localtrans:"[ˈkorsu / ˈkɔrtsu / ˈliŋɡwa ˈɡorsa]"},
 
 "cof": { name:"Colorado (Tsafiki, Tsáchila)", source:"udhr_cof", region:"sam", countries:"Ecuador", script:"latn", speakers:"2300", letter:"íÍ", mark:"́"},
 
@@ -622,7 +617,7 @@ Legacy applications often use cr rather than [cwd].`},
 
 "cri": { name:"Sãotomense (Forro Creole, Santomense)", source:"udhr_007", region:"afr", countries:"São Tomé e Príncipe", script:"latn", speakers:"70000", letter:"çóêéáâôºíÇÓÊÉÁÂÔÍ", mark:"̧́̂", notes:`Wikipedia says that there is no standard orthography, and Ethnologue says that the language is unwritten.`},
 
-"crk": { name:"Plains Cree (Western Cree)", local:"ᓀᐦᐃᔭᐍᐏᐣ‎ (nēhiyawēwin)", label:"Cree, Plains",
+"crk": { name:"Plains Cree (Western Cree)", local:"ᓀᐦᐃᔭᐍᐏᐣ‎", localtrans:"(nēhiyawēwin)", label:"Cree, Plains",
 source:"bab7473b269caccd315056ce1d856d43b7cfb1ac", 
 region:"nam", countries:"Canada", script:"cans", speakers:"3170", 
 letter:"ᐁᐃᐄᐅᐆᐊᐋᐍᐏᐑᐓᐕᐘᐚᐟᐠᐢᐣᐤᐦᐨᐯᐱᐲᐳᐴᐸᐹᐻᐽᐿᑁᑃᑅᑇᑊᑌᑎᑏᑐᑑᑕᑖᑘᑚᑜᑞᑠᑢᑤᑫᑭᑮᑯᑰᑲᑳᑵᑷᑹᑻᑽᑿᒁᒉᒋᒌᒍᒎᒐᒑᒓᒕᒗᒙᒛᒝᒟᒣᒥᒦᒧᒨᒪᒫᒭᒯᒱᒳᒵᒷᒹᒼᓀᓂᓃᓄᓅᓇᓈᓊᓌᓎᓬᓭᓯᓰᓱᓲᓴᓵᓷᓹᓻᓽᓿᔁᔃᔦᔨᔩᔪᔫᔭᔮᔰᔲᔴᔶᔸᔺᔼᕀᕒᕽᣟ", mark:"", number:"", punctuation:"᐀᙮", symbol:"", other:"",
@@ -637,11 +632,11 @@ linked:"cans/crk", fonts:"/pickers/cans-crk/",
 
 "crs": { name:"Seychellois Creole (Seselwa)", source:"udhr_crs", region:"afr", countries:"Seychelles", script:"latn", speakers:"73000", letter:"íÍ", mark:"́", punctuation:"’", local:"kreol, seselwa"},
 
-"cs": { name:"Czech (Bohemian)", silcode:"ces", source:"cldr_cs,udhr_ces", region:"eur", countries:"Czech Republic, Slovakia, USA, Serbia, Austria", script:"latn", speakers:"10700000", letter:"áéíóúýÁÉÍÓÚÝčďěňřšťůžČĎĚŇŘŠŤŮŽ", mark:"́̌̊", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīľłŏōœŕŭūĂĀĔĒĬĪĽŁŎŌŒŔŬŪŸàâåäãæçèêëìîïñòôöøùûüÿÀÂÅÄÃÆÇÈÊËÌÎÏÑÒÔÖØÙÛǛ̧̆̂̈̃̄", local:"čeština [ˈtʃɛʃcɪna]"},
+"cs": { name:"Czech (Bohemian)", silcode:"ces", source:"cldr_cs,udhr_ces", region:"eur", countries:"Czech Republic, Slovakia, USA, Serbia, Austria", script:"latn", speakers:"10700000", letter:"áéíóúýÁÉÍÓÚÝčďěňřšťůžČĎĚŇŘŠŤŮŽ", mark:"́̌̊", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīľłŏōœŕŭūĂĀĔĒĬĪĽŁŎŌŒŔŬŪŸàâåäãæçèêëìîïñòôöøùûüÿÀÂÅÄÃÆÇÈÊËÌÎÏÑÒÔÖØÙÛǛ̧̆̂̈̃̄", local:"čeština", localtrans:"[ˈtʃɛʃcɪna]"},
 
 "csa": { name:"Chiltepec Chinantec", source:"udhr_csa", region:"cam", countries:"Mexico", script:"latn", speakers:"1800", letter:"öüïóáñäëéíúÖÜÏÓÁÑÄËÉÍÚ", mark:"̷̱̍̎̈́̃", punctuation:"†", related:`Although there is no macrolanguage, this is one of several Chinantecan languages that are partially mutually intelligible: [cco], [chj], [chq], [chz], [cle], [cnl], [cnt], [cpa], [csa], [cso], [cte], [ctl], [cuc], [cvn].`},
 
-"csw": { name:"Swampy Cree (Maskekon, Omaškêkowak, Omushkego)", local:"ᓀᐦᐃᓇᐍᐏᐣ (Nêhinawêwin)", 
+"csw": { name:"Swampy Cree (Maskekon, Omaškêkowak, Omushkego)", local:"ᓀᐦᐃᓇᐍᐏᐣ", localtrans:"(Nêhinawêwin)", 
 source:"udhr_csw", 
 region:"nam", countries:"Canada", script:"cans", speakers:"1805", 
 letter:"ᐁᐢᐱᑕᑲᒥᐠᐊᑭᒋᐃᑗᐎᐣᓂᑯᓯᓇᐅᔑᒧᓀᐡᑐᑌᑎᐸᐗᐳᒪᒶᐌᔭᓄᑾᔦᒣᐤᓴᓶᔕᑴᐯᐟᑫᓱᓉᐺᑡᐨᔓᑺᓋᔗᔾᔀᑊᔡᒬᒼ", punctuation:"᙮", 
@@ -653,15 +648,16 @@ fonts:"/pickers/cans/",
 
 "ctd": { name:"Tedim Chin", source:"udhr_ctd", region:"seasia", countries:"Myanmar, India", script:"ascii", speakers:"340000", local:"Tidim"},
 
-"cu": { name:"Church Slavonic (Church Slavic, New Church Slavonic)", silcode:"chu", source:"cldr_cu", region:"eur", countries:"Russia", script:"cyrl", speakers:"0", letter:"абвгдеєжѕзиіїйклмнѻоѡѽѿпрстуфхцчшщъыьѣюѧѫѯѱѳѵѷАБВГДЕЄЖЅЗИІЇЙКЛМНѺОѠѼѾПРСТУФХЦЧШЩЪЫЬѢЮѦѪѮѰѲѴѶꙿꙁꙍꙋꙗꙀꙌꙊꙖⸯ", mark:"҇҃ⷠⷡⷢⷣⷤⷥⷦⷧⷨⷩⷪⷬⷭⷯⷱⷴ꙽", punctuation:"꙾꙳–—‐", symbol:"҂", aux:"҈҉҄ҥҁџѥѩѭҤҀЏѤѨѬⷶⷷⷸⷫⷵⷮⷹⷰⷲⷳⷺⷻⷼⷽⷾⷿ꙰꙱꙲꙯ꙣꙴꙃꙅꙵꙶꙇꙉꙥꙧꙩꙫꙭꙮꚙꚛꙷꚞꙻꙡꙏꙸꙑꙹꙺꙓꙕꚟꙙꙛꙝꙟꙢꙂꙄꙆꙈꙤꙦꙨꙪꙬꚘꚚꙠꙎꙐꙒꙔꙘꙚꙜꙞ︯︮", local:"Црькъвьнословѣньскъ ѩзыкъ, Словѣньскъ‎ (Slovyensk)", 
+"cu": { name:"Church Slavonic (Church Slavic, New Church Slavonic)", silcode:"chu", source:"cldr_cu", region:"eur", countries:"Russia", script:"cyrl", speakers:"0", letter:"абвгдеєжѕзиіїйклмнѻоѡѽѿпрстуфхцчшщъыьѣюѧѫѯѱѳѵѷАБВГДЕЄЖЅЗИІЇЙКЛМНѺОѠѼѾПРСТУФХЦЧШЩЪЫЬѢЮѦѪѮѰѲѴѶꙿꙁꙍꙋꙗꙀꙌꙊꙖⸯ", mark:"҇҃ⷠⷡⷢⷣⷤⷥⷦⷧⷨⷩⷪⷬⷭⷯⷱⷴ꙽", punctuation:"꙾꙳–—‐", symbol:"҂", aux:"҈҉҄ҥҁџѥѩѭҤҀЏѤѨѬⷶⷷⷸⷫⷵⷮⷹⷰⷲⷳⷺⷻⷼⷽⷾⷿ꙰꙱꙲꙯ꙣꙴꙃꙅꙵꙶꙇꙉꙥꙧꙩꙫꙭꙮꚙꚛꙷꚞꙻꙡꙏꙸꙑꙹꙺꙓꙕꚟꙙꙛꙝꙟꙢꙂꙄꙆꙈꙤꙦꙨꙪꙬꚘꚚꙠꙎꙐꙒꙔꙘꙚꙜꙞ︯︮", local:"Црькъвьнословѣньскъ ѩзыкъ / Словѣньскъ‎", localtrans:"(Slovyensk)", 
 orth:`[Cyrillic] &nbsp; Old Church Slavonic variant ([Cyrs]).`,
 also:
-['cjs-glag | glag | ']
+['cjs-glag | glag | '],
+font:"'Times New Roman'",
 },
 
-"cy": { name:"Welsh (Cymraeg, y Gymraeg)", silcode:"cym", source:"cldr_cy,udhr_cym", region:"eur", countries:"Wales, Argentina", script:"latn", speakers:"700000", letter:"áàâäéèêëíìîïóòôöúùûüýÿÁÀÂÄÉÈÊËÍÌÎÏÓÒÔÖÚÙÛÜÝŵŷŴŶŸẃẁẅỳẂẀẄỲ", mark:"́̀̂̈", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪåãæçñøÅÃÆÇÑØ̧̆̊̃̄", local:"Cymraeg [kʰəmˈraiɡ] or y Gymraeg [ə ɡəmˈraiɡ]"},
+"cy": { name:"Welsh (Cymraeg, y Gymraeg)", silcode:"cym", source:"cldr_cy,udhr_cym", region:"eur", countries:"Wales, Argentina", script:"latn", speakers:"700000", letter:"áàâäéèêëíìîïóòôöúùûüýÿÁÀÂÄÉÈÊËÍÌÎÏÓÒÔÖÚÙÛÜÝŵŷŴŶŸẃẁẅỳẂẀẄỲ", mark:"́̀̂̈", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪåãæçñøÅÃÆÇÑØ̧̆̊̃̄", local:"Cymraeg / y Gymraeg ", localtrans:"[kʰəmˈraiɡ / ə ɡəmˈraiɡ]"},
 
-"da": { name:"Danish", silcode:"da", source:"cldr_da,udhr_dan", region:"eur", countries:"Denmark, Finland, Norway, Sweden", script:"latn", speakers:"5500000", letter:"æøåÆØÅ", mark:"̊", punctuation:"§‐–…‘’“”†′″", aux:"œŒŸǿǾáàâçéèêëíîïñóôúùûÿüäöÁÀÂÇÉÈÊËÍÎÏÑÓÔÚÙÛÜÄÖ̧́̀̂̈̃", local:"dansk [ˈtænˀsk]"},
+"da": { name:"Danish", silcode:"da", source:"cldr_da,udhr_dan", region:"eur", countries:"Denmark, Finland, Norway, Sweden", script:"latn", speakers:"5500000", letter:"æøåÆØÅ", mark:"̊", punctuation:"§‐–…‘’“”†′″", aux:"œŒŸǿǾáàâçéèêëíîïñóôúùûÿüäöÁÀÂÇÉÈÊËÍÎÏÑÓÔÚÙÛÜÄÖ̧́̀̂̈̃", local:"dansk", localtrans:"[ˈtænˀsk]"},
 
 "dag": { name:"Dagbani (Dagbanli, Dagbanle)", source:"udhr_dag,5fa369ea3e444b15406074c4e55ab99887619adf", region:"afr", countries:"Ghana", script:"latn", speakers:"1160000", letter:"ƐƆƔƷŋŊɛɔɣʒ’", local:"Dagbanli", 
 orth:`[Latin] &nbsp; Used since 1968.`},
@@ -670,7 +666,8 @@ orth:`[Latin] &nbsp; Used since 1968.`},
 
 "ddn": { name:"Dendi", source:"udhr_ddn", region:"afr", countries:"Benin, Nigeria", script:"latn", speakers:"257050", letter:"ãâõÃÂÕǎǒƆƐǍƉǑŋŊɔɛɖ", mark:"̃̌̂", local:"Songhay"},
 
-"de": { name:"German", silcode:"de", source:"cldr_de,udhr_udhr_deu_1996", region:"eur", countries:"Germany, Austria, Switzerland", script:"latn", speakers:"95000000", letter:"äößüÄÖÜ", mark:"̈", punctuation:"«»§‐–—…‘‚“„", aux:"ăāĕēğĭīıŏōœşŭūĂĀĔĒĞĬİĪŎŌŒŞŬŪŸáàâåãæçéèêëíìîïñóòôøúùûÿÁÀÂÅÃÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧̇́̀̆̂̊̃̄", local:"Deutsch [dɔʏtʃ]", related:`Other language subtags containing the word "German" include: Colonia Tovar German [gct], Hutterite German, Hutterisch [geh], Germanic languages [gem], East Germanic languages [gme], Middle High German (ca. 1050-1500) [gmh], Middle Low German [gml], North Germanic languages [gmq], West Germanic languages [gmw], Old High German (ca. 750-1050) [goh]`,
+"de": { name:"German", silcode:"de", source:"cldr_de,udhr_udhr_deu_1996", region:"eur", countries:"Germany, Austria, Switzerland", script:"latn", speakers:"95000000", letter:"äößüÄÖÜ", mark:"̈", punctuation:"«»§‐–—…‘‚“„", aux:"ăāĕēğĭīıŏōœşŭūĂĀĔĒĞĬİĪŎŌŒŞŬŪŸáàâåãæçéèêëíìîïñóòôøúùûÿÁÀÂÅÃÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧̇́̀̆̂̊̃̄", local:"Deutsch", localtrans:"[dɔʏtʃ]",
+related:`Other language subtags containing the word "German" include: Colonia Tovar German [gct], Hutterite German, Hutterisch [geh], Germanic languages [gem], East Germanic languages [gme], Middle High German (ca. 1050-1500) [gmh], Middle Low German [gml], North Germanic languages [gmq], West Germanic languages [gmw], Old High German (ca. 750-1050) [goh]`,
 orth:`[Latin] &nbsp; Revision of 1996 ([1996]).`,
 also:
 ['de-1901 | latn | Traditional orthography.',
@@ -691,14 +688,14 @@ also:
 ['dje-arab | arab | Naskh style.']
 },
 
-"dsb": { name:"Lower Sorbian", source:"cldr_dsb", region:"eur", script:"latn", speakers:"6900", letter:"óÓčćěłńŕšśžźČĆĚŁŃŔŠŚŽŹ", mark:"̌́", punctuation:"«»§‐–—…‘’‚“„", aux:"ăąāďđĕėęēğĭīıĺľňŏőōœřşťŭůűūżĂĄĀĎĐĔĖĘĒĞĬİĪĹĽŇŎŐŌŒŘŞŤŬŮŰŪŸŻáàâåäãæçéèêëíìîïñòôöøßúùûüýÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÒÔÖØÚÙÛÜÝ̨̧̇̀̆̂̊̈̃̄̋", countries:"Germany", local:"dolnoserbšćina, dolnoserbski [ˈdɔlnɔˌsɛrskʲi]"},
+"dsb": { name:"Lower Sorbian", source:"cldr_dsb", region:"eur", script:"latn", speakers:"6900", letter:"óÓčćěłńŕšśžźČĆĚŁŃŔŠŚŽŹ", mark:"̌́", punctuation:"«»§‐–—…‘’‚“„", aux:"ăąāďđĕėęēğĭīıĺľňŏőōœřşťŭůűūżĂĄĀĎĐĔĖĘĒĞĬİĪĹĽŇŎŐŌŒŘŞŤŬŮŰŪŸŻáàâåäãæçéèêëíìîïñòôöøßúùûüýÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÒÔÖØÚÙÛÜÝ̨̧̇̀̆̂̊̈̃̄̋", countries:"Germany", local:"dolnoserbšćina, dolnoserbski", localtrans:"[ˈdɔlnɔˌsɛrskʲi]"},
 
 "dua": { name:"Duala (Douala, Diwala, Dwela, Dualla, Dwala)", source:"cldr_dua", region:"afr", script:"latn", speakers:"90000", letter:"áéíóúÁÉÍÓÚƁƊƐƆŋūŊŪɓɗɛɔ", mark:"́̄", countries:"Cameroon", local:"Duala"},
 
-"duu": { name:"Drung (Dulong, Derung, Rawang, Trung)", source:"udhr_020", region:"easia", script:"ascii", speakers:"14000", countries:"China, Tibet", local:"Tvrung kvt [tə˧˩ɻuŋ˥˧ kət˥]", 
+"duu": { name:"Drung (Dulong, Derung, Rawang, Trung)", source:"udhr_020", region:"easia", script:"ascii", speakers:"14000", countries:"China, Tibet", local:"Tvrung kvt", localtrans:"[tə˧˩ɻuŋ˥˧ kət˥]", 
 orth:`[Latin] &nbsp; Pinyin-based, used 1984-1990s.`},
 
-"dv": { name:"Dhivehi (Maldivian, Divehi)", local:"ދިވެހި [d̪iˈʋehi], ދިވެހިބަސް (dhivehi-bas)", silcode:"div", rtl:true, 
+"dv": { name:"Dhivehi (Maldivian, Divehi)", local:"ދިވެހި / ދިވެހިބަސް ", localtrans:"[d̪iˈʋehi / d̪iˈʋehi bas]", silcode:"div", rtl:true, 
 source:"udhr_div,e9188c572c9c158255cede2459f076ecb3b50b9f", 
 region:"sasia", countries:"Maldives", script:"thaa", speakers:"340000", 
 letter:"ހށނރބޅކއވމފދތލގޏސޑޒޓޔޕޖޗޘޙޚޛޜޝޞޟޠޡޢޣޤޥ", mark:"ަާިީުޫެޭޮޯް", number:"", punctuation:"،؛", symbol:"", other:"",
@@ -711,7 +708,7 @@ vowels:"cm:10 base:އ/–", clusters:"mrk",
 linked:"thaa/dv", fonts:"/pickers/thaa/", 
 },
 
-"dyo": { name:"Jola-Fonyi", source:"cldr_dyo,udhr_dyo,cd01ae44156075d3e8aa249200adf6c04edb6acb", region:"afr", script:"latn", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"́̃̀", punctuation:"“”‰", symbol:"°", countries:"Senegal, Gambia", local:"Jóola-Fóoñi, kújoolaay", 
+"dyo": { name:"Jola-Fonyi", source:"cldr_dyo,udhr_dyo,cd01ae44156075d3e8aa249200adf6c04edb6acb", region:"afr", script:"latn", speakers:"410000", letter:"áéíñóúàÁÉÍÑÓÚÀŋŊ", mark:"́̃̀", punctuation:"“”‰", symbol:"°", countries:"Senegal, Gambia", local:"Jóola-Fóoñi / kújoolaay", 
 orth:`[Latin] &nbsp; `,
 also:
 ['dyo-arab | arab | Naskh style.']
@@ -724,16 +721,16 @@ also:
 'nqo | nkoo |  Written koiné used by speakers of Maninka, Bambara, Dyula and related dialects. In Côte d’Ivoire &amp; Burkina Faso.']
 },
 
-"dz": { name:"Dzongkha (Bhutanese)", source:"cldr_dz,udhr_dzo", region:"sasia", script:"tibt", speakers:"171080", letter:"ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ", mark:"ིེོུྐྑྒྔྗྙྟྠྡྣྤྥྦྨྩྪྫྭྱྲླྵྶྷཱྕ", punctuation:"༼༽༄༅༆༈༉༊࿐࿑༒࿒࿓࿔༌།༎༏༐༑༔་§‐–—…‘’“”†‡","number":"༡༢༣༤༥༦༧༨༩༠", symbol:"༶྾྿༴", aux:"྄ཊཋཌཎཾཥྀཻཽྚྛྜྞྺྻྼ", countries:"Bhutan", local:"རྫོང་ཁ་ [dzoŋkʰa]"},
+"dz": { name:"Dzongkha (Bhutanese)", source:"cldr_dz,udhr_dzo", region:"sasia", script:"tibt", speakers:"171080", letter:"ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ", mark:"ིེོུྐྑྒྔྗྙྟྠྡྣྤྥྦྨྩྪྫྭྱྲླྵྶྷཱྕ", punctuation:"༼༽༄༅༆༈༉༊࿐࿑༒࿒࿓࿔༌།༎༏༐༑༔་§‐–—…‘’“”†‡","number":"༡༢༣༤༥༦༧༨༩༠", symbol:"༶྾྿༴", aux:"྄ཊཋཌཎཾཥྀཻཽྚྛྜྞྺྻྼ", countries:"Bhutan", local:"རྫོང་ཁ་", localtrans:"[dzoŋkʰa]"},
 
 "ebu": { name:"Embu (Kîembu)", source:"cldr_ebu", region:"afr", script:"latn", speakers:"320000", letter:"ĩũĨŨ", mark:"̃", countries:"Kenya", local:"Kiembu", notes:`The fact that Kîembu is written in Wikipedia with an i-circumflex may indicate that at least one character is missing from the CLDR list.`},
 
-"ee": { name:"Ewe", silcode:"ewe", source:"cldr_ee,udhr_ewe", region:"afr", script:"latn", speakers:"20000000", letter:"áàãéèíìóòõúùÁÀÃÉÈÍÌÓÒÕÚÙƒƉƐƑƔƆƲĩŋũĨŊŨẽẼɖɛɣɔʋ", mark:"́̀̃", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕĭŏœŭĂĀĔĬŎŒŬŸâåäæçêëîïñôöøûüÿÂÅÄÆÇÊËÎÏÑÔÖØÛÜ̧̆̂̊̈̄", countries:"Ghana", local:"Èʋegbe‎ (Èwegbe)", 
+"ee": { name:"Ewe", silcode:"ewe", source:"cldr_ee,udhr_ewe", region:"afr", script:"latn", speakers:"20000000", letter:"áàãéèíìóòõúùÁÀÃÉÈÍÌÓÒÕÚÙƒƉƐƑƔƆƲĩŋũĨŊŨẽẼɖɛɣɔʋ", mark:"́̀̃", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕĭŏœŭĂĀĔĬŎŒŬŸâåäæçêëîïñôöøûüÿÂÅÄÆÇÊËÎÏÑÔÖØÛÜ̧̆̂̊̈̄", countries:"Ghana", local:"Èʋegbe‎", localtrans:"(Èwegbe)", 
 orth:`[Latin] &nbsp; Used since 1850s, primary usage.`},
 
 "ekk": { name:"Standard Estonian", source:"cldr_et,udhr_est", region:"eur", script:"latn", speakers:"1100000", letter:"õäöüÕÄÖÜšžŠŽ", mark:"̌̃̈", aux:"āēīŏōœūĀĒĪŎŌŒŪáàâåæçéèêëíìîïñóòôøúùûÁÀÂÅÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧́̀̂̊̄̆", countries:"Estonia, Finland", local:"Eesti", notes:`Macrolanguage is Estonian [et] . Legacy applications often use et rather ekk.`},
 
-"el": { name:"Greek, Modern", local:"ελληνικά (elliniká), Νέα Ελληνικά‎ (Néa Ellīniká)", silcode:"ell", 
+"el": { name:"Greek, Modern", local:"ελληνικά / Νέα Ελληνικά‎", localtrans:"(elliniká / néa ellīniká)", silcode:"ell", 
 source:"699008154b84228aa76b6e70cce872c0177878c1,cldr_el,udhr_udhr_ell_monotonic", 
 region:"eur", countries:"Greece, Cyprus, Albania", script:"grek", speakers:"12000000", 
 letter:"ʹΆΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώ", letteraux:"ϗϛϞϟϠϡ", mark:"́̈", number:"", punctuation:"«·»‑–—‘’“”…", symbol:"͵€", other:"",
@@ -764,9 +761,9 @@ also:
 'en-shaw | shaw | No longer in use.']
 },
 
-"eo": { name:"Esperanto", silcode:"epo", source:"cldr_eo,udhr_epo", region:"eur", script:"latn", speakers:"~3000", letter:"ĉĝĥĵŝŭĈĜĤĴŜŬ", mark:"̂̆", punctuation:"‐–—…‘’“”", local:"Esperanto, Lingvo Internacia"},
+"eo": { name:"Esperanto", silcode:"epo", source:"cldr_eo,udhr_epo", region:"eur", script:"latn", speakers:"~3000", letter:"ĉĝĥĵŝŭĈĜĤĴŜŬ", mark:"̂̆", punctuation:"‐–—…‘’“”", local:"Esperanto / Lingvo Internacia"},
 
-"es": { name:"Spanish (Castilian)", silcode:"spa", source:"cldr_es,udhr_spa", region:"eur", script:"latn", speakers:"480000000", letter:"áéíïñóúüýÁÉÍÏÑÓÚÜÝ", mark:"́̈̃", punctuation:"‐–—…‘’“”†‡′″¡¿«»§", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªàâåäãæçèêëìîºòôöøùûÿÀÂÅÄÃÆÇÈÊËÌÎÒÔÖØÙÛ̧̀̆̂̊̄", countries:"Spain, Central &amp; South America, USA, Philippines", local:"Castellano, Español"},
+"es": { name:"Spanish (Castilian)", silcode:"spa", source:"cldr_es,udhr_spa", region:"eur", script:"latn", speakers:"480000000", letter:"áéíïñóúüýÁÉÍÏÑÓÚÜÝ", mark:"́̈̃", punctuation:"‐–—…‘’“”†‡′″¡¿«»§", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªàâåäãæçèêëìîºòôöøùûÿÀÂÅÄÃÆÇÈÊËÌÎÒÔÖØÙÛ̧̀̆̂̊̄", countries:"Spain, Central &amp; South America, USA, Philippines", local:"Castellano / Español"},
 
 "et": { name:"Estonian", redirect:true, source:"", region:"eur", script:"latn", speakers:"0", notes:`et is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Standard Estonian [ekk]<br/>Võro [vro]
 Legacy applications often use et rather than [ekk] (Standard Estonian).`},
@@ -792,7 +789,7 @@ Ethnologue regards Fanti as a dialect of Akan: it doesn't have its own entry.`,
 orth: `[Latin] &nbsp; Since 1978.`
 },
 
-"ff": { name:"Fula (Fulani, Fulfulde, Fulah)", silcode:"ful", local:"Fula/Fulfulde",
+"ff": { name:"Fula (Fulani, Fulfulde, Fulah)", silcode:"ful", local:"Fula / Fulfulde",
 source:"2175c4f5eeb22d1c5d1c299445a11ffe23e00a2f",
 region:"afr", countries:"Benin, Burkina Faso, Cameroon, Chad, Gambia, Ghana, Guinea, Liberia, Mali, Mauritania, Niger, Nigeria, Senegal, Sierra Leone", script:"latn", speakers:"24000000", 
 letter:"ÑñŊŋƁƊƝƳƴɓɗɲʼ", 
@@ -893,7 +890,7 @@ also:
 "gaa": { name:"Ga", source:"udhr_gaa", region:"afr", countries:"Ghana", script:"latn", speakers:"745000", letter:"ãÃƆƐŋŊɔɛ", mark:"̃", local:"Ga", 
 orth:`[Latin] Used since 1975`},
 
-"gag": { name:"Gagauz", source:"udhr_gag", region:"eur", countries:"Moldova, Ukraine", script:"latn", speakers:"590000", letter:"üäêöçÜÄÊÖÇışţŞİŢ", mark:"̧̇̈̂", punctuation:"—", local:"Gagauz dili, Gagauzça", 
+"gag": { name:"Gagauz", source:"udhr_gag", region:"eur", countries:"Moldova, Ukraine", script:"latn", speakers:"590000", letter:"üäêöçÜÄÊÖÇışţŞİŢ", mark:"̧̇̈̂", punctuation:"—", local:"Gagauz dili / Gagauzça", 
 orth:`[Latin] &nbsp; [`,
 also:
 ['gag-grek | grek | Until 1957.',
@@ -918,7 +915,7 @@ orth:`[Latin] Used since 1970.`},
 
 "gsw": { name:"Swiss German", source:"cldr_gsw", region:"eur", countries:"Switzerland, France, Austria, Liechtenstein", script:"latn", speakers:"4930000", letter:"äöüÄÖÜ", mark:"̈", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸáàâåæçéèêëíìîïñóòôøúùûÿÁÀÂÅÆÇÉÈÊËÍÌÎÏÑÓÒÔØÚÙÛ̧́̀̆̂̊̄̃", local:"Schwyzerdütsch"},
 
-"gu": { name:"Gujarati", local:"ગુજરાત‎ (Gujarātī)", silcode:"guj", 
+"gu": { name:"Gujarati", local:"ગુજરાત‎", localtrans:"(gujarātī)", silcode:"guj", 
 source:"cldr_gu,udhr_guj,cd18536eac759a61da40080d717664d64a29b397", 
 region:"sasia", countries:"India, Tanzania, Kenya, Bahrain, Zambia, Pakistan", script:"gujr", speakers:"49000000", 
 letter:"અઆઇઈઉઊઋઍએઐઑઓઔકખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલળવશષસહૐૠ", mark:"ંઃ઼ાિીુૂૃૄૅેૈૉોૌ્", number:"૦૧૨૩૪૫૬૭૮૯", punctuation:"।॥૰‘’“”", symbol:"૱", other:"\u200C\u200D",
@@ -974,7 +971,7 @@ linked:"arab/ha", fonts:"/pickers/arab-ha/",
 
 "haw": { name:"Hawaiian", source:"cldr_haw,udhr_haw", region:"oce", countries:"USA", script:"latn", speakers:"24000", letter:"āēīōūĀĒĪŌŪʻ", mark:"̄", punctuation:"’‘“”", local:" ’Olelo Hawai’i"},
 
-"he": { name:"Hebrew", local:" עברית‎ (Ivrit), עברית חדשה‎ (ivrít ḥadašá[h])", silcode:"heb", rtl:true, 
+"he": { name:"Hebrew", local:" עברית‎ / עברית חדשה‎", localtrans:"(ivrit / ivrít ḥadašá[h])", silcode:"heb", rtl:true, 
 source:"0a5ae89a710c3b0c9e880e33bdaaf863175ea62a,cldr_he,udhr_heb", 
 region:"wasia", countries:"Israel, etc.", script:"hebr", speakers:"9000000", 
 letter:"אבגדהוזחטיךכלםמןנסעףפץצקרשת", mark:"", markaux:"ְֱֲֳִֵֶַָׇֹֺֻּׁׂ", number:"", punctuation:"־׳״’”„", symbol:"₪", other:"\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069",
@@ -985,7 +982,7 @@ vowels:"ml:4 cm:11 hcm:11 other:4",
 linked:"hebr/he", fonts:"/pickers/hebr/", 
 },
 
-"hi": { name:"Hindi", local:" मानक हिन्दी‎ (Mānak Hindī), हिन्दी‎ (Hindī)", silcode:"hin", 
+"hi": { name:"Hindi", local:" मानक हिन्दी‎ / हिन्दी‎", localtrans:"(Mānak Hindī / Hindī)", silcode:"hin", 
 source:"21f8184138e858d28a8478313d2b5b59a1f650f6,cldr_hi,udhr_hin", 
 region:"sasia", countries:"India, Nepal, Singapore, South Africa", script:"deva", speakers:"260000000", 
 letter:"अआइईउऊऋऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहऽॐ", letteraux:"क़ख़ग़ज़ड़ढ़फ़", mark:"ँंः़ािीुूृॅेैॉोौ्", number:"०१२३४५६७८९", punctuation:"।॥॰‘’“”", symbol:"₹", other:"\u200C\u200D",
@@ -999,7 +996,7 @@ vowels:"inh:1 cm:11 vs:11 ind:12 pre:1 voc:1",  clusters:"vir stk cnj lig rax", 
 linked:"deva/hi", fonts:"/pickers/deva-hi/", 
 },
 
-"hil": { name:"Hiligaynon (Ilonggo)", source:"udhr_hil", region:"seasia", countries:"Philippines", script:"ascii", speakers:"9300000", local:"Hiligaynon, Ilonggo"},
+"hil": { name:"Hiligaynon (Ilonggo)", source:"udhr_hil", region:"seasia", countries:"Philippines", script:"ascii", speakers:"9300000", local:"Hiligaynon / Ilonggo"},
 
 "hlt": { name:"Matu Chin", source:"udhr_hlt", region:"seasia", countries:"Myanmar, India", script:"ascii", speakers:"40000", local:"Matu Chin"},
 
@@ -1008,7 +1005,7 @@ linked:"deva/hi", fonts:"/pickers/deva-hi/",
 "hni": { name:"Hani", source:"udhr_hni", region:"easia", countries:"China, Vietnam", script:"ascii", speakers:"760000", local:"Ha Nhi", 
 orth:`[Latin] &nbsp; Ethnologue says that this orthography is pinyin-based, used in 1958–1964 and from 1982, experimental, used in education, literature, and media.`},
 
-"hnn-hano": { name:"Hanunoo", local:"ᜱᜨᜳᜨᜳᜢ (Hanunó'o)", 
+"hnn-hano": { name:"Hanunoo", local:"ᜱᜨᜳᜨᜳᜢ", localtrans:"(Hanunó'o)", 
 source:"f9d39cb72f3eca8fa47b766a6fdb42797b8390f9", 
 region:"oce", countries:"Philippines", script:"hano", speakers:"25000", 
 letter:"ᜩᜦᜣᜪᜧᜤᜰᜱᜫᜨᜥᜯᜭᜮᜬᜠᜡᜢ", mark:"ᜲᜳ᜴", punctuation:"᜵᜶", 
@@ -1025,7 +1022,7 @@ fonts:"/pickers/hano/",
 "hr": { name:"Croatian", silcode:"hrv", source:"cldr_hr,udhr_hrv", region:"eur", countries:"Croatia, Slovenia, Bosnia &amp; Herzegovina, Austria, Hungary", script:"latn", speakers:"5600000", letter:"čćžđšČĆŽĐŠ", mark:"̌́", punctuation:"‐–—…‘’‚“”„′″", local:"Hrvatski", 
 related:`Macrolanguage is Serbo-Croatian [sh].`},
 
-"hsb": { name:"Upper Sorbian", source:"cldr_hsb,udhr_hsb", region:"eur", countries:"Germany", script:"latn", speakers:"13000", letter:"čćźěłńřšžČĆŹĚŁŃŘŠŽóÓ", mark:"̌́", punctuation:"«»§‐–—…‘’‚“„", aux:"ăąāďđĕėęēğĭīıĺľňŏőōœŕśşťŭůűūżĂĄĀĎĐĔĖĘĒĞĬİĪĹĽŇŎŐŌŒŔŚŞŤŬŮŰŪŸŻáàâåäãæçéèêëíìîïñòôöøßúùûüýÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÒÔÖØÚÙÛÜÝ̨̧̇̀̆̂̊̈̃̄̋", local:"Hornjoserbski, Hornjoserbšćina"},
+"hsb": { name:"Upper Sorbian", source:"cldr_hsb,udhr_hsb", region:"eur", countries:"Germany", script:"latn", speakers:"13000", letter:"čćźěłńřšžČĆŹĚŁŃŘŠŽóÓ", mark:"̌́", punctuation:"«»§‐–—…‘’‚“„", aux:"ăąāďđĕėęēğĭīıĺľňŏőōœŕśşťŭůűūżĂĄĀĎĐĔĖĘĒĞĬİĪĹĽŇŎŐŌŒŔŚŞŤŬŮŰŪŸŻáàâåäãæçéèêëíìîïñòôöøßúùûüýÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÑÒÔÖØÚÙÛÜÝ̨̧̇̀̆̂̊̈̃̄̋", local:"Hornjoserbski / Hornjoserbšćina"},
 
 "ht": { name:"Haitian Creole", silcode:"hat", source:"udhr_hat_kreyol,udhr_hat_popular", region:"carib", countries:"Haiti, Domenican Republic", script:"latn", speakers:"113000", letter:"èéòÈÉÒ", mark:"̀́", local:"Kreyòl Ayisyen"},
 
@@ -1035,7 +1032,7 @@ related:`Macrolanguage is Serbo-Croatian [sh].`},
 
 "huu": { name:"Murui Huitoto (Bue, Witoto Murui, Witoto)", source:"udhr_huu", region:"sam", countries:"Colombia, Peru", script:"latn", speakers:"7800", letter:"úñáÚÑÁƗɨ", mark:"́̃", local:"Murui"},
 
-"hy": { name:"Armenian", local:"հայերէն/հայերեն‎ (hayeren)", silcode:"hye", 
+"hy": { name:"Armenian", local:"հայերէն/հայերեն‎", localtrans:"(hayeren)", silcode:"hye", 
 source:"ac321e266f0a5b1374f2b3889d418fc3399daf34,cldr_hy,udhr_hye", 
 region:"wasia", countries:"Armenia, Russia, Azerbaijan, Iran", script:"armn", speakers:"10000000", 
 letter:"ԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖաբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆև", mark:"", number:"", punctuation:"«»՛՜՝՞։֊’․…", symbol:"֍֎֏", other:"", 
@@ -1066,7 +1063,7 @@ also:
 ['ii-latn | latn | 1951-1957, 1958-1960, from 1975.']
 },
 
-"ike": { name:"Inuktitut, Eastern Canadian", local:"ᐃᓄᒃᑎᑐᑦ‎ (Inuktitut)", label:"Inuktitut, East Canadian",
+"ike": { name:"Inuktitut, Eastern Canadian", local:"ᐃᓄᒃᑎᑐᑦ‎", localtrans:"(Inuktitut)", label:"Inuktitut, East Canadian",
 source:"3cc72e78bdfa007c9612513a501835f81aa20ff2,udhr_ike", 
 region:"nam", countries:"Canada", script:"cans", speakers:"34000", 
 letter:"ᐁᐃᐄᐅᐆᐊᐋᐯᐱᐲᐳᐴᐸᐹᑉᑌᑎᑏᑐᑑᑕᑖᑦᑫᑭᑮᑯᑰᑲᑳᒃᒉᒋᒌᒍᒎᒐᒑᒡᒣᒥᒦᒧᒨᒪᒫᒻᓀᓂᓃᓄᓅᓇᓈᓐᓓᓕᓖᓗᓘᓚᓛᓪᓭᓯᓰᓱᓲᓴᓵᔅᔦᔨᔩᔪᔫᔭᔮᔾᕃᕆᕇᕈᕉᕋᕌᕐᕓᕕᕖᕗᕘᕙᕚᕝᕼᕿᖀᖁᖂᖃᖄᖅᖏᖐᖑᖒᖓᖔᖕᖠᖡᖢᖣᖤᖥᖦᖯᙯᙰᙱᙲᙳᙴᙵᙶ", letteraux:"ᕴᕵᕶᕷᕸᕹᕺᕻ", mark:"", number:"", punctuation:"‘’“”", symbol:"", other:"",
@@ -1132,7 +1129,7 @@ vowels:"inh:2 cm:5 vs:5 ind:5 base:ꦲ/h,a pre:1 comp:1 voc:2",  clusters:"vvir 
 linked:"java/jv", fonts:"/pickers/java/", 
 },
 
-"ka": { name:"Georgian", local:"ქართული‎ (Kartuli), ქართული ენა‎ (Kartuli ena)", silcode:"kat", 
+"ka": { name:"Georgian", local:"ქართული‎ / ქართული ენა‎", localtrans:"(kartuli / kartuli ena)", silcode:"kat", 
 source:"2cafedfc80733bd49fb1ee6af49657333a88c1a3,cldr_ka,udhr_kat", 
 region:"eur", countries:"Georgia, Turkey, Iran", script:"geor", speakers:"3700000", 
 letter:"აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰᲐᲑᲒᲓᲔᲕᲖᲗᲘᲙᲚᲛᲜᲝᲞᲟᲠᲡᲢᲣᲤᲥᲦᲧᲨᲩᲪᲫᲬᲭᲮᲯᲰ", letteraux:"ჱჲჳჴ", mark:"", number:"", punctuation:"«»“„", punctuationaux:"჻", symbol:"₾№", other:"", 
@@ -1153,7 +1150,7 @@ also:
 
 "kam": { name:"Kamba (Kikamba)", source:"cldr_kam", region:"afr", countries:"Kenya, Tanzania", script:"latn", speakers:"3900000", letter:"ĩũĨŨ", mark:"̃", local:"Kĩĩkamba"},
 
-"kbd": { name:"Kabardian (Kabardino-Cherkess, East Circassian)", source:"udhr_kbd", region:"eur", countries:"Turkey, Russia, Jordan, Syria", script:"cyrl", speakers:"1600000", letter:"цӏыхуэфащмтеднйпсожлъкрзгьибяшвчіюЦӀЫХУЭФАЩМТЕДНЙПСОЖЛЪКРЗГЬИБЯШВЧІЮ", mark:"̆", local:" Къэбэрдей Адыгэбзэ‎ (Qăbărdey Adəgăbză)"},
+"kbd": { name:"Kabardian (Kabardino-Cherkess, East Circassian)", source:"udhr_kbd", region:"eur", countries:"Turkey, Russia, Jordan, Syria", script:"cyrl", speakers:"1600000", letter:"цӏыхуэфащмтеднйпсожлъкрзгьибяшвчіюЦӀЫХУЭФАЩМТЕДНЙПСОЖЛЪКРЗГЬИБЯШВЧІЮ", mark:"̆", local:" Къэбэрдей Адыгэбзэ‎", localtrans:"(Qăbărdey Adəgăbză)"},
 
 "kbp": { name:"Kabiye", source:"udhr_kpb", region:"afr", countries:"Togo", script:"latn", speakers:"1000000", letter:"ñÑƆƐƱƉƖƔŋŊɔɛʊɖɩɣ", mark:"̃", local:"Kabɩyɛ, Kabɩyɛ Tɔm"},
 
@@ -1165,7 +1162,7 @@ also:
 ['kdh-arab | arab | Naskh style.']
 },
 
-"kea": { name:"Kabuverdianu (Cape Verdean Creole)", source:"cldr_kea,udhr_kea", region:"afr", countries:"Cape Verde Islands, USA, Portugal", script:"latn", speakers:"1200000", letter:"ñçêéâíèáôóãºõúàòÑÇÊÉÂÍÈÁÔÓÃÕÚÀÒ", mark:"̧̃̂́̀", punctuation:"’", aux:"ẽẼăāĕēĭĩīŏōœŭũūĂĀĔĒĬĨĪŎŌŒŬŨŪŸªáàâåäãæçéèêëíìîïºóòôöõøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÓÒÔÖÕØÚÙÛǗ̧̀̆̂̊̈̄", local:"Kabuverdianu, Kriol", 
+"kea": { name:"Kabuverdianu (Cape Verdean Creole)", source:"cldr_kea,udhr_kea", region:"afr", countries:"Cape Verde Islands, USA, Portugal", script:"latn", speakers:"1200000", letter:"ñçêéâíèáôóãºõúàòÑÇÊÉÂÍÈÁÔÓÃÕÚÀÒ", mark:"̧̃̂́̀", punctuation:"’", aux:"ẽẼăāĕēĭĩīŏōœŭũūĂĀĔĒĬĨĪŎŌŒŬŨŪŸªáàâåäãæçéèêëíìîïºóòôöõøúùûüÿÁÀÂÅÄÃÆÇÉÈÊËÍÌÎÏÓÒÔÖÕØÚÙÛǗ̧̀̆̂̊̈̄", local:"Kabuverdianu / Kriol", 
 orth:`[Latin] &nbsp; Known as ALUPEC.`},
 
 "kg": { name:"Kongo", silcode:"kon", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"6500000", related:`kg is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Koongo [kng]<br/>San Salvador Kongo [kwy]<br/>Laari [ldi].
@@ -1178,7 +1175,7 @@ also:
 ['kha-beng | beng | No longer in use.']
 },
 
-"khb": { name:"Tai Lü (Tai Lue)", local:"ᦅᧄᦺᦑᦟᦹᧉ‎ (Kam Tai Lue)", 
+"khb": { name:"Tai Lü (Tai Lue)", local:"ᦅᧄᦺᦑᦟᦹᧉ‎", localtrans:"(Kam Tai Lue)", 
 source:"23af4e1d7781a7a933d2ffac5f71a42a5df6f629", 
 region:"easia", countries:"China, Laos, Thailand, Myanmar", script:"talu", speakers:"550000", 
 letter:"ᦀᦁᦂᦃᦄᦅᦆᦇᦈᦉᦊᦋᦌᦍᦎᦏᦐᦑᦒᦓᦔᦕᦖᦗᦘᦙᦚᦛᦜᦝᦞᦟᦠᦡᦢᦣᦤᦥᦦᦧᦨᦩᦪᦫᦰᦱᦲᦳᦴᦵᦶᦷᦸᦹᦺᦻᦼᦽᦾᦿᧀᧁᧂᧃᧄᧅᧆᧇᧈᧉ", mark:"", number:"᧐᧑᧒᧓᧔᧕᧖᧗᧘᧙᧚", punctuation:"、。〈〉《》！（），．：；？", symbol:"᧞᧟", other:"", 
@@ -1191,7 +1188,7 @@ vowels:"inh:1 let:17 venc:4 comp:9", medials:"let:6", finals:"cm:7",
 linked:"talu/khb", picker:"pickers/talu-khb/"
 },
 
-"khk": { name:"Halh Mongolian", local:"Монгол хэл‎ (Mongol khel)", label:"Mongolian, Halh",
+"khk": { name:"Halh Mongolian", local:"Монгол хэл‎", localtrans:"(Mongol khel)", label:"Mongolian, Halh",
 source:"f41ea8a05b20e8c0c5d97f2c8d98f10aae211c03,cldr_mn,udhr_khk", 
 region:"easia", countries:"Mongolia, Russia", script:"cyrl", speakers:"2640000", 
 letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёҮүӨө", mark:"", markaux:"̆̈", number:"", punctuation:"«»“„…", symbol:"₮", other:"",
@@ -1207,7 +1204,7 @@ vowels:"let:30",
 linked:"cyrl/mn", fonts:"/pickers/cyrl-mn/", 
 },
 
-"khk-mong": { name:"Halh Mongolian", local:"Монгол хэл‎ (Mongol khel)", label:"Mongolian, Halh",
+"khk-mong": { name:"Halh Mongolian", local:"Монгол хэл‎", localtrans:"(Mongol khel)", label:"Mongolian, Halh",
 source:"cldr_mn", 
 region:"easia", countries:"Mongolia, China", script:"mong", speakers:"2640000", 
 letter:"ᠠᠡᠢᠣᠤᠥᠦᠧᠨᠩᠪᠫᠬᠭᠮᠯᠰᠱᠲᠳᠴᠵᠶᠷᠸᠹᠺᠻᠼᠽᠾᠿᡀᡁᡂ", mark:"᠋᠌᠍᠏ᢅᢆᢩ", number:"᠐᠑᠒᠓᠔᠕᠖᠗᠘᠙", punctuation:"«»᠁᠂᠃᠄᠆᠊〈〉《》〔〕！（）？", symbol:"", other:"\u180E\u200C\u200D",
@@ -1227,9 +1224,9 @@ linked:"mong/mn", fonts:"/pickers/mong/",
 
 "ki": { name:"Kikuyu (Gikuyu)", silcode:"kik", source:"cldr_ki", region:"afr", countries:"Kenya", script:"latn", speakers:"6600000", letter:"ĩũĨŨ", mark:"̃", local:"Gĩgĩkũyũ"},
 
-"kjh": { name:"Khakas", source:"udhr_kjh", region:"nasia", countries:"Russia", script:"cyrl", speakers:"43000", letter:"прайтиксізледјвоцяыгнмбңюьчуғхжҷэфщъПРАЙТИКСІЗЛЕДЈВОЦЯЫГНМБҢЮЬЧУҒХЖҶЭФЩЪ", mark:"̆", local:"Хакас тілі‎ (Xakas tili)"},
+"kjh": { name:"Khakas", source:"udhr_kjh", region:"nasia", countries:"Russia", script:"cyrl", speakers:"43000", letter:"прайтиксізледјвоцяыгнмбңюьчуғхжҷэфщъПРАЙТИКСІЗЛЕДЈВОЦЯЫГНМБҢЮЬЧУҒХЖҶЭФЩЪ", mark:"̆", local:"Хакас тілі‎", localtrans:"(Xakas tili)"},
 
-"kk": { name:"Kazakh", silcode:"kaz", source:"cldr_kk,udhr_kaz", region:"casia", countries:"Kazakhstan, China, Uzbekistan, Mongolia", script:"cyrl", speakers:"15000000", letter:"аәбвгғдеёжзийкқлмнңоөпрстуұүфхһцчшщъыіьэюяАӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯ", punctuation:"‐–—…‘’“”«»§", local:"казақ тілі‎ (Qazaq tili), казақша‎ (Qazaqşa)", 
+"kk": { name:"Kazakh", silcode:"kaz", source:"cldr_kk,udhr_kaz", region:"casia", countries:"Kazakhstan, China, Uzbekistan, Mongolia", script:"cyrl", speakers:"15000000", letter:"аәбвгғдеёжзийкқлмнңоөпрстуұүфхһцчшщъыіьэюяАӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯ", punctuation:"‐–—…‘’“”«»§", local:"казақ тілі‎ / казақша‎", localtrans:"(qazaq tili / qazaqşa)", 
 orth:`[Cyrillic] &nbsp; Used in Kazakhstan and Mongolia.`,
 also:
 ['kk-arab | arab | Used in China and Iran.',
@@ -1253,7 +1250,7 @@ linked:"lana/kkh",
 "kln": { name:"Kalenjin", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"0", related:`kln is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Markweeta [enb]<br/>Keiyo [eyo]<br/>Nandi [niq]<br/>Okiek [oki]<br/>Pökoot [pko]<br/>Kipsigis [sgc]<br/>Sabaot [spy]<br/>Terik [tec]<br/>Tugen [tuy].
 Legacy applications often use kln rather than [spy] (Sabaot).`},
 
-"km": { name:"Khmer (Cambodian)", local:"ខ្មែរ‎ (Khmer)", silcode:"khm", 
+"km": { name:"Khmer (Cambodian)", local:"ខ្មែរ‎", localtrans:"(khmer)", silcode:"khm", 
 source:"cldr_km,udhr_khm,7f422cd6f0781ddbcb488b785f4f0d3a5883c93b", 
 region:"seasia", countries:"Cambodia, Vietnam", script:"khmr", speakers:"16000000", 
 letter:"កខគឃងចឆជឈញដឋណតថទធនបផពភមយរលវសហឡអឥឦឧឩឪឫឭឯឰឱឲឳៗ", letteraux:"ឌឍឬឮ", mark:"ាិីឹឺុូួើឿៀេែៃោៅំះៈ៉៊់៌៍៎៏័៑្៝", number:"០១២៣៤៥៦៧៨៩", punctuation:"។៕៖៙៚‘’“”", punctuationaux:"៘", symbol:"៛", other:"\u200B\u200C\u200D",
@@ -1281,7 +1278,7 @@ also:
 'kmr-x-yekgirtu | latn | Yekgirtú (Kurdish Unified Alphabet) promoted by the Kurdish Academy of Language for all Kurdish dialects.',]
 },
 
-"kn": { name:"Kannada (Canarese, Kanarese)", local:"ಕನ್ನಡ‎ (Kannaḍa)", silcode:"kan", 
+"kn": { name:"Kannada (Canarese, Kanarese)", local:"ಕನ್ನಡ‎", localtrans:"(kannaḍa)", silcode:"kan", 
 source:"cldr_kn,udhr_kan", 
 region:"sasia", countries:"India", script:"knda", speakers:"37700000", 
 letter:"ಅಆಇಈಉಊಋೠಌೡಎಏಐಒಓಔಕಖಗಘಙಚಛಜಝಞಟಠಡಢಣತಥದಧನಪಫಬಭಮಯರಱಲವಶಷಸಹಳಽ", mark:"಼̃ಂಃಾಿೀುೂೃೄೆೇೈೊೋೌ್ೕೖ", number:"೦೧೨೩೪೫೬೭೮೯", punctuation:"‐–—…‘’“”′″", other:"\u200C\u200D", aux:"ೞ", 
@@ -1291,7 +1288,7 @@ also:
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
 },
 
-"knc": { name:"Kanuri (Yerwa)", source:"udhr_knc", region:"afr", countries:"Nigeria, Sudan, Chad, Niger, Cameroon", script:"latn", speakers:"4200000", letter:"əƏ", local:"Kanuri, Yerwa Kanuri", 
+"knc": { name:"Kanuri (Yerwa)", source:"udhr_knc", region:"afr", countries:"Nigeria, Sudan, Chad, Niger, Cameroon", script:"latn", speakers:"4200000", letter:"əƏ", local:"Kanuri / Yerwa Kanuri", 
 orth:`[Latin] &nbsp; Used since 1949.`,
 also:
 ['knc-arab | arab | Naskh style.',]
@@ -1299,7 +1296,7 @@ also:
 
 "kng": { name:"Koongo (Kikongo)", source:"udhr_kng", region:"afr", countries:"DRC, Angola, Congo", script:"ascii", speakers:"6500000", local:"Kikongo"},
 
-"knn": { name:"Konkani", source:"cldr_kok", region:"sasia", countries:"India", script:"deva", speakers:"7400000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"़ंँःािीुूृॅेैॉोौ्","number":"०१२३४५६७८९", local:"कोंकणी‎ (Konknni)", notes:`CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here.`, 
+"knn": { name:"Konkani", source:"cldr_kok", region:"sasia", countries:"India", script:"deva", speakers:"7400000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"़ंँःािीुूृॅेैॉोौ्","number":"०१२३४५६७८९", local:"कोंकणी‎", localtrans:"(Konknni)", notes:`CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here.`, 
 orth:`Devanagari. &nbsp; Primary usage.`,
 also:
 ['knn-knda | knda | No longer in use.',
@@ -1334,7 +1331,7 @@ also:
 ['knc-cyrl | cyrl | No longer in use.',]
 },
 
-"ks": { name:"Kashmiri (Koshur)", local:"کٲشُر‎ (Koshur)", silcode:"kas", rtl:true, 
+"ks": { name:"Kashmiri (Koshur)", local:"کٲشُر‎", localtrans:"(koshur)", silcode:"kas", rtl:true, 
 source:"cldr_ks,57237835618d4daaf27d149d55e14be159182c33", 
 region:"sasia", countries:"India, Pakistan", script:"arab", speakers:"5600000", 
 letter:"ؠآأؤإابتثجحخدذرزسشصضطظعغفقلمنوٲٹپچڈڑژکگںھہۂۄیے", letteraux:"ـ", mark:"͏َُِّْٕٖٟٔٗٚ", markaux:"ٓ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"،؛؟٪۔“”", symbol:"", other:"\u061C\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069",
@@ -1346,7 +1343,7 @@ vowels:"let:7 cm:10 other:2 comp:18(3)", clusters:"mrk",
 linked:"arab/ks", fonts:"/pickers/arab-ks/", font:"'Noto Nastaliq Urdu', 'Urdu Typesetting'",
 },
 
-"ks-deva": { name:"Kashmiri (Koshur)", local:"कॉशुर‎ (Koshur)", silcode:"kas", 
+"ks-deva": { name:"Kashmiri (Koshur)", local:"कॉशुर‎", localtrans:"(koshur)", silcode:"kas", 
 source:"7f2afe74cc91aa1c3986c9017fac92907f6cd260", 
 region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", 
 letter:"अआइईउऊऋऎएऐऒओऔकखगचछजटठडतथदनपफबमयरलवशसहज़ॳॴॵॶॷ", letteraux:"घङझञढणधभष", mark:"ँंऺऻ़ािीुूृॆेैॊोौ्ॏॖॗ", number:"", punctuation:"।॥", symbol:"", other:"\u200C\u200D", 
@@ -1364,7 +1361,7 @@ linked:"deva/ks", fonts:"/pickers/deva-ks/",
 
 "ksh": { name:"Kölsch (Colognian)", source:"cldr_ksh", region:"eur", countries:"Germany", script:"latn", speakers:"250000", letter:"ėœůĖŒŮåäæëößüÅÄÆËÖÜ", mark:"̊̈̇", punctuation:"‐–—…‘‚“„†‡§⸗", symbol:"°", aux:"ăāĕēğĭīĳıłŏōŭūĂĀĔĒĞĬĪĲŁŎŌŬŪŸáàâãçéèêíìîïñóòôøúùûÿÁÀÂÃÇÉÈÊÍÌÎÏÑÓÒÔØÚÙÛ̧́̀̆̂̃̄", local:"Kölsch"},
 
-"ktu": { name:"Kituba", source:"udhr_ktu", region:"afr", countries:"DRC", script:"ascii", speakers:"5400000", local:"Kikongo ya leta, Kituba"},
+"ktu": { name:"Kituba", source:"udhr_ktu", region:"afr", countries:"DRC", script:"ascii", speakers:"5400000", local:"Kikongo ya leta / Kituba"},
 
 "ku": { name:"Kurdish", redirect:true, source:"", region:"wasia", script:"macrolanguage", speakers:"0", related:`ku is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Central Kurdish ([ckb])<br/>Northern Kurdish ([kmr])<br/>Southern Kurdish ([sdh])
 Legacy applications often use ku rather than [kmr] (Northern Kurdish).`},
@@ -1373,14 +1370,14 @@ Legacy applications often use ku rather than [kmr] (Northern Kurdish).`},
 
 "kwi": { name:"Awa-Cuaiquer (Awa Pit)", source:"udhr_kwi", region:"sam", countries:"Colombia, Ecuador", script:"latn", speakers:"13000", letter:"áñëóçâùéàêÁÑËÓÇÂÙÉÀÊ", mark:"̧́̃̈̂̀", punctuation:"·", local:"Awapit"},
 
-"ky": { name:"Kyrgyz (Kirghiz)", silcode:"kir", source:"cldr_ky,udhr_kir", region:"casia", countries:"Kyrgyzstan, China, Tajikistan", script:"cyrl", speakers:"4300000", letter:"абгдеёжзийклмнӊоөпрстуүхчшъыэюяцңвьфАБГДЕЁЖЗИЙКЛМНӉОӨПРСТУҮХЧШЪЫЭЮЯЦҢВЬФ", mark:"̈̆", punctuation:"‐–—…‘‚“„«»§", aux:"вфцщьВФЦЩЬ", local:"кыргыз тили‎ (Kyrgyz tili), кыргызча‎ (Kyrgyzcha)", 
+"ky": { name:"Kyrgyz (Kirghiz)", silcode:"kir", source:"cldr_ky,udhr_kir", region:"casia", countries:"Kyrgyzstan, China, Tajikistan", script:"cyrl", speakers:"4300000", letter:"абгдеёжзийклмнӊоөпрстуүхчшъыэюяцңвьфАБГДЕЁЖЗИЙКЛМНӉОӨПРСТУҮХЧШЪЫЭЮЯЦҢВЬФ", mark:"̈̆", punctuation:"‐–—…‘‚“„«»§", aux:"вфцщьВФЦЩЬ", local:"кыргыз тили‎ / кыргызча‎", localtrans:"(kyrgyz tili / kyrgyzcha)", 
 orth:`Cyrillic. &nbsp; Not used in Afghanistan.`,
 also:
 ['ky-arab | arab | Naskh style, used in China.',
 'ky-latn | latn | Used in Turkey.',]
 },
 
-"kyu": { name:"Western Kayah (Karenni, Kayah, Red Karen, Yang Daeng)", local:"ꤊꤢ꤬ꤛꤢ꤭ꤜꤟꤤ꤬ ꤍꤟꤥ‎ (ka¹ya³li̤¹ ŋo̤)", label:"Kayah, Western",
+"kyu": { name:"Western Kayah (Karenni, Kayah, Red Karen, Yang Daeng)", local:"ꤊꤢ꤬ꤛꤢ꤭ꤜꤟꤤ꤬ ꤍꤟꤥ‎", localtrans:"(ka¹ya³li̤¹ ŋo̤)", label:"Kayah, Western",
 source:"0fffd0a5c3dc3ba4fb309222f060ad348b1f197f", 
 region:"seasia", countries:"Myanmar, Thailand", script:"kali", speakers:"170000", 
 letter:"ꤊꤋꤌꤍꤎꤏꤐꤑꤒꤓꤔꤕꤖꤗꤘꤙꤚꤛꤜꤝꤞꤟꤠꤡꤢꤣꤤꤥ", mark:"ꤦꤧꤨꤩꤪ꤫꤬꤭", number:"꤀꤁꤂꤃꤄꤅꤆꤇꤈꤉", punctuation:"“”꤮꤯", symbol:"", other:"", 
@@ -1391,14 +1388,15 @@ vowels:"let:5 cm:5 comp:12 other:3",
 linked:"kali/kyu", fonts:"/pickers/kali/", 
 },
 
-"lad": { name:"Ladino", source:"udhr_lad", region:"wasia", countries:"Israel, Turkey", script:"latn", speakers:"100000", letter:"íÍ", mark:"́", punctuation:"–", local:"גﬞודיאו־איספאנייול‎ (Djudeo-espanyol), לאדינו‎ (Ladino)", 
+"lad": { name:"Ladino", source:"udhr_lad", region:"wasia", countries:"Israel, Turkey", script:"latn", speakers:"100000", letter:"íÍ", mark:"́", punctuation:"–", local:"גﬞודיאו־איספאנייול‎ / לאדינו‎", localtrans:"(djudeo-espanyol / ladino)", 
 orth:`Latin. &nbsp; Used in Turkey.`,
 also:
 ['ky-hebr | hebr | ',
-'ky-cyrl | cyrl | Used by Sephardic speakers in the Balkans.',]
+'ky-cyrl | cyrl | Used by Sephardic speakers in the Balkans.',],
+font:"'Times New Roman'",
 },
 
-"lag": { name:"Langi (Rangi)", source:"cldr_lag", region:"afr", countries:"Tanzania", script:"latn", speakers:"410000", letter:"áéíóúÁÉÍÓÚƗɄɨʉ", mark:"́", local:"Kɨlaangi, Langi"},
+"lag": { name:"Langi (Rangi)", source:"cldr_lag", region:"afr", countries:"Tanzania", script:"latn", speakers:"410000", letter:"áéíóúÁÉÍÓÚƗɄɨʉ", mark:"́", local:"Kɨlaangi / Langi"},
 
 "lb": { name:"Luxembourgish (Luxemburgish, Letzeburgesch)", silcode:"ltz", source:"cldr_lb,udhr_ltz", region:"eur", countries:"Luxembourg, France, Belgium, Germany", script:"latn", speakers:"390000", letter:"äéëêüöôàÄÉËÊÜÖÔÀ", mark:"̈́̂̀", punctuation:"«»§‐–—…‘‚“„", aux:"ăāĕēğĭīıŏōœşŭūĂĀĔĒĞĬİĪŎŌŒŞŬŪŸáàâåãæçèêíìîïñóòôöøßúùûüÿÁÀÂÅÃÆÇÈÊÍÌÎÏÑÓÒÔÖØÚÙÛÜ̧̇̀̆̂̊̃̄", local:"Lëtzebuergesch", notes:`UDHR has many more accented characters than CLDR.`},
 
@@ -1420,7 +1418,7 @@ orth:`Latin. &nbsp; Used since 1947.`},
 
 "lia": { name:"Limba", source:"udhr_lia", region:"afr", countries:"Sierra Leone", script:"latn", speakers:"340000", letter:"ƆƐŋŊɔɛ", local:"Hulimba ha"},
 
-"lif": { name:"Limbu", local:"ᤃᤠᤰᤌᤢᤱ ᤐᤠ᤺ᤴ", silcode:"lif", 
+"lif": { name:"Limbu", local:"ᤃᤠᤰᤌᤢᤱ ᤐᤠ᤺ᤴ", localtrans:"[gaktʰuŋ paːn]", silcode:"lif", 
 source:"", 
 region:"sasia", countries:"Nepal, Sikkim",
 script:"limb", speakers:"400000", 
@@ -1436,7 +1434,7 @@ linked:"limb/lif", fonts:"/pickers/limb-lif", font:"Namdhinggo, 'Noto Sans Limbu
 
 "lij": { name:"Ligurian", source:"udhr_lij", region:"eur", countries:"Italy, Monaco", script:"latn", speakers:"500000", letter:"çòæéùöôâîàêÇÒÆÉÙÖÔÂÎÀÊ", mark:"̧̀́̈̂", punctuation:"’", local:"Ligure"},
 
-"lis": { name:"Lisu", local:"ꓡꓲ-ꓢꓴ (Li-su), Lisu", 
+"lis": { name:"Lisu", local:"ꓡꓲ-ꓢꓴ", localtrans:"(li-su / lisu)", 
 source:"d6a5076cb77188fd52722d4a57b621ac1390c714", 
 region:"easia", countries:"China, Myanmar, Thailand", script:"lisu", speakers:"940000", 
 letter:"ˍꓐꓑꓒꓓꓔꓕꓖꓗꓘꓙꓚꓛꓜꓝꓞꓟꓠꓡꓢꓣꓤꓥꓦꓧꓨꓩꓪꓫꓬꓭꓮꓯꓰꓱꓲꓳꓴꓵꓶꓷꓸꓹꓺꓻꓼꓽ꓿", mark:"", number:"", punctuation:"…《》꓾", symbol:"", other:"",
@@ -1457,7 +1455,7 @@ linked:"lisu/lis", fonts:"/pickers/lisu/",
 
 "lns": { name:"Lamnso' (Nso)", source:"udhr_lns", region:"afr", countries:"Cameroon", script:"latn", speakers:"240000", letter:"áéùìòúíóàèÁÉÙÌÒÚÍÓÀÈƏŋŊə", mark:"̀́", punctuation:"’", local:"Lamnso’"},
 
-"lo": { name:"Lao (Laotian)", local:"ພາສາລາວ‎ (Phasa Lao)", silcode:"lao", 
+"lo": { name:"Lao (Laotian)", local:"ພາສາລາວ‎", localtrans:"(Phasa Lao)", silcode:"lao", 
 source:"267d2078d559460c36c580699263c209cb06bf98,cldr_lo,udhr_lao", 
 region:"seasia", countries:"Laos, Cambodia, Vietnam", script:"laoo", speakers:"~25000000", 
 letter:"ກຂຄງຈຊຍດຕຖທນບປຜຝພຟມຢຣລວສຫອຮຯະາຳຽເແໂໃໄໆໜໝ", mark:"ັິີຶືຸູົຼ່້໊໋ໍ", number:"໐໑໒໓໔໕໖໗໘໙", punctuation:"«»‑‘’“”…", symbol:"₭", other:"\u200B\u2060",
@@ -1477,13 +1475,13 @@ linked:"laoo/lo", fonts:"/pickers/lao/",
 "lrc": { name:"Luri (Lurish)", rtl:true, source:"cldr_lrc", region:"wasia", countries:"Iran", script:"arab", speakers:"13000000", letter:"آأؤئابپتثجچحخدذرزژسشصضطظعغفڤقکگلمنھەوۉۊیؽي", mark:"ٙٛٓٔ", punctuation:"،٫٬؛؟‐…‹›«»", aux:"ًٌٍَُِّْإةكهىٕ", 
 orth:`Arabic. &nbsp; Uses both naskh and nastaliq ([Aran]) styles.`},
 
-"lt": { name:"Lithuanian", silcode:"lit", source:"cldr_lt,udhr_lit", region:"eur", countries:"Lithuania", script:"latn", speakers:"3000000", letter:"éÉąčęėįšųūžĄČĘĖĮŠŲŪŽ", mark:"̨̌̇̄́", punctuation:"‐–—…“„", aux:"ẽẼĩũĨŨáàãéèíìñóòõúùÁÀÃÉÈÍÌÑÓÒÕÚÙ́̃̀", local:"Lietuviškai, Lietuvių kalba", notes:`A Latin orthography written with the Fraktur style is no longer in use. There is a separate script subtag for Fraktur, [Latf].`},
+"lt": { name:"Lithuanian", silcode:"lit", source:"cldr_lt,udhr_lit", region:"eur", countries:"Lithuania", script:"latn", speakers:"3000000", letter:"éÉąčęėįšųūžĄČĘĖĮŠŲŪŽ", mark:"̨̌̇̄́", punctuation:"‐–—…“„", aux:"ẽẼĩũĨŨáàãéèíìñóòõúùÁÀÃÉÈÍÌÑÓÒÕÚÙ́̃̀", local:"Lietuviškai / Lietuvių kalba", notes:`A Latin orthography written with the Fraktur style is no longer in use. There is a separate script subtag for Fraktur, [Latf].`},
 
 "lu": { name:"Luba-Katanga (Luba-Shaba, Kiluba)", silcode:"lub", source:"cldr_lu", region:"afr", countries:"DRC", script:"latn", speakers:"1500000", letter:"áàéèíìóòúùÁÀÉÈÍÌÓÒÚÙƐƆɛɔ", mark:"́̀", local:"Kiluba"},
 
 "lua": { name:"Luba-Kasai (Western Luba)", source:"udhr_lua", region:"afr", countries:"DRC, Angola", script:"ascii", speakers:"6300000", local:"Tshiluba"},
 
-"lue": { name:"Luvale", source:"udhr_lue", region:"afr", countries:"Zambia, Angola", script:"ascii", speakers:"640000", local:"Chiluvale, Luvale"},
+"lue": { name:"Luvale", source:"udhr_lue", region:"afr", countries:"Zambia, Angola", script:"ascii", speakers:"640000", local:"Chiluvale / Luvale"},
 
 "lun": { name:"Lunda (Chilunda)", source:"udhr_lun", region:"afr", countries:"Zambia, Angola", script:"ascii", speakers:"400000", local:"chiLunda"},
 
@@ -1504,13 +1502,13 @@ Legacy applications often use luy rather than [bxk].
 related:`lv is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Latgalian [ltg]<br/>Standard Latvian [lvs].
 `},
 
-"lvs": { name:"Latvian (Lettish)", source:"cldr_lv,udhr_lav", region:"eur", countries:"Latvia", script:"latn", speakers:"1750000", letter:"āčēģīķļņšūžĀČĒĢĪĶĻŅŠŪŽ", mark:"̧̄̌", punctuation:"§‐–—…‘’‚“”„†‡′″", aux:"ōŗŌŖ", local:"Latviešu valoda, Latviski"},
+"lvs": { name:"Latvian (Lettish)", source:"cldr_lv,udhr_lav", region:"eur", countries:"Latvia", script:"latn", speakers:"1750000", letter:"āčēģīķļņšūžĀČĒĢĪĶĻŅŠŪŽ", mark:"̧̄̌", punctuation:"§‐–—…‘’‚“”„†‡′″", aux:"ōŗŌŖ", local:"Latviešu valoda / Latviski"},
 
 "mad": { name:"Madurese", source:"udhr_mad", region:"seasia", countries:"Indonesia", script:"ascii", speakers:"15000000", local:"Basa Mathura"},
 
-"mag": { name:"Magahi (Magadhi)", source:"udhr_mag", region:"sasia", countries:"India, Nepal", script:"deva", speakers:"14000000", letter:"मनवधकरलसयतषटउचबघणपगठदहभअएऔथओशईजखआडइछफढझञऐ", mark:"ािेंु्ोी़ूौृैँ", punctuation:"।", local:"मगही‎ (magahī)"},
+"mag": { name:"Magahi (Magadhi)", source:"udhr_mag", region:"sasia", countries:"India, Nepal", script:"deva", speakers:"14000000", letter:"मनवधकरलसयतषटउचबघणपगठदहभअएऔथओशईजखआडइछफढझञऐ", mark:"ािेंु्ोी़ूौृैँ", punctuation:"।", local:"मगही‎", localtrans:"(magahī)"},
 
-"mai": { name:"Maithili", source:"udhr_mai,udhr_mai_2", region:"sasia", countries:"India, Nepal", script:"deva", speakers:"33900000", letter:"सरवभमनधकघषणटदबएतआउलजपठगअछहऐयशओचथखफइढडङईञʼ", mark:"ा्ौिोंेँीृूुःै़", punctuation:"।–", local:"मैथिली‎ (Maithilī)", 
+"mai": { name:"Maithili", source:"udhr_mai,udhr_mai_2", region:"sasia", countries:"India, Nepal", script:"deva", speakers:"33900000", letter:"सरवभमनधकघषणटदबएतआउलजपठगअछहऐयशओचथखफइढडङईञʼ", mark:"ा्ौिोंेँीृूुःै़", punctuation:"।–", local:"मैथिली‎", localtrans:"(Maithilī)", 
 orth:`Devanagari. &nbsp; Primary usage.`,
 also:
 ['mai-kthi | kthi | Until end of 20th century.',
@@ -1518,7 +1516,7 @@ also:
 'mai-tirh | tirh | Until end of 20th century.',]
 },
 
-"mam": { name:"Mam", source:"udhr_mam", region:"cam", countries:"Guatemala, Mexico", script:"ascii", speakers:"540000", local:"B’anax Mam, Qyool Mam"},
+"mam": { name:"Mam", source:"udhr_mam", region:"cam", countries:"Guatemala, Mexico", script:"ascii", speakers:"540000", local:"B’anax Mam / Qyool Mam"},
 
 "man": { name:"Mandingo (Manding)", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"0", related:`man is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Eastern Maninkakan [emk]<br/>Konyanka Maninka [mku]<br/>Western Maninkakan [mlq]<br/>Mandinka [mnk]<br/>Sankaran Maninka [msc]<br/>Kita Maninkakan [mwk]<br/>Forest Maninka (deprecated, don't use) [myq].
 Legacy applications often use man rather than [emk] (Eastern Maninkakan).`},
@@ -1531,7 +1529,7 @@ Legacy applications often use man rather than [emk] (Eastern Maninkakan).`},
 
 "mcf": { name:"Matsés (Mayoruna)", source:"udhr_mcf", region:"sam", countries:"Peru, Brazil", script:"latn", speakers:"3200", letter:"ëË", mark:"̈", local:"Matses"},
 
-"men": { name:"Mende", source:"udhr_men", region:"afr", countries:"Sierra Leone, Liberia", script:"latn", speakers:"1400000", letter:"ƆƐŋŊɔɛ", punctuation:"–‐", local:"Mɛnde, Mɛnde yia", 
+"men": { name:"Mende", source:"udhr_men", region:"afr", countries:"Sierra Leone, Liberia", script:"latn", speakers:"1400000", letter:"ƆƐŋŊɔɛ", punctuation:"–‐", local:"Mɛnde / Mɛnde yia", 
 orth:`Latin. &nbsp; `,
 also:
 ['men-mend | mend | Limited usage except for correspondence, record keeping, and especially accounting.',]
@@ -1553,7 +1551,7 @@ Legacy applications often use mg rather than [plt].
 
 "mi": { name:"Maori (Te Reo)", silcode:"mri", source:"cldr_mi,udhr_mri,61f0a8014764c40b5937e54a104576fdf07d24d1", region:"oce", countries:"New Zealand", script:"latn", speakers:"60000", letter:"ĀāĒēĪīŌōŪūïÏ", mark:"̄̈", punctuation:"‰", local:"te reo Māori"},
 
-"mic": { name:"Mi'kmaq (Micmac, Migmaw, Mikmaw)", source:"udhr_mic", region:"nam", countries:"Canada", script:"ascii", speakers:"14200", local:"L’nui’simk, Míkmawísimk", notes:`The autonym shows an accented character that isn't in the UDHR-based list.`, 
+"mic": { name:"Mi'kmaq (Micmac, Migmaw, Mikmaw)", source:"udhr_mic", region:"nam", countries:"Canada", script:"ascii", speakers:"14200", local:"L’nui’simk / Míkmawísimk", notes:`The autonym shows an accented character that isn't in the UDHR-based list.`, 
 orth:`Latin. &nbsp; Also Ethnologue lists Micmac hieroglyphs, no longer in use (and no ISO script code.)`,
 },
 
@@ -1573,22 +1571,10 @@ related:`Macrolanguage is Malay [ms].`},
 
 "miq": { name:"Mískitu (Miskito)", source:"udhr_miq", region:"cam", countries:"Nicaragua, Honduras", script:"latn", speakers:"150000", letter:"áâÁÂ", mark:"́̂", local:"Mískitu"},
 
-"mk": { name:"Macedonian", silcode:"mkd", source:"cldr_mk,udhr_mkd", region:"eur", countries:"Macedonia, Albania, Bulgaria", script:"cyrl", speakers:"~2000000", letter:"абвгдѓежзѕијклљмнњопрстќуфхцчџшАБВГДЃЕЖЗЅИЈКЛЉМНЊОПРСТЌУФХЦЧЏШ", mark:"́", punctuation:"‐–—…‘‚“„", aux:"ѐѝЀЍ̀", local:"македонски‎ (Makedonski), македонски јазик‎ (makedonski jazik)", 
+"mk": { name:"Macedonian", silcode:"mkd", source:"cldr_mk,udhr_mkd", region:"eur", countries:"Macedonia, Albania, Bulgaria", script:"cyrl", speakers:"~2000000", letter:"абвгдѓежзѕијклљмнњопрстќуфхцчџшАБВГДЃЕЖЗЅИЈКЛЉМНЊОПРСТЌУФХЦЧЏШ", mark:"́", punctuation:"‐–—…‘‚“„", aux:"ѐѝЀЍ̀", local:"македонски‎ / македонски јазик‎", localtrans:"(makedonski / makedonski jazik)", 
 orth:`Cyrillic. &nbsp; Used since 1944.`},
 
-"ml": { name:"Malayalam", local:"മലയാളം‎ (Malayāḷam)", silcode:"mal", 
-source:"cldr_ml,udhr_mal,d347047791774df1311d53dee98495c224fe0166", 
-region:"sasia", countries:"India, Singapore", script:"mlym", speakers:"38000000", 
-letter:"അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔകൿഖഗഘങചഛജഝഞടഠഡഢണൺതഥദധനൻപഫബഭമയരർലൽവശഷസഹളൾഴറ", mark:"ഃംാിീുൂൃെേൈൊോൌൗ്", punctuation:"‘’“”", other:"\u200C\u200D", numberaux:"൦൧൨൩൪൫൬൭൮൯", symbolaux:"൹", punctuationaux:"।॥", 
-orth:`Malayalam. &nbsp; Primary usage. <a href="../scripts/malayalam" target="_blank">Details</a>.`,
-also:
-["ml-arab | arab | Naskh style."],
-type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"∅",  justification:"sp",
-vowels:"inh:1 ind:12 vs:12 pre:3 circ:3 voc:4", clusters:"vvir inv stk cnj rax let", finals:"cm:2 let:6", 
-linked:"mlym/ml", fonts:"/pickers/mlym/", 
-},
-
-"ml": { name:"Malayalam", local:"മലയാളം‎ (Malayāḷam)", silcode:"mal", 
+"ml": { name:"Malayalam", local:"മലയാളം‎", localtrans:"(malayāḷam)", silcode:"mal", 
 source:"cldr_ml,udhr_mal,d347047791774df1311d53dee98495c224fe0166", 
 region:"sasia", countries:"India, Singapore", script:"mlym", speakers:"38000000", 
 letter:"അആഇഈഉഊഋഎഏഐഒഓഔകഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരറലളഴവശഷസഹൔൕൖൺൻർൽൾൿ", letteraux:"ഌൠൡ", mark:"ംഃാിീുൂൃെേൈൊോ്ൗ", number:"൦൧൨൩൪൫൬൭൮൯", punctuation:"‘’“”", symbol:"", symbolaux:"൹", other:"\u200C\u200D",
@@ -1598,7 +1584,7 @@ also:
 ["ml-arab | arab | Naskh style."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"∅",  justification:"sp",
 vowels:"inh:1 ind:12 cm:12 vs:12 pre:3 circ:3 voc:4 comp:(3)", clusters:"vvir inv stk cnj rax let", finals:"cm:2 let:6", 
-linked:"mlym/ml", fonts:"/pickers/mlym/", 
+linked:"mlym/ml", fonts:"/pickers/mlym/", font:"'Noto Serif Malayalam'",
 },
 
 "mn": { name:"Mongolian", silcode:"mon", redirect:true, region:"easia", script:"macrolanguage", speakers:"?", related:`mn is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Halh Mongolian [khk]<br/>Peripheral Mongolian [mvf].
@@ -1609,7 +1595,7 @@ Legacy applications often use mn rather than [mvf].`
 
 "mos": { name:"Mòoré (Mossi, Mooré)", source:"udhr_mos", region:"afr", countries:"Burkina Faso, Mali, Togo", script:"latn", speakers:"7600000", letter:"ãõÃÕƖƱƐĩũœĨŨŒẽẼɩʊɛ", mark:"̃", punctuation:"’", local:"Mòoré", notes:`Note that the accents in the autonym don't appear in the UDHR text, suggesting that we need to add characters here.`},
 
-"mr": { name:"Marathi", silcode:"mar", source:"cldr_mr,udhr_mar", region:"sasia", countries:"India", script:"deva", speakers:"73000000", letter:"ऱॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"़ंँःािीुूृॅेैॉोौ्", punctuation:"‐–—…‘’“”′″","number":"१२३४५६७८९०", other:"‌‍", local:"मराठी‎ (Marāṭhī)", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here."},
+"mr": { name:"Marathi", silcode:"mar", source:"cldr_mr,udhr_mar", region:"sasia", countries:"India", script:"deva", speakers:"73000000", letter:"ऱॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऽ", mark:"़ंँःािीुूृॅेैॉोौ्", punctuation:"‐–—…‘’“”′″","number":"१२३४५६७८९०", other:"‌‍", local:"मराठी‎", localtrans:"(marāṭhī)", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here."},
 
 "mro": { name:"Mru, Mro", local:"", silcode:"mro", 
 source:"", 
@@ -1652,7 +1638,7 @@ linked:"mymr/my", fonts:"/pickers/mymr-my/",
 
 "mzi": { name:"Ixcatlán Mazatec", source:"udhr_mzi", region:"cam", countries:"Mexico", script:"latn", speakers:"8600", letter:"áñíóéÁÑÍÓÉ", mark:"́̃", punctuation:"’", local:"En ningotsie"},
 
-"mzn": { name:"Mazanderani (Tabari, Geleki)", rtl:true, source:"cldr_mzn", region:"wasia", countries:"Iran", script:"arab", speakers:"6000000", letter:"ءآأؤئابپةتثجچحخدذرزژسشصضطظعغفقکگلمنهویي", mark:"ًٌٍّٔٓ", punctuation:"،٫٬؛؟‐…‹›«»", aux:"َُِْٰٖإكىٕ", local:"طبری‎ (Tabari), مازرونی‎ (Mazuroni)", 
+"mzn": { name:"Mazanderani (Tabari, Geleki)", rtl:true, source:"cldr_mzn", region:"wasia", countries:"Iran", script:"arab", speakers:"6000000", letter:"ءآأؤئابپةتثجچحخدذرزژسشصضطظعغفقکگلمنهویي", mark:"ًٌٍّٔٓ", punctuation:"،٫٬؛؟‐…‹›«»", aux:"َُِْٰٖإكىٕ", local:"طبری‎ / مازرونی‎", localtrans:"(tabari / mazuroni)", 
 orth:`Arabic. &nbsp; Uses both nastaliq ([Aran]) and naskh styles.`},
 
 "nah": { name:"Nahuatl (Aztec)", source:"udhr_nhn", region:"cam", script:"latn", speakers:"1700000", letter:"íÍ", mark:"́"},
@@ -1671,7 +1657,7 @@ orth:`Arabic. &nbsp; Uses both nastaliq ([Aran]) and naskh styles.`},
 Legacy applications often use ne rather than [npi].
 `},
 
-"new": { name:"Newar (Newa Bhaye, Newaah Bhaae, Newaah Bhaaye, Newah, Newal Bhaye)", local:"नेवाः भाय्‎ (Newah Bhay), नेपाल भाषा‎ (Nepal Bhasa)", 
+"new": { name:"Newar (Newa Bhaye, Newaah Bhaae, Newaah Bhaaye, Newah, Newal Bhaye)", local:"नेवाः भाय्‎ / नेपाल भाषा‎", localtrans:"(newah bhay / nepal bhasa)", 
 source:"b5241e2710ad015ba1bd5fbe840b55d15bbc9963", 
 region:"sasia", countries:"Nepal", script:"newa", speakers:"861000", 
 letter:"𑐀𑐁𑐂𑐃𑐄𑐅𑐆𑐊𑐋𑐌𑐍𑐎𑐏𑐐𑐑𑐒𑐓𑐔𑐕𑐖𑐗𑐘𑐙𑐚𑐛𑐜𑐝𑐞𑐟𑐠𑐡𑐢𑐣𑐤𑐥𑐦𑐧𑐨𑐩𑐪𑐫𑐬𑐭𑐮𑐯𑐰𑐱𑐲𑐳𑐴𑑉", mark:"𑐵𑐶𑐷𑐸𑐹𑐾𑐿𑑀𑑁𑑂𑑃𑑄𑑅", number:"𑑐𑑑𑑒𑑓𑑔𑑕𑑖𑑗𑑘𑑙", punctuation:"‘’“”𑑋𑑌", symbol:"", other:"\u200C\u200D",
@@ -1683,13 +1669,13 @@ linked:"newa/new", fonts:"/pickers/newa/",
 },
 
 
-"ng": { name:"Ndonga, (Oshindonga)", silcode:"ndo", source:"udhr_ndo", region:"afr", countries:"Namibia", script:"ascii", speakers:"810000", local:"Oshindonga, Oshiwambo"},
+"ng": { name:"Ndonga, (Oshindonga)", silcode:"ndo", source:"udhr_ndo", region:"afr", countries:"Namibia", script:"ascii", speakers:"810000", local:"Oshindonga / Oshiwambo"},
 
 "nio": { name:"Nganasan", source:"udhr_nio", region:"nasia", script:"cyrl", countries:"Russia", speakers:"130", letter:"нерәзытбуоясикаӈҫүдйхлмпвгөъцьчэщжюНЕРӘЗЫТБУОЯСИКАӇҪҮДЙХЛМПВГӨЪЦЬЧЭЩЖЮ", mark:"̆", punctuation:"”"},
 
 "nku": { name:"Bouna Kulango", source:"udhr_nku", region:"afr", countries:"Côte d'Ivoire, Ghana", script:"latn", speakers:"130000", letter:"ƖƆƐƝƲŋŊɩɔɛɲʋ", punctuation:"’"},
 
-"nl": { name:"Dutch", silcode:"nld", source:"cldr_nl,udhr_nld", region:"eur", countries:"Netherlands, Belgium, Suriname, Curacao, Aruba", script:"latn", speakers:"24000000", letter:"áäéëíïóöúüÁÄÉËÍÏÓÖÚÜ", mark:"́̈", punctuation:"§‐–—…‘’“”†‡′″", aux:"œŒŸàâåãæçèêîñôøùûÿÀÂÅÃÆÇÈÊÎÑÔØÙÛ̧̀̂̊̃", local:"Hollands, Nederlands"},
+"nl": { name:"Dutch", silcode:"nld", source:"cldr_nl,udhr_nld", region:"eur", countries:"Netherlands, Belgium, Suriname, Curacao, Aruba", script:"latn", speakers:"24000000", letter:"áäéëíïóöúüÁÄÉËÍÏÓÖÚÜ", mark:"́̈", punctuation:"§‐–—…‘’“”†‡′″", aux:"œŒŸàâåãæçèêîñôøùûÿÀÂÅÃÆÇÈÊÎÑÔØÙÛ̧̀̂̊̃", local:"Hollands / Nederlands"},
 
 "nmg": { name:"Kwasio (Ngumba, Mvumbo, Bujeba, Gyele, Kola)", source:"cldr_nmg", region:"afr", countries:"Equatorial Guinea, Cameroon", script:"latn", speakers:"26000", letter:"áâäéêíîïóôöúûÁÂÄÉÊÍÎÏÓÔÖÚÛǎǝǐǒǔǍƁƎƐǏǑƆǓāěēīńŋōŕūĀĚĒĪŃŊŌŔŪɓɛɔ", mark:"́̂̌̄̈", 
 orth:`Latin. &nbsp; Revised 2011.`,
@@ -1705,7 +1691,7 @@ related:`Macrolanguage is Norwegian [no].`},
 "no": { name:"Norwegian", silcode:"nor", redirect:true, source:"", region:"eur", countries:"Norway", script:"macrolanguage", speakers:"0", related:`no is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Norwegian Bokmål [nb]<br/>Norwegian Nynorsk [nn].
 Legacy applications often use no rather than [nb].`},
 
-"nod": { name:"Northern Thai (Lanna, Kam Mueang)", local:"ᨣᩤᩴᨾᩮᩬᩨᨦ‎ (Kam Mueang, คำเมือง)", 
+"nod": { name:"Northern Thai (Lanna, Kam Mueang)", local:"ᨣᩤᩴᨾᩮᩬᩨᨦ‎", localtrans:"(kam mueang / คำเมือง)", 
 source:"85b2f09701993de6c7a34f3ac37f1bb9697f3d58", 
 region:"seasia", countries:"Thailand, Laos", script:"lana", speakers:"6000000", 
 letter:"ᨠᨡᨢᨣᨤᨥᨦᨧᨨᨩᨪᨫᨬᨭᨮᨯᨰᨱᨲᨳᨴᨵᨶᨷᨸᨹᨺᨻᨼᨽᨾᨿᩀᩁᩃᩅᩆᩇᩈᩉᩊᩋᩌᩍᩎᩏᩐᩑᩓᩔᪧ", mark:"ᩕᩖᩘᩙᩛᩝᩞ᩠ᩡᩢᩣᩤᩥᩦᩧᩨᩩᩪᩫᩬᩮᩯᩰᩱᩴ᩿᩵᩶᩺᩻", markaux:"ᩲᩳ", number:"᪀᪁᪂᪃᪄᪅᪆᪇᪈᪉᪐᪑᪒᪓᪔᪕᪖᪗᪘᪙", punctuation:"᪠᪡᪢᪣᪤᪥᪦᪨᪩᪪᪫᪬᪭“”", symbol:"", other:"",
@@ -1720,7 +1706,7 @@ linked:"lana/nod", fonts:"/pickers/lana-nod/",
 
 "not": { name:"Nomatsiguenga", source:"udhr_not", region:"sam", countries:"Peru", script:"latn", speakers:"6500", letter:"ëíáóñËÍÁÓÑ", mark:"̈́̃", local:"Nomatsigenga"},
 
-"npi": { name:"Nepali", source:"cldr_ne,udhr_nep", region:"sasia", countries:"Nepal, India, Bhutan", script:"deva", speakers:"40000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"़ँंःािीुूृॅेैॉोौ्", punctuation:"।","number":"१२३४५६७८९०", other:"‍", local:"नेपाली‎ (Nepālī)", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here.", 
+"npi": { name:"Nepali", source:"cldr_ne,udhr_nep", region:"sasia", countries:"Nepal, India, Bhutan", script:"deva", speakers:"40000000", letter:"ॐअआइईउऊऋऌऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलळवशषसहऽ", mark:"़ँंःािीुूृॅेैॉोौ्", punctuation:"।","number":"१२३४५६७८९०", other:"‍", local:"नेपाली‎", localtrans:"(nepālī)", notes:"CLDR also includes <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>, but I was told that Indian experts determined that this is only needed for Sanskrit, so it is not shown here.", 
 related:`Macrolanguage is Nepali [ne]. Legacy applications often use ne rather npi.`},
 
 "nqo": { name:"N’Ko (Kangbe)", local:"ߒߞߏ", rtl:true, 
@@ -1773,7 +1759,7 @@ Legacy applications often use om rather than [gaz].`},
 
 "or": { name:"Oriya (Odia)", silcode:"ori", redirect:true, source:"", region:"sasia", script:"macrolanguage", speakers:"", related:`or is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Odia, Oriya (individual language) [ory]<br/>Sambalpuri, Kosli [spv].`},
 
-"ory": { name:"Odia (Oriya)", local:"ଓଡ଼ିଆ‎ (Oḍiā)", 
+"ory": { name:"Odia (Oriya)", local:"ଓଡ଼ିଆ‎", localtrans:"(oḍiā)", 
 source:"7dcf17c28affb360d4d46f7a0540a5e4644ab9e3,cldr_or", 
 region:"sasia", countries:"India", script:"orya", speakers:"33000000", 
 letter:"ଅଆଇଈଉଊଏଐଓଔକଖଗଘଙଚଛଜଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯରଲଳଵଶଷସହଽୟୱ", letteraux:"ଋଌଡ଼ଢ଼ୠୡ", mark:"ଁଂଃ଼ାିୀୁୂୃେୈୋୌ୍", markaux:"ୄୖୗୢୣ", number:"୦୧୨୩୪୫୬୭୮୯", punctuation:"।॥‘’“”…", symbol:"୰", other:"\u200C\u200D",
@@ -1799,7 +1785,7 @@ linked:"osge/osa", fonts:"/pickers/osge/",
 
 "ote": { name:"Mezquital Otomi", source:"udhr_ote", region:"cam", countries:"Mexico", script:"latn", speakers:"130000", letter:"öüäéñúíáèÖÜÄÉÑÚÍÁÈ", mark:"̱̈́̃̀", local:"Hñahñu"},
 
-"pa": { name:"Punjabi", local:"ਪੰਜਾਬੀ‎ (Panjabi), ਪੰਜਾਬੀ ਭਾਸ਼ਾ‎ (Panjabi bhasa)", silcode:"pan", 
+"pa": { name:"Punjabi", local:"ਪੰਜਾਬੀ‎ / ਪੰਜਾਬੀ ਭਾਸ਼ਾ‎", localtrans:"(panjabi / panjabi bhasa)", silcode:"pan", 
 source:"cldr_pa,udhr_pan,f940e5c7fc381992f942120f89cd8137cb3c3eda", 
 region:"sasia", countries:"India", script:"guru", speakers:"122000000", 
 letter:"ਅਆਇਈਉਊਏਐਓਔਕਖਗਘਚਛਜਝਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵਸਹੜੴ", letteraux:"ਙਞਲ਼ਸ਼ਖ਼ਗ਼ਜ਼ਫ਼", mark:"ਂਃ਼ਾਿੀੁੂੇੈੋੌ੍ੰੱੵ", number:"੦੧੨੩੪੫੬੭੮੯", punctuation:"।‘’“”", symbol:"☬", other:"",
@@ -1830,7 +1816,7 @@ notes:`Need to check the difference between pa-arab and pnb.`
 
 "pbb": { name:"Páez (Paez, Paes, Nasa Yuwe)", source:"udhr_pbb", region:"sam", countries:"Colombia", script:"latn", speakers:"40000", letter:"üëäïáÜËÄÏÁ", mark:"̈́", local:"Nasa Yuwe"},
 
-"pbu": { name:"Northern Pashto", rtl:true, source:"cldr_ps", region:"casia", countries:"Pakistan, Afghanistan, UAE", script:"arab", speakers:"20850900", letter:"آاأءبپتټثجځچڅحخدډذرړزژږسشښصضطظعغفقکګگلمنڼهةوؤیيېۍئ", mark:"ًٌٍَُِّْٰٔٓ", punctuation:"٫٬٪؉‰","number":"۰۱۲۳۴۵۶۷۸۹", symbol:"−", local:"پښتو‎ (Pashto)", 
+"pbu": { name:"Northern Pashto", rtl:true, source:"cldr_ps", region:"casia", countries:"Pakistan, Afghanistan, UAE", script:"arab", speakers:"20850900", letter:"آاأءبپتټثجځچڅحخدډذرړزژږسشښصضطظعغفقکګگلمنڼهةوؤیيېۍئ", mark:"ًٌٍَُِّْٰٔٓ", punctuation:"٫٬٪؉‰","number":"۰۱۲۳۴۵۶۷۸۹", symbol:"−", local:"پښتو‎", localtrans:"(pashto)", 
 related:`Macrolanguage is Pashto [ps]. Legacy applications often use ps rather pbu.`,
 orth:`Arabic. &nbsp; Primary usage is naskh style, but nastaliq ([Aran]) also used.`},
 
@@ -1839,7 +1825,7 @@ orth:`Arabic. &nbsp; Primary usage is naskh style, but nastaliq ([Aran]) also us
 "pcm": { name:"Nigerian Pidgin", source:"udhr_pcm", region:"afr", countries:"Nigeria", script:"ascii", speakers:"30000000", local:"Naijá", 
 orth:`Latin. &nbsp; Used since 2002.`},
 
-"pes": { name:"Persian (Farsi)", local:" فارسی‎ (Fārsi)", rtl:true, 
+"pes": { name:"Persian (Farsi)", local:" فارسی‎", localtrans:"(fārsi)", rtl:true, 
 source:"f6c7293e56545fe2044143ef784236e7d524019c,cldr_fa,udhr_pes", 
 region:"wasia", countries:"Iran, Iraq", script:"arab", speakers:"~50000000", 
 letter:"ءآؤابةتثجحخدذرزسشصضطظعغـفقلمنهوپچژکگی", letteraux:"أ", mark:"͏ًٌٍَُِّْٔ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"«»،؛؟", symbol:"", other:"\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
@@ -1860,7 +1846,7 @@ linked:"arab/pes", fonts:"/pickers/arab-fa/",
 "plt": { name:"Plateau Malagasy", source:"cldr_mg,udhr_plt", region:"afr", countries:"Madagascar", script:"latn", speakers:"18000000", letter:"àâéèêëìîïñôÀÂÉÈÊËÌÎÏÑÔ", mark:"̀̂́̈̃", local:"Malagasy", notes:"UDHR has no accents", 
 related:`Macrolanguage is Malagasy [mg]. Legacy applications often use mg rather plt.`},
 
-"pnb": { name:"Western Panjabi", rtl:true, source:"cldr_pnb,udhr_pnb", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"122000000", letter:"ءآؤئابپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںهھہویےي", mark:"ُٓٔ", punctuation:"‐–—‘’“”′″", local:"پنجابی‎ (Panjābī)", notes:`Need to ascertain whether this is the same as [pa-arab].`, 
+"pnb": { name:"Western Panjabi", rtl:true, source:"cldr_pnb,udhr_pnb", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"122000000", letter:"ءآؤئابپتثٹجچحخدذڈرزڑژسشصضطظعغفقکگلمنںهھہویےي", mark:"ُٓٔ", punctuation:"‐–—‘’“”′″", local:"پنجابی‎", localtrans:"(panjābī)", notes:`Need to ascertain whether this is the same as [pa-arab].`, 
 orth:`Arabic. &nbsp; Naskh and nastaliq ([Aran]) styles in primary usage.
 Also used Lahnda script, but no longer in use (and no ISO script tag.)`,
 also:
@@ -1876,7 +1862,7 @@ also:
 
 "prq": { name:"Ashéninka Perené", source:"udhr_prq", region:"sam", countries:"Peru", script:"latn", speakers:"~50000", letter:"íÍ", mark:"́", punctuation:"¿", related:"This is one of several closely related Ashéninka languages (though there is no macrolanguage), including: [cpu], [cpc], [cpb], [cjo], [cpy]. Ashéninka was recognized as a separate language from Asháninka ([cni]) in 2017, and the process to fix an alphabet was underway during 2018."},
 
-"prs": { name:"Dari (Afghan Persian)", rtl:true, source:"udhr_pes_2", region:"casia", countries:"Afghanistan, Pakistan, Iran", script:"arab", speakers:"12500000", letter:"اعلمیهجنحقوبشرصدسزآکئثتذضخپگظفغطأچژءي", mark:"ًٔٓ", punctuation:"،‐","number":"۱۹۴۸۲۳۵۶۷۰", other:"‌", local:" فارسی‎ (Fārsi)", 
+"prs": { name:"Dari (Afghan Persian)", rtl:true, source:"udhr_pes_2", region:"casia", countries:"Afghanistan, Pakistan, Iran", script:"arab", speakers:"12500000", letter:"اعلمیهجنحقوبشرصدسزآکئثتذضخپگظفغطأچژءي", mark:"ًٔٓ", punctuation:"،‐","number":"۱۹۴۸۲۳۵۶۷۰", other:"‌", local:" فارسی‎", localtrans:"(fārsi)", 
 related:`Macrolanguage is Farsi [fa]. Legacy applications often use fa rather prs.`,
 orth:`Arabic &nbsp; Naskh style used in print. Nastaliq style ([Aran]) used in handwriting &amp; for book titles.`},
 
@@ -1929,7 +1915,7 @@ vowels:"let:5",
 
 "rn": { name:"Rundi (Kirundi)", source:"cldr_rn,udhr_run", region:"afr", countries:"Burundi", script:"ascii", speakers:"8800000", local:"Ikirundi"},
 
-"ro": { name:"Romanian (Rumanian, Roumanian)", silcode:"ron", source:"cldr_ro,udhr_ron_2006,udhr_ron_1993,udhr_ron_1953", region:"eur", countries:"Romania, Moldova, Ukraine, Israel", script:"latn", speakers:"~25000000", letter:"âîÂÎșțȘȚăĂ", mark:"̦̆̂", punctuation:"«»‐–—…‘“”„", aux:"şţŞŢáàåäçéèêëñöüÁÀÅÄÇÉÈÊËÑÖǗ̧̀̊̈̃", local:"Limba română, româneşte", 
+"ro": { name:"Romanian (Rumanian, Roumanian)", silcode:"ron", source:"cldr_ro,udhr_ron_2006,udhr_ron_1993,udhr_ron_1953", region:"eur", countries:"Romania, Moldova, Ukraine, Israel", script:"latn", speakers:"~25000000", letter:"âîÂÎșțȘȚăĂ", mark:"̦̆̂", punctuation:"«»‐–—…‘“”„", aux:"şţŞŢáàåäçéèêëñöüÁÀÅÄÇÉÈÊËÑÖǗ̧̀̊̈̃", local:"Limba română / româneşte", 
 orth:`Latin. &nbsp; `,
 also:
 ['ro-cyrl | cyrl | Until 1991 official in Moldova.',]
@@ -1937,7 +1923,7 @@ also:
 
 "rof": { name:"Rombo (Kirombo)", source:"cldr_rof", region:"afr", countries:"Tanzania", script:"ascii", speakers:"?", notes:"Ethnologue reports this as unwritten."},
 
-"rmn": { name:"Romani (Romany, Gypsy, Gipsy)", source:"udhr_rmn,udhr_rmn_1", region:"eur", countries:"Serbia, Bulgaria, Turkey, Macedonia, Greece, Iran", script:"latn", speakers:"~1500000", letter:"àõùèìòâÀÕÙÈÌÒÂƟśěćŕăąňűźőģůščžŚĚĆŔĂĄŇŰŹŐĢŮŠČŽɵ", mark:"̨̧̀́̌̃̆̋̂̊", local:"Romani, Romani ćhib", 
+"rmn": { name:"Romani (Romany, Gypsy, Gipsy)", source:"udhr_rmn,udhr_rmn_1", region:"eur", countries:"Serbia, Bulgaria, Turkey, Macedonia, Greece, Iran", script:"latn", speakers:"~1500000", letter:"àõùèìòâÀÕÙÈÌÒÂƟśěćŕăąňűźőģůščžŚĚĆŔĂĄŇŰŹŐĢŮŠČŽɵ", mark:"̨̧̀́̌̃̆̋̂̊", local:"Romani / Romani ćhib", 
 related:`Macrolanguage is Romany [rom].`,
 orth:`Latin. &nbsp; Used in Serbia.`,
 also:
@@ -1948,7 +1934,7 @@ also:
 "rom": { name:"Romany", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"~1500000", related:`rom is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Carpathian Romani [rmc]<br/>Kalo Finnish Romani [rmf]<br/>Baltic Romani [rml]<br/>Balkan Romani [rmn]<br/>Sinte Romani [rmo]<br/>Welsh Romani [rmw]<br/>Vlax Romani [rmy].
 Legacy applications often use rom rather than [rmy].`},
 
-"ru": { name:"Russian", local:"русский язык‎ (russkij jazyk)", silcode:"rus", 
+"ru": { name:"Russian", local:"русский язык‎", localtrans:"(russkij jazyk)", silcode:"rus", 
 source:"3b62d1cd6732b3b939bef075192c917a41ed20da,cldr_ru,udhr_rus", 
 region:"eur", countries:"Russia, Ukraine, Kazakhstan, Uzbekistan, Poland, Belarus, Azerbaijan, Georgia, Kyrgyzstan, Lithuania, Latvia, Moldova, Estonia, etc.", script:"cyrl", speakers:"258227760", 
 letter:"ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяё", mark:"", markaux:"́̆̈", number:"", punctuation:"«»–—“„…", symbol:"", other:"", aux:"%[]§ʼ‑‘‚†‡‰′″‹›₽№",
@@ -1966,7 +1952,7 @@ linked:"cyrl/ru", fonts:"/pickers/cyrl-ru/",
 
 "rwk": { name:"Rwa (Rwo, Meru, Kirwo)", source:"cldr_rwk", region:"afr", countries:"Tanzania", script:"ascii", speakers:"400000"},
 
-"sa": { name:"Sanskrit", silcode:"san", source:"udhr_san", region:"sasia", countries:"India", script:"deva", speakers:"~15000", letter:"मनवधकरणजगतअभघषयपचशसएछबदटडहइआञउठथलढऽ", mark:"ािंो्ूेुौैीृॄ़", punctuation:"।", local:"संस्कृतम्‎ (Saṃskṛtam)", notes:`Added <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>.`, 
+"sa": { name:"Sanskrit", silcode:"san", source:"udhr_san", region:"sasia", countries:"India", script:"deva", speakers:"~15000", letter:"मनवधकरणजगतअभघषयपचशसएछबदटडहइआञउठथलढऽ", mark:"ािंो्ूेुौैीृॄ़", punctuation:"।", local:"संस्कृतम्‎", localtrans:"(saṃskṛtam)", notes:`Added <span class='codepoint'><span lang='hi'>&#x25CC;&#x0944;</span> [<span class='uname'>U+0944 DEVANAGARI VOWEL SIGN VOCALIC RR</span>]</span>.`, 
 orth:`Devanagari. &nbsp; `,
 also:
 ['sa-mymr | mymr | ',
@@ -1975,7 +1961,7 @@ also:
 'sa-sinh | sinh | ']
 },
 
-"sah": { name:"Yakut (Sakha)", source:"cldr_sah,udhr_sah", region:"nasia", countries:"Russia", script:"cyrl", speakers:"450000", letter:"абгҕдьийклмнҥоөпрстуүхһчыэецязювщъжфАБГҔДЬИЙКЛМНҤОӨПРСТУҮХҺЧЫЭЕЦЯЗЮВЩЪЖФ", mark:"̆", aux:"веёжзфцшщъюяВЕЁЖЗФЦШЩЪЮЯ̈", local:"саха тыла‎ (Saxa tıla), сахалыы‎ (saȟalyy)"},
+"sah": { name:"Yakut (Sakha)", source:"cldr_sah,udhr_sah", region:"nasia", countries:"Russia", script:"cyrl", speakers:"450000", letter:"абгҕдьийклмнҥоөпрстуүхһчыэецязювщъжфАБГҔДЬИЙКЛМНҤОӨПРСТУҮХҺЧЫЭЕЦЯЗЮВЩЪЖФ", mark:"̆", aux:"веёжзфцшщъюяВЕЁЖЗФЦШЩЪЮЯ̈", local:"саха тыла‎ / сахалыы‎", localtrans:"(saxa tıla / saȟalyy)"},
 
 "saq": { name:"Samburu", source:"cldr_saq", region:"afr", countries:"Kenya", script:"ascii", speakers:"240000"},
 
@@ -1996,7 +1982,7 @@ Legacy applications often use sc rather than [src].`},
 
 "sco": { name:"Scots (Lowland Scots)", source:"udhr_sco", region:"eur", countries:"UK", script:"ascii", speakers:"110000", local:"Scots"},
 
-"sd": { name:"Sindhi", silcode:"snd", source:"cldr_sd", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"25000000", letter:"آابٻپڀتثٺٽٿجھڃڄچڇحخدذڊڌڍڏرزڙسشصضطظعغفڦقکڪگڱڳلمنڻهوي", mark:"ٓ", punctuation:"‰", aux:"ئٔ", local:"سنڌي‎ (Sindhi)", 
+"sd": { name:"Sindhi", silcode:"snd", source:"cldr_sd", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"25000000", letter:"آابٻپڀتثٺٽٿجھڃڄچڇحخدذڊڌڍڏرزڙسشصضطظعغفڦقکڪگڱڳلمنڻهوي", mark:"ٓ", punctuation:"‰", aux:"ئٔ", local:"سنڌي‎", localtrans:"(sindhi)", 
 orth:`Arabic. &nbsp; Naskh style.`,
 also:
 ['sd-deva | deva | In India.',
@@ -2036,7 +2022,7 @@ also:
 
 "shk": { name:"Shilluk", source:"udhr_shk,7b9b98a8ced343c0f2356595d76c12d32b5dd0a5", region:"afr", countries:"South Sudan", script:"latn", speakers:"175000", letter:"ÀÁÄÈÉËÌÍÏÓÖØÙÚàáäèéëìíïóöøùú", mark:"́̈̀", local:"Colo"},
 
-"shn": { name:"Shan", local:"ၵႂၢမ်းတႆ /kwáːm.táj/", 
+"shn": { name:"Shan", local:"ၵႂၢမ်းတႆ", localtrans:"/kwáːm.táj/", 
 source:"1144bc3ca7538fc284268c3be5d0725611cd52e5,udhr_shn", 
 region:"seasia", countries:"Myanmar, Thailand", script:"mymr", speakers:"3300000", 
 letter:"ငတထပမယရလဝသဢၵၶၸၺၼၽၾႁꧦ", letteraux:"ၷၹၻၿႀ", mark:"ိီုူေဵး်ျြွၢႂႃႄႅႆႇႈႉႊ", number:"၀၁၂၃၄၅၆၇၈၉႐႑႒႓႔႕႖႗႘႙", punctuation:"၊။", symbol:"", other:"\u200B", 
@@ -2050,7 +2036,7 @@ fonts:"/pickers/mymr-shn"
 
 "shp": { name:"Shipibo-Conibo (Shipibo-Konibo)", source:"udhr_shp", region:"sam", countries:"Peru", script:"latn", speakers:"26000", letter:"íáóéñúÍÁÓÉÑÚ", mark:"́̃", punctuation:"¿"},
 
-"si": { name:"Sinhala (Sinhalese)", local:"සිංහල‎ (Siṃhāla)", silcode:"sin", 
+"si": { name:"Sinhala (Sinhalese)", local:"සිංහල‎", localtrans:"(siṃhāla)", silcode:"sin", 
 source:"cldr_si,udhr_sin,0de67cc747d85485d1c6e7c99ee9a6e885c80803", 
 region:"sasia", countries:"Sri Lanka", script:"sinh", speakers:"16000000", 
 letter:"අආඇඈඉඊඋඌඍඑඒඓඔඕඖකඛගඝඞඟචඡජඣඥටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ", mark:"ංඃ්ාැෑිීුූෘෙේෛොෝෞ", markaux:"ෟ", number:"", punctuation:"‘’“”", symbol:"", other:"\u200C\u200D", 
@@ -2063,9 +2049,9 @@ linked:"sinh/si", fonts:"/pickers/sinh/",
 
 "sja": { name:"Epena (Eperara)", source:"udhr_sja", region:"sam", countries:"Colombia", script:"ascii", speakers:"8300", local:"Epéna Pedée"},
 
-"sk": { name:"Slovak", silcode:"slk", source:"cldr_sk,udhr_slk", region:"eur", countries:"Slovakia, Czechia, Serbia", script:"latn", speakers:"5200000", letter:"čďĺľňŕšťžűČĎĹĽŇŔŠŤŽŰáäéíóôúýÁÄÉÍÓÔÚÝ", mark:"́̈̌̂̋", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīŏōœřŭūĂĀĔĒĬĪŎŌŒŘŬŪŸàâåæçèêëìîïñòöøùûüÿÀÂÅÆÇÈÊËÌÎÏÑÒÖØÙÛǛ̧̆̊̄̃", local:"Slovenský Jazyk, Slovenčina"},
+"sk": { name:"Slovak", silcode:"slk", source:"cldr_sk,udhr_slk", region:"eur", countries:"Slovakia, Czechia, Serbia", script:"latn", speakers:"5200000", letter:"čďĺľňŕšťžűČĎĹĽŇŔŠŤŽŰáäéíóôúýÁÄÉÍÓÔÚÝ", mark:"́̈̌̂̋", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīŏōœřŭūĂĀĔĒĬĪŎŌŒŘŬŪŸàâåæçèêëìîïñòöøùûüÿÀÂÅÆÇÈÊËÌÎÏÑÒÖØÙÛǛ̧̆̊̄̃", local:"Slovenský Jazyk / Slovenčina"},
 
-"skr": { name:"Saraiki (Siraiki, Seraiki)", rtl:true, source:"udhr_skr", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"20000000", letter:"انسیحقودعلمشرپہڱھےکڄئتڻزںگڈفظجچبڑصڋخڔٹطآذضغةثٻي", mark:"ُٔٓ", punctuation:"۔،","number":"۱۲۳۴۵۶۷۸۹۰", local:"سرائیکی‎ (Saraiki)", 
+"skr": { name:"Saraiki (Siraiki, Seraiki)", rtl:true, source:"udhr_skr", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"20000000", letter:"انسیحقودعلمشرپہڱھےکڄئتڻزںگڈفظجچبڑصڋخڔٹطآذضغةثٻي", mark:"ُٔٓ", punctuation:"۔،","number":"۱۲۳۴۵۶۷۸۹۰", local:"سرائیکی‎", localtrans:"(saraiki)", 
 orth:`Arabic. &nbsp; Naskh and nastaliq ([Aran]) styles. Primary usage.`,
 also:
 ['skr-deva | deva | No longer in use.',
@@ -2073,7 +2059,7 @@ also:
 'skr-khoj | khoj | ']
 },
 
-"sl": { name:"Slovene (Slovenian)", silcode:"slv", source:"cldr_sl,udhr_slv", region:"eur", countries:"Slovenia, Italy", script:"latn", speakers:"2500000", letter:"čšžČŠŽ", mark:"̌", aux:"ăāćđĕēĭīŏōœŭūĂĀĆĐĔĒĬĪŎŌŒŬŪŸáàâåäæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̄̃", local:"Slovenski jezik, Slovenščina"},
+"sl": { name:"Slovene (Slovenian)", silcode:"slv", source:"cldr_sl,udhr_slv", region:"eur", countries:"Slovenia, Italy", script:"latn", speakers:"2500000", letter:"čšžČŠŽ", mark:"̌", aux:"ăāćđĕēĭīŏōœŭūĂĀĆĐĔĒĬĪŎŌŒŬŪŸáàâåäæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̄̃", local:"Slovenski jezik / Slovenščina"},
 
 "sm": { name:"Samoan", silcode:"smo", source:"udhr_smo", region:"oce", countries:"Samoa, American Samoa", script:"ascii", speakers:"510000", local:"Gagana Samoa"},
 
@@ -2085,7 +2071,7 @@ also:
 
 "snn": { name:"Siona", source:"udhr_snn", region:"sam", countries:"Colombia, Ecuador", script:"latn", speakers:"500", letter:"ëñíäéËÑÍÄÉ", mark:"̱̈̃́"},
 
-"so": { name:"Somali", silcode:"som", source:"cldr_so,udhr_som", region:"afr", countries:"Somalia, Ethiopia, Kenya, Djibouti", script:"ascii", speakers:"15000000", local:"Af-Soomaali, Afka Soomaaliga", 
+"so": { name:"Somali", silcode:"som", source:"cldr_so,udhr_som", region:"afr", countries:"Somalia, Ethiopia, Kenya, Djibouti", script:"ascii", speakers:"15000000", local:"Af-Soomaali / Afka Soomaaliga", 
 orth:`Latin. &nbsp; Since 1972.`,
 also:
 ['so-arab | arab | Naskh style. No longer in use.',
@@ -2099,7 +2085,7 @@ related:`Macrolanguage is Kalenjin [kln]. Legacy applications often use kln rath
 "sq": { name:"Albanian", silcode:"sqi", redirect:true, source:"", region:"eur", script:"macrolanguage", speakers:"5400000", related:`sq is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Arbëreshë Albanian [aae]<br/>Arvanitika Albanian [aat]<br/>Gheg Albanian [aln]<br/>Tosk Albanian [als].
 Legacy applications often use sq rather than [als].`},
 
-"sr": { name:"Serbian", silcode:"српски‎ (Srpski)", source:"0a9e673e26a1afaf7b77f5a544e7e760270b1064,cldr_sr,udhr_srp_cyrl", region:"eur", countries:"Serbia, Bosnia &amp; Herzegovina, Montenegro, Slovenia", script:"cyrl", speakers:"~9700000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–…‘‚“„", aux:"ёйщъыьэюяЁЙЩЪЫЬЭЮЯ̈̆\u0302", local:"српски‎ (Srpski)", 
+"sr": { name:"Serbian", silcode:"српски‎ (Srpski)", source:"0a9e673e26a1afaf7b77f5a544e7e760270b1064,cldr_sr,udhr_srp_cyrl", region:"eur", countries:"Serbia, Bosnia &amp; Herzegovina, Montenegro, Slovenia", script:"cyrl", speakers:"~9700000", letter:"абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ", punctuation:"‐–…‘‚“„", aux:"ёйщъыьэюяЁЙЩЪЫЬЭЮЯ̈̆\u0302", local:"српски‎", localtrans:"(srpski)", 
 orth:`Cyrillic. &nbsp; Primary usage.`,
 also:
 ['sr-latn | latn | ',]
@@ -2195,7 +2181,7 @@ also:
 "swh": { name:"Swahili (Kiswahili)", source:"cldr_sw,udhr_swh", region:"afr", countries:"Tanzania, Uganda, Kenya, Somalia, Oman", script:"ascii", speakers:"~7000000", local:"Kiswahili", 
 related:`Macrolanguage is Swahili [sw]. Legacy applications often use sw rather swh.`},
 
-"syc": { name:"Syriac", local:" ܠܫܢܐ ܣܘܪܝܝܐ‎ (Leššānā Suryāyā)", rtl:true, 
+"syc": { name:"Syriac", local:" ܠܫܢܐ ܣܘܪܝܝܐ‎", localtrans:"(leššānā suryāyā)", rtl:true, 
 source:"a9dcf48a64fd2fb12d3014d2f0295b003130db65", 
 region:"wasia", countries:"Turkey, Iraq, Syria", script:"syrc", speakers:"0", 
 letter:"ـܐܒܓܕܗܘܙܚܛܝܞܟܠܡܢܣܤܥܦܨܩܪܫܬ", mark:"̣̭̮݂̄̇̈݀݁", markaux:"̤̥̱݄݈̊݃݇݉݊", number:"", punctuation:"،؛؟܀܁܂܃܄܅܆܇܈܉܊", punctuationaux:"܋܌܍", symbol:"♰♱", other:"\u061C\u070F\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
@@ -2216,7 +2202,7 @@ Orthographies include:
 ISO 15924 also has a general script code for Syriac (syrc).`,
 },
 
-"ta": { name:"Tamil", local:"தமிழ்‎ (Tamiḻ)", silcode:"tam", 
+"ta": { name:"Tamil", local:"தமிழ்‎", localtrans:"(tamiḻ)", silcode:"tam", 
 source:"02c655f2e4d80f65f8f280e81da3c892afc52e91,cldr_ta,udhr_tam", 
 region:"sasia", countries:"India, Sri Lanka, Malaysia, South Africa, Singapore", script:"taml", speakers:"70000000", 
 letter:"ஃஅஆஇஈஉஊஎஏஐஒஓஔகஙசஜஞடணதநனபமயரறலளழவஶஷஸஹௐ", mark:"ாிீுூெேைொோௌ்", markaux:"ௗ", number:"", punctuation:"।॥‘’“”", symbol:"௹₹", other:"\u200C\u200D", 
@@ -2229,7 +2215,7 @@ linked:"taml/ta", fonts:"/pickers/taml/",
 
 "tbz": { name:"Ditammari (Tammari)", source:"udhr_tbz", region:"afr", countries:"Benin, Togo", script:"latn", speakers:"150000", letter:"úàóãìùÚÀÓÃÌÙƉƐƆũŋĩŨŊĨɖɛɔ", mark:"̃́̀", local:"Ditammari"},
 
-"tbw-tagb": { name:"Tagbanwa (Aborlan Tagbanwa, Apurawnon, Tagbanua)", local:"ᝦᝪᝯ (Tagbanwa)", 
+"tbw-tagb": { name:"Tagbanwa (Aborlan Tagbanwa, Apurawnon, Tagbanua)", local:"ᝦᝪᝯ", localtrans:"(tagbanwa)", 
 source:"09633b7f41ba0964afe7ba85e2a36b37ceff58b7", 
 region:"oce", countries:"Philippines", script:"tagb", speakers:"17200", 
 letter:"ᝩᝦᝣᝪᝧᝤᝰᝫᝨᝥᝯᝮᝬᝠᝡᝢ", mark:"ᝲᝳ", punctuation:"᜵᜶", 
@@ -2255,7 +2241,7 @@ linked:"tale/tdd", fonts:"/pickers/tale/"
 
 "tdt": { name:"Tetun Dili", source:"udhr_010", region:"seasia", countries:"East Timor", script:"latn", speakers:"385000", letter:"áíúóÁÍÚÓ", mark:"́", punctuation:"’", local:"Tetun Dili"},
 
-"te": { name:"Telugu", local:"తెలుగు‎ (Telugu)", silcode:"tel", 
+"te": { name:"Telugu", local:"తెలుగు‎", localtrans:"(telugu)", silcode:"tel", 
 source:"cldr_te,udhr_tel,21cc5fdd3dd94d0bb44ca0059c7fbe514fbf60e3", 
 region:"sasia", countries:"India", script:"telu", speakers:"74002586", 
 letter:"అఆఇఈఉఊఋఎఏఐఒఓఔకఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరఱలళవశషసహ", mark:"ంఃాిీుూృెేైొోౌ్", markaux:"ౖ", number:"౦౧౨౩౪౫౬౭౮౯", punctuation:"।॥‘’“”", symbol:"₹", other:"\u200C\u200D", 
@@ -2272,7 +2258,7 @@ orth:`Latin. &nbsp; Used since 1930.`},
 
 "tet": { name:"Tetum (Tetun)", source:"udhr_tet", region:"seasia", countries:"Indonesia, East Timor", script:"ascii", speakers:"500000", local:"Tetun"},
 
-"tg": { name:"Tajik (Tajiki, Tajiki Persian)", silcode:"tgk", source:"cldr_tg,udhr_tgk", region:"casia", countries:"Tajikistan, Uzbekistan, Kyrgyzstan, Kazakhstan", script:"cyrl", speakers:"8400000", letter:"эъломияуҳқбашрпегфтднзкхсвӣёҷчғюӯйжьЭЪЛОМИЯУҲҚБАШРПЕГФТДНЗКХСВӢЁҶЧҒЮӮЙЖЬ", mark:"̄̈̆", punctuation:"‰", aux:"цщыьЦЩЫЬ", local:"тоҷикӣ‎ (Tojiki)", 
+"tg": { name:"Tajik (Tajiki, Tajiki Persian)", silcode:"tgk", source:"cldr_tg,udhr_tgk", region:"casia", countries:"Tajikistan, Uzbekistan, Kyrgyzstan, Kazakhstan", script:"cyrl", speakers:"8400000", letter:"эъломияуҳқбашрпегфтднзкхсвӣёҷчғюӯйжьЭЪЛОМИЯУҲҚБАШРПЕГФТДНЗКХСВӢЁҶЧҒЮӮЙЖЬ", mark:"̄̈̆", punctuation:"‰", aux:"цщыьЦЩЫЬ", local:"тоҷикӣ‎", localtrans:"(tojiki)", 
 orth:`Cyrillic. &nbsp; Since 1940, primary usage.`,
 also:
 ['tg-arab | arab | Naskh style. Until 1928.',
@@ -2306,7 +2292,7 @@ also:
 'tk-cyrl | cyrl | Used in Turkmenistan (but not Afghanistan).']
 },
 
-"tk-cyrl": { name:"Turkmen", source:"udhr_tuk_cyrl", region:"casia", countries:"Turkmenistan, Afghanistan, Iran, Iraq, Syria", script:"cyrl", speakers:"7500000", letter:"адмхуклрынңәиецясгшбптчвзэоҗйөүъюжфёАДМХУКЛРЫНҢӘИЕЦЯСГШБПТЧВЗЭОҖЙӨҮЪЮЖФЁ", mark:"̆̈", punctuation:"‐–", local:"түркменче‎ (Türkmençe)", 
+"tk-cyrl": { name:"Turkmen", source:"udhr_tuk_cyrl", region:"casia", countries:"Turkmenistan, Afghanistan, Iran, Iraq, Syria", script:"cyrl", speakers:"7500000", letter:"адмхуклрынңәиецясгшбптчвзэоҗйөүъюжфёАДМХУКЛРЫНҢӘИЕЦЯСГШБПТЧВЗЭОҖЙӨҮЪЮЖФЁ", mark:"̆̈", punctuation:"‐–", local:"түркменче‎", localtrans:"(türkmençe)", 
 orth:`Cyrillic. &nbsp; Used in Turkmenistan.`,
 also:
 ['tk-arab | arab | Naskh style. Used in Afghanistan &amp; Iran',
@@ -2326,7 +2312,7 @@ also:
 'tly-cyrl | cyrl | ']
 },
 
-"tn": { name:"Tswana (Setswana)", silcode:"tsn", source:"udhr_tsn", region:"afr", countries:"Botswana, South Africa, Zimbabwe", script:"latn", speakers:"5000000", letter:"šŠ", mark:"̌", punctuation:"·‐", local:"Setswana, Tswana"},
+"tn": { name:"Tswana (Setswana)", silcode:"tsn", source:"udhr_tsn", region:"afr", countries:"Botswana, South Africa, Zimbabwe", script:"latn", speakers:"5000000", letter:"šŠ", mark:"̌", punctuation:"·‐", local:"Setswana / Tswana"},
 
 "to": { name:"Tongan", silcode:"ton", source:"cldr_to,udhr_ton", region:"oce", countries:"Tonga", script:"latn", speakers:"169000", letter:"āēīōūĀĒĪŌŪáéíóúÁÉÍÓÚʻ", mark:"́̄", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăĕĭŏœŭĂĔĬŎŒŬŸàâåäæçèêëìîïñòôöøùûüÿÀÂÅÄÆÇÈÊËÌÎÏÑÒÔÖØÙÛǛ̧̆̂̊̈̃", local:"Faka Tonga"},
 
@@ -2364,9 +2350,9 @@ linked:"syrc/tru", fonts:"/pickers/syrc-tru/",
 
 "ts": { name:"Tsonga (Xitsonga)", silcode:"tso", source:"udhr_tso_MZ,udhr_tso_ZW", region:"afr", countries:"South Africa, Mozambique, Zimbabwe", script:"latn", speakers:"13000000", letter:"ìàçãòèùíéáúÌÀÇÃÒÈÙÍÉÁÚ", mark:"̧̀̃́", punctuation:"’", local:"Xitsonga"},
 
-"tsz": { name:"Purépecha (Tarascan)", source:"udhr_tsz", region:"cam", countries:"Mexico, USA", script:"latn", speakers:"125000", letter:"áïéíÁÏÉÍⱭƲŋŊɑʋ", mark:"́̈", local:"P’urhe, P’urhépecha"},
+"tsz": { name:"Purépecha (Tarascan)", source:"udhr_tsz", region:"cam", countries:"Mexico, USA", script:"latn", speakers:"125000", letter:"áïéíÁÏÉÍⱭƲŋŊɑʋ", mark:"́̈", local:"P’urhe / P’urhépecha"},
 
-"tt": { name:"Tatar", silcode:"tat", source:"cldr_tt,udhr_tat", region:"eur", countries:"Russia, Kazakhstan", script:"cyrl", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖёщЁЩ", mark:"̈̆", aux:"ғқӯҒҚӮ̄", local:"татар теле‎ (tatar tele), татарча‎ (tatarça)", 
+"tt": { name:"Tatar", silcode:"tat", source:"cldr_tt,udhr_tat", region:"eur", countries:"Russia, Kazakhstan", script:"cyrl", speakers:"5200000", letter:"кешхоуларынңгмидцясбәтьвзпөъһҗчүйфюэжКЕШХОУЛАРЫНҢГМИДЦЯСБӘТЬВЗПӨЪҺҖЧҮЙФЮЭЖёщЁЩ", mark:"̈̆", aux:"ғқӯҒҚӮ̄", local:"татар теле‎/ татарча‎", localtrans:"(tatar tele / tatarça)", 
 orth:`Cyrillic. &nbsp; `,
 also:
 ['tt-latn | latn | ',]
@@ -2399,11 +2385,11 @@ also:
 
 "ty": { name:"Tahitian", silcode:"tah", source:"udhr_tah", region:"oce", script:"latn", speakers:"68000", letter:"āūōēīĀŪŌĒĪ", mark:"̄", local:"Reo Tahiti"},
 
-"tyv": { name:"Tuvan (Tuvinian, Tyvan, Tuvin)", source:"udhr_tyv", region:"nasia", countries:"Russia, Mongolia", script:"cyrl", speakers:"280000", letter:"кижнңэргелбүтуазычдьсмяоюцхпшөйвъфёКИЖНҢЭРГЕЛБҮТУАЗЫЧДЬСМЯОЮЦХПШӨЙВЪФЁ", mark:"̆̈", local:"тыва‎ (tyva), тыва дыл‎ (tyva dyl)"},
+"tyv": { name:"Tuvan (Tuvinian, Tyvan, Tuvin)", source:"udhr_tyv", region:"nasia", countries:"Russia, Mongolia", script:"cyrl", speakers:"280000", letter:"кижнңэргелбүтуазычдьсмяоюцхпшөйвъфёКИЖНҢЭРГЕЛБҮТУАЗЫЧДЬСМЯОЮЦХПШӨЙВЪФЁ", mark:"̆̈", local:"тыва‎ / тыва дыл‎", localtrans:"(tyva / tyva dyl)"},
 
 "tzh": { name:"Tzeltal (Ts'eltal)", source:"udhr_tzh", region:"cam", countries:"Mexico", script:"ascii", speakers:"450000", symbol:"´", local:"Bats’il k’op"},
 
-"tzm": { name:"Central Atlas Tamazight (Central Morocco Tamazight, Middle Atlas Tamazight, Central Shilha, Beraber, Braber)", source:"cldr_tzm,udhr_tzm_tfng", region:"afr", countries:"Morocco", script:"latn", speakers:"2500000", letter:"ɛɣḍḥṛṣṭẓỵḌḤṚṢṬẒỴƐƔâéçÂÉÇʷ", mark:"̧̣̂́", local:"Tmaziɣt, ⵜⴰⵎⴰⵣⵉⵖⵜ‎ (Tamazight)", 
+"tzm": { name:"Central Atlas Tamazight (Central Morocco Tamazight, Middle Atlas Tamazight, Central Shilha, Beraber, Braber)", source:"cldr_tzm,udhr_tzm_tfng", region:"afr", countries:"Morocco", script:"latn", speakers:"2500000", letter:"ɛɣḍḥṛṣṭẓỵḌḤṚṢṬẒỴƐƔâéçÂÉÇʷ", mark:"̧̣̂́", local:"Tmaziɣt, ⵜⴰⵎⴰⵣⵉⵖⵜ‎", localtrans:"(tamazight)", 
 orth:`Latin. &nbsp; `,
 also:
 ['tzm-arab | arab | Naskh style.',
@@ -2412,7 +2398,7 @@ also:
 
 "tzo": { name:"Tzotzil", source:"udhr_tzc", region:"cam", countries:"Mexico", script:"latn", speakers:"400000", letter:"óáéíúÓÁÉÍÚ", mark:"́", punctuation:"’", local:"Bats’i k’op"},
 
-"ug": { name:"Uyghur (Uighur, Eastern Turki)", local:"ئۇيغۇر تىلى‎ (Uyghur tili), ئۇيغۇرچە‎ (Uyghurche)", silcode:"uig", rtl:true, 
+"ug": { name:"Uyghur (Uighur, Eastern Turki)", local:"ئۇيغۇر تىلى‎ / ئۇيغۇرچە‎", localtrans:"(uyghur tili / uyghurche)", silcode:"uig", rtl:true, 
 source:"cldr_ug,udhr_uig_arab", 
 region:"casia", countries:"China, Kazakhstan", script:"arab", speakers:"25000000", 
 letter:"ئابتجخدرزسشغفقكلمنوىيپچژڭگھۆۇۈۋېە", mark:"͏", markaux:"ٔ", number:"", punctuation:"«»،؛؟", symbol:"", other:"\u061C\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
@@ -2434,7 +2420,7 @@ also:
 },
 
 
-"uk": { name:"Ukrainian", silcode:"ukr", source:"cldr_uk,udhr_ukr", region:"eur", countries:"Ukraine, Brazil, Moldova, Romania", script:"cyrl", speakers:"45000000", local:"українська мова‎ (Ukrayins’ka mova)", 
+"uk": { name:"Ukrainian", silcode:"ukr", source:"cldr_uk,udhr_ukr", region:"eur", countries:"Ukraine, Brazil, Moldova, Romania", script:"cyrl", speakers:"45000000", local:"українська мова‎", localtrans:"(ukrayins’ka mova)", 
 letter:"ʼЄІЇАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгдежзийклмнопрстуфхцчшщьюяєіїґ", mark:"", markaux:"́̆̈", number:"", punctuation:"«»–—“„…", symbol:"", other:"", 
 aux:"%-[]§‑‘‚†‡‰′″‹›₽№",
 orth:`Cyrillic. &nbsp; <a href="../scripts/cyrillic/ks.html" target="_blank">Details</a>.`,
@@ -2457,7 +2443,7 @@ vowels:"let:5 cm:2",
 linked:"nagm/unr", fonts:"/pickers/nagm-unr/", 
 },
 
-"ur": { name:"Urdu", local:"اُردُو‎‎ (Urdū)", silcode:"urd", rtl:true, 
+"ur": { name:"Urdu", local:"اُردُو‎‎", localtrans:"(urdū)", silcode:"urd", rtl:true, 
 source:"db476b3d6bab736201e0829304afa25fcf4a4223,cldr_urdu,udhr_urd", 
 region:"sasia", countries:"Pakistan, India, Nepal, Bangladesh", script:"arab", speakers:"65000000", 
 letter:"ءآؤئابتثجحخدذرزسشصضطظعغفقلمنويٹپچڈڑژکگںھہۂۃیےۓ", mark:"͏ًٌٍَُِّْٰٖؐؑؒؓؔٓٔٗ٘", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"،؍؛؟٪٫٬۔–“”", symbol:"؎؏﷽", other:"\u0600\u0601\u0602\u0603\u0604\u061C\u06DD\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
@@ -2490,7 +2476,7 @@ also:
 'uzn-cyrl | cyrl | 1940-1992, official usage in Uzbekistan, and continued widespread use in China and Uzbekistan.']
 },
 
-"uzn-cyrl": { name:"Northern Uzbek", silcode:"uzn", source:"cldr_uz_Cyrl,udhr_uzn_cyrl", region:"casia", countries:"Uzbekistan, Tajikistan, Kyrgyzstan, Kazakhstan, Turkmenistan", script:"cyrl", speakers:"27000000", letter:"инсоҳуқлармждекцяйбшгтўвэъпчзёфхюғИНСОҲУҚЛАРМЖДЕКЦЯЙБШГТЎВЭЪПЧЗЁФХЮҒ", mark:"̆̈", punctuation:"‐–", aux:"щыьЩЫЬ", local:"ўзбек тили‎ (oʻzbek tili)", 
+"uzn-cyrl": { name:"Northern Uzbek", silcode:"uzn", source:"cldr_uz_Cyrl,udhr_uzn_cyrl", region:"casia", countries:"Uzbekistan, Tajikistan, Kyrgyzstan, Kazakhstan, Turkmenistan", script:"cyrl", speakers:"27000000", letter:"инсоҳуқлармждекцяйбшгтўвэъпчзёфхюғИНСОҲУҚЛАРМЖДЕКЦЯЙБШГТЎВЭЪПЧЗЁФХЮҒ", mark:"̆̈", punctuation:"‐–", aux:"щыьЩЫЬ", local:"ўзбек тили‎", localtrans:"(oʻzbek tili)", 
 related:`Macrolanguage is Uzbek [uz]. Legacy applications often use uz rather than uzn.`,
 orth:`Cyrillic. &nbsp; 1940-1992, official usage in Uzbekistan, and continued widespread use in China and Uzbekistan.`,
 also:
@@ -2529,7 +2515,7 @@ also:
 ['vai | vaii | Primary usage.',]
 },
 
-"ve": { name:"Venda (Tshivenḓa, Luvenḓa)", silcode:"ven", source:"udhr_ven", region:"afr", countries:"South Africa, Zimbabwe", script:"latn", speakers:"1300000", letter:"ṱḽḓṅṋṰḼḒṄṊ", mark:"̭̇", punctuation:"“”", local:"Tshivenḓa‎ (Tshivenda)"},
+"ve": { name:"Venda (Tshivenḓa, Luvenḓa)", silcode:"ven", source:"udhr_ven", region:"afr", countries:"South Africa, Zimbabwe", script:"latn", speakers:"1300000", letter:"ṱḽḓṅṋṰḼḒṄṊ", mark:"̭̇", punctuation:"“”", local:"Tshivenḓa‎", localtrans:"(Tshivenda)"},
 
 "vec": { name:"Venetian (Venetan)", source:"udhr_vec", region:"eur", countries:"Italy, Brazil, Croatia", script:"latn", speakers:"3900000", letter:"óàòèùéìçÓÀÒÈÙÉÌÇƚȽđĐ", mark:"̧́̀", punctuation:"’—", local:"Veneto"},
 
@@ -2551,7 +2537,7 @@ also:
 
 "wae": { name:"Walser German (Walliser German)", source:"cldr_wae", region:"eur", countries:"Swizterland, Austria, Italy, Leichtenstein", script:"latn", speakers:"22000", letter:"áäãéíóöõúüÁÄÃÉÍÓÖÕÚÜčšũČŠŨ", mark:"́̈̃̌", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸàâåæçèêëìîïñòôøßùûÿÀÂÅÆÇÈÊËÌÎÏÑÒÔØÙÛ̧̀̆̂̊̄"},
 
-"war": { name:"Waray", source:"udhr_war", region:"seasia", countries:"Philippines", script:"ascii", speakers:"2600000", local:"Waray, Waray-Waray"},
+"war": { name:"Waray", source:"udhr_war", region:"seasia", countries:"Philippines", script:"ascii", speakers:"2600000", local:"Waray / Waray-Waray"},
 
 "wo": { name:"Wolof", local:"Wolof", silcode:"wol",
 source:"cldr_wo,udhr_wol",
@@ -2616,7 +2602,7 @@ also:
 ['zdj-arab | arab | Naskh style.',]
 },
 
-"zgh": { name:"Standard Moroccan Tamazight (Amazigh, Tamazight)", local:"ⵜⴰⵎⴰⵣⵉⵖⵜ‎ (tamaziɣt), ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ‎ (tamaziɣt tanawayt)", label:"Tamazight, Std Moroccan",
+"zgh": { name:"Standard Moroccan Tamazight (Amazigh, Tamazight)", local:"ⵜⴰⵎⴰⵣⵉⵖⵜ‎ / ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ‎", localtrans:"(tamaziɣt / tamaziɣt tanawayt)", label:"Tamazight, Std Moroccan",
 source:"c7db7ca11771abcda449392ca6fed00e9db62d20,cldr_zgh,udhr_zgh", 
 region:"afr", countries:"Morocco", script:"tfng", speakers:"?", 
 letter:"ⴰⴱⴲⴳⴴⴷⴸⴹⴺⴻⴼⴽⴿⵀⵃⵄⵅⵇⵉⵊⵍⵎⵏⵒⵓⵔⵕⵖⵙⵚⵛⵜⵝⵟⵠⵡⵢⵣⵥⵯ", mark:"", number:"", punctuation:"«»”„…", symbol:"", other:"\u200C\u200D", aux:"%-[]§ʼ͏‑–—‘’“†‡‰′″‹›",
@@ -2633,7 +2619,7 @@ also:
 ['zlm-arab | arab | Naskh style.',]
 },
 
-"zlm-arab": { name:"Malay", rtl:true, source:"udhr_mly_arab", region:"seasia", countries:"Malaysia, Indonesia, Singapore", script:"arab", speakers:"77000000", letter:"ڤراشتهنحقسيمأجڬدبوڽڠعفكلچخظصزطۏؤئذ", mark:"ٔ", punctuation:"،","number":"٢", local:" ملايو‎ (Melayu)", 
+"zlm-arab": { name:"Malay", rtl:true, source:"udhr_mly_arab", region:"seasia", countries:"Malaysia, Indonesia, Singapore", script:"arab", speakers:"77000000", letter:"ڤراشتهنحقسيمأجڬدبوڽڠعفكلچخظصزطۏؤئذ", mark:"ٔ", punctuation:"،","number":"٢", local:" ملايو‎", localtrans:"(melayu)", 
 related:`Macrolanguage is Malay [ms].`,
 orth:`Arabic. &nbsp; Naskh style.`,
 also:
