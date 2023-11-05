@@ -1343,6 +1343,20 @@ vowels:"let:7 cm:10 other:2 comp:18(3)", clusters:"mrk",
 linked:"arab/ks", fonts:"/pickers/arab-ks/", font:"'Noto Nastaliq Urdu', 'Urdu Typesetting'",
 },
 
+"ks": { name:"Kashmiri (Koshur)", local:"کٲشُر‎", localtrans:"(koshur)", silcode:"kas", rtl:true, 
+source:"cldr_ks,57237835618d4daaf27d149d55e14be159182c33", 
+region:"sasia", countries:"India, Pakistan", script:"arab", speakers:"5600000", 
+letter:"ؠآأؤإابتثجحخدذرزسشصضطظعغفقلمنوٲٹپچڈڑژکگںھہۂۄیے", letteraux:"ـ", mark:"͏َُِّْٕٖٟٔٗٚ", markaux:"ٓ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"،؛؟٪۔“”", other:"؜‌‍‎‏‪‫‬⁦⁧⁨⁩", aux:".[]§«»ʼۓ​‑–—‘’†‡…‰′″‹›₹", 
+orth:`Arabic. &nbsp; Nastaliq style ([Aran]) is primary usage, but naskh style also used. Associated with the Muslim Kashmiris.
+Kashmiri is one of the languages that indicates all vowel sounds when using Arabic script. <a href="../scripts/arabic/kashmiri" target="_blank">Details</a>`,
+also:
+["ks-deva | deva | Used by the Hindi community in Kashmir."],
+type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", wordsep:"space", wrap:"word", hyphenation:"?",  direction:"rtl",  justification:"?", 
+vowels:"let:7 cm:10 comp:18(3)",  clusters:"mrk", 
+linked:"arab/ks", fonts:"/pickers/arab-ks/", font:"'Noto Nastaliq Urdu', 'Urdu Typesetting'", 
+},
+
+
 "ks-deva": { name:"Kashmiri (Koshur)", local:"कॉशुर‎", localtrans:"(koshur)", silcode:"kas", 
 source:"7f2afe74cc91aa1c3986c9017fac92907f6cd260", 
 region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", 
@@ -1352,6 +1366,19 @@ orth:`Devanagari. &nbsp; Associated with the Hindu Kashmiris. There were orthogr
 notes:`Need clarity about use or not of Devanagari numbers.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"hang", wrap:"word", hyphenation:"?",  justification:"sp",
 vowels:"inh:1 ind:17 cm:16 vs:16 pre:1", clusters:"vir stk cnj lig rax", finals:"cm:1", 
+linked:"deva/ks", fonts:"/pickers/deva-ks/", 
+},
+
+"ks-deva": { name:"Kashmiri (Koshur)", local:"कॉशुर‎", localtrans:"(koshur)", silcode:"kas", 
+source:"7f2afe74cc91aa1c3986c9017fac92907f6cd260", 
+region:"sasia", countries:"India, Pakistan", script:"deva", speakers:"5600000", 
+letter:"अआइईउऊऋऎएऐऒओऔकखगचछजटठडतथदनपफबमयरलवशसहज़ॳॴॵॶॷ", letteraux:"घङझञढणधभष", mark:"ँंऺऻ़ािीुूृॆेैॊोौ्ॏॖॗ", punctuation:"।॥", other:"‌‍", aux:"%.[]§ʼ͏ॄॐॠ०१२३४५६७८९॰‑–—‘’“”†‡…‰′″⁠₹⹁", 
+orth:`Devanagari. &nbsp; Associated with the Hindu Kashmiris. There were orthographic reforms in 1995, 2002, and 2009. This selection of characters reflects the latter. <a href="../scripts/devanagari/kashmiri" target="_blank">Details</a>.`,
+also:
+["ks| arab | Used by the Muslim community in Kashmir."],
+notes:`Need clarity about use or not of Devanagari numbers.`,
+type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"space", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
+vowels:"cm:16 inh:1 vs:16 ind:17 pre:1",  clusters:"vir stk cnj lig rax",  finals:"cm:1", 
 linked:"deva/ks", fonts:"/pickers/deva-ks/", 
 },
 
@@ -1584,7 +1611,7 @@ also:
 ["ml-arab | arab | Naskh style."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"yes", hyphen:"∅",  justification:"sp",
 vowels:"inh:1 ind:12 cm:12 vs:12 pre:3 circ:3 voc:4 comp:(3)", clusters:"vvir inv stk cnj rax let", finals:"cm:2 let:6", 
-linked:"mlym/ml", fonts:"/pickers/mlym/", font:"'Noto Serif Malayalam'",
+linked:"mlym/ml", fonts:"/pickers/mlym", font:"'Noto Serif Malayalam'",
 },
 
 "mn": { name:"Mongolian", silcode:"mon", redirect:true, region:"easia", script:"macrolanguage", speakers:"?", related:`mn is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Halh Mongolian [khk]<br/>Peripheral Mongolian [mvf].
