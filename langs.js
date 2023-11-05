@@ -2527,17 +2527,28 @@ also:
 
 "war": { name:"Waray", source:"udhr_war", region:"seasia", countries:"Philippines", script:"ascii", speakers:"2600000", local:"Waray / Waray-Waray"},
 
-"wo": { name:"Wolof", local:"Wolof", silcode:"wol",
-source:"cldr_wo,udhr_wol",
-region:"afr", countries:"Guinea, etc.", script:"latn", speakers:"4200000",
-letter:"ÀÉËÑÓàéëñóŊŋ", mark:"", markaux:"̀́̃̈", number:"", punctuation:"“”", symbol:"", other:"", 
-aux:"%Z[]z§«»‑–—†‡…‰′″‹›",
+"wo": { name:"Wolof", local:"Wolof", silcode:"wol", 
+source:"cldr_wo,udhr_wol", 
+region:"afr", countries:"Guinea, etc.", script:"latn", speakers:"4200000", 
+letter:"ÀÉËÑÓàéëñóŊŋ", mark:"", markaux:"̀́̃̈", punctuation:"“”", aux:"%Z[]z§«»‑–—†‡…‰′″‹›", 
 orth:`Latin. &nbsp; Primary usage.`,
 also:
-['wo-arab | arab | Naskh style.',],
-type:"alphabet", cs:"tbc", gpos:"tbc", gsub:"tbc", cursive:"no", direction:"ltr", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"sp",
-vowels:"let:18 cm:(4)",
+["wo-arab | arab | Naskh style.","wo-gara | gara | Limited usage."],
+type:"alphabet", cursive:"no", wordsep:"space", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
+vowels:"let:18 cm:(4)", 
 linked:"latn/wo", picker:"latn-wo", 
+},
+
+"wo-gara": { name:"Wolof", silcode:"wol", rtl:true, 
+source:"r12a", 
+region:"afr", countries:"Guinea, etc.", script:"gara", speakers:"4200000", 
+letter:"𐵱𐵲𐵳𐵴𐵵𐵶𐵷𐵸𐵹𐵺𐵻𐵼𐵽𐵾𐵿𐶀𐶁𐶂𐵑𐵒𐵓𐵔𐵕𐵖𐵗𐵘𐵙𐵚𐵛𐵜𐵝𐵞𐵟𐵠𐵡𐵢𐵊𐵋𐵌𐵍𐵎𐵐", mark:"𐵩𐵪𐵫𐵬𐵭", punctuation:"‘’“”𐵮", symbol:"𐵯", other:"‌‍⁧‫⁦‪⁨⁩‬‏‎؜͏", 
+orth:`Garay. &nbsp; Limited usage.`,
+also:
+["wo-arab | arab | Naskh style.", "wo| latn | Primary usage."],
+type:"alphabet", cs:"yes", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"rtl",  justification:"sp", 
+vowels:"let:5 cm:1 ind:2 comp:5", 
+linked:"gara/wo", picker:"gara-wo", font:"WolofGaraySansSerif", 
 },
 
 "wwa": { name:"Waama (Yoabu)", source:"udhr_wwa", region:"afr", countries:"Benin", script:"latn", speakers:"50000", letter:"ãìàùèÃÌÀÙÈǹƆƐǸũŋŨŊɔɛ", mark:"̃̀", local:"Waama"},

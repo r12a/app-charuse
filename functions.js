@@ -28,6 +28,7 @@ var scriptData = {
 'elba':{ name:'Elbasan', block:"" },
 'ethi':{ name:'Ethiopic', block:"ethi" },
 'geok':{ name:'Khutsuri', block:"" },
+'gara':{ name:'Garay', block:"gara" },
 'geor':{ name:'Georgian', block:"geor" },
 'glag':{ name:'Glagolitic', block:"" },
 'gong':{ name:'Gunjala Gondi', block:"" },
