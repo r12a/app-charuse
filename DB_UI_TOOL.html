@@ -31,7 +31,7 @@ input {
     }
 </style>
 
-<script src="/app-charuse/langs.js"> </script>
+<script src="langs.js"> </script>
 
 <script>
 
@@ -52,6 +52,7 @@ function generate () {
     out += '"'+document.getElementById('key').value+'": { '
     out += makeValue('name')
     out += makeValue('local')
+    out += makeValue('localtrans')
     out += makeValue('silcode')
     if (document.getElementById('rtl').checked) out += 'rtl:true, '
     if (document.getElementById('redirect').checked) out += 'redirect:true, '
@@ -189,6 +190,7 @@ function generate () {
     out += '\n'
     out += makeValue('linked')
     out += makeValue('fonts')
+    out += makeValue('font')
 
 
 
@@ -220,10 +222,10 @@ function readRecord (lang) {
     document.getElementById('key').value = lang
     
     var fields = [
-        'name','local','silcode','source', 
+        'name','local','localtrans','silcode','source', 
         'region', 'countries', 'script', 'speakers',
         'letter', 'letteraux', 'mark', 'markaux', 'number', 'numberaux', 'punctuation', 'punctuationaux', 'symbol', 'symbolaux', 'other', 'otheraux', 'aux', 'deprecated',
-        'type', 'cs', 'gpos', 'gsub', 'cursive', 'direction', 'baseline', 'wordsep', 'wordsepChar', 'wrap', 'hyphenation', 'hyphen', 'justification', 'linked', 'fonts',
+        'type', 'cs', 'gpos', 'gsub', 'cursive', 'direction', 'baseline', 'wordsep', 'wordsepChar', 'wrap', 'hyphenation', 'hyphen', 'justification', 'linked', 'fonts', 'font',
         'vowels','clusters', 'medials', 'finals',
         ]
     for (var f=0;f<fields.length;f++) {
@@ -379,6 +381,7 @@ Redirect? <input type="checkbox" id="redirect"></p>
 
 <p><label>Name:&#x0009;<input type="text" id="name" style="width:50em;" placeholder="∅"></label></p>
 <p><label>Local name:&#x0009;<input type="text" id="local" style="width:40em;" placeholder="∅"></label></p>
+<p><label>Local name transcription:&#x0009;<input type="text" id="localtrans" style="width:35em;" placeholder="∅"></label></p>
 
 <p><label>Sources:&#x0009;<input type="text" id="source" style="width:50em;" placeholder="∅"></label></p>
 
@@ -531,6 +534,7 @@ fat | latn | For the Fante dialect of Twi"></textarea></p>
 </p>
 <p><label>Link to script explainer:&#x0009;<input type="text" id="linked" placeholder="∅"></label></p>
 <p><label>Link to character app:&#x0009;<input type="text" id="fonts" placeholder="∅"></label></p>
+<p><label>Font to apply:&#x0009;&#x0009;<input type="text" id="font" placeholder="∅"></label></p>
 <hr>
 <p><label><strong>Vowels</strong>&#x0009;<input id="vowels" type="text" style="width: 500px;color: red;font-size: 110%;"></label></p>
 
