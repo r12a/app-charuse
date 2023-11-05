@@ -476,9 +476,11 @@ function showLanguage (lang) {
 	if (!langs[lang].redirect) {
 	
 	// local name
-	if (langs[lang].local) out += '<tr><th>Autonym</th><td class="localCell"'
+	if (langs[lang].local) out += '<tr><th>Autonym</th><td><span class="localCell"'
     if (typeof langs[lang].font !== 'undefined' ) out += ` style="font-family:${ langs[lang].font };"`
-    out += '>'+langs[lang].local+'</td></td><td class="links"></td></tr>'
+    out += '>'+langs[lang].local+'</span>'
+    if (langs[lang].localtrans) out += ` <span class="localtrans">${ langs[lang].localtrans }</span>`
+    out += '</td></td><td class="links"></td></tr>'
 	
 	if (langs[lang].rtl) var rtl = true
 	else rtl = false

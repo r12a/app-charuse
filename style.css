@@ -324,6 +324,11 @@ td {
 	}
 
 .localCell {
+	font-size:120%;
+	font-family: "Gentium Plus", "helvetica neue", helvetica, "Segoe UI", sans-serif; 
+	}
+
+.localtrans {
 	font-size:90%;
 	font-family: "Gentium Plus", "helvetica neue", helvetica, "Segoe UI", sans-serif; 
 	}
