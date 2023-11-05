@@ -67,7 +67,7 @@ also:["aii-arab | arab | 'Garshuni', often used today for written communication,
 related:`Macrolanguage is Syriac [syr].`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?", justification:"sp str", 
 vowels:"other:3 ml:3 cm:6 comp:4 base:ܐ/a",
-linked:"syrc/aii", fonts:"/pickers/syrc-aii/", 
+linked:"syrc/aii", fonts:"/pickers/syrc-aii/", font:"'Noto Sans Syriac Eastern'"
 },
 
 "ajg": { name:"Aja", local:"Ajagbe", 
@@ -1240,7 +1240,7 @@ letter:"ᨠᨡᨣᨤᨥᨦᨧᨨᨩᨪᨫᨬᨭᨮᨯᨰᨱᨲᨳᨴᨵᨶᨷᨸ
 orth:`Tai Tham. &nbsp;  <a href="../scripts/taitham/" target="_blank">Details</a>.`,
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"word", hyphenation:"no",  direction:"ltr",  justification:"sp", 
 vowels:"inh:1 cm:18 vs:18 other:3 ind:7 base:ᩋ/ʔa pre:4 comp:25",  clusters:"inv stk",  medials:"cm:2 sj:1",  finals:"cm:7", 
-linked:"lana/kkh", 
+linked:"lana/kkh", font:"'Noto Sans Tai Tham'"
 },
 
 "kkj": { name:"Kako (Mkako, Mkaka)", source:"cldr_kkj", region:"afr", countries:"Cameroon, Congo, Central African Republic", script:"latn", speakers:"120000", letter:"áàâéèêíìîóòôúùûÁÀÂÉÈÊÍÌÎÓÒÔÚÙÛǌƁƊƐǊƆŋŊɓɗɛɔ", mark:"̧́̀̂", punctuation:"«»…‘‹›“”", local:"Kakɔ"},
@@ -1701,7 +1701,7 @@ also:
 ["nod-thai | thai | "],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"word", hyphenation:"no",  direction:"ltr",  justification:"?", 
 vowels:"inh:1 cm:20 vs:20 other:3 vsl:3 ind:6 base:ᩋ/ʔa pre:5 comp:29",  clusters:"inv stk",  medials:"cm:2 sj:1",  finals:"cm:6", 
-linked:"lana/nod", fonts:"/pickers/lana-nod/", 
+linked:"lana/nod", fonts:"/pickers/lana-nod/", font:"'Payap Lanna'",
 },
 
 "not": { name:"Nomatsiguenga", source:"udhr_not", region:"sam", countries:"Peru", script:"latn", speakers:"6500", letter:"ëíáóñËÍÁÓÑ", mark:"̈́̃", local:"Nomatsigenga"},
@@ -2345,7 +2345,7 @@ ISO 15924 has a general script code for Syriac (syrc), and another (syrn) for th
 related:`Macrolanguage is Syriac [syr].`,
 type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", direction:"rtl", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  justification:"?",
 vowels:"ml:3 cm:5 other:3",
-linked:"syrc/tru", fonts:"/pickers/syrc-tru/", 
+linked:"syrc/tru", fonts:"/pickers/syrc-tru/", font:"'Noto Sans Syriac Western'" 
 },
 
 "ts": { name:"Tsonga (Xitsonga)", silcode:"tso", source:"udhr_tso_MZ,udhr_tso_ZW", region:"afr", countries:"South Africa, Mozambique, Zimbabwe", script:"latn", speakers:"13000000", letter:"ìàçãòèùíéáúÌÀÇÃÒÈÙÍÉÁÚ", mark:"̧̀̃́", punctuation:"’", local:"Xitsonga"},
