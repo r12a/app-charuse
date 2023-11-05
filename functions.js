@@ -4,84 +4,95 @@ debug = false
 var scriptData = {
 'ascii':{ name:'ASCII only', block:"" },
 'adlm':{ name:'Adlam', block:"adlm" },
+'ahom':{ name:'Ahom', block:"" },
 'arab':{ name:'Arabic', block:"arab" },
 'armn':{ name:'Armenian', block:"armn" },
 'bali':{ name:'Balinese', block:"bali" },
 'bamu':{ name:'Bamum', block:"bamu" },
-'bass':{ name:'Bassa Vah', block:"bassavah" },
+'bass':{ name:'Bassa Vah', block:"bass" },
 'batk':{ name:'Batak', block:"batk" },
-'beng':{ name:'Bengali (Bangla)', block:"bengali" },
-'bugi':{ name:'Buginese', block:"buginese" },
+'beng':{ name:'Bengali (Bangla)', block:"beng" },
+'bugi':{ name:'Buginese', block:"bugi" },
 'buhd':{ name:'Buhid', block:"" },
 'cakm':{ name:'Chakma', block:"" },
+'cham':{ name:'Cham', block:"" },
 'cans':{ name:'Canadian Syllabics', block:"cans" },
-'cher':{ name:'Cherokee', block:"cherokee" },
-'cyrl':{ name:'Cyrillic', block:"cyrillic" },
-'deva':{ name:'Devanagari', block:"devanagari" },
+'cher':{ name:'Cherokee', block:"cher" },
+'copt':{ name:'Coptic', block:"" },
+'cyrl':{ name:'Cyrillic', block:"cyrl" },
+'deva':{ name:'Devanagari', block:"deva" },
 'dsrt':{ name:'Deseret', block:"" },
+'diak':{ name:'Dives Akuru', block:"" },
+'dogr':{ name:'Dogra', block:"" },
+'egyp':{ name:'Egyptian Hieroglyphs', block:"" },
 'elba':{ name:'Elbasan', block:"" },
-'ethi':{ name:'Ethiopic', block:"ethiopic" },
+'ethi':{ name:'Ethiopic', block:"ethi" },
 'geok':{ name:'Khutsuri', block:"" },
-'geor':{ name:'Georgian', block:"georgian" },
+'geor':{ name:'Georgian', block:"geor" },
 'glag':{ name:'Glagolitic', block:"" },
-'grek':{ name:'Greek', block:"greek" },
-'gujr':{ name:'Gujarati', block:"gujarati" },
-'guru':{ name:'Gurmukhi', block:"gurmukhi" },
+'gong':{ name:'Gunjala Gondi', block:"" },
+'gonm':{ name:'Masaram Gondi', block:"" },
+'grek':{ name:'Greek', block:"grek" },
+'gujr':{ name:'Gujarati', block:"gujr" },
+'guru':{ name:'Gurmukhi', block:"guru" },
 'hani':{ name:'Han', block:"" },
 'hano':{ name:'Hanunoo', block:"" },
-'hebr':{ name:'Hebrew', block:"hebrew" },
-'java':{ name:'Javanese', block:"javanese" },
+'hebr':{ name:'Hebrew', block:"hebr" },
+'java':{ name:'Javanese', block:"java" },
 'kali':{ name:'Kayah Li', block:"kali" },
 'khoj':{ name:'Khojki', block:"" },
-'khmr':{ name:'Khmer', block:"khmer" },
+'khmr':{ name:'Khmer', block:"khmr" },
+'khti':{ name:'Kaithi', block:"" },
 'knda':{ name:'Kannada', block:"" },
 'kpel':{ name:'Kpelle', block:"" },
-'kthi':{ name:'Kaithi', block:"" },
-'lana':{ name:'Tai Tham', block:"taitham" },
-'laoo':{ name:'Lao', block:"lao" },
-'latn':{ name:'Latin', block:"latin" },
+'lana':{ name:'Tai Tham', block:"lana" },
+'laoo':{ name:'Lao', block:"laoo" },
+'latn':{ name:'Latin', block:"latn" },
+'limb':{ name:'Limbu', block:"limb" },
 'lisu':{ name:'Lisu', block:"lisu" },
 'lepc':{ name:'Lepcha', block:"lepc" },
-'mand':{ name:'Mandaic', block:"mandaic" },
+'maka':{ name:'Makasar', block:"" },
+'mand':{ name:'Mandaic', block:"mand" },
 'marc':{ name:'Marchen', block:"" },
 'mend':{ name:'Mende Kikakui', block:"" },
-'mlym':{ name:'Malayalam', block:"malayalam" },
-'mong':{ name:'Mongolian', block:"mongolian" },
+'mlym':{ name:'Malayalam', block:"mlym" },
+'mong':{ name:'Mongolian', block:"mong" },
 'mroo':{ name:'Mro', block:"mroo" },
-'mymr':{ name:'Myanmar', block:"myanmar" },
+'mymr':{ name:'Myanmar', block:"mymr" },
 'nagm':{ name:'Nag Mundari', block:"nagm" },
 'nand':{ name:'Nandinagari', block:"" },
 'newa':{ name:'Newa', block:"newa" },
-'nkoo':{ name:'N’Ko', block:"nko" },
-'olck':{ name:'Ol Chiki', block:"santali" },
-'orya':{ name:'Oriya', block:"Oriya" },
+'nkoo':{ name:'N’Ko', block:"nkoo" },
+'olck':{ name:'Ol Chiki', block:"olck" },
+'orya':{ name:'Oriya', block:"orya" },
 'ogam':{ name:'Ogham', block:"" },
-'osge':{ name:'Osage', block:"Osage" },
+'osge':{ name:'Osage', block:"osge" },
 'osma':{ name:'Osmanya', block:"" },
 'perm':{ name:'Old Permic', block:"" },
 'phag':{ name:'Phags-pa', block:"" },
 'rohg':{ name:'Hanifi Rohingya', block:"rohg" },
-'runr':{ name:'Runic', block:"runic" },
+'runr':{ name:'Runic', block:"runr" },
 'shrd':{ name:'Sharada', block:"" },
 'shaw':{ name:'Shavian', block:"" },
-'sinh':{ name:'Sinhala', block:"sinhala" },
-'sund':{ name:'Sundanese', block:"sundanese" },
-'syrc':{ name:'Syriac', block:"syriac" },
-'syrn':{ name:'Eastern Syriac', block:"syriac" },
-'syrj':{ name:'Western Syriac', block:"syriac" },
+'sinh':{ name:'Sinhala', block:"sinh" },
+'sund':{ name:'Sundanese', block:"sund" },
+'sunu':{ name:'Sunwar', block:"sunu" },
+'syrc':{ name:'Syriac', block:"syrc" },
+'syrn':{ name:'Eastern Syriac', block:"syrc" },
+'syrj':{ name:'Western Syriac', block:"syrc" },
 'tagb':{ name:'Tagbanwa', block:"" },
-'taml':{ name:'Tamil', block:"tamil" },
-'tavt':{ name:'Tai Viet', block:"taiviet" },
-'tale':{ name:'Tai Le', block:"taile" },
-'talu':{ name:'New Tai Lü', block:"newtailue" },
-'telu':{ name:'Telugu', block:"telugu" },
-'tfng':{ name:'Tifinagh', block:"tifinagh" },
+'taml':{ name:'Tamil', block:"taml" },
+'tavt':{ name:'Tai Viet', block:"tavt" },
+'tale':{ name:'Tai Le', block:"tale" },
+'talu':{ name:'New Tai Lü', block:"talu" },
+'telu':{ name:'Telugu', block:"telu" },
+'tfng':{ name:'Tifinagh', block:"tfng" },
 'tglg':{ name:'Tagalog', block:"" },
 'thai':{ name:'Thai', block:"thai" },
-'thaa':{ name:'Thaana', block:"thaana" },
-'tibt':{ name:'Tibetan', block:"tibetan" },
+'thaa':{ name:'Thaana', block:"thaa" },
+'tibt':{ name:'Tibetan', block:"tibt" },
 'tirh':{ name:'Tirhuta', block:"" },
-'vaii':{ name:'Vai', block:"vai" },
+'vaii':{ name:'Vai', block:"vaii" },
 'yiii':{ name:'Yi', block:"" },
 'macrolanguage':{ name:'Macrolanguage', block:"" },
 
@@ -171,7 +182,7 @@ function listLangsByScript () {
     //    }
     //console.log(myset)
 
-    var regionList = { ascii:[], adlm:[], arab:[], armn:[], bali:[], bamu:[], bass:[], batk:[], beng:[], bugi:[], buhd:[], cans:[], cakm:[], cher:[], cyrl:[], deva:[], ethi:[], geor:[], grek:[], gujr:[], guru:[], hano:[], hebr:[], java:[], kali:[], knda:[], khmr:[], laoo:[], latn:[], lepc:[], limb:[], lisu:[], mlym:[], mand:[], mong:[], mroo:[], mymr:[], talu:[], nagm:[],newa:[], nkoo:[], olck:[], orya:[], osge:[], rohg:[], shrd:[], sinh:[], sund:[], sunu:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tagb:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
+    var regionList = { ascii:[], adlm:[], ahom:[], arab:[], armn:[], bali:[], bamu:[], bass:[], batk:[], beng:[], bugi:[], buhd:[], cans:[], cakm:[], cham:[], cher:[], copt:[], cyrl:[], deva:[], diak:[], dogr:[], dsrt:[], egyp:[], ethi:[], geor:[], gong:[], gonm:[], grek:[], gujr:[], guru:[], hano:[], hebr:[], java:[], kali:[], knda:[], khmr:[], khti:[], knda:[], laoo:[], latn:[], lepc:[], limb:[], lisu:[], maka:[], mlym:[], mand:[], mong:[], mroo:[], mymr:[], talu:[], nagm:[],newa:[], nkoo:[], olck:[], orya:[], osge:[], rohg:[], shrd:[], sinh:[], sund:[], sunu:[], syrc:[], syrn:[], syrj:[], tale:[], lana:[], tagb:[], tavt:[], taml:[], telu:[], thaa:[], thai:[], tibt:[], tfng:[], vaii:[], yiii:[], macrolanguage:[] }
     for (l in langs) {
         var language = Object.assign({bcp:l}, langs[l])
         regionList[langs[l].script].push(language)
@@ -190,98 +201,19 @@ function listLangsByScript () {
 	}
 
 
+
+
+
+
+
 function getScriptName (s) { 
 	// returns a name for a script subtag
-	switch (s) {
-		case 'ascii': script = 'ASCII only';break
-		case 'adlm': script = 'Adlam';break
-		case 'arab': script = 'Arabic';break
-		case 'armn': script = 'Armenian';break
-		case 'bali': script = 'Balinese';break
-		case 'bamu': script = 'Bamum';break
-		case 'bass': script = 'Bassa Vah';break
-		case 'batk': script = 'Batak';break
-		case 'beng': script = 'Bengali (Bangla)';break
-		case 'bugi': script = 'Buginese';break
-		case 'buhd': script = 'Buhid';break
-		case 'cakm': script = 'Chakma';break
-		case 'cans': script = 'Canadian Syllabics';break
-		case 'cher': script = 'Cherokee';break
-		case 'cyrl': script = 'Cyrillic';break
-		case 'deva': script = 'Devanagari';break
-		case 'dsrt': script = 'Deseret';break
-		case 'elba': script = 'Elbasan';break
-		case 'ethi': script = 'Ethiopic';break
-		case 'geok': script = 'Khutsuri';break
-		case 'geor': script = 'Georgian';break
-		case 'glag': script = 'Glagolitic';break
-		case 'grek': script = 'Greek';break
-		case 'gujr': script = 'Gujarati';break
-		case 'guru': script = 'Gurmukhi';break
-		case 'hani': script = 'Han';break
-		case 'hano': script = 'Hanunoo';break
-		case 'hebr': script = 'Hebrew';break
-		case 'java': script = 'Javanese';break
-		case 'kali': script = 'Kayah Li';break
-		case 'khoj': script = 'Khojki';break
-		case 'khmr': script = 'Khmer';break
-		case 'knda': script = 'Kannada';break
-		case 'kpel': script = 'Kpelle';break
-		case 'kthi': script = 'Kaithi';break
-		case 'lana': script = 'Tai Tham';break
-		case 'laoo': script = 'Lao';break
-		case 'latn': script = 'Latin';break
-		case 'lepc': script = 'Lepcha';break
-		case 'lisu': script = 'Lisu';break
-		case 'mand': script = 'Mandaic';break
-		case 'marc': script = 'Marchen';break
-		case 'mend': script = 'Mende Kikakui';break
-		case 'mlym': script = 'Malayalam';break
-		case 'mong': script = 'Mongolian';break
-		case 'mroo': script = 'Mro';break
-		case 'mymr': script = 'Myanmar';break
-		case 'nagm': script = 'Nag Mundari';break
-		case 'nand': script = 'Nandinagari';break
-		case 'newa': script = 'Newa';break
-		case 'olck': script = 'Ol Chiki';break
-		case 'orya': script = 'Oriya';break
-		case 'ogam': script = 'Ogham';break
-		case 'osge': script = 'Osage';break
-		case 'osma': script = 'Osmanya';break
-		case 'mong': script = 'Mongolian';break
-		case 'newa': script = 'Newa';break
-		case 'nkoo': script = 'N’Ko';break
-		case 'perm': script = 'Old Permic';break
-		case 'phag': script = 'Phags-pa';break
-		case 'rohg': script = 'Hanifi Rohingya';break
-		case 'runr': script = 'Runic';break
-		case 'shrd': script = 'Sharada';break
-		case 'shaw': script = 'Shavian';break
-		case 'sinh': script = 'Sinhala';break
-		case 'sund': script = 'Sundanese';break
-		case 'syrc': script = 'Syriac';break
-		case 'syrn': script = 'Eastern Syriac';break
-		case 'syrj': script = 'Western Syriac';break
-		case 'tagb': script = 'Tagbanwa';break
-		case 'taml': script = 'Tamil';break
-		case 'tavt': script = 'Tai Viet';break
-		case 'tale': script = 'Tai Le';break
-		case 'talu': script = 'New Tai Lü';break
-		case 'telu': script = 'Telugu';break
-		case 'tfng': script = 'Tifinagh';break
-		case 'tglg': script = 'Tagalog';break
-		case 'thai': script = 'Thai';break
-		case 'thaa': script = 'Thaana';break
-		case 'tibt': script = 'Tibetan';break
-		case 'tirh': script = 'Tirhuta';break
-		case 'vaii': script = 'Vai';break
-		case 'yiii': script = 'Yi';break
-		case 'macrolanguage': script = 'Macrolanguage';break
-		default: script = 'Unknown script'
-		}
-	
-	return script
+    if (typeof scriptData[s] === 'undefined') console.log('Cant find ',s,'in getScriptName')
+    return scriptData[s].name
 	}
+
+
+
 
 
 
