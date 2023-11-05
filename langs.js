@@ -2161,6 +2161,18 @@ vowels:"let:6",
 linked:"sunu/suz", fonts:"/pickers/sunu-suz/", font:"Uni11BC0Sunuwar", 
 },
 
+"suz": { name:"Sunuwar", local:"𑯆𑯑̃̍𑯃𑯌", silcode:"suz", 
+source:"",
+region:"sasia", countries:"Nepal, Sikkim", script:"sunu", speakers:"38200", 
+letter:"𑯀𑯁𑯄𑯆𑯇𑯉𑯊𑯋𑯌𑯍𑯎𑯏𑯐𑯒𑯓𑯔𑯗𑯘𑯙𑯚𑯛𑯜𑯝𑯞𑯟𑯠𑯂𑯃𑯅𑯈𑯑𑯖", mark:"̭̱̀́̃̍̐᷵", number:"𑯰𑯱𑯲𑯳𑯴𑯵𑯶𑯷𑯸𑯹", punctuation:"‘’“”", symbol:"𑯡", 
+orth:`Sunuwar. <a href="../scripts/sunu/suz.html" target="_blank">Details.</a>`,
+also:
+["suz-deva | deva | Primary usage."],
+type:"alphabet", cs:"no", gpos:"yes", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word",  direction:"ltr",  justification:"?", 
+vowels:"let:6",  medials:"sj:1", 
+linked:"sunu/suz", fonts:"../pickers/sunu-suz/", font:"Uni11BC0Sunuwar", 
+},
+
 "sus": { name:"Susu", source:"udhr_sus", region:"afr", countries:"Guinea, Sierra Leone", script:"latn", speakers:"1060000", letter:"ƐƆƝɛɔɲ", local:"Sosoxui", 
 orth:`Latin. &nbsp; `,
 also:
