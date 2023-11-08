@@ -154,7 +154,8 @@ sub { color:#C30; font-style: italic; }
 
 #output { color: #C33; margin: 1em 30% 2em 7.5%; line-height: 1.2em; }
 #output th { font-size: 50px; font-weight: normal; }
-#output th, #output td { text-align: left; vertical-align: top; padding: 10px; }
+#output th, #output td, #scriptMatchOutput th, #scriptMatchOutput td { text-align: left; vertical-align: top; padding: 10px; }
+#scriptMatchOutput th, #scriptMatchOutput td { font-size: 80%; }
 thead th { text-align: left; }
 
 #langDetails { color: #C33; margin: 1em 7.5% 2em 7.5%; line-height: 1.2em; min-width: 70%;}
