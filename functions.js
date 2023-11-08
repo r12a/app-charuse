@@ -1102,6 +1102,7 @@ function initialise () {
 			if (pairs[1]) { 
 				document.getElementById('characters').value = decodeURIComponent(pairs[1])
 				document.getElementById('output').innerHTML = findChars(document.getElementById('characters').value)
+                document.getElementById('lookUpCharacters').scrollIntoView({behavior: 'smooth'})
 				}
 			}
 		if (pairs[0] === 'language') { 
