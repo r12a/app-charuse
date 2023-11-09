@@ -696,7 +696,7 @@ also:
 orth:`[Latin] &nbsp; Pinyin-based, used 1984-1990s.`},
 
 "dv": { name:"Dhivehi (Maldivian, Divehi)", local:"ދިވެހި / ދިވެހިބަސް ", localtrans:"[d̪iˈʋehi / d̪iˈʋehi bas]", silcode:"div", rtl:true, 
-source:"udhr_div,e9188c572c9c158255cede2459f076ecb3b50b9f", 
+source:"udhr_div,760eec0c90074853cbeeb6ec23e9bb8d14dd7c0d", 
 region:"sasia", countries:"Maldives", script:"thaa", speakers:"340000", 
 letter:"ހށނރބޅކއވމފދތލގޏސޑޒޓޔޕޖޗޘޙޚޛޜޝޞޟޠޡޢޣޤޥ", mark:"ަާިީުޫެޭޮޯް", number:"", punctuation:"،؛؟“”", symbol:"", other:"", 
 aux:",/;[]⹁",
