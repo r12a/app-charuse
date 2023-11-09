@@ -712,7 +712,8 @@ function showLanguage (lang) {
 			while (cp.length<4) cp = '0'+cp
 			name = 'U+'+cp+' '+charData[charList[j]]
 			out += '<span title="'+name+'">'
-            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+'\u00A0'+charList[j]+'</a>'
+            if (langs[lang].script && langs[lang].script) out += '\u00A0'+charList[j]
+            //if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+'\u00A0'+charList[j]+'</a>'
 			else out += '\u00A0'+charList[j]
 			out += '</span> ' 
 			}
