@@ -1091,7 +1091,7 @@ function showLanguage (lang) {
 		}
 	
 	// set the permalink
-	document.getElementById('permalink').innerHTML = '<a href=".?language='+lang+'">Permalink</a>'
+	document.getElementById('permalink').innerHTML = '<a href="index.html?language='+lang+'">Permalink</a>'
 	}
 
 

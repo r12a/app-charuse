@@ -113,17 +113,17 @@
 
 
 
-<details style="margin-right: 7.5%; margin-top: 4em;" id="notesSection">
-<summary dir="rtl"><span style="color:white;background-color:#60ADFB; padding:.2em .4em; border-radius:5px; cursor:pointer;">Help</span></summary>
+<details style="margin-inline: 7.5%; margin-top: 4em; margin-block-end:3rem;" id="notesSection">
+<summary><span style="color:white;background-color:#60ADFB; padding:.2em .4em; border-radius:5px; cursor:pointer;" onclick="document.getElementById('notesHeader').scrollIntoView({behavior: 'smooth'})">Usage notes</span></summary>
 
-<h2 class="flush">Notes</h2>
+<h2 id="notesHeader" class="flush">Notes</h2>
 <aside class="sidebar">
   <div class="section">
     <h2 class="flush">Related links</h2>
     <p><a target="_blank" href="https://www.unicode.org/cldr/charts/latest/summary/root.html">CLDR</a></p>
     <p><a target="_blank" href="http://unicode.org/udhr/translations.html">UDHR</a></p>
-    <p><a href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">Raise an issue</a></p>
-    <p><a href="https://github.com/r12a/app-charuse/issues/">See open issues</a></p>
+    <p><a target="_blank" href="https://github.com/r12a/app-charuse/issues/new?title=[app-charuse]%20%20ADD%20TITLE%20HERE">Raise an issue</a></p>
+    <p><a target="_blank" href="https://github.com/r12a/app-charuse/issues/">See open issues</a></p>
   </div>
 </aside>
 
@@ -137,6 +137,7 @@
 <h3>To note:</h3>
   <ul>
   <li>ASCII characters are ignored.</li>
+<li>Characters listed after a + sign are infrequently used.</li>
   <li>Where CLDR and UDHR are the primary sources, auxiliary characters from CLDR are shown as 'infrequent'. Every character that appears in a UDHR transcription is shown.</li>
   <li>Characters shown for a language include all characters produced by applying uppercase, lowercase, NFC, and NFD to the set of characters attributed to that language.</li>
   <li>As mentioned above, <strong>the data is expected to be largely correct, but not 100%</strong>. Note that  CLDR source data is often not completely correct. In particular, data that is based on UDHR alone may be missing characters, just because they don't occur in that text (especially for scripts with a large syllabic repertoire). So the data should be treated with care. However, the data should be mostly correct, and I intend to fix it where errors come to light.</li>
@@ -157,16 +158,16 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
   <li>When adding characters to the <samp>Look up characters</samp> field, you can add Unicode code point numbers with space to either side, or escapes. For example, for આ any of the following escapes will work: <code>&amp;#x0A86; \u0A86 \u{A86} \0A86 U+0A86 0xA86</code>. No extra space is needed between escapes, and supplementary characters work too.</li>
   <li>After you have generated a list of languages that use a given character, if you click on a language name then details for that language will be displayed above.</li>
 <li>To compare lists of characters, copy one set to the left box under <samp>Compare lists</samp>, and the other to the right box, then click on <samp>Compare</samp>. If both boxes are identical there will be no output, but if there are differences they will be displayed below the boxes.</li>
-  <li>You can automatically display data via the URL. For example, try <a href="https://r12a.github.io/app-charuse/?language=vi&amp;charlist=đỹã">https://r12a.github.io/app-charuse/?language=vi&amp;charlist=đỹã</a>.</li>
+  <li>You can automatically display data via the URL. For example, try the following:<br><a href="index.html?language=vi">https://r12a.github.io/app-charuse/?language=vi</a><br><a href="index.html?charlist=đỹã">https://r12a.github.io/app-charuse/?charlist=đỹã</a></li>
 </ul>
 </section>
 
 <section>
 <h3>Sources:</h3>
   <ul>
-  <li>CLDR: <a href="https://www.unicode.org/cldr/charts/latest/summary/root.html">https://www.unicode.org/cldr/charts/latest/summary/root.html</a></li>
-  <li>UDHR: <a href="http://unicode.org/udhr/translations.html">http://unicode.org/udhr/translations.html</a></li>
-  <li>r12a: mainly the articles under the heading "Script Notes" at <a href="https://r12a.github.io/doclist#scriptnotes">https://r12a.github.io/doclist#scriptnotes</a>.</li>
+  <li>CLDR: <a target="_blank" href="https://www.unicode.org/cldr/charts/latest/summary/root.html">https://www.unicode.org/cldr/charts/latest/summary/root.html</a></li>
+  <li>UDHR: <a target="_blank" href="http://unicode.org/udhr/translations.html">http://unicode.org/udhr/translations.html</a></li>
+  <li>GitHub: mainly the articles under the heading "Script Notes" at <a target="_blank" href="../scripts/index.html#scriptnotes">https://r12a.github.io/scripts/index.html#scriptnotes</a>.</li>
 </ul>
 </section>
 
@@ -184,7 +185,7 @@ Unfortunately, this doesn't work with Safari, or (therefore)  iOS. If you need t
 
 
 <div class="smallprint" style="margin-right: 1em;"><span id="version">Latest commit <a href="https://github.com/r12a/app-charuse/commits/gh-pages"><span id="version-info"> 
-  <!-- #BeginDate format:IS1m -->2023-11-10  2:16<!-- #EndDate --> 
+  <!-- #BeginDate format:IS1m -->2023-11-10  3:00<!-- #EndDate --> 
 	</span> GMT</a>.
 	Make a <a href="https://github.com/r12a/app-charuse/issues/new">comment</a>. 
 	Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a></span></div>
