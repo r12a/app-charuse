@@ -775,7 +775,8 @@ function showLanguage (lang) {
 	if (langs[lang].aux || langs[lang].deprecated) stats += ' &nbsp; &nbsp; + ( '
 	if (langs[lang].aux) {
 		charList = [...langs[lang].aux]
-        stats += charList.length + ' possible '
+        //stats += charList.length + ' possible '
+        stats += charList.length + ' to investigate '
 		out += '<tr><th>Investigate&#x202F;!<br><span class="rowCount">'+charList.length+'</span></th><td class="small" id="infrequentCell"'
 		if (rtl) out += ' dir="rtl">'
 		else out += '>'
@@ -913,10 +914,10 @@ function showLanguage (lang) {
     <th>Links</th><td id="externalLinks">
     <a href="https://www.ethnologue.com/language/${ langcode }" target="_blank" title="Look this up in the Ethnologue.">Ethnologue</a> • 
     <a href="https://en.wikipedia.org/w/index.php?search=${ langs[lang].name }%20language" target="_blank" title="Search Wikipedia for this language">Wikipedia</a> • 
-    <a href="../scripts/fontlist/index.html?script=${ langs[lang].script }" target="_blank">picker</a> • `
-    if (langs[lang].picker) out += `<a href="${langs[lang].picker}" target="_blank">Picker</a> • `
-    if (langs[lang].linked) out += `<a href="${langs[lang].linked}" target="_blank">Orthography description</a> • `
-    out += `<a href="../scripts/links?iso=${ langs[lang].script }" target="_blank">Other links</a>
+    <a href="../scripts/fontlist/index.html?script=${ langs[lang].script }" target="_blank">Font lister</a> • `
+    if (langs[lang].picker) out += `<a href="../pickers/${langs[lang].picker}/index.html" target="_blank">Picker</a> • `
+    if (langs[lang].linked) out += `<a href="../scripts/${langs[lang].linked}.html" target="_blank">Orthography description</a> • `
+    out += `<a href="../scripts/links.html?iso=${ langs[lang].script }" target="_blank">Other links</a>
     </td>
     </tr>`
 
