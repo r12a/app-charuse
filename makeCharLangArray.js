@@ -30,7 +30,7 @@ function createCLArray () {
         if (langs[lang].separatoraux) auxlist += langs[lang].separatoraux
         if (langs[lang].otheraux) auxlist += langs[lang].otheraux
 
-        if (langs[lang].aux) auxlist += langs[lang].aux
+        //if (langs[lang].aux) auxlist += langs[lang].aux
         if (debug) console.log(list,lang,auxlist)
         
         if (list != '') buildCLArray(list,auxlist,lang)
