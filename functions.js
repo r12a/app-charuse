@@ -330,6 +330,75 @@ function findChars (str) {
 					population += parseInt(speakerNum)
 					scriptNames += scriptData[langs[languages[l]].script].name
                     if (l<languages.length-1) scriptNames += '§'
+					}
+                if (languages.length>0 && auxlanguages.length>0) {
+                    languageNames += ', '
+                    scriptNames += '§'
+                    }
+				for (let l=0;l<auxlanguages.length;l++) {
+					//languageNames += langs[languages[l]].name.replace(/ \([^\)]+\)/g,'')
+					languageNames += '<span style="font-style:italic" onclick="showLanguage(\''+auxlanguages[l]+'\')">'+langs[auxlanguages[l]].name.replace(/ \([^\)]+\)/g,'')+'</span>'
+					if (l<auxlanguages.length-1) languageNames += ', '
+					speakerNum = langs[auxlanguages[l]].speakers.replace(/~/,'')
+					speakerNum = speakerNum.replace(/\?/,'0')
+					population += parseInt(speakerNum)
+					scriptNames += scriptData[langs[auxlanguages[l]].script].name
+                    if (l<auxlanguages.length-1) scriptNames += '§'
+					}
+                totallanguages = languages.length+auxlanguages.length
+				out += totallanguages+' languages: '+languageNames+'</td>'
+				out += '<td>'+population.toLocaleString('en')+'</td>'
+                
+                // prepare the script info
+                var array = scriptNames.trim().split('§')
+                const uniqueSet = new Set(array)
+                const backToArray = [...uniqueSet]
+                scriptout += backToArray.sort().join(', ')
+				}
+			else {
+                out += '<td>Unknown</td><td>-</td>'
+                scriptout += '<td>Unknown</td><td>-</td>'
+                }
+			out += '</tr>'
+            scriptout += '</tr>'
+			}
+		}
+	document.getElementById('scriptMatchOutput').innerHTML = scriptout
+	document.getElementById('output').innerHTML = out
+	}
+
+
+
+
+
+/*
+function findCharsXX (str) {
+	// look up characters by language, and by script
+	str = convertEscapes(str)
+	var chars = [...str]
+	var out = ''
+	var scriptout = ''
+	for (i=0;i<chars.length;i++){
+		cp = chars[i].codePointAt(0)
+		if (cp>127) {
+			out += '<tr><th>'+chars[i]+'</td>'
+            scriptout += '<tr><th>'+chars[i]+'</td>'
+			if (cl[cp]) {
+				out += '<td>'
+				scriptout += '<td>'
+				languages = cl[cp][0]
+				auxlanguages = cl[cp][1]
+				var languageNames = ''
+				var scriptNames = ''
+				var population = 0
+				for (let l=0;l<languages.length;l++) {
+					languageNames += `<span onclick="showLanguage('${ languages[l] }')">${ langs[languages[l]].name.replace(/ \([^\)]+\)/g,'') }</span>`
+					if (l<languages.length-1) languageNames += ', '
+					speakerNum = langs[languages[l]].speakers.replace(/~/,'')
+					speakerNum = speakerNum.replace(/\?/,'0')
+					population += parseInt(speakerNum)
+					scriptNames += scriptData[langs[languages[l]].script].name
+                    if (l<languages.length-1) scriptNames += '§'
                     //scriptout += `<span>${ scriptNames }</span>`
 					}
                 if (languages.length>0 && auxlanguages.length>0) languageNames += ', '
@@ -413,6 +482,9 @@ function findCharsX (str) {
 		}
 	return out
 	}
+*/
+
+
 
 
 function copyToClipboard (chars) { 
