@@ -301,7 +301,7 @@ also:
 ["bbc | latn | The predominant orthography."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"no/zwsp", baseline:"romn", wrap:"char", hyphenation:"?",  direction:"ltr",  justification:"?", 
 vowels:"vs:4 ind:3 base:A",  finals:"cm:1", 
-linked:"batk/btk", picker:"batk", 
+linked:"batk/btk", picker:"batk",
 },
 
 "bcl": { name:"Central Bicol (Bikol Naga, Bicolano)", source:"udhr_bcl", region:"seasia", countries:"Philippines", script:"ascii", speakers:"2500000", 
