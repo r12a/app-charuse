@@ -2136,23 +2136,10 @@ linked:"sund/su", picker:"sund",
 
 "suk": { name:"Sukuma", source:"udhr_suk", region:"afr", countries:"Tanzania", script:"ascii", speakers:"5400000", local:"Kisukuma"},
 
-"suz": { name:"Sunuwar", local:"𑯆𑯑̃̍𑯃𑯌", silcode:"suz", 
-source:"", 
-region:"sasia", countries:"Nepal, Sikkim",
-script:"sunu", speakers:"38200", 
-letter:"𑯀𑯁𑯄𑯆𑯇𑯉𑯊𑯋𑯌𑯍𑯎𑯏𑯐𑯒𑯓𑯔𑯗𑯘𑯙𑯚𑯛𑯜𑯝𑯞𑯟𑯠𑯂𑯃𑯅𑯈𑯑𑯖", mark:"̭̱̀́̃̍̐᷵", punctuation:"‘’“”", number:"𑯰𑯱𑯲𑯳𑯴𑯵𑯶𑯷𑯸𑯹", symbol:"𑯡", 
-orth:`Sunuwar.`,
-also:
-['suz-deva | deva | Primary usage.  <a href="../scripts/latn/wo.html#variants" target="_blank">Details.</a>'],
-type:"alphabet", cs:"no", gpos:"yes", gsub:"no", cursive:"no", direction:"ltr", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes -",  justification:"?",
-vowels:"let:6",
-linked:"sunu/suz", picker:"sunu-suz", font:"Uni11BC0Sunuwar", 
-},
-
 "suz": { name:"Sunuwar (Kiranti-Kõits, Mukhia)", local:"𑯆𑯑𑯃̃𑯌 𑯎𑯄𑯂𑯒𑯂", localtrans:"/koīt͡ʃ brese/", silcode:"suz", 
 source:"3673556864e9fc547d3c22fabf0b0bda88d5a5f3",
 region:"sasia", countries:"Nepal, Sikkim", script:"sunu", speakers:"38200", 
-letter:"𑯀𑯁𑯄𑯆𑯇𑯉𑯊𑯋𑯌𑯍𑯎𑯏𑯐𑯒𑯓𑯔𑯗𑯘𑯙𑯚𑯛𑯜𑯝𑯞𑯟𑯠𑯂𑯃𑯅𑯈𑯑𑯖", mark:"̭̱̀́̃̍̐᷵", number:"𑯰𑯱𑯲𑯳𑯴𑯵𑯶𑯷𑯸𑯹", punctuation:"‘’“”", symbol:"𑯡", 
+letter:"𑯀𑯁𑯂𑯃𑯄𑯅𑯆𑯇𑯈𑯉𑯊𑯋𑯌𑯍𑯎𑯏𑯐𑯑𑯒𑯓𑯔𑯕𑯖𑯗𑯘𑯙𑯚𑯛𑯜𑯝𑯞𑯟𑯠", mark:"̭̱̀́̃̍̐", number:"𑯰𑯱𑯲𑯳𑯴𑯵𑯶𑯷𑯸𑯹", punctuation:"‘’“”…", symbol:"𑯡",
 orth:`Sunuwar. <a href="../scripts/sunu/suz.html" target="_blank">Details.</a>`,
 also:
 ["suz-deva | deva | Primary usage."],
