@@ -1011,7 +1011,7 @@ orth:`[Latin] &nbsp; Ethnologue says that this orthography is pinyin-based, used
 "hnn-hano": { name:"Hanunoo", local:"ᜱᜨᜳᜨᜳᜢ", localtrans:"(Hanunó'o)", 
 source:"f9d39cb72f3eca8fa47b766a6fdb42797b8390f9", 
 region:"oce", countries:"Philippines", script:"hano", speakers:"25000", 
-letter:"ᜩᜦᜣᜪᜧᜤᜰᜱᜫᜨᜥᜯᜭᜮᜬᜠᜡᜢ", mark:"ᜲᜳ᜴", punctuation:"᜵᜶", 
+letter:"ᜠᜡᜢᜣᜤᜥᜦᜧᜨᜩᜪᜫᜬᜭᜮᜯᜰᜱ", mark:"ᜲᜳ᜴", number:"", punctuation:"᜵᜶", symbol:"", other:"", 
 orth:`Hanunoo &nbsp; Used widely for love songs &amp; correspondence.`,
 also:
 ["hnn-latn | latn | Primary."],
