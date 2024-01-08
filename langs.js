@@ -587,13 +587,20 @@ also:
 ['cjs-latn | latn | Used between 1930-1938.']
 },
 
-"ckb": { name:"Central Kurdish (Sorani)", rtl:true, source:"cldr_ckb,fa1e79cbcb9ca9906ebecd0c8e47c135d5a380c1", region:"wasia", countries:"Iraq, Iran", script:"arab", speakers:"7250000", letter:"ئابپتجچحخدرزڕژسشعغفڤقکگلڵمنھەوۆیێي", mark:"ٔ", punctuation:"٫٬٪؉","number":"٠١٢٣٤٥٦٧٨٩", aux:"ًٌٍَُِّْـ", local:"کوردیی ناوەندی / سۆرانی", localtrans:"(Kurdîy nawendî / Soranî)", 
-related:`Macrolanguage is Kurdish [ku].`,
+"ckb": { name:"Central Kurdish (Sorani)", local:"کوردیی ناوەندی / سۆرانی", localtrans:"(Kurdîy nawendî / Soranî)", rtl:true, 
+source:"cldr_ckb,fa1e79cbcb9ca9906ebecd0c8e47c135d5a380c1", 
+region:"wasia", countries:"Iraq, Iran", script:"arab", speakers:"7250000", 
+letter:"ئابتجحخدرزسشعغفقلمنهويپچڕژڤکگڵھۆیێە", letteraux:"ۊ", mark:"͏ٔ", number:"", punctuation:"،؛؟“”…", symbol:"", other:"\u061C\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
 orth:`[Arabic] &nbsp; Alphabetised naskh style, from 1920s, mostly used by Kurds in Iraq and Iran.`,
 also:
-['ckb-latn | latn | Proposed Universal Kurdish alphabet (adds Ł, Ň, Ř and Ü).',
-'ckb-x-yekgirtu | latn | Yekgirtú (Kurdish Unified Alphabet) promoted by the Kurdish Academy of Language for all Kurdish dialects.']
+["ckb-latn | latn | Proposed Universal Kurdish alphabet (adds Ł, Ň, Ř and Ü).",
+"ckb-x-yekgirtu | latn | Yekgirtú (Kurdish Unified Alphabet) promoted by the Kurdish Academy of Language for all Kurdish dialects."],
+related:`Macrolanguage is Kurdish [ku].`,
+type:"alphabet", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"rtl", 
+vowels:"let:4 ml:2", 
+linked:"arab/ckb", fonts:"arab-ckb", 
 },
+
 
 "ckb-latn": { name:"Central Kurdish (Sorani)", source:"udhr_ckb,565fb1c44c0ddde28a6bec9836935ab74c3f72c9", region:"wasia", script:"latn", speakers:"7250000", letter:"şŞûîêçÛÎÊÇ", mark:"̧̂", aux:"̣̈̌ḤḥḦḧẌẍŁłŇňŘřÜüʿ", local:"Kurdîy nawendî, Soranî", 
 related:`Macrolanguage is Kurdish [ku].`,
@@ -1266,19 +1273,25 @@ linked:"khmr/km", picker:"khmr",
 
 "kmb": { name:"Kimbundu (North Mbundu)", source:"udhr_kmb", region:"afr", countries:"Angola", script:"latn", speakers:"4000000", letter:"êâôÊÂÔ", mark:"̂", punctuation:"’", local:"Kimbundu"},
 
-"kmr": { name:"Northern Kurdish (Kurmanji)", source:"udhr_kmr", region:"wasia", countries:"Turkey, Iraq, Syria, Iran, Lebanon, Armenia", script:"latn", speakers:"15000000", letter:"ûîêçÛÎÊÇşŞ", mark:"̧̂", local:"Kurmancî", 
-related:`Macrolanguage is Kurdish [ku]. Legacy applications often use ku rather kmr.`,
+"kmr": { name:"Northern Kurdish (Kurmanji)", local:"Kurmancî", 
+source:"udhr_kmr", 
+region:"wasia", countries:"Turkey, Iraq, Syria, Iran, Lebanon, Armenia", script:"latn", speakers:"15000000", 
+letter:"ÇÊÎÛçêîûňŞş", letteraux:"ŇḦḧẌẍ", mark:"", markaux:"̧̂", number:"", punctuation:"‑–—‘’“”…‰", symbol:"", other:"", 
 orth:`[Latin] &nbsp; Hawar alphabet, from 1932 in Syria and (fully) from 2013 in Turkey.`,
 also:
-['kmr-arab | arab | Naskh style, used in Iran, Iraq, Syria, Lebanon.',
-'kmr-armn | armn | 1921-1929 in Armenia.',
-'kmr-x-yanalif | latn | Yañalif-like alphabet, replaces Armenian alphabet during Latinisation phase (probably 1930s?).',
-'kmr-x-1928latn | latn | 1928 in Soviet Union, adds some cyrillic characters into a Latin set.',
-'kmr-x-1929latn | latn | 1929 in Soviet Union.',
-'kmr-cyrl | cyrl | From 1946, in Soviet Union &amp; Armenia.',
-'kmr-x-hawar2 | latn | Reduced Hawar alphabet, used in Turkey until 2013 (missing Q,W,X).',
-'kmr-x-uka | latn | Proposed Universal Kurdish alphabet (adds Ł, Ň, Ř and Ü).',
-'kmr-x-yekgirtu | latn | Yekgirtú (Kurdish Unified Alphabet) promoted by the Kurdish Academy of Language for all Kurdish dialects.',]
+["kmr-arab | arab | Naskh style, used in Iran, Iraq, Syria, Lebanon.",
+"kmr-armn | armn | 1921-1929 in Armenia.",
+"kmr-x-yanalif | latn | Yañalif-like alphabet, replaces Armenian alphabet during Latinisation phase (probably 1930s?).",
+"kmr-x-1928latn | latn | 1928 in Soviet Union, adds some cyrillic characters into a Latin set.",
+"kmr-x-1929latn | latn | 1929 in Soviet Union.",
+"kmr-cyrl | cyrl | From 1946, in Soviet Union &amp; Armenia.",
+"kmr-x-hawar2 | latn | Reduced Hawar alphabet, used in Turkey until 2013 (missing Q,W,X).",
+"kmr-x-uka | latn | Proposed Universal Kurdish alphabet (adds Ł, Ň, Ř and Ü).",
+"kmr-x-yekgirtu | latn | Yekgirtú (Kurdish Unified Alphabet) promoted by the Kurdish Academy of Language for all Kurdish dialects."],
+related:`Macrolanguage is Kurdish [ku]. Legacy applications often use ku rather kmr.`,
+type:"alphabet", cs:"yes", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"sp", 
+vowels:"let:8", 
+linked:"latn/kmr", fonts:"latn-kmr", 
 },
 
 "kn": { name:"Kannada (Canarese, Kanarese)", local:"ಕನ್ನಡ‎", localtrans:"(kannaḍa)", silcode:"kan", 
@@ -2541,6 +2554,19 @@ also:
 type:"alphabet", cs:"yes", cursive:"no", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  direction:"rtl",  justification:"sp", 
 vowels:"let:5 cm:1 ind:2 comp:5", 
 linked:"gara/wo", picker:"gara-wo", font:"WolofGaraySansSerif", 
+},
+
+"wo-gara": { name:"Wolof", local:"𐵗𐵌𐵸𐵌𐶀", localtrans:"/wɔlɔf/", silcode:"wol", rtl:true, 
+source:"r12a", 
+region:"afr", countries:"Senegal, Mauritania, The Gambia", script:"gara", speakers:"5500000", 
+letter:"𐵱𐵲𐵳𐵴𐵵𐵶𐵷𐵸𐵹𐵺𐵻𐵼𐵽𐵾𐵿𐶀𐶁𐶂𐵑𐵒𐵓𐵔𐵕𐵖𐵗𐵘𐵙𐵚𐵛𐵜𐵝𐵞𐵟𐵠𐵡𐵢𐵊𐵋𐵌𐵍𐵎𐵐", mark:"𐵩𐵪𐵫𐵬𐵭", punctuation:"‘’“”𐵮", symbol:"𐵯", other:"‌‍⁧‫⁦‪⁨⁩‬‏‎؜͏", 
+orth:`Garay. &nbsp; Limited usage.  <a href='../scripts/gara/wo.html' target='_blank'>Details</a>`,
+also:
+["wo | latn | Primary usage. <a href='../scripts/latn/wo.html' target='_blank'>Details</a>",
+"wo-arab | arab | Limited usage. Naskh style. <a href='../scripts/latn/wo.html' target='_blank'>Details</a>"],
+type:"alphabet", cs:"yes", gpos:"yes", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"yes", hyphen:"𐵮",  direction:"rtl",  justification:"sp", 
+vowels:"let:5 cm:1 ind:2 comp:5", 
+linked:"gara/wo", fonts:"gara-wo", font:"WolofGaraySansSerif", 
 },
 
 "wo-arab": { name:"Wolof", local:"Wolof", localtrans:"وࣷلࣷفْ لࣵکّ", silcode:"wol", rtl:true, 
