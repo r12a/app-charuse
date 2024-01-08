@@ -590,7 +590,7 @@ also:
 "ckb": { name:"Central Kurdish (Sorani)", local:"کوردیی ناوەندی / سۆرانی", localtrans:"(Kurdîy nawendî / Soranî)", rtl:true, 
 source:"cldr_ckb,fa1e79cbcb9ca9906ebecd0c8e47c135d5a380c1", 
 region:"wasia", countries:"Iraq, Iran", script:"arab", speakers:"7250000", 
-letter:"ئابتجحخدرزسشعغفقلمنهوپچڕژڤکگڵھۆیێە", letteraux:"يۊ", mark:"͏", markaux:"̧ٔ", number:"", punctuation:"،؛؟“”…", symbol:"", other:"\u061C\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
+letter:"ئابتجحخدرزسشعغفقلمنهوپچڕژڤکگڵھۆیێە", letteraux:"يۊ", mark:"", markaux:"ٔ", number:"", punctuation:"،؛؟“”…", symbol:"", other:"\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
 orth:`[Arabic] &nbsp; Alphabetised naskh style, from 1920s, mostly used by Kurds in Iraq and Iran.`,
 also:
 ["ckb-latn | latn | Proposed Universal Kurdish alphabet (adds Ł, Ň, Ř and Ü).",
@@ -1276,7 +1276,7 @@ linked:"khmr/km", picker:"khmr",
 "kmr": { name:"Northern Kurdish (Kurmanji)", local:"Kurmancî", 
 source:"udhr_kmr", 
 region:"wasia", countries:"Turkey, Iraq, Syria, Iran, Lebanon, Armenia", script:"latn", speakers:"15000000", 
-letter:"ÇÊÎÛçêîûňŞş", letteraux:"ŇḦḧẌẍ", mark:"", markaux:"̧̂", number:"", punctuation:"‑–—‘’“”…‰", symbol:"", other:"", 
+letter:"ÇÊÎÛçêîûŞş", letteraux:"ŇňḦḧẌẍ", mark:"", markaux:"̧̂", number:"", punctuation:"‑–—‘’“”…‰", symbol:"", other:"", 
 orth:`[Latin] &nbsp; Hawar alphabet, from 1932 in Syria and (fully) from 2013 in Turkey.`,
 also:
 ["kmr-arab | arab | Naskh style, used in Iran, Iraq, Syria, Lebanon.",
