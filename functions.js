@@ -94,6 +94,7 @@ var scriptData = {
 'tibt':{ name:'Tibetan', block:"tibt" },
 'tirh':{ name:'Tirhuta', block:"" },
 'vaii':{ name:'Vai', block:"vaii" },
+'wcho':{ name:'Wancho', block:"wcho" },
 'yiii':{ name:'Yi', block:"" },
 'macrolanguage':{ name:'Macrolanguage', block:"" },
 

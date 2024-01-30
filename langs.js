@@ -1707,6 +1707,19 @@ related:`Macrolanguage is Norwegian [no].`},
 
 "nnh": { name:"Ngiemboon", source:"cldr_nnh", region:"afr", countries:"Cameroon", script:"latn", speakers:"250000", letter:"ʼáàâéèêíìóòôúùûÿÁÀÂÉÈÊÍÌÓÒÔÚÙÛǎǒǔǍƐǑƆǓɄěńŋĚŃŊŸḿẅḾẄɛɔʉ", mark:"́̀̂̌̈", punctuation:"«»‘’", local:"Shwoge"},
 
+"nnp-wcho": { name:"Wancho", local:"𞋒𞋀𞋉𞋃𞋕", localtrans:"/want͡ʃo/", 
+source:"r12a", 
+region:"sasia", countries:"India, Myanmar, Bhutan", script:"wcho", speakers:"55000", 
+letter:"𞋊𞋂𞋋𞋄𞋔𞋅𞋫𞋇𞋙𞋠𞋃𞋐𞋍𞋓𞋌𞋎𞋑𞋏𞋚𞋘𞋉𞋝𞋩𞋒𞋗𞋈𞋟𞋆𞋡𞋜𞋞𞋛𞋕𞋁𞋀𞋥𞋪𞋧𞋦𞋢𞋤𞋨𞋣𞋖", mark:"𞋬𞋭𞋮𞋯", number:"𞋰𞋱𞋲𞋳𞋴𞋵𞋶𞋷𞋸𞋹", symbol:"𞋿 ", aux:"…“‘”’()", 
+orth:`[Wancho] Created between 2001 and 20013. <a href="../scripts/wcho/nnp.html" target="_blank">Details</a>.`,
+also:
+[`nnp-deva | deva | Devanagari orthography (primary)`,
+`nnp-latn | latn | Latin orthography.`],
+type:"alphabet", cs:"no", gpos:"no", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"?", 
+vowels:"let:15",  medials:"let:1",  finals:"let:3", 
+linked:"wcho/nnp", fonts:"wcho-nnp", font:"Noto Sans Wancho", 
+},
+
 "no": { name:"Norwegian", silcode:"nor", redirect:true, source:"", region:"eur", countries:"Norway", script:"macrolanguage", speakers:"0", related:`no is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Norwegian Bokmål [nb]<br/>Norwegian Nynorsk [nn].
 Legacy applications often use no rather than [nb].`},
 
