@@ -1708,7 +1708,7 @@ related:`Macrolanguage is Norwegian [no].`},
 "nnh": { name:"Ngiemboon", source:"cldr_nnh", region:"afr", countries:"Cameroon", script:"latn", speakers:"250000", letter:"ʼáàâéèêíìóòôúùûÿÁÀÂÉÈÊÍÌÓÒÔÚÙÛǎǒǔǍƐǑƆǓɄěńŋĚŃŊŸḿẅḾẄɛɔʉ", mark:"́̀̂̌̈", punctuation:"«»‘’", local:"Shwoge"},
 
 "nnp-wcho": { name:"Wancho", local:"𞋒𞋀𞋉𞋃𞋕", localtrans:"/want͡ʃo/", 
-source:"r12a", 
+source:"454005271107db89215e8dede7e06e3348da260d", 
 region:"sasia", countries:"India, Myanmar, Bhutan", script:"wcho", speakers:"55000", 
 letter:"𞋊𞋂𞋋𞋄𞋔𞋅𞋫𞋇𞋙𞋠𞋃𞋐𞋍𞋓𞋌𞋎𞋑𞋏𞋚𞋘𞋉𞋝𞋩𞋒𞋗𞋈𞋟𞋆𞋡𞋜𞋞𞋛𞋕𞋁𞋀𞋥𞋪𞋧𞋦𞋢𞋤𞋨𞋣𞋖", mark:"𞋬𞋭𞋮𞋯", number:"𞋰𞋱𞋲𞋳𞋴𞋵𞋶𞋷𞋸𞋹", symbol:"𞋿 ", aux:"…“‘”’()", 
 orth:`[Wancho] Created between 2001 and 20013. <a href="../scripts/wcho/nnp.html" target="_blank">Details</a>.`,
