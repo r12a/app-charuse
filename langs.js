@@ -997,8 +997,7 @@ source:"21f8184138e858d28a8478313d2b5b59a1f650f6,cldr_hi,udhr_hin",
 region:"sasia", countries:"India, Nepal, Singapore, South Africa", script:"deva", speakers:"260000000", 
 letter:"अआइईउऊऋऍएऐऑओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहऽॐ", letteraux:"क़ख़ग़ज़ड़ढ़फ़", mark:"ँंः़ािीुूृॅेैॉोौ्", number:"०१२३४५६७८९", punctuation:"।॥॰‘’“”", symbol:"₹", other:"\u200C\u200D",
 aux:"[]ʼ͏​‑–—…‰",
-orth:`[Devanagari] &nbsp;  
-<a href="../scripts/devanagari" target="_blank">Detailed summary</a>.`,
+orth:`[Devanagari] &nbsp; <a href="../scripts/deva/hi.html" target="_blank">Detailed summary</a>.`,
 also:
 ["hi-newa | newa | Archaic, no longer in use."],
 type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"space", baseline:"hang", wrap:"word", hyphenation:"(yes)", hyphen:"-",  direction:"ltr",  justification:"sp", 
@@ -1011,10 +1010,10 @@ linked:"deva/hi", picker:"deva-hi",
 "hlt": { name:"Matu Chin", source:"udhr_hlt", region:"seasia", countries:"Myanmar, India", script:"ascii", speakers:"40000", local:"Matu Chin"},
 
 "hmd": { name:"A-Hmao", 
-source:"r12a", 
+source:"https://github.com/r12a/app-charuse/commit/e3f689e49515f744239669fdf085c9ee8c9f71b9", 
 region:"easia", countries:"China", script:"plrd", speakers:"300,000", 
 letter:"𖼀𖼁𖼄𖼅𖼇𖼈𖼊𖼋𖼎𖼏𖼐𖼑𖼔𖼕𖼖𖼘𖼚𖼛𖼜𖼝𖼞𖼟𖼡𖼢𖼣𖼦𖼨𖼩𖼪𖼫𖼬𖼭𖼮𖼯𖼳𖼴𖼵𖼷𖼸𖼺𖼻𖼽𖽀𖽂𖽃𖽐𖾓𖾔𖾕𖾖𖾗𖾘𖾙", mark:"𖾏𖾐𖾑𖽔𖽗𖽘𖽙𖽜𖽝𖽞𖽟𖽠𖽡𖽢𖽣𖽤𖽦𖽨𖽪𖽫𖽬𖽭𖽱𖽳𖽵𖽷𖽹𖽺𖽻𖽾𖽑", punctuation:"!()-.:;?", 
-orth:`[Miao Pollard script] Primary usage. <a href="../scripts/plrd/' target='_blank'>Details</a>`,
+orth:`[Miao-Pollard] &nbsp; Primary usage. This actually covers both the 1936 (traditional, and most current) and the 1998 orthographies, as described by Enwall. <a href="../scripts/plrd/hmd.html" target="_blank">Details</a>.`,
 also:
 ["hmd-latn | latn | Several alternative variants."],
 type:"alphabet", cs:"no", gpos:"yes", gsub:"no", cursive:"no", wordsep:"syllable", baseline:"mid", wrap:"syllable", hyphenation:"no",  direction:"ltr",  justification:"?", 
