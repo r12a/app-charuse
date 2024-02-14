@@ -581,6 +581,16 @@ linked:"cher/chr", picker:"cher",
 
 "cjk": { name:"Chokwe", source:"udhr_cjk", region:"afr", countries:"Angola, DRC, Zambia", script:"ascii", speakers:"980000"},
 
+"cjm": { name:"Cham", local:"ꨌꩌ", localtrans:"Chăm", 
+source:"r12a", 
+region:"seasia", countries:"Vietnam", script:"cham", speakers:"132000", 
+letter:"ꨀꨁꨂꨃꨄꨅꨆꨇꨈꨉꨊꨋꨌꨍꨎꨏꨐꨑꨒꨓꨔꨕꨖꨗꨘꨙꨚꨛꨜꨝꨞꨟꨠꨡꨢꨣꨤꨥꨦꨧꨨꩀꩁꩂꩄꩅꩆꩇꩈꩉꩊꩋ", mark:"ꨩꨪꨫꨬꨭꨮꨯꨰꨱꨲꨳꨴꨵꨶꩃꩌꩍ", number:"꩐꩑꩒꩓꩔꩕꩖꩗꩘꩙", punctuation:"꩜꩝꩞꩟", 
+orth:`[Cham] Primary use for Eastern Cham speakers. <a href='../scripts/cham/cjm.html' target='_blank'>Details</a>.`,
+type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"space", baseline:"high", wrap:"syllable", hyphenation:"no",  direction:"ltr",  justification:"?", 
+vowels:"inh:2 vs:10 ind:6 base:ꨀ A pre:2 comp:7+",  medials:"cm:4",  finals:"cm:3 let:15", 
+linked:"cham/cjm", fonts:"cham-cjm", font:"Noto Sans Cham", 
+},
+
 "cjs": { name:"Shor", source:"udhr_cjs,eec6428d9ce711e3709def0279121e23a4bf488a", region:"nasia", countries:"Russia", script:"cyrl", speakers:"2800", letter:"кижнтолағыңудерцязчқшйъӱгьсмбюпӧэвфхКИЖНТОЛАҒЫҢУДЕРЦЯЗЧҚШЙЪӰГЬСМБЮПӦЭВФХЁЩщё", mark:"̆̈", local:"Шор тили / Тадар тили", localtrans:"(šor tili / tadar tili)", 
 orth:`[Cyrillic] &nbsp; Developed by Altai missionaries in 1880s.`,
 also:
@@ -1925,6 +1935,16 @@ Legacy applications often use qu rather than [qxp].
 related:`Macrolanguage is Quechua [qu]. Legacy applications often use qu rather qxp.`},
 
 "rar": { name:"Cook Islands Māori (Rarotongan)", source:"udhr_rar", region:"oce", countries:"Cook Islands", script:"ascii", speakers:"21725", local:"Te Reo Maori"},
+
+"rej": { name:"Rejang", 
+source:"r12a", 
+region:"seasia", countries:"Indonesia", script:"rjng", speakers:"350,000", 
+letter:"ꤰꤱꤲꤳꤴꤵꤶꤷꤸꤹꤺꤻꤼꤽꤾꤿꥀꥁꥂꥃꥄꥅꥆ", mark:"ꥇꥈꥉꥊꥋꥌꥍꥎꥏꥐꥑꥒ꥓", punctuation:"꥟", 
+orth:`[Rejang script] Endangered. <a href="../scripts/rjng/' target='_blank'>Details</a>.`,
+type:"abugida", cs:"no", gpos:"yes", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"?", hyphenation:"?",  direction:"ltr",  justification:"?", 
+vowels:"cm:8 inh:a ind:1 base:A pre:3 circ:1",  clusters:"vir",  finals:"cm:4", 
+linked:"rjng/rej", fonts:"rjng-rej", font:"Noto Sans Rejang", 
+},
 
 "rhg": { name:"Rohingya", local:"𐴌𐴟𐴇𐴥𐴝𐴚𐴒𐴙𐴝", 
 source:"aa5ce5ea8ecb1959646753273cf485844e6390f3", 

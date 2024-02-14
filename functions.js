@@ -72,6 +72,7 @@ var scriptData = {
 'perm':{ name:'Old Permic', block:"" },
 'phag':{ name:'Phags-pa', block:"" },
 'plrd':{ name:'Miao Pollard', block:"plrd" },
+'rjng':{ name:'Rejang', block:"rjng" },
 'rohg':{ name:'Hanifi Rohingya', block:"rohg" },
 'runr':{ name:'Runic', block:"runr" },
 'shrd':{ name:'Sharada', block:"" },
