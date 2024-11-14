@@ -1394,6 +1394,19 @@ also:
 ['knc-cyrl | cyrl | No longer in use.',]
 },
 
+"kru-tols": { name:"Kurukh", local:"𑷊𑶲̃𑷗𑶲𑷖", localtrans:"kũɽux", 
+source:"r12a", 
+region:"sasia", countries:"India", script:"tols", speakers:'?',
+letter:"𑶰𑶱𑶲𑶳𑶴𑶵𑷙𑶶𑶷𑶸𑶹𑶺𑶻𑶼𑶽𑶾𑶿𑷀𑷁𑷂𑷃𑷄𑷅𑷆𑷇𑷈𑷉𑷊𑷋𑷌𑷍𑷎𑷏𑷐𑷑𑷒𑷓𑷔𑷕𑷖𑷗𑷘𑷚𑷛", mark:"̤̰̃̆̇̈", number:"𑶻𑶳𑷑𑶳𑷎 𑷔𑶰𑷊𑶰", punctuation:"।", 
+orth:`[Tolong Siki] Recently created script. <a href='../scripts/tols/kru.html' target='_blank'>Details</a>.
+`,
+also:
+["kru-deva | deva | Primary orthography."],
+type:"alphabet", cs:"no", gpos:"yes", gsub:"no", cursive:"no", wordsep:"space", baseline:"mid", wrap:"?", hyphenation:"?",  direction:"ltr",  justification:"?", 
+vowels:"let:7 cm:2",  medials:"cm:1",  finals:"cm:1", 
+linked:"tols/kru.html", fonts:"tols-kru", font:"Tolong Siki", 
+},
+
 "ks": { name:"Kashmiri (Koshur)", local:"کٲشُر‎", localtrans:"(koshur)", silcode:"kas", rtl:true, 
 source:"cldr_ks,57237835618d4daaf27d149d55e14be159182c33", 
 region:"sasia", countries:"India, Pakistan", script:"arab", speakers:"5600000", 
