@@ -11,8 +11,8 @@ body {
     }
 label {
     white-space: pre;
-    tab-size: 30;
-    margin-inline-end: 1em;
+    /*tab-size: 30;
+    margin-inline-end: 1em;*/
     }
 input { 
     color: chocolate; 
@@ -33,20 +33,409 @@ input {
 
 <script src="langs.js"> </script>
 
+<script src="../scripts/script-features/scriptdb.js"> </script>
+
 <script>
+function getEscapes (str) {
+    chars = [... str]
+    out = ''
+    for (i=0;i<chars.length;i++) {
+        cpHex = chars[i].codePointAt(0).toString(16).toUpperCase()
+        while (cpHex.length < 4) cpHex = '0'+cpHex
+        //out += `\\u{${ cpHex }}`
+        out += '\\' + 'u{'+cpHex+'}'
+        //out += out.replace(/\\\\/,'\\')
+        }
+    return out
+    }
+
+
+
+
+
+
+
+
+function readLRecord (lang) {
+    console.log('>>> readLRecord(',lang,')')
+    var i
+    
+    if (lang === '') {
+        alert('No key value supplied for language.')
+        return
+        }
+    if (typeof langs[lang] === 'undefined') {
+        alert('Unknown language key value:', lang)
+        return
+        }
+
+    var record = langs[lang]
+    var f, i, checkboxes
+    
+    document.getElementById('key').value = lang
+
+    var fields = [
+        'name','local','localtrans','silcode','source', 
+        'region', 'countries', 'script', 'speakers',
+        'letter', 'letteraux', 'mark', 'markaux', 'number', 'numberaux', 'punctuation', 'punctuationaux', 'symbol', 'symbolaux', 'other', 'otheraux', 'aux', 'deprecated',
+        'picker', 'font',
+        ]
+    for (var f=0;f<fields.length;f++) {
+        if (record[fields[f]]) document.getElementById(fields[f]).value = record[fields[f]]
+        else document.getElementById(fields[f]).value = ''
+        }
+    
+    // make the other characters field use escapes
+    document.getElementById('other').value = getEscapes(document.getElementById('other').value)
+    document.getElementById('otheraux').value = getEscapes(document.getElementById('otheraux').value)
+
+
+    if (record.rtl) document.getElementById('rtl').checked = true
+    if (record.redirect) document.getElementById('redirect').checked = true
+
+
+
+    if (record.orth)  document.getElementById('orth').value = record.orth 
+    else document.getElementById('orth').value = ''
+
+    if (record.also) {
+        out = ''
+        for (let i=0;i<record.also.length;i++) out += record.also[i]+'\n'
+        document.getElementById('also').value = out
+        }
+    else document.getElementById('also').value = ''
+
+    if (record.related) document.getElementById('related').value = record.related 
+    else document.getElementById('related').value = ''
+
+    if (record.notes) document.getElementById('notes').value = record.notes 
+    else document.getElementById('notes').value = ''
+
+
+
+    if (record.linked) document.getElementById('linked').value = record.linked 
+    else document.getElementById('linked').value = ''
+
+    if (record.picker) document.getElementById('picker').value = record.picker 
+    else document.getElementById('picker').value = ''
+
+    if (record.font) document.getElementById('font').value = record.font
+    else document.getElementById('font').value = ''
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+function readSRecord (lang) {
+    console.log('>>> readSRecord(',lang,')')
+    var i
+    
+    if (lang === '') {
+        alert('No key value supplied for script data.')
+        return
+        }
+    if (typeof scriptdb[lang] === 'undefined') {
+        alert('Unknown script key value:', lang)
+        return
+        }
+
+    sRecord = scriptdb[lang]
+    var f, i, checkboxes
+    
+/*    document.getElementById('key').value = lang
+*/
+
+
+
+
+// SCRIPT INFO INPUT
+
+    // names
+    if (sRecord['name']) document.getElementById('sname').value = sRecord['name']
+    else document.getElementById('name').value = ''
+
+    /*if (sRecord['local']) document.getElementById('slocal').value = sRecord['local']
+    else document.getElementById('slocal').value = ''
+*/
+
+
+    // type
+    if (sRecord['type']) document.getElementById('type').value = sRecord['type']
+    else document.getElementById('type').value = ''
+
+    // blocks
+    if (sRecord['blocks']) document.getElementById('blocks').value = sRecord['blocks']
+    else document.getElementById('blocks').value = '0'
+    if (sRecord['chars']) document.getElementById('chars').value = sRecord['chars']
+    else document.getElementById('chars').value = '0'
+    if (sRecord['bletter']) document.getElementById('bletter').value = sRecord['bletter']
+    else document.getElementById('bletter').value = '0'
+    if (sRecord['bmark']) document.getElementById('bmark').value = sRecord['bmark']
+    else document.getElementById('bmark').value = '0'
+    if (sRecord['bnumber']) document.getElementById('bnumber').value = sRecord['bnumber']
+    else document.getElementById('bnumber').value = '0'
+    if (sRecord['bpunctuation']) document.getElementById('bpunctuation').value = sRecord['bpunctuation']
+    else document.getElementById('bpunctuation').value = '0'
+    if (sRecord['bsymbol']) document.getElementById('bsymbol').value = sRecord['bsymbol']
+    else document.getElementById('bsymbol').value = '0'
+    if (sRecord['bother']) document.getElementById('bother').value = sRecord['bother']
+    else document.getElementById('bother').value = '0'
+
+
+
+    // direction
+    checkboxes = [
+        'dltr', 'drtl', 'dtblr', 'dtbrl', 'dbous', 'dbt',
+        ]
+    if (sRecord.direction) {
+        var directionItems = new Set(sRecord.direction.split(' '))
+        for (f=0;f<checkboxes.length;f++) {
+            if (directionItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
+            else document.getElementById(checkboxes[f]).checked = false
+            }
+        }
+    else for (f=0;f<checkboxes.length;f++) document.getElementById(checkboxes[f]).checked = false
+
+    if (sRecord['rtlnumbers']) document.getElementById('rtlnumbers').value = 'yes'
+    else document.getElementById('rtlnumbers').value = 'no'
+
+
+
+    // vowels
+    checkboxes = [
+        'letters', 'marks', 'hidden', 'visorder', 'vocalics', 'ivowels', 'vcomposite', 'prebase', 'circum'
+        ]
+     // initialise all input fields
+    for (f=0;f<checkboxes.length;f++) {
+        if (sRecord.voweltype[checkboxes[f]] === true) document.getElementById(checkboxes[f]).value = 'yes'
+        else document.getElementById(checkboxes[f]).value = 'no'
+        }
+    if (sRecord.voweltype['inherent']) document.getElementById('inherent').value = sRecord.voweltype['inherent']
+    else document.getElementById('inherent').value = '0'
+    if (sRecord.voweltype['vbase']) document.getElementById('vbase').value = sRecord.voweltype['vbase']
+    else document.getElementById('vbase').value = ''
+ 
+ 
+    // gsub & gpos
+    if (sRecord['case']) document.getElementById('case').value = 'yes'
+    else document.getElementById('case').value = 'no'
+
+    if (sRecord['cursive']) document.getElementById('cursive').value = 'yes'
+    else document.getElementById('cursive').value = 'no'
+
+    
+    if (sRecord['mcchars'] === 'm') document.getElementById('mcchars').value = 'm'
+    else if (sRecord['mcchars']) document.getElementById('mcchars').value = 'yes'
+    else document.getElementById('mcchars').value = 'no'
+
+    if (sRecord['conjuncts']) document.getElementById('conjuncts').value = 'yes'
+    else document.getElementById('conjuncts').value = 'no'
+
+    if (sRecord['ligs']) document.getElementById('ligs').value = 'yes'
+    else document.getElementById('ligs').value = 'no'
+
+ 
+ 
+    // medials
+    checkboxes = [
+        'mcm', 'msj', 'mlet',
+        ]
+    if (sRecord.medials) {
+        var medialsItems = new Set(sRecord.medials.split(' '))
+        for (f=0;f<checkboxes.length;f++) {
+            if (medialsItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
+            else document.getElementById(checkboxes[f]).checked = false
+            }
+        }
+    else for (f=0;f<checkboxes.length;f++) document.getElementById(checkboxes[f]).checked = false
+
+ 
+ 
+    // finals
+    checkboxes = [
+        'fcm', 'flet', 'fss', 'fvk', 'fspec'
+        ]
+    if (sRecord.finals) {
+        var finalsItems = new Set(sRecord.finals.split(' '))
+        for (f=0;f<checkboxes.length;f++) {
+            if (finalsItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
+            else document.getElementById(checkboxes[f]).checked = false
+            }
+        }
+    else for (f=0;f<checkboxes.length;f++) document.getElementById(checkboxes[f]).checked = false
+
+ 
+ 
+    // consonant clusters
+    checkboxes = [
+        'ligation', 'stacks', 'touch', 'conjoined', 'subjoinedcp', 'visviram', 'diacritic',
+        ]
+     // initialise all input fields
+    for (f=0;f<checkboxes.length;f++) {
+        document.getElementById(checkboxes[f]).checked = sRecord.clusters[checkboxes[f]]
+        }
+    if (sRecord.clusters['killer']) {
+        if (sRecord.clusters['killer'].includes('k'))         document.getElementById('cvk').checked = true
+        else document.getElementById('cvk').checked = false
+        if (sRecord.clusters['killer'].includes('i'))         document.getElementById('cik').checked = true
+        else document.getElementById('cik').checked = false
+        if (sRecord.clusters['killer'].includes('v'))         document.getElementById('cv').checked = true
+        else document.getElementById('cv').checked = false
+        }
+
+ 
+ 
+    // TYPOGRAPHY
+    // baselines
+    if (sRecord['baseline']) document.getElementById('baseline').value = sRecord['baseline']
+
+ 
+    // word separators
+    checkboxes = [
+        'wspace', 'wws', 'wno', 'wsyllable', 'wsb'
+        ]
+    if (sRecord.wordsep) {
+        var wordsepItems = new Set(sRecord.wordsep.split(' '))
+        for (f=0;f<checkboxes.length;f++) {
+            if (wordsepItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
+            else document.getElementById(checkboxes[f]).checked = false
+            }
+        }
+    else for (f=0;f<checkboxes.length;f++) document.getElementById('w'+checkboxes[f]).checked = false
+
+
+    // linebreak
+    checkboxes = [
+        'tword', 'tsyllable', 'tchar', 'ttbd'
+        ]
+    if (sRecord.linebreak) {
+        var linebreakItems = new Set(sRecord.linebreak.split(' '))
+        for (f=0;f<checkboxes.length;f++) {
+            if (linebreakItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
+            else document.getElementById(checkboxes[f]).checked = false
+            }
+        }
+    else for (f=0;f<checkboxes.length;f++) document.getElementById('t'+checkboxes[f]).checked = false
+
+
+    // hyphenation
+    if (sRecord.hyphen) {
+        parts = sRecord.hyphen.split(' ')
+        document.getElementById('hyphenation').value = parts.shift()
+        if (parts.length > 0) document.getElementById('hyphen').value = parts.join(' ')
+        }
+
+
+    // justification
+    checkboxes = [
+        'jsp', 'jic', 'jig', 'jstr', 'jsw', 'jpad', 'jnone', 'j?'
+        ]
+    if (sRecord.justification) {
+        var justificationItems = new Set(sRecord.justification.split(' '))
+        for (f=0;f<checkboxes.length;f++) {
+            if (justificationItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
+            else document.getElementById(checkboxes[f]).checked = false
+            }
+        }
+    else for (f=0;f<checkboxes.length;f++) document.getElementById('t'+checkboxes[f]).checked = false
+
+ 
+    // conjuncts spanning word boundaries
+    if (sRecord['wordspan']) document.getElementById('wordspan').value = 'yes'
+    else document.getElementById('wordspan').value = 'no'
+
+ 
+    // grapheme clusters
+    if (sRecord['gc']) document.getElementById('gc').value = 'yes'
+    else if (sRecord['gc'] === '?') document.getElementById('gc').value = '?'
+    else document.getElementById('gc').value = 'no'
+    }
+
+
+
+
+
+
+
+
+function fillAll () {
+    var i
+    var inputfields = document.querySelectorAll('input')
+    for (i=0;i<inputfields.length;i++) {
+        if(inputfields[i].type==='text') inputfields[i].value = 'x'
+        if(inputfields[i].type==='checkbox') inputfields[i].checked = true
+        }
+    var inputfields = document.querySelectorAll('textarea')
+    for (i=0;i<inputfields.length;i++) {
+        inputfields[i].value = 'xxxxxx'
+        }
+    }
+
+
+
+
+
+
+
+
 
 function makeValue (key) {
+    if (document.getElementById(key).value) return key+':"'+document.getElementById(key).value+'", '
+    else return `${ key }:"", `
+    }
+
+function makeNumericValue (key) {
+    if (document.getElementById(key).value) return key+':'+document.getElementById(key).value+', '
+    else return `${ key }:0, `
+    }
+
+function makeYNValue (key) {
+    if (document.getElementById(key).value === 'yes') return `${ key }:Y, `
+    else if (document.getElementById(key).value === '?') return `${ key }:"?", `
+    else return `${ key }:N, `
+
+    
     if (document.getElementById(key).value) return key+':"'+document.getElementById(key).value+'", '
     else return ''
     }
 
+function makeCheckedValue (key) {
+    if (document.getElementById(key).checked) return `${ key }:Y, `
+    else return `${ key }:N, `
+    }
+
 function makeSubValue (key) {
+    if (document.getElementById(key).checked) return key.substring(1)+' '
+    else return ''
+    }
+
+function makeSubValueX (key) {
     if (document.getElementById(key).value) return key.substring(1)+':'+document.getElementById(key).value+' '
     else return ''
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
 function generate () { 
+
 
 	out = ''
     out += '"'+document.getElementById('key').value+'": { '
@@ -99,287 +488,231 @@ function generate () {
     if (document.getElementById('notes').value) out += '\nnotes:`'+document.getElementById('notes').value+'`,'
     out += '\n'
 
+    // linked:"tayo", fonts:"/pickers/tayo-tyj/", font:"Noto Serif Tayo",
+    out += `linked:"${ document.getElementById('linked').value }", `
+    out += `picker:"${ document.getElementById('picker').value }", `
+    out += `font:"${ document.getElementById('font').value }", `
+
+    out += '\n},\n'
+
+	document.getElementById('langsCode').value = out
+	//document.getElementById('langsCode').select()
+
+
+
+
+
+
+// SCRIPT INFO
+    
+    out = ''
+    
+    out += `"${ document.getElementById('script').value }": {`
+    out += `name:"${ document.getElementById('sname').value }", `
+    out += makeValue('region')
+    
     // FEATURES
     out += makeValue('type')
-    out += makeValue('cs')
-    out += makeValue('gpos')
-    out += makeValue('gsub')
-    out += makeValue('cursive')
-    out += makeValue('wordsep')
-    out += makeValue('wordsepChar')
-    out += makeValue('baseline')
-    out += makeValue('wrap')
-    out += makeValue('hyphenation')
-    out += makeValue('hyphen')
-
-
-    // DIRECTION
-    var temp = ''
-    if (document.getElementById('dltr').checked) temp += 'ltr '
-    if (document.getElementById('drtl').checked) temp += 'rtl '
-    if (document.getElementById('drtl*').checked) temp += 'rtl* '
-    if (document.getElementById('dtblr').checked) temp += 'tblr '
-    if (document.getElementById('dtbrl').checked) temp += 'tbrl '
-    if (document.getElementById('dbos').checked) temp += 'bos '
-    if (document.getElementById('dbt').checked) temp += 'bt '
-    if (temp !== '') out += ' direction:"'+temp.trim()+'", '
-
-    // JUSTIFICATION
-    var temp = ''
-    if (document.getElementById('jsp').checked) temp += 'sp '
-    if (document.getElementById('jstr').checked) temp += 'str '
-    if (document.getElementById('jsw').checked) temp += 'sw '
-    if (document.getElementById('jpad').checked) temp += 'pad '
-    if (document.getElementById('jic').checked) temp += 'ic '
-    if (document.getElementById('jig').checked) temp += 'ig '
-    if (document.getElementById('jnone').checked) temp += 'none '
-    if (document.getElementById('j?').checked) temp += '? '
-    if (temp !== '') out += ' justification:"'+temp.trim()+'", '
-
-    // VOWELS
     out += '\n'
-    temp = ''
-    temp += makeSubValue('vlet')
-    temp += makeSubValue('vml')
-    temp += makeSubValue('vcm')
-    temp += makeSubValue('vhcm')
-    temp += makeSubValue('vinh')
-    temp += makeSubValue('vvs')
-    temp += makeSubValue('vvsl')
-    temp += makeSubValue('vind')
-    temp += makeSubValue('vbase')
-    temp += makeSubValue('vsyl')
-
-    temp += makeSubValue('vpre')
-    temp += makeSubValue('vvenc')
-    temp += makeSubValue('vcirc')
-    temp += makeSubValue('vcomp')
-    temp += makeSubValue('vvoc')
-    if (temp !== '') out += 'vowels:"'+temp.trim()+'", '
+    
+ 
+    out += makeNumericValue('blocks')
+    out += makeNumericValue('chars')
+    out += makeNumericValue('bletter')
+    out += makeNumericValue('bmark')
+    out += makeNumericValue('bnumber')
+    out += makeNumericValue('bpunctuation')
+    out += makeNumericValue('bsymbol')
+    out += makeNumericValue('bother')
+    out += '\n'
 
 
-    // CLUSTERS
-    temp = ''
-    if (document.getElementById('cvir').checked) temp += 'vir '
-    if (document.getElementById('cinv').checked) temp += 'inv '
-    if (document.getElementById('cstk').checked) temp += 'stk '
-    if (document.getElementById('ccnj').checked) temp += 'cnj '
-    if (document.getElementById('clig').checked) temp += 'lig '
-    if (document.getElementById('ctcg').checked) temp += 'tcg '
-    if (document.getElementById('crax').checked) temp += 'rax '
-    if (document.getElementById('cmrk').checked) temp += 'mrk '
-    if (document.getElementById('clet').checked) temp += 'let '
-    if (document.getElementById('cunm').checked) temp += 'unm '
-    if (temp !== '') out += ' clusters:"'+temp.trim()+'", '
+    // direction: "ltr rtl tbrl tblr bt bous", rtlnumbers:N,
+    
+    out += `direction:"`
+    out += makeSubValue('dltr')
+    out += makeSubValue('drtl')
+    out += makeSubValue('dtblr')
+    out += makeSubValue('dtbrl')
+    out += makeSubValue('dbous')
+    out += makeSubValue('dbt')
+    out = out.trim()
+    out += `", rtlnumbers:`
+    if (document.getElementById('rtlnumbers').value === 'yes') out += 'Y'
+    else out += 'N'
+    out += `,`
+    out += '\n'
+    
+    
+    // voweltype: { inherent:0, letters:Y, marks:N, hidden:N, visorder:N, vocalics:N, ivowels:N, vbase:"", vcomposite:N, prebase:N, circum:N },
 
-    // MEDIALS & FINALS
+    out += `voweltype: { `
+    if (document.getElementById('inherent').value) out += 'inherent:'+document.getElementById('inherent').value+', '
+    else out += 'inherent:0, '
+    out += makeYNValue('letters')
+    out += makeYNValue('marks')
+    out += makeYNValue('hidden')
+    out += makeYNValue('visorder')
+    out += makeYNValue('vocalics')
+    out += makeYNValue('ivowels')
+    if (document.getElementById('vbase').value) out += 'vbase:"'+document.getElementById('vbase').value+'", '
+    else out += 'vbase:"", '
+    out += makeYNValue('vcomposite')
+    out += makeYNValue('prebase')
+    out += makeYNValue('circum')
+    
+    out += `},\n`
+
+    // case:N, cursive:N, mcchars:N, conjuncts:N, ligs:N, 
+    out += makeYNValue('case')
+    out += makeYNValue('cursive')
+    
+    out += 'mcchars:'
+    if (document.getElementById('mcchars').value === 'm') out += '"m"'
+    else if (document.getElementById('mcchars').value === 'yes') out += 'Y'
+    else out += 'N'
+    out += ', '
+    
+    out += makeYNValue('conjuncts')
+    out += makeYNValue('ligs')
+    out += '\n'
+
+
+    // medials:"cm sj let", finals:"cm let vk ss",
+    out += `medials:"`
     temp = ''
     temp += makeSubValue('mcm')
     temp += makeSubValue('msj')
     temp += makeSubValue('mlet')
-    if (temp !== '') out += ' medials:"'+temp.trim()+'", '
-    
+    out += temp.trim()
+    out += `", finals:"`
     temp = ''
     temp += makeSubValue('fcm')
     temp += makeSubValue('flet')
     temp += makeSubValue('fvk')
     temp += makeSubValue('fss')
-    if (temp !== '') out += ' finals:"'+temp.trim()+'", '
-
-
+    out += temp.trim()
+    out += `",`
     out += '\n'
-    out += makeValue('linked')
-    out += makeValue('fonts')
-    out += makeValue('font')
+    
+
+    // clusters: { ligation:N, stacks:N, touch:N, conjoined:N, subjoinedcp:N, visviram:N, diacritic:N, killer:"vik" },
+    out += `clusters:{ `
+    temp = ''
+    temp += makeCheckedValue('ligation')
+    temp += makeCheckedValue('stacks')
+    temp += makeCheckedValue('touch')
+    temp += makeCheckedValue('conjoined')
+    temp += makeCheckedValue('subjoinedcp')
+    temp += makeCheckedValue('visviram')
+    temp += makeCheckedValue('diacritic')
+    out += temp.trim()
+    
+    out += ' killer:"'
+    if (document.getElementById('cvk').checked) out += 'k'
+    if (document.getElementById('cik').checked) out += 'i'
+    if (document.getElementById('cv').checked) out += 'v'
+    out += '"'
+    out += `},\n`
+
+    // wordsep: "space ws:x no zwsp syllable sb",
+    out += `wordsep:"`
+    temp = ''
+    temp += makeSubValue('wspace')
+    temp += makeSubValue('wws').trim()
+    if (document.getElementById('wordsepChar').value) out += ':'+document.getElementById('wordsepChar').value+' '
+    temp += makeSubValue('wno')
+    temp += makeSubValue('wsyllable')
+    temp += makeSubValue('wsb')
+    out += temp.trim()
+    out += `",\n`
 
 
+    // linebreak:"word syllable char", hyphen:"yes<char> (yes)<char> yes{∅} no n/a", justification:"sp ic ig str sw pad none", spacing:"sp base", gc:Y,
+    out += `linebreak:"`
+    temp = ''
+    temp += makeSubValue('tword')
+    temp += makeSubValue('tsyllable')
+    temp += makeSubValue('tchar')
+    out += temp.trim()
+    out += `", `
+
+    out += `hyphen:"`
+    out += document.getElementById('hyphenation').value + ' ' + document.getElementById('hyphen').value
+    out += `", `
+
+    out += `wordspan:`
+    if (document.getElementById('wordspan').value === 'yes')  out += 'Y'
+    else  out += 'N'
+    out += `, `
+
+
+    out += `justification:`
+    temp = ''
+    temp += makeSubValue('jsp')
+    temp += makeSubValue('jic')
+    temp += makeSubValue('jig')
+    temp += makeSubValue('jstr')
+    temp += makeSubValue('jsw')
+    temp += makeSubValue('jpad')
+    temp += makeSubValue('jnone')
+    temp = temp.trim()
+    if (temp !== '') out += '"'+temp+`", `
+    else out += 'U, '
+    
+
+    out += `gc:`
+    if (document.getElementById('gc').value === 'yes')  out += 'Y'
+    else if (document.getElementById('gc').value === '?')  out += '"?"'
+    else  out += 'N'
+    out += `, `
+
+
+    out += `baseline:"`
+    if (document.getElementById('baseline').value === 'romn') out += 'romn'+' '
+    if (document.getElementById('baseline').value === 'hang') out += 'hang'+' '
+    if (document.getElementById('baseline').value === 'cntr') out += 'cntr'+' '
+    if (document.getElementById('baseline').value === 'ideo') out += 'ideo'+' '
+    out = out.trim()
+    out += `", `
 
 
 	out += '\n},\n'
     
     out = out.replace(/[\n]+/g,'\n')
     
-	document.getElementById('code').value = out
-	document.getElementById('code').select()
+	document.getElementById('scriptsCode').value = out
+	//document.getElementById('scriptsCode').select()
 	}
 
-
-function readRecord (lang) {
-    var i
-    
-    if (lang === '') {
-        alert('No key value supplied.')
-        return
-        }
-    if (typeof langs[lang] === 'undefined') {
-        alert('Unknown key value:', lang)
-        return
-        }
-
-    var record = langs[lang]
-    var f, i, checkboxes
-    
-    document.getElementById('key').value = lang
-    
-    var fields = [
-        'name','local','localtrans','silcode','source', 
-        'region', 'countries', 'script', 'speakers',
-        'letter', 'letteraux', 'mark', 'markaux', 'number', 'numberaux', 'punctuation', 'punctuationaux', 'symbol', 'symbolaux', 'other', 'otheraux', 'aux', 'deprecated',
-        'type', 'cs', 'gpos', 'gsub', 'cursive', 'direction', 'baseline', 'wordsep', 'wordsepChar', 'wrap', 'hyphenation', 'hyphen', 'justification', 'linked', 'fonts', 'font',
-        'vowels','clusters', 'medials', 'finals',
-        ]
-    for (var f=0;f<fields.length;f++) {
-        if (record[fields[f]]) document.getElementById(fields[f]).value = record[fields[f]]
-        else document.getElementById(fields[f]).value = ''
-        }
-    
-    // vowels
-    checkboxes = [
-        'vlet', 'vml', 'vcm', 'vhcm', 'vinh', 'vvs', 'vvsl', 'vind', 'vbase', 'vsyl',    'vpre', 'vvenc', 'vcirc', 'vcomp', 'vvoc'
-        ]
-     // initialise all input fields
-    for (f=0;f<checkboxes.length;f++) {
-        document.getElementById(checkboxes[f]).value = ''
-        }
-    // fill in values from db
-    if (record.vowels) {
-        var vowelItems = record.vowels.split(' ')
-        for (let i=0;i<vowelItems.length;i++) {
-            var couplet = vowelItems[i].split(':')
-            if (document.getElementById('v'+couplet[0])) document.getElementById('v'+couplet[0]).value = couplet[1]
-            else console.log('Unrecognised vowel couplet in readRecord!', couplet[0])
-            }
-        }
-    
-    // medials
-    checkboxes = [
-        'mcm', 'msj', 'mlet'
-        ]
-     // initialise all input fields
-    for (f=0;f<checkboxes.length;f++) {
-        document.getElementById(checkboxes[f]).value = ''
-        }
-    // fill in values from db
-    if (record.medials) {
-        var medialItems = record.medials.split(' ')
-        for (let i=0;i<medialItems.length;i++) {
-            var couplet = medialItems[i].split(':')
-            if (document.getElementById('m'+couplet[0])) document.getElementById('m'+couplet[0]).value = couplet[1]
-            else console.log('Unrecognised medial couplet in readRecord!', couplet[0])
-            }
-        }
-    
-    // finals
-    checkboxes = [
-        'fcm', 'flet', 'fvk', 'fss'
-        ]
-     // initialise all input fields
-    for (f=0;f<checkboxes.length;f++) {
-        document.getElementById(checkboxes[f]).value = ''
-        }
-    // fill in values from db
-    if (record.finals) {
-        var finalItems = record.finals.split(' ')
-        for (let i=0;i<finalItems.length;i++) {
-            var couplet = finalItems[i].split(':')
-            if (document.getElementById('f'+couplet[0])) document.getElementById('f'+couplet[0]).value = couplet[1]
-            else console.log('Unrecognised medial couplet in readRecord!', couplet[0])
-            }
-        }
-    
-    // direction
-    checkboxes = [
-        'dltr', 'drtl', 'drtl*', 'dtblr', 'dtbrl', 'dbos', 'dbt',
-        ]
-    if (record.direction) {
-        var directionItems = new Set(record.direction.split(' '))
-        for (f=0;f<checkboxes.length;f++) {
-            if (directionItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
-            else document.getElementById(checkboxes[f]).checked = false
-            }
-        }
-    else for (f=0;f<checkboxes.length;f++) document.getElementById(checkboxes[f]).checked = false
-
-    // justification
-    checkboxes = [
-        'jsp', 'jstr', 'jsw', 'jpad', 'jic', 'jig', 'jnone', 'j?',
-        ]
-    if (record.justification) {
-        var justificationItems = new Set(record.justification.split(' '))
-        for (f=0;f<checkboxes.length;f++) {
-            if (justificationItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
-            else document.getElementById(checkboxes[f]).checked = false
-            }
-        }
-    else for (f=0;f<checkboxes.length;f++) document.getElementById(checkboxes[f]).checked = false
-
-    // clusters
-    checkboxes = [
-        'cvir', 'cinv', 'cstk', 'ccnj', 'clig', 'ctcg', 'crax', 'cmrk', 'clet', 'cunm'
-        ]
-    if (record.clusters) {
-        var clusterItems = new Set(record.clusters.split(' '))
-        for (f=0;f<checkboxes.length;f++) {
-            if (clusterItems.has(checkboxes[f].substring(1))) document.getElementById(checkboxes[f]).checked = true
-            else document.getElementById(checkboxes[f]).checked = false
-            }
-        }
-    else for (f=0;f<checkboxes.length;f++) document.getElementById(checkboxes[f]).checked = false
-
-    if (record.rtl && record.rtl === true) document.getElementById('rtl').checked = true
-    else document.getElementById('rtl').checked = false
-    if (record.redirect && record.redirect === true) document.getElementById('redirect').checked = true
-    else document.getElementById('redirect').checked = false
-    
-    if (record.orth)  document.getElementById('orth').value = record.orth 
-    else document.getElementById('orth').value = ''
-
-    if (record.also) {
-        out = ''
-        for (let i=0;i<record.also.length;i++) out += record.also[i]+'\n'
-        document.getElementById('also').value = out
-        }
-    else document.getElementById('also').value = ''
-
-    if (record.related) document.getElementById('related').value = record.related 
-    else document.getElementById('related').value = ''
-
-    if (record.notes) document.getElementById('notes').value = record.notes 
-    else document.getElementById('notes').value = ''
-    }
-
-
-function fillAll () {
-    var i
-    var inputfields = document.querySelectorAll('input')
-    for (i=0;i<inputfields.length;i++) {
-        if(inputfields[i].type==='text') inputfields[i].value = 'x'
-        if(inputfields[i].type==='checkbox') inputfields[i].checked = true
-        }
-    var inputfields = document.querySelectorAll('textarea')
-    for (i=0;i<inputfields.length;i++) {
-        inputfields[i].value = 'xxxxxx'
-        }
-    }
 </script>
 <style>
 </style>
 </head>
 
 <body>
+<header style="position:sticky; top: 0; background: white;">
 <p style="float:right;"><button onclick="fillAll()">Fill all</button></p>
+<p style="float:right;"><button onclick="window.location='DB_UI_TOOL.html'">Clear all</button></p>
 <h1>Langs DB editor</h1>
-
-<p>Find an existing record (BCP): <input type="text" id="load" onChange="readRecord(this.value)" style="width:5em;"> <button onClick="readRecord(document.getElementById('load').value)">GO</button></p>
+ <!--style="position:fixed; top:0"-->
+<p>Find an existing record (BCP): 
+<input type="text" id="loadlang" style="width:5em;" placeholder="Lang tag"> 
+<input type="text" id="loadscript" style="width:5em;" placeholder="Script tag"> 
+<button onClick="readLRecord(document.getElementById('loadlang').value); readSRecord(document.getElementById('loadscript').value)">GO</button></p>
+</header>
 <hr>
 
-<p><label>Key:&#x0009;<input type="text" id="key" style="width:5em;" placeholder="∅"></label> &nbsp;
+
+
+
+<p><label>Lang tag:&#x0009;<input type="text" id="key" style="width:5em;" placeholder="∅"></label> &nbsp;
 SIL code: <input type="text" id="silcode" style="width:5em;" placeholder="∅"> &nbsp;
 Script: <input type="text" id="script" style="width:5em;" placeholder="∅"> &nbsp;
 RTL? <input type="checkbox" id="rtl"> &nbsp;
 Redirect? <input type="checkbox" id="redirect"></p>
 
-<p><label>Name:&#x0009;<input type="text" id="name" style="width:50em;" placeholder="∅"></label></p>
+<p><label>Language name:&#x0009;<input type="text" id="name" style="width:50em;" placeholder="∅"></label></p>
 <p><label>Local name:&#x0009;<input type="text" id="local" style="width:40em;" placeholder="∅"></label></p>
 <p><label>Local name transcription:&#x0009;<input type="text" id="localtrans" style="width:35em;" placeholder="∅"></label></p>
 
@@ -404,6 +737,41 @@ Redirect? <input type="checkbox" id="redirect"></p>
 <p><label>Countries:&#x0009;<input type="text" id="countries" style="width:40em;" placeholder="∅"></label></p>
 <p><label>Speakers:&#x0009;<input type="text" id="speakers" placeholder="∅"></label></p>
 <hr>
+
+
+
+
+<h2>LANG INFO</h2>
+
+
+<p><strong>Characters:</strong></p>
+
+<script>
+function parseChars () {
+    items = document.getElementById('characterlist').value.split(',')
+    for (i=0;i<items.length;i++) {
+        parts = items[i].split('"')
+        if (parts[0].trim().startsWith('letter:')) document.getElementById('letter').value = parts[1]
+        if (parts[0].trim().startsWith('lettera')) document.getElementById('letteraux').value = parts[1]
+        if (parts[0].trim().startsWith('mark:')) document.getElementById('mark').value = parts[1]
+        if (parts[0].trim().startsWith('marka')) document.getElementById('markaux').value = parts[1]
+        if (parts[0].trim().startsWith('number:')) document.getElementById('number').value = parts[1]
+        if (parts[0].trim().startsWith('numbera')) document.getElementById('numberaux').value = parts[1]
+        if (parts[0].trim().startsWith('punctuation:')) document.getElementById('punctuation').value = parts[1]
+        if (parts[0].trim().startsWith('punctuationa')) document.getElementById('punctuationaux').value = parts[1]
+        if (parts[0].trim().startsWith('symbol:')) document.getElementById('symbol').value = parts[1]
+        if (parts[0].trim().startsWith('symbola')) document.getElementById('symbolaux').value = parts[1]
+        if (parts[0].trim().startsWith('other:')) document.getElementById('other').value = parts[1]
+        if (parts[0].trim().startsWith('otherla')) document.getElementById('otheraux').value = parts[1]
+        if (parts[0].trim().startsWith('possible:')) document.getElementById('possible').value = parts[1]
+        if (parts[0].trim().startsWith('deprecated:')) document.getElementById('deprecated').value = parts[1]
+        }
+    }
+</script>
+
+<p>Characters: <textarea id="characterlist" placeholder="Copy here the output from the orthography notes index, then click on Distribute to get the values into the working slots below." style="width:100%; height: 3rem;"></textarea></p>
+<p><button onClick="parseChars()">Distribute</button></p>
+
 
 <p><label>Letter&#x0009;<input type="text" id="letter" placeholder="∅" style="width:30em;"></label></p>
 <p><label>Letter (aux)&#x0009;<input type="text" id="letteraux" placeholder="∅" style="width:30em;"></label></p>
@@ -441,147 +809,265 @@ fat | latn | For the Fante dialect of Twi"></textarea></p>
 
 
 
+<p><label>Link to script explainer:&#x0009;<input type="text" id="linked" placeholder="eg tayo/tyj"></label></p>
+<p><label>Link to character app:&#x0009;<input type="text" id="picker" placeholder="Just the directory name, eg. adlm"></label></p>
+<p><label>Font to apply:&#x0009;&#x0009;<input type="text" id="font" placeholder="Font name (pick a system font if possible)"></label></p>
 <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>SCRIPT INFO</h2>
+
+<p><label>Script name:&#x0009;<input type="text" id="sname" style="width:50em;" placeholder="∅"></label></p>
+<!--<p><label>Local name:&#x0009;<input type="text" id="slocal" style="width:40em;" placeholder="∅"></label></p>
+<p><label>Local name transcription:&#x0009;<input type="text" id="slocaltrans" style="width:35em;" placeholder="∅"></label></p>-->
+
+
+
 <p><label>Type:&#x0009;<select id="type">
-    <option value="alphabet">alphabet</option>
+    <option value="alpha">alphabet</option>
+    <option value="abug">abugida</option>
     <option value="abjad">abjad</option>
-    <option value="abugida">abugida</option>
-    <option value="syllabary">syllabary</option>
+    <option value="syll">syllabary</option>
+    <option value="feat">featural syllabary</option>
+<option value="ideo">ideographic</option>
     </select></label>
     </p>
-<p>
-<label>GPOS:&#x0009;<select id="gpos">
-    <option value="yes">Yes</option>
-    <option value="no">No</option>
-    </select></label>
-    </p>
-<p>
-<label>GSUB:&#x0009;<select id="gsub">
-    <option value="yes">Yes</option>
-    <option value="no">No</option>
-    </select></label>
-    </p>
-<p><label>Multiple CC&#x0009;<select id="mcchars">
-    <option value="yes">Yes</option>
-    <option value="no">No</option>
-    </select></label>
-    </p>
-<p><label>Bicameral:&#x0009;<select id="cs">
-    <option value="yes">Yes</option>
-    <option value="no">No</option>
-    <option value="(yes)">Similar</option>
-    </select></label>
-    </p>
-<p><label>Cursive script:&#x0009;<select id="cursive">
-    <option value="no">No</option>
-    <option value="yes">Yes</option>
-    </select></label>
-    </p>
-<p><label><strong>Text direction</strong>&#x0009;<input id="direction" type="text" style="width: 10em;color: red;font-size: 110%;"></label></p>
+
+
+
+<p style="text-align: start;">
+<label><strong>Unicode blocks</strong>:&#x0009;<input id="blocks" type="text" style="width: 2em;color: red;font-size: 110%;"></label>&nbsp;&nbsp;
+Characters:&#x0009;<input id="chars" type="text" style="width: 2em;color: red;font-size: 110%;">
+<button onClick="sum = parseInt(document.getElementById('bletter').value) +parseInt(document.getElementById('bmark').value) +parseInt(document.getElementById('bnumber').value) +parseInt(document.getElementById('bpunctuation').value) +parseInt(document.getElementById('bsymbol').value) +parseInt(document.getElementById('bother').value); this.textContent = 'Σ='+sum">Σ</button>
+&nbsp;&nbsp;
+Letters:&#x0009;<input id="bletter" type="text" style="width: 2em;color: red;font-size: 110%;" value="0">&nbsp;&nbsp;
+Marks:&#x0009;<input id="bmark" type="text" style="width: 2em;color: red;font-size: 110%;" value="0">&nbsp;&nbsp;
+Numbers:&#x0009;<input id="bnumber" type="text" style="width: 2em;color: red;font-size: 110%;" value="0">&nbsp;&nbsp;
+Punctuation:&#x0009;<input id="bpunctuation" type="text" style="width: 2em;color: red;font-size: 110%;" value="0">&nbsp;&nbsp;
+Symbols:&#x0009;<input id="bsymbol" type="text" style="width: 2em;color: red;font-size: 110%;" value="0">&nbsp;&nbsp;
+Other:&#x0009;<input id="bother" type="text" style="width: 2em;color: red;font-size: 110%;" value="0">&nbsp;&nbsp;
+</p>
+<hr>
+
+
+
+<p><strong>Text direction</strong></p>
 <p class="checkboxes">
 <label><input type="checkbox" id="dltr">ltr</label>
 <label><input type="checkbox" id="drtl">rtl</label>
-<label><input type="checkbox" id="drtl*">rtl but ltr digits</label>
 <label><input type="checkbox" id="dtblr">vertical LR</label>
 <label><input type="checkbox" id="dtbrl">vertical RL</label>
-<label><input type="checkbox" id="dbos">boustrophedon</label>
+<label><input type="checkbox" id="dbous">boustrophedon</label>
 <label><input type="checkbox" id="dbt">bottom to top</label>
 </p>
 
-
-<p><label>Baseline&#x0009;<select id="baseline">
-    <option value="mid">romn</option>
-    <option value="high">hang</option>
-    <option value="vertical">cntr</option>
-    <option value="low">ideo</option>
+<p class="checkboxes"><label>RTL numbers:&#x0009;<select id="rtlnumbers">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
     </select></label>
     </p>
-<p><label>Word separator&#x0009;<select id="wordsep">
-    <option value="space">space</option>
-    <option value="space/wb">space/wb (eg. Ethiopic)</option>
-    <option value="no/zwsp">no/zwsp (eg. Thai)</option>
-    <option value="no">no (eg. CJK)</option>
-    <option value="syllable">syllable (eg. Lisu, Tibetan)</option>
+<hr>
+
+
+
+
+<p><strong>Vowels</strong><!--&#x0009;<input id="vowels" type="text" style="width: 500px;color: red;font-size: 110%;">--></p>
+
+<p class="smallBoxList">
+    Inherent vowels: <input type="text" id="inherent" style="width:3em;" placeholder="#"></p>
+
+
+<p class="smallBoxList"><strong>Post-consonant vowels:</strong><br>
+Use letters: <select id="letters">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+    </select><br>
+    Use marks: <select id="marks">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+    </select><br>
+    Hides vowels: <select id="hidden">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select><br>
+    Visually encodes prebase glyphs: <select id="visorder">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select><br>
+    <label>Composite vowels: <select id="vcomposite">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select></label><br>
+    <label>Prebase glyphs: <select id="prebase">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select></label><br>
+    <label>Circumgraphs: <select id="circum">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select></label></p>
+
+<p class="smallBoxList"><strong>Standalone vowels:</strong><br>
+    <label>Independent vowels:&#x0009;<select id="ivowels">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select></label><br>
+    Vowel base: transcription <input type="text" id="vbase" style="width:3em;" placeholder="HA"></p>
+
+<p class="smallBoxList"><strong>Vocalics:</strong><select id="vocalics">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select></p>
+<hr>
+
+
+<p><strong>GSUB &amp; GPOS</strong></p>
+<p class="checkboxes"><label>Case distinction:&#x0009;&#x0009;&#x0009;<select id="case">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    <option value="(yes)">Similar</option>
     </select></label>
+</p>
+<p class="checkboxes"><label>Cursive script:&#x0009;&#x0009;&#x0009;<select id="cursive">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select></label>
+    </p>
+<p class="checkboxes"> Does the script use combining marks? 
+<label>&#x0009;&#x0009;
+<select id="mcchars">
+    <option value="no">No</option>
+    <option value="yes">✓ Yes, one at a time</option>
+    <option value="m">✓ Yes, more than one per base</option>
+    </select></label>
+    </p>
+<p class="checkboxes">
+<label>Are clusters marked:&#x0009;&#x0009;&#x0009;
+<select id="conjuncts">
+    <option value="no">No</option>
+    <option value="yes">✓ Yes</option>
+    </select></label>
+    </p>
+<p class="checkboxes">
+<label>Are there non-conjunct ligatures:&#x0009;
+<select id="ligs">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select></label>
+</p>
+
+
+<p><strong>Dedicated medials</strong></p>
+<p class="checkboxes">
+    <label><input type="checkbox" id="mcm">combining marks</label>
+    <label><input type="checkbox" id="msj">subjoined characters</label>
+    <label><input type="checkbox" id="mlet">dedicated letters</label>
+    </p>
+
+<p><strong>Dedicated finals</strong></p>
+<p class="checkboxes">
+    <label><input type="checkbox" id="fcm">combining marks</label>
+    <label><input type="checkbox" id="flet">dedicated letters</label>
+    <label><input type="checkbox" id="fss">superscripts</label>
+    <label><input type="checkbox" id="fvk">vowel killer</label>
+    <label><input type="checkbox" id="fspec">special letters (eg. chillus)</label>
+    </p>
+
+<p><strong>Clusters</strong></p>
+<p class="checkboxes">
+    <label><input type="checkbox" id="ligation">ligation</label>
+    <label><input type="checkbox" id="stacks">stacking</label>
+    <label><input type="checkbox" id="conjoined">conjoining</label>
+    <label><input type="checkbox" id="touch">touching</label>
+    <label><input type="checkbox" id="subjoinedcp">subjoining code points</label>
+    <label><input type="checkbox" id="visviram">visible virama</label>
+    <label><input type="checkbox" id="diacritic">diacritic</label>
+    <label><input type="checkbox" id="cunm">unmarked in abugida (eg. punjabi)</label></p>
+    
+<p class="checkboxes">Killer type:
+    <label><input type="checkbox" id="cvk">visible</label>
+    <label><input type="checkbox" id="cik">invisible</label>
+    <label><input type="checkbox" id="cv">virama</label>
+    
+</p>
+<hr>
+
+
+
+<p><strong>Typography</strong></p>
+<p><label>Baseline&#x0009;<select id="baseline">
+    <option value="romn">Roman</option>
+    <option value="hang">Hanging</option>
+    <option value="cntr">Vertical centre</option>
+    <option value="ideo">Ideographic</option>
+    </select></label>
+    </p>
+
+<p>Word separator</p>
+<p class="checkboxes">
+    <label><input type="checkbox" id="wspace">space</label><br>
+    <label><input type="checkbox" id="wws">wordspace, eg. Ethiopic</label><br>
+    <label><input type="checkbox" id="wsyllable">spaces between syllables (eg Vietnamese)</label><br>
+    <label><input type="checkbox" id="wsb">wordspace between syllables (eg. Tibetan)</label><br>
+    <label><input type="checkbox" id="wno">none</label><br>
     Separator = <input type="text" id="wordsepChar" style="width:2em; text-align&#x0009;center;">
     </p>
-<p><label>Text wrap&#x0009;<select id="wrap">
-    <option value="?">?</option>
-    <option value="word">word</option>
-    <option value="word/char">words or characters (eg. Amharic)</option>
-    <option value="syllable">syllable (eg. Balinese)</option>
-    <option value="char">character (eg. CJK)</option>
-    </select></label>
+
+<p>Text wrap</p>
+<p class="checkboxes">
+    <label><input type="checkbox" id="ttbd">?</label><br>
+    <label><input type="checkbox" id="tword">word</label><br>
+    <label><input type="checkbox" id="tsyllable">syllable (eg. Balinese)</label><br>
+    <label><input type="checkbox" id="tchar">character (eg. CJK)</label><br>
     </p>
+
 <p><label>Hyphenation&#x0009;<select id="hyphenation">
     <option value="?">?</option>
     <option value="yes">yes</option>
+<option value="(yes)">(yes)</option>
     <option value="no">no</option>
-    <option value="(yes)">similar</option>
+    <option value="n/a">n/a</option>
     </select></label> Separator = <input type="text" id="hyphen" style="width: 2em; text-align: center;">
     </p>
-<p><label><strong>Justification</strong>&#x0009;<input id="justification" type="text" style="width: 500px;color: red;font-size: 110%;"></label></p>
 
+
+<p>Conjuncts span word boundaries&#x0009;<select id="wordspan">
+<option value="no">no</option>
+<option value="yes">yes</option>
+    </select>
+</p>
+
+
+<p>Justification</p>
 <p class="checkboxes">
-<label><input type="checkbox" id="jsp"> inter-word spaces/word joiners</label>
-<label><input type="checkbox" id="jstr">stretched baseline (eg. Arabic)</label> 
-<label><input type="checkbox" id="jsw">swashes (eg. Arabic)</label>
-<label><input type="checkbox" id="jpad">padding (eg. Tibetan)</label>
-<label><input type="checkbox" id="jic">inter-character (eg. Japanese)</label> 
-<label><input type="checkbox" id="jig">inter-glyph (eg. Tamil, Burmese)</label>
-<label><input type="checkbox" id="jnone">none</label>
+<label><input type="checkbox" id="jsp"> inter-word spaces/word joiners</label><br>
+<label><input type="checkbox" id="jstr">stretched baseline (eg. Arabic)</label><br> 
+<label><input type="checkbox" id="jsw">swashes (eg. Arabic)</label><br>
+<label><input type="checkbox" id="jpad">padding (eg. Tibetan)</label><br>
+<label><input type="checkbox" id="jic">inter-character (eg. Japanese)</label><br>
+<label><input type="checkbox" id="jig">inter-glyph (eg. Tamil, Burmese)</label><br>
+<label><input type="checkbox" id="jnone">none</label><br>
 <label><input type="checkbox" id="j?">?</label>
 </p>
-<p><label>Link to script explainer:&#x0009;<input type="text" id="linked" placeholder="∅"></label></p>
-<p><label>Link to character app:&#x0009;<input type="text" id="fonts" placeholder="∅"></label></p>
-<p><label>Font to apply:&#x0009;&#x0009;<input type="text" id="font" placeholder="∅"></label></p>
-<hr>
-<p><label><strong>Vowels</strong>&#x0009;<input id="vowels" type="text" style="width: 500px;color: red;font-size: 110%;"></label></p>
 
-<p class="smallBoxList">
-    Alpha letters: <input type="text" id="vlet" style="width:2em;" placeholder="#"><br>
-    Matres lectionis: <input type="text" id="vml" style="width:2em;" placeholder="#"><br>
-    Diacritics (visible): <input type="text" id="vcm" style="width:2em;" placeholder="#"><br>
-    Diacritics (hidden): <input type="text" id="vhcm" style="width:2em;" placeholder="#"><br>
-    Inherent vowels: <input type="text" id="vinh" style="width:2em;" placeholder="#"><br>
-    Combining vowel signs: <input type="text" id="vvs" style="width:2em;" placeholder="#"><br>
-    Letter vowel signs: <input type="text" id="vvsl" style="width:2em;" placeholder="#"><br>
-    Independent vowels: <input type="text" id="vind" style="width:2em;" placeholder="#"><br>
-    <!--p style="line-height: 1.4; text-align: end; margin-inline-end:50%;">Vowel base: transcription <input type="text" id="vbase" style="width:2em;" placeholder="HA"><br-->
-    Vowel base: transcription <input type="text" id="vbase" style="width:2em;" placeholder="HA"><br>
-    Syllables: <input type="text" id="vsyl" style="width:2em;" placeholder="#"><br><br>
-    Prebase glyphs: <input type="text" id="vpre" style="width:2em;" placeholder="#"><br>
-    Visually encoded prebase glyphs: <input type="text" id="vvenc" style="width:2em;" placeholder="#"><br>
-    Circumgraphs: <input type="text" id="vcirc" style="width:2em;" placeholder="#"><br>
-    Composite vowels: <input type="text" id="vcomp" style="width:2em;" placeholder="#"><br>
-    Vocalics: <input type="text" id="vvoc" style="width:2em;" placeholder="#">
+
+<p><label>Grapheme clusters OK?&#x0009;<select id="gc">
+    <option value="?">?</option>
+    <option value="yes">yes</option>
+    <option value="no">no</option>
+    </select></label>
     </p>
-
-<p><label><strong>Clusters</strong>&#x0009;<input id="clusters" type="text" style="width: 500px;color: red;font-size: 110%;"></label></p>
-<p class="checkboxes">
-    <label><input type="checkbox" id="cvir">visible virama</label>
-    <label><input type="checkbox" id="cinv">invisible virama for conjuncts</label>
-    <label><input type="checkbox" id="cstk">stacking</label>
-    <label><input type="checkbox" id="ccnj">conjoining</label>
-    <label><input type="checkbox" id="clig">ligation</label>
-    <label><input type="checkbox" id="ctcg">touching</label>
-    <label><input type="checkbox" id="crax">special RA</label>
-    <label><input type="checkbox" id="cmrk">diacritic</label>
-    <label><input type="checkbox" id="clet">special letters (eg. chillus)</label>
-    <label><input type="checkbox" id="cunm">unmarked in abugida (eg. punjabi)</label>
-</p>
-
-<p><label><strong>Medials &amp; finals</strong> <input id="medials" type="text" style="width: 15em;color: red;font-size: 110%;"></label> <input id="finals" type="text" style="width: 15em;color: red;font-size: 110%;"></p>
-<p class="smallBoxList">
-    Medial combining characters: <input type="text" id="mcm" style="width:2em;" placeholder="#"><br>
-    Subjoined medial characters: <input type="text" id="msj" style="width:2em;" placeholder="#"><br>
-    Dedicated medial characters: <input type="text" id="mlet" style="width:2em;" placeholder="#"><br>
-<br>
-    Final combining characters: <input type="text" id="fcm" style="width:2em;" placeholder="#"><br>
-    Dedicated final letters: <input type="text" id="flet" style="width:2em;" placeholder="#"><br>
-    Vowel-killer (add character): <input type="text" id="fvk" style="width:2em; text-align: center;" placeholder="#"><br>
-    Superscripts: <input type="text" id="fss" style="width:2em; text-align: center;" placeholder="#"><br>
-</p>
+<hr>
 
 
 
@@ -590,7 +1076,8 @@ fat | latn | For the Fante dialect of Twi"></textarea></p>
 
 <hr>
 <p>Generate code <button onClick="generate()">GO</button></p>
-<p><textarea id="code" style="height:15em; width: 100%;"></textarea></p>
+<p><textarea id="langsCode" style="height:15em; width: 100%;" onMouseOver="select(this)"></textarea></p>
+<p><textarea id="scriptsCode" style="height:15em; width: 100%;" onMouseOver="select(this)"></textarea></p>
 
 </body>
 </html>
