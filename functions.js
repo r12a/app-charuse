@@ -57,6 +57,8 @@ var scriptData = {
 'maka':{ name:'Makasar', block:"" },
 'mand':{ name:'Mandaic', block:"mand" },
 'marc':{ name:'Marchen', block:"" },
+'merc':{ name:'Meroitic Cursive', block:"merc" },
+'mero':{ name:'Meroitic Hieroglyphs', block:"" },
 'mend':{ name:'Mende Kikakui', block:"" },
 'mlym':{ name:'Malayalam', block:"mlym" },
 'mong':{ name:'Mongolian', block:"mong" },
