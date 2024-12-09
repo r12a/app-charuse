@@ -12,6 +12,7 @@ var scriptData = {
 'bass':{ name:'Bassa Vah', block:"bass" },
 'batk':{ name:'Batak', block:"batk" },
 'beng':{ name:'Bengali (Bangla)', block:"beng" },
+'beri':{ name:'Beria Erfe', block:"beri" },
 'bugi':{ name:'Buginese', block:"bugi" },
 'buhd':{ name:'Buhid', block:"" },
 'cakm':{ name:'Chakma', block:"" },
@@ -393,7 +394,11 @@ function drawCharacters (main, aux, lang) {
         out += `<span title="${name }" class="c"`
         out += '>'
         //if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
-        if (langs[lang].script && langs[lang].script) out += `<a target="c" href="../scripts/${ langs[lang].script }/character.html?q=${ charList[j] }#${ lang }">${ charList[j] }</a>`
+        //if (langs[lang].script && langs[lang].script) out += `<a target="c" href="../scripts/${ langs[lang].script }/character.html?q=${ charList[j] }#${ lang }">${ charList[j] }</a>`
+        if (langs[lang].script && langs[lang].script) {
+            filename = langs[lang].xxlang ? langs[lang].xxlang : lang
+            out += `<a target="c" href="../scripts/${ langs[lang].script }/${ filename }-characters.html#char${ cp }">${ charList[j] }</a>`
+            }
         else out += charList[j]
         out += '</span> ' 
         }
@@ -406,7 +411,8 @@ function drawCharacters (main, aux, lang) {
             name = 'U+'+cp+' '+charData[charList[j]]
             out += `<span title="${ name }" class="c small"`
             out += '>'
-        	if (langs[lang].script && langs[lang].script) out += `<a target="c" href="../scripts/${ langs[lang].script }/character.html?q=${ charList[j] }#${ lang }">${ charList[j] }</a>`
+        	//if (langs[lang].script && langs[lang].script) out += `<a target="c" href="../scripts/${ langs[lang].script }/character.html?q=${ charList[j] }#${ lang }">${ charList[j] }</a>`
+            if (langs[lang].script && langs[lang].script) out += `<a target="c" href="../scripts/${ langs[lang].script }/${ lang }-characters.html#char${ cp }">${ charList[j] }</a>`
             else out += charList[j]
             out += '</span> '
             }
