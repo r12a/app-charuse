@@ -44,7 +44,7 @@ var scriptData = {
 'kali':{ name:'Kayah Li', block:"kali" },
 'khoj':{ name:'Khojki', block:"" },
 'khmr':{ name:'Khmer', block:"khmr" },
-'khti':{ name:'Kaithi', block:"" },
+'kthi':{ name:'Kaithi', block:"" },
 'knda':{ name:'Kannada', block:"" },
 'kpel':{ name:'Kpelle', block:"" },
 'krai':{ name:'Kirat Rai', block:"krai" },
