@@ -86,6 +86,7 @@ var scriptData = {
 'sora':{ name:'Sora Sompeng', block:"sora" },
 'sund':{ name:'Sundanese', block:"sund" },
 'sunu':{ name:'Sunuwar', block:"sunu" },
+'sylo':{ name:'Syloti Nagri', block:"sylo" },
 'syrc':{ name:'Syriac', block:"syrc" },
 'syrn':{ name:'Eastern Syriac', block:"syrc" },
 'syrj':{ name:'Western Syriac', block:"syrc" },

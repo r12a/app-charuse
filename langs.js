@@ -2148,6 +2148,16 @@ letter:"ـܐܒܓܕܗܘܙܚܛܝܞܟܠܡܢܣܤܥܦܨܩܪܫܬ", mark:"̣̭̮̄̇̈�
 linked:"syrc/syr", picker:"syrc-syr", font:"", 
 },
 
+"syl": { name:"Sylheti", local:"ꠍꠤꠟꠐꠤ", localtrans:"sílɔʈi", silcode:"", 
+source:"r12a", 
+region:"sasia", countries:"Bangladesh", script:"sylo", speakers:"11000000", 
+letter:"ꠀꠁꠃꠄꠅꠇꠈꠉꠊꠌꠍꠎꠏꠐꠑꠒꠓꠔꠕꠖꠗꠘꠙꠚꠛꠜꠝꠞꠟꠠꠡꠢ", letteraux:"", mark:"ꠂ꠆ꠋꠣꠤꠥꠦꠧ꠬", markaux:"", number:"০১২৩৪৫৬৭৮৯", numberaux:"", punctuation:"।॥–—‘’“”…⁕", punctuationaux:"", symbol:"৳꠨꠩꠪꠫", symbolaux:"", other:"", otheraux:"", aux:"", deprecated:"", 
+orth:`[Syloti Nagri] &nbsp; <a href="../scripts/sylo/syl.html" target="_blank">Details</a>.`,
+also:
+["syl | beng | Principal orthography."],
+linked:"sylo/syl", picker:"sylo", font:"Surma", 
+},
+
 "syr": { name:"Syriac", redirect:true, region:"wasia", script:"syrc", 
 related:`syr is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Assyrian Neo-Aramaic ([aii])<br/>Chaldean Neo-Aramaic ([cld]).
 Legacy applications often use syr rather than [cld] (Chaldean Neo-Aramaic).
