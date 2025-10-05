@@ -1460,6 +1460,17 @@ also:
 'mai-tirh | tirh | Until end of 20th century.',]
 },
 
+"mak": { name:"Makassarese", local:"𑻤𑻰𑻥𑻠𑻰𑻭", localtrans:"ɓasa mãŋˈkʰasaraʔ", silcode:"", 
+source:"r12a", 
+region:"seasia", countries:"Indonesia", script:"maka", speakers:"2100000", 
+letter:"تم𑻠𑻡𑻢𑻣𑻤𑻥𑻦𑻧𑻨𑻩𑻪𑻫𑻬𑻭𑻮𑻯𑻰𑻱𑻲", letteraux:"ء", mark:"ّ𑻳𑻴𑻵𑻶", number:"٠١٢٣٤٥٦٧٨٩", punctuation:"𑻷𑻸", symbol:"", other:"\u{0600}\u{0601}", aux:" ​ ",	
+orth:`[Makasar] Historical script. <a href='../scripts/maka/mak.html' target='_blank'>Details</a>.
+`,
+also:
+["mak-bugi | bugi | Buginese script."],
+linked:"maka/mak", picker:"maka", font:"Noto Serif Makasar", 
+},
+
 "mam": { name:"Mam", source:"udhr_mam", region:"cam", countries:"Guatemala, Mexico", script:"ascii", speakers:"540000", local:"B’anax Mam / Qyool Mam"},
 
 "man": { name:"Mandingo (Manding)", redirect:true, source:"", region:"afr", script:"macrolanguage", speakers:"0", related:`man is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Eastern Maninkakan [emk]<br/>Konyanka Maninka [mku]<br/>Western Maninkakan [mlq]<br/>Mandinka [mnk]<br/>Sankaran Maninka [msc]<br/>Kita Maninkakan [mwk]<br/>Forest Maninka (deprecated, don't use) [myq].
