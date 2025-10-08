@@ -103,6 +103,7 @@ var scriptData = {
 'thaa':{ name:'Thaana', block:"thaa" },
 'tibt':{ name:'Tibetan', block:"tibt" },
 'tirh':{ name:'Tirhuta', block:"" },
+'tnsa':{ name:'Tangsa', block:"tnsa" },
 'tols':{ name:'Tolong Siki', block:"tols" },
 'vaii':{ name:'Vai', block:"vaii" },
 'wcho':{ name:'Wancho', block:"wcho" },
